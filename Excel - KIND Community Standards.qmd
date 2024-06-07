@@ -74,7 +74,9 @@ Follow the basic standards above, plus:
 ```{r}
 #| eval: false
 #| echo: false
-quarto::quarto_render("Excel - KIND Community Standards.qmd", output_format = "html")
-renderthis::to_pdf("Excel - KIND Community Standards.html")
+# quarto::quarto_render("Excel - KIND Community Standards.qmd", output_format = "html")
+# renderthis::to_pdf("Excel - KIND Community Standards.html", to = "Excel---KIND-Community-Standards.pdf")
+
+
 ```
 
