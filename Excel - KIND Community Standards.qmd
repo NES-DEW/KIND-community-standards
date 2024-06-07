@@ -6,7 +6,7 @@ date-format: DD/MM/YYYY
 bibliography: references.bib
 format:
   html:
-    embed-resources: true
+    embed-resources: false
   pdf:
     toc: false
     papersize: A4
