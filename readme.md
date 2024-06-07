@@ -3,3 +3,4 @@
 This is a list of KIND network community standards
 
 + [Excel standards](Excel - KIND Community Standards.html)
+
