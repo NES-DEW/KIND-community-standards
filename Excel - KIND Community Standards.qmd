@@ -1,6 +1,8 @@
 ---
 title: "![](src/images/KLN_banner_v05_125.png) KIND Community Standards: Excel"
-author: "Brendan Clarke, NHS Education for Scotland, [brendan.clarke2@nhs.scot](mailto:brendan.clarke2@nhs.scot)"
+author: 
+  - "KIND Network members"
+  - "Brendan Clarke, NHS Education for Scotland, [brendan.clarke2@nhs.scot](mailto:brendan.clarke2@nhs.scot)"
 date: "2024-06-06"
 date-format: DD/MM/YYYY
 bibliography: references.bib
@@ -77,6 +79,7 @@ Follow the basic standards above, plus:
 # quarto::quarto_render("Excel - KIND Community Standards.qmd", output_format = "html")
 # renderthis::to_pdf("Excel - KIND Community Standards.html", to = "Excel---KIND-Community-Standards.pdf")
 
+quarto::quarto_render("readme.md", output_file = "index.html")
 
 ```
 
