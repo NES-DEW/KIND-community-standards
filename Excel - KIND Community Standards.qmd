@@ -78,8 +78,8 @@ Follow the basic standards above, plus:
 #| echo: false
 # quarto::quarto_render("Excel - KIND Community Standards.qmd", output_format = "html")
 # renderthis::to_pdf("Excel - KIND Community Standards.html", to = "Excel---KIND-Community-Standards.pdf")
-
-quarto::quarto_render("readme.md", output_file = "index.html")
+# quarto::quarto_render("readme.md", output_file = "index.html")
 
 ```
-
+<hr>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://nes-dew.github.io/KIND-community-standards/">KIND community standards</a> by <span property="cc:attributionName">The KIND community</span> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
