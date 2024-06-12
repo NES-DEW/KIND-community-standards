@@ -8,7 +8,7 @@
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke, NHS Education for Scotland, brendan.clarke2@nhs.scot">
-<meta name="dcterms.date" content="2024-06-06">
+<meta name="dcterms.date" content="2024-12-06">
 
 <title>KIND community standards -  KIND Community Standards: R</title>
 <style>
@@ -133,7 +133,15 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#basic-standard" id="toc-basic-standard" class="nav-link active" data-scroll-target="#basic-standard">Basic standard</a></li>
+  <li><a href="#enhanced-standard" id="toc-enhanced-standard" class="nav-link" data-scroll-target="#enhanced-standard">Enhanced standard</a></li>
+  <li><a href="#group-considerations" id="toc-group-considerations" class="nav-link" data-scroll-target="#group-considerations">Group considerations</a></li>
+  </ul>
+</nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
 <a property="dct:title" rel="cc:attributionURL" href="https://nes-dew.github.io/KIND-training">KIND training materials</a> by <span property="cc:attributionName">KIND learning network</span> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a>
@@ -162,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">06/06/2024</p>
+      <p class="date">12/06/2024</p>
     </div>
   </div>
   
@@ -174,9 +182,43 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is some sample content</p>
+<p>Please note this is a work-in-progress draft, due for completion end-June 2024</p>
+<section id="basic-standard" class="level2">
+<h2 class="anchored" data-anchor-id="basic-standard">Basic standard</h2>
+<ul>
+<li>Use projects</li>
+<li>Collect packages at head of script</li>
+<li>Keep package loading minimal (nothing “just in case”)</li>
+<li>Use descriptive variable names</li>
+<li>No repeated code - use functions where a specific bit of code needs to be used multiple times.</li>
+<li>Properly structured sections (using hyperlinks &gt;# Section 1 —-)</li>
+<li>Include authorship, contact details, and brief documentation of the purpose of the script</li>
+<li>Any variables that need changing to be dealt with in a systematic manner - i.e.&nbsp;no need to look through the script for things that need changing for the specific use case.</li>
+<li>Variables to change could be listed at the top of the script, or in an input file etc etc
+<ul>
+<li>Consider a settings file if there are lots of these</li>
+</ul></li>
+<li>Think about units. An individual script should run as one - ie workflow should not be run first half of the script, do something else, run second half of the script - in this case they should be two separate scripts.</li>
+</ul>
+</section>
+<section id="enhanced-standard" class="level2">
+<h2 class="anchored" data-anchor-id="enhanced-standard">Enhanced standard</h2>
+<ul>
+<li>Explicit reference to any formal style conventions</li>
+<li>Use version control</li>
+<li>For ambitious projects, consider {renv} (which will capture R and package versions). For smaller projects, list packages at top of script, along with installation instructions for any non CRAN / no longer on CRAN packages</li>
+<li>For more onerous scripts, identify memory and CPU requirements listed at start</li>
+<li>consider using templates for presentations/reports/dashboards</li>
+</ul>
+</section>
+<section id="group-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="group-considerations">Group considerations</h2>
+<ul>
+<li>Have a house code style, possibly implemented using styler. Code styling for readability is important, and no-one agrees, so you’ll need to lead. needed.</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
