@@ -7,6 +7,7 @@ This is the main page for the KIND network's set of community standards.
 These documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.
  
 How might you use these suggestions?
+
 + as a way of highlighting good practice
 + as a helper when starting new projects (or new Excel documents)
 + as a lever for bringing about change, particularly trying to convince service leads that poorly-designed Excel spreadsheets are a dangerous menace

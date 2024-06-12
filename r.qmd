@@ -3,8 +3,34 @@ title: "![](src/images/KLN_banner_v05_125.png) KIND Community Standards: R"
 author: 
   - "KIND Network members"
   - "Brendan Clarke, NHS Education for Scotland, [brendan.clarke2@nhs.scot](mailto:brendan.clarke2@nhs.scot)"
-date: "2024-06-06"
+date: "2024-06-12"
 date-format: DD/MM/YYYY
 ---
 
-This is some sample content
+Please note this is a work-in-progress draft, due for completion end-June 2024
+
+## Basic standard
+
+* Use projects
+* Collect packages at head of script
++ Keep package loading minimal (nothing "just in case")
++ Use descriptive variable names
++ No repeated code - use functions where a specific bit of code needs to be used multiple times. 
++ Properly structured sections (using hyperlinks ># Section 1 ----)
++ Include authorship, contact details, and brief documentation of the purpose of the script
++ Any variables that need changing to be dealt with in a systematic manner - i.e. no need to look through the script for things that need changing for the specific use case.
++ Variables to change could be listed at the top of the script, or in an input file etc etc
+    + Consider a settings file if there are lots of these
++ Think about units. An individual script should run as one - ie workflow should not be run first half of the script, do something else, run second half of the script - in this case they should be two separate scripts. 
+
+## Enhanced standard
+
++ Explicit reference to any formal style conventions
++ Use version control 
++ For ambitious projects, consider {renv} (which will capture R and package versions). For smaller projects, list packages at top of script, along with installation instructions for any non CRAN / no longer on CRAN packages
++ For more onerous scripts, identify memory and CPU requirements listed at start
++ consider using templates for presentations/reports/dashboards
+
+## Group considerations
++ Have a house code style, possibly implemented using styler. Code styling for readability is important, and no-one agrees, so you'll need to lead.
+needed. 
