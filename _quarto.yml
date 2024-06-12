@@ -7,7 +7,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: Excel.qmd
+      - href: excel.qmd
         text: Excel
       - href: visio.qmd
         text: Visio

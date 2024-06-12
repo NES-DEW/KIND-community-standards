@@ -45,13 +45,14 @@ Once on the page, Shapes can:
 -   Change size: Click on the shape and click + drag on the points that appear at its corners/edges to alter its dimensions (@fig-shape, a)
 -   Change appearance: Right click on the shape, and use the ‘shape fill’/’shape outline’/’weight’ and ‘dash’ icons that appear in the window to edit the appearance of the shape (@fig-shape, b)
 -   Contain a link: The shapes can be edited to become buttons that will send viewers to a hyperlink when clicked. Right click on the shape, choose link from the window, and enter the URL that you would like the shape to direct to. ‘Add display text’ will show text that appears when viewers hover over the button, you can use this to provide a simplified link address or additional context (@fig-shape, c)
--   Be connected to other shapes: hover over the shape (without clicking) and green points will appear. If you click and drag from these points, Visio will generate an arrow that can be connected to another shape. Alternatively, some directional arrows will appear around the shape; if you hover over these; Visio will suggest new shapes that you can choose from, and it will auto-populate that shape connected to your original shape. (@fig-arrows)
+-   Be connected to other shapes: hover over the shape (without clicking) and green points will appear. If you click and drag from these points, Visio will generate an arrow that can be connected to another shape. Alternatively, some directional arrows will appear around the shape; if you hover over these; Visio will suggest new shapes that you can choose from, and it will auto-populate that shape connected to your original shape. (@fig-arrn)
 
 Other options are available to you on the Shapes panel on the left side of the workspace:
 
 ![When right clicking on a shape, the options provided will allow you to change the size of the shape (a), appearance of the shape (b), or become a button via insert a link (c). ](images/clipboard-249105630.png){height="300px" #fig-shape}
 
-![If using the suggested arrows to generate shapes and connectors,, hover over the arrows, choose the desired shape, and a new shape will be created connected via arrow o the original shape. ](images/clipboard-4198126063.png)![](images/clipboard-1837299990.png){height="300px" #fig-arrows}
+![If using the suggested arrows to generate shapes and connectors,, hover over the arrows, choose the desired shape, and a new shape will be created connected via arrow o the original shape. ](images/clipboard-4198126063.png)
+![](images/clipboard-1837299990.png){height="300px" #fig-arrn}
 
 ![Basic shapes (a), more complicated arrows and connectors (b), stencil (c) (note this is a feature available only to a paid/upgraded Visio application and will not be available to staff by default), add shapes from other libraries/templates (d), and search for a shape by text (e). This is useful if looking for a specific shape to populate into your diagram, such as an email or document icon.](images/clipboard-2006628320.png)
 
