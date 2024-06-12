@@ -11,7 +11,7 @@ date-format: DD/MM/YYYY
 
 ## Purpose
 
-This document is suggested reading for staff who are utilising Visio to undertake process mapping/information visualisation within their teams. The document is not exhaustive and provides additional information in the appendix.
+This is a sample standard operating protocol for staff using Microsoft Visio for process mapping and information visualisation within their health, social care, or housing teams. The document is not exhaustive and additional information can be found in the the appendix.
 
 ## What is Visio?
 
@@ -51,8 +51,7 @@ Other options are available to you on the Shapes panel on the left side of the w
 
 ![When right clicking on a shape, the options provided will allow you to change the size of the shape (a), appearance of the shape (b), or become a button via insert a link (c). ](images/clipboard-249105630.png){height="300px" #fig-shape}
 
-![If using the suggested arrows to generate shapes and connectors,, hover over the arrows, choose the desired shape, and a new shape will be created connected via arrow o the original shape. ](images/clipboard-4198126063.png){height="300px" #figz-arrn}
-![](images/clipboard-1837299990.png){height="300px"}
+![If using the suggested arrows to generate shapes and connectors, hover over the arrows, choose the desired shape, and a new shape will be created connected via arrow to the original shape.](images/clipboard-1837299990.png){height="300px" #figz-arrn}
 
 ![Basic shapes (a), more complicated arrows and connectors (b), stencil (c) (note this is a feature available only to a paid/upgraded Visio application and will not be available to staff by default), add shapes from other libraries/templates (d), and search for a shape by text (e). This is useful if looking for a specific shape to populate into your diagram, such as an email or document icon.](images/clipboard-2006628320.png)
 
@@ -65,7 +64,7 @@ If starting with a suggested template, your shapes panel on the left side will a
 -   Plan out beforehand, either alone or with your team as appropriate, what format would work best for the information you are trying to provide. The same information can be provided in many different ways, and often one format will work better than another for the information you are trying to visualize. For example, a swim-lane diagram is better than a traditional process map when attempting to show responsibilities moving across different contributors/organisations.
 -   Once you have a shape on the diagram that works well (has been sized, coloured and outlined in the manner that you want), you can copy and paste this shape instead of having to create it from scratch again. This helps massively with saving time, and helps generate a uniform formatting within the diagram.
 -   Visio’s workspace is reactive and will automatically grow if you exceed its borders. This is useful to know as it means you do not constantly have to move or re-shape your items to remain within the borders of the page. You may find it easier to generate all of the items for your diagram first, and move/locate/connect them all later on, once you have a feel for the amount of space your diagram requires.
--   Include a legend – provide a legend somewhere alongside the diagram, indicating what the different shapes, colours and connections mean (especially if the diagram becomes more complicated). See the measles example provided in the previous section for an example.
+-   Include a legend – provide a legend somewhere alongside the diagram, indicating what the different shapes, colours and connections mean (especially if the diagram becomes more complicated).
 -   If it is difficult to fill in pieces of a process map because the information is poor or there is no information, don’t worry - this is also really useful information! Mapping out systems can identify gaps or weaknesses in the current process. Wherever this occurs, make a note of it, and when analysing the map with the team during review, explain the difficulties encountered to the team. This will prompt them to provide the missing information, and/or cause them to review the current process for quality improvement.
 
 ## Time to complete/resource allocation

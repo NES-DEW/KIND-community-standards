@@ -7,12 +7,17 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: excel.qmd
-        text: Excel
-      - href: visio.qmd
-        text: Visio
-      - href: r.qmd
-        text: R
+      - text: Community standards
+        menu:
+          - href: excel.qmd
+            text: Excel
+          - href: r.qmd
+            text: R
+      - text: Sample SOPs
+        menu:
+          - href: visio.qmd
+            text: Visio
+
 
 format:
   html:

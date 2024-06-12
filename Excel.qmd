@@ -30,6 +30,7 @@ This is version 1, and this document will be fully reviewed in January 2025 by t
     + Text format for CHI numbers, rather than the initial '
 + Avoid using colour-based formatting which can easily breach accessibility guidance
   + If conditional format is required, prefer using more accessible formats, such as shape icons sets
++ Consider avoiding `VLOOKUP()` in favour of either `INDEX() + MATCH()` or `XLOOKUP()`
 
 ## Enhanced standard for Excel workbooks
 Follow the basic standards above, plus:
