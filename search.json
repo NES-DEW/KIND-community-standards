@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": " KIND Community Standards: Excel",
-    "section": "",
-    "text": "This is the index"
-  },
-  {
-    "objectID": "archive/readme.html",
-    "href": "archive/readme.html",
-    "title": " KIND Community Standards",
-    "section": "",
-    "text": "KIND Community Standards\nThis is a list of KIND network community standards\n\nExcel standards"
-  },
-  {
     "objectID": "Excel.html",
     "href": "Excel.html",
     "title": " KIND Community Standards: Excel",
@@ -32,61 +18,75 @@
     "href": "Excel.html#enhanced-standard-for-excel-workbooks",
     "title": " KIND Community Standards: Excel",
     "section": "Enhanced standard for Excel workbooks",
-    "text": "Enhanced standard for Excel workbooks\nFollow the basic standards above, plus:\n\nConsider using data validation to make data consistent, especially if you don’t really want free text\nAdd a documentation / readme worksheet. You might include:\n\na description of the data\ninformation about ownership/origin/dates/data sources\na key explaining abbreviations\nexplanation of any complex formulas\nadvice about correct and consistent method of naming different versions of the workbook\n\nConsider using lambda formulas to avoid repetition of complex formulas\nPrefer structured referencing and naming to the use of complex A1 referencing\nConsider loading data using Power Query, especially if the workbook is designed to be updated\n\n# format:\n#   html:\n#     embed-resources: false\n#   pdf:\n#     toc: false\n#     papersize: A4\n#     mainfont: Calibri\n#     monofont: CourierNewPSMT\n#     include-in-header: \n#      text: |\n#          \\usepackage{fancyhdr}\n#          \\pagestyle{fancy}\n#          \\fancyhead{}\n#          \\fancyhead[R]{\\includegraphics[width=7cm]{src/images/KLN_banner_v05_125.png}}\n# editor_options: \n#     chunk_output_type: console"
+    "text": "Enhanced standard for Excel workbooks\nFollow the basic standards above, plus:\n\nConsider using data validation to make data consistent, especially if you don’t really want free text\nAdd a documentation / readme worksheet. You might include:\n\na description of the data\ninformation about ownership/origin/dates/data sources\na key explaining abbreviations\nexplanation of any complex formulas\nadvice about correct and consistent method of naming different versions of the workbook\n\nConsider using lambda formulas to avoid repetition of complex formulas\nPrefer structured referencing and naming to the use of complex A1 referencing\nConsider loading data using Power Query, especially if the workbook is designed to be updated"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": " KIND Community Standards: Excel",
+    "section": "",
+    "text": "This is the index"
+  },
+  {
+    "objectID": "archive/readme.html",
+    "href": "archive/readme.html",
+    "title": " KIND Community Standards",
+    "section": "",
+    "text": "KIND Community Standards\nThis is a list of KIND network community standards\n\nExcel standards"
   },
   {
     "objectID": "visio.html",
     "href": "visio.html",
-    "title": " KIND Community Standards: Visio",
+    "title": " KIND Community Standards: Visio SOP",
     "section": "",
     "text": "This document is suggested reading for staff who are utilising Visio to undertake process mapping/information visualisation within their teams. The document is not exhaustive and provides additional information in the appendix."
   },
   {
     "objectID": "visio.html#purpose",
     "href": "visio.html#purpose",
-    "title": " KIND Community Standards: Visio",
+    "title": " KIND Community Standards: Visio SOP",
     "section": "",
     "text": "This document is suggested reading for staff who are utilising Visio to undertake process mapping/information visualisation within their teams. The document is not exhaustive and provides additional information in the appendix."
   },
   {
     "objectID": "visio.html#what-is-visio",
     "href": "visio.html#what-is-visio",
-    "title": " KIND Community Standards: Visio",
+    "title": " KIND Community Standards: Visio SOP",
     "section": "What is Visio?",
     "text": "What is Visio?\nVisio is a visualisation tool provided within the Microsoft 365 suite of software. All staff will have access to the online version of the app. You can find the app within the office application launcher (the waffle icon in the top left of the screen when using any office 365 applications on the web) (Figure 1)\n\n\n\n\n\n\nFigure 1: How to find Visio within the application launcher on 365 online.\n\n\n\nVisio can be employed for a variety of uses, such as:\n\nProcess mapping;\nFlowcharts;\nMatrices;\nVenn diagrams;\n‘Swim lane’ diagrams;\nStep plans such as communication plans.\n\nVisio has several set templates that can allow users to begin from a pre-designed example. This can enable users to quickly produce a clear, concise and professional looking diagram if they know the format they would like to present their information in."
   },
   {
     "objectID": "visio.html#how-to-use-visio",
     "href": "visio.html#how-to-use-visio",
-    "title": " KIND Community Standards: Visio",
+    "title": " KIND Community Standards: Visio SOP",
     "section": "How to use Visio",
     "text": "How to use Visio\n\nBlank template\nIf starting with a blank template, your workspace will be a clear page. Visio will provide a ‘shapes’ tab on the left side, with which you can begin clicking and dragging to populate the diagram.\nN.B. If you are doing traditional flowchart process mapping, certain shapes have certain meanings. For example, a circle usually denotes the start/end of a process, and a diamond denotes a decision (which will have branching YES or NO results). For more information, see Process Mapping Symbols in the appendix.\n\n\n\n\n\n\nFigure 2: The ‘blank template’ work screen of Visio\n\n\n\nOnce on the page, Shapes can:\n\nChange size: Click on the shape and click + drag on the points that appear at its corners/edges to alter its dimensions (Figure 3, a)\nChange appearance: Right click on the shape, and use the ‘shape fill’/’shape outline’/’weight’ and ‘dash’ icons that appear in the window to edit the appearance of the shape (Figure 3, b)\nContain a link: The shapes can be edited to become buttons that will send viewers to a hyperlink when clicked. Right click on the shape, choose link from the window, and enter the URL that you would like the shape to direct to. ‘Add display text’ will show text that appears when viewers hover over the button, you can use this to provide a simplified link address or additional context (Figure 3, c)\nBe connected to other shapes: hover over the shape (without clicking) and green points will appear. If you click and drag from these points, Visio will generate an arrow that can be connected to another shape. Alternatively, some directional arrows will appear around the shape; if you hover over these; Visio will suggest new shapes that you can choose from, and it will auto-populate that shape connected to your original shape. (?@fig-arrows)\n\nOther options are available to you on the Shapes panel on the left side of the workspace:\n\n\n\n\n\n\nFigure 3: When right clicking on a shape, the options provided will allow you to change the size of the shape (a), appearance of the shape (b), or become a button via insert a link (c).\n\n\n\n\n\n\n\nBasic shapes (a), more complicated arrows and connectors (b), stencil (c) (note this is a feature available only to a paid/upgraded Visio application and will not be available to staff by default), add shapes from other libraries/templates (d), and search for a shape by text (e). This is useful if looking for a specific shape to populate into your diagram, such as an email or document icon.\n\n\n\n\nWorking from pre-designed templates\nIf starting with a suggested template, your shapes panel on the left side will appear slightly different, to provide shapes that match the diagram intended. For example, if you are looking to create a Venn diagram, the shapes panel on the left will provide you with suggested overlapping shapes of 2-sets, 3-sets etc. Think (as a team if necessary), about what you are looking to produce before you begin and in what format this would look best/be most accessible/understandable, and choose the corresponding set template to get yourself started."
   },
   {
     "objectID": "visio.html#tips-for-getting-the-most-out-of-visio",
     "href": "visio.html#tips-for-getting-the-most-out-of-visio",
-    "title": " KIND Community Standards: Visio",
+    "title": " KIND Community Standards: Visio SOP",
     "section": "Tips for getting the most out of Visio",
     "text": "Tips for getting the most out of Visio\n\nPlan out beforehand, either alone or with your team as appropriate, what format would work best for the information you are trying to provide. The same information can be provided in many different ways, and often one format will work better than another for the information you are trying to visualize. For example, a swim-lane diagram is better than a traditional process map when attempting to show responsibilities moving across different contributors/organisations.\nOnce you have a shape on the diagram that works well (has been sized, coloured and outlined in the manner that you want), you can copy and paste this shape instead of having to create it from scratch again. This helps massively with saving time, and helps generate a uniform formatting within the diagram.\nVisio’s workspace is reactive and will automatically grow if you exceed its borders. This is useful to know as it means you do not constantly have to move or re-shape your items to remain within the borders of the page. You may find it easier to generate all of the items for your diagram first, and move/locate/connect them all later on, once you have a feel for the amount of space your diagram requires.\nInclude a legend – provide a legend somewhere alongside the diagram, indicating what the different shapes, colours and connections mean (especially if the diagram becomes more complicated). See the measles example provided in the previous section for an example.\nIf it is difficult to fill in pieces of a process map because the information is poor or there is no information, don’t worry - this is also really useful information! Mapping out systems can identify gaps or weaknesses in the current process. Wherever this occurs, make a note of it, and when analysing the map with the team during review, explain the difficulties encountered to the team. This will prompt them to provide the missing information, and/or cause them to review the current process for quality improvement."
   },
   {
     "objectID": "visio.html#time-to-completeresource-allocation",
     "href": "visio.html#time-to-completeresource-allocation",
-    "title": " KIND Community Standards: Visio",
+    "title": " KIND Community Standards: Visio SOP",
     "section": "Time to complete/resource allocation",
     "text": "Time to complete/resource allocation\nSimple Visio mapping can be quite quick, especially if using suggested template shapes to complete a task. However, complex diagrams can be quite tedious and time consuming to prepare.\nAs a result, any team member undertaking a complex process mapping task should be able to discuss with their line/work management how much time they can allocate to this, reasonable/realistic deadlines, and expectations alongside other work. If generating a visualisation like this is urgent, then the team member should be able to give priority over their other work to the task.\nProcess mapping is an excellent development opportunity as it is a flexible skill valuable to many different roles and teams. Anyone should be encouraged to try out using the tool where relevant to their work, or simply as a PDP exercise to familiarize themselves with the process."
   },
   {
     "objectID": "visio.html#example-exercises",
     "href": "visio.html#example-exercises",
-    "title": " KIND Community Standards: Visio",
+    "title": " KIND Community Standards: Visio SOP",
     "section": "Example exercises",
     "text": "Example exercises\nBelow are some sample exercises to practice with to get a handle for the application.\n\nPractice connectors: create a map of your team, showing the line management and reporting structure.\n\nConsider using different colours for different groups, and adding a legend to explain what the colours represent.\nTry to do this exercise on a blank template, and then afterwards, you can repeat the exercise using one of Visio’s Organisation Chart templates.\n\nPractice flowchart branching: Create a process map about your morning routine and your journey to work. Include a couple of decisions that create branching routes, e.g. do you walk to work &gt; Yes / No &gt; map an alternative route to work if you take the bus.\nPractice Comms: use one of the Infographics templates to make a short summary of your team’s milestones over the last year or in the year ahead."
   },
   {
     "objectID": "visio.html#appendix",
     "href": "visio.html#appendix",
-    "title": " KIND Community Standards: Visio",
+    "title": " KIND Community Standards: Visio SOP",
     "section": "Appendix",
     "text": "Appendix\n\nOverview\n\nOverview of Visio (Office Support)\n\nMany more suggested articles are available on the Visio website itself; click on the help icon (? Symbol) in the top right of the page, and several articles about using the application will be suggested.\n\n\nProcess Mapping\n\nProcess Mapping (QI Lothian)\nProcess Mapping (Turas Quality Improvement Zone)\nProcess Mapping Symbols (Turas Quality Improvement Zone)\n\nNote there are many more symbols that can be used in process maps, try to ensure whatever you are using comes from an approved source and is a standardised/understandable format.\n\n\nOther resources\n\nQuality improvement tools and resources (QI Lothian)\nNES QI tools (Turas Quality Improvement Zone)"
   }
