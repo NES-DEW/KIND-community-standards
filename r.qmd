@@ -6,3 +6,5 @@ author:
 date: "2024-06-06"
 date-format: DD/MM/YYYY
 ---
+
+This is some sample content
