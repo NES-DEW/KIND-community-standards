@@ -28,6 +28,13 @@
     "text": "This is the main page for the KIND network’s set of community standards.\nThese documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.\nHow might you use these suggestions? + as a way of highlighting good practice + as a helper when starting new projects (or new Excel documents) + as a lever for bringing about change, particularly trying to convince service leads that poorly-designed Excel spreadsheets are a dangerous menace + as a guideline for tidying up existing inconsistent/messy files + as a training tool when bringing new colleagues up to speed\nPlease take this, use it however you like, and let us know if there’s anything that you’d find particularly helpful for an updated version to contain. We’ll review and redraft regularly. Please open an issue on the GitHub page if you have specific suggestions, otherwise contact brendan.clarke2@nhs.scot for a more general conversation about these standards."
   },
   {
+    "objectID": "r.html",
+    "href": "r.html",
+    "title": " KIND Community Standards: R",
+    "section": "",
+    "text": "This is some sample content"
+  },
+  {
     "objectID": "visio.html",
     "href": "visio.html",
     "title": " KIND Community Standards: Visio SOP",
