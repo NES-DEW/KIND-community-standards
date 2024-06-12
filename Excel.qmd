@@ -11,10 +11,7 @@ date-format: DD/MM/YYYY
 #| echo: false
 #| warning: false
 
-knitr::opts_chunk$set(echo = T, warning = F, message = F, results = "asis", fig.width = 7, fig.height = 4)
-
-library(pacman)
-p_load(tidyverse, KINDR, viridis, wordcountaddin)
+library(tidyverse)
 
 ```
 
@@ -55,33 +52,4 @@ Follow the basic standards above, plus:
 + Consider using lambda formulas to avoid repetition of complex formulas
 + Prefer structured referencing and naming to the use of complex A1 referencing
 + Consider loading data using Power Query, especially if the workbook is designed to be updated
-
-```{r}
-#| eval: false
-#| echo: false
-# quarto::quarto_render("Excel - KIND Community Standards.qmd", output_format = "html")
-# renderthis::to_pdf("Excel - KIND Community Standards.html", to = "Excel---KIND-Community-Standards.pdf")
-# quarto::quarto_render("readme.md", output_file = "index.html")
-
-```
-
-
-```{r}
-# format:
-#   html:
-#     embed-resources: false
-#   pdf:
-#     toc: false
-#     papersize: A4
-#     mainfont: Calibri
-#     monofont: CourierNewPSMT
-#     include-in-header: 
-#      text: |
-#          \usepackage{fancyhdr}
-#          \pagestyle{fancy}
-#          \fancyhead{}
-#          \fancyhead[R]{\includegraphics[width=7cm]{src/images/KLN_banner_v05_125.png}}
-# editor_options: 
-#     chunk_output_type: console
-```
 
