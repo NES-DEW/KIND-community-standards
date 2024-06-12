@@ -6,6 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="KIND Network members">
+<meta name="author" content="Brendan Clarke, NHS Education for Scotland, brendan.clarke2@nhs.scot">
+<meta name="dcterms.date" content="2024-06-06">
 
 <title>KIND community standards -  KIND Community Standards: Excel</title>
 <style>
@@ -89,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -130,7 +133,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#basic-standard-for-excel-workbooks" id="toc-basic-standard-for-excel-workbooks" class="nav-link active" data-scroll-target="#basic-standard-for-excel-workbooks">Basic standard for Excel workbooks</a></li>
+  <li><a href="#enhanced-standard-for-excel-workbooks" id="toc-enhanced-standard-for-excel-workbooks" class="nav-link" data-scroll-target="#enhanced-standard-for-excel-workbooks">Enhanced standard for Excel workbooks</a></li>
+  </ul>
+</nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
 <a property="dct:title" rel="cc:attributionURL" href="https://nes-dew.github.io/KIND-training">KIND training materials</a> by <span property="cc:attributionName">KIND learning network</span> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a>
@@ -148,7 +158,20 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>KIND Network members </p>
+             <p>Brendan Clarke, NHS Education for Scotland, <a href="mailto:brendan.clarke2@nhs.scot">brendan.clarke2@nhs.scot</a> </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">06/06/2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -158,12 +181,60 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is the main page for the KIND network’s set of community standards.</p>
-<p>These documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.</p>
-<p>How might you use these suggestions? + as a way of highlighting good practice + as a helper when starting new projects (or new Excel documents) + as a lever for bringing about change, particularly trying to convince service leads that poorly-designed Excel spreadsheets are a dangerous menace + as a guideline for tidying up existing inconsistent/messy files + as a training tool when bringing new colleagues up to speed</p>
-<p>Please take this, use it however you like, and let us know if there’s anything that you’d find particularly helpful for an updated version to contain. We’ll review and redraft regularly. Please <a href="https://github.com/NES-DEW/KIND-community-standards/issues">open an issue on the GitHub page</a> if you have specific suggestions, otherwise contact brendan.clarke2@nhs.scot for a more general conversation about these standards.</p>
+<p>Excel workbooks are frequently troublesome. This document contains a simple set of features that will help you avoid the most serious Excel problems. The aim is to be:</p>
+<ul>
+<li>universal, to provide effective guidance across health, social care, and housing</li>
+<li>simple and achievable, to keep to the most important guidance only</li>
+<li>realistic and grounded in health, social care, and housing practices</li>
+</ul>
+<p>This is version 1, and this document will be fully reviewed in January 2025 by the KIND network community.</p>
+<section id="basic-standard-for-excel-workbooks" class="level2">
+<h2 class="anchored" data-anchor-id="basic-standard-for-excel-workbooks">Basic standard for Excel workbooks</h2>
+<ul>
+<li>Make your data tidy
+<ul>
+<li>One value per cell</li>
+<li>One observation per row</li>
+<li>One variable per column</li>
+</ul></li>
+<li>Avoid repetition
+<ul>
+<li>consider restructuring into several tables to avoid repeating data</li>
+</ul></li>
+<li>Use tables to contain data wherever possible</li>
+<li>Use meaningful sheet, table, and column names (not <code>Sheet 1</code>, <code>Sheet 2</code>…)</li>
+<li>Use number formatting as appropriate
+<ul>
+<li>Dates and percentages are especially important to format correctly</li>
+<li>Text format for CHI numbers, rather than the initial ’</li>
+</ul></li>
+<li>Avoid using colour-based formatting which can easily breach accessibility guidance
+<ul>
+<li>If conditional format is required, prefer using more accessible formats, such as shape icons sets</li>
+</ul></li>
+<li>Consider avoiding <code>VLOOKUP()</code> in favour of either <code>INDEX() + MATCH()</code> or <code>XLOOKUP()</code></li>
+</ul>
+</section>
+<section id="enhanced-standard-for-excel-workbooks" class="level2">
+<h2 class="anchored" data-anchor-id="enhanced-standard-for-excel-workbooks">Enhanced standard for Excel workbooks</h2>
+<p>Follow the basic standards above, plus:</p>
+<ul>
+<li>Consider using data validation to make data consistent, especially if you don’t really want free text</li>
+<li>Add a documentation / readme worksheet. You might include:
+<ul>
+<li>a description of the data</li>
+<li>information about ownership/origin/dates/data sources</li>
+<li>a key explaining abbreviations</li>
+<li>explanation of any complex formulas</li>
+<li>advice about correct and consistent method of naming different versions of the workbook</li>
+</ul></li>
+<li>Consider using lambda formulas to avoid repetition of complex formulas</li>
+<li>Prefer structured referencing and naming to the use of complex A1 referencing</li>
+<li>Consider loading data using Power Query, especially if the workbook is designed to be updated</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
