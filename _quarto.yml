@@ -11,6 +11,8 @@ website:
         text: Excel
       - href: visio.qmd
         text: Visio
+      - href: r.qmd
+        text: R
 
 format:
   html:

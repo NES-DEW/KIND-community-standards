@@ -1,0 +1,8 @@
+---
+title: "![](src/images/KLN_banner_v05_125.png) KIND Community Standards: R"
+author: 
+  - "KIND Network members"
+  - "Brendan Clarke, NHS Education for Scotland, [brendan.clarke2@nhs.scot](mailto:brendan.clarke2@nhs.scot)"
+date: "2024-06-06"
+date-format: DD/MM/YYYY
+---

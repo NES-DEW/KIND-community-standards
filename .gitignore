@@ -6,4 +6,4 @@
 .Renviron
 
 /.quarto/
-/_archive/
+/_archive/*
