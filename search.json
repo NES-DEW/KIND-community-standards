@@ -1,59 +1,164 @@
 [
   {
+    "objectID": "faq.html",
+    "href": "faq.html",
+    "title": "KIND FAQ",
+    "section": "",
+    "text": "The KIND learning network is an inclusive and supportive community of practice for staff across the knowledge, information, and data workforce. It exists to further the leading role of the community in the digital transformation of health and care by supporting learning, sharing of best practice, and developing interdisciplinary collaborations."
+  },
+  {
+    "objectID": "faq.html#what-is-the-kind-learning-network",
+    "href": "faq.html#what-is-the-kind-learning-network",
+    "title": "KIND FAQ",
+    "section": "",
+    "text": "The KIND learning network is an inclusive and supportive community of practice for staff across the knowledge, information, and data workforce. It exists to further the leading role of the community in the digital transformation of health and care by supporting learning, sharing of best practice, and developing interdisciplinary collaborations."
+  },
+  {
+    "objectID": "faq.html#what-does-kind-stand-for",
+    "href": "faq.html#what-does-kind-stand-for",
+    "title": "KIND FAQ",
+    "section": "What does KIND stand for?",
+    "text": "What does KIND stand for?\nKIND = Knowledge, Information, and Data.\nThese topics roughly correspond to three main professional groups:\n\nthose working with data and/or information\nthose working in knowledge management, research & development, and libraries\nthose working in records\n\nBut we also have many members whose are interested in KIND work, but who don’t fall neatly into one of these professional groups. We’re inclusive, and are delighted to welcome staff from any professional group or working at any career stage."
+  },
+  {
+    "objectID": "faq.html#who-is-the-kind-network-for",
+    "href": "faq.html#who-is-the-kind-network-for",
+    "title": "KIND FAQ",
+    "section": "Who is the KIND network for?",
+    "text": "Who is the KIND network for?\nThe KIND network is open to everyone, but is particularly aimed at staff from Scotland’s health, social care, and housing workforce who are interested in developing their knowledge, information, and data skills."
+  },
+  {
+    "objectID": "faq.html#who-runsownsfunds-the-kind-network",
+    "href": "faq.html#who-runsownsfunds-the-kind-network",
+    "title": "KIND FAQ",
+    "section": "Who runs/owns/funds the KIND network?",
+    "text": "Who runs/owns/funds the KIND network?\nThe KIND Learning Network is based at NHS Education for Scotland, as part of the Digitally Enabled Workforce programme. That’s a programme that builds foundational resources to support digital skills and leadership at all levels. You might have heard about our Professional Development Award in Technology Enabled Care programme, used the M365 Skills Hub, or been involved with the Digital Leadership Programme. This work is all funded through Scottish Government via the Digital Health and Care Portfolio Board."
+  },
+  {
+    "objectID": "faq.html#why-does-the-kind-network-exist",
+    "href": "faq.html#why-does-the-kind-network-exist",
+    "title": "KIND FAQ",
+    "section": "Why does the KIND network exist?",
+    "text": "Why does the KIND network exist?\nThis network exists to support people who work with knowledge, information, and data as they work to transform health and social care. There’s a large (and growing) workforce responsible for this work in Scotland. However, this workforce is really diverse. It’s not like e.g. nursing or other NMHAP professions where there are fixed entry and promotion criteria. Professional development is more complicated and messy than that. A good example is the lack of standardised job titles for KIND workers. We currently have something like 350 different job titles in the Teams channel. That splitting up of job families contributes to KIND workers being less visible than I think they should be. Kathleen Grey and colleagues called them “ghosts in the machine”"
+  },
+  {
+    "objectID": "faq.html#where-does-kind-work-happen",
+    "href": "faq.html#where-does-kind-work-happen",
+    "title": "KIND FAQ",
+    "section": "Where does KIND work happen?",
+    "text": "Where does KIND work happen?\nKIND work happens in many places across health and social care in Scotland. For example, you might find KIND workers in NHS Boards (national or territorial), other governmental health bodies, Local Authorities, social care care organisations, higher education, in the private sector, professional associations, or in health and social care partnerships"
+  },
+  {
+    "objectID": "faq.html#how-do-i-contribute",
+    "href": "faq.html#how-do-i-contribute",
+    "title": "KIND FAQ",
+    "section": "How do I contribute?",
+    "text": "How do I contribute?\n\nplease feel free to introduce yourself, ask questions, or post events/jobs/news of interest on the Teams channel\nplease feel welcome to attend and contribute to the community events. We’re generally extremely informal, and it’s always great to hear about your work. We don’t expect polished presentations or anything fancy\nplease spread the word - especially about our training courses"
+  },
+  {
+    "objectID": "faq.html#what-are-the-main-activities-in-the-kind-network",
+    "href": "faq.html#what-are-the-main-activities-in-the-kind-network",
+    "title": "KIND FAQ",
+    "section": "What are the main activities in the KIND network?",
+    "text": "What are the main activities in the KIND network?\nWe have a lot of activities going on. The best way to keep in touch with everything is to either:\n\nJoin our Teams channel\nor subscribe to our mailing list for a weekly digest\n\nOtherwise, our main activities are: + core multi-session training courses: + Excel Skills + Power BI for Beginners + R and Rmarkdown intro / R intermediate / Shiny + Evidence-based medicine and critical appraisal + 60+ one-off training sessions, available via the training mini-site + mentoring scheme + weekly community meetups including the ever-popular book of the week segment"
+  },
+  {
+    "objectID": "faq.html#is-x-going-to-be-recorded",
+    "href": "faq.html#is-x-going-to-be-recorded",
+    "title": "KIND FAQ",
+    "section": "Is X going to be recorded?",
+    "text": "Is X going to be recorded?\nNo, we do not record our sessions, and we ask that you do not record them either\nThe reasons for that are as follows:\n\nmost important, we want to run safe and inclusive events. Social learning involves making lots of mistakes. Those mistakes are a vital part of learning, and we need our events to allow people to learn without the fear of looking foolish for posterity\nmost of our events are social. In the little bit of A/B testing I did early in the life of the network, recording events decreased the number of social interactions - like questions or chat comments - in meetings\nour training is problem-based, and built for attendees to learn by doing. That doesn’t translate well at all to video\nthe actual view counts for recorded events are tiny, meaning that the benefits of recordings look low from here\n\nSpecifically, we require that attendees at our meeting do not use AI/LLM-based recording- or note-taking bots or apps. Please respect other learners and their needs. We make written materials available for our sessions, and please get in touch if you have other requirements."
+  },
+  {
+    "objectID": "faq.html#help-i-have-an-unmet-query",
+    "href": "faq.html#help-i-have-an-unmet-query",
+    "title": "KIND FAQ",
+    "section": "Help! I have an unmet query…",
+    "text": "Help! I have an unmet query…\nFor anything, please contact Brendan Clarke (brendan.clarke2@nhs.scot)."
+  },
+  {
+    "objectID": "kind_cms.html",
+    "href": "kind_cms.html",
+    "title": "KIND community meetup schedule",
+    "section": "",
+    "text": "Download community meetup data as csv\nDownload community meetup ideas as csv"
+  },
+  {
+    "objectID": "kind_cms.html#current-community-meetup-schedule",
+    "href": "kind_cms.html#current-community-meetup-schedule",
+    "title": "KIND community meetup schedule",
+    "section": "Current community meetup schedule",
+    "text": "Current community meetup schedule\n\nCurrent community meetup schedule\n\n\n\n\n\n\n\n\nDate\nTopic\nsubtopic\nSuggestor\n\n\n\n\n2024-06-26\nPower BI \nCALCULATE() = Power BI’s heart of darkness \n\n\n\n2024-07-03\n\n\n\n\n\n2024-07-10\n\n\n\n\n\n2024-07-17\nR\nTidytext, sentiment analysis \n\n\n\n2024-07-24\nNo session\nNo session\nNo session\n\n\n2024-07-31\n\n\n\n\n\n2024-08-07\nR \nEcharts4r, making PowerPoint in RMD, snakecase\n\n\n\n2024-08-14\n\n\n\n\n\n2024-08-21\n\n\n\n\n\n2024-08-28\nShort series on joins \n\n\n\n\n2024-09-04\nShort series on joins \n\n\n\n\n2024-09-11\nShort series on joins \n\n\n\n\n2024-09-18\nShort series on joins"
+  },
+  {
+    "objectID": "kind_cms.html#future-community-meetup-ideas",
+    "href": "kind_cms.html#future-community-meetup-ideas",
+    "title": "KIND community meetup schedule",
+    "section": "Future community meetup ideas",
+    "text": "Future community meetup ideas\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nRAP\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\n\nR DPIA\n\n\n\n\nDAGs\n\n\n\n\nWriting for different audiences\n\n\n\n\npredictive modelling\n\n\n\n\nBayesian stats\n\n\n\n\ncorrelations, linear models in Power BI\n\n\n\n\nCSS / Java – front end ?NES digital\n\n\n\n\nProper markdown + pandoc + yaml\n\n\n\n\nSimon Rogers at NSS - wrote a book on machine learning, might have some good material: https://www.gla.ac.uk/events/listings/index.html/event/12598 (also a lecturer at Glasgow)\n\n\n\n\nSafe havens / disclosure control / safe researcher training\n\n\n\n\nDisclosure and pseudoanonymised data\n\n\n\nR \nData.table / tidyverse / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler"
+  },
+  {
     "objectID": "excel.html",
     "href": "excel.html",
-    "title": " KIND Community Standards: Excel",
+    "title": "KIND Community Standards: Excel",
     "section": "",
     "text": "Excel workbooks are frequently troublesome. This document contains a simple set of features that will help you avoid the most serious Excel problems. The aim is to be:\nThis is version 1, and this document will be fully reviewed in January 2025 by the KIND network community."
   },
   {
     "objectID": "excel.html#basic-standard-for-excel-workbooks",
     "href": "excel.html#basic-standard-for-excel-workbooks",
-    "title": " KIND Community Standards: Excel",
+    "title": "KIND Community Standards: Excel",
     "section": "Basic standard for Excel workbooks",
     "text": "Basic standard for Excel workbooks\n\nMake your data tidy\n\nOne value per cell\nOne observation per row\nOne variable per column\n\nAvoid repetition\n\nconsider restructuring into several tables to avoid repeating data\n\nUse tables to contain data wherever possible\nUse meaningful sheet, table, and column names (not Sheet 1, Sheet 2…)\nUse number formatting as appropriate\n\nDates and percentages are especially important to format correctly\nText format for CHI numbers, rather than the initial ’\n\nAvoid using colour-based formatting which can easily breach accessibility guidance\n\nIf conditional format is required, prefer using more accessible formats, such as shape icons sets\n\nConsider avoiding VLOOKUP() in favour of either INDEX() + MATCH() or XLOOKUP()"
   },
   {
     "objectID": "excel.html#enhanced-standard-for-excel-workbooks",
     "href": "excel.html#enhanced-standard-for-excel-workbooks",
-    "title": " KIND Community Standards: Excel",
+    "title": "KIND Community Standards: Excel",
     "section": "Enhanced standard for Excel workbooks",
     "text": "Enhanced standard for Excel workbooks\nFollow the basic standards above, plus:\n\nConsider using data validation to make data consistent, especially if you don’t really want free text\nAdd a documentation / readme worksheet. You might include:\n\na description of the data\ninformation about ownership/origin/dates/data sources\na key explaining abbreviations\nexplanation of any complex formulas\nadvice about correct and consistent method of naming different versions of the workbook\n\nConsider using lambda formulas to avoid repetition of complex formulas\nPrefer structured referencing and naming to the use of complex A1 referencing\nConsider loading data using Power Query, especially if the workbook is designed to be updated"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": " KIND Community Standards: Excel",
-    "section": "",
-    "text": "This is the main page for the KIND network’s set of community standards.\nThese documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.\nHow might you use these suggestions?\n\nas a way of highlighting good practice\nas a helper when starting new projects (or new Excel documents)\nas a lever for bringing about change, particularly trying to convince service leads that poorly-designed Excel spreadsheets are a dangerous menace\nas a guideline for tidying up existing inconsistent/messy files\nas a training tool when bringing new colleagues up to speed\n\nPlease take this, use it however you like, and let us know if there’s anything that you’d find particularly helpful for an updated version to contain. We’ll review and redraft regularly. Please open an issue on the GitHub page if you have specific suggestions, otherwise contact brendan.clarke2@nhs.scot for a more general conversation about these standards."
-  },
-  {
     "objectID": "r.html",
     "href": "r.html",
-    "title": " KIND Community Standards: R",
+    "title": "KIND Community Standards: R",
     "section": "",
     "text": "Please note this is a work-in-progress draft, due for completion end-June 2024"
   },
   {
     "objectID": "r.html#basic-standard",
     "href": "r.html#basic-standard",
-    "title": " KIND Community Standards: R",
+    "title": "KIND Community Standards: R",
     "section": "Basic standard",
     "text": "Basic standard\n\nUse projects\nCollect packages at head of script\nKeep package loading minimal (nothing “just in case”)\nUse descriptive variable names\nNo repeated code - use functions where a specific bit of code needs to be used multiple times.\nProperly structured sections (using hyperlinks &gt;# Section 1 —-)\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAny variables that need changing to be dealt with in a systematic manner - i.e. no need to look through the script for things that need changing for the specific use case.\nVariables to change could be listed at the top of the script, or in an input file etc etc\n\nConsider a settings file if there are lots of these\n\nThink about units. An individual script should run as one - ie workflow should not be run first half of the script, do something else, run second half of the script - in this case they should be two separate scripts."
   },
   {
     "objectID": "r.html#enhanced-standard",
     "href": "r.html#enhanced-standard",
-    "title": " KIND Community Standards: R",
+    "title": "KIND Community Standards: R",
     "section": "Enhanced standard",
     "text": "Enhanced standard\n\nExplicit reference to any formal style conventions\nUse version control\nFor ambitious projects, consider {renv} (which will capture R and package versions). For smaller projects, list packages at top of script, along with installation instructions for any non CRAN / no longer on CRAN packages\nFor more onerous scripts, identify memory and CPU requirements listed at start\nconsider using templates for presentations/reports/dashboards"
   },
   {
     "objectID": "r.html#group-considerations",
     "href": "r.html#group-considerations",
-    "title": " KIND Community Standards: R",
+    "title": "KIND Community Standards: R",
     "section": "Group considerations",
     "text": "Group considerations\n\nHave a house code style, possibly implemented using styler. Code styling for readability is important, and no-one agrees, so you’ll need to lead. needed."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "KIND resources",
+    "section": "",
+    "text": "This is the main page for the KIND network’s live documents and non-training resources."
+  },
+  {
+    "objectID": "index.html#whats-here",
+    "href": "index.html#whats-here",
+    "title": "KIND resources",
+    "section": "What’s here?",
+    "text": "What’s here?\n\nCommunity standards.\nThese documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.\nHow might you use these suggestions?\n\nas a way of highlighting good practice\nas a helper when starting new projects (or new Excel documents)\nas a lever for bringing about change, particularly trying to convince service leads that poorly-designed Excel spreadsheets are a dangerous menace\nas a guideline for tidying up existing inconsistent/messy files\nas a training tool when bringing new colleagues up to speed\n\nPlease take this, use it however you like, and let us know if there’s anything that you’d find particularly helpful for an updated version to contain. We’ll review and redraft regularly. Please open an issue on the GitHub page if you have specific suggestions, otherwise contact brendan.clarke2@nhs.scot for a more general conversation about these standards.\n\n\nSample SOPs\nThese are a set of sample standard operating procedures for KIND work. These are intended for sharing as a basis or guideline for your own activities. Please get in touch if you have a useful SOP that might be sharable.\n\n\nKIND FAQ\nOur main frequently-asked questions document\n\n\nBook of the week\nData and summaries for our ever-popular book of the week segment\n\n\nCommunity meetup schedule"
   },
   {
     "objectID": "visio.html",
@@ -110,5 +215,103 @@
     "title": " KIND Community Standards: Visio SOP",
     "section": "Appendix",
     "text": "Appendix\n\nOverview\n\nOverview of Visio (Office Support)\n\nMany more suggested articles are available on the Visio website itself; click on the help icon (? Symbol) in the top right of the page, and several articles about using the application will be suggested.\n\n\nProcess Mapping\n\nProcess Mapping (QI Lothian)\nProcess Mapping (Turas Quality Improvement Zone)\nProcess Mapping Symbols (Turas Quality Improvement Zone)\n\nNote there are many more symbols that can be used in process maps, try to ensure whatever you are using comes from an approved source and is a standardised/understandable format.\n\n\nOther resources\n\nQuality improvement tools and resources (QI Lothian)\nNES QI tools (Turas Quality Improvement Zone)"
+  },
+  {
+    "objectID": "kind_botw.html",
+    "href": "kind_botw.html",
+    "title": "KIND Book of the week",
+    "section": "",
+    "text": "Download KIND book of the week data as csv"
+  },
+  {
+    "objectID": "kind_botw.html#andrew-gregory---harveys-heart-the-discovery-of-blood-circulation",
+    "href": "kind_botw.html#andrew-gregory---harveys-heart-the-discovery-of-blood-circulation",
+    "title": "KIND Book of the week",
+    "section": "19/06/2024: Andrew Gregory - Harvey’s Heart: The Discovery of Blood Circulation",
+    "text": "19/06/2024: Andrew Gregory - Harvey’s Heart: The Discovery of Blood Circulation\nAndrew Gregory. 2001. Harvey’s Heart: The Discovery of Blood Circulation. ISBN 9781840462487, Worldcat link. Last week’s recommendation about agnotology sparked an interesting side-conversation: is this a new phenomenon, or something that’s been around for a long time. One of our members, Andrew Saul from PHS, suggested an interesting example concerning the discovery of blood circulation, where some researchers appeared to try and cloud the waters in order to defend their own pet theory. That brings me to a first, which is a BotW recommendation that comes with a competing interest as it was written by a former colleague of mine. This excellent short account of Harvey’s work in the mid-seventeenth century, culminating in the publication of De Motu Cordis in 1628, takes us through the story of blood circulation, with some thoughtful discussions about the reasons why some researchers appear to us now so keen to mislead. De Motu Cordis was also the oldest book that I know of whose publication was managed to co-incide with the Frankfurt book fair, so that’s another interesting first for the week."
+  },
+  {
+    "objectID": "kind_botw.html#naomi-oreskes-and-eric-m.-conway---merchants-of-doubt",
+    "href": "kind_botw.html#naomi-oreskes-and-eric-m.-conway---merchants-of-doubt",
+    "title": "KIND Book of the week",
+    "section": "12/06/2024: Naomi Oreskes and Eric M. Conway - Merchants of Doubt",
+    "text": "12/06/2024: Naomi Oreskes and Eric M. Conway - Merchants of Doubt\nNaomi Oreskes and Eric M. Conway. 2012. Merchants of Doubt. ISBN 9781408824832, Worldcat link. While the word agnotology might be unfamiliar to most people, the practice it describes - deliberately spreading doubt - unfortunately won’t be. This book describes several agnotologies - cases where doubt (about the likely environmental impacts of pollution, say) - and then uses those cases to set up a thoughtful discussion about uncertainty and understanding. For us, who often work with data and evidence which might be at least somewhat open to interpretation, it’s an excellent reminder to think carefully about the interpretations that might be placed on our work. It’s not enough, as these cases clearly show, to try and let the data speak for itself - particularly when (in some cases) there are parties who seek advantage by muffling and confusing that speech."
+  },
+  {
+    "objectID": "kind_botw.html#andrew-brown---in-the-beginning-was-the-worm-finding-the-secrets-of-life-in-a-tiny-hermaphrodite",
+    "href": "kind_botw.html#andrew-brown---in-the-beginning-was-the-worm-finding-the-secrets-of-life-in-a-tiny-hermaphrodite",
+    "title": "KIND Book of the week",
+    "section": "05/06/2024: Andrew Brown - In the beginning was the worm : finding the secrets of life in a tiny hermaphrodite",
+    "text": "05/06/2024: Andrew Brown - In the beginning was the worm : finding the secrets of life in a tiny hermaphrodite\nAndrew Brown. 2004. In the beginning was the worm : finding the secrets of life in a tiny hermaphrodite. ISBN 9780743415989, Worldcat link. It’s now close to twenty years old, and deals with the research uses of a microscopic nematode worm, but this short and interesting book remains one of the most compelling introductions to health research out there. For analysts, the story here is one of wrangling. Not the usual wrangling and tidying data to permit analysis that we’re so used to, but a very similar process of wrangling the properties of an organism (C. elegans) to make it behave. Bonus points for the comments about the Worm Breeder’s Gazette which remains a favourite niche technical publication."
+  },
+  {
+    "objectID": "kind_botw.html#ludwig-fleck-bradley-and-trenn-trans.---genesis-and-development-of-a-scientific-fact",
+    "href": "kind_botw.html#ludwig-fleck-bradley-and-trenn-trans.---genesis-and-development-of-a-scientific-fact",
+    "title": "KIND Book of the week",
+    "section": "29/05/2024: Ludwig Fleck (Bradley and Trenn, trans.) - Genesis and Development of a Scientific Fact",
+    "text": "29/05/2024: Ludwig Fleck (Bradley and Trenn, trans.) - Genesis and Development of a Scientific Fact\nLudwig Fleck (Bradley and Trenn, trans.). 1979 (1935). Genesis and Development of a Scientific Fact. ISBN 9780226253252, Worldcat link. If last week’s book was a paean to the use of scientific facts, this week’s book tells a rather more subtle story about how facts. It starts by telling the story of the ‘discovery’ of the Wassermann reaction, and uses that history as the basis for an investigation of the ways in which people came to a) claim that the Wassermann reaction worked because of scientific facts and b) how those facts changes as the Wassermann reaction became used in practice.\nFrom the KIND-ish stance much of the interest lies in the parts of this book that describe how medical research wasn’t the straightforwardly objective story about discovery that we often want to portray. Fleck’s claim, broadly, is that the Wassermann reaction was invented, rather than discovered, and that invention reflected (in part) the social organisation of researchers and others involved in its discovery. Of particular interest to people like us are a series of claims about how facts change as they travel out from the specialist communities that work on them. We’re all familiar with the changes that happen (and need to happen) as we pass the results of our work out to their eventual users: they often get simplified, or put in context, or whatever."
+  },
+  {
+    "objectID": "kind_botw.html#john-carreyrou---bad-blood-secrets-and-lies-in-a-silicon-valley-startup",
+    "href": "kind_botw.html#john-carreyrou---bad-blood-secrets-and-lies-in-a-silicon-valley-startup",
+    "title": "KIND Book of the week",
+    "section": "22/05/2024: John Carreyrou - Bad Blood: Secrets and Lies in a Silicon Valley Startup",
+    "text": "22/05/2024: John Carreyrou - Bad Blood: Secrets and Lies in a Silicon Valley Startup\nJohn Carreyrou. 2018. Bad Blood: Secrets and Lies in a Silicon Valley Startup. ISBN 9781524731656, Worldcat link. A love-letter to the power of domain knowledge. Theranos was big-business - a tech startup offering near-instant blood testing for nearly anything at the bedside (or clinic, or shop, or…) with remarkable precision. Investors, including the media tycoons, politicians, and other tech leaders, believed this would be tranformative - indeed, highest praise, disruptive. Yet laboratory medicine experts were absolutely convinced that the technology glibly described here as “near market” was an illusion. Want to guess who was right?"
+  },
+  {
+    "objectID": "kind_botw.html#kathryn-schulz---being-wrong-adventures-in-the-margin-of-error",
+    "href": "kind_botw.html#kathryn-schulz---being-wrong-adventures-in-the-margin-of-error",
+    "title": "KIND Book of the week",
+    "section": "15/05/2024: Kathryn Schulz - Being Wrong: Adventures in the Margin of Error",
+    "text": "15/05/2024: Kathryn Schulz - Being Wrong: Adventures in the Margin of Error\nKathryn Schulz. 2010. Being Wrong: Adventures in the Margin of Error. ISBN 9781846270741, Worldcat link. If I was posh enough to have a Latin motto, it would probably be “Fallor ergo sum” - I err, therefore I am. This phrase, which I’d like to pretend I read directly from the works of St Augustine, was instead stolen from Schulz’s book. This starts with a really simple question: why are we so bad - intellectually, socially, legally - at dealing with error, but then follows the threads of an answer to several unexpected destinations including criminal justice, health, and optical illusions."
+  },
+  {
+    "objectID": "kind_botw.html#stephen-jay-gould---the-mismeasure-of-man-2nd-ed",
+    "href": "kind_botw.html#stephen-jay-gould---the-mismeasure-of-man-2nd-ed",
+    "title": "KIND Book of the week",
+    "section": "08/05/2024: Stephen Jay Gould - The Mismeasure of Man (2nd ed)",
+    "text": "08/05/2024: Stephen Jay Gould - The Mismeasure of Man (2nd ed)\nStephen Jay Gould. 1996. The Mismeasure of Man (2nd ed). ISBN 9780140258240, Worldcat link. After the discussion last week about the trouble that a default-male view of health might have caused, the title of this week’s book of the week might seem poorly chosen. Rest assured that the title of Gould’s The Mismeasure of Man is a pun: both on the idea that man is the measure of all things [https://plato.stanford.edu/entries/protagoras/], and on precisely the kind of not-thinking that we discussed last time.\nThis is a book about the history of measuring intelligence, and why we might worry about collapsing all possible measures of intelligence to a single number, like IQ. That story is told through a diverting series of detailed historical reconstructions about methods used to measure intelligence and related human features. Lots of this is about measuring skulls, and if you’re into that sort of history of science, seeing the kinds of dispute that switching between lead shot and mustard seed as measures of brain volume might cause is worth the investment - not least because it has surprisingly contemporary connections to the anthropometrical work that still powers much of modern ergonomics, human factors, etc. https://ia800907.us.archive.org/4/items/TheMeasureOfManDreyfuss/The%20Measure%20of%20Man%20%28Dreyfuss%29_text.pdf\nBut the real value for most of us who do KIND-ish work isn’t this rich historical detail, fun though it is. It is instead about the abstractions about complicated human activities that lie close to the surface of our work. Every time we report a figure that collapses a complex activity into a single value we should be careful - particularly when that abstraction might well be influenced by our existing beliefs and practices. might shape that collapse."
+  },
+  {
+    "objectID": "kind_botw.html#caroline-criado-perez---invisible-women-exposing-data-bias-in-a-world-designed-for-men",
+    "href": "kind_botw.html#caroline-criado-perez---invisible-women-exposing-data-bias-in-a-world-designed-for-men",
+    "title": "KIND Book of the week",
+    "section": "01/05/2024: Caroline Criado Perez - Invisible Women: Exposing Data Bias in a World Designed for Men",
+    "text": "01/05/2024: Caroline Criado Perez - Invisible Women: Exposing Data Bias in a World Designed for Men\nCaroline Criado Perez. 2019. Invisible Women: Exposing Data Bias in a World Designed for Men. ISBN 9781784706289, Worldcat link. Anyone who works with data knows that our data is often incomplete. Most of those gaps are mainly accidental - we just happen to have not collected some random bit of data. But that’s doesn’t explain every gap in the data. This book explores the gender data gap - which is where we often seem to lack the data that we need to understand how different e.g. health outcomes affect women. The author argues comes about by a kind of selective blindness, as a kind of collective failure to think about gender. That means that the gender data gap isn’t really a conscious omission - we didn’t all set out to ignore women, but something a bit more subtle about what we collectively assume is worth measuring, and what the sensible defaults might be for that. Nice quick examples abound - really great one about office temperates which I’m sure will chime with all of us, but great to see it explained as a consequence of assumptions about what a typical office worker would be (a mythical 70kg 40 year old man from some point in the 1960s, basically). So it’s a great introduction to understanding the view that much data work is male-unless-something, and how that functions as both a cause, and as a consequence of the gender data gap."
+  },
+  {
+    "objectID": "kind_botw.html#tom-lean---electronic-dreams-how-1980s-britain-learned-to-love-the-computer",
+    "href": "kind_botw.html#tom-lean---electronic-dreams-how-1980s-britain-learned-to-love-the-computer",
+    "title": "KIND Book of the week",
+    "section": "24/04/2024: Tom Lean - Electronic Dreams: How 1980s Britain Learned to Love the Computer",
+    "text": "24/04/2024: Tom Lean - Electronic Dreams: How 1980s Britain Learned to Love the Computer\nTom Lean. 2016. Electronic Dreams: How 1980s Britain Learned to Love the Computer. ISBN 9781472918338, Worldcat link. We’re looking at regular expressions in the community meetup today. Regex, as the wikipedia page suggests, have been around for ages - positively archaeological in computing terms. So for the book of the week this week, I wanted to show off one of the most interesting bits of social history I’ve read: Tom Lean’s Electronic Dreams. Lots of the history of computing is either primarily about the technical details, or is a broadly nostalgic look at obsolete tech. This book doesn’t do either of those, instead spending its time giving a concise account of how personal computing worked as a social phenomenon. For example, how did people start getting paid to write computer games? What happened when the BBC got involved in personal computing? What happened to the various promises of digital revolutions as a replacement for manufacturing industries."
+  },
+  {
+    "objectID": "kind_botw.html#katrine-marçal---who-cooked-adam-smiths-dinner",
+    "href": "kind_botw.html#katrine-marçal---who-cooked-adam-smiths-dinner",
+    "title": "KIND Book of the week",
+    "section": "27/03/2024: Katrine Marçal - Who Cooked Adam Smith’s Dinner",
+    "text": "27/03/2024: Katrine Marçal - Who Cooked Adam Smith’s Dinner\nKatrine Marçal. 2016. Who Cooked Adam Smith’s Dinner. ISBN 9781846275661, Worldcat link. NA"
+  },
+  {
+    "objectID": "kind_botw.html#david-oldroyd---the-arch-of-knowledge",
+    "href": "kind_botw.html#david-oldroyd---the-arch-of-knowledge",
+    "title": "KIND Book of the week",
+    "section": "20/03/2024: David Oldroyd - The Arch of Knowledge",
+    "text": "20/03/2024: David Oldroyd - The Arch of Knowledge\nDavid Oldroyd. 1986. The Arch of Knowledge. ISBN 9780416013313, Worldcat link. NA"
+  },
+  {
+    "objectID": "kind_botw.html#kevin-mitnick---ghost-in-the-wires",
+    "href": "kind_botw.html#kevin-mitnick---ghost-in-the-wires",
+    "title": "KIND Book of the week",
+    "section": "13/03/2024: Kevin Mitnick - Ghost in the Wires",
+    "text": "13/03/2024: Kevin Mitnick - Ghost in the Wires\nKevin Mitnick. 2011. Ghost in the Wires. ISBN 9780316037723, Worldcat link. Here’s a book of the week suggestion following on from the codes theme from last time. It’s the autobiography of Kevin Mitnick (2011 Ghost in the Wires) who was (briefly) the most wanted hacker in the world. Looking at the blurb of this ghosted book, you’d expect it be bepretty predictable - smarter than everyone else, playing pranks, evading capture until…  That story is definitely there (there’s plenty of broad-but-exciting plot here), but for KIND purposes there’s something much more interesting, which is an insight into the kind of analytical thinking that lies at the heart of finding things out about complex systems. Kevin’s thoughts on that are highly transferable to the kinds of questions that we’re thinking about today - how to take a system apart, make sense of the bits, then recombine them into a more useful new system. Also, there are codes - really hard codes for emphasis - for the reader to break. That’s a lovely bonus - especially if you looked into Simon Singh’s The Code Book from last time."
+  },
+  {
+    "objectID": "kind_botw.html#simon-singh---the-code-book",
+    "href": "kind_botw.html#simon-singh---the-code-book",
+    "title": "KIND Book of the week",
+    "section": "06/03/2024: Simon Singh - The Code Book",
+    "text": "06/03/2024: Simon Singh - The Code Book\nSimon Singh. 1999. The Code Book. ISBN 9781857028898, Worldcat link. The Code Book: The Secret History of Codes and Code-Breaking a book by . (bookshop.org) (to buy online but support a local bookshop of your choice, for those not keen on more money to our Amazon Overlords…)"
   }
 ]
