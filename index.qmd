@@ -1,8 +1,15 @@
 ---
-title: "![](src/images/KLN_banner_v05_125.png) KIND Community Standards: Excel"
+title: "KIND resources"
 ---
 
-This is the main page for the KIND network's set of community standards.
+This is the main page for the KIND network's live documents and non-training resources. 
+
++ if you're looking for our core training courses, please see our TURAS pages
++ if you're looking for details of our one-off training sessions, please see the training mini-site
+
+## What's here?
+
+### Community standards.
 
 These documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.
  
@@ -15,3 +22,17 @@ How might you use these suggestions?
 + as a training tool when bringing new colleagues up to speed
 
 Please take this, use it however you like, and let us know if there's anything that you'd find particularly helpful for an updated version to contain. We'll review and redraft regularly. Please [open an issue on the GitHub page](https://github.com/NES-DEW/KIND-community-standards/issues) if you have specific suggestions, otherwise contact brendan.clarke2@nhs.scot for a more general conversation about these standards.
+
+### Sample SOPs
+
+These are a set of sample standard operating procedures for KIND work. These are intended for sharing as a basis or guideline for your own activities. Please get in touch if you have a useful SOP that might be sharable.
+
+### KIND FAQ
+
+Our main frequently-asked questions document
+
+### Book of the week
+
+Data and summaries for our ever-popular book of the week segment
+
+### Community meetup schedule

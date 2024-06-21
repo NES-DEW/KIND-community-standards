@@ -1,0 +1,25 @@
+---
+title: "KIND community meetup schedule"
+---
+
++ [Download community meetup data as csv](data/KIND_community_meetups.csv)
++ [Download community meetup ideas as csv](data/KIND_community_meetups_new.csv)
+
+## Current community meetup schedule
+```{r}
+options(knitr.kable.NA = '')
+
+readr::read_csv("data/KIND_community_meetups.csv") |>
+  dplyr::mutate(Date = lubridate::dmy(Date)) |>
+  dplyr::filter(Date > lubridate::today() & !is.na(Date)) |>
+  knitr::kable(caption = "Current community meetup schedule")
+```
+
+## Future community meetup ideas
+```{r}
+options(knitr.kable.NA = '')
+readr::read_csv("data/KIND_community_meetups_new.csv") |>
+  dplyr::select(!Date) |>
+  knitr::kable(caption = "Future community meetup ideas")
+```
+

@@ -1,0 +1,16 @@
+---
+title: "KIND Book of the week"
+---
+
++ [Download KIND book of the week data as csv](data/KIND_book_of_the_week.csv)
+
+```{r}
+botw <- readr::read_csv("data/KIND_book_of_the_week.csv") |>
+  dplyr::filter(!is.na(Year)) |>
+  dplyr::arrange(desc(lubridate::dmy(Date)))
+
+source("R/bullet_list.R")
+
+glue::glue("## {botw$Date}: {botw$Author} - {botw$Title}  \n {botw$Author}. {botw$Year}. *{botw$Title}*. ISBN {botw$ISBN}, <a href='{botw$Worldcat}'>Worldcat link</a>.</br> {botw$Description}  \n  \n")
+```
+

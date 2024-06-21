@@ -5,7 +5,7 @@ author:
     name: Kevin Power
     email: kevin.power3@phs.scot
     affiliations: Public Health Scotland
-date: "2024-06-12"
+date: last-modified
 date-format: DD/MM/YYYY
 ---
 

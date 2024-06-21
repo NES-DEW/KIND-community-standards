@@ -1,0 +1,81 @@
+﻿Date,Topic,subtopic,Suggestor
+31/01/2023,Power BI,intro,John Beattie
+07/02/2023,RAP,,
+14/02/2023,R,intro,
+21/02/2023,PRISMA2020 and friends,,
+28/02/2023,Power BI,Data sources,Matthew McIlorum
+07/03/2023,Digital strategy,,
+14/03/2023,No session,No session,No session
+21/03/2023,R,Show and tell,
+28/03/2023,M365,Power platform show and tell,
+04/04/2023,Power BI,Show and tell,
+11/04/2023,Goldacre review,,
+18/04/2023,R,"testing - testthat, checkmate, unit tests",John Mackintosh
+25/04/2023,AI,chatGPT and ML search,
+02/05/2023,Power BI,,
+09/05/2023,Explaining complex stats to users,,
+16/05/2023,Schedule / planning,,
+23/05/2023,Ethics,Data ethics intro,
+30/05/2023,M365,SharePoint,Maria
+06/06/2023,APIs for beginners,,
+13/06/2023,R,Shiny show and tell,
+20/06/2023,Power BI,Data flows in Power BI,Graeme
+27/06/2023,R,R vs Python vs Julia,
+04/07/2023,No session,,
+11/07/2023,No session,,
+18/07/2023,AI,Intro to AI session,
+25/07/2023,Ethics,Research vs care ethics,
+01/08/2023,R,"R package roundup (gt, renv, healthcareai, targets)",
+08/08/2023,Power BI,First look at Fabric,
+15/08/2023,Stats,Intro to predictive models,
+22/08/2023,R,NHSS R Roadmap,
+29/08/2023,Maps and geography show-and-tell,,
+05/09/2023,Planning,,
+12/09/2023,No session,,
+19/09/2023,DataLab data visualisation competition (https://thedatalab.com/community-events/data-visualisation-competition/),,
+26/09/2023,Power BI,"Correlations, linear models, and other proper stats in Power BI",
+03/10/2023,R,"Modelling in R using infer, ?zelig, and easystats",
+10/10/2023,What tool for what resource / what platform should I be on?,,
+17/10/2023,Central library and digital champions,,Hilary Lowe
+24/10/2023,"Many analysts, one data set - https://doi.org/10.1177/2515245917747646",,
+31/10/2023,An intro to CSS / Java for non-web-devs,,
+07/11/2023,Free text wranglers of the world unite,,
+14/11/2023,GitHub intro / version control for beginners,,
+21/11/2023,Test driven development,,
+28/11/2023,R,R Package navigator / recommender and https://cran.r-project.org/web/views/,
+05/12/2023,How to lead a (training) session,,
+12/12/2023,"Rosetta Stone - same tasks in Excel, R, and Power BI",,
+31/01/2024,NLP at Dataloch,,
+07/02/2024,2024 community meetup planning,,
+14/02/2024,Excel,Excel for beginners,
+21/02/2024,Excel,"Excel for programmers - formulas, lambdas, VBA, Python",
+28/02/2024,Excel,Excel-and-tell inc QI,Ross Davies for QI
+06/03/2024,Excel,"Excel and Forms, Power Automate, Power Query, Power Query and Sharepoint lists",
+13/03/2024,Excel,Creativitity and story-telling with data using Excel,
+20/03/2024,Power BI,Creativitity and story-telling with data using Power BI,
+27/03/2024,R,Creativitity and story-telling with data using R,
+03/04/2024,No session,,
+10/04/2024,No session,,
+17/04/2024,Mentoring,,Natalie Polack
+24/04/2024,Regex,,Andrew Saul
+01/05/2024,Ethics,"Data ethics cases (sampling, algorithmic injustice, Criado-Perez, fairness, data sources)",
+08/05/2024,R,Tidy Tuesday and other keeping-up-to-date resources,
+15/05/2024,Community troubleshooting - bring our your troublesome issues,,
+22/05/2024,Careers,The Digital Leadership Programme (DLP) ,Emma Scatterty 
+29/05/2024,Statistics,Statistical simulation,Jonathan Minton
+05/06/2024,Power BI ,DAX top tips and best practice ,
+12/06/2024,,Digital inclusion and ‘I Feel Part Of Society’ ,Nigel Gallear 
+19/06/2024,R ,"Parameterised Rmarkdown (and Quarto, if we can) ",Chris Weatherburn 
+26/06/2024,Power BI ,CALCULATE() = Power BI's heart of darkness ,
+03/07/2024,,,
+10/07/2024,,,
+17/07/2024,R,"Tidytext, sentiment analysis ",
+24/07/2024,No session,No session,No session
+31/07/2024,,,
+07/08/2024,R ,"Echarts4r, making PowerPoint in RMD, snakecase",
+14/08/2024,,,
+21/08/2024,,,
+28/08/2024,Short series on joins ,,
+04/09/2024,Short series on joins ,,
+11/09/2024,Short series on joins ,,
+18/09/2024,Short series on joins ,,

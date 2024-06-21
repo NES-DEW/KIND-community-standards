@@ -1,0 +1,82 @@
+---
+title: "KIND FAQ"
+---
+
+## What is the KIND learning network?
+The KIND learning network is an inclusive and supportive community of practice for staff across the knowledge, information, and data workforce. It exists to further the leading role of the community in the digital transformation of health and care by supporting learning, sharing of best practice, and developing interdisciplinary collaborations.
+
+## What does KIND stand for?
+KIND = **K**nowledge, **I**nformation, and **D**ata.
+
+These topics roughly correspond to three main professional groups:
+
++ those working with data and/or information
++ those working in knowledge management, research & development, and libraries
++ those working in records
+
+But we also have many members whose are interested in KIND work, but who don't fall neatly into one of these professional groups. We're inclusive, and are delighted to welcome staff from any professional group or working at any career stage.
+
+## Who is the KIND network for?
+The KIND network is open to everyone, but is particularly aimed at staff from Scotland’s health, social care, and housing workforce who are interested in developing their knowledge, information, and data skills.
+
+# What does the KIND network do?
+
+The KIND network does three main things:
+
+1. We provide a range of training courses aimed at developing specialist professional skills. For example, we run [Excel](https://learn.nes.nhs.scot/71690), [Power BI](https://learn.nes.nhs.scot/70921), and [R training](https://learn.nes.nhs.scot/62249) courses at a range of levels. All our courses are free to access. You can find our main [multi-session courses on TURAS](https://learn.nes.nhs.scot/36783), and our wide range of one-off training sessions [via the training mini-site](https://nes-dew.github.io/KIND-training/).
+2. We provide a social learning space in the Teams channel, with a range of events aimed at different aspects of this area of work. For example, we run a weekly topic-based community meetup session, reading groups, social sessions, and a mentoring scheme.
+3. We work with key national stakeholders to support and champion these training and learning activities. For example, we are currently developing resources to support analysts transitioning to R.
+
+All these activities are responsive to your needs. If you feel there’s an important area of relevant work where we are not contributing, please get in touch.
+
+## Who runs/owns/funds the KIND network?
+
+The KIND Learning Network is based at NHS Education for Scotland, as part of the Digitally Enabled Workforce programme. That’s a programme that builds foundational resources to support digital skills and leadership at all levels. You might have heard about our Professional Development Award in Technology Enabled Care programme, used the M365 Skills Hub, or been involved with the Digital Leadership Programme. This work is all funded through Scottish Government via the Digital Health and Care Portfolio Board.
+
+## Why does the KIND network exist?
+
+This network exists to support people who work with knowledge, information, and data as they work to transform health and social care. There’s a large (and growing) workforce responsible for this work in Scotland. However, this workforce is really diverse. It’s not like e.g. nursing or other NMHAP professions where there are fixed entry and promotion criteria. Professional development is more complicated and messy than that. A good example is the lack of standardised job titles for KIND workers. We currently have something like 350 different job titles in the Teams channel. That splitting up of job families contributes to KIND workers being less visible than I think they should be. Kathleen Grey and colleagues called them “[ghosts in the machine](https://pubmed.ncbi.nlm.nih.gov/30741187/)”
+
+## Where does KIND work happen?
+
+KIND work happens in many places across health and social care in Scotland. For example, you might find KIND workers in NHS Boards (national or territorial), other governmental health bodies, Local Authorities, social care care organisations, higher education, in the private sector, professional associations, or in health and social care partnerships
+
+## How do I contribute?
++ please feel free to introduce yourself, ask questions, or post events/jobs/news of interest on the Teams channel
++ please feel welcome to attend and contribute to the community events. We’re generally extremely informal, and it’s always great to hear about your work. We don’t expect polished presentations or anything fancy
++ please spread the word - especially about our training courses
+
+## What are the main activities in the KIND network?
+
+We have a lot of activities going on. The best way to keep in touch with everything is to either:
+
++ [Join our Teams channel](https://teams.microsoft.com/l/team/19%3AQZ7-PbFVcziG2piHLt1_ifey3I2cwFL0yBuTSS8vVao1%40thread.tacv2/conversations?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a)
++ or [subscribe to our mailing list](https://forms.office.com/pages/responsepage.aspx?id=veDvEDCgykuAnLXmdF5JmpopIZB9ynRJnrPUHVFccipURjM2NkZJUkhGOFlQRjQxRFhVUTgwT0UwVyQlQCN0PWcu) for a weekly digest
+
+Otherwise, our main activities are:
++ core multi-session training courses:
+    + [Excel Skills](https://learn.nes.nhs.scot/71690)
+    + [Power BI for Beginners](https://learn.nes.nhs.scot/70921)
+    + [R and Rmarkdown intro](https://learn.nes.nhs.scot/62249) / [R intermediate](https://learn.nes.nhs.scot/64644) / [Shiny](https://learn.nes.nhs.scot/67960)
+    + [Evidence-based medicine and critical appraisal](https://learn.nes.nhs.scot/75780)
++ 60+ one-off training sessions, available via the [training mini-site](https://nes-dew.github.io/KIND-training/)
++ [mentoring scheme](https://teams.microsoft.com/l/channel/19%3A0708d3664e064dd3a0dbbe3079817283%40thread.tacv2/Mentoring?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a)
++ weekly [community meetups](https://teams.microsoft.com/l/entity/0d820ecd-def2-4297-adad-78056cde7c78/_djb2_msteams_prefix_3892451309?context=%7B%22channelId%22%3A%2219%3Ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2%22%7D&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a) including the ever-popular [book of the week segment](kind_botw.qmd)
+
+
+## Is X going to be recorded?
+
+**No, we do not record our sessions, and we ask that you do not record them either**
+
+The reasons for that are as follows:
+
++ most important, we want to run safe and inclusive events. Social learning involves making lots of mistakes. Those mistakes are a vital part of learning, and we need our events to allow people to learn without the fear of looking foolish for posterity
++ most of our events are social. In the little bit of A/B testing I did early in the life of the network, recording events decreased the number of social interactions - like questions or chat comments - in meetings
++ our training is problem-based, and built for attendees to learn by doing. That doesn't translate well at all to video
++ the actual view counts for recorded events are tiny, meaning that the benefits of recordings look low from here
+
+Specifically, we require that attendees at our meeting **do not use** AI/LLM-based recording- or note-taking bots or apps. Please respect other learners and their needs. We make written materials available for our sessions, and please get in touch if you have other requirements. 
+
+## Help! I have an unmet query…
+For anything, please contact Brendan Clarke (brendan.clarke2@nhs.scot).
+  
