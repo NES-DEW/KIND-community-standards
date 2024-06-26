@@ -1,5 +1,8 @@
 project:
   type: website
+  render:
+    - "*.qmd"
+    - "!archive/"
 
 website:
   title: "KIND resources"
@@ -33,7 +36,6 @@ website:
         - text: Report a Bug
           href: https://github.com/NES-DEW/KIND-community-standards/issues
 
-
 format:
   html:
     theme: 
@@ -57,4 +59,4 @@ execute:
   warning: false
   messages: false
   freeze: auto
-output: asis
+  output: asis

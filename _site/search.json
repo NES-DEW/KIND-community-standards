@@ -56,6 +56,27 @@
     "text": "Appendix\n\nOverview\n\nOverview of Visio (Office Support)\n\nMany more suggested articles are available on the Visio website itself; click on the help icon (? Symbol) in the top right of the page, and several articles about using the application will be suggested.\n\n\nProcess Mapping\n\nProcess Mapping (QI Lothian)\nProcess Mapping (Turas Quality Improvement Zone)\nProcess Mapping Symbols (Turas Quality Improvement Zone)\n\nNote there are many more symbols that can be used in process maps, try to ensure whatever you are using comes from an approved source and is a standardised/understandable format.\n\n\nOther resources\n\nQuality improvement tools and resources (QI Lothian)\nNES QI tools (Turas Quality Improvement Zone)"
   },
   {
+    "objectID": "kind_cms.html",
+    "href": "kind_cms.html",
+    "title": "KIND community meetup schedule",
+    "section": "",
+    "text": "Download community meetup data as csv\nDownload community meetup ideas as csv"
+  },
+  {
+    "objectID": "kind_cms.html#current-community-meetup-schedule",
+    "href": "kind_cms.html#current-community-meetup-schedule",
+    "title": "KIND community meetup schedule",
+    "section": "Current community meetup schedule",
+    "text": "Current community meetup schedule\n\nCurrent community meetup schedule\n\n\n\n\n\n\n\n\nDate\nTopic\nsubtopic\nSuggestor\n\n\n\n\n2024-06-26\nPower BI \nCALCULATE() = Power BI’s heart of darkness \n\n\n\n2024-07-03\n\n\n\n\n\n2024-07-10\n\n\n\n\n\n2024-07-17\nR\nTidytext, sentiment analysis \n\n\n\n2024-07-24\nNo session\nNo session\nNo session\n\n\n2024-07-31\n\n\n\n\n\n2024-08-07\nR \nEcharts4r, making PowerPoint in RMD, snakecase\n\n\n\n2024-08-14\n\n\n\n\n\n2024-08-21\n\n\n\n\n\n2024-08-28\nShort series on joins \n\n\n\n\n2024-09-04\nShort series on joins \n\n\n\n\n2024-09-11\nShort series on joins \n\n\n\n\n2024-09-18\nShort series on joins"
+  },
+  {
+    "objectID": "kind_cms.html#future-community-meetup-ideas",
+    "href": "kind_cms.html#future-community-meetup-ideas",
+    "title": "KIND community meetup schedule",
+    "section": "Future community meetup ideas",
+    "text": "Future community meetup ideas\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nRAP\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\n\nR DPIA\n\n\n\n\nDAGs\n\n\n\n\nWriting for different audiences\n\n\n\n\npredictive modelling\n\n\n\n\nBayesian stats\n\n\n\n\ncorrelations, linear models in Power BI\n\n\n\n\nCSS / Java – front end ?NES digital\n\n\n\n\nProper markdown + pandoc + yaml\n\n\n\n\nSimon Rogers at NSS - wrote a book on machine learning, might have some good material: https://www.gla.ac.uk/events/listings/index.html/event/12598 (also a lecturer at Glasgow)\n\n\n\n\nSafe havens / disclosure control / safe researcher training\n\n\n\n\nDisclosure and pseudoanonymised data\n\n\n\nR \nData.table / tidyverse / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "KIND resources",
@@ -175,95 +196,102 @@
     "text": "Download KIND book of the week data as csv"
   },
   {
-    "objectID": "kind_botw.html#andrew-gregory---harveys-heart-the-discovery-of-blood-circulation",
-    "href": "kind_botw.html#andrew-gregory---harveys-heart-the-discovery-of-blood-circulation",
+    "objectID": "kind_botw.html#dark-remedy-the-impact-of-thalidomide-and-its-revival-as-a-vital-medicine",
+    "href": "kind_botw.html#dark-remedy-the-impact-of-thalidomide-and-its-revival-as-a-vital-medicine",
     "title": "KIND Book of the week",
-    "section": "19/06/2024: Andrew Gregory - Harvey’s Heart: The Discovery of Blood Circulation",
-    "text": "19/06/2024: Andrew Gregory - Harvey’s Heart: The Discovery of Blood Circulation\nAndrew Gregory. 2001. Harvey’s Heart: The Discovery of Blood Circulation. ISBN 9781840462487, Worldcat link. Last week’s recommendation about agnotology sparked an interesting side-conversation: is this a new phenomenon, or something that’s been around for a long time. One of our members, Andrew Saul from PHS, suggested an interesting example concerning the discovery of blood circulation, where some researchers appeared to try and cloud the waters in order to defend their own pet theory. That brings me to a first, which is a BotW recommendation that comes with a competing interest as it was written by a former colleague of mine. This excellent short account of Harvey’s work in the mid-seventeenth century, culminating in the publication of De Motu Cordis in 1628, takes us through the story of blood circulation, with some thoughtful discussions about the reasons why some researchers appear to us now so keen to mislead. De Motu Cordis was also the oldest book that I know of whose publication was managed to co-incide with the Frankfurt book fair, so that’s another interesting first for the week."
+    "section": "26/06/2024: Dark remedy: the impact of thalidomide and its revival as a vital medicine”",
+    "text": "26/06/2024: Dark remedy: the impact of thalidomide and its revival as a vital medicine”\nTrent D. Stephens and Rock Brynner. 2001. Dark remedy: the impact of thalidomide and its revival as a vital medicine”. ISBN 9780738205908, Worldcat link.\n We’re still on a mini-exploration of manufactured doubt in medicine. This week’s book of the week is about thalidomide. Initially sold as an entirely safe sedative, suitable for use in pregnancy, the drug turned out to cause serious harms in utero. A spectacular increase in a previously-rare limb abnormality called phocomelia, even though a cause of widespread alarm amongst paediatricians, did not prevent the continued marketing of the drug. This book, which takes a long and cold look at this ‘disaster’, with particular attention to the greatly-enhanced safety research that became required for new medicines as a consequence. This change was in large part due to one of the great heroes of obstinancy, Frances O. Kelsey, and her tenacious work in demanding higher standards for FDA drug approvals. Also highly recommended is the short review of this book in Nature from a lost era when high-quality book reviews were still a priority for academic publishers."
   },
   {
-    "objectID": "kind_botw.html#naomi-oreskes-and-eric-m.-conway---merchants-of-doubt",
-    "href": "kind_botw.html#naomi-oreskes-and-eric-m.-conway---merchants-of-doubt",
+    "objectID": "kind_botw.html#harveys-heart-the-discovery-of-blood-circulation",
+    "href": "kind_botw.html#harveys-heart-the-discovery-of-blood-circulation",
     "title": "KIND Book of the week",
-    "section": "12/06/2024: Naomi Oreskes and Eric M. Conway - Merchants of Doubt",
-    "text": "12/06/2024: Naomi Oreskes and Eric M. Conway - Merchants of Doubt\nNaomi Oreskes and Eric M. Conway. 2012. Merchants of Doubt. ISBN 9781408824832, Worldcat link. While the word agnotology might be unfamiliar to most people, the practice it describes - deliberately spreading doubt - unfortunately won’t be. This book describes several agnotologies - cases where doubt (about the likely environmental impacts of pollution, say) - and then uses those cases to set up a thoughtful discussion about uncertainty and understanding. For us, who often work with data and evidence which might be at least somewhat open to interpretation, it’s an excellent reminder to think carefully about the interpretations that might be placed on our work. It’s not enough, as these cases clearly show, to try and let the data speak for itself - particularly when (in some cases) there are parties who seek advantage by muffling and confusing that speech."
+    "section": "19/06/2024: Harvey’s Heart: The Discovery of Blood Circulation",
+    "text": "19/06/2024: Harvey’s Heart: The Discovery of Blood Circulation\nAndrew Gregory. 2001. Harvey’s Heart: The Discovery of Blood Circulation. ISBN 9781840462487, Worldcat link.\n Last week’s recommendation about agnotology sparked an interesting side-conversation: is this a new phenomenon, or something that’s been around for a long time. One of our members, Andrew Saul from PHS, suggested an interesting example concerning the discovery of blood circulation, where some researchers appeared to try and cloud the waters in order to defend their own pet theory. That brings me to a first, which is a BotW recommendation that comes with a competing interest as it was written by a former colleague of mine. This excellent short account of Harvey’s work in the mid-seventeenth century, culminating in the publication of De Motu Cordis in 1628, takes us through the story of blood circulation, with some thoughtful discussions about the reasons why some researchers appear to us now so keen to mislead. De Motu Cordis was also the oldest book that I know of whose publication was managed to co-incide with the Frankfurt book fair, so that’s another interesting first for the week."
   },
   {
-    "objectID": "kind_botw.html#andrew-brown---in-the-beginning-was-the-worm-finding-the-secrets-of-life-in-a-tiny-hermaphrodite",
-    "href": "kind_botw.html#andrew-brown---in-the-beginning-was-the-worm-finding-the-secrets-of-life-in-a-tiny-hermaphrodite",
+    "objectID": "kind_botw.html#merchants-of-doubt",
+    "href": "kind_botw.html#merchants-of-doubt",
     "title": "KIND Book of the week",
-    "section": "05/06/2024: Andrew Brown - In the beginning was the worm : finding the secrets of life in a tiny hermaphrodite",
-    "text": "05/06/2024: Andrew Brown - In the beginning was the worm : finding the secrets of life in a tiny hermaphrodite\nAndrew Brown. 2004. In the beginning was the worm : finding the secrets of life in a tiny hermaphrodite. ISBN 9780743415989, Worldcat link. It’s now close to twenty years old, and deals with the research uses of a microscopic nematode worm, but this short and interesting book remains one of the most compelling introductions to health research out there. For analysts, the story here is one of wrangling. Not the usual wrangling and tidying data to permit analysis that we’re so used to, but a very similar process of wrangling the properties of an organism (C. elegans) to make it behave. Bonus points for the comments about the Worm Breeder’s Gazette which remains a favourite niche technical publication."
+    "section": "12/06/2024: Merchants of Doubt",
+    "text": "12/06/2024: Merchants of Doubt\nNaomi Oreskes and Eric M. Conway. 2012. Merchants of Doubt. ISBN 9781408824832, Worldcat link.\n While the word agnotology might be unfamiliar to most people, the practice it describes - deliberately spreading doubt - unfortunately won’t be. This book describes several agnotologies - cases where doubt (about the likely environmental impacts of pollution, say) - and then uses those cases to set up a thoughtful discussion about uncertainty and understanding. For us, who often work with data and evidence which might be at least somewhat open to interpretation, it’s an excellent reminder to think carefully about the interpretations that might be placed on our work. It’s not enough, as these cases clearly show, to try and let the data speak for itself - particularly when (in some cases) there are parties who seek advantage by muffling and confusing that speech."
   },
   {
-    "objectID": "kind_botw.html#ludwig-fleck-bradley-and-trenn-trans.---genesis-and-development-of-a-scientific-fact",
-    "href": "kind_botw.html#ludwig-fleck-bradley-and-trenn-trans.---genesis-and-development-of-a-scientific-fact",
+    "objectID": "kind_botw.html#in-the-beginning-was-the-worm-finding-the-secrets-of-life-in-a-tiny-hermaphrodite",
+    "href": "kind_botw.html#in-the-beginning-was-the-worm-finding-the-secrets-of-life-in-a-tiny-hermaphrodite",
     "title": "KIND Book of the week",
-    "section": "29/05/2024: Ludwig Fleck (Bradley and Trenn, trans.) - Genesis and Development of a Scientific Fact",
-    "text": "29/05/2024: Ludwig Fleck (Bradley and Trenn, trans.) - Genesis and Development of a Scientific Fact\nLudwig Fleck (Bradley and Trenn, trans.). 1979 (1935). Genesis and Development of a Scientific Fact. ISBN 9780226253252, Worldcat link. If last week’s book was a paean to the use of scientific facts, this week’s book tells a rather more subtle story about how facts. It starts by telling the story of the ‘discovery’ of the Wassermann reaction, and uses that history as the basis for an investigation of the ways in which people came to a) claim that the Wassermann reaction worked because of scientific facts and b) how those facts changes as the Wassermann reaction became used in practice.\nFrom the KIND-ish stance much of the interest lies in the parts of this book that describe how medical research wasn’t the straightforwardly objective story about discovery that we often want to portray. Fleck’s claim, broadly, is that the Wassermann reaction was invented, rather than discovered, and that invention reflected (in part) the social organisation of researchers and others involved in its discovery. Of particular interest to people like us are a series of claims about how facts change as they travel out from the specialist communities that work on them. We’re all familiar with the changes that happen (and need to happen) as we pass the results of our work out to their eventual users: they often get simplified, or put in context, or whatever."
+    "section": "05/06/2024: In the beginning was the worm : finding the secrets of life in a tiny hermaphrodite",
+    "text": "05/06/2024: In the beginning was the worm : finding the secrets of life in a tiny hermaphrodite\nAndrew Brown. 2004. In the beginning was the worm : finding the secrets of life in a tiny hermaphrodite. ISBN 9780743415989, Worldcat link.\n It’s now close to twenty years old, and deals with the research uses of a microscopic nematode worm, but this short and interesting book remains one of the most compelling introductions to health research out there. For analysts, the story here is one of wrangling. Not the usual wrangling and tidying data to permit analysis that we’re so used to, but a very similar process of wrangling the properties of an organism (C. elegans) to make it behave. Bonus points for the comments about the Worm Breeder’s Gazette which remains a favourite niche technical publication."
   },
   {
-    "objectID": "kind_botw.html#john-carreyrou---bad-blood-secrets-and-lies-in-a-silicon-valley-startup",
-    "href": "kind_botw.html#john-carreyrou---bad-blood-secrets-and-lies-in-a-silicon-valley-startup",
+    "objectID": "kind_botw.html#genesis-and-development-of-a-scientific-fact",
+    "href": "kind_botw.html#genesis-and-development-of-a-scientific-fact",
     "title": "KIND Book of the week",
-    "section": "22/05/2024: John Carreyrou - Bad Blood: Secrets and Lies in a Silicon Valley Startup",
-    "text": "22/05/2024: John Carreyrou - Bad Blood: Secrets and Lies in a Silicon Valley Startup\nJohn Carreyrou. 2018. Bad Blood: Secrets and Lies in a Silicon Valley Startup. ISBN 9781524731656, Worldcat link. A love-letter to the power of domain knowledge. Theranos was big-business - a tech startup offering near-instant blood testing for nearly anything at the bedside (or clinic, or shop, or…) with remarkable precision. Investors, including the media tycoons, politicians, and other tech leaders, believed this would be tranformative - indeed, highest praise, disruptive. Yet laboratory medicine experts were absolutely convinced that the technology glibly described here as “near market” was an illusion. Want to guess who was right?"
+    "section": "29/05/2024: Genesis and Development of a Scientific Fact",
+    "text": "29/05/2024: Genesis and Development of a Scientific Fact\nLudwig Fleck (Bradley and Trenn, trans.). 1979 (1935). Genesis and Development of a Scientific Fact. ISBN 9780226253252, Worldcat link.\n If last week’s book was a paean to the use of scientific facts, this week’s book tells a rather more subtle story about how facts. It starts by telling the story of the ‘discovery’ of the Wassermann reaction, and uses that history as the basis for an investigation of the ways in which people came to a) claim that the Wassermann reaction worked because of scientific facts and b) how those facts changes as the Wassermann reaction became used in practice.  From the KIND-ish stance much of the interest lies in the parts of this book that describe how medical research wasn’t the straightforwardly objective story about discovery that we often want to portray. Fleck’s claim, broadly, is that the Wassermann reaction was invented, rather than discovered, and that invention reflected (in part) the social organisation of researchers and others involved in its discovery. Of particular interest to people like us are a series of claims about how facts change as they travel out from the specialist communities that work on them. We’re all familiar with the changes that happen (and need to happen) as we pass the results of our work out to their eventual users: they often get simplified, or put in context, or whatever."
   },
   {
-    "objectID": "kind_botw.html#kathryn-schulz---being-wrong-adventures-in-the-margin-of-error",
-    "href": "kind_botw.html#kathryn-schulz---being-wrong-adventures-in-the-margin-of-error",
+    "objectID": "kind_botw.html#bad-blood-secrets-and-lies-in-a-silicon-valley-startup",
+    "href": "kind_botw.html#bad-blood-secrets-and-lies-in-a-silicon-valley-startup",
     "title": "KIND Book of the week",
-    "section": "15/05/2024: Kathryn Schulz - Being Wrong: Adventures in the Margin of Error",
-    "text": "15/05/2024: Kathryn Schulz - Being Wrong: Adventures in the Margin of Error\nKathryn Schulz. 2010. Being Wrong: Adventures in the Margin of Error. ISBN 9781846270741, Worldcat link. If I was posh enough to have a Latin motto, it would probably be “Fallor ergo sum” - I err, therefore I am. This phrase, which I’d like to pretend I read directly from the works of St Augustine, was instead stolen from Schulz’s book. This starts with a really simple question: why are we so bad - intellectually, socially, legally - at dealing with error, but then follows the threads of an answer to several unexpected destinations including criminal justice, health, and optical illusions."
+    "section": "22/05/2024: Bad Blood: Secrets and Lies in a Silicon Valley Startup",
+    "text": "22/05/2024: Bad Blood: Secrets and Lies in a Silicon Valley Startup\nJohn Carreyrou. 2018. Bad Blood: Secrets and Lies in a Silicon Valley Startup. ISBN 9781524731656, Worldcat link.\n A love-letter to the power of domain knowledge. Theranos was big-business - a tech startup offering near-instant blood testing for nearly anything at the bedside (or clinic, or shop, or…) with remarkable precision. Investors, including the media tycoons, politicians, and other tech leaders, believed this would be tranformative - indeed, highest praise, disruptive. Yet laboratory medicine experts were absolutely convinced that the technology glibly described here as “near market” was an illusion. Want to guess who was right?"
   },
   {
-    "objectID": "kind_botw.html#stephen-jay-gould---the-mismeasure-of-man-2nd-ed",
-    "href": "kind_botw.html#stephen-jay-gould---the-mismeasure-of-man-2nd-ed",
+    "objectID": "kind_botw.html#being-wrong-adventures-in-the-margin-of-error",
+    "href": "kind_botw.html#being-wrong-adventures-in-the-margin-of-error",
     "title": "KIND Book of the week",
-    "section": "08/05/2024: Stephen Jay Gould - The Mismeasure of Man (2nd ed)",
-    "text": "08/05/2024: Stephen Jay Gould - The Mismeasure of Man (2nd ed)\nStephen Jay Gould. 1996. The Mismeasure of Man (2nd ed). ISBN 9780140258240, Worldcat link. After the discussion last week about the trouble that a default-male view of health might have caused, the title of this week’s book of the week might seem poorly chosen. Rest assured that the title of Gould’s The Mismeasure of Man is a pun: both on the idea that man is the measure of all things [https://plato.stanford.edu/entries/protagoras/], and on precisely the kind of not-thinking that we discussed last time.\nThis is a book about the history of measuring intelligence, and why we might worry about collapsing all possible measures of intelligence to a single number, like IQ. That story is told through a diverting series of detailed historical reconstructions about methods used to measure intelligence and related human features. Lots of this is about measuring skulls, and if you’re into that sort of history of science, seeing the kinds of dispute that switching between lead shot and mustard seed as measures of brain volume might cause is worth the investment - not least because it has surprisingly contemporary connections to the anthropometrical work that still powers much of modern ergonomics, human factors, etc. https://ia800907.us.archive.org/4/items/TheMeasureOfManDreyfuss/The%20Measure%20of%20Man%20%28Dreyfuss%29_text.pdf\nBut the real value for most of us who do KIND-ish work isn’t this rich historical detail, fun though it is. It is instead about the abstractions about complicated human activities that lie close to the surface of our work. Every time we report a figure that collapses a complex activity into a single value we should be careful - particularly when that abstraction might well be influenced by our existing beliefs and practices. might shape that collapse."
+    "section": "15/05/2024: Being Wrong: Adventures in the Margin of Error",
+    "text": "15/05/2024: Being Wrong: Adventures in the Margin of Error\nKathryn Schulz. 2010. Being Wrong: Adventures in the Margin of Error. ISBN 9781846270741, Worldcat link.\n If I was posh enough to have a Latin motto, it would probably be “Fallor ergo sum” - I err, therefore I am. This phrase, which I’d like to pretend I read directly from the works of St Augustine, was instead stolen from Schulz’s book. This starts with a really simple question: why are we so bad - intellectually, socially, legally - at dealing with error, but then follows the threads of an answer to several unexpected destinations including criminal justice, health, and optical illusions."
   },
   {
-    "objectID": "kind_botw.html#caroline-criado-perez---invisible-women-exposing-data-bias-in-a-world-designed-for-men",
-    "href": "kind_botw.html#caroline-criado-perez---invisible-women-exposing-data-bias-in-a-world-designed-for-men",
+    "objectID": "kind_botw.html#the-mismeasure-of-man-2nd-ed",
+    "href": "kind_botw.html#the-mismeasure-of-man-2nd-ed",
     "title": "KIND Book of the week",
-    "section": "01/05/2024: Caroline Criado Perez - Invisible Women: Exposing Data Bias in a World Designed for Men",
-    "text": "01/05/2024: Caroline Criado Perez - Invisible Women: Exposing Data Bias in a World Designed for Men\nCaroline Criado Perez. 2019. Invisible Women: Exposing Data Bias in a World Designed for Men. ISBN 9781784706289, Worldcat link. Anyone who works with data knows that our data is often incomplete. Most of those gaps are mainly accidental - we just happen to have not collected some random bit of data. But that’s doesn’t explain every gap in the data. This book explores the gender data gap - which is where we often seem to lack the data that we need to understand how different e.g. health outcomes affect women. The author argues comes about by a kind of selective blindness, as a kind of collective failure to think about gender. That means that the gender data gap isn’t really a conscious omission - we didn’t all set out to ignore women, but something a bit more subtle about what we collectively assume is worth measuring, and what the sensible defaults might be for that. Nice quick examples abound - really great one about office temperates which I’m sure will chime with all of us, but great to see it explained as a consequence of assumptions about what a typical office worker would be (a mythical 70kg 40 year old man from some point in the 1960s, basically). So it’s a great introduction to understanding the view that much data work is male-unless-something, and how that functions as both a cause, and as a consequence of the gender data gap."
+    "section": "08/05/2024: The Mismeasure of Man (2nd ed)",
+    "text": "08/05/2024: The Mismeasure of Man (2nd ed)\nStephen Jay Gould. 1996. The Mismeasure of Man (2nd ed). ISBN 9780140258240, Worldcat link.\n After the discussion last week about the trouble that a default-male view of health might have caused, the title of this week’s book of the week might seem poorly chosen. Rest assured that the title of Gould’s The Mismeasure of Man is a pun: both on the idea that man is the measure of all things [https://plato.stanford.edu/entries/protagoras/], and on precisely the kind of not-thinking that we discussed last time.  This is a book about the history of measuring intelligence, and why we might worry about collapsing all possible measures of intelligence to a single number, like IQ. That story is told through a diverting series of detailed historical reconstructions about methods used to measure intelligence and related human features. Lots of this is about measuring skulls, and if you’re into that sort of history of science, seeing the kinds of dispute that switching between lead shot and mustard seed as measures of brain volume might cause is worth the investment - not least because it has surprisingly contemporary connections to the anthropometrical work that still powers much of modern ergonomics, human factors, etc. But the real value for most of us who do KIND-ish work isn’t this rich historical detail, fun though it is. It is instead about the abstractions about complicated human activities that lie close to the surface of our work. Every time we report a figure that collapses a complex activity into a single value we should be careful - particularly when that abstraction might well be influenced by our existing beliefs and practices. might shape that collapse.”"
   },
   {
-    "objectID": "kind_botw.html#tom-lean---electronic-dreams-how-1980s-britain-learned-to-love-the-computer",
-    "href": "kind_botw.html#tom-lean---electronic-dreams-how-1980s-britain-learned-to-love-the-computer",
+    "objectID": "kind_botw.html#invisible-women-exposing-data-bias-in-a-world-designed-for-men",
+    "href": "kind_botw.html#invisible-women-exposing-data-bias-in-a-world-designed-for-men",
     "title": "KIND Book of the week",
-    "section": "24/04/2024: Tom Lean - Electronic Dreams: How 1980s Britain Learned to Love the Computer",
-    "text": "24/04/2024: Tom Lean - Electronic Dreams: How 1980s Britain Learned to Love the Computer\nTom Lean. 2016. Electronic Dreams: How 1980s Britain Learned to Love the Computer. ISBN 9781472918338, Worldcat link. We’re looking at regular expressions in the community meetup today. Regex, as the wikipedia page suggests, have been around for ages - positively archaeological in computing terms. So for the book of the week this week, I wanted to show off one of the most interesting bits of social history I’ve read: Tom Lean’s Electronic Dreams. Lots of the history of computing is either primarily about the technical details, or is a broadly nostalgic look at obsolete tech. This book doesn’t do either of those, instead spending its time giving a concise account of how personal computing worked as a social phenomenon. For example, how did people start getting paid to write computer games? What happened when the BBC got involved in personal computing? What happened to the various promises of digital revolutions as a replacement for manufacturing industries."
+    "section": "01/05/2024: Invisible Women: Exposing Data Bias in a World Designed for Men",
+    "text": "01/05/2024: Invisible Women: Exposing Data Bias in a World Designed for Men\nCaroline Criado Perez. 2019. Invisible Women: Exposing Data Bias in a World Designed for Men. ISBN 9781784706289, Worldcat link.\n Anyone who works with data knows that our data is often incomplete. Most of those gaps are mainly accidental - we just happen to have not collected some random bit of data. But that’s doesn’t explain every gap in the data. This book explores the gender data gap - which is where we often seem to lack the data that we need to understand how different e.g. health outcomes affect women. The author argues comes about by a kind of selective blindness, as a kind of collective failure to think about gender. That means that the gender data gap isn’t really a conscious omission - we didn’t all set out to ignore women, but something a bit more subtle about what we collectively assume is worth measuring, and what the sensible defaults might be for that. Nice quick examples abound - really great one about office temperates which I’m sure will chime with all of us, but great to see it explained as a consequence of assumptions about what a typical office worker would be (a mythical 70kg 40 year old man from some point in the 1960s, basically). So it’s a great introduction to understanding the view that much data work is male-unless-something, and how that functions as both a cause, and as a consequence of the gender data gap."
   },
   {
-    "objectID": "kind_botw.html#katrine-marçal---who-cooked-adam-smiths-dinner",
-    "href": "kind_botw.html#katrine-marçal---who-cooked-adam-smiths-dinner",
+    "objectID": "kind_botw.html#electronic-dreams-how-1980s-britain-learned-to-love-the-computer",
+    "href": "kind_botw.html#electronic-dreams-how-1980s-britain-learned-to-love-the-computer",
     "title": "KIND Book of the week",
-    "section": "27/03/2024: Katrine Marçal - Who Cooked Adam Smith’s Dinner",
-    "text": "27/03/2024: Katrine Marçal - Who Cooked Adam Smith’s Dinner\nKatrine Marçal. 2016. Who Cooked Adam Smith’s Dinner. ISBN 9781846275661, Worldcat link. NA"
+    "section": "24/04/2024: Electronic Dreams: How 1980s Britain Learned to Love the Computer",
+    "text": "24/04/2024: Electronic Dreams: How 1980s Britain Learned to Love the Computer\nTom Lean. 2016. Electronic Dreams: How 1980s Britain Learned to Love the Computer. ISBN 9781472918338, Worldcat link.\n We’re looking at regular expressions in the community meetup today. Regex, as the wikipedia page suggests, have been around for ages - positively archaeological in computing terms. So for the book of the week this week, I wanted to show off one of the most interesting bits of social history I’ve read: Tom Lean’s Electronic Dreams. Lots of the history of computing is either primarily about the technical details, or is a broadly nostalgic look at obsolete tech. This book doesn’t do either of those, instead spending its time giving a concise account of how personal computing worked as a social phenomenon. For example, how did people start getting paid to write computer games? What happened when the BBC got involved in personal computing? What happened to the various promises of digital revolutions as a replacement for manufacturing industries."
   },
   {
-    "objectID": "kind_botw.html#david-oldroyd---the-arch-of-knowledge",
-    "href": "kind_botw.html#david-oldroyd---the-arch-of-knowledge",
+    "objectID": "kind_botw.html#who-cooked-adam-smiths-dinner",
+    "href": "kind_botw.html#who-cooked-adam-smiths-dinner",
     "title": "KIND Book of the week",
-    "section": "20/03/2024: David Oldroyd - The Arch of Knowledge",
-    "text": "20/03/2024: David Oldroyd - The Arch of Knowledge\nDavid Oldroyd. 1986. The Arch of Knowledge. ISBN 9780416013313, Worldcat link. NA"
+    "section": "27/03/2024: Who Cooked Adam Smith’s Dinner",
+    "text": "27/03/2024: Who Cooked Adam Smith’s Dinner\nKatrine Marçal. 2016. Who Cooked Adam Smith’s Dinner. ISBN 9781846275661, Worldcat link.\n NA"
   },
   {
-    "objectID": "kind_botw.html#kevin-mitnick---ghost-in-the-wires",
-    "href": "kind_botw.html#kevin-mitnick---ghost-in-the-wires",
+    "objectID": "kind_botw.html#the-arch-of-knowledge",
+    "href": "kind_botw.html#the-arch-of-knowledge",
     "title": "KIND Book of the week",
-    "section": "13/03/2024: Kevin Mitnick - Ghost in the Wires",
-    "text": "13/03/2024: Kevin Mitnick - Ghost in the Wires\nKevin Mitnick. 2011. Ghost in the Wires. ISBN 9780316037723, Worldcat link. Here’s a book of the week suggestion following on from the codes theme from last time. It’s the autobiography of Kevin Mitnick (2011 Ghost in the Wires) who was (briefly) the most wanted hacker in the world. Looking at the blurb of this ghosted book, you’d expect it be bepretty predictable - smarter than everyone else, playing pranks, evading capture until…  That story is definitely there (there’s plenty of broad-but-exciting plot here), but for KIND purposes there’s something much more interesting, which is an insight into the kind of analytical thinking that lies at the heart of finding things out about complex systems. Kevin’s thoughts on that are highly transferable to the kinds of questions that we’re thinking about today - how to take a system apart, make sense of the bits, then recombine them into a more useful new system. Also, there are codes - really hard codes for emphasis - for the reader to break. That’s a lovely bonus - especially if you looked into Simon Singh’s The Code Book from last time."
+    "section": "20/03/2024: The Arch of Knowledge",
+    "text": "20/03/2024: The Arch of Knowledge\nDavid Oldroyd. 1986. The Arch of Knowledge. ISBN 9780416013313, Worldcat link.\n NA"
   },
   {
-    "objectID": "kind_botw.html#simon-singh---the-code-book",
-    "href": "kind_botw.html#simon-singh---the-code-book",
+    "objectID": "kind_botw.html#ghost-in-the-wires",
+    "href": "kind_botw.html#ghost-in-the-wires",
     "title": "KIND Book of the week",
-    "section": "06/03/2024: Simon Singh - The Code Book",
-    "text": "06/03/2024: Simon Singh - The Code Book\nSimon Singh. 1999. The Code Book. ISBN 9781857028898, Worldcat link. The Code Book: The Secret History of Codes and Code-Breaking a book by . (bookshop.org) (to buy online but support a local bookshop of your choice, for those not keen on more money to our Amazon Overlords…)"
+    "section": "13/03/2024: Ghost in the Wires",
+    "text": "13/03/2024: Ghost in the Wires\nKevin Mitnick. 2011. Ghost in the Wires. ISBN 9780316037723, Worldcat link.\n Here’s a book of the week suggestion following on from the codes theme from last time. It’s the autobiography of Kevin Mitnick (2011 Ghost in the Wires) who was (briefly) the most wanted hacker in the world. Looking at the blurb of this ghosted book, you’d expect it be bepretty predictable - smarter than everyone else, playing pranks, evading capture until…  That story is definitely there (there’s plenty of broad-but-exciting plot here), but for KIND purposes there’s something much more interesting, which is an insight into the kind of analytical thinking that lies at the heart of finding things out about complex systems. Kevin’s thoughts on that are highly transferable to the kinds of questions that we’re thinking about today - how to take a system apart, make sense of the bits, then recombine them into a more useful new system. Also, there are codes - really hard codes for emphasis - for the reader to break. That’s a lovely bonus - especially if you looked into Simon Singh’s The Code Book from last time."
+  },
+  {
+    "objectID": "kind_botw.html#the-code-book",
+    "href": "kind_botw.html#the-code-book",
+    "title": "KIND Book of the week",
+    "section": "06/03/2024: The Code Book",
+    "text": "06/03/2024: The Code Book\nSimon Singh. 1999. The Code Book. ISBN 9781857028898, Worldcat link.\n The Code Book: The Secret History of Codes and Code-Breaking a book by . (bookshop.org) (to buy online but support a local bookshop of your choice, for those not keen on more money to our Amazon Overlords…)"
   },
   {
     "objectID": "r.html",
@@ -292,26 +320,5 @@
     "title": "KIND Community Standards: R",
     "section": "Group considerations",
     "text": "Group considerations\n\nHave a house code style, possibly implemented using styler. Code styling for readability is important, and no-one agrees, so you’ll need to lead. needed."
-  },
-  {
-    "objectID": "kind_cms.html",
-    "href": "kind_cms.html",
-    "title": "KIND community meetup schedule",
-    "section": "",
-    "text": "Download community meetup data as csv\nDownload community meetup ideas as csv"
-  },
-  {
-    "objectID": "kind_cms.html#current-community-meetup-schedule",
-    "href": "kind_cms.html#current-community-meetup-schedule",
-    "title": "KIND community meetup schedule",
-    "section": "Current community meetup schedule",
-    "text": "Current community meetup schedule\n\nCurrent community meetup schedule\n\n\n\n\n\n\n\n\nDate\nTopic\nsubtopic\nSuggestor\n\n\n\n\n2024-06-26\nPower BI \nCALCULATE() = Power BI’s heart of darkness \n\n\n\n2024-07-03\n\n\n\n\n\n2024-07-10\n\n\n\n\n\n2024-07-17\nR\nTidytext, sentiment analysis \n\n\n\n2024-07-24\nNo session\nNo session\nNo session\n\n\n2024-07-31\n\n\n\n\n\n2024-08-07\nR \nEcharts4r, making PowerPoint in RMD, snakecase\n\n\n\n2024-08-14\n\n\n\n\n\n2024-08-21\n\n\n\n\n\n2024-08-28\nShort series on joins \n\n\n\n\n2024-09-04\nShort series on joins \n\n\n\n\n2024-09-11\nShort series on joins \n\n\n\n\n2024-09-18\nShort series on joins"
-  },
-  {
-    "objectID": "kind_cms.html#future-community-meetup-ideas",
-    "href": "kind_cms.html#future-community-meetup-ideas",
-    "title": "KIND community meetup schedule",
-    "section": "Future community meetup ideas",
-    "text": "Future community meetup ideas\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nRAP\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\n\nR DPIA\n\n\n\n\nDAGs\n\n\n\n\nWriting for different audiences\n\n\n\n\npredictive modelling\n\n\n\n\nBayesian stats\n\n\n\n\ncorrelations, linear models in Power BI\n\n\n\n\nCSS / Java – front end ?NES digital\n\n\n\n\nProper markdown + pandoc + yaml\n\n\n\n\nSimon Rogers at NSS - wrote a book on machine learning, might have some good material: https://www.gla.ac.uk/events/listings/index.html/event/12598 (also a lecturer at Glasgow)\n\n\n\n\nSafe havens / disclosure control / safe researcher training\n\n\n\n\nDisclosure and pseudoanonymised data\n\n\n\nR \nData.table / tidyverse / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler"
   }
 ]
