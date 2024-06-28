@@ -1,5 +1,6 @@
 ---
 title: "KIND Community Standards: Excel"
+date: 2024-06-21
 ---
 
 Excel workbooks are frequently troublesome. This document contains a simple set of features that will help you avoid the most serious Excel problems. The aim is to be:

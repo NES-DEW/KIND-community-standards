@@ -1,5 +1,6 @@
 ---
 title: "KIND FAQ"
+date: 2024-06-21
 ---
 
 ## What is the KIND learning network?

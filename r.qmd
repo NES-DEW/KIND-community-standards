@@ -1,5 +1,6 @@
 ---
 title: "KIND Community Standards: R"
+date: 2024-06-28
 ---
 
 ## Basic standard
