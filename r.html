@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.4.557">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke">
-<meta name="dcterms.date" content="2024-06-26">
+<meta name="dcterms.date" content="2024-06-28">
 
 <title>KIND resources - KIND Community Standards: R</title>
 <style>
@@ -172,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#basic-standard" id="toc-basic-standard" class="nav-link active" data-scroll-target="#basic-standard">Basic standard</a></li>
   <li><a href="#enhanced-standard" id="toc-enhanced-standard" class="nav-link" data-scroll-target="#enhanced-standard">Enhanced standard</a></li>
-  <li><a href="#group-considerations" id="toc-group-considerations" class="nav-link" data-scroll-target="#group-considerations">Group considerations</a></li>
+  <li><a href="#considerations-for-teams-and-groups" id="toc-considerations-for-teams-and-groups" class="nav-link" data-scroll-target="#considerations-for-teams-and-groups">Considerations for teams and groups</a></li>
   </ul>
 </nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -214,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 26, 2024</p>
+      <p class="date">June 28, 2024</p>
     </div>
   </div>
   
@@ -226,39 +226,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Please note this is a work-in-progress draft, due for completion end-June 2024</p>
 <section id="basic-standard" class="level2">
 <h2 class="anchored" data-anchor-id="basic-standard">Basic standard</h2>
 <ul>
-<li>Use projects</li>
-<li>Collect packages at head of script</li>
-<li>Keep package loading minimal (nothing “just in case”)</li>
-<li>Use descriptive variable names</li>
-<li>No repeated code - use functions where a specific bit of code needs to be used multiple times.</li>
-<li>Properly structured sections (using hyperlinks &gt;# Section 1 —-)</li>
-<li>Include authorship, contact details, and brief documentation of the purpose of the script</li>
-<li>Any variables that need changing to be dealt with in a systematic manner - i.e.&nbsp;no need to look through the script for things that need changing for the specific use case.</li>
-<li>Variables to change could be listed at the top of the script, or in an input file etc etc
+<li>Default to using projects, rather than <code>setwd()</code> etc</li>
+<li>Packages
 <ul>
-<li>Consider a settings file if there are lots of these</li>
+<li>Load packages at head of script, rather than dotted through the code</li>
+<li>Keep package loading minimal (nothing “just in case”)</li>
+<li>Make explicit reference to custom/non-CRAN packages, and how they should be loaded</li>
 </ul></li>
-<li>Think about units. An individual script should run as one - ie workflow should not be run first half of the script, do something else, run second half of the script - in this case they should be two separate scripts.</li>
+<li>Help your future self (or another user of the code)
+<ul>
+<li>Use descriptive and consistent variable names
+<ul>
+<li>If variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file</li>
+</ul></li>
+<li>Add sections of code to make the structure of your script clear</li>
+<li>Consider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…</li>
+<li>Include authorship, contact details, and brief documentation of the purpose of the script</li>
+<li>Avoid extremely repetitious code. Consider using <a href="https://nes-dew.github.io/KIND-training/r_training/writing_functions_in_r.html">functions</a> to avoid repeating yourself</li>
+<li>Consider using <a href="https://styler.r-lib.org/">styler</a> to keep your code formatted consistently</li>
+</ul></li>
 </ul>
 </section>
 <section id="enhanced-standard" class="level2">
 <h2 class="anchored" data-anchor-id="enhanced-standard">Enhanced standard</h2>
 <ul>
-<li>Explicit reference to any formal style conventions</li>
+<li>Make explicit reference to any formal style conventions employed</li>
 <li>Use version control</li>
-<li>For ambitious projects, consider {renv} (which will capture R and package versions). For smaller projects, list packages at top of script, along with installation instructions for any non CRAN / no longer on CRAN packages</li>
+<li>For ambitious projects, consider using <a href="https://cran.r-project.org/web/packages/renv/index.html">renv</a> which will capture R and package versions</li>
 <li>For more onerous scripts, identify memory and CPU requirements listed at start</li>
-<li>consider using templates for presentations/reports/dashboards</li>
+<li>consider using project templates for presentations/reports/dashboards</li>
+<li>Consider loading individual functions via <code>package::function()</code> syntax rather than wholesale package loading for namespace and performance reasons</li>
+<li>consider using <a href="https://cran.r-project.org/web/packages/targets/index.html">targets</a> to encourage the use of functions, visually displays the build pipeline and avoids unnecessary re-running of up-to-date code</li>
 </ul>
 </section>
-<section id="group-considerations" class="level2">
-<h2 class="anchored" data-anchor-id="group-considerations">Group considerations</h2>
+<section id="considerations-for-teams-and-groups" class="level2">
+<h2 class="anchored" data-anchor-id="considerations-for-teams-and-groups">Considerations for teams and groups</h2>
 <ul>
-<li>Have a house code style, possibly implemented using styler. Code styling for readability is important, and no-one agrees, so you’ll need to lead. needed.</li>
+<li>Have a house code style, possibly implemented using <a href="https://styler.r-lib.org/">styler</a> Code styling for readability is important, and no-one agrees, so you’ll need to lead.</li>
+<li>When documentation is extremely important, consider using <a href="https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html">roxygen2</a> to encourage best documentation practice</li>
 </ul>
 
 

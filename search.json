@@ -67,14 +67,14 @@
     "href": "kind_cms.html#current-community-meetup-schedule",
     "title": "KIND community meetup schedule",
     "section": "Current community meetup schedule",
-    "text": "Current community meetup schedule\n\nCurrent community meetup schedule\n\n\n\n\n\n\n\n\nDate\nTopic\nsubtopic\nSuggestor\n\n\n\n\n2024-06-26\nPower BI \nCALCULATE() = Power BI’s heart of darkness \n\n\n\n2024-07-03\n\n\n\n\n\n2024-07-10\n\n\n\n\n\n2024-07-17\nR\nTidytext, sentiment analysis \n\n\n\n2024-07-24\nNo session\nNo session\nNo session\n\n\n2024-07-31\n\n\n\n\n\n2024-08-07\nR \nEcharts4r, making PowerPoint in RMD, snakecase\n\n\n\n2024-08-14\n\n\n\n\n\n2024-08-21\n\n\n\n\n\n2024-08-28\nShort series on joins \n\n\n\n\n2024-09-04\nShort series on joins \n\n\n\n\n2024-09-11\nShort series on joins \n\n\n\n\n2024-09-18\nShort series on joins"
+    "text": "Current community meetup schedule\n\nCurrent community meetup schedule\n\n\nDate\nTopic\nsubtopic\nSuggestor\n\n\n\n\n2024-07-03\n\n\n\n\n\n2024-07-10\n\n\n\n\n\n2024-07-17\n\n\n\n\n\n2024-07-24\n\n\n\n\n\n2024-07-31\n\n\n\n\n\n2024-08-07\n\n\n\n\n\n2024-08-14\n\n\n\n\n\n2024-08-21\n\n\n\n\n\n2024-08-28\nShort series on joins \n\n\n\n\n2024-09-04\nShort series on joins \n\n\n\n\n2024-09-11\nShort series on joins \n\n\n\n\n2024-09-18\nShort series on joins"
   },
   {
     "objectID": "kind_cms.html#future-community-meetup-ideas",
     "href": "kind_cms.html#future-community-meetup-ideas",
     "title": "KIND community meetup schedule",
     "section": "Future community meetup ideas",
-    "text": "Future community meetup ideas\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nRAP\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\n\nR DPIA\n\n\n\n\nDAGs\n\n\n\n\nWriting for different audiences\n\n\n\n\npredictive modelling\n\n\n\n\nBayesian stats\n\n\n\n\ncorrelations, linear models in Power BI\n\n\n\n\nCSS / Java – front end ?NES digital\n\n\n\n\nProper markdown + pandoc + yaml\n\n\n\n\nSimon Rogers at NSS - wrote a book on machine learning, might have some good material: https://www.gla.ac.uk/events/listings/index.html/event/12598 (also a lecturer at Glasgow)\n\n\n\n\nSafe havens / disclosure control / safe researcher training\n\n\n\n\nDisclosure and pseudoanonymised data\n\n\n\nR \nData.table / tidyverse / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler"
+    "text": "Future community meetup ideas\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nRAP\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\n\nR DPIA\n\n\n\n\nDAGs\n\n\n\n\nWriting for different audiences\n\n\n\n\npredictive modelling\n\n\n\n\nBayesian stats\n\n\n\n\ncorrelations, linear models in Power BI\n\n\n\n\nCSS / Java – front end ?NES digital\n\n\n\n\nProper markdown + pandoc + yaml\n\n\n\n\nSimon Rogers at NSS - wrote a book on machine learning, might have some good material: https://www.gla.ac.uk/events/listings/index.html/event/12598 (also a lecturer at Glasgow)\n\n\n\n\nSafe havens / disclosure control / safe researcher training\n\n\n\n\nDisclosure and pseudoanonymised data\n\n\n\nR \nData.table / tidyverse / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler\n\n\nTidytext, sentiment analysis \n\n\n\n\nR package roundup - Echarts4r, making PowerPoint in RMD, snakecase"
   },
   {
     "objectID": "index.html",
@@ -298,27 +298,27 @@
     "href": "r.html",
     "title": "KIND Community Standards: R",
     "section": "",
-    "text": "Please note this is a work-in-progress draft, due for completion end-June 2024"
+    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
   },
   {
     "objectID": "r.html#basic-standard",
     "href": "r.html#basic-standard",
     "title": "KIND Community Standards: R",
-    "section": "Basic standard",
-    "text": "Basic standard\n\nUse projects\nCollect packages at head of script\nKeep package loading minimal (nothing “just in case”)\nUse descriptive variable names\nNo repeated code - use functions where a specific bit of code needs to be used multiple times.\nProperly structured sections (using hyperlinks &gt;# Section 1 —-)\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAny variables that need changing to be dealt with in a systematic manner - i.e. no need to look through the script for things that need changing for the specific use case.\nVariables to change could be listed at the top of the script, or in an input file etc etc\n\nConsider a settings file if there are lots of these\n\nThink about units. An individual script should run as one - ie workflow should not be run first half of the script, do something else, run second half of the script - in this case they should be two separate scripts."
+    "section": "",
+    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
   },
   {
     "objectID": "r.html#enhanced-standard",
     "href": "r.html#enhanced-standard",
     "title": "KIND Community Standards: R",
     "section": "Enhanced standard",
-    "text": "Enhanced standard\n\nExplicit reference to any formal style conventions\nUse version control\nFor ambitious projects, consider {renv} (which will capture R and package versions). For smaller projects, list packages at top of script, along with installation instructions for any non CRAN / no longer on CRAN packages\nFor more onerous scripts, identify memory and CPU requirements listed at start\nconsider using templates for presentations/reports/dashboards"
+    "text": "Enhanced standard\n\nMake explicit reference to any formal style conventions employed\nUse version control\nFor ambitious projects, consider using renv which will capture R and package versions\nFor more onerous scripts, identify memory and CPU requirements listed at start\nconsider using project templates for presentations/reports/dashboards\nConsider loading individual functions via package::function() syntax rather than wholesale package loading for namespace and performance reasons\nconsider using targets to encourage the use of functions, visually displays the build pipeline and avoids unnecessary re-running of up-to-date code"
   },
   {
-    "objectID": "r.html#group-considerations",
-    "href": "r.html#group-considerations",
+    "objectID": "r.html#considerations-for-teams-and-groups",
+    "href": "r.html#considerations-for-teams-and-groups",
     "title": "KIND Community Standards: R",
-    "section": "Group considerations",
-    "text": "Group considerations\n\nHave a house code style, possibly implemented using styler. Code styling for readability is important, and no-one agrees, so you’ll need to lead. needed."
+    "section": "Considerations for teams and groups",
+    "text": "Considerations for teams and groups\n\nHave a house code style, possibly implemented using styler Code styling for readability is important, and no-one agrees, so you’ll need to lead.\nWhen documentation is extremely important, consider using roxygen2 to encourage best documentation practice"
   }
 ]
