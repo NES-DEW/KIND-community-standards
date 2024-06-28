@@ -1,5 +1,7 @@
 ---
 title: "KIND community meetup schedule"
+execute: 
+  freeze: false
 ---
 
 + [Download community meetup data as csv](data/KIND_community_meetups.csv)
