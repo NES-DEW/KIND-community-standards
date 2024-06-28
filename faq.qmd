@@ -55,6 +55,7 @@ We have a lot of activities going on. The best way to keep in touch with everyth
 + or [subscribe to our mailing list](https://forms.office.com/pages/responsepage.aspx?id=veDvEDCgykuAnLXmdF5JmpopIZB9ynRJnrPUHVFccipURjM2NkZJUkhGOFlQRjQxRFhVUTgwT0UwVyQlQCN0PWcu) for a weekly digest
 
 Otherwise, our main activities are:
+
 + core multi-session training courses:
     + [Excel Skills](https://learn.nes.nhs.scot/71690)
     + [Power BI for Beginners](https://learn.nes.nhs.scot/70921)
