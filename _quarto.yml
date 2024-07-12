@@ -18,6 +18,8 @@ website:
             text: Excel
           - href: r.qmd
             text: R
+          - href: data_collection.qmd
+            text: Data collection (draft)
       - text: Sample SOPs
         menu:
           - href: visio.qmd
