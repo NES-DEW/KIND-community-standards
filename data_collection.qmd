@@ -10,30 +10,17 @@ This is a draft set of community standards for data collection. These
 will be reviewed by the KIND community before publication during August
 2024.
 
-## Where do members of the KIND workforce sit in this?
-
-> "We are often asked to collect, but many of us lack official training
-> and support for the kinds of complex questions thrown up by data
-> collection. Using data and collecting data are really different"
-(anonymous KIND member)
-
-## Why collect data?
-
-Some example purposes, drawn from a small-scale survey of 40 analysts
-from NHS boards performed during 2023: 
-
-+ for clinical audit / quality
-improvement
-+ for statutory data collection / official and national statistics 
-+ research 
-+ establishing new services / requirements 
-+ user research 
-+ organisational consultation 
-+ for performance and evaluation purposes
-
-
+# {.tabset}
 
 ## Basic standard for data collection
+
+:::{.callout-caution collapse=false appearance='default' icon=true}
+### Before you begin
+
+You need to be absolutely sure that you are allowed to collect the data you're planning to collect. If there is any doubt, you should contact your Information Governance and/or Caldicott teams before beginning collection.
+:::
+
+Note that this guide does not deal with data collection for research purposes, which is governed by different legislative and ethical standards. There can be some difficulty in deciding whether a piece of data collection would count as research, and so you might find the [HRA *Is my study research?* tool](https://www.hra-decisiontools.org.uk/research/) helpful.
 
 -   only collect data you are going to use
 -   collect the absolute minimum information you can. This is both good
@@ -52,7 +39,29 @@ improvement
     This is especially important if data collection will be lengthy, or
     large-scale. Consider writing an SOP for data collection
 
-## Tools for data collection
+
+## Why think about data collection?
+
+> "We are often asked to collect, but many of us lack official training
+> and support for the kinds of complex questions thrown up by data
+> collection. Using data and collecting data are really different"
+(anonymous KIND member)
+
+## Why collect data?
+
+Some example purposes, drawn from a small-scale survey of 40 analysts
+from NHS boards performed during 2023: 
+
++ for clinical audit / quality
+improvement
++ for statutory data collection / official and national statistics 
++ establishing new services / requirements 
++ user research 
++ organisational consultation 
++ for performance and evaluation purposes
+
+
+## Tools used for data collection
 
 In a 2023 small-scale survey of 40 analysts, the main tools identified
 were as follows:
