@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://NES-DEW.github.io/KIND-community-standards/data_collection.html</loc>
-    <lastmod>2024-08-09T10:39:08.955Z</lastmod>
+    <lastmod>2024-08-14T16:41:01.785Z</lastmod>
   </url>
   <url>
-    <loc>https://NES-DEW.github.io/KIND-community-standards/kind_botw.html</loc>
-    <lastmod>2024-08-09T10:39:08.959Z</lastmod>
-  </url>
-  <url>
-    <loc>https://NES-DEW.github.io/KIND-community-standards/r.html</loc>
-    <lastmod>2024-08-09T10:39:08.959Z</lastmod>
-  </url>
-  <url>
-    <loc>https://NES-DEW.github.io/KIND-community-standards/faq.html</loc>
-    <lastmod>2024-08-09T10:39:08.955Z</lastmod>
-  </url>
-  <url>
-    <loc>https://NES-DEW.github.io/KIND-community-standards/excel.html</loc>
-    <lastmod>2024-08-09T10:39:08.955Z</lastmod>
-  </url>
-  <url>
-    <loc>https://NES-DEW.github.io/KIND-community-standards/index.html</loc>
-    <lastmod>2024-08-09T10:39:08.959Z</lastmod>
+    <loc>https://NES-DEW.github.io/KIND-community-standards/ml_archive.html</loc>
+    <lastmod>2024-08-14T16:41:01.789Z</lastmod>
   </url>
   <url>
     <loc>https://NES-DEW.github.io/KIND-community-standards/visio.html</loc>
-    <lastmod>2024-08-09T10:39:08.959Z</lastmod>
+    <lastmod>2024-08-14T16:41:01.793Z</lastmod>
+  </url>
+  <url>
+    <loc>https://NES-DEW.github.io/KIND-community-standards/index.html</loc>
+    <lastmod>2024-08-14T16:41:01.789Z</lastmod>
+  </url>
+  <url>
+    <loc>https://NES-DEW.github.io/KIND-community-standards/excel.html</loc>
+    <lastmod>2024-08-14T16:41:01.785Z</lastmod>
+  </url>
+  <url>
+    <loc>https://NES-DEW.github.io/KIND-community-standards/faq.html</loc>
+    <lastmod>2024-08-14T16:41:01.785Z</lastmod>
+  </url>
+  <url>
+    <loc>https://NES-DEW.github.io/KIND-community-standards/r.html</loc>
+    <lastmod>2024-08-14T16:41:01.789Z</lastmod>
+  </url>
+  <url>
+    <loc>https://NES-DEW.github.io/KIND-community-standards/kind_botw.html</loc>
+    <lastmod>2024-08-14T16:41:01.789Z</lastmod>
   </url>
   <url>
     <loc>https://NES-DEW.github.io/KIND-community-standards/kind_cms.html</loc>
-    <lastmod>2024-08-09T10:39:08.959Z</lastmod>
+    <lastmod>2024-08-14T16:41:01.789Z</lastmod>
   </url>
 </urlset>
