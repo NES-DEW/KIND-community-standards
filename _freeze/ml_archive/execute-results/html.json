@@ -1,0 +1,15 @@
+{
+  "hash": "16f202bd4f8ac4e662fdbe76416bfa9a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"KIND network weekly update email archive\"\n---\n\n\nThis is an archive page for the KIND network weekly update email. [Subscribe to our mailing list](https://forms.office.com/pages/responsepage.aspx?id=veDvEDCgykuAnLXmdF5JmpopIZB9ynRJnrPUHVFccipURjM2NkZJUkhGOFlQRjQxRFhVUTgwT0UwVyQlQCN0PWcu) to receive these updates.\n\n\n- [2024-08-12](ml_archive/KIND_weekly_update_2024-08-12.html)\n- [2024-08-05](ml_archive/KIND_weekly_update_2024-08-05.html)\n- [2024-07-15](ml_archive/KIND_weekly_update_2024-07-15.html)\n- [2024-07-08](ml_archive/KIND_weekly_update_2024-07-08.html)\n- [2024-07-01](ml_archive/KIND_weekly_update_2024-07-01.html)\n- [2024-06-24](ml_archive/KIND_weekly_update_2024-06-24.html)\n- [2024-06-17](ml_archive/KIND_weekly_update_2024-06-17.html)\n- [2024-06-10](ml_archive/KIND_weekly_update_2024-06-10.html)\n- [2024-06-03](ml_archive/KIND_weekly_update_2024-06-03.html)\n- [2024-05-27](ml_archive/KIND_weekly_update_2024-05-27.html)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

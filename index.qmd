@@ -4,8 +4,10 @@ title: "KIND resources"
 
 This is the main page for the KIND network's live documents and non-training resources. 
 
-+ if you're looking for our core training courses, please see our TURAS pages
-+ if you're looking for details of our one-off training sessions, please see the training mini-site
++ if you're looking for our core training courses, please see [our TURAS pages](https://learn.nes.nhs.scot/36783)
++ if you're looking for details of our one-off training sessions, please see the [KIND training mini-site](https://nes-dew.github.io/KIND-training/)
++ if you're looking to join the KIND Network Teams channel, [you'll find a sign-up form here](https://forms.office.com/r/WQdd6HSCEW). That channel is open to all, although mainly meant for members of the knowledge, information, and data workforce across Scotland's health, social care, and housing sectors
++ you can [join our mailing list here](https://forms.office.com/pages/responsepage.aspx?id=veDvEDCgykuAnLXmdF5JmpopIZB9ynRJnrPUHVFccipURjM2NkZJUkhGOFlQRjQxRFhVUTgwT0UwVyQlQCN0PWcu). We send out a weekly mailer summarizing the main events in the coming week, and [that's archived here too](ml_archive.qmd).  
 
 ## What's here?
 
