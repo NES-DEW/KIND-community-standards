@@ -19,6 +19,5 @@ ml_items |>
   bullet_list()
 
 
-
 ```
 

@@ -60,7 +60,11 @@
     "href": "ml_archive.html",
     "title": "KIND network weekly update email archive",
     "section": "",
+<<<<<<< HEAD
     "text": "This is an archive page for the KIND network weekly update email. Subscribe to our mailing list to receive these updates.\n\n2024-08-19\n2024-08-12\n2024-08-05\n2024-07-15\n2024-07-08\n2024-07-01\n2024-06-24\n2024-06-17\n2024-06-10\n2024-06-03\n2024-05-27"
+=======
+    "text": "This is an archive page for the KIND network weekly update email. Subscribe to our mailing list to receive these updates.\n\n2024-08-12\n2024-08-05\n2024-07-15\n2024-07-08\n2024-07-01\n2024-06-24\n2024-06-17\n2024-06-10\n2024-06-03\n2024-05-27"
+>>>>>>> 9cfd591a7942588f4108d011ef1ce65ee175b292
   },
   {
     "objectID": "kind_botw.html",
@@ -70,6 +74,7 @@
     "text": "Download KIND book of the week data as csv"
   },
   {
+<<<<<<< HEAD
     "objectID": "kind_botw.html#the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy",
     "href": "kind_botw.html#the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy",
     "title": "KIND Book of the week",
@@ -108,6 +113,39 @@
     "objectID": "kind_botw.html#how-emotions-are-made",
     "href": "kind_botw.html#how-emotions-are-made",
     "title": "KIND Book of the week",
+=======
+    "objectID": "kind_botw.html#disease-maps-epidemics-on-the-ground",
+    "href": "kind_botw.html#disease-maps-epidemics-on-the-ground",
+    "title": "KIND Book of the week",
+    "section": "07/08/2024: Disease Maps: Epidemics on the Ground",
+    "text": "07/08/2024: Disease Maps: Epidemics on the Ground\nTom Koch. 2011. Disease Maps: Epidemics on the Ground. ISBN 9780226449357, Worldcat link.\n This is an excellent introduction to disease geographies. If you’ve ever wondered about how maps can be used to understand health and disease, this book gives a wide-ranging and engaging series of examples. It’s also (pretty unsurprisingly) packed with well-reproduced examples of unusual and historically-important maps that might provide some left-field food for thought if your work involves a geographical element. There are also lots of useful cross-connections made between disease mapping and other issues of health and care interest - tropical medicine, deprivation, and occupation especially."
+  },
+  {
+    "objectID": "kind_botw.html#weapons-of-math-destruction",
+    "href": "kind_botw.html#weapons-of-math-destruction",
+    "title": "KIND Book of the week",
+    "section": "31/07/2024: Weapons of Math Destruction",
+    "text": "31/07/2024: Weapons of Math Destruction\nCathy O’Neil. 2016. Weapons of Math Destruction. ISBN 9780241296813, Worldcat link.\n If you’ve ever been stunned by an unexpectedly high insurance quote, you won’t need reminding that data-driven algorithms can have negative consequences in the real-world. This book looks across a series of ordinary activities to show how, a decade or so ago, algorithms were shaping our lives. While the tech may have moved on, the moral of the work remains: algorithms are capable of serious harms if they are designed and applied thoughtlessly. I’d make this compulsory reading for colleagues working with data if I could - not least because it’s a surprisingly engaging read given the serious subject-matter. The data that we work with can have all kinds of unpredictable destinations, and the potential scope of end-uses of that data should be considered when building tools that collect and combine powerful data. Again, it’s another reminder that data with enough power to effect positive change will often be usable to bring about harms."
+  },
+  {
+    "objectID": "kind_botw.html#the-half-life-of-facts",
+    "href": "kind_botw.html#the-half-life-of-facts",
+    "title": "KIND Book of the week",
+    "section": "17/07/2024: The Half-Life of Facts",
+    "text": "17/07/2024: The Half-Life of Facts\nSamuel Arbesman. 2012. The Half-Life of Facts. ISBN 9781591844723, Worldcat link.\n This book suggestion comes from a conversation during one of the Evidence-based medicine training sessions last week. In the training session, we ended up in an interesting conversation about the rate of change of facts in health. That rate of change (or, to jump ahead a bit, the rate of decay) of the facts was a surprise to some of us. So I wanted to highlight this useful book, which gives a lot of examples of changing facts. That’s accompanied by a useful discussion of the causes and consequences of changing facts - how they spread, how we get tripped up by them, and what we might do to deal more elegantly with knowledge that’s always a bit unstable."
+  },
+  {
+    "objectID": "kind_botw.html#medical-statistics-at-a-glance",
+    "href": "kind_botw.html#medical-statistics-at-a-glance",
+    "title": "KIND Book of the week",
+    "section": "10/07/2024: Medical Statistics at a Glance",
+    "text": "10/07/2024: Medical Statistics at a Glance\nAviva Petrie and Caroline Sabin. 2000. Medical Statistics at a Glance. ISBN 9780632050756, Worldcat link.\n There are a lot of statistics textbooks out there. As it came up during a training session this week, I wanted to mention one that I thought was particularly useful for people in the KIND workforce. Although originally written for medical students, this book is an excellent quick source of reliable knowledge about core statistical pricinples and techniques. I’m recommending an older edition - and there are lots of newer editions available too - partly because this older edition is much more concise than the later versions, but also because this edition is one of the very few books that I’ve used every week or so since I was a student, particularly for the statistical tables and test selection flowcharts. Highly recommended, many copies available in various libraries across Scotland, and some pleasing shock-of-the-old about data entry techniques from the late 1990s."
+  },
+  {
+    "objectID": "kind_botw.html#how-emotions-are-made",
+    "href": "kind_botw.html#how-emotions-are-made",
+    "title": "KIND Book of the week",
+>>>>>>> 9cfd591a7942588f4108d011ef1ce65ee175b292
     "section": "03/07/2024: How Emotions are Made",
     "text": "03/07/2024: How Emotions are Made\nLisa Feldman Barrett. 2018. How Emotions are Made. ISBN 9781509837526, Worldcat link.\n This week’s BotW suggestion comes from Anna Schneider (PHS). She writes: ‘The author discusses relatively new research that sees a strong interconnection between our interroception, our immune system, and emotions, showing how intertwined psychology and medicine are. She makes a strong case for the whole-system-approach, because isolated symptoms can easily be mislabelled by both practitioners and patients. The book also includes a critical perspective on the still prevalent methodology of studying emotions and mental illness.’ It’s an excellent book, and one that’s particularly refreshing in a field that’s dominated in the popular view by a series of works from the nineteenth century - the Bells, the Duchennes, and the Darwins especially."
   },
@@ -375,14 +413,22 @@
     "href": "kind_cms.html#current-community-meetup-schedule",
     "title": "KIND community meetup schedule",
     "section": "Current community meetup schedule",
+<<<<<<< HEAD
     "text": "Current community meetup schedule\n\nCurrent community meetup schedule\n\n\nDate\nTopic\nsubtopic\nSuggestor\n\n\n\n\n2024-09-02\nShort series on joins \n\n\n\n\n2024-09-09\nShort series on joins \n\n\n\n\n2024-09-16\nShort series on joins \n\n\n\n\n2024-09-23\n\n\n\n\n\n2024-09-30\n\n\n\n\n\n2024-10-07\n\n\n\n\n\n2024-10-14\nNO SESSION\n\n\n\n\n2024-10-21\nNO SESSION\n\n\n\n\n2024-10-28\nNO SESSION\n\n\n\n\n2024-11-04\n\n\n\n\n\n2024-11-11\n\n\n\n\n\n2024-11-18\n\n\n\n\n\n2024-11-25\n\n\n\n\n\n2024-12-02\n\n\n\n\n\n2024-12-09\n\n\n\n\n\n2024-12-16"
+=======
+    "text": "Current community meetup schedule\n\nCurrent community meetup schedule\n\n\nDate\nTopic\nsubtopic\nSuggestor\n\n\n\n\n2024-08-21\n\n\n\n\n\n2024-08-28\nShort series on joins \n\n\n\n\n2024-09-04\nShort series on joins \n\n\n\n\n2024-09-11\nShort series on joins \n\n\n\n\n2024-09-18\nShort series on joins"
+>>>>>>> 9cfd591a7942588f4108d011ef1ce65ee175b292
   },
   {
     "objectID": "kind_cms.html#future-community-meetup-ideas",
     "href": "kind_cms.html#future-community-meetup-ideas",
     "title": "KIND community meetup schedule",
     "section": "Future community meetup ideas",
+<<<<<<< HEAD
     "text": "Future community meetup ideas\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nData\nSafe havens / disclosure control / safe researcher training\n\n\n\nData\nDisclosure and pseudoanonymised data\n\n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nData\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\nMisc\nA non-web person’s intro to Java\n\n\n\nPower BI\ncorrelations and linear models in Power BI\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler\n\n\nR\nTidytext, sentiment analysis \n\n\n\nR \nData.table / tidyverse / polars / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nR \nR package roundup - Echarts4r, making PowerPoint in RMD, snakecase\n\n\n\nSkills\nWriting for different audiences\n\n\n\nStats\nDirected Acyclic Graphs (DAGs)\n\n\n\nStats\nPredictive modelling\n\n\n\nStats\nBayesian stats"
+=======
+    "text": "Future community meetup ideas\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nRAP\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\n\nR DPIA\n\n\n\n\nDAGs\n\n\n\n\nWriting for different audiences\n\n\n\n\npredictive modelling\n\n\n\n\nBayesian stats\n\n\n\n\ncorrelations, linear models in Power BI\n\n\n\n\nCSS / Java – front end ?NES digital\n\n\n\n\nProper markdown + pandoc + yaml\n\n\n\n\nSimon Rogers at NSS - wrote a book on machine learning, might have some good material: https://www.gla.ac.uk/events/listings/index.html/event/12598 (also a lecturer at Glasgow)\n\n\n\n\nSafe havens / disclosure control / safe researcher training\n\n\n\n\nDisclosure and pseudoanonymised data\n\n\n\nR \nData.table / tidyverse / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler\n\n\nTidytext, sentiment analysis \n\n\n\n\nR package roundup - Echarts4r, making PowerPoint in RMD, snakecase"
+>>>>>>> 9cfd591a7942588f4108d011ef1ce65ee175b292
   },
   {
     "objectID": "r.html",
