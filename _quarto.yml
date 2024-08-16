@@ -18,6 +18,8 @@ website:
             text: Excel
           - href: r.qmd
             text: R
+          - href: data_collection.qmd
+            text: Data collection (draft)
       - text: Sample SOPs
         menu:
           - href: visio.qmd
@@ -28,6 +30,8 @@ website:
         text: Book of the week
       - href: kind_cms.qmd
         text: Community meetup schedule
+      - href: ml_archive.qmd
+        text: Mailing list archive
     tools:
     - icon: github
       menu:

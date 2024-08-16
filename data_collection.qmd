@@ -1,0 +1,127 @@
+---
+title: "KIND Community Standards: Data collection"
+date: 2024-07-12
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+This is a draft set of community standards for data collection. These
+will be reviewed by the KIND community before publication during August
+2024.
+
+# {.tabset}
+
+## Basic standard for data collection
+
+:::{.callout-caution collapse=false appearance='default' icon=true}
+### Before you begin
+
+You need to be absolutely sure that you are allowed to collect the data you're planning to collect. If there is any doubt, you should contact your Information Governance and/or Caldicott teams before beginning collection.
+:::
+
+Note that this guide does not deal with data collection for research purposes, which is governed by different legislative and ethical standards. There can be some difficulty in deciding whether a piece of data collection would count as research, and so you might find the [HRA *Is my study research?* tool](https://www.hra-decisiontools.org.uk/research/) helpful.
+
+-   only collect data you are going to use
+-   collect the absolute minimum information you can. This is both good
+    practice, and a [legal
+    obligation](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/the-principles/data-minimisation/)
+-   make sure that your information has not already been collected
+-   different types of information (especially [personal
+    data](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/personal-information-what-is-it/what-is-personal-information-a-guide/))
+    will require different standards. This can be complex, so please
+    make contact with your colleagues in Information Governance early in
+    the process
+
+## Enhanced standard for data collection
+
+-   do you need to make sure that data will be collected consistently?
+    This is especially important if data collection will be lengthy, or
+    large-scale. Consider writing an SOP for data collection
+
+
+## Why think about data collection?
+
+> "We are often asked to collect, but many of us lack official training
+> and support for the kinds of complex questions thrown up by data
+> collection. Using data and collecting data are really different"
+(anonymous KIND member)
+
+## Why collect data?
+
+Some example purposes, drawn from a small-scale survey of 40 analysts
+from NHS boards performed during 2023: 
+
++ for clinical audit / quality
+improvement
++ for statutory data collection / official and national statistics 
++ establishing new services / requirements 
++ user research 
++ organisational consultation 
++ for performance and evaluation purposes
+
+
+## Tools used for data collection
+
+In a 2023 small-scale survey of 40 analysts, the main tools identified
+were as follows:
+
+| Tool                                                | n   |
+|-----------------------------------------------------|-----|
+| Excel                                               | 32  |
+| Microsoft Forms                                     | 16  |
+| Other survey tools (e.g. Surveymonkey, SmartSurvey) | 15  |
+| RedCap                                              | 2   |
+(note that respondents were able to identify >1 tool used)
+
+That simplicity of tools used conceals enormous complexity. A sample of factors identified as influencing tool choice were as follows:
+
++ availability / ubiquity amongst those collecting
++ flexibility / integration
++ audit trail
++ downstream ETL 
++ commissioning and training requirements
++ ease of use / skills available
++ IG / robustness / confidentiality 
++ cost
++ stakeholder mandate
++ technical features (e.g., limited response types)
++ speed of build
++ institutional approval and support
+
+Many staff have restrictions on the tools available. For example, looking at Microsoft Forms, a wide variety of different possibilities are found. A survey of 64 members of the KIND network during July 2024 gained responses from 23 organisations and NHS boards.
+
+<!-- ### Top five boards and orgs -->
+
+```{r}
+#| eval: false
+brds <- dplyr::tribble(
+  ~org, ~n,
+  "NHS Lothian",	14	,	
+"NHS Tayside",	6		,
+"NHS Fife",	5		,
+"NHS Grampian",	4		,
+"NHS Lanarkshire",	4)	
+
+brds |>
+  dplyr::mutate(n = paste0(n, " (", scales::percent(n/64), ")")) |>
+  knitr::kable(caption = "Top five orgs")
+```
+
+### Q: Can you use Forms?
+
+```{r}
+dplyr::tribble(
+  ~response, ~n, 
+"Yes - for anything", 17,
+"Yes - but not for personally-identifiable information",	36,
+"No",	2,
+"Other",	9
+) |>
+  knitr::kable(caption = "Responses to the question 'Can you use Forms?'")
+
+
+
+
+  
+```

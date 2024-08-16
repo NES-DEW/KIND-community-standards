@@ -1,20 +1,17 @@
 ﻿Date,Topic,Subtopic,Suggestor
-,RAP,https://rpubs.com/jackhannah95/rss-2019,Cristina Martin
-,,R DPIA,
-,,DAGs,
-,,Writing for different audiences,
-,,predictive modelling,
-,,Bayesian stats,
-,,"correlations, linear models in Power BI",
-,,CSS / Java – front end ?NES digital,
-,,Proper markdown + pandoc + yaml,
-,,"Simon Rogers at NSS  - wrote a book on machine learning, might have some good material: https://www.gla.ac.uk/events/listings/index.html/event/12598 (also a lecturer at Glasgow)",
-,,Safe havens / disclosure control / safe researcher training,
-,,Disclosure and pseudoanonymised data,
-Summer ,R ,Data.table / tidyverse / base R syntax-ecosystem-performance comparison ,Gatz / Zihao 
-Autumn ,R ,survey and surveyR packages ,?Jamie Zike 
-Autumn ,R ,synthpop ,Sarah Cass 
-Autumn ,Data,dealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards),
-Autumn ,R,Causal questions: https://www.r-causal.org/ ,Jessica Butler
-R,"Tidytext, sentiment analysis ",,
-R ,"R package roundup - Echarts4r, making PowerPoint in RMD, snakecase",,
+,Data,Safe havens / disclosure control / safe researcher training,
+,Data,Disclosure and pseudoanonymised data,
+,Data,dealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards),
+,Data,https://rpubs.com/jackhannah95/rss-2019,Cristina Martin
+,Misc,A non-web person's intro to Java,
+,Power BI,correlations and linear models in Power BI,
+,R,Causal questions: https://www.r-causal.org/ ,Jessica Butler
+,R,"Tidytext, sentiment analysis ",
+,R ,Data.table / tidyverse / polars / base R syntax-ecosystem-performance comparison ,Gatz / Zihao 
+,R ,survey and surveyR packages ,?Jamie Zike 
+,R ,synthpop ,Sarah Cass 
+,R ,"R package roundup - Echarts4r, making PowerPoint in RMD, snakecase",
+,Skills,Writing for different audiences,
+,Stats,Directed Acyclic Graphs (DAGs),
+,Stats,Predictive modelling,
+,Stats,Bayesian stats,
