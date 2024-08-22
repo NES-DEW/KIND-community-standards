@@ -1,45 +1,80 @@
 [
   {
-    "objectID": "data_collection.html",
-    "href": "data_collection.html",
-    "title": "KIND Community Standards: Data collection",
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html",
+    "title": "KIND network update",
     "section": "",
-    "text": "This is a draft set of community standards for data collection. These will be reviewed by the KIND community before publication during August 2024."
+    "text": "Dear colleagues,\nWelcome to our regular KIND network update. The big theme for coming week is the return of some of our social activities that have been taking a summer break. We’re starting to build up a set of community meetup topics for the Autumn on the Teams channel, and I’m delighted to say that SCODAS meetings will be back in their usual 1-2pm Tuesday slot.\nWe’ll also be pausing our one-off training sessions for the next couple of weeks to allow some space for preparatory work. If you’re a Tableau expert, please consider coming to a shakedown/feedback session for our new Tableau for beginners course which will be running 3-4ish on Thursday 22nd. It’s vital that we keep training resources aligned with the needs of the community, so your feedback is essential to our work.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
   },
   {
-    "objectID": "data_collection.html#basic-standard-for-data-collection",
-    "href": "data_collection.html#basic-standard-for-data-collection",
-    "title": "KIND Community Standards: Data collection",
-    "section": "Basic standard for data collection",
-    "text": "Basic standard for data collection\n\n\n\n\n\n\nBefore you begin\n\n\n\n\n\nYou need to be absolutely sure that you are allowed to collect the data you’re planning to collect. If there is any doubt, you should contact your Information Governance and/or Caldicott teams before beginning collection.\n\n\n\nNote that this guide does not deal with data collection for research purposes, which is governed by different legislative and ethical standards. There can be some difficulty in deciding whether a piece of data collection would count as research, and so you might find the HRA Is my study research? tool helpful.\n\nonly collect data you are going to use\ncollect the absolute minimum information you can. This is both good practice, and a legal obligation\nmake sure that your information has not already been collected\ndifferent types of information (especially personal data) will require different standards. This can be complex, so please make contact with your colleagues in Information Governance early in the process"
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#week-beginning-mon-26th-august-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#week-beginning-mon-26th-august-2024",
+    "title": "KIND network update",
+    "section": "",
+    "text": "Dear colleagues,\nWelcome to our regular KIND network update. The big theme for coming week is the return of some of our social activities that have been taking a summer break. We’re starting to build up a set of community meetup topics for the Autumn on the Teams channel, and I’m delighted to say that SCODAS meetings will be back in their usual 1-2pm Tuesday slot.\nWe’ll also be pausing our one-off training sessions for the next couple of weeks to allow some space for preparatory work. If you’re a Tableau expert, please consider coming to a shakedown/feedback session for our new Tableau for beginners course which will be running 3-4ish on Thursday 22nd. It’s vital that we keep training resources aligned with the needs of the community, so your feedback is essential to our work.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
   },
   {
-    "objectID": "data_collection.html#enhanced-standard-for-data-collection",
-    "href": "data_collection.html#enhanced-standard-for-data-collection",
-    "title": "KIND Community Standards: Data collection",
-    "section": "Enhanced standard for data collection",
-    "text": "Enhanced standard for data collection\n\ndo you need to make sure that data will be collected consistently? This is especially important if data collection will be lengthy, or large-scale. Consider writing an SOP for data collection"
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#wins-of-the-week",
+    "title": "KIND network update",
+    "section": "Wins of The Week",
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nProducing a series of reports for the first time using script I’ve been developing in R Markdown. Something that use to take over day to do, copying and pasting from Excel to Word, and still be littered with errors, now just takes around 2 hours and is accurate after some simple checks.\nHelped out a lot of people (and remained patient with them)!\nstuck head over parapet to make a point and felt better for doing it\nI proved I am worthy of my promotion"
   },
   {
-    "objectID": "data_collection.html#why-think-about-data-collection",
-    "href": "data_collection.html#why-think-about-data-collection",
-    "title": "KIND Community Standards: Data collection",
-    "section": "Why think about data collection?",
-    "text": "Why think about data collection?\n\n“We are often asked to collect, but many of us lack official training and support for the kinds of complex questions thrown up by data collection. Using data and collecting data are really different” (anonymous KIND member)"
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#events",
+    "title": "KIND network update",
+    "section": "Events",
+    "text": "Events\nThe Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the meeting will be 13.00-14.00 Tue 27th August 2024. Stefanie Swietlik (NHS Lothian) - Lothian Public Health Survey 2023."
   },
   {
-    "objectID": "data_collection.html#why-collect-data",
-    "href": "data_collection.html#why-collect-data",
-    "title": "KIND Community Standards: Data collection",
-    "section": "Why collect data?",
-    "text": "Why collect data?\nSome example purposes, drawn from a small-scale survey of 40 analysts from NHS boards performed during 2023:\n\nfor clinical audit / quality improvement\nfor statutory data collection / official and national statistics\nestablishing new services / requirements\nuser research\norganisational consultation\nfor performance and evaluation purposes"
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#kind-unconference-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#kind-unconference-2024",
+    "title": "KIND network update",
+    "section": "KIND Unconference 2024",
+    "text": "KIND Unconference 2024\nSave the date - 11th December 2024 - an opportunity to share and celebrate your hard work. Fully online, free and open to all, and plans afoot on the Teams channel."
   },
   {
-    "objectID": "data_collection.html#tools-used-for-data-collection",
-    "href": "data_collection.html#tools-used-for-data-collection",
-    "title": "KIND Community Standards: Data collection",
-    "section": "Tools used for data collection",
-    "text": "Tools used for data collection\nIn a 2023 small-scale survey of 40 analysts, the main tools identified were as follows:\n\n\n\nTool\nn\n\n\n\n\nExcel\n32\n\n\nMicrosoft Forms\n16\n\n\nOther survey tools (e.g. Surveymonkey, SmartSurvey)\n15\n\n\nRedCap\n2\n\n\n\n(note that respondents were able to identify &gt;1 tool used)\nThat simplicity of tools used conceals enormous complexity. A sample of factors identified as influencing tool choice were as follows:\n\navailability / ubiquity amongst those collecting\nflexibility / integration\naudit trail\ndownstream ETL\ncommissioning and training requirements\nease of use / skills available\nIG / robustness / confidentiality\ncost\nstakeholder mandate\ntechnical features (e.g., limited response types)\nspeed of build\ninstitutional approval and support\n\nMany staff have restrictions on the tools available. For example, looking at Microsoft Forms, a wide variety of different possibilities are found. A survey of 64 members of the KIND network during July 2024 gained responses from 23 organisations and NHS boards.\n\n\nQ: Can you use Forms?\n\nResponses to the question ‘Can you use Forms?’\n\n\nresponse\nn\n\n\n\n\nYes - for anything\n17\n\n\nYes - but not for personally-identifiable information\n36\n\n\nNo\n2\n\n\nOther\n9"
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#book-of-the-week",
+    "title": "KIND network update",
+    "section": "Book of the week",
+    "text": "Book of the week\nDavid Graeber. 2015. The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy.  ISBN 9781612195186, Worldcat. This is a fun and thought-provoking set of essays about bureacracy. It starts with a mystery: why, if people hate bureaucracy, is there so much of it?. A recurring theme in many KIND events that we spend lots of time managing forms and paperwork, rather than doing more important work. And so we might be reassured that it’s not just us, that ‘all of us end up finding increasing percentages of our day taken up in the filling out of forms.’ The most interesting parts of this book though are not about just moaning about the quantity of paperwork that we face, but instead point out exactly why all that paperwork might really be something to worry about. As the author notes, endless box ticking seems to prevent useful communication and other human interactions. Or, more cuttingly: ‘Bureaucratic procedures…make even the smartest people act like idiots’. That point then leads into a balancing act. As the title might suggest, some rules seem to constrain or prevent us doing useful things, while some rules seem to do the opposite (say, by insisting that we can’t discriminate based on appearance). So there’s a balancing act between different kinds of rules, that shows up as a long-running back and forth between different ways of ruling, that the author traces across times and places. That range of cases, and pleasure in talking about paperwork, is a substantial contributor to the great charm of the book..\nUnsubscribe from these emails"
+  },
+  {
+    "objectID": "mentoring.html",
+    "href": "mentoring.html",
+    "title": "KIND Mentoring Scheme",
+    "section": "",
+    "text": "Draft guidance\n\n\n\n\n\nThis is currently draft guidance, may therefore contain errors and omissions, and is liable to change\nWe run an informal mentoring scheme. It’s designed to support professional development, by support a project over about 8 weeks. We provide support and training for mentors to help build their mentoring skills during mentoring. The scheme operates entirely by mutual consent, so participants are free to leave at any time."
+  },
+  {
+    "objectID": "mentoring.html#how-it-works",
+    "href": "mentoring.html#how-it-works",
+    "title": "KIND Mentoring Scheme",
+    "section": "How it works",
+    "text": "How it works\n\n\n\n\n\n\n\ngraph TD;\n\nrequest[\"Mentor makes a new mentoring request\"] --&gt; mentorfinds[\"Mentor volunteers to mentor\"]\n\nmentorfinds --&gt; email[\"Mentor and mentee put in touch by email\"]\n\nemail --&gt; meeting[\"Informal meeting to discuss project and plans\"]\n\nmeeting --&gt;  contract[\"Sign contract\"]\n\ncontract --&gt; complete[\"Complete the mentoring project\"]\n\ncomplete --&gt; present[\"Present the project at the mmmmm\"]\n\n\n\n\n\n\n\n\n\na mentee puts a request on the KIND Teams channel by filling in the new project form\na mentor sees the request on the Teams channel, and expressed interest in mentoring)\nwe put the mentee and mentor in touch by email to discuss the project\nif everyone is happy, mentor and mentee meet to agree a broad outline for their mentoring arrangement\nboth mentor and mentee sign a mutua-consent contract\nwe help and support them through the duration of the scheme. Either party can withdraw at any time without fault\nwe invite mentors and mentees to come and present their experiences at the monthly mentoring meetup"
+  },
+  {
+    "objectID": "mentoring.html#key-documents",
+    "href": "mentoring.html#key-documents",
+    "title": "KIND Mentoring Scheme",
+    "section": "Key documents",
+    "text": "Key documents\n\nnew mentoring request form - use this to propose a new project\npotential mentor form - use this to express interest in mentoring a project\ncontract form - use this to agree a new mentoring relationship (see a sample contract)\nwithdrawal form - use this to end a mentoring relationship"
+  },
+  {
+    "objectID": "mentoring.html#what-makes-a-good-mentoring-project",
+    "href": "mentoring.html#what-makes-a-good-mentoring-project",
+    "title": "KIND Mentoring Scheme",
+    "section": "What makes a good mentoring project?",
+    "text": "What makes a good mentoring project?\n\nsuccessful projects are generally short and simple\n\nshort meaning they can generally be finished off during the 8 week mentoring scheme\nsimple meaning they don’t depend on a lot of new infrastructure, require organisational change, or need an mentor to gain an unrealistic range of new skills\n\nsuccessful project proposals should therefore be short and precise\n\nwhat are you trying to do?\nhow are you trying to do it?\nwhich barrier(s) do you have in place?\nwhat do you need a mentor to do?\n\nsuccessful projects aren’t about cheerleading\n\nwe’d expect mentors to provide largely technical advice: “have you considered using x”\nwe do not expect mentors to provide detailed technical training\nwe specifically preclude mentors giving detailed technical advice regarding systems. Mentors are not consultants."
+  },
+  {
+    "objectID": "mentoring.html#what-might-i-do-instead",
+    "href": "mentoring.html#what-might-i-do-instead",
+    "title": "KIND Mentoring Scheme",
+    "section": "What might I do instead?",
+    "text": "What might I do instead?\nIf your project doesn’t fit this scheme, consider:\n\nasking a question on the KIND teams channel\ncompleting one of our training courses on a topic, particularly if you’re struggling to put your request into specific language\npresenting your query/issue in one of the open KIND community meetup sessions"
   },
   {
     "objectID": "ml_archive.html",
@@ -252,6 +287,13 @@
     "text": "Download KIND book of the week data as csv"
   },
   {
+    "objectID": "kind_botw.html#how-to-lie-with-statistics",
+    "href": "kind_botw.html#how-to-lie-with-statistics",
+    "title": "KIND Book of the week",
+    "section": "21/08/2024: How to Lie with Statistics",
+    "text": "21/08/2024: How to Lie with Statistics\nDarrell Huff. 1954. How to Lie with Statistics. ISBN 9780140136296, Worldcat link.\n This week’s book of the week was suggested by Helen Alexander, an Evaluation & Change Team Manager from NHS Lanarkshire. She writes: ‘Everyone should read How to Lie with Statistics. It opens your eyes to the different ways we can present seemingly objective numbers to support hugely varying arguments/points of view. If you think statistics represent the absolute truth, this will make you think again.’"
+  },
+  {
     "objectID": "kind_botw.html#the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy",
     "href": "kind_botw.html#the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy",
     "title": "KIND Book of the week",
@@ -411,5 +453,47 @@
     "title": "KIND community meetup schedule",
     "section": "Future community meetup ideas",
     "text": "Future community meetup ideas\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nData\nSafe havens / disclosure control / safe researcher training\n\n\n\nData\nDisclosure and pseudoanonymised data\n\n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nData\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\nMisc\nA non-web person’s intro to Java\n\n\n\nPower BI\ncorrelations and linear models in Power BI\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler\n\n\nR\nTidytext, sentiment analysis \n\n\n\nR \nData.table / tidyverse / polars / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nR \nR package roundup - Echarts4r, making PowerPoint in RMD, snakecase\n\n\n\nSkills\nWriting for different audiences\n\n\n\nStats\nDirected Acyclic Graphs (DAGs)\n\n\n\nStats\nPredictive modelling\n\n\n\nStats\nBayesian stats"
+  },
+  {
+    "objectID": "data_collection.html",
+    "href": "data_collection.html",
+    "title": "KIND Community Standards: Data collection",
+    "section": "",
+    "text": "This is a draft set of community standards for data collection. These will be reviewed by the KIND community before publication during August 2024."
+  },
+  {
+    "objectID": "data_collection.html#basic-standard-for-data-collection",
+    "href": "data_collection.html#basic-standard-for-data-collection",
+    "title": "KIND Community Standards: Data collection",
+    "section": "Basic standard for data collection",
+    "text": "Basic standard for data collection\n\n\n\n\n\n\nBefore you begin\n\n\n\n\n\nYou need to be absolutely sure that you are allowed to collect the data you’re planning to collect. If there is any doubt, you should contact your Information Governance and/or Caldicott teams before beginning collection.\n\n\n\nNote that this guide does not deal with data collection for research purposes, which is governed by different legislative and ethical standards. There can be some difficulty in deciding whether a piece of data collection would count as research, and so you might find the HRA Is my study research? tool helpful.\n\nonly collect data you are going to use\ncollect the absolute minimum information you can. This is both good practice, and a legal obligation\nmake sure that your information has not already been collected\ndifferent types of information (especially personal data) will require different standards. This can be complex, so please make contact with your colleagues in Information Governance early in the process"
+  },
+  {
+    "objectID": "data_collection.html#enhanced-standard-for-data-collection",
+    "href": "data_collection.html#enhanced-standard-for-data-collection",
+    "title": "KIND Community Standards: Data collection",
+    "section": "Enhanced standard for data collection",
+    "text": "Enhanced standard for data collection\n\ndo you need to make sure that data will be collected consistently? This is especially important if data collection will be lengthy, or large-scale. Consider writing an SOP for data collection"
+  },
+  {
+    "objectID": "data_collection.html#why-think-about-data-collection",
+    "href": "data_collection.html#why-think-about-data-collection",
+    "title": "KIND Community Standards: Data collection",
+    "section": "Why think about data collection?",
+    "text": "Why think about data collection?\n\n“We are often asked to collect, but many of us lack official training and support for the kinds of complex questions thrown up by data collection. Using data and collecting data are really different” (anonymous KIND member)"
+  },
+  {
+    "objectID": "data_collection.html#why-collect-data",
+    "href": "data_collection.html#why-collect-data",
+    "title": "KIND Community Standards: Data collection",
+    "section": "Why collect data?",
+    "text": "Why collect data?\nSome example purposes, drawn from a small-scale survey of 40 analysts from NHS boards performed during 2023:\n\nfor clinical audit / quality improvement\nfor statutory data collection / official and national statistics\nestablishing new services / requirements\nuser research\norganisational consultation\nfor performance and evaluation purposes"
+  },
+  {
+    "objectID": "data_collection.html#tools-used-for-data-collection",
+    "href": "data_collection.html#tools-used-for-data-collection",
+    "title": "KIND Community Standards: Data collection",
+    "section": "Tools used for data collection",
+    "text": "Tools used for data collection\nIn a 2023 small-scale survey of 40 analysts, the main tools identified were as follows:\n\n\n\nTool\nn\n\n\n\n\nExcel\n32\n\n\nMicrosoft Forms\n16\n\n\nOther survey tools (e.g. Surveymonkey, SmartSurvey)\n15\n\n\nRedCap\n2\n\n\n\n(note that respondents were able to identify &gt;1 tool used)\nThat simplicity of tools used conceals enormous complexity. A sample of factors identified as influencing tool choice were as follows:\n\navailability / ubiquity amongst those collecting\nflexibility / integration\naudit trail\ndownstream ETL\ncommissioning and training requirements\nease of use / skills available\nIG / robustness / confidentiality\ncost\nstakeholder mandate\ntechnical features (e.g., limited response types)\nspeed of build\ninstitutional approval and support\n\nMany staff have restrictions on the tools available. For example, looking at Microsoft Forms, a wide variety of different possibilities are found. A survey of 64 members of the KIND network during July 2024 gained responses from 23 organisations and NHS boards.\n\n\nQ: Can you use Forms?\n\nResponses to the question ‘Can you use Forms?’\n\n\nresponse\nn\n\n\n\n\nYes - for anything\n17\n\n\nYes - but not for personally-identifiable information\n36\n\n\nNo\n2\n\n\nOther\n9"
   }
 ]
