@@ -9,6 +9,8 @@ execute:
 ```{r}
 botw <- readr::read_csv("data/KIND_book_of_the_week.csv") |>
   dplyr::filter(!is.na(Year)) |>
+  # dplyr::mutate(Date = lubridate::dmy(Date),
+  #               month_start = lubridate::floor_date(Date, "month")) |>
   dplyr::arrange(desc(lubridate::dmy(Date)))
 
 source("R/bullet_list.R")

@@ -26,6 +26,8 @@ website:
             text: Visio
       - href: faq.qmd
         text: KIND FAQ
+      - href: mentoring.qmd
+        text: 🆕 Mentoring scheme
       - href: kind_botw.qmd
         text: Book of the week
       - href: kind_cms.qmd

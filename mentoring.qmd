@@ -1,0 +1,81 @@
+---
+title: "KIND Mentoring Scheme"
+date: 2024-08-22
+---
+
+:::{.callout-warning collapse=false appearance='default' icon=true}
+## Draft guidance
+
+This is currently draft guidance, may therefore contain errors and omissions, and is liable to change
+
+:::
+
+
+We run an informal mentoring scheme. It's designed to support professional development, by support a project over about 8 weeks. We provide support and training for mentors to help build their mentoring skills during mentoring. The scheme operates entirely by mutual consent, so participants are free to leave at any time.
+
+## How it works 
+
+:::: {.columns}
+
+::: {.column width='60%'}
+```{mermaid}
+%%| fig-width: 6
+%%| fig-height: 8
+
+graph TD;
+
+request["Mentor makes a new mentoring request"] --> mentorfinds["Mentor volunteers to mentor"]
+
+mentorfinds --> email["Mentor and mentee put in touch by email"]
+
+email --> meeting["Informal meeting to discuss project and plans"]
+
+meeting -->  contract["Sign contract"]
+
+contract --> complete["Complete the mentoring project"]
+
+complete --> present["Present the project at the mmmmm"]
+
+```
+:::
+
+::: {.column width='40%'}
+1. a mentee puts a request on the KIND Teams channel by filling in the [new project form](https://forms.office.com/e/AUCcHB4ySj)</br></br>
+1. a mentor [sees the request on the Teams channel](https://teams.microsoft.com/l/channel/19%3A0708d3664e064dd3a0dbbe3079817283%40thread.tacv2/Mentoring?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a), and [expressed interest in mentoring](https://forms.office.com/e/01bdi52YHB))</br></br>
+1. we put the mentee and mentor in touch by email to discuss the project</br></br>
+1. if everyone is happy, mentor and mentee meet to agree a broad outline for their mentoring arrangement
+1. both mentor and mentee [sign a mutua-consent contract]((https://forms.office.com/e/ik4fpth04B))</br></br>
+1. we help and support them through the duration of the scheme. [Either party can withdraw at any time](https://forms.office.com/e/9mDyGFVzB1) without fault</br></br>
+1. we invite mentors and mentees to come and present their experiences at the monthly mentoring meetup</br></br>
+:::
+
+::::
+
+## Key documents
+
++ [new mentoring request form](https://forms.office.com/e/AUCcHB4ySj) - use this to propose a new project
++ [potential mentor form](https://forms.office.com/e/01bdi52YHB) - use this to express interest in mentoring a project
++ [contract form](https://forms.office.com/e/ik4fpth04B) - use this to agree a new mentoring relationship (see [a sample contract](src/KIND_mentoring_sample_contract.pdf))
++ [withdrawal form](https://forms.office.com/e/9mDyGFVzB1) - use this to end a mentoring relationship
+
+## What makes a good mentoring project?
+
++ successful projects are generally short and simple
+  + short meaning they can generally be finished off during the 8 week mentoring scheme
+  + simple meaning they don't depend on a lot of new infrastructure, require organisational change, or need an mentor to gain an unrealistic range of new skills
++ successful project proposals should therefore be short and precise
+  + what are you trying to do?
+  + how are you trying to do it?
+  + which barrier(s) do you have in place?
+  + what do you need a mentor to do?
++ successful projects aren't about cheerleading
+  + we'd expect mentors to provide largely technical advice: "have you considered using x"
+  + we do not expect mentors to provide detailed technical training
+  + we specifically preclude mentors giving detailed technical advice regarding systems. Mentors are not consultants.
+
+## What might I do instead?
+If your project doesn't fit this scheme, consider:
+
++ asking a question [on the KIND teams channel](https://teams.microsoft.com/l/channel/19%3AQZ7-PbFVcziG2piHLt1_ifey3I2cwFL0yBuTSS8vVao1%40thread.tacv2/General?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a)
++ completing one of our [training courses](https://learn.nes.nhs.scot/36791) on a topic, particularly if you're struggling to put your request into specific language
++ presenting your query/issue in one of the open [KIND community meetup sessions](kind_cms.qmd)
