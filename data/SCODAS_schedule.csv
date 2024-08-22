@@ -1,0 +1,102 @@
+Date,Chair,Topic,Presenter,Contact Details,Agreed
+2023-01-17T00:00:00Z,NA,NA,NA,NA,NA
+2023-01-24T00:00:00Z,NA,NA,NA,NA,NA
+2023-01-31T00:00:00Z,NA,WSM,Robyn,robyn.munro@phs.scot,Yes
+2023-02-07T00:00:00Z,Corri,Anatomy of a Crisis,Corri,Corri,Yes
+2023-02-14T00:00:00Z,NA,NA,NA,NA,Yes
+2023-02-21T00:00:00Z,Beatrix,Official Stats,David Baird,david.baird3@phs.scot,Yes
+2023-02-28T00:00:00Z,Sarah,SHS,Morag,morag.shepherd@gov.scot,yes
+2023-03-07T00:00:00Z,Cancelled,NA,NA,NA,NA
+2023-03-14T00:00:00Z,Clare,LIST,Julie Kidd,NA,Yes
+2023-03-21T00:00:00Z,Karen,Discovery,James Gray,jamie.gray2@phs.scot,Yes
+2023-03-28T00:00:00Z,Hilary,SAS,Andrew Muirhead,andrew.muirhead2@nhs.scot,Yes
+2023-04-04T00:00:00Z,Andrew,SCODAS LITE,NA,NA,NA
+2023-04-11T00:00:00Z,Beatrix,SCODAS Lite,NA,NA,NA
+2023-04-18T00:00:00Z,Clare,SIMD Analysis of Waiting Time Data,Adam Gatcombe (NHS Grampian),NA,NA
+2023-04-25T00:00:00Z,Hilary,DV Update,Neil Sinclair,neil.sinclair@phs.scot,Yes
+2023-05-02T00:00:00Z,Sarah,Harm Reduction Data Indicators,Julian Augley,julian.augley2@nhslothian.scot.nhs.uk,Yes
+2023-05-09T00:00:00Z,Andrew,Unscheduled Care Datamart,Elaine Parry and potentially Emma McNair,elaine.parry@phs.scot,Yes
+2023-05-16T00:00:00Z,Hilary,"Greater Access, Improved Insight, Better Outcomes",Carol Sinclair,Carol.Sinclair2@gov.scot,Yes
+2023-05-23T00:00:00Z,Brendan,Assessment of impact of text messaging on DNAs,Nora Villamil Buenrostro (NHS Lothian),nora.villamilbuenrostro@nhslothian.scot.nhs.uk,Yes
+2023-05-30T00:00:00Z,Sarah,Redcap,Neil Perkins (PHS),Neil.Perkins@phs.scot,Yes
+2023-06-06T00:00:00Z,Beatrix,SCODAS Lite,SCODAS Lite,SCODAS Lite,NA
+2023-06-13T00:00:00Z,Hilary,GIS/Mapping,"Mette Tranter (NHS Lothian), Ian Douglas (NHS Highland), Brendan Clarke (NES)",Brendan,No
+2023-06-20T00:00:00Z,Clare,Health & Wellbeing Census Scotland 2021/22,Jill Morton (Scottish Government),jill.morton@gov.scot,Yes
+2023-06-27T00:00:00Z,Brendan,Analytical Pipelines / OSR,"Anna Price, Nisha Bunting (Office for Statistics Regulation)","Price, Anna <Anna.Price@Statistics.gov.uk>
+Bunting, Nisha <Nisha.Bunting@Statistics.gov.uk>",Yes
+2023-07-04T00:00:00Z,Sarah,SCODAS Lite,SCODAS Lite,SCODAS Lite,NA
+2023-07-11T00:00:00Z,Beatrix,SCODAS Lite,SCODAS Lite,SCODAS Lite,NA
+2023-07-18T00:00:00Z,Clare,SCODAS Lite,SCODAS Lite,SCODAS Lite,NA
+2023-07-25T00:00:00Z,Andy,SCODAS Lite,SCODAS Lite,SCODAS Lite,NA
+2023-08-01T00:00:00Z,Brendan,SCODAS Lite,SCODAS Lite,SCODAS Lite,NA
+2023-08-08T00:00:00Z,Beatrix,SCODAS Lite,SCODAS Lite,SCODAS Lite,NA
+2023-08-15T00:00:00Z,Brendan,SCODAS Lite,SCODAS Lite,SCODAS Lite,NA
+2023-08-22T00:00:00Z,Sarah,SPIRE and the Primary Care Data and Intelligence Platform,Billy Davidson (NSS),william.davidson2@nhs.scot,Yes. Will need a reminder end July.
+2023-08-29T00:00:00Z,Andy,SIMD (Scottish Index of Multiple Deprivation),Elizabeth Fraser (Scottish Government),Elizabeth.Fraser@gov.scot,Yes
+2023-09-05T00:00:00Z,Brendan,SCI-Diabetes Work in Lothian,Fraser Munro (PHS),Fraser.munro5@phs.scot,yes
+2023-09-12T00:00:00Z,Beatrix,CHI2,David Craig (PHS),david.craig6@nhs.scot,NA
+2023-09-19T00:00:00Z,Clare,Day of Care Audit App,Andy Hardy (GG&C),Andrew.Hardy2@ggc.scot.nhs.uk,yes
+2023-09-26T00:00:00Z,Sarah,National Information Leads,Brian Lawson,Brian.Lawson@gjnh.scot.nhs.uk (Admin: Carol.Canning@gjnh.scot.nhs.uk),Yes.
+2023-10-03T00:00:00Z,Andy,Vaccination special (redux),Andrea Canale (NHS Grampian) et al,NA,Yes
+2023-10-10T00:00:00Z,Brendan,JISC (+/- Feedback on SCODAS/KIND Data Collection Survey),Andy Peters (NHS Lothian) (+/- Brendan),Andy.Peters@nhslothian.scot.nhs.uk,Yes
+2023-10-17T00:00:00Z,Beatrix,SCODAS Lite,SCODAS Lite,SCODAS Lite,NA
+2023-10-24T00:00:00Z,Clare,SCODAS Lite,SCODAS Lite,SCODAS Lite,NA
+2023-10-31T00:00:00Z,Sarah,Lothian @ HACA,"Patrick Hogan, Sarah MacKay, Catriona, Bethany, Cate & Jules from Lothian (or selection)",NA,Yes
+2023-10-31T00:00:00Z,NA,Primary care data and intelligence update,Billy Davidson (NSS),william.davidson2@nhs.scot,NA
+2023-11-07T00:00:00Z,Beatrix,National Data Catalogue,Ian Baillie (PHS),Ian Baillie <Ian.Baillie@phs.scot>,Yes
+2023-11-14T00:00:00Z,Clare,DV layer and data quality,"Elaine McNish, Kat Karacaoglu, Mike Birnie","kat.karacaoglu@phs.scot, elaine.mcnish@phs.scot",Yes
+2023-11-21T00:00:00Z,Andy,PHS malaria map,Andrew Gasiorowski,andrew.gasiorowski2@phs.scot,Yes
+2023-11-28T00:00:00Z,Brendan,PHS Terminology team - overview and future plans,Morag Christie (PHS),janice.watson@phs.scot,Yes
+2023-12-05T00:00:00Z,Brendan,HEE's vision for data specialists,"James Freed, Health Education England",james.freed@hee.nhs.uk,Yes
+2023-12-12T00:00:00Z,Andrea,Partnership profiles and RAP,NHS Highland Public Health Intelligence,NA,NA
+2023-12-19T00:00:00Z,Sarah,SCODAS Lite,SCODAS Lite,SCODAS Lite,NA
+2023-12-26T00:00:00Z,NA,No meeting - DV update in Teams,No meeting - DV update in Teams,No meeting - DV update in Teams,NA
+2024-01-02T00:00:00Z,NA,No meeting - DV update in Teams,No meeting - DV update in Teams,No meeting - DV update in Teams,NA
+2024-01-09T00:00:00Z,Andy,Round SCODAS? Plans for the year.,NA,NA,NA
+2024-01-16T00:00:00Z,Beatrix,PHS data catalogue,Deborah Shipton and Graham McGowan,deborah.shipton@phs.scot; graham.mcgowan@phs.scot,Provisional
+2024-01-23T00:00:00Z,Sarah,Diagnostic testing and waiting times in A&E,"Andrew Jones, Strategy Unit, NHS England",andrew.jones40@nhs.net,Proper outlook invite to be sent
+2024-01-30T00:00:00Z,Brendan,SCODAS lite,SCODAS lite,NA,NA
+2024-02-06T00:00:00Z,Brendan,PIS (Prescribing Information System) - Mental Health and COPD projects,"Andrea Canale, Raul Berrocal (NHS Grampian) et al",andrea.canale@nhs.scot,Confirmed
+2024-02-13T00:00:00Z,Andrea,Whole system and winter dashboard,"Ewout Jaspers (PHS), Rucha Amin (SG)",emma.mcnair@phs.scot,Confirmed by email 5th Feb.
+2024-02-20T00:00:00Z,Andy,Self Harm Health Needs Assessment in NHS GGC (Mental health),Euan Fisher (NHS GGC),euan.fisher2@nhs.scot,NA
+2024-02-27T00:00:00Z,Sarah,Focus on Deaths data,SCODAS team effort,NA,NA
+2024-03-05T00:00:00Z,Beatrix,A&E Public Information Dashboard,Bethany Hitchen (NHS Lothian),bethany.hitchen2@nhs.scot,NA
+2024-03-12T00:00:00Z,Clare,Cancer Clusters,Cavan Gallagher (NHS Lothian),cavan.gallagher@nhs.scot,NA
+2024-03-19T00:00:00Z,Brendan,HEPMA and Comparative Business Objects,Will Clayton (PHS),Will.Clayton@phs.scot,NA
+2024-03-26T00:00:00Z,Sarah,Gender based violence,Kevin Campbell (PHS),NA,NA
+2024-04-02T00:00:00Z,Brendan,SCODAS Lite,NA,NA,NA
+2024-04-09T00:00:00Z,Beatrix,SCODAS Lite,NA,NA,NA
+2024-04-16T00:00:00Z,Clare,AJ more dubious suggestion: School holidays - SCODAS lite?,NA,NA,NA
+2024-04-23T00:00:00Z,Brendan,NHS Benchmaking Network (UK),"Emma Bamber, Janet Heaton",emmabamber@nhs.net'; 'j.heaton3@nhs.net',yes
+2024-04-30T00:00:00Z,Clare,Time-series modelling of hospital beds,Ruaridh Malcolm (PHS),ruaridh.malcolm2@phs.scot,yes
+2024-05-07T00:00:00Z,Sarah,SCODAS social,Team effort,NA,NA
+2024-05-14T00:00:00Z,Andy,Maternity Stats,Meena Ghori and Celina Davis (PHS),Meena Ghori <meena.ghori@phs.scot>; celina.davis@phs.scot,yes
+2024-05-21T00:00:00Z,Sarah,Age-period-cohort Analysis,Callum Rintoul and Greg Stanners (PHS),Greig.Stanners@phs.scot; callum.rintoul@phs.scot,yes
+2024-05-28T00:00:00Z,Clare,SCODAS Lite,NA,NA,NA
+2024-06-04T00:00:00Z,Brendan,Discovery,Paul Carroll and Alexander Royle (PHS),phs.discovery@phs.scot,NA
+2024-06-11T00:00:00Z,Andy,ECOSS,Anette Little (PHS),annette.little@phs.scot,Yes
+2024-06-18T00:00:00Z,Beatrix,Modelling Emergency Dental Workload [note request by Tomi not to record session],Tomi Ajetunmobi (PHS LIST D&G),Tomi.Ajetunmobi@phs.scot,Yes
+2024-06-25T00:00:00Z,Clare,Flex Dashboards,Robbie MacAulay (PHS LIST),Robbie.MacAulay3@phs.scot,Yes
+2024-07-02T00:00:00Z,Sarah,SCODAS Lite,NA,NA,NA
+2024-07-09T00:00:00Z,Beatrix,SCODAS Lite,NA,NA,NA
+2024-07-16T00:00:00Z,Brendan,SCODAS Lite,NA,NA,NA
+2024-07-23T00:00:00Z,Andy,SCODAS Lite,NA,NA,NA
+2024-07-30T00:00:00Z,Sarah,SCODAS Lite,NA,NA,NA
+2024-08-06T00:00:00Z,Beatrix,SCODAS Lite,NA,NA,NA
+2024-08-13T00:00:00Z,Andy,SCODAS Lite,NA,NA,NA
+2024-08-20T00:00:00Z,Brendan,Data Stategy update,Gemma Wilson and Simon Crawley (Scottish Government),gemma.wilson@gov.scot,Yes
+2024-08-27T00:00:00Z,Sarah,Lothian Public Health Survey 2023,Stefanie Swietlik (NHS Lothian),stefanie.swietlik@nhs.scot,Yes
+2024-09-03T00:00:00Z,Andy,Modelling hip fractures,Sarah Griffin (NHS Highland),sarah.griffin1@nhs.scot,Yes
+2024-09-10T00:00:00Z,Clare,Child Poverty Indicators,Julie Arnot and Martin Taulbut (PHS),"julie.arnot@phs.scot, martin.taulbut@phs.scot",Yes
+2024-09-17T00:00:00Z,Beatrix,Infectious diseases notification exceedance detection (surveillance/ signals for potential outbreaks),Lukasz Henszel,Lukasz.Henszel@ggc.scot.nhs.uk,NA
+2024-09-24T00:00:00Z,NA,NA,NA,NA,NA
+2024-10-01T00:00:00Z,NA,PHS Survey on Statistical Publications,Camillia Somers,phs.statsgov@phs.scot,to reconfirm (AJ)
+2024-10-08T00:00:00Z,NA,SCODAS Lite,NA,NA,NA
+2024-10-15T00:00:00Z,NA,SCODAS Lite,NA,NA,NA
+2024-10-22T00:00:00Z,NA,NSS Testing teams,tba,NA,No
+2024-10-29T00:00:00Z,Brendan,R Packages  in PHS,James McMahon,James.Mcmahon@phs.scot,Yes
+2024-11-05T00:00:00Z,NA,Developments in ScotPHO profiles,Vicky Elliot,victoria.elliott@phs.scot,yes (AJ)
+2024-11-12T00:00:00Z,NA,NA,NA,NA,NA
+NA,NA,Primary care data and intelligence Platform - demo,Billy Davidson (NSS),william.davidson2@nhs.scot,NA
+NA,NA,Data accelerator examples,?Joyce Dalgleish,NA,NA
+NA,NA,Improvement Service,NA,NA,NA
