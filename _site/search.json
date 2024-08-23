@@ -102,14 +102,14 @@
     "href": "mentoring.html",
     "title": "KIND Mentoring Scheme",
     "section": "",
-    "text": "Draft guidance\n\n\n\n\n\nThis is currently draft guidance, may therefore contain errors and omissions, and is liable to change\nWe run an informal mentoring scheme. It’s designed to support professional development, by support a project over about 8 weeks. We provide support and training for mentors to help build their mentoring skills during mentoring. The scheme operates entirely by mutual consent, so participants are free to leave at any time."
+    "text": "Draft guidance\n\n\n\n\n\nThis is currently draft guidance, may therefore contain errors and omissions, and is liable to change\nWe run an informal mentoring scheme. It’s designed to support professional development, by putting together mentors and mentees to work on a well-defined project over about 8 weeks. The scheme operates entirely by mutual consent, so participants are free to leave at any time. We think the benefits are reciprocal, with both parties gaining from the work."
   },
   {
     "objectID": "mentoring.html#how-it-works",
     "href": "mentoring.html#how-it-works",
     "title": "KIND Mentoring Scheme",
     "section": "How it works",
-    "text": "How it works\n\n\n\n\n\n\n\ngraph TD;\n\nrequest[\"Mentor makes a new mentoring request\"] --&gt; mentorfinds[\"Mentor volunteers to mentor\"]\n\nmentorfinds --&gt; email[\"Mentor and mentee put in touch by email\"]\n\nemail --&gt; meeting[\"Informal meeting to discuss project and plans\"]\n\nmeeting --&gt;  contract[\"Sign contract\"]\n\ncontract --&gt; complete[\"Complete the mentoring project\"]\n\ncomplete --&gt; present[\"Present the project at the mmmmm\"]\n\n\n\n\n\n\n\n\n\na mentee puts a request on the KIND Teams channel by filling in the new project form\na mentor sees the request on the Teams channel, and expressed interest in mentoring)\nwe put the mentee and mentor in touch by email to discuss the project\nif everyone is happy, mentor and mentee meet to agree a broad outline for their mentoring arrangement\nboth mentor and mentee sign a mutua-consent contract\nwe help and support them through the duration of the scheme. Either party can withdraw at any time without fault\nwe invite mentors and mentees to come and present their experiences at the monthly mentoring meetup"
+    "text": "How it works\n\n\n\n\n\n\n\ngraph TD;\n\nrequest[\"Mentee sends a project outline\"] --&gt; mentorfinds[\"Mentor finds a suitable project outline\"]\n\nmentorfinds --&gt; email[\"Both discuss by email\"]\n\nemail --&gt; meeting[\"Informal meeting to set goals and expectations\"]\n\nmeeting --&gt;  contract[\"Sign contract\"]\n\ncontract --&gt; complete[\"Complete the mentoring project\"]\n\ncomplete --&gt; present[\"Present the project at the mmmmm\"]\n\n\n\n\n\n\n\n\n\na mentee puts a request on the KIND Teams channel by filling in the new project form\na mentor sees the request on the Teams channel, and expressed interest in mentoring)\nwe put the mentee and mentor in touch by email to discuss the project\nmentor and mentee meet to agree a broad outline for their mentoring arrangement\nboth mentor and mentee sign a mutua-consent contract\nwe help and support them through the duration of the scheme. Either party can withdraw at any time without fault\nwe invite mentors and mentees to come and present their experiences at the monthly mentoring meetup"
   },
   {
     "objectID": "mentoring.html#key-documents",
@@ -495,5 +495,19 @@
     "title": "KIND Community Standards: R",
     "section": "Considerations for teams and groups",
     "text": "Considerations for teams and groups\n\nHave a house code style, possibly implemented using styler Code styling for readability is important, and no-one agrees, so you’ll need to lead.\nWhen documentation is extremely important, consider using roxygen2 to encourage best documentation practice"
+  },
+  {
+    "objectID": "mentoring.html#why-mentoring",
+    "href": "mentoring.html#why-mentoring",
+    "title": "KIND Mentoring Scheme",
+    "section": "Why mentoring?",
+    "text": "Why mentoring?\n\n\n\nFor mentees\n\nan opportunity to get support and guidance that might not be available in your workplace\nan efficient way of putting skills into practice\nbuild your professional network\n\n\n\n\nFor mentors\n\npass on your skills and knowledge to the wider community\nto strengthen your understanding of a topic - think of mentoring as a variant of the Feynman method + to develop new professional skills, particularly skills relevant to more senior roles such as management, personal development, and community building"
+  },
+  {
+    "objectID": "mentoring.html#mentoring-projects",
+    "href": "mentoring.html#mentoring-projects",
+    "title": "KIND Mentoring Scheme",
+    "section": "Mentoring projects",
+    "text": "Mentoring projects\n\nGood project ideasBad project ideas\n\n\n\nhelp me turn some R code into a package - specific and achievable\nsupport me through a first literature review - sharing expertise\nI’ve just done a course on x, but need some support putting x to work in y - supporting areas not well-covered by other means\n\n\n\n\nteach me how to code - open-ended projects aren’t a good fit for an 8-week mentoring arrangement\nadvise our organisation on x - mentoring isn’t consultancy\nI need someone to encourage me to work harder - mentoring isn’t cheerleading\nmy spreadsheet is broken - focal requests for assistance would be better asked on the KIND network"
   }
 ]

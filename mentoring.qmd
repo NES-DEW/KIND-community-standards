@@ -10,8 +10,41 @@ This is currently draft guidance, may therefore contain errors and omissions, an
 
 :::
 
+We run an informal mentoring scheme. It's designed to support professional development, by putting together mentors and mentees to work on a well-defined project over about 8 weeks. The scheme operates entirely by mutual consent, so participants are free to leave at any time. We think the benefits are reciprocal, with both parties gaining from the work.
 
-We run an informal mentoring scheme. It's designed to support professional development, by support a project over about 8 weeks. We provide support and training for mentors to help build their mentoring skills during mentoring. The scheme operates entirely by mutual consent, so participants are free to leave at any time.
+## Why mentoring?
+
+:::: {.columns}
+
+::: {.column width='50%'}
+### For mentees
++ an opportunity to get support and guidance that might not be available in your workplace 
++ an efficient way of putting skills into practice
++ build your professional network
+::: 
+
+::: {.column width='50%'}
+### For mentors
++ pass on your skills and knowledge to the wider community
++ to strengthen your understanding of a topic - think of mentoring as a variant of the [Feynman method](https://www.k-state.edu/aac/success-tools/collection/Feynman_Technique.pdf) + to develop new professional skills, particularly skills relevant to more senior roles such as management, personal development, and community building 
+::: 
+
+::::
+
+## Mentoring projects
+
+::: {.panel-tabset}
+### Good project ideas
++ **help me turn some R code into a package** - specific and achievable
++ **support me through a first literature review** - sharing expertise
++ **I've just done a course on x, but need some support putting x to work in y** - supporting areas not well-covered by other means
+
+### Bad project ideas
++ **teach me how to code** - open-ended projects aren't a good fit for an 8-week mentoring arrangement
++ **advise our organisation on x** - mentoring isn't consultancy
++ **I need someone to encourage me to work harder** - mentoring isn't cheerleading
++ **my spreadsheet is broken** - focal requests for assistance would be better asked on the KIND network
+:::
 
 ## How it works 
 
@@ -24,11 +57,11 @@ We run an informal mentoring scheme. It's designed to support professional devel
 
 graph TD;
 
-request["Mentor makes a new mentoring request"] --> mentorfinds["Mentor volunteers to mentor"]
+request["Mentee sends a project outline"] --> mentorfinds["Mentor finds a suitable project outline"]
 
-mentorfinds --> email["Mentor and mentee put in touch by email"]
+mentorfinds --> email["Both discuss by email"]
 
-email --> meeting["Informal meeting to discuss project and plans"]
+email --> meeting["Informal meeting to set goals and expectations"]
 
 meeting -->  contract["Sign contract"]
 
@@ -40,13 +73,19 @@ complete --> present["Present the project at the mmmmm"]
 :::
 
 ::: {.column width='40%'}
-1. a mentee puts a request on the KIND Teams channel by filling in the [new project form](https://forms.office.com/e/AUCcHB4ySj)</br></br>
-1. a mentor [sees the request on the Teams channel](https://teams.microsoft.com/l/channel/19%3A0708d3664e064dd3a0dbbe3079817283%40thread.tacv2/Mentoring?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a), and [expressed interest in mentoring](https://forms.office.com/e/01bdi52YHB))</br></br>
-1. we put the mentee and mentor in touch by email to discuss the project</br></br>
-1. if everyone is happy, mentor and mentee meet to agree a broad outline for their mentoring arrangement
-1. both mentor and mentee [sign a mutua-consent contract]((https://forms.office.com/e/ik4fpth04B))</br></br>
-1. we help and support them through the duration of the scheme. [Either party can withdraw at any time](https://forms.office.com/e/9mDyGFVzB1) without fault</br></br>
-1. we invite mentors and mentees to come and present their experiences at the monthly mentoring meetup</br></br>
+1. a mentee puts a request on the KIND Teams channel by filling in the [new project form](https://forms.office.com/e/AUCcHB4ySj)
+
+1. a mentor [sees the request on the Teams channel](https://teams.microsoft.com/l/channel/19%3A0708d3664e064dd3a0dbbe3079817283%40thread.tacv2/Mentoring?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a), and [expressed interest in mentoring](https://forms.office.com/e/01bdi52YHB))
+
+1. we put the mentee and mentor in touch by email to discuss the project
+
+1. mentor and mentee meet to agree a broad outline for their mentoring arrangement
+
+1. both mentor and mentee [sign a mutua-consent contract]((https://forms.office.com/e/ik4fpth04B))
+
+1. we help and support them through the duration of the scheme. [Either party can withdraw at any time](https://forms.office.com/e/9mDyGFVzB1) without fault
+
+1. we invite mentors and mentees to come and present their experiences at the monthly mentoring meetup
 :::
 
 ::::
