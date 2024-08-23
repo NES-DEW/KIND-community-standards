@@ -185,7 +185,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link active" data-scroll-target="#how-it-works">How it works</a></li>
+  <li><a href="#why-mentoring" id="toc-why-mentoring" class="nav-link active" data-scroll-target="#why-mentoring">Why mentoring?</a></li>
+  <li><a href="#mentoring-projects" id="toc-mentoring-projects" class="nav-link" data-scroll-target="#mentoring-projects">Mentoring projects</a></li>
+  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works">How it works</a></li>
   <li><a href="#key-documents" id="toc-key-documents" class="nav-link" data-scroll-target="#key-documents">Key documents</a></li>
   <li><a href="#what-makes-a-good-mentoring-project" id="toc-what-makes-a-good-mentoring-project" class="nav-link" data-scroll-target="#what-makes-a-good-mentoring-project">What makes a good mentoring project?</a></li>
   <li><a href="#what-might-i-do-instead" id="toc-what-might-i-do-instead" class="nav-link" data-scroll-target="#what-might-i-do-instead">What might I do instead?</a></li>
@@ -258,7 +260,53 @@ Draft guidance
 </div>
 </div>
 </div>
-<p>We run an informal mentoring scheme. It’s designed to support professional development, by support a project over about 8 weeks. We provide support and training for mentors to help build their mentoring skills during mentoring. The scheme operates entirely by mutual consent, so participants are free to leave at any time.</p>
+<p>We run an informal mentoring scheme. It’s designed to support professional development, by putting together mentors and mentees to work on a well-defined project over about 8 weeks. The scheme operates entirely by mutual consent, so participants are free to leave at any time. We think the benefits are reciprocal, with both parties gaining from the work.</p>
+<section id="why-mentoring" class="level2">
+<h2 class="anchored" data-anchor-id="why-mentoring">Why mentoring?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="for-mentees" class="level3">
+<h3 class="anchored" data-anchor-id="for-mentees">For mentees</h3>
+<ul>
+<li>an opportunity to get support and guidance that might not be available in your workplace</li>
+<li>an efficient way of putting skills into practice</li>
+<li>build your professional network</li>
+</ul>
+</section>
+</div><div class="column" style="width:50%;">
+<section id="for-mentors" class="level3">
+<h3 class="anchored" data-anchor-id="for-mentors">For mentors</h3>
+<ul>
+<li>pass on your skills and knowledge to the wider community</li>
+<li>to strengthen your understanding of a topic - think of mentoring as a variant of the <a href="https://www.k-state.edu/aac/success-tools/collection/Feynman_Technique.pdf">Feynman method</a> + to develop new professional skills, particularly skills relevant to more senior roles such as management, personal development, and community building</li>
+</ul>
+</section>
+</div>
+</div>
+</section>
+<section id="mentoring-projects" class="level2">
+<h2 class="anchored" data-anchor-id="mentoring-projects">Mentoring projects</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Good project ideas</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Bad project ideas</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ul>
+<li><strong>help me turn some R code into a package</strong> - specific and achievable</li>
+<li><strong>support me through a first literature review</strong> - sharing expertise</li>
+<li><strong>I’ve just done a course on x, but need some support putting x to work in y</strong> - supporting areas not well-covered by other means</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<ul>
+<li><strong>teach me how to code</strong> - open-ended projects aren’t a good fit for an 8-week mentoring arrangement</li>
+<li><strong>advise our organisation on x</strong> - mentoring isn’t consultancy</li>
+<li><strong>I need someone to encourage me to work harder</strong> - mentoring isn’t cheerleading</li>
+<li><strong>my spreadsheet is broken</strong> - focal requests for assistance would be better asked on the KIND network</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
 <section id="how-it-works" class="level2">
 <h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
 <div class="columns">
@@ -270,11 +318,11 @@ Draft guidance
 <div>
 <pre class="mermaid mermaid-js">graph TD;
 
-request["Mentor makes a new mentoring request"] --&gt; mentorfinds["Mentor volunteers to mentor"]
+request["Mentee sends a project outline"] --&gt; mentorfinds["Mentor finds a suitable project outline"]
 
-mentorfinds --&gt; email["Mentor and mentee put in touch by email"]
+mentorfinds --&gt; email["Both discuss by email"]
 
-email --&gt; meeting["Informal meeting to discuss project and plans"]
+email --&gt; meeting["Informal meeting to set goals and expectations"]
 
 meeting --&gt;  contract["Sign contract"]
 
@@ -290,13 +338,13 @@ complete --&gt; present["Present the project at the mmmmm"]
 </div>
 </div><div class="column" style="width:40%;">
 <ol type="1">
-<li>a mentee puts a request on the KIND Teams channel by filling in the <a href="https://forms.office.com/e/AUCcHB4ySj">new project form</a><br><br></li>
-<li>a mentor <a href="https://teams.microsoft.com/l/channel/19%3A0708d3664e064dd3a0dbbe3079817283%40thread.tacv2/Mentoring?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&amp;tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a">sees the request on the Teams channel</a>, and <a href="https://forms.office.com/e/01bdi52YHB">expressed interest in mentoring</a>)<br><br></li>
-<li>we put the mentee and mentor in touch by email to discuss the project<br><br></li>
-<li>if everyone is happy, mentor and mentee meet to agree a broad outline for their mentoring arrangement</li>
-<li>both mentor and mentee <a href="(https://forms.office.com/e/ik4fpth04B)">sign a mutua-consent contract</a><br><br></li>
-<li>we help and support them through the duration of the scheme. <a href="https://forms.office.com/e/9mDyGFVzB1">Either party can withdraw at any time</a> without fault<br><br></li>
-<li>we invite mentors and mentees to come and present their experiences at the monthly mentoring meetup<br><br></li>
+<li><p>a mentee puts a request on the KIND Teams channel by filling in the <a href="https://forms.office.com/e/AUCcHB4ySj">new project form</a></p></li>
+<li><p>a mentor <a href="https://teams.microsoft.com/l/channel/19%3A0708d3664e064dd3a0dbbe3079817283%40thread.tacv2/Mentoring?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&amp;tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a">sees the request on the Teams channel</a>, and <a href="https://forms.office.com/e/01bdi52YHB">expressed interest in mentoring</a>)</p></li>
+<li><p>we put the mentee and mentor in touch by email to discuss the project</p></li>
+<li><p>mentor and mentee meet to agree a broad outline for their mentoring arrangement</p></li>
+<li><p>both mentor and mentee <a href="(https://forms.office.com/e/ik4fpth04B)">sign a mutua-consent contract</a></p></li>
+<li><p>we help and support them through the duration of the scheme. <a href="https://forms.office.com/e/9mDyGFVzB1">Either party can withdraw at any time</a> without fault</p></li>
+<li><p>we invite mentors and mentees to come and present their experiences at the monthly mentoring meetup</p></li>
 </ol>
 </div>
 </div>
