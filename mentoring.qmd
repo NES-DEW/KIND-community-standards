@@ -25,8 +25,11 @@ We run an informal mentoring scheme. It's designed to support professional devel
 
 ::: {.column width='50%'}
 ### For mentors
+
 + pass on your skills and knowledge to the wider community
-+ to strengthen your understanding of a topic - think of mentoring as a variant of the [Feynman method](https://www.k-state.edu/aac/success-tools/collection/Feynman_Technique.pdf) + to develop new professional skills, particularly skills relevant to more senior roles such as management, personal development, and community building 
++ to strengthen your understanding of a topic - think of mentoring as a variant of the [Feynman method](https://www.k-state.edu/aac/success-tools/collection/Feynman_Technique.pdf)
++ to develop new professional skills, particularly skills relevant to more senior roles such as management, personal development, and community building 
+
 ::: 
 
 ::::

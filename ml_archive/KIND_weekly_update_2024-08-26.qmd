@@ -1,0 +1,135 @@
+---
+title: "KIND network update"
+format: html
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false
+  message: false
+---
+
+```{r}
+#| include: false
+library(lubridate)
+library(glue)
+
+source(here::here("R/bullet_list.R"))
+source(here::here("R/nice_date.R"))
+source(here::here("R/training_sessions.R"))
+
+next_week_start <- lubridate::ceiling_date(lubridate::today(), unit = "week", week_start = 1)
+
+next_week_end <- next_week_start + lubridate::weeks(1)
+
+scodas <- readr::read_csv("https://raw.githubusercontent.com/NES-DEW/KIND-community-standards/main/data/SCODAS_schedule.csv") |>
+  dplyr::filter(Date >= next_week_start) |>
+  dplyr::filter(Date < next_week_end)
+
+kcm <- readr::read_csv("https://raw.githubusercontent.com/NES-DEW/KIND-community-standards/main/data/KIND_community_meetups.csv") |>
+  dplyr::mutate(Date = lubridate::dmy(Date)) |>
+  dplyr::filter(Date >= next_week_start) |>
+  dplyr::filter(Date < next_week_end)
+
+```
+
+## Week beginning `r nice_date(next_week_start)`
+
+Dear colleagues, 
+
+Welcome to our regular KIND network update. Full details of our events and training can be found [on our Teams channel](https://teams.microsoft.com/l/team/19%3AQZ7-PbFVcziG2piHLt1_ifey3I2cwFL0yBuTSS8vVao1%40thread.tacv2/conversations?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a). 
+
+We've been working on the mentoring scheme this week, [including a new homepage](https://nes-dew.github.io/KIND-community-standards/mentoring.html). It's designed to put mentors and mentees in touch with each other to support short and well-defined pieces of work. Please get in touch with any suggestions or feedback, and do feel encouraged to put together a project proposal if there's some area of work you'd like more support with. 
+
+Hope to see you at something soon
+
+Brendan
+
+## Wins of the week
+
+We're again celebrating some [community wins-of-the-week](https://teams.microsoft.com/l/message/19:QZ7-PbFVcziG2piHLt1_ifey3I2cwFL0yBuTSS8vVao1@thread.tacv2/1724403556746?tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a&groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&parentMessageId=1724403556746&teamName=KIND%20Learning%20Network&channelName=General&createdTime=1724403556746), which have included:
+
+* I submitted my Master's dissertation!
+* Proactively prepared a whiteboard in teams ahead of a critical team meeting so that everyone could follow along and help organise priorities - this was the first time I'd used whiteboard on this scale
+* This week I managed to save an egg bound chicken
+* Used PowerBI to generate a recurring analysis pack for sharing with management leads. Now, instead of manually analysing the weekly data to generate charts to be copied into a PowerPoint pack, I only need to refresh the data source and export the updated PowerBI report as a PDF. 1-2 hrs of work reduced to seconds :)
+* Calmly dealt with numerous difficult colleagues and taken the initiative in the absence of more senior staff
+
+
+
+
+---
+
+<!-- ## Training -->
+
+<!-- There's no need to register for these drop-in training sessions. You should be able to follow the link on the day - although please note you'll need to [join the KIND Teams channel](https://teams.microsoft.com/l/team/19%3AQZ7-PbFVcziG2piHLt1_ifey3I2cwFL0yBuTSS8vVao1%40thread.tacv2/conversations?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a) to follow the chat, and to access sample data files etc. You can see all the forthcoming sessions, and a menu of possible training sessions, on the [new training micro-site](https://nes-dew.github.io/KIND-training/schedule.html). -->
+  
+```{r}
+#| results: asis
+#| eval: false
+#| message: false
+
+training_sessions(start_date = paste0(next_week_start), end_date =   paste0(next_week_end)) 
+# 
+# training_sessions(start_date = paste0(next_week_start), end_date =   paste0(next_week_end)) |>
+#   mutate(Level = str_replace_all(Level, "<style='color:red'>", "")) |>
+#   knitr::kable(format = "html", escape = F) |>
+#   kableExtra::column_spec(1, width_max = "18em")
+
+# cat(bullet_list(glue("we also learned [that most of us](https://teams.microsoft.com/l/message/19:QZ7-PbFVcziG2piHLt1_ifey3I2cwFL0yBuTSS8vVao1@thread.tacv2/1716548851091?tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a&groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&parentMessageId=1716548805257&teamName=KIND%20Learning%20Network&channelName=General&createdTime=1716548851091) spend a lot of time encountering new and confusing material at work. It's normal to find things that you don't understand (yet)!")))
+```
+
+## Events
+
+```{r}
+#| results: asis
+#| echo: false
+
+if(nrow(scodas) > 0){
+  cat(bullet_list(glue("13.00-14.00 {nice_date(as_date(scodas$Date))}. [SCODAS meeting](https://teams.microsoft.com/l/meetup-join/19%3a109a603c446743308bff6588820372a9%40thread.tacv2/1671457631308?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%2284150c3d-baed-4515-8eee-8f13ed0d9650%22%7d). {scodas$Presenter} - {scodas$Topic}. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards.")))
+}
+
+cat(bullet_list(glue("Thursday 3-4pm, Gemma Wilson (Scottish Government) will be giving an [update on the data strategy](https://www.gov.scot/publications/data-strategy-health-social-care-2024-update-progress-priorities/). All welcome at this informal session to find out more about this important initiative. No need to register - just [follow the Teams link on the day](https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1716288955483?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d).")))
+
+```
+
+We'll also be finalising the community meetup schedule for the autumn next week. But **save the date** - our new community meetup slot will be Mondays 3-4pm.
+
+```{r}
+# cat(bullet_list(glue("13.00-14.00 Wed {nice_date(as_date(kcm$Date))}. The KIND Community meetup theme this week is {kcm$subtopic}. All welcome at our regular Wednesday get-together/webinar/tech demo. Full details and joining links via the [community meetup channel](https://teams.microsoft.com/l/channel/19%3Ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/Community%20meetups?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a)")))
+
+# cat(bullet_list(glue("15.00-{nice_date(as_datetime('2024-06-13T16:30:00'))}. The inaugural meeting of our new [R Beginner's Club](https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1715674562443?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d). If you're new to R, please consider yourself invited to come along for mutual support, troubleshooting, and tips for building your R skills and confidence.")))
+
+# cat(bullet_list(glue("15.00 - 16.00 Thurs 2024-06-20. We've had lots of new members in the KIND network over the past month, so there's a [new member social session coming on Thursday afternoon](https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1718000758399?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d0). I'll give a short overview of the network, but the main aim is to welcome you, and to set aside some time for social chat. All welcome!")))
+
+# cat(bullet_list(glue("15.00 - 16.00 Thurs 2024-06-20. The wildly-alliterative [monthly multi-modal mentoring meetup](https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1716795099811?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d) is back. Join us to hear more about our mentoring scheme, hear from some of our mentor/mentee pairs about their progress, and hear from prospective mentors about projects they would like to work on. All welcome.")))
+
+```
+
+## Book of the week
+
+```{r}
+#| results: asis
+#| echo: false
+#| message: false
+
+botw <- readr::read_csv("https://raw.githubusercontent.com/NES-DEW/KIND-community-standards/main/data/KIND_book_of_the_week.csv") |>
+  dplyr::mutate(Date = lubridate::dmy(Date)) |>
+  dplyr::filter(Date %within% interval(next_week_start-3, next_week_start - 7))
+
+cat(glue("{botw$Author}. {botw$Year}. *{botw$Title}*. ISBN {botw$ISBN}, <a href='{botw$Worldcat}'>Worldcat link</a>. {botw$Description}"))
+
+```
+
+[Unsubscribe from these emails](https://forms.office.com/r/t97cZDiw7y)
+
+```{r}
+#| include: false
+if(grepl("C:/Users/brendancl/NHS Scotland/NES DEW Programme", here::here())){
+  file.copy(from = "KIND_weekly_content.qmd",
+          to = paste0("C:\\Users\\brendancl\\NHS Scotland\\NES DEW Programme - KIND\\KIND-community-standards\\ml_archive\\KIND_weekly_update_", next_week_start, ".qmd"),
+          overwrite = T)
+}
+
+
+```
+
