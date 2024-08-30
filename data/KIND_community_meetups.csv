@@ -67,6 +67,7 @@
 12/06/2024,,Digital inclusion and ‘I Feel Part Of Society’ ,Nigel Gallear 
 19/06/2024,R ,"Parameterised Rmarkdown (and Quarto, if we can) ",Chris Weatherburn 
 26/06/2024,Power BI ,CALCULATE() = Power BI's heart of darkness ,
+29/08/2024,Data strategy update,,
 02/09/2024,Joins 1: introduction,,
 09/09/2024,Joins 2: basic joins (left/right/full etc),,
 16/09/2024,Joins 3: the fancy stuff (rolling/inequality etc),,
@@ -77,9 +78,9 @@
 21/10/2024,NO SESSION,,
 28/10/2024,NO SESSION,,
 04/11/2024,free parking,,
-11/11/2024,duckdb tech demo / group of use-cases,,
+11/11/2024,R,duckdb tech demo / group of use-cases,
 18/11/2024,Teaching maintenance,,
-25/11/2024,Excel programming/VBA/lambdas ,,
+25/11/2024,Excel,Excel programming/VBA/lambdas ,
 02/12/2024,free parking,,
 09/12/2024,Research data management,,
 16/12/2024,First-steps toolkit for a junior/solo/reluctant/occasional analyst,,
