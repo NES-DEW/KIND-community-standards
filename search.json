@@ -84,6 +84,195 @@
     "text": "Joins proper\nUnlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join y onto x:\nx |&gt;\n  left_join(y, by = \"name\") |&gt;\n  knitr::kable()\n\n\n\nname\ntool.x\ntraining_sessions.x\ntool.y\ntraining_sessions.y\n\n\n\n\nSteve\nR\n4\nNA\nNA\n\n\nEmma\nExcel\n3\nNA\nNA\n\n\nArti\nExcel\n7\nPower BI\n3\n\n\n\nYou should see that only the values from y’s score column that have a corresponding name in x get populated, and everything else gets filled with NAs. Here’s a nice introduction to the different kinds of join you can do in dplyr."
   },
   {
+    "objectID": "commet/commet_2024_04_30.html",
+    "href": "commet/commet_2024_04_30.html",
+    "title": "Leading a (training) session",
+    "section": "",
+    "text": "Wikipedia\n\n\n(this remains a useful and thoughtful point, and it’s a bit of mystery why Donald Rumsfeld was so widely mocked for making it)"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#a-big-laugh",
+    "href": "commet/commet_2024_04_30.html#a-big-laugh",
+    "title": "Leading a (training) session",
+    "section": "",
+    "text": "Wikipedia\n\n\n(this remains a useful and thoughtful point, and it’s a bit of mystery why Donald Rumsfeld was so widely mocked for making it)"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#a-big-point",
+    "href": "commet/commet_2024_04_30.html#a-big-point",
+    "title": "Leading a (training) session",
+    "section": "A big point",
+    "text": "A big point\n\nthis entire session presumes that you’ve got a good reason to put together some training\nunderstanding training needs is hard\n\nindividual and group needs often don’t align\nmost of us don’t go round knowing we have well-formed training needs\ntime is short and demands are many\nmost of us don’t have any formal expertise in assessing training needs\ninstitutional training mechanisms usually don’t reach individual teams"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#training-isnt-status-y",
+    "href": "commet/commet_2024_04_30.html#training-isnt-status-y",
+    "title": "Leading a (training) session",
+    "section": "Training isn’t status-y",
+    "text": "Training isn’t status-y\n\ninformal training is common in this sector\nbut hard, thankless, time-consuming etc\n\nwho had training delivery in their appraisal?\n\nthis session = quick tips and dirty tricks for leading sessions\nthis session ≠ how to be a proper educator, TED talker, or other species of charismatic\n\ne.g. we won’t talk about styles of learning or anything like that"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#a-worry-about-individualised-training",
+    "href": "commet/commet_2024_04_30.html#a-worry-about-individualised-training",
+    "title": "Leading a (training) session",
+    "section": "A worry about individualised training",
+    "text": "A worry about individualised training\n\nmost of this assumes that training is individual\nbut the objective of most training is team performance\nthere’s a complicated relationship between those things\nthe individualised model can reward training activities that don’t help team performance\n\nPDPs aren’t easy to connect to service needs"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#outline",
+    "href": "commet/commet_2024_04_30.html#outline",
+    "title": "Leading a (training) session",
+    "section": "Outline",
+    "text": "Outline\n\nIntro\nGeneral considerations\nn questions\nActual strategies\nWrap-up, hang-wringing, and references"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#general-considerations-1",
+    "href": "commet/commet_2024_04_30.html#general-considerations-1",
+    "title": "Leading a (training) session",
+    "section": "General considerations",
+    "text": "General considerations\n\npresentations are about optimizing over competing demands\n\nthat’s hard\nwe’ll start with some easy general rules\nand move on to some ways of balancing those demands"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#general-rules",
+    "href": "commet/commet_2024_04_30.html#general-rules",
+    "title": "Leading a (training) session",
+    "section": "General rules",
+    "text": "General rules\n\nas simple as possible - because asymmetry\nshow, don’t tell - because hierarchy\nsteal and share - because instability"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#the-asymmetry-of-presenting",
+    "href": "commet/commet_2024_04_30.html#the-asymmetry-of-presenting",
+    "title": "Leading a (training) session",
+    "section": "The asymmetry of presenting",
+    "text": "The asymmetry of presenting\n\n\n\n\n\nxkcd\n\n\n\n\nby the time you get asked to present, you’re an expert\n\nexperts worry about completely different things from beginners\n\nexperts make bad assumptions about what an average person knows\n\n← AKA the curse of knowledge\n\nyou’re also (probably) going to spend more time preparing than presenting\n\nbeware pedantry, minor details, and fine print"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#the-hierarchy",
+    "href": "commet/commet_2024_04_30.html#the-hierarchy",
+    "title": "Leading a (training) session",
+    "section": "The hierarchy",
+    "text": "The hierarchy\n\nlike it or not, some of what you say will be more important than other parts\nlike it or not, it’s your job to decide what’s most important\nlike it or not, if everything is important then nothing is"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#the-instability-of-facts",
+    "href": "commet/commet_2024_04_30.html#the-instability-of-facts",
+    "title": "Leading a (training) session",
+    "section": "The instability of facts",
+    "text": "The instability of facts\n\n\n\nTruth survival in original articles on hepatitis and cirrhosis (Poynard et al 2002)"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#the-instability-of-facts-1",
+    "href": "commet/commet_2024_04_30.html#the-instability-of-facts-1",
+    "title": "Leading a (training) session",
+    "section": "The instability of facts",
+    "text": "The instability of facts\n\nrefreshing statistics courses every x years\nrefreshing philosophy courses every y years\nrefreshing bioscience courses every z years\npolling for values of x, y, and z\n\nx = 5-10\ny = 5-7\nz = 2-3\n\nannual refresh for KIND materials"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#the-instability-of-facts-2",
+    "href": "commet/commet_2024_04_30.html#the-instability-of-facts-2",
+    "title": "Leading a (training) session",
+    "section": "The instability of facts",
+    "text": "The instability of facts\n\nthings change\nmaking sure training materials reflect change is hard\nbut training materials are almost always shareable…\n\nyour session on Excel might not be very different from someone else’s session on Excel\nbridge materials plus borrowed material might be a better combo than something written from scratch"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#general-rules-1",
+    "href": "commet/commet_2024_04_30.html#general-rules-1",
+    "title": "Leading a (training) session",
+    "section": "General rules",
+    "text": "General rules\n\nas simple as possible - because asymmetry\nshow, don’t tell - because hierarchy\nsteal and share - because instability . . .\nadapt your plans to your circumstances…"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#some-questions-to-help-you-make-training-decisions",
+    "href": "commet/commet_2024_04_30.html#some-questions-to-help-you-make-training-decisions",
+    "title": "Leading a (training) session",
+    "section": "Some questions to help you make training decisions",
+    "text": "Some questions to help you make training decisions\n\n3 groups of questions\n\nwho are you training?\nwhat is the training like?\nwhat should happen?"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#population",
+    "href": "commet/commet_2024_04_30.html#population",
+    "title": "Leading a (training) session",
+    "section": "Population",
+    "text": "Population\n\nsupply or demand?\nformal or informal?\nhomogeneous or heterogeneous population?\n1:1 or group?\ndurable or fragile?"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#intervention",
+    "href": "commet/commet_2024_04_30.html#intervention",
+    "title": "Leading a (training) session",
+    "section": "Intervention",
+    "text": "Intervention\n\nspecific or general?\nregular or occasional/one-off?\nsync or async?\ndidactic or social?"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#intervention-1",
+    "href": "commet/commet_2024_04_30.html#intervention-1",
+    "title": "Leading a (training) session",
+    "section": "Intervention",
+    "text": "Intervention\ntibble::tibble(x = c(4, -4, -2, 2, -2, 2), \n              y = c(-4, 4, -2, 2, 2, -2), \n              name = c(\"\", \"\", \"Informal help\", \"Write a proper course\", \"Hints page / FAQ\", \"Outsourced training\")) |&gt;\n  quadgo(\"General\", \"Occasional\", \"General to specific, and occasional to regular\")"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#intervention-2",
+    "href": "commet/commet_2024_04_30.html#intervention-2",
+    "title": "Leading a (training) session",
+    "section": "Intervention",
+    "text": "Intervention\ntibble::tibble(x = c(4, -4, -2, 2, -2, 2), \n              y = c(-4, 4, -2, 2, 2, -2), \n              name = c(\"\", \"\", \"Live training sessions (talky)\", \"Teams channel and clinic times\", \"Manual or SOP\", \"Live training sessions (practical)\")) |&gt;\n  quadgo(\"Synchronous\", \"Didactic\", \"Synchronous to asynchronous, and didactic to social\")"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#outcomes",
+    "href": "commet/commet_2024_04_30.html#outcomes",
+    "title": "Leading a (training) session",
+    "section": "Outcomes",
+    "text": "Outcomes\n\nbridge or foundations?\nknowledge or skills?\npractice/problem-based or theoretical?\nindividual or group?"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#four-general-training-needs",
+    "href": "commet/commet_2024_04_30.html#four-general-training-needs",
+    "title": "Leading a (training) session",
+    "section": "Four general training needs",
+    "text": "Four general training needs\n\nhave a clear, relevant, specific, idea\nbe the help on hand\ntry to bridge between work and training\nprovide real relevant practice tasks"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#borrow-and-gloss",
+    "href": "commet/commet_2024_04_30.html#borrow-and-gloss",
+    "title": "Leading a (training) session",
+    "section": "Borrow-and-gloss",
+    "text": "Borrow-and-gloss\n\nhelps with instability\n\nloads of great open-access training resources exist\nconsider borrowing and adapting, rather than writing from scratch\n\nlots of the commercial training providers do this. Definitely better value to DIY"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#bridge-materials",
+    "href": "commet/commet_2024_04_30.html#bridge-materials",
+    "title": "Leading a (training) session",
+    "section": "Bridge materials",
+    "text": "Bridge materials\n\nhelps with hiearchy and instability\n\neveryone’s work is different\nconsider writing bridge materials = ways of connecting generic resources with particular contents\n\ne.g. replacing table names to match your SQL\ne.g. changing exercises to use more relevant data\ne.g. swapping sales-led applications for analysis-led ones"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#post-it-planning",
+    "href": "commet/commet_2024_04_30.html#post-it-planning",
+    "title": "Leading a (training) session",
+    "section": "Post-it® planning",
+    "text": "Post-it® planning\n\nhelps with asymmetry and hiearchy\n\n\n\n\n\nImage © 3M\n\n\n\n\nyour overall topic should be neatly describable on a Post-it®\nyour talk should break down into a small number of distinct sections\n\neach section should, likewise, be Post-it®-able + each subsection etc etc\n\nthe trick is to get the lower level descriptions to align with the higher, all the way up"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#bottom-up-planning",
+    "href": "commet/commet_2024_04_30.html#bottom-up-planning",
+    "title": "Leading a (training) session",
+    "section": "Bottom-up planning",
+    "text": "Bottom-up planning\n\nhelps when you don’t know where to start\n\nall training is just scaled-up 1:1 helping\nso if you’re stuck, start by helping someone\nwork through with a volunteer and help them 1:1\ntake notes - what are you doing, who are you helping, what can they do\nrepeat, adding and taking away"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#the-saint-exupéry-principle",
+    "href": "commet/commet_2024_04_30.html#the-saint-exupéry-principle",
+    "title": "Leading a (training) session",
+    "section": "The Saint-Exupéry principle",
+    "text": "The Saint-Exupéry principle\n“Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.”"
+  },
+  {
+    "objectID": "commet/commet_2024_04_30.html#resources",
+    "href": "commet/commet_2024_04_30.html#resources",
+    "title": "Leading a (training) session",
+    "section": "Resources",
+    "text": "Resources\n\nhttps://the-turing-way.netlify.app/collaboration/chairing\nPoynard, Thierry, Mona Munteanu, Vlad Ratziu, Yves Benhamou, Vincent Di Martino, Julien Taieb, and Pierre Opolon. 2002. “Truth Survival in Clinical Research: An Evidence-Based Requiem?” Annals of Internal Medicine 136 (12): 888. DOI: 10.7326/0003-4819-136-12-200206180-00010."
+  },
+  {
     "objectID": "rbc/about.html",
     "href": "rbc/about.html",
     "title": "About R beginner’s club",
@@ -123,7 +312,7 @@
     "href": "kind_cms.html",
     "title": "KIND community meetups",
     "section": "",
-    "text": "These are our main weekly social learning activity. They’re usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell.\n\nDownload community meetup data as csv\nDownload community meetup ideas as csv\n\n\nCurrent community meetup scheduleFuture community meetup ideasArchive of past sessions\n\n\n\nCurrent community meetup schedule\n\n\n\n\n\n\n\nDate\nTopic\nsubtopic\n\n\n\n\n2024-09-02\nJoins 1: introduction\n\n\n\n2024-09-09\nJoins 2: basic joins (left/right/full etc)\n\n\n\n2024-09-16\nJoins 3: the fancy stuff (rolling/inequality etc)\n\n\n\n2024-09-23\nSQL alphabet soup\n\n\n\n2024-09-30\nArt of the possible / showing off great projects\n\n\n\n2024-10-07\nTurning a user request into something you can work with\n\n\n\n2024-10-14\nNO SESSION\n\n\n\n2024-10-21\nNO SESSION\n\n\n\n2024-10-28\nNO SESSION\n\n\n\n2024-11-04\nfree parking\n\n\n\n2024-11-11\nR\nduckdb tech demo / group of use-cases\n\n\n2024-11-18\nTeaching maintenance\n\n\n\n2024-11-25\nExcel\nExcel programming/VBA/lambdas \n\n\n2024-12-02\nfree parking\n\n\n\n2024-12-09\nResearch data management\n\n\n\n2024-12-16\nFirst-steps toolkit for a junior/solo/reluctant/occasional analyst\n\n\n\n\n\n\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nData\nSafe havens / disclosure control / safe researcher training\n\n\n\nData\nDisclosure and pseudoanonymised data\n\n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nData\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\nMisc\nA non-web person’s intro to Java\n\n\n\nPower BI\ncorrelations and linear models in Power BI\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler\n\n\nR\nTidytext, sentiment analysis \n\n\n\nR \nData.table / tidyverse / polars / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nR \nR package roundup - Echarts4r, making PowerPoint in RMD, snakecase\n\n\n\nSkills\nWriting for different audiences\n\n\n\nStats\nDirected Acyclic Graphs (DAGs)\n\n\n\nStats\nPredictive modelling\n\n\n\nStats\nBayesian stats\n\n\n\nR\nTesting code\nEllen Young\n\n\nR\nGithub collaborations and getting Git installed\nGemma Whittaker\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nDate\n\n\nCategories\n\n\n\n\n\n\nAppraisals\n\n\nMay 16, 2024\n\n\nskills, career developement, appraisal\n\n\n\n\nData strategy\n\n\nMar 7, 2023\n\n\nData strategy\n\n\n\n\nJoins 1: introduction\n\n\nSep 2, 2024\n\n\nJoins, beginner, Excel, R, Power Query\n\n\n\n\n\nNo matching items"
+    "text": "These are our main weekly social learning activity. They’re usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell.\n\nDownload community meetup data as csv\nDownload community meetup ideas as csv\n\n\nCurrent community meetup scheduleFuture community meetup ideasArchive of past sessions\n\n\n\nCurrent community meetup schedule\n\n\n\n\n\n\n\nDate\nTopic\nsubtopic\n\n\n\n\n2024-09-02\nJoins 1: introduction\n\n\n\n2024-09-09\nJoins 2: basic joins (left/right/full etc)\n\n\n\n2024-09-16\nJoins 3: the fancy stuff (rolling/inequality etc)\n\n\n\n2024-09-23\nSQL alphabet soup\n\n\n\n2024-09-30\nArt of the possible / showing off great projects\n\n\n\n2024-10-07\nTurning a user request into something you can work with\n\n\n\n2024-10-14\nNO SESSION\n\n\n\n2024-10-21\nNO SESSION\n\n\n\n2024-10-28\nNO SESSION\n\n\n\n2024-11-04\nfree parking\n\n\n\n2024-11-11\nR\nduckdb tech demo / group of use-cases\n\n\n2024-11-18\nTeaching maintenance\n\n\n\n2024-11-25\nExcel\nExcel programming/VBA/lambdas \n\n\n2024-12-02\nfree parking\n\n\n\n2024-12-09\nResearch data management\n\n\n\n2024-12-16\nFirst-steps toolkit for a junior/solo/reluctant/occasional analyst\n\n\n\n\n\n\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nData\nSafe havens / disclosure control / safe researcher training\n\n\n\nData\nDisclosure and pseudoanonymised data\n\n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nData\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\nMisc\nA non-web person’s intro to Java\n\n\n\nPower BI\ncorrelations and linear models in Power BI\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler\n\n\nR\nTidytext, sentiment analysis \n\n\n\nR \nData.table / tidyverse / polars / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nR \nR package roundup - Echarts4r, making PowerPoint in RMD, snakecase\n\n\n\nSkills\nWriting for different audiences\n\n\n\nStats\nDirected Acyclic Graphs (DAGs)\n\n\n\nStats\nPredictive modelling\n\n\n\nStats\nBayesian stats\n\n\n\nR\nTesting code\nEllen Young\n\n\nR\nGithub collaborations and getting Git installed\nGemma Whittaker\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nDate\n\n\nCategories\n\n\n\n\n\n\nAppraisals\n\n\nMay 16, 2024\n\n\nskills, career developement, appraisal\n\n\n\n\nData strategy\n\n\nMar 7, 2023\n\n\nData strategy\n\n\n\n\nJoins 1: introduction\n\n\nSep 2, 2024\n\n\nJoins, beginner, Excel, R, Power Query\n\n\n\n\nLeading a (training) session\n\n\nDec 4, 2023\n\n\nskills, training, career progression, appraisal\n\n\n\n\nTest driven development\n\n\nNov 21, 2023\n\n\nR, testing, intermediate, excel\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "ml_archive.html",
@@ -396,7 +585,7 @@
     "href": "index.html#whats-here",
     "title": "KIND resources",
     "section": "What’s here?",
-    "text": "What’s here?\n\nCommunity standards.\nThese documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.\nHow might you use these suggestions?\n\nas a way of highlighting good practice\nas a helper when starting new projects (or new Excel documents)\nas a lever for bringing about change, particularly trying to convince service leads that poorly-designed Excel spreadsheets are a dangerous menace\nas a guideline for tidying up existing inconsistent/messy files\nas a training tool when bringing new colleagues up to speed\n\nPlease take this, use it however you like, and let us know if there’s anything that you’d find particularly helpful for an updated version to contain. We’ll review and redraft regularly. Please open an issue on the GitHub page if you have specific suggestions, otherwise contact brendan.clarke2@nhs.scot for a more general conversation about these standards.\n\n\nSample SOPs\nThese are a set of sample standard operating procedures for KIND work. These are intended for sharing as a basis or guideline for your own activities. Please get in touch if you have a useful SOP that might be sharable.\n\n\nKIND FAQ\nOur main frequently-asked questions document\n\n\nBook of the week\nData and summaries for our ever-popular book of the week segment\n\n\nCommunity meetup schedule"
+    "text": "What’s here?\n\nCommunity standards\nThese documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.\nHow might you use these suggestions?\n\nas a way of highlighting good practice\nas a helper when starting new projects (or new Excel documents)\nas a lever for bringing about change, particularly trying to convince service leads that poorly-designed Excel spreadsheets are a dangerous menace\nas a guideline for tidying up existing inconsistent/messy files\nas a training tool when bringing new colleagues up to speed\n\nPlease take this, use it however you like, and let us know if there’s anything that you’d find particularly helpful for an updated version to contain. We’ll review and redraft regularly. Please open an issue on the GitHub page if you have specific suggestions, otherwise contact brendan.clarke2@nhs.scot for a more general conversation about these standards.\n\n\nSample SOPs\nThese are a set of sample standard operating procedures for KIND work. These are intended for sharing as a basis or guideline for your own activities. Please get in touch if you have a useful SOP that might be sharable.\n\n\nCommunity activities\nDocuments supporting our social learning activities, such as scheduled, past sessions, and archives of materials. These include: + the R reading group + the R beginner’s club + the main community meetup series\n\n\nKIND FAQ\nOur main frequently-asked questions document\n\n\nMentoring scheme\nInformation and links for our technical mentoring scheme\n\n\nBook of the week\nData and summaries for our ever-popular book of the week segment"
   },
   {
     "objectID": "rreadgr.html",
@@ -775,6 +964,118 @@
     "title": "KIND Community Standards: Data collection",
     "section": "Tools used for data collection",
     "text": "Tools used for data collection\nIn a 2023 small-scale survey of 40 analysts, the main tools identified were as follows:\n\n\n\nTool\nn\n\n\n\n\nExcel\n32\n\n\nMicrosoft Forms\n16\n\n\nOther survey tools (e.g. Surveymonkey, SmartSurvey)\n15\n\n\nRedCap\n2\n\n\n\n(note that respondents were able to identify &gt;1 tool used)\nThat simplicity of tools used conceals enormous complexity. A sample of factors identified as influencing tool choice were as follows:\n\navailability / ubiquity amongst those collecting\nflexibility / integration\naudit trail\ndownstream ETL\ncommissioning and training requirements\nease of use / skills available\nIG / robustness / confidentiality\ncost\nstakeholder mandate\ntechnical features (e.g., limited response types)\nspeed of build\ninstitutional approval and support\n\nMany staff have restrictions on the tools available. For example, looking at Microsoft Forms, a wide variety of different possibilities are found. A survey of 64 members of the KIND network during July 2024 gained responses from 23 organisations and NHS boards.\n\n\nQ: Can you use Forms?\n\nResponses to the question ‘Can you use Forms?’\n\n\nresponse\nn\n\n\n\n\nYes - for anything\n17\n\n\nYes - but not for personally-identifiable information\n36\n\n\nNo\n2\n\n\nOther\n9"
+  },
+  {
+    "objectID": "commet/commet_2023-11-23.html",
+    "href": "commet/commet_2023-11-23.html",
+    "title": "Test driven development",
+    "section": "",
+    "text": "this session is about test-driven development (TDD)\nwe’ll start with a bit of chat and some polling about testing\nthen we’ll do a bit of explanation to introduce TDD\nand most of the session is about showing a simple implementation of TDD in Excel, and a slightly less simple implementation in R"
+  },
+  {
+    "objectID": "commet/commet_2023-11-23.html#intro",
+    "href": "commet/commet_2023-11-23.html#intro",
+    "title": "Test driven development",
+    "section": "",
+    "text": "this session is about test-driven development (TDD)\nwe’ll start with a bit of chat and some polling about testing\nthen we’ll do a bit of explanation to introduce TDD\nand most of the session is about showing a simple implementation of TDD in Excel, and a slightly less simple implementation in R"
+  },
+  {
+    "objectID": "commet/commet_2023-11-23.html#testing-your-work",
+    "href": "commet/commet_2023-11-23.html#testing-your-work",
+    "title": "Test driven development",
+    "section": "Testing your work",
+    "text": "Testing your work\n\npoll: who tests their work at all?\nplease share in the chat ways that you test your work\npoll: who has a formal process for that testing?\nplease share in the chat a bit on your testing process\npoll: who shares that testing process with their colleagues?"
+  },
+  {
+    "objectID": "commet/commet_2023-11-23.html#tdd-what",
+    "href": "commet/commet_2023-11-23.html#tdd-what",
+    "title": "Test driven development",
+    "section": "TDD-what?",
+    "text": "TDD-what?\n\n(before all that polling) my guess is that…\n\nnearly everyone will test their work in some way, but that\nmost of that testing will be ad hoc / informal\nand that more formal testing is quite rare\nand I’ll guess that no-one has a standard shared testing process in their group"
+  },
+  {
+    "objectID": "commet/commet_2023-11-23.html#tdd-test-driven-development",
+    "href": "commet/commet_2023-11-23.html#tdd-test-driven-development",
+    "title": "Test driven development",
+    "section": "TDD = test driven development",
+    "text": "TDD = test driven development\n\nwork should go like this:\n\nhave an idea for a new thing\ndevelop something to do that thing\ntest to check that the thing is done"
+  },
+  {
+    "objectID": "commet/commet_2023-11-23.html#tdd-test-driven-development-1",
+    "href": "commet/commet_2023-11-23.html#tdd-test-driven-development-1",
+    "title": "Test driven development",
+    "section": "TDD = test driven development",
+    "text": "TDD = test driven development\n\nbut too often the work goes:\n\nhave an idea for a new thing\ndevelop something to do that thing\nhave an idea for a new thing\n…"
+  },
+  {
+    "objectID": "commet/commet_2023-11-23.html#tdd-test-driven-development-2",
+    "href": "commet/commet_2023-11-23.html#tdd-test-driven-development-2",
+    "title": "Test driven development",
+    "section": "TDD = test driven development",
+    "text": "TDD = test driven development\n\nwhat if we reversed the usual order?\n\nhave an idea for a new thing\nwrite a test to check that the thing is done\ndevelop something to pass that test\n\nthis also might make testing more fun, given a pretty loose definition of fun"
+  },
+  {
+    "objectID": "commet/commet_2023-11-23.html#we-dont-need-fancy-tools-to-do-tdd",
+    "href": "commet/commet_2023-11-23.html#we-dont-need-fancy-tools-to-do-tdd",
+    "title": "Test driven development",
+    "section": "We don’t need fancy tools to do TDD",
+    "text": "We don’t need fancy tools to do TDD\n\nit’s perfectly possible in Excel\nimagine we’re writing a formula to find out something about our data (maybe totaling a column)\n\nwe could take part of our data\ncalculate a test value by hand (say, by adding up all the values in our test data)\nthen using that test value to check that our formula is returning the right result\nyou could even go mad and use conditional formatting etc to check that’s happening properly"
+  },
+  {
+    "objectID": "commet/commet_2023-11-23.html#recap",
+    "href": "commet/commet_2023-11-23.html#recap",
+    "title": "Test driven development",
+    "section": "Recap",
+    "text": "Recap\n\ndecide what to do\nwrite a test to check that thing\ndevelop to pass the test"
+  },
+  {
+    "objectID": "commet/commet_2023-11-23.html#r-time",
+    "href": "commet/commet_2023-11-23.html#r-time",
+    "title": "Test driven development",
+    "section": "R time",
+    "text": "R time\n\nlibrary(testthat)\nlibrary(tibble)\n\n\nin testthat, tests are built of expectations\n\n\nexpect_equal(2 * 2, 4)\nexpect_identical(1L, 1L)"
+  },
+  {
+    "objectID": "commet/commet_2023-11-23.html#tale-of-two-great-expectations",
+    "href": "commet/commet_2023-11-23.html#tale-of-two-great-expectations",
+    "title": "Test driven development",
+    "section": "Tale of two great expectations",
+    "text": "Tale of two great expectations\n\ntest_that(\"Testing that numbers work properly\", {\n  expect_equal(2 * 2, 4, label = \"Multo\")\n  expect_identical(1L, 1L, label = \"Class!\")\n})\n\nTest passed 🎊"
+  },
+  {
+    "objectID": "commet/commet_2023-11-23.html#lots-of-expectations",
+    "href": "commet/commet_2023-11-23.html#lots-of-expectations",
+    "title": "Test driven development",
+    "section": "Lots of expectations",
+    "text": "Lots of expectations\n\nexpect_setequal(1:3, c(1,2,3))\n\nfnarp = tibble(a = c(1, 2, 3))\n\nglarp = tibble(a = c(1, 2, 3))\n  \nexpect_mapequal(fnarp, glarp) # for named objects"
+  },
+  {
+    "objectID": "commet/commet_2023-11-23.html#grouping-into-tests",
+    "href": "commet/commet_2023-11-23.html#grouping-into-tests",
+    "title": "Test driven development",
+    "section": "Grouping into tests",
+    "text": "Grouping into tests\n\ntest_that(\"Testing that sets work properly\", {\n  expect_setequal(1:3, c(1,2,3))\n  expect_mapequal(fnarp, glarp)\n})\n\nTest passed 🥳\n\ntest_that(\"Testing classes\", {\n  expect_that(mtcars, is_a(\"data.frame\"))\n  expect_that(1:5, is_a(\"integer\"))\n})\n\nTest passed 😸"
+  },
+  {
+    "objectID": "commet/commet_2023-11-23.html#context",
+    "href": "commet/commet_2023-11-23.html#context",
+    "title": "Test driven development",
+    "section": "Context",
+    "text": "Context\n\ncontext = groups of tests\npreviously important to R testing\nnow, use files instead"
+  },
+  {
+    "objectID": "commet/commet_2023-11-23.html#test-files",
+    "href": "commet/commet_2023-11-23.html#test-files",
+    "title": "Test driven development",
+    "section": "Test files",
+    "text": "Test files\n\nput all tests in a file\n\n\n# R/tests.R\n\ntest_that(\"Testing that numbers work properly\", {\n  expect_equal(2 * 2, 4, label = \"Multo\")\n  expect_identical(1L, 1L, label = \"Class!\")\n})\n\ntest_that(\"Testing that sets work properly\", {\n  expect_setequal(1:3, c(1,2,3))\n  expect_mapequal(fnarp, glarp)\n})\n\n\nrun with testthat::test_file()\n\n\ntestthat::test_file(\"R/tests.R\")\n\n\n══ Testing tests.R ═════════════════════════════════════════════════════════════\n\n[ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ]\n[ FAIL 0 | WARN 0 | SKIP 0 | PASS 1 ]\n[ FAIL 0 | WARN 0 | SKIP 0 | PASS 2 ]\n[ FAIL 0 | WARN 0 | SKIP 0 | PASS 3 ]\n[ FAIL 0 | WARN 0 | SKIP 0 | PASS 4 ] Done!"
+  },
+  {
+    "objectID": "commet/commet_2023-11-23.html#bit-of-live-development",
+    "href": "commet/commet_2023-11-23.html#bit-of-live-development",
+    "title": "Test driven development",
+    "section": "Bit of live development",
+    "text": "Bit of live development\n\nReverse and Invert\n“reverse and invert all integer values” in a vector\ntests first!\ngranular tests: quick, small and simple\nbasic code: just pass the test\nadd test, pass, refactor, repeat\nI ended up with something like as.integer(intToUtf8(rev(utf8ToInt(as.character(n)))))"
   },
   {
     "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html",
