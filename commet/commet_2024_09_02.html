@@ -234,6 +234,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#how-to-think-about-joins" id="toc-how-to-think-about-joins" class="nav-link active" data-scroll-target="#how-to-think-about-joins">How to think about joins?</a></li>
   <li><a href="#binding" id="toc-binding" class="nav-link" data-scroll-target="#binding">Binding</a></li>
   <li><a href="#joins-proper" id="toc-joins-proper" class="nav-link" data-scroll-target="#joins-proper">Joins proper</a></li>
+  <li><a href="#anti-join" id="toc-anti-join" class="nav-link" data-scroll-target="#anti-join">Anti-join</a></li>
+  <li><a href="#final-thoughts" id="toc-final-thoughts" class="nav-link" data-scroll-target="#final-thoughts">Final thoughts</a></li>
   </ul>
 </nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -345,19 +347,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Steve</td>
+<td style="text-align: left;">Abena</td>
 <td style="text-align: left;">R</td>
-<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">Yuika</td>
 <td style="text-align: left;">Excel</td>
-<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Arti</td>
-<td style="text-align: left;">Excel</td>
-<td style="text-align: right;">7</td>
+<td style="text-align: left;">Power BI</td>
+<td style="text-align: right;">3</td>
 </tr>
 </tbody>
 </table>
@@ -459,11 +461,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-<p>Doing this in R, we end up with something quite messy: we’ve gained some new columns (with odd names), and lots of blank values. The reason for this is that the Arti’s has a row in each dataset. Anyone without corresponding rows gets filling in with blanks.</p>
+<p>Doing this in R, we end up with something quite messy: we’ve gained some new columns (with odd names), and lots of blank values. The reason for this is that Arti has a row in each dataset. Anyone without corresponding rows gets filling in with blanks.</p>
+<p>We could do something very similar by hand in Excel. It’s worth noting the <code>VSTACK</code> function, which allows you to bring one table into another in Excel. PowerQuery has some great tools for binding data. <code>Append Queries</code> allows you to perform row-binding:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2952836979.png" class="img-fluid figure-img"></p>
+<figcaption>Select Append Queries</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-3653621168.png" class="img-fluid figure-img"></p>
+<figcaption>Select datasets to bind together</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-1970651010.png" class="img-fluid figure-img"></p>
+<figcaption>New table containing all rows from the original</figcaption>
+</figure>
+</div>
+<p>However we bind, the main distinction remains the same. When you bind, the values in your data are irrelevant. Column names will matter - e.g.&nbsp;row binding works when you have identically named columns. But the values themselves don’t matter at all.</p>
 </section>
 <section id="joins-proper" class="level2">
 <h2 class="anchored" data-anchor-id="joins-proper">Joins proper</h2>
-<p>Unlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join <code>y</code> onto x:</p>
+<p>Unlike binding, though, a join will pay attention to the values found in our data. For example, we could do a left-join:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/left.png" class="img-fluid figure-img"></p>
+<figcaption>A left-join</figcaption>
+</figure>
+</div>
+<p>This would retain any data from our x dataset, but also bring in any matching data from y.So let’s now left-join <code>y</code> onto x using the <code>name</code> column:</p>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="sc">|&gt;</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(y, <span class="at">by =</span> <span class="st">"name"</span>) <span class="sc">|&gt;</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -501,7 +530,173 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
+<p>We’d get entirely different results if we joined on the <code>tool</code> column:</p>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>x <span class="sc">|&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(y, <span class="at">by =</span> <span class="st">"tool"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name.x</th>
+<th style="text-align: left;">tool</th>
+<th style="text-align: right;">training_sessions.x</th>
+<th style="text-align: left;">name.y</th>
+<th style="text-align: right;">training_sessions.y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Steve</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Abena</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Yuika</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Yuika</td>
+<td style="text-align: right;">5</td>
+</tr>
+</tbody>
+</table>
+<p>We could do something similar, again using the name column, to add in some dis-similar data from another source:</p>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"Abena"</span>, <span class="st">"Yuika"</span>, <span class="st">"Arti"</span>, <span class="st">"Steve"</span>, <span class="st">"Emma"</span>, <span class="st">"Bruce"</span>),</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">score =</span> <span class="fu">c</span>(<span class="dv">90</span>, <span class="dv">85</span>, <span class="dv">80</span>, <span class="dv">75</span>, <span class="dv">70</span>, <span class="dv">33</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>x <span class="sc">|&gt;</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(z, <span class="at">by =</span> <span class="st">"name"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">tool</th>
+<th style="text-align: right;">training_sessions</th>
+<th style="text-align: right;">score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Steve</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">75</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">70</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">80</td>
+</tr>
+</tbody>
+</table>
+<p>There are several ways of doing this from R. If you’re not a dplyr fan, you could use base-R’s <code>merge</code> to do a left join:</p>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">merge</span>(x, y, <span class="at">by =</span> <span class="st">"name"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">tool.x</th>
+<th style="text-align: right;">training_sessions.x</th>
+<th style="text-align: left;">tool.y</th>
+<th style="text-align: right;">training_sessions.y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Power BI</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
 <p>You should see that only the values from <code>y</code>’s score column that have a corresponding name in <code>x</code> get populated, and everything else gets filled with NAs. Here’s a <a href="https://lindsaydbrin.github.io/CREATE_R_Workshop/Lesson_-_dplyr_join.html">nice introduction to the different kinds of join you can do in dplyr</a>.</p>
+<p>Again, we can do something similar in PowerQuery - note that joins are called <code>Merges</code></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-4096182636.png" class="img-fluid figure-img"></p>
+<figcaption>Select Merge Queries</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2316589936.png" class="img-fluid figure-img"></p>
+<figcaption>Pick data to merge, and columns to merge on</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2513654082.png" class="img-fluid figure-img"></p>
+<figcaption>You’ll need to expand the values in the new column</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-3678634774.png" class="img-fluid figure-img"></p>
+<figcaption>Resulting joined data</figcaption>
+</figure>
+</div>
+</section>
+<section id="anti-join" class="level2">
+<h2 class="anchored" data-anchor-id="anti-join">Anti-join</h2>
+<p>An anti-join takes a dataset, and removes any matching values from the second dataset:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/anti.png" class="img-fluid figure-img"></p>
+<figcaption>An anti-join</figcaption>
+</figure>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>x <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">anti_join</span>(y, <span class="at">by =</span> <span class="st">"name"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">tool</th>
+<th style="text-align: right;">training_sessions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Steve</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="final-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="final-thoughts">Final thoughts</h2>
+<ul>
+<li>some nice discussion about using <code>dplyr::semi_join</code> to find similar rows of data without actually binding columns</li>
+<li>using the <a href="https://rstudio.github.io/pointblank/">pointblank</a> package for data validation</li>
+</ul>
 
 
 </section>
