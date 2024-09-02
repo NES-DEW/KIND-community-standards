@@ -1,129 +1,129 @@
 [
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#week-beginning-mon-2nd-september-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#week-beginning-mon-2nd-september-2024",
-    "title": "KIND network update",
-    "section": "Week beginning Mon 2nd September 2024",
-    "text": "Week beginning Mon 2nd September 2024\n\nDear colleagues,\nWelcome to our regular KIND network update. We have a back-to-school feel to the coming week, with the first sessions of our Excel and R beginners courses. These will be joined over the next fortnight by Power BI and Tableau beginner courses - early details can be found on the training pages. We’ll also have the first of our autumn series of community meetups.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
+    "objectID": "rbc/2024-06-13.html",
+    "href": "rbc/2024-06-13.html",
+    "title": "R beginner’s club 2024-06-13",
+    "section": "",
+    "text": "The basic recipe here is:\n\nread our Excel spreadsheets into R\ntry some simple base-R methods of comparison\nget more fancy with packages for more useful comparisons\n\n\n\nThis can be messy. readxl is probably the most straightforward place to start. Make sure a) that your Excel files aren’t open in Excel when you try to read them and b) that you’re happy and confident that your data is on the first worksheet (or you know the correct name of the sheet). You’ll almost certainly want to be working in an R project too to avoid too much messing around with file paths, getwd(), etc.\n\nlibrary(readxl) # to attach the readxl package\nb1 &lt;- read_xlsx(\"data/Book1.xlsx\") \nb2 &lt;- read_xlsx(\"data/Book2.xlsx\") # to read the files\n\n\n\n\nThe most obvious thing to try first is a check for equality. You’ll do this with a double equal sign, like this:\n\nb1 == b2\n\n      name score\n [1,] TRUE  TRUE\n [2,] TRUE  TRUE\n [3,] TRUE  TRUE\n [4,] TRUE  TRUE\n [5,] TRUE  TRUE\n [6,] TRUE  TRUE\n [7,] TRUE  TRUE\n [8,] TRUE  TRUE\n [9,] TRUE  TRUE\n[10,] TRUE  TRUE\n\n\n(single = is effectively the same as &lt;-)\nThat gives us back quite a complicated matrix of results, showing a cell-by-cell comparison of the two sets of data. This happens because R is vectorised - so when we compare two identically-shaped bits of data, R will assume that we want to do our comparison to each of the items in turn. If we just looked at the number values in our spreadsheets, which we could do by using the $ to refer to a column, we could:\n\nb1$score - b2$score\n\n [1] 0 0 0 0 0 0 0 0 0 0\n\n\nWhich I suppose is another way of checking for equality. So could also use a helper function to collapse all of those down into one:\n\nsum(b1$score - b2$score)\n\n[1] 0\n\n\nIf we just wanted a simple true/false measure for the data as a whole, we could recruit the very useful all() and any():\n\nall(b1 == b2) # to check all values are the same\n\n[1] TRUE\n\nany(b1 == b2) # to check any values are the same\n\n[1] TRUE\n\n\nYou could do something very similar using setequal():\n\nsetequal(b1, b2)\n\n[1] TRUE\n\n\n\n\n\nwaldo::compare() is a brilliant way of comparing complex data:\n\nwaldo::compare(b1, b2)\n\n✔ No differences\n\n\nIf we vandalise one of our datasets by changing one value, waldo does plenty of useful work to bring the correct parts of the data to our attention:\n\nb2[5,2] &lt;- 1\nwaldo::compare(b1, b2)\n\nold vs new\n                score\n  old[2, ]  0.2481382\n  old[3, ]  0.6444191\n  old[4, ]  0.8873743\n- old[5, ]  0.3361401\n+ new[5, ]  1.0000000\n  old[6, ]  0.1597596\n  old[7, ]  0.3928778\n  old[8, ]  0.5743370\n\n`old$score[2:8]`: 0.2 0.6 0.9 0.3 0.2 0.4 0.6\n`new$score[2:8]`: 0.2 0.6 0.9 1.0 0.2 0.4 0.6\n\n\nI suppose we could also graph our data to show changed points. One way of doing this is to plot the two sets in different colours:\n\nlibrary(ggplot2)\n\nggplot() +\n  geom_point(data = b1, aes(x = name, y = score), colour = \"red\", size = 5) +\n  geom_point(data = b2, aes(x = name, y = score), colour = \"blue\", size = 5)\n\n\n\n\n\n\n\n\nOr, possibly more elegantly, we could join our data using dplyr, then subtract one from the other, then plot the difference:\n\nlibrary(dplyr)\n\nb1 |&gt;\n  left_join(b2, by = \"name\") |&gt;\n  ggplot(aes(x = name, xend = name, y = score.y - score.x, yend = 0), colour = \"red\") +\n  geom_segment() +\n  geom_label(aes(label = name))"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#wins-of-the-week",
-    "title": "KIND network update",
-    "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nPassed my Uni course on an Introduction to Programming in R\nMade an action plan to boost my skillset and CV over the next three months to become more “marketable” to the jobs and sectors I’m interested in.\nThis week I stood up for myself and called out a colleague who had made inappropriate jokes about my size. Proud of myself for not hiding away from the confrontation! 💪\nI’ve been working on speaking confidently whilst presenting data (I really struggle with this). Yesterday I managed to do a great presentation and answer questions confidently. Very proud!"
+    "objectID": "rbc/2024-06-13.html#how-to-compare-two-or-more-excel-spreadsheets",
+    "href": "rbc/2024-06-13.html#how-to-compare-two-or-more-excel-spreadsheets",
+    "title": "R beginner’s club 2024-06-13",
+    "section": "",
+    "text": "The basic recipe here is:\n\nread our Excel spreadsheets into R\ntry some simple base-R methods of comparison\nget more fancy with packages for more useful comparisons\n\n\n\nThis can be messy. readxl is probably the most straightforward place to start. Make sure a) that your Excel files aren’t open in Excel when you try to read them and b) that you’re happy and confident that your data is on the first worksheet (or you know the correct name of the sheet). You’ll almost certainly want to be working in an R project too to avoid too much messing around with file paths, getwd(), etc.\n\nlibrary(readxl) # to attach the readxl package\nb1 &lt;- read_xlsx(\"data/Book1.xlsx\") \nb2 &lt;- read_xlsx(\"data/Book2.xlsx\") # to read the files\n\n\n\n\nThe most obvious thing to try first is a check for equality. You’ll do this with a double equal sign, like this:\n\nb1 == b2\n\n      name score\n [1,] TRUE  TRUE\n [2,] TRUE  TRUE\n [3,] TRUE  TRUE\n [4,] TRUE  TRUE\n [5,] TRUE  TRUE\n [6,] TRUE  TRUE\n [7,] TRUE  TRUE\n [8,] TRUE  TRUE\n [9,] TRUE  TRUE\n[10,] TRUE  TRUE\n\n\n(single = is effectively the same as &lt;-)\nThat gives us back quite a complicated matrix of results, showing a cell-by-cell comparison of the two sets of data. This happens because R is vectorised - so when we compare two identically-shaped bits of data, R will assume that we want to do our comparison to each of the items in turn. If we just looked at the number values in our spreadsheets, which we could do by using the $ to refer to a column, we could:\n\nb1$score - b2$score\n\n [1] 0 0 0 0 0 0 0 0 0 0\n\n\nWhich I suppose is another way of checking for equality. So could also use a helper function to collapse all of those down into one:\n\nsum(b1$score - b2$score)\n\n[1] 0\n\n\nIf we just wanted a simple true/false measure for the data as a whole, we could recruit the very useful all() and any():\n\nall(b1 == b2) # to check all values are the same\n\n[1] TRUE\n\nany(b1 == b2) # to check any values are the same\n\n[1] TRUE\n\n\nYou could do something very similar using setequal():\n\nsetequal(b1, b2)\n\n[1] TRUE\n\n\n\n\n\nwaldo::compare() is a brilliant way of comparing complex data:\n\nwaldo::compare(b1, b2)\n\n✔ No differences\n\n\nIf we vandalise one of our datasets by changing one value, waldo does plenty of useful work to bring the correct parts of the data to our attention:\n\nb2[5,2] &lt;- 1\nwaldo::compare(b1, b2)\n\nold vs new\n                score\n  old[2, ]  0.2481382\n  old[3, ]  0.6444191\n  old[4, ]  0.8873743\n- old[5, ]  0.3361401\n+ new[5, ]  1.0000000\n  old[6, ]  0.1597596\n  old[7, ]  0.3928778\n  old[8, ]  0.5743370\n\n`old$score[2:8]`: 0.2 0.6 0.9 0.3 0.2 0.4 0.6\n`new$score[2:8]`: 0.2 0.6 0.9 1.0 0.2 0.4 0.6\n\n\nI suppose we could also graph our data to show changed points. One way of doing this is to plot the two sets in different colours:\n\nlibrary(ggplot2)\n\nggplot() +\n  geom_point(data = b1, aes(x = name, y = score), colour = \"red\", size = 5) +\n  geom_point(data = b2, aes(x = name, y = score), colour = \"blue\", size = 5)\n\n\n\n\n\n\n\n\nOr, possibly more elegantly, we could join our data using dplyr, then subtract one from the other, then plot the difference:\n\nlibrary(dplyr)\n\nb1 |&gt;\n  left_join(b2, by = \"name\") |&gt;\n  ggplot(aes(x = name, xend = name, y = score.y - score.x, yend = 0), colour = \"red\") +\n  geom_segment() +\n  geom_label(aes(label = name))"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#training-sessions",
-    "title": "KIND network update",
-    "section": "Training sessions",
-    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nExcel first steps\n09:30-10:30 Tue 3rd September 2024\nExcel\n🌶 :beginner-level\n\n\nR from scratch (session 1)\n14:30-15:30 Tue 3rd September 2024\nR\n🌶 :beginner-level\n\n\n\n\n\n(the Excel session is also our 400th training session, so party hats etc at the ready)"
+    "objectID": "rbc/2024-06-13.html#how-to-think-about-joins",
+    "href": "rbc/2024-06-13.html#how-to-think-about-joins",
+    "title": "R beginner’s club 2024-06-13",
+    "section": "How to think about joins?",
+    "text": "How to think about joins?\nWe did a simple join above. A join is a way of merging two datasets. Let’s demonstrate with some cut-down datasets from above. We’ll remove some of the values from our b1 set and from our b2 set:\n\nb1 &lt;- b1 |&gt;\n  slice(1:5)\n\nb1\n\n# A tibble: 5 × 2\n  name     score\n  &lt;chr&gt;    &lt;dbl&gt;\n1 kennedy  0.590\n2 victoria 0.248\n3 peter    0.644\n4 judi     0.887\n5 paul     0.336\n\n\n\nb2 &lt;- b2 |&gt;\n  slice_sample(n = 5)\n\nb2\n\n# A tibble: 5 × 2\n  name    score\n  &lt;chr&gt;   &lt;dbl&gt;\n1 kenneth 0.393\n2 kennedy 0.590\n3 peter   0.644\n4 michael 0.561\n5 judi    0.887\n\n\nThe simplest join we could do is to bind the rows from one set onto another:\n\nb1 |&gt;\n  bind_rows(b2)\n\n# A tibble: 10 × 2\n   name     score\n   &lt;chr&gt;    &lt;dbl&gt;\n 1 kennedy  0.590\n 2 victoria 0.248\n 3 peter    0.644\n 4 judi     0.887\n 5 paul     0.336\n 6 kenneth  0.393\n 7 kennedy  0.590\n 8 peter    0.644\n 9 michael  0.561\n10 judi     0.887\n\n\nThat just brings all the rows from b2 onto the end of b1. Unlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join b2:\n\nb1 |&gt;\n  left_join(b2, by = \"name\")\n\n# A tibble: 5 × 3\n  name     score.x score.y\n  &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;\n1 kennedy    0.590   0.590\n2 victoria   0.248  NA    \n3 peter      0.644   0.644\n4 judi       0.887   0.887\n5 paul       0.336  NA    \n\n\nYou should see that only the values from b2’s score column that have a corresponding name in b1 get populated, and everything else gets filled with NAs. Here’s a nice introduction to the different kinds of join you can do in dplyr."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html",
+    "href": "ml_archive/KIND_weekly_update_2024-08-26.html",
+    "title": "KIND network update",
+    "section": "",
+    "text": "Dear colleagues,\nWelcome to our regular KIND network update. Full details of our events and training can be found on our Teams channel.\nWe’ve been working on the mentoring scheme this week, including a new homepage. It’s designed to put mentors and mentees in touch with each other to support short and well-defined pieces of work. Please get in touch with any suggestions or feedback, and do feel encouraged to put together a project proposal if there’s some area of work you’d like more support with.\nHope to see you at something soon\nBrendan"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#week-beginning-mon-2nd-september-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#week-beginning-mon-2nd-september-2024",
+    "title": "KIND network update",
+    "section": "",
+    "text": "Dear colleagues,\nWelcome to our regular KIND network update. Full details of our events and training can be found on our Teams channel.\nWe’ve been working on the mentoring scheme this week, including a new homepage. It’s designed to put mentors and mentees in touch with each other to support short and well-defined pieces of work. Please get in touch with any suggestions or feedback, and do feel encouraged to put together a project proposal if there’s some area of work you’d like more support with.\nHope to see you at something soon\nBrendan"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#wins-of-the-week",
+    "title": "KIND network update",
+    "section": "Wins of the week",
+    "text": "Wins of the week\nWe’re again celebrating some community wins-of-the-week, which have included:\n\nI submitted my Master’s dissertation!\nProactively prepared a whiteboard in teams ahead of a critical team meeting so that everyone could follow along and help organise priorities - this was the first time I’d used whiteboard on this scale\nThis week I managed to save an egg bound chicken\nUsed PowerBI to generate a recurring analysis pack for sharing with management leads. Now, instead of manually analysing the weekly data to generate charts to be copied into a PowerPoint pack, I only need to refresh the data source and export the updated PowerBI report as a PDF. 1-2 hrs of work reduced to seconds :)\nCalmly dealt with numerous difficult colleagues and taken the initiative in the absence of more senior staff"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n3-4pm, Mon 2nd September 2024. The KIND Community meetup theme this week is the first of three sessions on joins. We’ll start at the beginning this week, with a gentle introduction and overview of the hows and whys of joining data. All welcome at our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel\n1-2pm, Tue 3rd September 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Sarah Griffin (NHS Highland) - Modelling hip fractures."
+    "text": "Events\n\n13.00-14.00 Tue 3rd September 2024. SCODAS meeting. Sarah Griffin (NHS Highland) - Modelling hip fractures. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards.\nThursday 3-4pm, Gemma Wilson (Scottish Government) will be giving an update on the data strategy. All welcome at this informal session to find out more about this important initiative. No need to register - just follow the Teams link on the day.\n\nWe’ll also be finalising the community meetup schedule for the autumn next week. But save the date - our new community meetup slot will be Mondays 3-4pm."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
-    "text": "Book of the week\nRobert C. Martin. 2008. Clean Code: A Handbook of Agile Software Craftsmanship.  ISBN 9780136083238, Worldcat. This week’s book of the week was suggested by Zena Trendell, a Programme Manager at NHS Lothian. She writes: ‘I recently read The Clean Code by Robert Cecil Martin. I’m not a coder but thought it was very good. The book is about professionalism for developers (similar to accountants etc.) and give you some tools to help prevent feeling under pressure re: timescales. It’s not a recent book yet very relevant to some incidents that have happened lately.’.\nUnsubscribe from these emails"
+    "text": "Book of the week\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html",
-    "href": "ml_archive/KIND_weekly_update_2024-08-19.html",
-    "title": "KIND network update",
+    "objectID": "commet/commet_2024_09_02.html",
+    "href": "commet/commet_2024_09_02.html",
+    "title": "Joins 1: introduction",
     "section": "",
-    "text": "Dear colleagues,\nWelcome to our regular KIND network update. The big theme for coming week is the return of some of our social activities that have been taking a summer break. We’re starting to build up a set of community meetup topics for the Autumn on the Teams channel, and I’m delighted to say that SCODAS meetings will be back in their usual 1-2pm Tuesday slot.\nWe’ll also be pausing our one-off training sessions for the next couple of weeks to allow some space for preparatory work. If you’re a Tableau expert, please consider coming to a shakedown/feedback session for our new Tableau for beginners course which will be running 3-4ish on Thursday 22nd. It’s vital that we keep training resources aligned with the needs of the community, so your feedback is essential to our work.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
+    "text": "A join is a way of merging two datasets. Let’s demonstrate with some simple data:\nlibrary(tibble)\nlibrary(dplyr)\nx &lt;- tibble(\n  name = c(\"Steve\", \"Emma\", \"Arti\"),\n  tool = c(\"R\", \"Excel\", \"Excel\"),\n  training_sessions = c(4,3,7)\n)\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3\n\n\nArti\nExcel\n7\n\n\n\ny &lt;- tibble(\n  name = c(\"Abena\", \"Yuika\", \"Arti\"),\n  tool = c(\"R\", \"Excel\", \"Power BI\"),\n  training_sessions = c(3,5,3)\n)\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3\n\n\nArti\nExcel\n7"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#week-beginning-mon-26th-august-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#week-beginning-mon-26th-august-2024",
-    "title": "KIND network update",
+    "objectID": "commet/commet_2024_09_02.html#how-to-think-about-joins",
+    "href": "commet/commet_2024_09_02.html#how-to-think-about-joins",
+    "title": "Joins 1: introduction",
     "section": "",
-    "text": "Dear colleagues,\nWelcome to our regular KIND network update. The big theme for coming week is the return of some of our social activities that have been taking a summer break. We’re starting to build up a set of community meetup topics for the Autumn on the Teams channel, and I’m delighted to say that SCODAS meetings will be back in their usual 1-2pm Tuesday slot.\nWe’ll also be pausing our one-off training sessions for the next couple of weeks to allow some space for preparatory work. If you’re a Tableau expert, please consider coming to a shakedown/feedback session for our new Tableau for beginners course which will be running 3-4ish on Thursday 22nd. It’s vital that we keep training resources aligned with the needs of the community, so your feedback is essential to our work.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
+    "text": "A join is a way of merging two datasets. Let’s demonstrate with some simple data:\nlibrary(tibble)\nlibrary(dplyr)\nx &lt;- tibble(\n  name = c(\"Steve\", \"Emma\", \"Arti\"),\n  tool = c(\"R\", \"Excel\", \"Excel\"),\n  training_sessions = c(4,3,7)\n)\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3\n\n\nArti\nExcel\n7\n\n\n\ny &lt;- tibble(\n  name = c(\"Abena\", \"Yuika\", \"Arti\"),\n  tool = c(\"R\", \"Excel\", \"Power BI\"),\n  training_sessions = c(3,5,3)\n)\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3\n\n\nArti\nExcel\n7"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#wins-of-the-week",
-    "title": "KIND network update",
-    "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nProducing a series of reports for the first time using script I’ve been developing in R Markdown. Something that use to take over day to do, copying and pasting from Excel to Word, and still be littered with errors, now just takes around 2 hours and is accurate after some simple checks.\nHelped out a lot of people (and remained patient with them)!\nstuck head over parapet to make a point and felt better for doing it\nI proved I am worthy of my promotion"
+    "objectID": "commet/commet_2024_09_02.html#binding",
+    "href": "commet/commet_2024_09_02.html#binding",
+    "title": "Joins 1: introduction",
+    "section": "Binding",
+    "text": "Binding\nThe simplest join we could do is to bind the rows from one set onto another:\nx |&gt;\n  bind_rows(y) |&gt;\n  knitr::kable()\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3\n\n\nArti\nExcel\n7\n\n\nAbena\nR\n3\n\n\nYuika\nExcel\n5\n\n\nArti\nPower BI\n3\n\n\n\nThat just brings all the rows from y onto the end of x. We could also have just bound the columns together:\nx |&gt;\n  bind_cols(y) |&gt;\n  knitr::kable()\n\n\n\n\n\n\n\n\n\n\n\nname…1\ntool…2\ntraining_sessions…3\nname…4\ntool…5\ntraining_sessions…6\n\n\n\n\nSteve\nR\n4\nAbena\nR\n3\n\n\nEmma\nExcel\n3\nYuika\nExcel\n5\n\n\nArti\nExcel\n7\nArti\nPower BI\n3\n\n\n\nDoing this in R, we end up with something quite messy: we’ve gained some new columns (with odd names), and lots of blank values. The reason for this is that the Arti’s has a row in each dataset. Anyone without corresponding rows gets filling in with blanks."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#events",
-    "title": "KIND network update",
-    "section": "Events",
-    "text": "Events\nThe Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the meeting will be 13.00-14.00 Tue 27th August 2024. Stefanie Swietlik (NHS Lothian) - Lothian Public Health Survey 2023."
+    "objectID": "commet/commet_2024_09_02.html#joins-proper",
+    "href": "commet/commet_2024_09_02.html#joins-proper",
+    "title": "Joins 1: introduction",
+    "section": "Joins proper",
+    "text": "Joins proper\nUnlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join y onto x:\nx |&gt;\n  left_join(y, by = \"name\") |&gt;\n  knitr::kable()\n\n\n\nname\ntool.x\ntraining_sessions.x\ntool.y\ntraining_sessions.y\n\n\n\n\nSteve\nR\n4\nNA\nNA\n\n\nEmma\nExcel\n3\nNA\nNA\n\n\nArti\nExcel\n7\nPower BI\n3\n\n\n\nYou should see that only the values from y’s score column that have a corresponding name in x get populated, and everything else gets filled with NAs. Here’s a nice introduction to the different kinds of join you can do in dplyr."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#kind-unconference-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#kind-unconference-2024",
-    "title": "KIND network update",
-    "section": "KIND Unconference 2024",
-    "text": "KIND Unconference 2024\nSave the date - 11th December 2024 - an opportunity to share and celebrate your hard work. Fully online, free and open to all, and plans afoot on the Teams channel."
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#book-of-the-week",
-    "title": "KIND network update",
-    "section": "Book of the week",
-    "text": "Book of the week\nDavid Graeber. 2015. The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy.  ISBN 9781612195186, Worldcat. This is a fun and thought-provoking set of essays about bureacracy. It starts with a mystery: why, if people hate bureaucracy, is there so much of it?. A recurring theme in many KIND events that we spend lots of time managing forms and paperwork, rather than doing more important work. And so we might be reassured that it’s not just us, that ‘all of us end up finding increasing percentages of our day taken up in the filling out of forms.’ The most interesting parts of this book though are not about just moaning about the quantity of paperwork that we face, but instead point out exactly why all that paperwork might really be something to worry about. As the author notes, endless box ticking seems to prevent useful communication and other human interactions. Or, more cuttingly: ‘Bureaucratic procedures…make even the smartest people act like idiots’. That point then leads into a balancing act. As the title might suggest, some rules seem to constrain or prevent us doing useful things, while some rules seem to do the opposite (say, by insisting that we can’t discriminate based on appearance). So there’s a balancing act between different kinds of rules, that shows up as a long-running back and forth between different ways of ruling, that the author traces across times and places. That range of cases, and pleasure in talking about paperwork, is a substantial contributor to the great charm of the book..\nUnsubscribe from these emails"
-  },
-  {
-    "objectID": "mentoring.html",
-    "href": "mentoring.html",
-    "title": "KIND Mentoring Scheme",
+    "objectID": "rbc/about.html",
+    "href": "rbc/about.html",
+    "title": "About R beginner’s club",
     "section": "",
-    "text": "Draft guidance\n\n\n\n\n\nThis is currently draft guidance, may therefore contain errors and omissions, and is liable to change\nWe run an informal mentoring scheme. It’s designed to support professional development, by putting together mentors and mentees to work on a well-defined project over about 8 weeks. The scheme operates entirely by mutual consent, so participants are free to leave at any time. We think the benefits are reciprocal, with both parties gaining from the work."
+    "text": "We run a monthly R beginner’s club on Teams. If you’re new to R, please consider yourself invited to come along for mutual support, troubleshooting, and tips for building your R skills and confidence.\nFull details and joining instructions via the KIND network Teams channel."
   },
   {
-    "objectID": "mentoring.html#why-mentoring",
-    "href": "mentoring.html#why-mentoring",
-    "title": "KIND Mentoring Scheme",
-    "section": "Why mentoring?",
-    "text": "Why mentoring?\n\n\n\nFor mentees\n\nan opportunity to get support and guidance that might not be available in your workplace\nan efficient way of putting skills into practice\nbuild your professional network\n\n\n\n\nFor mentors\n\npass on your skills and knowledge to the wider community\nto strengthen your understanding of a topic - think of mentoring as a variant of the Feynman method\nto develop new professional skills, particularly skills relevant to more senior roles such as management, personal development, and community building"
+    "objectID": "rbc/about.html#about",
+    "href": "rbc/about.html#about",
+    "title": "About R beginner’s club",
+    "section": "",
+    "text": "We run a monthly R beginner’s club on Teams. If you’re new to R, please consider yourself invited to come along for mutual support, troubleshooting, and tips for building your R skills and confidence.\nFull details and joining instructions via the KIND network Teams channel."
   },
   {
-    "objectID": "mentoring.html#mentoring-projects",
-    "href": "mentoring.html#mentoring-projects",
-    "title": "KIND Mentoring Scheme",
-    "section": "Mentoring projects",
-    "text": "Mentoring projects\n\nGood project ideasBad project ideas\n\n\n\nhelp me turn some R code into a package - specific and achievable\nsupport me through a first literature review - sharing expertise\nI’ve just done a course on x, but need some support putting x to work in y - supporting areas not well-covered by other means\n\n\n\n\nteach me how to code - open-ended projects aren’t a good fit for an 8-week mentoring arrangement\nadvise our organisation on x - mentoring isn’t consultancy\nI need someone to encourage me to work harder - mentoring isn’t cheerleading\nmy spreadsheet is broken - focal requests for assistance would be better asked on the KIND network"
+    "objectID": "rbc/about.html#schedule",
+    "href": "rbc/about.html#schedule",
+    "title": "About R beginner’s club",
+    "section": "Schedule",
+    "text": "Schedule\n\nThursday, 3-4pm BST, 12th September 2024\nThursday, 3-4pm BST, 10th October 2024\nThursday, 3-4pm GMT, 14th November 2024\nThursday, 3-4pm GMT, 12th December 2024\n\nYou can follow this direct link to access the Teams meeting, although you’ll need to be a member of the KIND network Teams channel to get the most out of the discussion. That’s free and easy to join - here’s the sign-up form."
   },
   {
-    "objectID": "mentoring.html#how-it-works",
-    "href": "mentoring.html#how-it-works",
-    "title": "KIND Mentoring Scheme",
-    "section": "How it works",
-    "text": "How it works\n\n\n\n\n\n\n\ngraph TD;\n\nrequest[\"Mentee sends a project outline\"] --&gt; mentorfinds[\"Mentor finds a suitable project outline\"]\n\nmentorfinds --&gt; email[\"Both discuss by email\"]\n\nemail --&gt; meeting[\"Informal meeting to set goals and expectations\"]\n\nmeeting --&gt;  contract[\"Sign contract\"]\n\ncontract --&gt; complete[\"Complete the mentoring project\"]\n\ncomplete --&gt; present[\"Present the project at the mmmmm\"]\n\n\n\n\n\n\n\n\n\na mentee puts a request on the KIND Teams channel by filling in the new project form\na mentor sees the request on the Teams channel, and expressed interest in mentoring)\nwe put the mentee and mentor in touch by email to discuss the project\nmentor and mentee meet to agree a broad outline for their mentoring arrangement\nboth mentor and mentee sign a mutua-consent contract\nwe help and support them through the duration of the scheme. Either party can withdraw at any time without fault\nwe invite mentors and mentees to come and present their experiences at the monthly mentoring meetup"
+    "objectID": "rbc/about.html#archive",
+    "href": "rbc/about.html#archive",
+    "title": "About R beginner’s club",
+    "section": "Archive",
+    "text": "Archive\nR beginner’s club 13th June 2024"
   },
   {
-    "objectID": "mentoring.html#key-documents",
-    "href": "mentoring.html#key-documents",
-    "title": "KIND Mentoring Scheme",
-    "section": "Key documents",
-    "text": "Key documents\n\nnew mentoring request form - use this to propose a new project\npotential mentor form - use this to express interest in mentoring a project\ncontract form - use this to agree a new mentoring relationship (see a sample contract)\nwithdrawal form - use this to end a mentoring relationship"
+    "objectID": "rbc/about.html#previous-attendees-have-said",
+    "href": "rbc/about.html#previous-attendees-have-said",
+    "title": "About R beginner’s club",
+    "section": "Previous attendees have said…",
+    "text": "Previous attendees have said…\n\n9 previous attendees have left feedback\n89% said that this session was pitched correctly\n100% would recommend this session to a colleague\n\n\n\n\n\n\n\nThree random comments from previous attendees\n\n\n\n\nThe session was really helpful and helped point me in the right direction for a project I am working on.\nI wondered if people who are completely new to R might have been a bit daunted by the speed at which we went through things? I really like the approach of asking people about the actual issues they’re facing though. I’m going to be aware of what I get stuck on to bring to future sessions. I’m really excited about this new club!\nEven my simple brain could understand the topic covered"
   },
   {
-    "objectID": "mentoring.html#what-makes-a-good-mentoring-project",
-    "href": "mentoring.html#what-makes-a-good-mentoring-project",
-    "title": "KIND Mentoring Scheme",
-    "section": "What makes a good mentoring project?",
-    "text": "What makes a good mentoring project?\n\nsuccessful projects are generally short and simple\n\nshort meaning they can generally be finished off during the 8 week mentoring scheme\nsimple meaning they don’t depend on a lot of new infrastructure, require organisational change, or need an mentor to gain an unrealistic range of new skills\n\nsuccessful project proposals should therefore be short and precise\n\nwhat are you trying to do?\nhow are you trying to do it?\nwhich barrier(s) do you have in place?\nwhat do you need a mentor to do?\n\nsuccessful projects aren’t about cheerleading\n\nwe’d expect mentors to provide largely technical advice: “have you considered using x”\nwe do not expect mentors to provide detailed technical training\nwe specifically preclude mentors giving detailed technical advice regarding systems. Mentors are not consultants."
-  },
-  {
-    "objectID": "mentoring.html#what-might-i-do-instead",
-    "href": "mentoring.html#what-might-i-do-instead",
-    "title": "KIND Mentoring Scheme",
-    "section": "What might I do instead?",
-    "text": "What might I do instead?\nIf your project doesn’t fit this scheme, consider:\n\nasking a question on the KIND teams channel\ncompleting one of our training courses on a topic, particularly if you’re struggling to put your request into specific language\npresenting your query/issue in one of the open KIND community meetup sessions"
+    "objectID": "kind_cms.html",
+    "href": "kind_cms.html",
+    "title": "KIND community meetups",
+    "section": "",
+    "text": "These are our main weekly social learning activity. They’re usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell.\n\nDownload community meetup data as csv\nDownload community meetup ideas as csv\n\n\nCurrent community meetup scheduleFuture community meetup ideasArchive of past sessions\n\n\n\nCurrent community meetup schedule\n\n\n\n\n\n\n\nDate\nTopic\nsubtopic\n\n\n\n\n2024-09-02\nJoins 1: introduction\n\n\n\n2024-09-09\nJoins 2: basic joins (left/right/full etc)\n\n\n\n2024-09-16\nJoins 3: the fancy stuff (rolling/inequality etc)\n\n\n\n2024-09-23\nSQL alphabet soup\n\n\n\n2024-09-30\nArt of the possible / showing off great projects\n\n\n\n2024-10-07\nTurning a user request into something you can work with\n\n\n\n2024-10-14\nNO SESSION\n\n\n\n2024-10-21\nNO SESSION\n\n\n\n2024-10-28\nNO SESSION\n\n\n\n2024-11-04\nfree parking\n\n\n\n2024-11-11\nR\nduckdb tech demo / group of use-cases\n\n\n2024-11-18\nTeaching maintenance\n\n\n\n2024-11-25\nExcel\nExcel programming/VBA/lambdas \n\n\n2024-12-02\nfree parking\n\n\n\n2024-12-09\nResearch data management\n\n\n\n2024-12-16\nFirst-steps toolkit for a junior/solo/reluctant/occasional analyst\n\n\n\n\n\n\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nData\nSafe havens / disclosure control / safe researcher training\n\n\n\nData\nDisclosure and pseudoanonymised data\n\n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nData\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\nMisc\nA non-web person’s intro to Java\n\n\n\nPower BI\ncorrelations and linear models in Power BI\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler\n\n\nR\nTidytext, sentiment analysis \n\n\n\nR \nData.table / tidyverse / polars / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nR \nR package roundup - Echarts4r, making PowerPoint in RMD, snakecase\n\n\n\nSkills\nWriting for different audiences\n\n\n\nStats\nDirected Acyclic Graphs (DAGs)\n\n\n\nStats\nPredictive modelling\n\n\n\nStats\nBayesian stats\n\n\n\nR\nTesting code\nEllen Young\n\n\nR\nGithub collaborations and getting Git installed\nGemma Whittaker\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nDate\n\n\nCategories\n\n\n\n\n\n\nAppraisals\n\n\nMay 16, 2024\n\n\nskills, career developement, appraisal\n\n\n\n\nData strategy\n\n\nMar 7, 2023\n\n\nData strategy\n\n\n\n\nJoins 1: introduction\n\n\nSep 2, 2024\n\n\nJoins, beginner, Excel, R, Power Query\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "ml_archive.html",
@@ -189,39 +189,32 @@
     "text": "Appendix\n\nOverview\n\nOverview of Visio (Office Support)\n\nMany more suggested articles are available on the Visio website itself; click on the help icon (? Symbol) in the top right of the page, and several articles about using the application will be suggested.\n\n\nProcess Mapping\n\nProcess Mapping (QI Lothian)\nProcess Mapping (Turas Quality Improvement Zone)\nProcess Mapping Symbols (Turas Quality Improvement Zone)\n\nNote there are many more symbols that can be used in process maps, try to ensure whatever you are using comes from an approved source and is a standardised/understandable format.\n\n\nOther resources\n\nQuality improvement tools and resources (QI Lothian)\nNES QI tools (Turas Quality Improvement Zone)"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "KIND resources",
+    "objectID": "r.html",
+    "href": "r.html",
+    "title": "KIND Community Standards: R",
     "section": "",
-    "text": "This is the main page for the KIND network’s live documents and non-training resources."
+    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
   },
   {
-    "objectID": "index.html#whats-here",
-    "href": "index.html#whats-here",
-    "title": "KIND resources",
-    "section": "What’s here?",
-    "text": "What’s here?\n\nCommunity standards.\nThese documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.\nHow might you use these suggestions?\n\nas a way of highlighting good practice\nas a helper when starting new projects (or new Excel documents)\nas a lever for bringing about change, particularly trying to convince service leads that poorly-designed Excel spreadsheets are a dangerous menace\nas a guideline for tidying up existing inconsistent/messy files\nas a training tool when bringing new colleagues up to speed\n\nPlease take this, use it however you like, and let us know if there’s anything that you’d find particularly helpful for an updated version to contain. We’ll review and redraft regularly. Please open an issue on the GitHub page if you have specific suggestions, otherwise contact brendan.clarke2@nhs.scot for a more general conversation about these standards.\n\n\nSample SOPs\nThese are a set of sample standard operating procedures for KIND work. These are intended for sharing as a basis or guideline for your own activities. Please get in touch if you have a useful SOP that might be sharable.\n\n\nKIND FAQ\nOur main frequently-asked questions document\n\n\nBook of the week\nData and summaries for our ever-popular book of the week segment\n\n\nCommunity meetup schedule"
-  },
-  {
-    "objectID": "excel.html",
-    "href": "excel.html",
-    "title": "KIND Community Standards: Excel",
+    "objectID": "r.html#basic-standard",
+    "href": "r.html#basic-standard",
+    "title": "KIND Community Standards: R",
     "section": "",
-    "text": "Excel workbooks are frequently troublesome. This document contains a simple set of features that will help you avoid the most serious Excel problems. The aim is to be:\nThis is version 1, and this document will be fully reviewed in January 2025 by the KIND network community."
+    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
   },
   {
-    "objectID": "excel.html#basic-standard-for-excel-workbooks",
-    "href": "excel.html#basic-standard-for-excel-workbooks",
-    "title": "KIND Community Standards: Excel",
-    "section": "Basic standard for Excel workbooks",
-    "text": "Basic standard for Excel workbooks\n\nMake your data tidy\n\nOne value per cell\nOne observation per row\nOne variable per column\n\nAvoid repetition\n\nconsider restructuring into several tables to avoid repeating data\n\nUse tables to contain data wherever possible\nUse meaningful sheet, table, and column names (not Sheet 1, Sheet 2…)\nUse number formatting as appropriate\n\nDates and percentages are especially important to format correctly\nText format for CHI numbers, rather than the initial ’\n\nAvoid using colour-based formatting which can easily breach accessibility guidance\n\nIf conditional format is required, prefer using more accessible formats, such as shape icons sets\n\nConsider avoiding VLOOKUP() in favour of either INDEX() + MATCH() or XLOOKUP()"
+    "objectID": "r.html#enhanced-standard",
+    "href": "r.html#enhanced-standard",
+    "title": "KIND Community Standards: R",
+    "section": "Enhanced standard",
+    "text": "Enhanced standard\n\nMake explicit reference to any formal style conventions employed\nUse version control\nFor ambitious projects, consider using renv which will capture R and package versions\nFor more onerous scripts, identify memory and CPU requirements listed at start\nconsider using project templates for presentations/reports/dashboards\nConsider loading individual functions via package::function() syntax rather than wholesale package loading for namespace and performance reasons\nconsider using targets to encourage the use of functions, visually displays the build pipeline and avoids unnecessary re-running of up-to-date code"
   },
   {
-    "objectID": "excel.html#enhanced-standard-for-excel-workbooks",
-    "href": "excel.html#enhanced-standard-for-excel-workbooks",
-    "title": "KIND Community Standards: Excel",
-    "section": "Enhanced standard for Excel workbooks",
-    "text": "Enhanced standard for Excel workbooks\nFollow the basic standards above, plus:\n\nConsider using data validation to make data consistent, especially if you don’t really want free text\nAdd a documentation / readme worksheet. You might include:\n\na description of the data\ninformation about ownership/origin/dates/data sources\na key explaining abbreviations\nexplanation of any complex formulas\nadvice about correct and consistent method of naming different versions of the workbook\n\nConsider using lambda formulas to avoid repetition of complex formulas\nPrefer structured referencing and naming to the use of complex A1 referencing\nConsider loading data using Power Query, especially if the workbook is designed to be updated"
+    "objectID": "r.html#considerations-for-teams-and-groups",
+    "href": "r.html#considerations-for-teams-and-groups",
+    "title": "KIND Community Standards: R",
+    "section": "Considerations for teams and groups",
+    "text": "Considerations for teams and groups\n\nHave a house code style, possibly implemented using styler Code styling for readability is important, and no-one agrees, so you’ll need to lead.\nWhen documentation is extremely important, consider using roxygen2 to encourage best documentation practice"
   },
   {
     "objectID": "faq.html",
@@ -301,32 +294,130 @@
     "text": "Help! I have an unmet query…\nFor anything, please contact Brendan Clarke (brendan.clarke2@nhs.scot)."
   },
   {
-    "objectID": "r.html",
-    "href": "r.html",
-    "title": "KIND Community Standards: R",
+    "objectID": "commet/commet_2023_03_07.html",
+    "href": "commet/commet_2023_03_07.html",
+    "title": "Data strategy",
     "section": "",
-    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
+    "text": "Session materials\n\n\n\n\n\n\nslides  pptx /  pdf"
   },
   {
-    "objectID": "r.html#basic-standard",
-    "href": "r.html#basic-standard",
-    "title": "KIND Community Standards: R",
+    "objectID": "commet/commet_2023_03_07.html#overall-structure",
+    "href": "commet/commet_2023_03_07.html#overall-structure",
+    "title": "Data strategy",
+    "section": "Overall structure",
+    "text": "Overall structure\n\none vision: best use of data\nthree ambitions\nseven priority areas\nall wrapped in an ethical approach"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#data-access",
+    "href": "commet/commet_2023_03_07.html#data-access",
+    "title": "Data strategy",
+    "section": "Data access",
+    "text": "Data access"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#talent-and-culture",
+    "href": "commet/commet_2023_03_07.html#talent-and-culture",
+    "title": "Data strategy",
+    "section": "Talent and culture",
+    "text": "Talent and culture"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
+    "href": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
+    "title": "Data strategy",
+    "section": "Protecting and sharing data",
+    "text": "Protecting and sharing data"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#technology-and-infrastructure",
+    "href": "commet/commet_2023_03_07.html#technology-and-infrastructure",
+    "title": "Data strategy",
+    "section": "Technology and infrastructure",
+    "text": "Technology and infrastructure"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
+    "href": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
+    "title": "Data strategy",
+    "section": "Information standards and interoperability",
+    "text": "Information standards and interoperability"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#creating-insights-from-data",
+    "href": "commet/commet_2023_03_07.html#creating-insights-from-data",
+    "title": "Data strategy",
+    "section": "Creating insights from data",
+    "text": "Creating insights from data"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
+    "href": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
+    "title": "Data strategy",
+    "section": "Supporting research and innovation",
+    "text": "Supporting research and innovation"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
+    "href": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
+    "title": "Data strategy",
+    "section": "Ethical approaches to data",
+    "text": "Ethical approaches to data"
+  },
+  {
+    "objectID": "excel.html",
+    "href": "excel.html",
+    "title": "KIND Community Standards: Excel",
     "section": "",
-    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
+    "text": "Excel workbooks are frequently troublesome. This document contains a simple set of features that will help you avoid the most serious Excel problems. The aim is to be:\nThis is version 1, and this document will be fully reviewed in January 2025 by the KIND network community."
   },
   {
-    "objectID": "r.html#enhanced-standard",
-    "href": "r.html#enhanced-standard",
-    "title": "KIND Community Standards: R",
-    "section": "Enhanced standard",
-    "text": "Enhanced standard\n\nMake explicit reference to any formal style conventions employed\nUse version control\nFor ambitious projects, consider using renv which will capture R and package versions\nFor more onerous scripts, identify memory and CPU requirements listed at start\nconsider using project templates for presentations/reports/dashboards\nConsider loading individual functions via package::function() syntax rather than wholesale package loading for namespace and performance reasons\nconsider using targets to encourage the use of functions, visually displays the build pipeline and avoids unnecessary re-running of up-to-date code"
+    "objectID": "excel.html#basic-standard-for-excel-workbooks",
+    "href": "excel.html#basic-standard-for-excel-workbooks",
+    "title": "KIND Community Standards: Excel",
+    "section": "Basic standard for Excel workbooks",
+    "text": "Basic standard for Excel workbooks\n\nMake your data tidy\n\nOne value per cell\nOne observation per row\nOne variable per column\n\nAvoid repetition\n\nconsider restructuring into several tables to avoid repeating data\n\nUse tables to contain data wherever possible\nUse meaningful sheet, table, and column names (not Sheet 1, Sheet 2…)\nUse number formatting as appropriate\n\nDates and percentages are especially important to format correctly\nText format for CHI numbers, rather than the initial ’\n\nAvoid using colour-based formatting which can easily breach accessibility guidance\n\nIf conditional format is required, prefer using more accessible formats, such as shape icons sets\n\nConsider avoiding VLOOKUP() in favour of either INDEX() + MATCH() or XLOOKUP()"
   },
   {
-    "objectID": "r.html#considerations-for-teams-and-groups",
-    "href": "r.html#considerations-for-teams-and-groups",
-    "title": "KIND Community Standards: R",
-    "section": "Considerations for teams and groups",
-    "text": "Considerations for teams and groups\n\nHave a house code style, possibly implemented using styler Code styling for readability is important, and no-one agrees, so you’ll need to lead.\nWhen documentation is extremely important, consider using roxygen2 to encourage best documentation practice"
+    "objectID": "excel.html#enhanced-standard-for-excel-workbooks",
+    "href": "excel.html#enhanced-standard-for-excel-workbooks",
+    "title": "KIND Community Standards: Excel",
+    "section": "Enhanced standard for Excel workbooks",
+    "text": "Enhanced standard for Excel workbooks\nFollow the basic standards above, plus:\n\nConsider using data validation to make data consistent, especially if you don’t really want free text\nAdd a documentation / readme worksheet. You might include:\n\na description of the data\ninformation about ownership/origin/dates/data sources\na key explaining abbreviations\nexplanation of any complex formulas\nadvice about correct and consistent method of naming different versions of the workbook\n\nConsider using lambda formulas to avoid repetition of complex formulas\nPrefer structured referencing and naming to the use of complex A1 referencing\nConsider loading data using Power Query, especially if the workbook is designed to be updated"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "KIND resources",
+    "section": "",
+    "text": "This is the main page for the KIND network’s live documents and non-training resources."
+  },
+  {
+    "objectID": "index.html#whats-here",
+    "href": "index.html#whats-here",
+    "title": "KIND resources",
+    "section": "What’s here?",
+    "text": "What’s here?\n\nCommunity standards.\nThese documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.\nHow might you use these suggestions?\n\nas a way of highlighting good practice\nas a helper when starting new projects (or new Excel documents)\nas a lever for bringing about change, particularly trying to convince service leads that poorly-designed Excel spreadsheets are a dangerous menace\nas a guideline for tidying up existing inconsistent/messy files\nas a training tool when bringing new colleagues up to speed\n\nPlease take this, use it however you like, and let us know if there’s anything that you’d find particularly helpful for an updated version to contain. We’ll review and redraft regularly. Please open an issue on the GitHub page if you have specific suggestions, otherwise contact brendan.clarke2@nhs.scot for a more general conversation about these standards.\n\n\nSample SOPs\nThese are a set of sample standard operating procedures for KIND work. These are intended for sharing as a basis or guideline for your own activities. Please get in touch if you have a useful SOP that might be sharable.\n\n\nKIND FAQ\nOur main frequently-asked questions document\n\n\nBook of the week\nData and summaries for our ever-popular book of the week segment\n\n\nCommunity meetup schedule"
+  },
+  {
+    "objectID": "rreadgr.html",
+    "href": "rreadgr.html",
+    "title": "R reading group",
+    "section": "",
+    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users."
+  },
+  {
+    "objectID": "rreadgr.html#about",
+    "href": "rreadgr.html#about",
+    "title": "R reading group",
+    "section": "",
+    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users."
+  },
+  {
+    "objectID": "rreadgr.html#schedule",
+    "href": "rreadgr.html#schedule",
+    "title": "R reading group",
+    "section": "Schedule",
+    "text": "Schedule\n\nThursday, 3-4pm BST, 26th September 2024\nThursday, 3-4pm GMT, 21st November 2024\nThursday, 3-4pm GMT, 19th December 2024\n\nreadings tba"
   },
   {
     "objectID": "kind_botw.html",
@@ -490,25 +581,158 @@
     "text": "06/03/2024: The Code Book\nSimon Singh. 1999. The Code Book. ISBN 9781857028898, Worldcat link.\n The Code Book: The Secret History of Codes and Code-Breaking a book by . (bookshop.org) (to buy online but support a local bookshop of your choice, for those not keen on more money to our Amazon Overlords…)"
   },
   {
-    "objectID": "kind_cms.html",
-    "href": "kind_cms.html",
-    "title": "KIND community meetup schedule",
+    "objectID": "commet/commet_2024-05-16.html",
+    "href": "commet/commet_2024-05-16.html",
+    "title": "Appraisals",
     "section": "",
-    "text": "Download community meetup data as csv\nDownload community meetup ideas as csv"
+    "text": "who knows their job description by heart, or has referred to it this year?\nwho keeps a work diary?\nwho has a PDP plan?"
   },
   {
-    "objectID": "kind_cms.html#current-community-meetup-schedule",
-    "href": "kind_cms.html#current-community-meetup-schedule",
-    "title": "KIND community meetup schedule",
-    "section": "Current community meetup schedule",
-    "text": "Current community meetup schedule\n\nCurrent community meetup schedule\n\n\n\n\n\n\n\n\nDate\nTopic\nsubtopic\nSuggestor\n\n\n\n\n2024-09-02\nJoins 1: introduction\n\n\n\n\n2024-09-09\nJoins 2: basic joins (left/right/full etc)\n\n\n\n\n2024-09-16\nJoins 3: the fancy stuff (rolling/inequality etc)\n\n\n\n\n2024-09-23\nSQL alphabet soup\n\n\n\n\n2024-09-30\nArt of the possible / showing off great projects\n\n\n\n\n2024-10-07\nTurning a user request into something you can work with\n\n\n\n\n2024-10-14\nNO SESSION\n\n\n\n\n2024-10-21\nNO SESSION\n\n\n\n\n2024-10-28\nNO SESSION\n\n\n\n\n2024-11-04\nfree parking\n\n\n\n\n2024-11-11\nR\nduckdb tech demo / group of use-cases\n\n\n\n2024-11-18\nTeaching maintenance\n\n\n\n\n2024-11-25\nExcel\nExcel programming/VBA/lambdas \n\n\n\n2024-12-02\nfree parking\n\n\n\n\n2024-12-09\nResearch data management\n\n\n\n\n2024-12-16\nFirst-steps toolkit for a junior/solo/reluctant/occasional analyst"
+    "objectID": "commet/commet_2024-05-16.html#poll",
+    "href": "commet/commet_2024-05-16.html#poll",
+    "title": "Appraisals",
+    "section": "",
+    "text": "who knows their job description by heart, or has referred to it this year?\nwho keeps a work diary?\nwho has a PDP plan?"
   },
   {
-    "objectID": "kind_cms.html#future-community-meetup-ideas",
-    "href": "kind_cms.html#future-community-meetup-ideas",
-    "title": "KIND community meetup schedule",
-    "section": "Future community meetup ideas",
-    "text": "Future community meetup ideas\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nData\nSafe havens / disclosure control / safe researcher training\n\n\n\nData\nDisclosure and pseudoanonymised data\n\n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nData\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\nMisc\nA non-web person’s intro to Java\n\n\n\nPower BI\ncorrelations and linear models in Power BI\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler\n\n\nR\nTidytext, sentiment analysis \n\n\n\nR \nData.table / tidyverse / polars / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nR \nR package roundup - Echarts4r, making PowerPoint in RMD, snakecase\n\n\n\nSkills\nWriting for different audiences\n\n\n\nStats\nDirected Acyclic Graphs (DAGs)\n\n\n\nStats\nPredictive modelling\n\n\n\nStats\nBayesian stats\n\n\n\nR\nTesting code\nEllen Young\n\n\nR\nGithub collaborations and getting Git installed\nGemma Whittaker"
+    "objectID": "commet/commet_2024-05-16.html#background",
+    "href": "commet/commet_2024-05-16.html#background",
+    "title": "Appraisals",
+    "section": "Background",
+    "text": "Background\n\nIt’s Agenda for Change (AfC) appraisal time for many NHS staff\nbut this session is not specific to AfC appraisals"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#the-objective",
+    "href": "commet/commet_2024-05-16.html#the-objective",
+    "title": "Appraisals",
+    "section": "The objective",
+    "text": "The objective\n\nKIND staff have some of the slowest promotion trajectories of all staff across health and care\nOur Time to Shine\n\n. . ."
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#small-teams",
+    "href": "commet/commet_2024-05-16.html#small-teams",
+    "title": "Appraisals",
+    "section": "Small teams",
+    "text": "Small teams"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#mid-level",
+    "href": "commet/commet_2024-05-16.html#mid-level",
+    "title": "Appraisals",
+    "section": "Mid-level",
+    "text": "Mid-level"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#messy-roles",
+    "href": "commet/commet_2024-05-16.html#messy-roles",
+    "title": "Appraisals",
+    "section": "Messy roles",
+    "text": "Messy roles\ntitles &lt;- readr::read_csv(\"src/kind_titles.csv\") |&gt;\n  dplyr::select(!document) \n\n3751 total titles analysed\n\n. . .\ntitles |&gt;\n  dplyr::arrange(desc(job_n)) |&gt;\n  dplyr::mutate(ratio = scales::percent(job_n / sum(job_n), 0.1)) |&gt;\n  dplyr::slice(1:6) |&gt;\n  knitr::kable()\n\n\n\njob_title\njob_n\nratio\n\n\n\n\nsenior information analyst\n347\n9.3%\n\n\ninformation analyst\n333\n8.9%\n\n\nprincipal information analyst\n118\n3.1%\n\n\ndata analyst\n61\n1.6%\n\n\ndata management officer\n43\n1.1%\n\n\nhealth intelligence analyst\n39\n1.0%"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#messy-roles-1",
+    "href": "commet/commet_2024-05-16.html#messy-roles-1",
+    "title": "Appraisals",
+    "section": "Messy roles",
+    "text": "Messy roles\n\nno standard terminology\n\n“senior officer” from AfC band 3 - band 8\n\ntoo many titles (e.g. 400+ KIND-ish job titles compared to c.85 nursing roles)\n\nbiggest is about 9% of the KIND network (information analyst)\n\nmassively higher qualifications found in KIND roles compared to many other careers"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#ddat",
+    "href": "commet/commet_2024-05-16.html#ddat",
+    "title": "Appraisals",
+    "section": "DDaT",
+    "text": "DDaT\n\nthere’s some interesting policy work going on to rationalise careers and titles\nbut this is a good way from implementation"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#claiming-credit",
+    "href": "commet/commet_2024-05-16.html#claiming-credit",
+    "title": "Appraisals",
+    "section": "Claiming credit",
+    "text": "Claiming credit\n\nentirely informally and without an evidence-base: I think many of us are not very good at claiming credit for the work we do\n\nsomething about humility and modesty in the analytic temperament?\nDunning-Kruger?\nsocial conditioning?\nintroversion?\nniche skills in work environment?\n\nwhatever the cause, (hunch) I think we under-rate our own expertise"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#tips",
+    "href": "commet/commet_2024-05-16.html#tips",
+    "title": "Appraisals",
+    "section": "Tips",
+    "text": "Tips\n\ndiary / log\n\ntime and task\nI basically OneNote a load of rubbishy bits, and make no effort to sort them until needed\n\nlook at your JD\nlook at your KSF dimensions\nlook at wider skills frameworks\n“I did x in y, which means z in …”\n“I need to x, which means I need y…”"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#open-goals",
+    "href": "commet/commet_2024-05-16.html#open-goals",
+    "title": "Appraisals",
+    "section": "Open goals",
+    "text": "Open goals\n\nexcessively manual processes\n\nsaved you time? Saved us money!\n\ncompliance\nimpact and change\ninformal training and support\nmanagement-like activity"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#smart",
+    "href": "commet/commet_2024-05-16.html#smart",
+    "title": "Appraisals",
+    "section": "SMART",
+    "text": "SMART\n\nSpecific, Measurable, Achievable, Relevant, and Time-Bound\nconceptually, a horrible mess\nbut dead useful for translating vague wants and needs into something more directed"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#share",
+    "href": "commet/commet_2024-05-16.html#share",
+    "title": "Appraisals",
+    "section": "Share",
+    "text": "Share\n\nplease share one achievement - one thing you did last year\nask your group to help you formulate it - how can I sell this nicely?"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#well-formed-learning-needs",
+    "href": "commet/commet_2024-05-16.html#well-formed-learning-needs",
+    "title": "Appraisals",
+    "section": "Well-formed learning needs?",
+    "text": "Well-formed learning needs?"
+  },
+  {
+    "objectID": "mentoring.html",
+    "href": "mentoring.html",
+    "title": "KIND Mentoring Scheme",
+    "section": "",
+    "text": "Draft guidance\n\n\n\n\n\nThis is currently draft guidance, may therefore contain errors and omissions, and is liable to change\nWe run an informal mentoring scheme. It’s designed to support professional development, by putting together mentors and mentees to work on a well-defined project over about 8 weeks. The scheme operates entirely by mutual consent, so participants are free to leave at any time. We think the benefits are reciprocal, with both parties gaining from the work."
+  },
+  {
+    "objectID": "mentoring.html#why-mentoring",
+    "href": "mentoring.html#why-mentoring",
+    "title": "KIND Mentoring Scheme",
+    "section": "Why mentoring?",
+    "text": "Why mentoring?\n\n\n\nFor mentees\n\nan opportunity to get support and guidance that might not be available in your workplace\nan efficient way of putting skills into practice\nbuild your professional network\n\n\n\n\nFor mentors\n\npass on your skills and knowledge to the wider community\nto strengthen your understanding of a topic - think of mentoring as a variant of the Feynman method\nto develop new professional skills, particularly skills relevant to more senior roles such as management, personal development, and community building"
+  },
+  {
+    "objectID": "mentoring.html#mentoring-projects",
+    "href": "mentoring.html#mentoring-projects",
+    "title": "KIND Mentoring Scheme",
+    "section": "Mentoring projects",
+    "text": "Mentoring projects\n\nGood project ideasBad project ideas\n\n\n\nhelp me turn some R code into a package - specific and achievable\nsupport me through a first literature review - sharing expertise\nI’ve just done a course on x, but need some support putting x to work in y - supporting areas not well-covered by other means\n\n\n\n\nteach me how to code - open-ended projects aren’t a good fit for an 8-week mentoring arrangement\nadvise our organisation on x - mentoring isn’t consultancy\nI need someone to encourage me to work harder - mentoring isn’t cheerleading\nmy spreadsheet is broken - focal requests for assistance would be better asked on the KIND network"
+  },
+  {
+    "objectID": "mentoring.html#how-it-works",
+    "href": "mentoring.html#how-it-works",
+    "title": "KIND Mentoring Scheme",
+    "section": "How it works",
+    "text": "How it works\n\n\n\n\n\n\n\ngraph TD;\n\nrequest[\"Mentee sends a project outline\"] --&gt; mentorfinds[\"Mentor finds a suitable project outline\"]\n\nmentorfinds --&gt; email[\"Both discuss by email\"]\n\nemail --&gt; meeting[\"Informal meeting to set goals and expectations\"]\n\nmeeting --&gt;  contract[\"Sign contract\"]\n\ncontract --&gt; complete[\"Complete the mentoring project\"]\n\ncomplete --&gt; present[\"Present the project at the mmmmm\"]\n\n\n\n\n\n\n\n\n\na mentee puts a request on the KIND Teams channel by filling in the new project form\na mentor sees the request on the Teams channel, and expressed interest in mentoring)\nwe put the mentee and mentor in touch by email to discuss the project\nmentor and mentee meet to agree a broad outline for their mentoring arrangement\nboth mentor and mentee sign a mutua-consent contract\nwe help and support them through the duration of the scheme. Either party can withdraw at any time without fault\nwe invite mentors and mentees to come and present their experiences at the monthly mentoring meetup"
+  },
+  {
+    "objectID": "mentoring.html#key-documents",
+    "href": "mentoring.html#key-documents",
+    "title": "KIND Mentoring Scheme",
+    "section": "Key documents",
+    "text": "Key documents\n\nnew mentoring request form - use this to propose a new project\npotential mentor form - use this to express interest in mentoring a project\ncontract form - use this to agree a new mentoring relationship (see a sample contract)\nwithdrawal form - use this to end a mentoring relationship"
+  },
+  {
+    "objectID": "mentoring.html#what-makes-a-good-mentoring-project",
+    "href": "mentoring.html#what-makes-a-good-mentoring-project",
+    "title": "KIND Mentoring Scheme",
+    "section": "What makes a good mentoring project?",
+    "text": "What makes a good mentoring project?\n\nsuccessful projects are generally short and simple\n\nshort meaning they can generally be finished off during the 8 week mentoring scheme\nsimple meaning they don’t depend on a lot of new infrastructure, require organisational change, or need an mentor to gain an unrealistic range of new skills\n\nsuccessful project proposals should therefore be short and precise\n\nwhat are you trying to do?\nhow are you trying to do it?\nwhich barrier(s) do you have in place?\nwhat do you need a mentor to do?\n\nsuccessful projects aren’t about cheerleading\n\nwe’d expect mentors to provide largely technical advice: “have you considered using x”\nwe do not expect mentors to provide detailed technical training\nwe specifically preclude mentors giving detailed technical advice regarding systems. Mentors are not consultants."
+  },
+  {
+    "objectID": "mentoring.html#what-might-i-do-instead",
+    "href": "mentoring.html#what-might-i-do-instead",
+    "title": "KIND Mentoring Scheme",
+    "section": "What might I do instead?",
+    "text": "What might I do instead?\nIf your project doesn’t fit this scheme, consider:\n\nasking a question on the KIND teams channel\ncompleting one of our training courses on a topic, particularly if you’re struggling to put your request into specific language\npresenting your query/issue in one of the open KIND community meetup sessions"
   },
   {
     "objectID": "data_collection.html",
@@ -553,38 +777,80 @@
     "text": "Tools used for data collection\nIn a 2023 small-scale survey of 40 analysts, the main tools identified were as follows:\n\n\n\nTool\nn\n\n\n\n\nExcel\n32\n\n\nMicrosoft Forms\n16\n\n\nOther survey tools (e.g. Surveymonkey, SmartSurvey)\n15\n\n\nRedCap\n2\n\n\n\n(note that respondents were able to identify &gt;1 tool used)\nThat simplicity of tools used conceals enormous complexity. A sample of factors identified as influencing tool choice were as follows:\n\navailability / ubiquity amongst those collecting\nflexibility / integration\naudit trail\ndownstream ETL\ncommissioning and training requirements\nease of use / skills available\nIG / robustness / confidentiality\ncost\nstakeholder mandate\ntechnical features (e.g., limited response types)\nspeed of build\ninstitutional approval and support\n\nMany staff have restrictions on the tools available. For example, looking at Microsoft Forms, a wide variety of different possibilities are found. A survey of 64 members of the KIND network during July 2024 gained responses from 23 organisations and NHS boards.\n\n\nQ: Can you use Forms?\n\nResponses to the question ‘Can you use Forms?’\n\n\nresponse\nn\n\n\n\n\nYes - for anything\n17\n\n\nYes - but not for personally-identifiable information\n36\n\n\nNo\n2\n\n\nOther\n9"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html",
-    "href": "ml_archive/KIND_weekly_update_2024-08-26.html",
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html",
     "title": "KIND network update",
     "section": "",
-    "text": "Dear colleagues,\nWelcome to our regular KIND network update. Full details of our events and training can be found on our Teams channel.\nWe’ve been working on the mentoring scheme this week, including a new homepage. It’s designed to put mentors and mentees in touch with each other to support short and well-defined pieces of work. Please get in touch with any suggestions or feedback, and do feel encouraged to put together a project proposal if there’s some area of work you’d like more support with.\nHope to see you at something soon\nBrendan"
+    "text": "Dear colleagues,\nWelcome to our regular KIND network update. The big theme for coming week is the return of some of our social activities that have been taking a summer break. We’re starting to build up a set of community meetup topics for the Autumn on the Teams channel, and I’m delighted to say that SCODAS meetings will be back in their usual 1-2pm Tuesday slot.\nWe’ll also be pausing our one-off training sessions for the next couple of weeks to allow some space for preparatory work. If you’re a Tableau expert, please consider coming to a shakedown/feedback session for our new Tableau for beginners course which will be running 3-4ish on Thursday 22nd. It’s vital that we keep training resources aligned with the needs of the community, so your feedback is essential to our work.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#week-beginning-mon-2nd-september-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#week-beginning-mon-2nd-september-2024",
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#week-beginning-mon-26th-august-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#week-beginning-mon-26th-august-2024",
     "title": "KIND network update",
     "section": "",
-    "text": "Dear colleagues,\nWelcome to our regular KIND network update. Full details of our events and training can be found on our Teams channel.\nWe’ve been working on the mentoring scheme this week, including a new homepage. It’s designed to put mentors and mentees in touch with each other to support short and well-defined pieces of work. Please get in touch with any suggestions or feedback, and do feel encouraged to put together a project proposal if there’s some area of work you’d like more support with.\nHope to see you at something soon\nBrendan"
+    "text": "Dear colleagues,\nWelcome to our regular KIND network update. The big theme for coming week is the return of some of our social activities that have been taking a summer break. We’re starting to build up a set of community meetup topics for the Autumn on the Teams channel, and I’m delighted to say that SCODAS meetings will be back in their usual 1-2pm Tuesday slot.\nWe’ll also be pausing our one-off training sessions for the next couple of weeks to allow some space for preparatory work. If you’re a Tableau expert, please consider coming to a shakedown/feedback session for our new Tableau for beginners course which will be running 3-4ish on Thursday 22nd. It’s vital that we keep training resources aligned with the needs of the community, so your feedback is essential to our work.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#wins-of-the-week",
     "title": "KIND network update",
-    "section": "Wins of the week",
-    "text": "Wins of the week\nWe’re again celebrating some community wins-of-the-week, which have included:\n\nI submitted my Master’s dissertation!\nProactively prepared a whiteboard in teams ahead of a critical team meeting so that everyone could follow along and help organise priorities - this was the first time I’d used whiteboard on this scale\nThis week I managed to save an egg bound chicken\nUsed PowerBI to generate a recurring analysis pack for sharing with management leads. Now, instead of manually analysing the weekly data to generate charts to be copied into a PowerPoint pack, I only need to refresh the data source and export the updated PowerBI report as a PDF. 1-2 hrs of work reduced to seconds :)\nCalmly dealt with numerous difficult colleagues and taken the initiative in the absence of more senior staff"
+    "section": "Wins of The Week",
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nProducing a series of reports for the first time using script I’ve been developing in R Markdown. Something that use to take over day to do, copying and pasting from Excel to Word, and still be littered with errors, now just takes around 2 hours and is accurate after some simple checks.\nHelped out a lot of people (and remained patient with them)!\nstuck head over parapet to make a point and felt better for doing it\nI proved I am worthy of my promotion"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n13.00-14.00 Tue 3rd September 2024. SCODAS meeting. Sarah Griffin (NHS Highland) - Modelling hip fractures. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards.\nThursday 3-4pm, Gemma Wilson (Scottish Government) will be giving an update on the data strategy. All welcome at this informal session to find out more about this important initiative. No need to register - just follow the Teams link on the day.\n\nWe’ll also be finalising the community meetup schedule for the autumn next week. But save the date - our new community meetup slot will be Mondays 3-4pm."
+    "text": "Events\nThe Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the meeting will be 13.00-14.00 Tue 27th August 2024. Stefanie Swietlik (NHS Lothian) - Lothian Public Health Survey 2023."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#kind-unconference-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#kind-unconference-2024",
+    "title": "KIND network update",
+    "section": "KIND Unconference 2024",
+    "text": "KIND Unconference 2024\nSave the date - 11th December 2024 - an opportunity to share and celebrate your hard work. Fully online, free and open to all, and plans afoot on the Teams channel."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
-    "text": "Book of the week\nUnsubscribe from these emails"
+    "text": "Book of the week\nDavid Graeber. 2015. The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy.  ISBN 9781612195186, Worldcat. This is a fun and thought-provoking set of essays about bureacracy. It starts with a mystery: why, if people hate bureaucracy, is there so much of it?. A recurring theme in many KIND events that we spend lots of time managing forms and paperwork, rather than doing more important work. And so we might be reassured that it’s not just us, that ‘all of us end up finding increasing percentages of our day taken up in the filling out of forms.’ The most interesting parts of this book though are not about just moaning about the quantity of paperwork that we face, but instead point out exactly why all that paperwork might really be something to worry about. As the author notes, endless box ticking seems to prevent useful communication and other human interactions. Or, more cuttingly: ‘Bureaucratic procedures…make even the smartest people act like idiots’. That point then leads into a balancing act. As the title might suggest, some rules seem to constrain or prevent us doing useful things, while some rules seem to do the opposite (say, by insisting that we can’t discriminate based on appearance). So there’s a balancing act between different kinds of rules, that shows up as a long-running back and forth between different ways of ruling, that the author traces across times and places. That range of cases, and pleasure in talking about paperwork, is a substantial contributor to the great charm of the book..\nUnsubscribe from these emails"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#week-beginning-mon-2nd-september-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#week-beginning-mon-2nd-september-2024",
+    "title": "KIND network update",
+    "section": "Week beginning Mon 2nd September 2024",
+    "text": "Week beginning Mon 2nd September 2024\n\nDear colleagues,\nWelcome to our regular KIND network update. We have a back-to-school feel to the coming week, with the first sessions of our Excel and R beginners courses. These will be joined over the next fortnight by Power BI and Tableau beginner courses - early details can be found on the training pages. We’ll also have the first of our autumn series of community meetups.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#wins-of-the-week",
+    "title": "KIND network update",
+    "section": "Wins of The Week",
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nPassed my Uni course on an Introduction to Programming in R\nMade an action plan to boost my skillset and CV over the next three months to become more “marketable” to the jobs and sectors I’m interested in.\nThis week I stood up for myself and called out a colleague who had made inappropriate jokes about my size. Proud of myself for not hiding away from the confrontation! 💪\nI’ve been working on speaking confidently whilst presenting data (I really struggle with this). Yesterday I managed to do a great presentation and answer questions confidently. Very proud!"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#training-sessions",
+    "title": "KIND network update",
+    "section": "Training sessions",
+    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nExcel first steps\n09:30-10:30 Tue 3rd September 2024\nExcel\n🌶 :beginner-level\n\n\nR from scratch (session 1)\n14:30-15:30 Tue 3rd September 2024\nR\n🌶 :beginner-level\n\n\n\n\n\n(the Excel session is also our 400th training session, so party hats etc at the ready)"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#events",
+    "title": "KIND network update",
+    "section": "Events",
+    "text": "Events\n\n3-4pm, Mon 2nd September 2024. The KIND Community meetup theme this week is the first of three sessions on joins. We’ll start at the beginning this week, with a gentle introduction and overview of the hows and whys of joining data. All welcome at our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel\n1-2pm, Tue 3rd September 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Sarah Griffin (NHS Highland) - Modelling hip fractures."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#book-of-the-week",
+    "title": "KIND network update",
+    "section": "Book of the week",
+    "text": "Book of the week\nRobert C. Martin. 2008. Clean Code: A Handbook of Agile Software Craftsmanship.  ISBN 9780136083238, Worldcat. This week’s book of the week was suggested by Zena Trendell, a Programme Manager at NHS Lothian. She writes: ‘I recently read The Clean Code by Robert Cecil Martin. I’m not a coder but thought it was very good. The book is about professionalism for developers (similar to accountants etc.) and give you some tools to help prevent feeling under pressure re: timescales. It’s not a recent book yet very relevant to some incidents that have happened lately.’.\nUnsubscribe from these emails"
   }
 ]

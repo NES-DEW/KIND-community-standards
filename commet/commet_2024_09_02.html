@@ -10,7 +10,7 @@
 <meta name="author" content="Brendan Clarke">
 <meta name="dcterms.date" content="2024-09-02">
 
-<title>KIND network update – KIND resources</title>
+<title>Joins 1: introduction – KIND resources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -71,8 +105,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -199,11 +231,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#week-beginning-mon-2nd-september-2024" id="toc-week-beginning-mon-2nd-september-2024" class="nav-link active" data-scroll-target="#week-beginning-mon-2nd-september-2024">Week beginning Mon 2nd September 2024</a></li>
-  <li><a href="#wins-of-the-week" id="toc-wins-of-the-week" class="nav-link" data-scroll-target="#wins-of-the-week">Wins of The Week</a></li>
-  <li><a href="#training-sessions" id="toc-training-sessions" class="nav-link" data-scroll-target="#training-sessions">Training sessions</a></li>
-  <li><a href="#events" id="toc-events" class="nav-link" data-scroll-target="#events">Events</a></li>
-  <li><a href="#book-of-the-week" id="toc-book-of-the-week" class="nav-link" data-scroll-target="#book-of-the-week">Book of the week</a></li>
+  <li><a href="#how-to-think-about-joins" id="toc-how-to-think-about-joins" class="nav-link active" data-scroll-target="#how-to-think-about-joins">How to think about joins?</a></li>
+  <li><a href="#binding" id="toc-binding" class="nav-link" data-scroll-target="#binding">Binding</a></li>
+  <li><a href="#joins-proper" id="toc-joins-proper" class="nav-link" data-scroll-target="#joins-proper">Joins proper</a></li>
   </ul>
 </nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -216,8 +246,15 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">KIND network update</h1>
-</div>
+<h1 class="title">Joins 1: introduction</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Joins</div>
+    <div class="quarto-category">beginner</div>
+    <div class="quarto-category">Excel</div>
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Power Query</div>
+  </div>
+  </div>
 
 
 <div class="quarto-title-meta-author">
@@ -257,68 +294,214 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<img src="https://i.imgur.com/UqQhLUe.png" alt="KIND logo" height="150">
-<section id="week-beginning-mon-2nd-september-2024" class="level2">
-<h2 class="anchored" data-anchor-id="week-beginning-mon-2nd-september-2024">Week beginning Mon 2nd September 2024</h2>
-<!-- We've got several training sessions coming up next week, and as usual full details can be found [on our Teams channel](https://teams.microsoft.com/l/team/19%3AQZ7-PbFVcziG2piHLt1_ifey3I2cwFL0yBuTSS8vVao1%40thread.tacv2/conversations?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a) and on our [training pages](https://nes-dew.github.io/KIND-training/).  -->
-<p>Dear colleagues,</p>
-<p>Welcome to our regular KIND network update. We have a back-to-school feel to the coming week, with the first sessions of our Excel and R beginners courses. These will be joined over the next fortnight by Power BI and Tableau beginner courses - early details can be found <a href="https://nes-dew.github.io/KIND-training/schedule.html">on the training pages</a>. We’ll also have the first of our autumn series of community meetups.</p>
-<p>Hope to see you at something soon - and save the 11th December for the KIND unconference</p>
-<p>Brendan</p>
-<hr>
-</section>
-<section id="wins-of-the-week" class="level2">
-<h2 class="anchored" data-anchor-id="wins-of-the-week">Wins of The Week</h2>
-<p>In the spirit of <a href="https://www.rmrkblty.org/iamremarkable">#IAmRemarkable</a>, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:</p>
-<ul>
-<li>Passed my Uni course on an Introduction to Programming in R</li>
-<li>Made an action plan to boost my skillset and CV over the next three months to become more “marketable” to the jobs and sectors I’m interested in.</li>
-<li>This week I stood up for myself and called out a colleague who had made inappropriate jokes about my size. Proud of myself for not hiding away from the confrontation! 💪</li>
-<li>I’ve been working on speaking confidently whilst presenting data (I really struggle with this). Yesterday I managed to do a great presentation and answer questions confidently. Very proud!</li>
-</ul>
-<hr>
-</section>
-<section id="training-sessions" class="level2">
-<h2 class="anchored" data-anchor-id="training-sessions">Training sessions</h2>
-<table class="caption-top table" data-quarto-postprocess="true">
+<section id="how-to-think-about-joins" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-think-about-joins">How to think about joins?</h2>
+<p>A join is a way of merging two datasets. Let’s demonstrate with some simple data:</p>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"Steve"</span>, <span class="st">"Emma"</span>, <span class="st">"Arti"</span>),</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">tool =</span> <span class="fu">c</span>(<span class="st">"R"</span>, <span class="st">"Excel"</span>, <span class="st">"Excel"</span>),</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">training_sessions =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">7</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table class="caption-top table">
 <thead>
 <tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">Session</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Date</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Area</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Level</th>
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">tool</th>
+<th style="text-align: right;">training_sessions</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left; max-width: 18em;"><a href="https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1721291150537?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d">Excel first steps</a></td>
-<td style="text-align: left;">09:30-10:30 Tue 3rd September 2024</td>
-<td style="text-align: left;">Excel</td>
-<td style="text-align: left;">🌶 :<strong>beginner-level</strong></td>
+<td style="text-align: left;">Steve</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">4</td>
 </tr>
 <tr class="even">
-<td style="text-align: left; max-width: 18em;"><a href="https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1721391946166?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d">R from scratch (session 1)</a></td>
-<td style="text-align: left;">14:30-15:30 Tue 3rd September 2024</td>
-<td style="text-align: left;">R</td>
-<td style="text-align: left;">🌶 :<strong>beginner-level</strong></td>
+<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">7</td>
 </tr>
 </tbody>
 </table>
-
-
-<p>(the Excel session is also our 400th training session, so party hats etc at the ready)</p>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"Abena"</span>, <span class="st">"Yuika"</span>, <span class="st">"Arti"</span>),</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">tool =</span> <span class="fu">c</span>(<span class="st">"R"</span>, <span class="st">"Excel"</span>, <span class="st">"Power BI"</span>),</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">training_sessions =</span> <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">3</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">tool</th>
+<th style="text-align: right;">training_sessions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Steve</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">7</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="events" class="level2">
-<h2 class="anchored" data-anchor-id="events">Events</h2>
-<ul>
-<li>3-4pm, Mon 2nd September 2024. The KIND Community meetup theme this week is the first of three sessions on joins. We’ll start at the beginning this week, with a gentle introduction and overview of the hows and whys of joining data. <a href="https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1723028114046?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d">All welcome at our regular Monday get-together/webinar/tech demo</a>. Full details and joining links via the <a href="https://teams.microsoft.com/l/channel/19%3Ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/Community%20meetups?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&amp;tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a">community meetup channel</a></li>
-<li>1-2pm, Tue 3rd September 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be <a href="https://teams.microsoft.com/l/meetup-join/19%3a109a603c446743308bff6588820372a9%40thread.tacv2/1671457631308?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%2284150c3d-baed-4515-8eee-8f13ed0d9650%22%7d">Sarah Griffin (NHS Highland) - Modelling hip fractures</a>.</li>
-</ul>
+<section id="binding" class="level2">
+<h2 class="anchored" data-anchor-id="binding">Binding</h2>
+<p>The simplest join we could do is to bind the rows from one set onto another:</p>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(y) <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">tool</th>
+<th style="text-align: right;">training_sessions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Steve</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Abena</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Yuika</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Power BI</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+<p>That just brings all the rows from <code>y</code> onto the end of <code>x</code>. We could also have just bound the columns together:</p>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>x <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(y) <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 27%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">name…1</th>
+<th style="text-align: left;">tool…2</th>
+<th style="text-align: right;">training_sessions…3</th>
+<th style="text-align: left;">name…4</th>
+<th style="text-align: left;">tool…5</th>
+<th style="text-align: right;">training_sessions…6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Steve</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Abena</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Yuika</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Power BI</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+<p>Doing this in R, we end up with something quite messy: we’ve gained some new columns (with odd names), and lots of blank values. The reason for this is that the Arti’s has a row in each dataset. Anyone without corresponding rows gets filling in with blanks.</p>
 </section>
-<section id="book-of-the-week" class="level2">
-<h2 class="anchored" data-anchor-id="book-of-the-week">Book of the week</h2>
-<p>Robert C. Martin. 2008. <em>Clean Code: A Handbook of Agile Software Craftsmanship</em>. <br> ISBN 9780136083238, <a href="https://search.worldcat.org/title/223933035">Worldcat</a>.<br><br> This week’s book of the week was suggested by Zena Trendell, a Programme Manager at NHS Lothian. She writes: ‘I recently read <em>The Clean Code</em> by Robert Cecil Martin. I’m not a coder but thought it was very good. The book is about professionalism for developers (similar to accountants etc.) and give you some tools to help prevent feeling under pressure re: timescales. It’s not a recent book yet very relevant to some incidents that have happened lately.’.</p>
-<p><a href="https://forms.office.com/r/t97cZDiw7y">Unsubscribe from these emails</a></p>
+<section id="joins-proper" class="level2">
+<h2 class="anchored" data-anchor-id="joins-proper">Joins proper</h2>
+<p>Unlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join <code>y</code> onto x:</p>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="sc">|&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(y, <span class="at">by =</span> <span class="st">"name"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">tool.x</th>
+<th style="text-align: right;">training_sessions.x</th>
+<th style="text-align: left;">tool.y</th>
+<th style="text-align: right;">training_sessions.y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Steve</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Power BI</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+<p>You should see that only the values from <code>y</code>’s score column that have a corresponding name in <code>x</code> get populated, and everything else gets filled with NAs. Here’s a <a href="https://lindsaydbrin.github.io/CREATE_R_Workshop/Lesson_-_dplyr_join.html">nice introduction to the different kinds of join you can do in dplyr</a>.</p>
 
 
 </section>
