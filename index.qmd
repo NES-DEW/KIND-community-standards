@@ -31,6 +31,7 @@ These are a set of sample standard operating procedures for KIND work. These are
 
 ### Community activities
 Documents supporting our social learning activities, such as scheduled, past sessions, and archives of materials. These include:
+
 + the [R reading group](rreadgr.qmd)
 + the [R beginner's club](rbc/about.qmd)
 + the main [community meetup series](kind_cms.qmd)
