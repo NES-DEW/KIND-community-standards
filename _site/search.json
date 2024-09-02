@@ -179,7 +179,7 @@
     "href": "index.html#whats-here",
     "title": "KIND resources",
     "section": "What’s here?",
-    "text": "What’s here?\n\nCommunity standards.\nThese documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.\nHow might you use these suggestions?\n\nas a way of highlighting good practice\nas a helper when starting new projects (or new Excel documents)\nas a lever for bringing about change, particularly trying to convince service leads that poorly-designed Excel spreadsheets are a dangerous menace\nas a guideline for tidying up existing inconsistent/messy files\nas a training tool when bringing new colleagues up to speed\n\nPlease take this, use it however you like, and let us know if there’s anything that you’d find particularly helpful for an updated version to contain. We’ll review and redraft regularly. Please open an issue on the GitHub page if you have specific suggestions, otherwise contact brendan.clarke2@nhs.scot for a more general conversation about these standards.\n\n\nSample SOPs\nThese are a set of sample standard operating procedures for KIND work. These are intended for sharing as a basis or guideline for your own activities. Please get in touch if you have a useful SOP that might be sharable.\n\n\nKIND FAQ\nOur main frequently-asked questions document\n\n\nBook of the week\nData and summaries for our ever-popular book of the week segment\n\n\nCommunity meetup schedule"
+    "text": "What’s here?\n\nCommunity standards\nThese documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.\nHow might you use these suggestions?\n\nas a way of highlighting good practice\nas a helper when starting new projects (or new Excel documents)\nas a lever for bringing about change, particularly trying to convince service leads that poorly-designed Excel spreadsheets are a dangerous menace\nas a guideline for tidying up existing inconsistent/messy files\nas a training tool when bringing new colleagues up to speed\n\nPlease take this, use it however you like, and let us know if there’s anything that you’d find particularly helpful for an updated version to contain. We’ll review and redraft regularly. Please open an issue on the GitHub page if you have specific suggestions, otherwise contact brendan.clarke2@nhs.scot for a more general conversation about these standards.\n\n\nSample SOPs\nThese are a set of sample standard operating procedures for KIND work. These are intended for sharing as a basis or guideline for your own activities. Please get in touch if you have a useful SOP that might be sharable.\n\n\nCommunity activities\nDocuments supporting our social learning activities, such as scheduled, past sessions, and archives of materials. These include:\n\nthe R reading group\nthe R beginner’s club\nthe main community meetup series\n\n\n\nKIND FAQ\nOur main frequently-asked questions document\n\n\nMentoring scheme\nInformation and links for our technical mentoring scheme\n\n\nBook of the week\nData and summaries for our ever-popular book of the week segment"
   },
   {
     "objectID": "excel.html",
@@ -207,28 +207,28 @@
     "href": "commet/commet_2024_09_02.html",
     "title": "Joins 1: introduction",
     "section": "",
-    "text": "A join is a way of merging two datasets. Let’s demonstrate with some simple data:\nlibrary(tibble)\nlibrary(dplyr)\nx &lt;- tibble(\n  name = c(\"Steve\", \"Emma\", \"Arti\"),\n  tool = c(\"R\", \"Excel\", \"Excel\"),\n  training_sessions = c(4,3,7)\n)\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3\n\n\nArti\nExcel\n7\n\n\n\ny &lt;- tibble(\n  name = c(\"Abena\", \"Yuika\", \"Arti\"),\n  tool = c(\"R\", \"Excel\", \"Power BI\"),\n  training_sessions = c(3,5,3)\n)\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3\n\n\nArti\nExcel\n7"
+    "text": "A join is a way of merging two datasets. Let’s demonstrate with some simple data:\nlibrary(tibble)\nlibrary(dplyr)\nx &lt;- tibble(\n  name = c(\"Steve\", \"Emma\", \"Arti\"),\n  tool = c(\"R\", \"Excel\", \"Excel\"),\n  training_sessions = c(4,3,7)\n)\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3\n\n\nArti\nExcel\n7\n\n\n\ny &lt;- tibble(\n  name = c(\"Abena\", \"Yuika\", \"Arti\"),\n  tool = c(\"R\", \"Excel\", \"Power BI\"),\n  training_sessions = c(3,5,3)\n)\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nAbena\nR\n3\n\n\nYuika\nExcel\n5\n\n\nArti\nPower BI\n3"
   },
   {
     "objectID": "commet/commet_2024_09_02.html#how-to-think-about-joins",
     "href": "commet/commet_2024_09_02.html#how-to-think-about-joins",
     "title": "Joins 1: introduction",
     "section": "",
-    "text": "A join is a way of merging two datasets. Let’s demonstrate with some simple data:\nlibrary(tibble)\nlibrary(dplyr)\nx &lt;- tibble(\n  name = c(\"Steve\", \"Emma\", \"Arti\"),\n  tool = c(\"R\", \"Excel\", \"Excel\"),\n  training_sessions = c(4,3,7)\n)\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3\n\n\nArti\nExcel\n7\n\n\n\ny &lt;- tibble(\n  name = c(\"Abena\", \"Yuika\", \"Arti\"),\n  tool = c(\"R\", \"Excel\", \"Power BI\"),\n  training_sessions = c(3,5,3)\n)\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3\n\n\nArti\nExcel\n7"
+    "text": "A join is a way of merging two datasets. Let’s demonstrate with some simple data:\nlibrary(tibble)\nlibrary(dplyr)\nx &lt;- tibble(\n  name = c(\"Steve\", \"Emma\", \"Arti\"),\n  tool = c(\"R\", \"Excel\", \"Excel\"),\n  training_sessions = c(4,3,7)\n)\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3\n\n\nArti\nExcel\n7\n\n\n\ny &lt;- tibble(\n  name = c(\"Abena\", \"Yuika\", \"Arti\"),\n  tool = c(\"R\", \"Excel\", \"Power BI\"),\n  training_sessions = c(3,5,3)\n)\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nAbena\nR\n3\n\n\nYuika\nExcel\n5\n\n\nArti\nPower BI\n3"
   },
   {
     "objectID": "commet/commet_2024_09_02.html#binding",
     "href": "commet/commet_2024_09_02.html#binding",
     "title": "Joins 1: introduction",
     "section": "Binding",
-    "text": "Binding\nThe simplest join we could do is to bind the rows from one set onto another:\nx |&gt;\n  bind_rows(y) |&gt;\n  knitr::kable()\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3\n\n\nArti\nExcel\n7\n\n\nAbena\nR\n3\n\n\nYuika\nExcel\n5\n\n\nArti\nPower BI\n3\n\n\n\nThat just brings all the rows from y onto the end of x. We could also have just bound the columns together:\nx |&gt;\n  bind_cols(y) |&gt;\n  knitr::kable()\n\n\n\n\n\n\n\n\n\n\n\nname…1\ntool…2\ntraining_sessions…3\nname…4\ntool…5\ntraining_sessions…6\n\n\n\n\nSteve\nR\n4\nAbena\nR\n3\n\n\nEmma\nExcel\n3\nYuika\nExcel\n5\n\n\nArti\nExcel\n7\nArti\nPower BI\n3\n\n\n\nDoing this in R, we end up with something quite messy: we’ve gained some new columns (with odd names), and lots of blank values. The reason for this is that the Arti’s has a row in each dataset. Anyone without corresponding rows gets filling in with blanks."
+    "text": "Binding\nThe simplest join we could do is to bind the rows from one set onto another:\nx |&gt;\n  bind_rows(y) |&gt;\n  knitr::kable()\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3\n\n\nArti\nExcel\n7\n\n\nAbena\nR\n3\n\n\nYuika\nExcel\n5\n\n\nArti\nPower BI\n3\n\n\n\nThat just brings all the rows from y onto the end of x. We could also have just bound the columns together:\nx |&gt;\n  bind_cols(y) |&gt;\n  knitr::kable()\n\n\n\n\n\n\n\n\n\n\n\nname…1\ntool…2\ntraining_sessions…3\nname…4\ntool…5\ntraining_sessions…6\n\n\n\n\nSteve\nR\n4\nAbena\nR\n3\n\n\nEmma\nExcel\n3\nYuika\nExcel\n5\n\n\nArti\nExcel\n7\nArti\nPower BI\n3\n\n\n\nDoing this in R, we end up with something quite messy: we’ve gained some new columns (with odd names), and lots of blank values. The reason for this is that Arti has a row in each dataset. Anyone without corresponding rows gets filling in with blanks.\nWe could do something very similar by hand in Excel. It’s worth noting the VSTACK function, which allows you to bring one table into another in Excel. PowerQuery has some great tools for binding data. Append Queries allows you to perform row-binding:\n\n\n\nSelect Append Queries\n\n\n\n\n\nSelect datasets to bind together\n\n\n\n\n\nNew table containing all rows from the original\n\n\nHowever we bind, the main distinction remains the same. When you bind, the values in your data are irrelevant. Column names will matter - e.g. row binding works when you have identically named columns. But the values themselves don’t matter at all."
   },
   {
     "objectID": "commet/commet_2024_09_02.html#joins-proper",
     "href": "commet/commet_2024_09_02.html#joins-proper",
     "title": "Joins 1: introduction",
     "section": "Joins proper",
-    "text": "Joins proper\nUnlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join y onto x:\nx |&gt;\n  left_join(y, by = \"name\") |&gt;\n  knitr::kable()\n\n\n\nname\ntool.x\ntraining_sessions.x\ntool.y\ntraining_sessions.y\n\n\n\n\nSteve\nR\n4\nNA\nNA\n\n\nEmma\nExcel\n3\nNA\nNA\n\n\nArti\nExcel\n7\nPower BI\n3\n\n\n\nYou should see that only the values from y’s score column that have a corresponding name in x get populated, and everything else gets filled with NAs. Here’s a nice introduction to the different kinds of join you can do in dplyr."
+    "text": "Joins proper\nUnlike binding, though, a join will pay attention to the values found in our data. For example, we could do a left-join:\n\n\n\nA left-join\n\n\nThis would retain any data from our x dataset, but also bring in any matching data from y.So let’s now left-join y onto x using the name column:\nx |&gt;\n  left_join(y, by = \"name\") |&gt;\n  knitr::kable()\n\n\n\nname\ntool.x\ntraining_sessions.x\ntool.y\ntraining_sessions.y\n\n\n\n\nSteve\nR\n4\nNA\nNA\n\n\nEmma\nExcel\n3\nNA\nNA\n\n\nArti\nExcel\n7\nPower BI\n3\n\n\n\nWe’d get entirely different results if we joined on the tool column:\nx |&gt;\n  left_join(y, by = \"tool\") |&gt;\n  knitr::kable()\n\n\n\nname.x\ntool\ntraining_sessions.x\nname.y\ntraining_sessions.y\n\n\n\n\nSteve\nR\n4\nAbena\n3\n\n\nEmma\nExcel\n3\nYuika\n5\n\n\nArti\nExcel\n7\nYuika\n5\n\n\n\nWe could do something similar, again using the name column, to add in some dis-similar data from another source:\nz &lt;- tibble(\n  name = c(\"Abena\", \"Yuika\", \"Arti\", \"Steve\", \"Emma\", \"Bruce\"),\n  score = c(90, 85, 80, 75, 70, 33)\n)\n\nx |&gt;\n  left_join(z, by = \"name\") |&gt;\n  knitr::kable()\n\n\n\nname\ntool\ntraining_sessions\nscore\n\n\n\n\nSteve\nR\n4\n75\n\n\nEmma\nExcel\n3\n70\n\n\nArti\nExcel\n7\n80\n\n\n\nThere are several ways of doing this from R. If you’re not a dplyr fan, you could use base-R’s merge to do a left join:\nmerge(x, y, by = \"name\") |&gt;\n  knitr::kable()\n\n\n\nname\ntool.x\ntraining_sessions.x\ntool.y\ntraining_sessions.y\n\n\n\n\nArti\nExcel\n7\nPower BI\n3\n\n\n\nYou should see that only the values from y’s score column that have a corresponding name in x get populated, and everything else gets filled with NAs. Here’s a nice introduction to the different kinds of join you can do in dplyr.\nAgain, we can do something similar in PowerQuery - note that joins are called Merges\n\n\n\nSelect Merge Queries\n\n\n\n\n\nPick data to merge, and columns to merge on\n\n\n\n\n\nYou’ll need to expand the values in the new column\n\n\n\n\n\nResulting joined data"
   },
   {
     "objectID": "data_collection.html",
@@ -1117,7 +1117,7 @@
     "href": "commet/commet_2023-11-23.html#r-time",
     "title": "Test driven development",
     "section": "R time",
-    "text": "R time\n\nlibrary(testthat)\n\n\nin testthat, tests are built of expectations\n\n\nexpect_equal(2 * 2, 4)\nexpect_identical(1L, 1L)"
+    "text": "R time\n\nlibrary(testthat)\nlibrary(tibble)\n\n\nin testthat, tests are built of expectations\n\n\nexpect_equal(2 * 2, 4)\nexpect_identical(1L, 1L)"
   },
   {
     "objectID": "commet/commet_2023-11-23.html#tale-of-two-great-expectations",
@@ -1131,14 +1131,14 @@
     "href": "commet/commet_2023-11-23.html#lots-of-expectations",
     "title": "Test driven development",
     "section": "Lots of expectations",
-    "text": "Lots of expectations\n\nlibrary(tibble)\nexpect_setequal(1:3, c(1,2,3))\n\nfnarp = tibble(a = c(1, 2, 3))\n\nglarp = tibble(a = c(1, 2, 3))\n  \nexpect_mapequal(fnarp, glarp) # for named objects"
+    "text": "Lots of expectations\n\nexpect_setequal(1:3, c(1,2,3))\n\nfnarp = tibble(a = c(1, 2, 3))\n\nglarp = tibble(a = c(1, 2, 3))\n  \nexpect_mapequal(fnarp, glarp) # for named objects"
   },
   {
     "objectID": "commet/commet_2023-11-23.html#grouping-into-tests",
     "href": "commet/commet_2023-11-23.html#grouping-into-tests",
     "title": "Test driven development",
     "section": "Grouping into tests",
-    "text": "Grouping into tests\n\ntest_that(\"Testing that sets work properly\", {\n  expect_setequal(1:3, c(1,2,3))\n  expect_mapequal(fnarp, glarp)\n})\n\nTest passed 🎊\n\ntest_that(\"Testing classes\", {\n  expect_that(mtcars, is_a(\"data.frame\"))\n  expect_that(1:5, is_a(\"integer\"))\n})\n\nTest passed 😸"
+    "text": "Grouping into tests\n\ntest_that(\"Testing that sets work properly\", {\n  expect_setequal(1:3, c(1,2,3))\n  expect_mapequal(fnarp, glarp)\n})\n\nTest passed 🎊\n\ntest_that(\"Testing classes\", {\n  expect_that(mtcars, is_a(\"data.frame\"))\n  expect_that(1:5, is_a(\"integer\"))\n})\n\nTest passed 😀"
   },
   {
     "objectID": "commet/commet_2023-11-23.html#context",
@@ -1160,5 +1160,19 @@
     "title": "Test driven development",
     "section": "Bit of live development",
     "text": "Bit of live development\n\nReverse and Invert\n“reverse and invert all integer values” in a vector\ntests first!\ngranular tests: quick, small and simple\nbasic code: just pass the test\nadd test, pass, refactor, repeat\nI ended up with something like as.integer(intToUtf8(rev(utf8ToInt(as.character(n)))))"
+  },
+  {
+    "objectID": "commet/commet_2024_09_02.html#anti-join",
+    "href": "commet/commet_2024_09_02.html#anti-join",
+    "title": "Joins 1: introduction",
+    "section": "Anti-join",
+    "text": "Anti-join\nAn anti-join takes a dataset, and removes any matching values from the second dataset:\n\n\n\nAn anti-join\n\n\nx |&gt;\n  anti_join(y, by = \"name\") |&gt;\n  knitr::kable()\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3"
+  },
+  {
+    "objectID": "commet/commet_2024_09_02.html#final-thoughts",
+    "href": "commet/commet_2024_09_02.html#final-thoughts",
+    "title": "Joins 1: introduction",
+    "section": "Final thoughts",
+    "text": "Final thoughts\n\nsome nice discussion about using dplyr::semi_join to find similar rows of data without actually binding columns\nusing the pointblank package for data validation"
   }
 ]
