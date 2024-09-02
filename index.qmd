@@ -11,7 +11,7 @@ This is the main page for the KIND network's live documents and non-training res
 
 ## What's here?
 
-### Community standards.
+### Community standards
 
 These documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.
  
@@ -29,12 +29,20 @@ Please take this, use it however you like, and let us know if there's anything t
 
 These are a set of sample standard operating procedures for KIND work. These are intended for sharing as a basis or guideline for your own activities. Please get in touch if you have a useful SOP that might be sharable.
 
+### Community activities
+Documents supporting our social learning activities, such as scheduled, past sessions, and archives of materials. These include:
++ the [R reading group](rreadgr.qmd)
++ the [R beginner's club](rbc/about.qmd)
++ the main [community meetup series](kind_cms.qmd)
+
 ### KIND FAQ
 
 Our main frequently-asked questions document
 
+### Mentoring scheme
+
+Information and links for our technical mentoring scheme
+
 ### Book of the week
 
 Data and summaries for our ever-popular book of the week segment
-
-### Community meetup schedule
