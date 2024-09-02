@@ -1,11 +1,22 @@
 ---
-title: "KIND community meetup schedule"
+title: "KIND community meetups"
 execute: 
   freeze: false
+listing:
+  id: archive_list
+  contents:
+    - "commet/*.qmd"
+  type: table
+  categories: true
+  fields: [title, date, categories]
 ---
+
+These are our main weekly social learning activity. They're usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell.
 
 + [Download community meetup data as csv](data/KIND_community_meetups.csv)
 + [Download community meetup ideas as csv](data/KIND_community_meetups_new.csv)
+
+:::: {.panel-tabset}
 
 ## Current community meetup schedule
 ```{r}
@@ -13,7 +24,8 @@ options(knitr.kable.NA = '')
 
 readr::read_csv("data/KIND_community_meetups.csv") |>
   dplyr::mutate(Date = lubridate::dmy(Date)) |>
-  dplyr::filter(Date > lubridate::today() & !is.na(Date)) |>
+  dplyr::filter(Date >= lubridate::today() & !is.na(Date)) |>
+  dplyr::select(-Suggestor) |>
   knitr::kable(caption = "Current community meetup schedule")
 ```
 
@@ -24,4 +36,17 @@ readr::read_csv("data/KIND_community_meetups_new.csv") |>
   dplyr::select(!Date) |>
   knitr::kable(caption = "Future community meetup ideas")
 ```
+
+## Archive of past sessions
+
+::: {#archive_list}
+:::
+
+
+::::
+
+
+
+
+
 

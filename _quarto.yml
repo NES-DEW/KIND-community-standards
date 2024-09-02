@@ -24,14 +24,20 @@ website:
         menu:
           - href: visio.qmd
             text: Visio
+      - text: Community activities
+        menu:
+          - href: rreadgr.qmd
+            text: R reading group
+          - href: rbc/about.qmd
+            text: R beginner's club
+          - href: kind_cms.qmd
+            text: Community meetups
       - href: faq.qmd
         text: KIND FAQ
       - href: mentoring.qmd
-        text: 🆕 Mentoring scheme
+        text: Mentoring scheme
       - href: kind_botw.qmd
         text: Book of the week
-      - href: kind_cms.qmd
-        text: Community meetup schedule
       - href: ml_archive.qmd
         text: Mailing list archive
     tools:

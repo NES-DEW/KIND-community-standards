@@ -1,0 +1,80 @@
+---
+title: "Joins 1: introduction"
+date: 2024-09-02
+categories: [Joins, beginner, Excel, R, Power Query]
+execute: 
+  output: asis
+  echo: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## How to think about joins?
+
+A join is a way of merging two datasets. Let's demonstrate with some simple data:
+
+```{r}
+library(tibble)
+library(dplyr)
+```
+
+
+```{r}
+x <- tibble(
+  name = c("Steve", "Emma", "Arti"),
+  tool = c("R", "Excel", "Excel"),
+  training_sessions = c(4,3,7)
+)
+```
+
+```{r}
+#| echo: false
+x |>
+  knitr::kable()
+```
+
+```{r}
+y <- tibble(
+  name = c("Abena", "Yuika", "Arti"),
+  tool = c("R", "Excel", "Power BI"),
+  training_sessions = c(3,5,3)
+)
+
+```
+
+```{r}
+#| echo: false
+x |>
+  knitr::kable()
+```
+
+## Binding
+
+The simplest join we could do is to bind the rows from one set onto another:
+
+```{r}
+x |>
+  bind_rows(y) |>
+  knitr::kable()
+```
+That just brings all the rows from `y` onto the end of `x`. We could also have just bound the columns together:
+
+```{r}
+x |>
+  bind_cols(y) |>
+  knitr::kable()
+```
+
+Doing this in R, we end up with something quite messy: we've gained some new columns (with odd names), and lots of blank values. The reason for this is that the Arti's has a row in each dataset. Anyone without corresponding rows gets filling in with blanks.
+
+## Joins proper
+
+Unlike binding, though, in a join we usually want to only include some of our values. So let's now left-join `y` onto x:
+
+```{r}
+x |>
+  left_join(y, by = "name") |>
+  knitr::kable()
+```
+
+You should see that only the values from `y`'s score column that have a corresponding name in `x` get populated, and everything else gets filled with NAs. Here's a [nice introduction to the different kinds of join you can do in dplyr](https://lindsaydbrin.github.io/CREATE_R_Workshop/Lesson_-_dplyr_join.html).

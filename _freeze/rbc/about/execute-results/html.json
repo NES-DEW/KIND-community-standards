@@ -1,0 +1,15 @@
+{
+  "hash": "88fc86c990b0c27f15377fc05779ff4f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: About R beginner's club\n---\n\n\n\n\n## About\n\nWe run a monthly R beginner's club on Teams. If you’re new to R, please consider yourself invited to come along for mutual support, troubleshooting, and tips for building your R skills and confidence.\n\nFull details and joining instructions via the [KIND network Teams channel](https://teams.microsoft.com/l/team/19%3AQZ7-PbFVcziG2piHLt1_ifey3I2cwFL0yBuTSS8vVao1%40thread.tacv2/conversations?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a).\n\n## Schedule\n\n+ Thursday, 3-4pm BST, 12th September 2024\n+ Thursday, 3-4pm BST, 10th October 2024\n+ Thursday, 3-4pm GMT, 14th November 2024\n+ Thursday, 3-4pm GMT, 12th December 2024\n\nYou can follow [this direct link to access the Teams meeting](https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1725260923641?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d), although you'll need to be a member of the KIND network Teams channel to get the most out of the discussion. That's free and easy to join - [here's the sign-up form](https://forms.office.com/r/WQdd6HSCEW).\n\n## Archive\n\n[R beginner's club 13th June 2024](2024-06-13.qmd)\n\n\n\n\n\n  \n## Previous attendees have said...  \n- 9 previous attendees have left feedback\n- 89% said that this session was pitched correctly\n- 100% would recommend this session to a colleague\n  \n:::{.callout-note}  \n### Three random comments from previous attendees  \n- The session was really helpful and helped point me in the right direction for a project I am working on.\n- I wondered if people who are completely new to R might have been a bit daunted by the speed at which we went through things? I really like the approach of asking people about the actual issues they're facing though. I'm going to be aware of what I get stuck on to bring to future sessions. I'm really excited about this new club!\n- Even my simple brain could understand the topic covered\n  \n:::  ",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
