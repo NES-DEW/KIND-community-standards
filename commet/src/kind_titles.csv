@@ -1,0 +1,880 @@
+job_title,job_n,document
+365 dev,2,KIND_1
+365 engineer,1,KIND_2
+academic librarian and editor,1,KIND_3
+acting clinical trial service manager,1,KIND_4
+admin & clerical assistant,1,KIND_5
+admin assistant,7,KIND_6
+admin assistant - nmahp,1,KIND_7
+admin officer,7,KIND_8
+admin officer - medical,5,KIND_9
+admin officer - workforce infrastructure,1,KIND_10
+admin officer/administrator,2,KIND_11
+admin support,4,KIND_12
+admin support assistant,1,KIND_13
+admin team supervisor,1,KIND_14
+admininstrative support,1,KIND_15
+administration assistant,3,KIND_16
+administration officer,3,KIND_17
+administrative assistant,1,KIND_18
+administrative assistant (dental),1,KIND_19
+administrative support,3,KIND_20
+administrator,4,KIND_21
+administrator - organisational leadership & development,1,KIND_22
+administrator for public protection and mental health,1,KIND_23
+"administrator for public protection, mental health and learning disabilities",6,KIND_24
+adp coordinator,2,KIND_25
+adp lead officer,2,KIND_26
+adp performance officer,1,KIND_27
+adp project officer,1,KIND_28
+advanced paramedic practitioner,2,KIND_29
+advanced practitioner,1,KIND_30
+advanced practitioner occupational therapist,6,KIND_31
+adviser,1,KIND_32
+ahp practice education lead,2,KIND_33
+airline manifest officer,5,KIND_34
+alcohol & drugs partnership coordinator,1,KIND_35
+analyst,24,KIND_36
+analyst / statistician,1,KIND_37
+analyst business partner,2,KIND_38
+analyst business partner - digital,11,KIND_39
+analytical bi services team lead,1,KIND_40
+analytics,1,KIND_41
+anticipatory care programme manager,4,KIND_42
+application support team leader,1,KIND_43
+applications architect,2,KIND_44
+appraisal administrator,2,KIND_45
+assess / react care wl,3,KIND_46
+assistant analyst,8,KIND_47
+assistant director,1,KIND_48
+assistant inforamtion analyst,4,KIND_49
+assistant information analyst,3,KIND_50
+assistant information governance officer,9,KIND_51
+assistant librarian,11,KIND_52
+assistant librarian / neurology decision support manager,1,KIND_53
+assistant primary care manager - intelligence & performance,1,KIND_54
+assistant psychologist,2,KIND_55
+assistant service manager,3,KIND_56
+assistant service planning analyst,9,KIND_57
+associate director,1,KIND_58
+associate quality improvement advisor,7,KIND_59
+asst. performance and intelligence manager,2,KIND_60
+audit coordinator,3,KIND_61
+bi application manager,2,KIND_62
+bi developer,4,KIND_63
+bi lead,4,KIND_64
+bms band 6,3,KIND_65
+business analyst,3,KIND_66
+business analyst - nds,3,KIND_67
+business and administration manager,1,KIND_68
+business development and practice manager,1,KIND_69
+business improvement officer,1,KIND_70
+business intelligence and data warehouse manager,3,KIND_71
+business intelligence developer,5,KIND_72
+business intelligence lead,1,KIND_73
+business intelligence manager,3,KIND_74
+business intelligence project manager,1,KIND_75
+business intelligence services manager,1,KIND_76
+business intelligence solution developer,3,KIND_77
+business intelligence technical analyst,1,KIND_78
+business manager,8,KIND_79
+"business manager - finance, administration & workforce",1,KIND_80
+business support analyst (trainee),1,KIND_81
+business support analyst trainee,4,KIND_82
+business support group manager,2,KIND_83
+business support manager,4,KIND_84
+business support officer,5,KIND_85
+camhs clinical pharmacist,3,KIND_86
+cancer audit co-ordinator,1,KIND_87
+cancer audit coordinator,2,KIND_88
+cancer audit facilitator,6,KIND_89
+cancer clinical trials quality assurance officer,1,KIND_90
+cancer information analyst,1,KIND_91
+cancer intelligence analyst,3,KIND_92
+cardiac,1,KIND_93
+care at home coordinator,3,KIND_94
+care home education facilitator,2,KIND_95
+cd ehealth,1,KIND_96
+change business partner,2,KIND_97
+chief internal auditor,2,KIND_98
+clinical & scientific informat,1,KIND_99
+clinical audit co-ordinator (cancer),1,KIND_100
+clinical audit programme manager,3,KIND_101
+clinical coding administrator,1,KIND_102
+clinical coding manager,1,KIND_103
+clinical coding tutor,8,KIND_104
+clinical coordinator sicsag,1,KIND_105
+clinical data analysis,1,KIND_106
+clinical data analyst,11,KIND_107
+clinical data co-ordinator,4,KIND_108
+clinical fellow,1,KIND_109
+clinical improvement coordinator,5,KIND_110
+clinical informatician,1,KIND_111
+clinical informatics coordinator,5,KIND_112
+clinical lead e-health,1,KIND_113
+clinical librarian,1,KIND_114
+clinical performance manager,1,KIND_115
+clinical procurement manager,3,KIND_116
+clinical quality co-ordinator,11,KIND_117
+clinical quality coordinator,8,KIND_118
+clinical quality manager,1,KIND_119
+clinical reader,2,KIND_120
+clinical research coder,2,KIND_121
+clinical scientist (trainee),1,KIND_122
+"clinical scientist, lead for surveillance",2,KIND_123
+clinical service manager,3,KIND_124
+clinical systems manager (clinical lead morse),1,KIND_125
+clinician,1,KIND_126
+communications and engagement manager,3,KIND_127
+communications and events assistant,1,KIND_128
+community initiatives manager,1,KIND_129
+community physiotherapist,2,KIND_130
+consultant,10,KIND_131
+consultant clinical informatician,2,KIND_132
+consultant clinical psychologist,3,KIND_133
+consultant geriatrician,1,KIND_134
+consultant in public health,16,KIND_135
+consultant in public health medicine,5,KIND_136
+consultant in public medical medicine,4,KIND_137
+consultant microbiologist,6,KIND_138
+consultant nurse,4,KIND_139
+consultant paediatric intensivist,1,KIND_140
+consultant pathologist,1,KIND_141
+consultant public health,4,KIND_142
+consultant public health medicine,3,KIND_143
+"consultant, public health / health protection",1,KIND_144
+contact tracer,6,KIND_145
+contact tracing practitioner,2,KIND_146
+contract administrator,3,KIND_147
+coo,1,KIND_148
+corporate performance manager,4,KIND_149
+corporate planning & performance manager,1,KIND_150
+corporate planning officer,4,KIND_151
+corporate records manager,3,KIND_152
+cph,1,KIND_153
+cphm,1,KIND_154
+crm database marketing manager,3,KIND_155
+csmen educational resource developer,2,KIND_156
+cynical information manager,1,KIND_157
+cyp & f occupational therapy team lead,1,KIND_158
+d&i lead nurse,3,KIND_159
+data & measurement advisor,15,KIND_160
+data analst,1,KIND_161
+data analyst,61,KIND_162
+data analyst (muis),2,KIND_163
+data and measurement advisor,3,KIND_164
+data assistant,6,KIND_165
+data clinical analyst,1,KIND_166
+data co-ordinator,1,KIND_167
+data engineer,8,KIND_168
+data lead,4,KIND_169
+data lead (connect me programme),1,KIND_170
+"data lead, connect me",1,KIND_171
+"data lead, connect me programme",4,KIND_172
+data management officer,43,KIND_173
+data manager,27,KIND_174
+data measurement advisor,1,KIND_175
+data performance assistant,2,KIND_176
+data protection advisor,2,KIND_177
+data protection analyst,1,KIND_178
+data protection support officer,3,KIND_179
+data quality & coding manager,1,KIND_180
+data quality assistant,1,KIND_181
+data quality supervisor,1,KIND_182
+data support,1,KIND_183
+data support officer,1,KIND_184
+data surveillance officer,3,KIND_185
+data visualisation technical lead,3,KIND_186
+data viz lead,11,KIND_187
+data/quality officer,2,KIND_188
+deputy data quality manager,1,KIND_189
+deputy laboratory computer manager,3,KIND_190
+developer,1,KIND_191
+"developer, cancer information team",1,KIND_192
+development manager,3,KIND_193
+diabetes prevention programme manager,5,KIND_194
+diabetes prevention project co-ordinator,2,KIND_195
+dietitian,2,KIND_196
+digital engagement officer,1,KIND_197
+digital learning advisor,4,KIND_198
+digital learning lead,6,KIND_199
+digital learning specialist,6,KIND_200
+digital participation officer,1,KIND_201
+digital projects manager,5,KIND_202
+digital transformation officer,1,KIND_203
+digital workforce business analyst,6,KIND_204
+director of housing,1,KIND_205
+director of housing services,1,KIND_206
+directorate support officer,1,KIND_207
+doctor,2,KIND_208
+drug death analyst,3,KIND_209
+drugs related death co-ordina tor,1,KIND_210
+drugs related death co-ordinator,6,KIND_211
+education & training manager (labs),3,KIND_212
+education and training manager,3,KIND_213
+education development facilitor - practice educator,3,KIND_214
+educational resource developer,8,KIND_215
+efficiency & productivity i,3,KIND_216
+ehealth & infrastructure team lea,1,KIND_217
+ehealth facilitator,2,KIND_218
+elective care & recovery,3,KIND_219
+engagement manager,2,KIND_220
+enhanced recovery after surgery (eras) nurse specialist,1,KIND_221
+enteral nurse specialist,1,KIND_222
+enterprise/solution architect,1,KIND_223
+epidemiologist,1,KIND_224
+eresources librarian,1,KIND_225
+erostering facilitator,1,KIND_226
+erostering prgramme manager,1,KIND_227
+evaluation & change team manager,3,KIND_228
+evidence  manager,3,KIND_229
+evidence and evaluation specialist,1,KIND_230
+evidence and information scientist,1,KIND_231
+evidence manager,1,KIND_232
+evidence programme lead,1,KIND_233
+executive directorate manager,1,KIND_234
+expansion workforce data lead,1,KIND_235
+"facilitator, education learning and development",2,KIND_236
+faculty learning tech lead shs,1,KIND_237
+falkirk council,1,KIND_238
+finance manager - costing & informatics,1,KIND_239
+finance manager - costing & strategic programmes,4,KIND_240
+fnp systems & administration manager,1,KIND_241
+fnp systems manager,5,KIND_242
+general practitioner and cluster quality lead,1,KIND_243
+genetic genealogist,1,KIND_244
+gms contract manager,4,KIND_245
+governance & executive assistant,1,KIND_246
+gp,3,KIND_247
+gp appraisal administrator,4,KIND_248
+gp lead,1,KIND_249
+gp lead & clinical informatician,3,KIND_250
+gp principal,2,KIND_251
+graduate intern,5,KIND_252
+hai surveillance lead,8,KIND_253
+hbi developer,2,KIND_254
+head of business services,1,KIND_255
+"head of data, measurement & business intelligence",3,KIND_256
+head of digital strategic delivery,7,KIND_257
+head of evaluation,1,KIND_258
+head of evidence,4,KIND_259
+head of health records,1,KIND_260
+"head of health, wellbeing & social care",3,KIND_261
+head of hr - workforce planning,1,KIND_262
+head of im&t and ehealth,3,KIND_263
+head of information and digital technology,2,KIND_264
+head of information and records management,2,KIND_265
+head of information governance and cyber assurance,2,KIND_266
+head of information governance/data protection officer,3,KIND_267
+head of information management,4,KIND_268
+head of information services,3,KIND_269
+"head of learning, development & innovation",1,KIND_270
+head of performance and insights,6,KIND_271
+head of planning and information,3,KIND_272
+head of planning and performance,1,KIND_273
+head of primary care support,1,KIND_274
+head of programme (pcc) - nmahp,1,KIND_276
+head of programme - digital,4,KIND_275
+head of programmes and development,1,KIND_277
+head of public health intelligence and information services,1,KIND_278
+head of rdi,2,KIND_279
+"head of research, development and innovation",2,KIND_280
+head of service,4,KIND_281
+"head of service, national clinical safety assuranc",1,KIND_282
+head of strategic planning and performance,2,KIND_283
+head of workforce planning,1,KIND_284
+head public health intelligence,2,KIND_285
+health & business intelligence lead,4,KIND_286
+"health & business intelligence lead, business unit",3,KIND_287
+health analyst,4,KIND_288
+health economist,2,KIND_289
+health improvement advisor,1,KIND_290
+health improvement development officer,1,KIND_291
+health improvement information & resource officer,3,KIND_292
+health improvement information and resource officer,3,KIND_293
+health improvement lead,8,KIND_294
+health improvement lead (mental health),1,KIND_296
+health improvement lead - hln & inequalities,1,KIND_295
+health improvement lead:  communities,2,KIND_297
+health improvement manager,4,KIND_298
+health improvement officer,1,KIND_299
+health improvement officer - neighbourhoods,1,KIND_300
+health improvement practitioner,21,KIND_301
+health improvement principal,2,KIND_302
+health improvement senior,16,KIND_303
+"health improvement senior - tobacco, alcohol & other substances",1,KIND_304
+health improvement senior - training,3,KIND_305
+health improvement senior digital communications,3,KIND_306
+health improvement specialist,2,KIND_307
+health informatics lead,1,KIND_308
+health information analyst,10,KIND_309
+health information officer,2,KIND_310
+health information scientist,11,KIND_311
+health intelligence analyst,39,KIND_312
+health intelligence analyst specialist,2,KIND_313
+health intelligence data analysis assistant,2,KIND_314
+health intelligence information analyst,1,KIND_315
+health intelligence lead,1,KIND_316
+health intelligence officer,9,KIND_317
+health intelligence team leader,1,KIND_318
+health promotion,3,KIND_319
+health promotion officer,1,KIND_320
+health promotion worker,3,KIND_321
+health protection officer,7,KIND_322
+health records manager,3,KIND_323
+health service researcher,7,KIND_324
+health services reseacher,2,KIND_325
+health services researcher,12,KIND_326
+healthcare scientist,17,KIND_327
+healthcare scientist (advanced) in epidemiology,2,KIND_328
+healthcare scientist (epidemiologist),1,KIND_329
+healthcare scientist (epidemiology),7,KIND_330
+healthcare scientist (health protection),1,KIND_331
+healthcare scientist advanced,11,KIND_332
+healthcare scientist advanced (epidemiology),3,KIND_333
+healthcare scientist assistant,3,KIND_334
+healthcare scientist principal,1,KIND_335
+hepma data analyst,3,KIND_336
+hepma pharmacist,3,KIND_337
+home teams lead,1,KIND_338
+hr associate business lead/associate lead,1,KIND_339
+hr manager,1,KIND_340
+hr officer,1,KIND_341
+hr service centre systems team leader,1,KIND_342
+human resources officer,1,KIND_343
+ict manager,2,KIND_344
+ict systems support team leader,1,KIND_345
+ict systems support technician,3,KIND_346
+identity manager,2,KIND_347
+ig advisor,4,KIND_348
+ig officer,2,KIND_349
+igo,2,KIND_350
+improvement advisor,11,KIND_351
+improvement advisor (qi education),2,KIND_352
+improvement manager,7,KIND_353
+improvement support officer,3,KIND_354
+inclusive vaccinations policy officer,3,KIND_355
+inclusive vaccinations policy team leader,1,KIND_356
+india,1,KIND_357
+indonesia,1,KIND_358
+inequalities outreach support officer,3,KIND_359
+info services manager,2,KIND_360
+infomation assistant,1,KIND_361
+information & communication assistant,2,KIND_362
+information & data quality manager,1,KIND_363
+information & research officer,2,KIND_364
+information analysis,1,KIND_365
+information analyst,333,KIND_366
+information analyst - annex 21,3,KIND_367
+information analyst - student,3,KIND_368
+information analyst internship,1,KIND_369
+"information analyst, performance and insights team",2,KIND_370
+information analyst/freedom of information officer,2,KIND_371
+information anaylst,1,KIND_372
+information and communication assistant,3,KIND_373
+information and data analyst,2,KIND_374
+information and data quality manager,3,KIND_375
+information assistant,3,KIND_376
+information business analyst,3,KIND_377
+information consultant,15,KIND_378
+information governance advisor,7,KIND_379
+information governance and data security officer,1,KIND_380
+information governance officer,10,KIND_381
+information governance officer - information security management,1,KIND_382
+information governance project manager,2,KIND_383
+information manager,32,KIND_384
+information manager (mental health),3,KIND_385
+information officer,3,KIND_386
+information scientist,9,KIND_387
+information services advisor,1,KIND_388
+information services manager,7,KIND_389
+information services technical co-ordinator,1,KIND_390
+information specialist,2,KIND_391
+information support manager,2,KIND_392
+information systems administrator,1,KIND_393
+information systems manager,1,KIND_394
+innovation lead,4,KIND_395
+innovation project manager,1,KIND_396
+intelligence analyst,1,KIND_397
+intelligence manager,1,KIND_398
+intelligence specialist,2,KIND_399
+interim head of commissioning,1,KIND_400
+interim head of health,3,KIND_401
+interim lead pef,3,KIND_402
+interim lead practice education facilitator,1,KIND_403
+interim operations manager,1,KIND_404
+intern,1,KIND_405
+intern information analyst,3,KIND_406
+internal auditor,1,KIND_407
+it developer,4,KIND_408
+it facilitator,2,KIND_409
+it manager,1,KIND_410
+it support,1,KIND_411
+it support specialist,1,KIND_412
+it system support officer,1,KIND_413
+it/data officer,1,KIND_414
+junior service manager,3,KIND_415
+knowledge & information skills specialist,1,KIND_416
+knowledge and information officer,3,KIND_417
+knowledge and information skills specialist,14,KIND_418
+knowledge information skills specialist,4,KIND_419
+knowledge management facilitator,3,KIND_420
+knowledge manager,9,KIND_421
+knowledge service manager,1,KIND_422
+knowledge services assistant,3,KIND_423
+knowledge services librarian,5,KIND_424
+knowledge services manager,10,KIND_425
+knowledge services officer,13,KIND_426
+knowledge support officer,1,KIND_427
+l&d admin team supervisor,1,KIND_428
+l&d assistant,3,KIND_429
+l&d facilitator/team supervisor,1,KIND_430
+l&d manager,1,KIND_431
+laboratory it data quality manager,3,KIND_432
+labs it data quality manager,1,KIND_433
+labs it lims specialist,2,KIND_434
+labs system analyst / administrator,3,KIND_435
+lead analyst,1,KIND_436
+lead analyst - data quality & information,1,KIND_437
+lead clinical improvement coordinator,5,KIND_438
+lead consultant for population health,1,KIND_439
+lead health analyst,1,KIND_440
+lead health services researcher,1,KIND_441
+lead healthcare scientist,2,KIND_442
+lead nurse,1,KIND_443
+lead nurse district nursing,2,KIND_444
+lead officer aberdeenshire alcohol and drug partnership,3,KIND_445
+lead pharmacist - digital pharmacy,1,KIND_447
+lead pharmacist forensic health services,3,KIND_448
+"lead pharmacist-cd governance, prisons and police custody",1,KIND_446
+lead prescribing intelligence analyst,10,KIND_449
+lead r&d facilitator,5,KIND_450
+learning & development facilitator/team supervisor,2,KIND_451
+learning & development manager,1,KIND_452
+learning and development facilitator,3,KIND_453
+learning and development manager,7,KIND_454
+learning and development manager (digital learning),3,KIND_455
+learning and development manger (digital learning),1,KIND_456
+lecturer and phd student,2,KIND_457
+liaison/clinical librarian,1,KIND_458
+librarian,30,KIND_459
+library assistant,9,KIND_460
+library assistant/ theatre receptionist,1,KIND_461
+library manager,3,KIND_462
+library manager (north),1,KIND_464
+library manager (south),4,KIND_465
+library manager - south,1,KIND_463
+library services co-ordinator,2,KIND_466
+library services manager,4,KIND_467
+library services manager (subject specia,4,KIND_469
+library services manager - decision support,1,KIND_468
+m365 team,1,KIND_470
+macmillan programme lead,3,KIND_471
+management information analyst,1,KIND_472
+management information officer,5,KIND_473
+manager - p&cr,3,KIND_474
+manager clinical technical services - pharmacologistics,3,KIND_475
+manager project lift,1,KIND_476
+marketing manager,5,KIND_477
+medical illustrator,2,KIND_478
+medical statisitician,2,KIND_479
+medical statistician,2,KIND_480
+miss,1,KIND_481
+mr,3,KIND_482
+msc responsible data science student,3,KIND_483
+msk physiotherapist,2,KIND_484
+national cardiac audit coordinator,1,KIND_485
+national clinical audit coordinator,3,KIND_486
+national clinical coordinator,7,KIND_487
+"national data lead, connect me programme",1,KIND_488
+national vc manager,1,KIND_489
+near me project manager,3,KIND_490
+near me project support manager,1,KIND_491
+nhs grampian,1,KIND_492
+nhs librarian,1,KIND_493
+nos psc/hepma ehealth service manager,3,KIND_494
+nss manager,1,KIND_495
+nurse,1,KIND_496
+occupational therapist,8,KIND_497
+od and learning,1,KIND_498
+od and learning advisor,1,KIND_499
+od officer,2,KIND_500
+ol chronic conditions,3,KIND_501
+operational support supervisor,2,KIND_502
+operations manager,1,KIND_503
+oral health eduactor,3,KIND_504
+oral health educator,1,KIND_505
+organisational development and learning advisor,1,KIND_506
+organisational development coordinator,1,KIND_507
+organisational lead,4,KIND_508
+organisational lead for publishing,2,KIND_509
+organisational lead for publishing services,1,KIND_510
+organisational lead for vaccination evaluation,1,KIND_511
+organisational lead for vaccine evaluation,1,KIND_512
+outcomes development and information manager,1,KIND_513
+p&p project support officer,2,KIND_514
+paediatrc practice development physiotherapist,1,KIND_515
+paediatric dietitian,1,KIND_516
+partnership assurance lead,6,KIND_517
+partnership training officer,2,KIND_518
+patient experience & public involvement,1,KIND_519
+patient experience & public involvement manager,1,KIND_520
+payroll manager,2,KIND_521
+pef,4,KIND_522
+people insight & systems delivery manager,1,KIND_523
+performance & analaytics lead,3,KIND_524
+performance & analytics lead,1,KIND_525
+performance & information officer,1,KIND_526
+performance & intelligence analyst,2,KIND_527
+performance & quality manager,3,KIND_528
+performance and analytics lead,5,KIND_529
+performance and intelligence analyst,15,KIND_530
+performance and intelligence manager,4,KIND_531
+performance and systems development assistant,1,KIND_532
+performance manager,3,KIND_533
+performance officer,1,KIND_534
+performance planning manager,1,KIND_535
+performance support officer,2,KIND_536
+performance systems officer,1,KIND_537
+permanence consultant improvement advisor,1,KIND_538
+personal secretary,3,KIND_539
+ph intelligence advisor,1,KIND_540
+ph intelligence manager,1,KIND_541
+pharmacist,1,KIND_542
+pharmacy data analyst,3,KIND_543
+pharmacy data support officer,4,KIND_544
+pharmacy stock control manager,6,KIND_545
+pharmacy systems analyst,2,KIND_546
+phi manager,1,KIND_547
+physiotherapist,2,KIND_548
+pidm,2,KIND_549
+planning & performance co-ordinator,1,KIND_550
+planning & performance officer,4,KIND_551
+planning and development manager,2,KIND_552
+"planning and performance analyst, strategy and transformation team",1,KIND_553
+planning and performance manager,3,KIND_554
+"planning, performance and projects officer",4,KIND_555
+podiatry a&c team lead,4,KIND_556
+podiatry business manager,1,KIND_557
+policy & research officer,2,KIND_558
+policy and development officer,4,KIND_559
+policy officer,1,KIND_560
+population health project manager,4,KIND_561
+power bi analyst,3,KIND_562
+practice development lead,2,KIND_563
+practice development physiotherapist,4,KIND_564
+practice education facilitater,3,KIND_565
+practice education facilitator,5,KIND_566
+practice education lead,1,KIND_567
+practice educator,5,KIND_568
+practice educator (pcc) - nmahp,3,KIND_571
+practice educator - nmahp,3,KIND_569
+practice educator - pharmacy,1,KIND_570
+practice educator nmahp,1,KIND_572
+practice manager,7,KIND_573
+prescribing & information analyst,3,KIND_574
+prescribing and information analyst,3,KIND_575
+prescribing intelligence analyst,6,KIND_576
+prescribing support pharmacist,3,KIND_577
+primary care development,1,KIND_578
+primary care mental health team lead,3,KIND_579
+principal analyst,11,KIND_580
+principal analyst health intelligence - community,3,KIND_581
+principal educator,2,KIND_582
+principal educator - camhs,4,KIND_583
+principal educator mhldd nmahp,1,KIND_584
+principal epidemiologist,1,KIND_585
+principal hcs,2,KIND_586
+principal information analyst,118,KIND_587
+"principal information analyst, primary care improvement team",3,KIND_588
+principal information development manager,19,KIND_589
+principal infromation development manager,1,KIND_590
+principal lead,2,KIND_591
+principal lead - digital,4,KIND_592
+principal lead - digitally enabled workforce,1,KIND_593
+principal lead - organisational & leadership development,1,KIND_594
+principal lead - p&fm,1,KIND_595
+principal management information analyst,1,KIND_596
+principal ph information analyst,1,KIND_597
+principal public health information analyst,4,KIND_598
+principal radiotherapy physicist,3,KIND_599
+principal researcher,1,KIND_600
+principal trial manager,3,KIND_601
+principle analyst,1,KIND_602
+principle information analyst,4,KIND_603
+principle radiotherapy physicist,1,KIND_604
+prinicipal lead,1,KIND_605
+priniciple analyst,1,KIND_606
+programme director,1,KIND_607
+programme lead,15,KIND_608
+programme lead - ruc,1,KIND_609
+programme lead digitally enabled workforce,3,KIND_611
+programme lead – redesign of urgent care,1,KIND_610
+"programme lead, knowledge and decision support",1,KIND_612
+programme manager,13,KIND_613
+programme manager - clinical audit,1,KIND_614
+programme portfolio manager,8,KIND_615
+programme support officer,9,KIND_616
+project & service improvement manager,3,KIND_617
+project and system assistant,1,KIND_618
+project assistant - mental health information station,1,KIND_619
+project co-ordinator,3,KIND_620
+project lead,1,KIND_621
+project manager,29,KIND_622
+project manager primary care improvement planning,3,KIND_623
+project officer,25,KIND_624
+project officer (business intelligence),1,KIND_625
+project officer/junior information analyst,1,KIND_626
+project offices (business intelligence),1,KIND_627
+project support officer,12,KIND_628
+projects officer,3,KIND_629
+public health adviser,1,KIND_630
+public health advisor,1,KIND_631
+public health analyst,3,KIND_632
+public health consultant,1,KIND_633
+public health data admin,1,KIND_634
+public health improvement  lead,1,KIND_635
+public health improvement lead,1,KIND_636
+public health information analyst,7,KIND_637
+public health information data analyst,3,KIND_638
+public health intelligence,1,KIND_639
+public health intelligence administrator,4,KIND_640
+public health intelligence adviser,20,KIND_641
+public health intelligence advisor,5,KIND_642
+public health intelligence analyst,10,KIND_643
+public health intelligence analyst specialist,3,KIND_644
+public health intelligence assistant,1,KIND_645
+public health intelligence manager,11,KIND_646
+public health intelligence officer,15,KIND_647
+public health intelligence principal,3,KIND_648
+public health intelligence specialist,7,KIND_649
+public health intelligence team manager,3,KIND_650
+public health librarian,25,KIND_651
+public health officer,9,KIND_652
+public health programme manager,10,KIND_653
+public health registrar,1,KIND_654
+public health researcher,18,KIND_655
+public health senior intelligence analyst,1,KIND_656
+public health: adp co-ordinator,1,KIND_657
+public health: public health practitioner,1,KIND_658
+"public protection ,mental health and learning disabilities administrator",1,KIND_659
+public protection admin,2,KIND_660
+public protection administrator,1,KIND_661
+publications & information specialist ou,3,KIND_662
+publications manager,1,KIND_663
+qlik development support officer,1,KIND_664
+quality assurance manager,3,KIND_665
+quality improvement advisor,3,KIND_666
+quality improvement advisor (caring for ayrshire),1,KIND_667
+quality improvement and evaluation lead,1,KIND_668
+quality manager,1,KIND_669
+quality programme manager,6,KIND_670
+real time analyst,6,KIND_672
+real-time analyst,1,KIND_671
+referral management service manager,4,KIND_673
+regional information manager/senior analyst,1,KIND_674
+rehabilitation nurse specialist,1,KIND_675
+renal practice educator,2,KIND_676
+reseach coordinator (sidm),3,KIND_677
+research & development manager,1,KIND_678
+research & intelligence specialist,2,KIND_679
+research and intelligence specialist,3,KIND_680
+research assistant,1,KIND_681
+research associate,4,KIND_682
+research coder,3,KIND_683
+research coordinator,5,KIND_684
+research fellow / deputy director,1,KIND_685
+resesarcher,1,KIND_686
+ris/pacs manager,1,KIND_687
+rn,1,KIND_688
+rostering systems manager,2,KIND_689
+rotational pharmacist,4,KIND_690
+ruc programme lead,3,KIND_691
+sapg health service researcher,2,KIND_692
+scotphn team coordinator,2,KIND_693
+secretary,1,KIND_694
+sen info dev manager,1,KIND_695
+senior administration assistant,3,KIND_696
+senior analyst,34,KIND_697
+senior analyst (prescribing),3,KIND_703
+senior analyst - digital,7,KIND_698
+senior analyst - health intelligence,1,KIND_699
+senior analyst - learn,2,KIND_700
+senior analyst - nes technology service,2,KIND_701
+senior analyst - systems development,3,KIND_702
+senior analyst cross system performance,3,KIND_704
+senior analyst: cross system performance,1,KIND_705
+senior business support assistant,1,KIND_706
+senior cancer information officer,2,KIND_707
+senior cancer intelligence analyst,3,KIND_708
+senior contact tracer,1,KIND_709
+senior data analyst,5,KIND_710
+senior data analyst - test & protect,3,KIND_711
+senior data co-ordinator,3,KIND_712
+senior educator,10,KIND_713
+senior educator (pharmacy education coordinator),2,KIND_715
+senior educator - nmahp,4,KIND_714
+senior health economist,5,KIND_716
+senior health improvement officer,11,KIND_717
+senior health improvement officer (inequalities),2,KIND_718
+senior health improvement programme officer,2,KIND_719
+senior health information scientist,3,KIND_720
+senior health intelligence analyst,13,KIND_721
+senior health intelligence officer,2,KIND_722
+"senior health intelligence specialist, public health",2,KIND_723
+senior health promotion officer,1,KIND_724
+senior health promotion specialist,1,KIND_725
+senior hr advisor,3,KIND_726
+senior improvement educator,1,KIND_727
+senior info analyst,2,KIND_728
+senior info development manager,1,KIND_729
+senior informaiton analyst,1,KIND_730
+senior information analyst,347,KIND_731
+senior information analyst - nmahp,4,KIND_732
+senior information analysts,3,KIND_733
+senior information and research analyst,3,KIND_734
+senior information business analyst,1,KIND_735
+senior information development manager,27,KIND_736
+senior information manager,1,KIND_737
+senior intelligence analyst,1,KIND_738
+senior knowledge services assistant,3,KIND_739
+senior library assistant,4,KIND_740
+senior nurse,2,KIND_741
+senior officer,13,KIND_742
+senior performance officer,3,KIND_743
+senior pharmacist,1,KIND_744
+senior planning and performance development officer,1,KIND_745
+senior project manager,7,KIND_746
+"senior project manager, digital leadership & skills",1,KIND_747
+senior public health analyst,1,KIND_748
+senior public health information analyst,5,KIND_749
+senior public health intelligence officer,16,KIND_750
+senior public health intelligence specialist,6,KIND_751
+senior public health officer,5,KIND_752
+senior public health scientist,7,KIND_753
+senior public intelligence analyst (population health),1,KIND_754
+senior sheltered housing officer,2,KIND_755
+senior social care worker,2,KIND_756
+senior specialist analyst,2,KIND_757
+senior specialist lead - information governance,3,KIND_758
+senior specialist lead - optometry,1,KIND_759
+"senior specialist lead, information governance",6,KIND_760
+senior statistician,1,KIND_761
+senior system specialist,3,KIND_762
+senior trial co-ordinator,1,KIND_763
+senior workforce analyst,1,KIND_764
+service designer,1,KIND_765
+service improvement manager,4,KIND_766
+service lead,8,KIND_767
+"service lead, community dietetic services",3,KIND_768
+service manager,22,KIND_769
+service manager - analytical services,1,KIND_770
+service manager - learning and development,1,KIND_771
+service manager -learning and development,1,KIND_772
+service manager later living,1,KIND_773
+service planning analyst,3,KIND_774
+service support manager,2,KIND_775
+sexual health consultant and clinical director ehealth,2,KIND_776
+sidm,9,KIND_777
+smart supports co-ordinator,1,KIND_778
+snr information analyst,12,KIND_779
+social research analyst,3,KIND_780
+social researcher,4,KIND_781
+software developer,1,KIND_782
+software systems designer,2,KIND_783
+specialist analyst,3,KIND_784
+specialist analyst - digital,7,KIND_785
+specialist biomedical scientist,1,KIND_786
+specialist developer,1,KIND_787
+specialist educator,3,KIND_788
+specialist educator qi,1,KIND_789
+specialist lead,9,KIND_790
+specialist lead (employability & career development) - recruiting and supporting graduate data interns,1,KIND_794
+specialist lead (gpn cpd) - medical,3,KIND_795
+specialist lead - digital,4,KIND_791
+specialist lead - map,1,KIND_792
+specialist lead - organisational & leadership development,2,KIND_793
+specialist lead digital health and care,2,KIND_796
+specialist physiotherapist,4,KIND_797
+specialist registrar in public health,2,KIND_798
+specialist research lead,2,KIND_799
+specialist research lead - nmahp,2,KIND_801
+specialist research lead - p&cr,1,KIND_802
+specialist research lead- nmahp,1,KIND_800
+specialist software developer,1,KIND_803
+specialist speech & language therapist,2,KIND_804
+specialist speech and language therapist,1,KIND_805
+specialist subject librarian,1,KIND_806
+specialist workforce planning adviser,1,KIND_807
+st7,1,KIND_808
+staff development co-ordinator,1,KIND_809
+staff development manager,3,KIND_810
+staff nurse,6,KIND_811
+statistician,3,KIND_812
+str,2,KIND_813
+strategic delivery lead (ruc),2,KIND_814
+strategic planning and commissioning manager,3,KIND_815
+strategic programme manager,4,KIND_816
+subject specialist librarian,6,KIND_817
+system support analyst,3,KIND_818
+system support office 365,1,KIND_819
+system support officer,2,KIND_820
+system support officer 365,1,KIND_821
+system support specialist,1,KIND_822
+systems,3,KIND_823
+"systems administrator, social work administration & business support",2,KIND_824
+systems librarian,6,KIND_825
+talent and culture manager,1,KIND_826
+team lead immunation delivery ggc,1,KIND_827
+team lead immunisation delivery,1,KIND_828
+team lead physiotherapist (digital and informatics lead),1,KIND_829
+"team lead physiotherapist, digital and informatics lead elrs",3,KIND_830
+team manager,1,KIND_831
+tec assistant,1,KIND_832
+tec telecare team lead,1,KIND_833
+tec(h) lead,1,KIND_834
+technical architect,3,KIND_835
+technical co-ordinator,1,KIND_836
+technical manager - glasgow north,1,KIND_837
+technical services pharmacist,1,KIND_838
+technology and digital innovation lead,3,KIND_839
+technology enabled care community connector,1,KIND_840
+technology enabled care development officer,1,KIND_841
+telecare team lead,1,KIND_842
+tenancy sustainment and support manager,1,KIND_843
+terminology services manager,1,KIND_844
+theatre utilisation data coordinator,1,KIND_845
+thinking differently coordinator,1,KIND_846
+tissue viability nurse for care homes,1,KIND_847
+tl,2,KIND_848
+tobacco control project manager,1,KIND_849
+tobacco/prevention cessation officer,2,KIND_850
+trainee clinical scientist,2,KIND_851
+transformation programme lead,3,KIND_852
+united kingdom,33,KIND_853
+user support librarian,6,KIND_854
+ux researcher,2,KIND_855
+vaccination planning & performance co-ordinator,2,KIND_856
+vaccination system specialist,1,KIND_857
+vaccination systems specialist,6,KIND_858
+vaccinations planning & performance co-ordinator,1,KIND_859
+volunteer,3,KIND_860
+web support officer,3,KIND_861
+wellbeing advisor,1,KIND_862
+workforce analyst,1,KIND_863
+workforce development officer,1,KIND_864
+workforce information and development manager,4,KIND_865
+workforce information and systems analyst,11,KIND_866
+workforce intelligence,2,KIND_867
+workforce intelligence assistant,3,KIND_868
+workforce intelligence manager,6,KIND_869
+workforce planning advisor,1,KIND_870
+workforce planning manager,3,KIND_871
+workforce service manager,1,KIND_872
+workforce system specialist,2,KIND_873
+workforce systems & information analyst,3,KIND_874
+workforce systems and data lead,2,KIND_875
+workforce systems and information analyst,1,KIND_876
+workforce systems assistant,2,KIND_877
+workforce systems manager,5,KIND_878
+workforce systems officer,2,KIND_879
