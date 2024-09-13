@@ -91,32 +91,60 @@
     "text": "Previous attendees have said…\n\n9 previous attendees have left feedback\n89% said that this session was pitched correctly\n100% would recommend this session to a colleague\n\n\n\n\n\n\n\nThree random comments from previous attendees\n\n\n\n\nThe session was really helpful and helped point me in the right direction for a project I am working on.\nThey’re very informative and honest in that Brendan will specify scenarios of best use and any limitations. I find some of the sessions a bit rushed but I think that might be more about my ability and comprehension.\nAs an occasional R user this was the perfect way to get a refresher and learn joins and file comparisons which are very relevant for my job. Also, great to have a brief personal introduction at the beginning to make it easier to collaborate beyond the session if needed.."
   },
   {
-    "objectID": "r.html",
-    "href": "r.html",
-    "title": "KIND Community Standards: R",
+    "objectID": "rbc/2024-06-13.html",
+    "href": "rbc/2024-06-13.html",
+    "title": "R beginner’s club 2024-06-13",
     "section": "",
-    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
+    "text": "The basic recipe here is:\n\nread our Excel spreadsheets into R\ntry some simple base-R methods of comparison\nget more fancy with packages for more useful comparisons\n\n\n\nThis can be messy. readxl is probably the most straightforward place to start. Make sure a) that your Excel files aren’t open in Excel when you try to read them and b) that you’re happy and confident that your data is on the first worksheet (or you know the correct name of the sheet). You’ll almost certainly want to be working in an R project too to avoid too much messing around with file paths, getwd(), etc.\n\nlibrary(readxl) # to attach the readxl package\nb1 &lt;- read_xlsx(\"data/Book1.xlsx\") \nb2 &lt;- read_xlsx(\"data/Book2.xlsx\") # to read the files\n\n\n\n\nThe most obvious thing to try first is a check for equality. You’ll do this with a double equal sign, like this:\n\nb1 == b2\n\n      name score\n [1,] TRUE  TRUE\n [2,] TRUE  TRUE\n [3,] TRUE  TRUE\n [4,] TRUE  TRUE\n [5,] TRUE  TRUE\n [6,] TRUE  TRUE\n [7,] TRUE  TRUE\n [8,] TRUE  TRUE\n [9,] TRUE  TRUE\n[10,] TRUE  TRUE\n\n\n(single = is effectively the same as &lt;-)\nThat gives us back quite a complicated matrix of results, showing a cell-by-cell comparison of the two sets of data. This happens because R is vectorised - so when we compare two identically-shaped bits of data, R will assume that we want to do our comparison to each of the items in turn. If we just looked at the number values in our spreadsheets, which we could do by using the $ to refer to a column, we could:\n\nb1$score - b2$score\n\n [1] 0 0 0 0 0 0 0 0 0 0\n\n\nWhich I suppose is another way of checking for equality. So could also use a helper function to collapse all of those down into one:\n\nsum(b1$score - b2$score)\n\n[1] 0\n\n\nIf we just wanted a simple true/false measure for the data as a whole, we could recruit the very useful all() and any():\n\nall(b1 == b2) # to check all values are the same\n\n[1] TRUE\n\nany(b1 == b2) # to check any values are the same\n\n[1] TRUE\n\n\nYou could do something very similar using setequal():\n\nsetequal(b1, b2)\n\n[1] TRUE\n\n\n\n\n\nwaldo::compare() is a brilliant way of comparing complex data:\n\nwaldo::compare(b1, b2)\n\n✔ No differences\n\n\nIf we vandalise one of our datasets by changing one value, waldo does plenty of useful work to bring the correct parts of the data to our attention:\n\nb2[5,2] &lt;- 1\nwaldo::compare(b1, b2)\n\nold vs new\n                score\n  old[2, ]  0.2481382\n  old[3, ]  0.6444191\n  old[4, ]  0.8873743\n- old[5, ]  0.3361401\n+ new[5, ]  1.0000000\n  old[6, ]  0.1597596\n  old[7, ]  0.3928778\n  old[8, ]  0.5743370\n\n`old$score[2:8]`: 0.2 0.6 0.9 0.3 0.2 0.4 0.6\n`new$score[2:8]`: 0.2 0.6 0.9 1.0 0.2 0.4 0.6\n\n\nI suppose we could also graph our data to show changed points. One way of doing this is to plot the two sets in different colours:\n\nlibrary(ggplot2)\n\nggplot() +\n  geom_point(data = b1, aes(x = name, y = score), colour = \"red\", size = 5) +\n  geom_point(data = b2, aes(x = name, y = score), colour = \"blue\", size = 5)\n\n\n\n\n\n\n\n\nOr, possibly more elegantly, we could join our data using dplyr, then subtract one from the other, then plot the difference:\n\nlibrary(dplyr)\n\nb1 |&gt;\n  left_join(b2, by = \"name\") |&gt;\n  ggplot(aes(x = name, xend = name, y = score.y - score.x, yend = 0), colour = \"red\") +\n  geom_segment() +\n  geom_label(aes(label = name))"
   },
   {
-    "objectID": "r.html#basic-standard",
-    "href": "r.html#basic-standard",
-    "title": "KIND Community Standards: R",
+    "objectID": "rbc/2024-06-13.html#how-to-compare-two-or-more-excel-spreadsheets",
+    "href": "rbc/2024-06-13.html#how-to-compare-two-or-more-excel-spreadsheets",
+    "title": "R beginner’s club 2024-06-13",
     "section": "",
-    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
+    "text": "The basic recipe here is:\n\nread our Excel spreadsheets into R\ntry some simple base-R methods of comparison\nget more fancy with packages for more useful comparisons\n\n\n\nThis can be messy. readxl is probably the most straightforward place to start. Make sure a) that your Excel files aren’t open in Excel when you try to read them and b) that you’re happy and confident that your data is on the first worksheet (or you know the correct name of the sheet). You’ll almost certainly want to be working in an R project too to avoid too much messing around with file paths, getwd(), etc.\n\nlibrary(readxl) # to attach the readxl package\nb1 &lt;- read_xlsx(\"data/Book1.xlsx\") \nb2 &lt;- read_xlsx(\"data/Book2.xlsx\") # to read the files\n\n\n\n\nThe most obvious thing to try first is a check for equality. You’ll do this with a double equal sign, like this:\n\nb1 == b2\n\n      name score\n [1,] TRUE  TRUE\n [2,] TRUE  TRUE\n [3,] TRUE  TRUE\n [4,] TRUE  TRUE\n [5,] TRUE  TRUE\n [6,] TRUE  TRUE\n [7,] TRUE  TRUE\n [8,] TRUE  TRUE\n [9,] TRUE  TRUE\n[10,] TRUE  TRUE\n\n\n(single = is effectively the same as &lt;-)\nThat gives us back quite a complicated matrix of results, showing a cell-by-cell comparison of the two sets of data. This happens because R is vectorised - so when we compare two identically-shaped bits of data, R will assume that we want to do our comparison to each of the items in turn. If we just looked at the number values in our spreadsheets, which we could do by using the $ to refer to a column, we could:\n\nb1$score - b2$score\n\n [1] 0 0 0 0 0 0 0 0 0 0\n\n\nWhich I suppose is another way of checking for equality. So could also use a helper function to collapse all of those down into one:\n\nsum(b1$score - b2$score)\n\n[1] 0\n\n\nIf we just wanted a simple true/false measure for the data as a whole, we could recruit the very useful all() and any():\n\nall(b1 == b2) # to check all values are the same\n\n[1] TRUE\n\nany(b1 == b2) # to check any values are the same\n\n[1] TRUE\n\n\nYou could do something very similar using setequal():\n\nsetequal(b1, b2)\n\n[1] TRUE\n\n\n\n\n\nwaldo::compare() is a brilliant way of comparing complex data:\n\nwaldo::compare(b1, b2)\n\n✔ No differences\n\n\nIf we vandalise one of our datasets by changing one value, waldo does plenty of useful work to bring the correct parts of the data to our attention:\n\nb2[5,2] &lt;- 1\nwaldo::compare(b1, b2)\n\nold vs new\n                score\n  old[2, ]  0.2481382\n  old[3, ]  0.6444191\n  old[4, ]  0.8873743\n- old[5, ]  0.3361401\n+ new[5, ]  1.0000000\n  old[6, ]  0.1597596\n  old[7, ]  0.3928778\n  old[8, ]  0.5743370\n\n`old$score[2:8]`: 0.2 0.6 0.9 0.3 0.2 0.4 0.6\n`new$score[2:8]`: 0.2 0.6 0.9 1.0 0.2 0.4 0.6\n\n\nI suppose we could also graph our data to show changed points. One way of doing this is to plot the two sets in different colours:\n\nlibrary(ggplot2)\n\nggplot() +\n  geom_point(data = b1, aes(x = name, y = score), colour = \"red\", size = 5) +\n  geom_point(data = b2, aes(x = name, y = score), colour = \"blue\", size = 5)\n\n\n\n\n\n\n\n\nOr, possibly more elegantly, we could join our data using dplyr, then subtract one from the other, then plot the difference:\n\nlibrary(dplyr)\n\nb1 |&gt;\n  left_join(b2, by = \"name\") |&gt;\n  ggplot(aes(x = name, xend = name, y = score.y - score.x, yend = 0), colour = \"red\") +\n  geom_segment() +\n  geom_label(aes(label = name))"
   },
   {
-    "objectID": "r.html#enhanced-standard",
-    "href": "r.html#enhanced-standard",
-    "title": "KIND Community Standards: R",
-    "section": "Enhanced standard",
-    "text": "Enhanced standard\n\nMake explicit reference to any formal style conventions employed\nUse version control\nFor ambitious projects, consider using renv which will capture R and package versions\nFor more onerous scripts, identify memory and CPU requirements listed at start\nconsider using project templates for presentations/reports/dashboards\nConsider loading individual functions via package::function() syntax rather than wholesale package loading for namespace and performance reasons\nconsider using targets to encourage the use of functions, visually displays the build pipeline and avoids unnecessary re-running of up-to-date code"
+    "objectID": "rbc/2024-06-13.html#how-to-think-about-joins",
+    "href": "rbc/2024-06-13.html#how-to-think-about-joins",
+    "title": "R beginner’s club 2024-06-13",
+    "section": "How to think about joins?",
+    "text": "How to think about joins?\nWe did a simple join above. A join is a way of merging two datasets. Let’s demonstrate with some cut-down datasets from above. We’ll remove some of the values from our b1 set and from our b2 set:\n\nb1 &lt;- b1 |&gt;\n  slice(1:5)\n\nb1\n\n# A tibble: 5 × 2\n  name     score\n  &lt;chr&gt;    &lt;dbl&gt;\n1 kennedy  0.590\n2 victoria 0.248\n3 peter    0.644\n4 judi     0.887\n5 paul     0.336\n\n\n\nb2 &lt;- b2 |&gt;\n  slice_sample(n = 5)\n\nb2\n\n# A tibble: 5 × 2\n  name    score\n  &lt;chr&gt;   &lt;dbl&gt;\n1 kenneth 0.393\n2 kennedy 0.590\n3 peter   0.644\n4 michael 0.561\n5 judi    0.887\n\n\nThe simplest join we could do is to bind the rows from one set onto another:\n\nb1 |&gt;\n  bind_rows(b2)\n\n# A tibble: 10 × 2\n   name     score\n   &lt;chr&gt;    &lt;dbl&gt;\n 1 kennedy  0.590\n 2 victoria 0.248\n 3 peter    0.644\n 4 judi     0.887\n 5 paul     0.336\n 6 kenneth  0.393\n 7 kennedy  0.590\n 8 peter    0.644\n 9 michael  0.561\n10 judi     0.887\n\n\nThat just brings all the rows from b2 onto the end of b1. Unlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join b2:\n\nb1 |&gt;\n  left_join(b2, by = \"name\")\n\n# A tibble: 5 × 3\n  name     score.x score.y\n  &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;\n1 kennedy    0.590   0.590\n2 victoria   0.248  NA    \n3 peter      0.644   0.644\n4 judi       0.887   0.887\n5 paul       0.336  NA    \n\n\nYou should see that only the values from b2’s score column that have a corresponding name in b1 get populated, and everything else gets filled with NAs. Here’s a nice introduction to the different kinds of join you can do in dplyr."
   },
   {
-    "objectID": "r.html#considerations-for-teams-and-groups",
-    "href": "r.html#considerations-for-teams-and-groups",
-    "title": "KIND Community Standards: R",
-    "section": "Considerations for teams and groups",
-    "text": "Considerations for teams and groups\n\nHave a house code style, possibly implemented using styler Code styling for readability is important, and no-one agrees, so you’ll need to lead.\nWhen documentation is extremely important, consider using roxygen2 to encourage best documentation practice"
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-16.html#week-beginning-mon-16th-september-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-09-16.html#week-beginning-mon-16th-september-2024",
+    "title": "KIND network update",
+    "section": "Week beginning Mon 16th September 2024",
+    "text": "Week beginning Mon 16th September 2024\n\nDear colleagues,\nWelcome to our regular KIND network update. We’re starting our new Tableau for Beginner’s course next week. That uses Tableau Public so should be available to all. Hope to see you there 13.00-15.00 this coming Thursday.\nA reminder that we’ll be scheduling training sessions for November and December next week. Please get in touch ASAP if you’d like some training for your team. We can potentially offer any of our multi-session courses or any of our one-off sessions to you and your team free of charge. All that we ask is that you can commit to having 15-20 staff attend the sessions, and that you can take care of any admin and infrastructure requirements such as circulating invites, installing software etc.\nHope to see you at something soon\nBrendan"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-16.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-09-16.html#wins-of-the-week",
+    "title": "KIND network update",
+    "section": "Wins of The Week",
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nI succeeded in using INDEX and MATCH to help a colleague onboard data from a separate spreadsheet into the exact rows required. She was so chuffed. 😃 Then replaced the formulas with values using paste special.\nVolunteered to provide a brief summary of work being done by myself and fellow PHIT on developing a Lothian child poverty indicators dashboard at this weeks’ SCODAS meeting. Off the back of that there appears to be further interest for us to present at a future SCODAS session where we present the dashboard\nI ran my first (and only!) half-marathon last Sunday, completing the Great North Run - and, thanks to supporters, raising funds for Parkinson’s UK. Very chuffed with myself!\nJoined the R from Scratch session this week after not using R for almost a year and found that I actually remembered quite a lot of the content that was being taught. Win win for me and I didn’t panic too much as I thought that I had forgotten everything!"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-16.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2024-09-16.html#training-sessions",
+    "title": "KIND network update",
+    "section": "Training sessions",
+    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nTidy data in Excel\n09:30-10:30 Tue 17th September 2024\nExcel\n🌶 :beginner-level\n\n\nR from scratch (session 3)\n14:30-15:30 Tue 17th September 2024\nR\n🌶 :beginner-level\n\n\nBI for beginners (service version, session 2)\n10:00-12:00 Thu 19th September 2024\nPower BI\n🌶 :beginner-level\n\n\nTableau for beginners (session 1)\n13:00-15:00 Thu 19th September 2024\nTableau\n🌶 :beginner-level"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-16.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-09-16.html#events",
+    "title": "KIND network update",
+    "section": "Events",
+    "text": "Events\n\n3-4pm, Mon 16th September 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is joins again, with the third and final sessions on the topic. This session will concentrate on more advanced techniques - rolling joins, non-equi joins etc. As usual, we’ll do a bit of introduction and chat, and then show how these can be implemented in a range of platforms.\n1-2pm, Tue 17th September 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Lukasz Henszel - Infectious diseases notification exceedance detection (surveillance/ signals for potential outbreaks)."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-16.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-09-16.html#book-of-the-week",
+    "title": "KIND network update",
+    "section": "Book of the week",
+    "text": "Book of the week\nChris Chambers. 2019. The 7 Deadly Sins of Psychology.  ISBN 9780691192277, Worldcat. Rosalyn Pearson, a Senior Information Analyst at Public Health Scotland, suggests this book of the week. `I highly recommend The 7 Deadly Sins of Psychology by Chris Chambers. It’s all about pitfalls in real-world scientific methodology and what we can do to combat them. The title says ‘psychology’ but it applies more broadly..\nUnsubscribe from these emails"
   },
   {
     "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#week-beginning-mon-16th-september-2024",
@@ -252,11 +280,18 @@
     "text": "Download KIND book of the week data as csv"
   },
   {
+    "objectID": "kind_botw.html#the-7-deadly-sins-of-psychology",
+    "href": "kind_botw.html#the-7-deadly-sins-of-psychology",
+    "title": "KIND Book of the week",
+    "section": "11/09/2024: The 7 Deadly Sins of Psychology",
+    "text": "11/09/2024: The 7 Deadly Sins of Psychology\nChris Chambers. 2019. The 7 Deadly Sins of Psychology. ISBN 9780691192277, Worldcat link.\n Rosalyn Pearson, a Senior Information Analyst at Public Health Scotland, suggests this book of the week. `I highly recommend The 7 Deadly Sins of Psychology by Chris Chambers. It’s all about pitfalls in real-world scientific methodology and what we can do to combat them. The title says ‘psychology’ but it applies more broadly."
+  },
+  {
     "objectID": "kind_botw.html#thinking-fast-and-slow",
     "href": "kind_botw.html#thinking-fast-and-slow",
     "title": "KIND Book of the week",
     "section": "04/09/2024: Thinking, Fast and Slow",
-    "text": "04/09/2024: Thinking, Fast and Slow\nDaniel Kahneman. 2011. Thinking, Fast and Slow. ISBN 9780141033570, Worldcat link.\n This week’s book of the week was suggested by Liz Elliott, a Senior Analyst at NHS Education for Scotland, who writes: ’this very popular bestselling book discusses cognitive biases and why humans are generally bad at assessing risk and interpreting statistics. Some of the research cited in the book was found to be unsound and Kahneman himself said ‘I placed too much faith in underpowered studies’. Its an interesting read particularly with that in mind."
+    "text": "04/09/2024: Thinking, Fast and Slow\nDaniel Kahneman. 2011. Thinking, Fast and Slow. ISBN 9780141033570, Worldcat link.\n This week’s book of the week was suggested by Liz Elliott, a Senior Analyst at NHS Education for Scotland, who writes: ‘this very popular bestselling book discusses cognitive biases and why humans are generally bad at assessing risk and interpreting statistics. Some of the research cited in the book was found to be unsound and Kahneman himself said I placed too much faith in underpowered studies.’ Its an interesting read particularly with that in mind."
   },
   {
     "objectID": "kind_botw.html#clean-code-a-handbook-of-agile-software-craftsmanship",
@@ -721,109 +756,74 @@
     "text": "Resources\n\nhttps://the-turing-way.netlify.app/collaboration/chairing\nPoynard, Thierry, Mona Munteanu, Vlad Ratziu, Yves Benhamou, Vincent Di Martino, Julien Taieb, and Pierre Opolon. 2002. “Truth Survival in Clinical Research: An Evidence-Based Requiem?” Annals of Internal Medicine 136 (12): 888. DOI: 10.7326/0003-4819-136-12-200206180-00010."
   },
   {
-    "objectID": "commet/commet_2024-05-16.html",
-    "href": "commet/commet_2024-05-16.html",
-    "title": "Appraisals",
+    "objectID": "commet/commet_2023_03_07.html",
+    "href": "commet/commet_2023_03_07.html",
+    "title": "Data strategy",
     "section": "",
-    "text": "who knows their job description by heart, or has referred to it this year?\nwho keeps a work diary?\nwho has a PDP plan?"
+    "text": "Session materials\n\n\n\n\n\n\nslides  pptx /  pdf"
   },
   {
-    "objectID": "commet/commet_2024-05-16.html#poll",
-    "href": "commet/commet_2024-05-16.html#poll",
-    "title": "Appraisals",
-    "section": "",
-    "text": "who knows their job description by heart, or has referred to it this year?\nwho keeps a work diary?\nwho has a PDP plan?"
+    "objectID": "commet/commet_2023_03_07.html#overall-structure",
+    "href": "commet/commet_2023_03_07.html#overall-structure",
+    "title": "Data strategy",
+    "section": "Overall structure",
+    "text": "Overall structure\n\none vision: best use of data\nthree ambitions\nseven priority areas\nall wrapped in an ethical approach"
   },
   {
-    "objectID": "commet/commet_2024-05-16.html#background",
-    "href": "commet/commet_2024-05-16.html#background",
-    "title": "Appraisals",
-    "section": "Background",
-    "text": "Background\n\nIt’s Agenda for Change (AfC) appraisal time for many NHS staff\nbut this session is not specific to AfC appraisals"
+    "objectID": "commet/commet_2023_03_07.html#data-access",
+    "href": "commet/commet_2023_03_07.html#data-access",
+    "title": "Data strategy",
+    "section": "Data access",
+    "text": "Data access"
   },
   {
-    "objectID": "commet/commet_2024-05-16.html#the-objective",
-    "href": "commet/commet_2024-05-16.html#the-objective",
-    "title": "Appraisals",
-    "section": "The objective",
-    "text": "The objective\n\nKIND staff have some of the slowest promotion trajectories of all staff across health and care\nOur Time to Shine\n\n. . ."
+    "objectID": "commet/commet_2023_03_07.html#talent-and-culture",
+    "href": "commet/commet_2023_03_07.html#talent-and-culture",
+    "title": "Data strategy",
+    "section": "Talent and culture",
+    "text": "Talent and culture"
   },
   {
-    "objectID": "commet/commet_2024-05-16.html#small-teams",
-    "href": "commet/commet_2024-05-16.html#small-teams",
-    "title": "Appraisals",
-    "section": "Small teams",
-    "text": "Small teams"
+    "objectID": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
+    "href": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
+    "title": "Data strategy",
+    "section": "Protecting and sharing data",
+    "text": "Protecting and sharing data"
   },
   {
-    "objectID": "commet/commet_2024-05-16.html#mid-level",
-    "href": "commet/commet_2024-05-16.html#mid-level",
-    "title": "Appraisals",
-    "section": "Mid-level",
-    "text": "Mid-level"
+    "objectID": "commet/commet_2023_03_07.html#technology-and-infrastructure",
+    "href": "commet/commet_2023_03_07.html#technology-and-infrastructure",
+    "title": "Data strategy",
+    "section": "Technology and infrastructure",
+    "text": "Technology and infrastructure"
   },
   {
-    "objectID": "commet/commet_2024-05-16.html#messy-roles",
-    "href": "commet/commet_2024-05-16.html#messy-roles",
-    "title": "Appraisals",
-    "section": "Messy roles",
-    "text": "Messy roles\ntitles &lt;- readr::read_csv(\"src/kind_titles.csv\") |&gt;\n  dplyr::select(!document) \n\n3751 total titles analysed\n\n. . .\ntitles |&gt;\n  dplyr::arrange(desc(job_n)) |&gt;\n  dplyr::mutate(ratio = scales::percent(job_n / sum(job_n), 0.1)) |&gt;\n  dplyr::slice(1:6) |&gt;\n  knitr::kable()\n\n\n\njob_title\njob_n\nratio\n\n\n\n\nsenior information analyst\n347\n9.3%\n\n\ninformation analyst\n333\n8.9%\n\n\nprincipal information analyst\n118\n3.1%\n\n\ndata analyst\n61\n1.6%\n\n\ndata management officer\n43\n1.1%\n\n\nhealth intelligence analyst\n39\n1.0%"
+    "objectID": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
+    "href": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
+    "title": "Data strategy",
+    "section": "Information standards and interoperability",
+    "text": "Information standards and interoperability"
   },
   {
-    "objectID": "commet/commet_2024-05-16.html#messy-roles-1",
-    "href": "commet/commet_2024-05-16.html#messy-roles-1",
-    "title": "Appraisals",
-    "section": "Messy roles",
-    "text": "Messy roles\n\nno standard terminology\n\n“senior officer” from AfC band 3 - band 8\n\ntoo many titles (e.g. 400+ KIND-ish job titles compared to c.85 nursing roles)\n\nbiggest is about 9% of the KIND network (information analyst)\n\nmassively higher qualifications found in KIND roles compared to many other careers"
+    "objectID": "commet/commet_2023_03_07.html#creating-insights-from-data",
+    "href": "commet/commet_2023_03_07.html#creating-insights-from-data",
+    "title": "Data strategy",
+    "section": "Creating insights from data",
+    "text": "Creating insights from data"
   },
   {
-    "objectID": "commet/commet_2024-05-16.html#ddat",
-    "href": "commet/commet_2024-05-16.html#ddat",
-    "title": "Appraisals",
-    "section": "DDaT",
-    "text": "DDaT\n\nthere’s some interesting policy work going on to rationalise careers and titles\nbut this is a good way from implementation"
+    "objectID": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
+    "href": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
+    "title": "Data strategy",
+    "section": "Supporting research and innovation",
+    "text": "Supporting research and innovation"
   },
   {
-    "objectID": "commet/commet_2024-05-16.html#claiming-credit",
-    "href": "commet/commet_2024-05-16.html#claiming-credit",
-    "title": "Appraisals",
-    "section": "Claiming credit",
-    "text": "Claiming credit\n\nentirely informally and without an evidence-base: I think many of us are not very good at claiming credit for the work we do\n\nsomething about humility and modesty in the analytic temperament?\nDunning-Kruger?\nsocial conditioning?\nintroversion?\nniche skills in work environment?\n\nwhatever the cause, (hunch) I think we under-rate our own expertise"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#tips",
-    "href": "commet/commet_2024-05-16.html#tips",
-    "title": "Appraisals",
-    "section": "Tips",
-    "text": "Tips\n\ndiary / log\n\ntime and task\nI basically OneNote a load of rubbishy bits, and make no effort to sort them until needed\n\nlook at your JD\nlook at your KSF dimensions\nlook at wider skills frameworks\n“I did x in y, which means z in …”\n“I need to x, which means I need y…”"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#open-goals",
-    "href": "commet/commet_2024-05-16.html#open-goals",
-    "title": "Appraisals",
-    "section": "Open goals",
-    "text": "Open goals\n\nexcessively manual processes\n\nsaved you time? Saved us money!\n\ncompliance\nimpact and change\ninformal training and support\nmanagement-like activity"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#smart",
-    "href": "commet/commet_2024-05-16.html#smart",
-    "title": "Appraisals",
-    "section": "SMART",
-    "text": "SMART\n\nSpecific, Measurable, Achievable, Relevant, and Time-Bound\nconceptually, a horrible mess\nbut dead useful for translating vague wants and needs into something more directed"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#share",
-    "href": "commet/commet_2024-05-16.html#share",
-    "title": "Appraisals",
-    "section": "Share",
-    "text": "Share\n\nplease share one achievement - one thing you did last year\nask your group to help you formulate it - how can I sell this nicely?"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#well-formed-learning-needs",
-    "href": "commet/commet_2024-05-16.html#well-formed-learning-needs",
-    "title": "Appraisals",
-    "section": "Well-formed learning needs?",
-    "text": "Well-formed learning needs?"
+    "objectID": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
+    "href": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
+    "title": "Data strategy",
+    "section": "Ethical approaches to data",
+    "text": "Ethical approaches to data"
   },
   {
     "objectID": "commet/commet_2023-11-23.html",
@@ -938,81 +938,109 @@
     "text": "Bit of live development\n\nReverse and Invert\n“reverse and invert all integer values” in a vector\ntests first!\ngranular tests: quick, small and simple\nbasic code: just pass the test\nadd test, pass, refactor, repeat\nI ended up with something like as.integer(intToUtf8(rev(utf8ToInt(as.character(n)))))"
   },
   {
-    "objectID": "commet/commet_2023_03_07.html",
-    "href": "commet/commet_2023_03_07.html",
-    "title": "Data strategy",
+    "objectID": "commet/commet_2024-05-16.html",
+    "href": "commet/commet_2024-05-16.html",
+    "title": "Appraisals",
     "section": "",
-    "text": "Session materials\n\n\n\n\n\n\nslides  pptx /  pdf"
+    "text": "who knows their job description by heart, or has referred to it this year?\nwho keeps a work diary?\nwho has a PDP plan?"
   },
   {
-    "objectID": "commet/commet_2023_03_07.html#overall-structure",
-    "href": "commet/commet_2023_03_07.html#overall-structure",
-    "title": "Data strategy",
-    "section": "Overall structure",
-    "text": "Overall structure\n\none vision: best use of data\nthree ambitions\nseven priority areas\nall wrapped in an ethical approach"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#data-access",
-    "href": "commet/commet_2023_03_07.html#data-access",
-    "title": "Data strategy",
-    "section": "Data access",
-    "text": "Data access"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#talent-and-culture",
-    "href": "commet/commet_2023_03_07.html#talent-and-culture",
-    "title": "Data strategy",
-    "section": "Talent and culture",
-    "text": "Talent and culture"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
-    "href": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
-    "title": "Data strategy",
-    "section": "Protecting and sharing data",
-    "text": "Protecting and sharing data"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#technology-and-infrastructure",
-    "href": "commet/commet_2023_03_07.html#technology-and-infrastructure",
-    "title": "Data strategy",
-    "section": "Technology and infrastructure",
-    "text": "Technology and infrastructure"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
-    "href": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
-    "title": "Data strategy",
-    "section": "Information standards and interoperability",
-    "text": "Information standards and interoperability"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#creating-insights-from-data",
-    "href": "commet/commet_2023_03_07.html#creating-insights-from-data",
-    "title": "Data strategy",
-    "section": "Creating insights from data",
-    "text": "Creating insights from data"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
-    "href": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
-    "title": "Data strategy",
-    "section": "Supporting research and innovation",
-    "text": "Supporting research and innovation"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
-    "href": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
-    "title": "Data strategy",
-    "section": "Ethical approaches to data",
-    "text": "Ethical approaches to data"
-  },
-  {
-    "objectID": "commet/commet_2024-09-09_joins2.html",
-    "href": "commet/commet_2024-09-09_joins2.html",
-    "title": "Joins 2",
+    "objectID": "commet/commet_2024-05-16.html#poll",
+    "href": "commet/commet_2024-05-16.html#poll",
+    "title": "Appraisals",
     "section": "",
-    "text": "library(dplyr)"
+    "text": "who knows their job description by heart, or has referred to it this year?\nwho keeps a work diary?\nwho has a PDP plan?"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#background",
+    "href": "commet/commet_2024-05-16.html#background",
+    "title": "Appraisals",
+    "section": "Background",
+    "text": "Background\n\nIt’s Agenda for Change (AfC) appraisal time for many NHS staff\nbut this session is not specific to AfC appraisals"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#the-objective",
+    "href": "commet/commet_2024-05-16.html#the-objective",
+    "title": "Appraisals",
+    "section": "The objective",
+    "text": "The objective\n\nKIND staff have some of the slowest promotion trajectories of all staff across health and care\nOur Time to Shine\n\n. . ."
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#small-teams",
+    "href": "commet/commet_2024-05-16.html#small-teams",
+    "title": "Appraisals",
+    "section": "Small teams",
+    "text": "Small teams"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#mid-level",
+    "href": "commet/commet_2024-05-16.html#mid-level",
+    "title": "Appraisals",
+    "section": "Mid-level",
+    "text": "Mid-level"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#messy-roles",
+    "href": "commet/commet_2024-05-16.html#messy-roles",
+    "title": "Appraisals",
+    "section": "Messy roles",
+    "text": "Messy roles\ntitles &lt;- readr::read_csv(\"src/kind_titles.csv\") |&gt;\n  dplyr::select(!document) \n\n3751 total titles analysed\n\n. . .\ntitles |&gt;\n  dplyr::arrange(desc(job_n)) |&gt;\n  dplyr::mutate(ratio = scales::percent(job_n / sum(job_n), 0.1)) |&gt;\n  dplyr::slice(1:6) |&gt;\n  knitr::kable()\n\n\n\njob_title\njob_n\nratio\n\n\n\n\nsenior information analyst\n347\n9.3%\n\n\ninformation analyst\n333\n8.9%\n\n\nprincipal information analyst\n118\n3.1%\n\n\ndata analyst\n61\n1.6%\n\n\ndata management officer\n43\n1.1%\n\n\nhealth intelligence analyst\n39\n1.0%"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#messy-roles-1",
+    "href": "commet/commet_2024-05-16.html#messy-roles-1",
+    "title": "Appraisals",
+    "section": "Messy roles",
+    "text": "Messy roles\n\nno standard terminology\n\n“senior officer” from AfC band 3 - band 8\n\ntoo many titles (e.g. 400+ KIND-ish job titles compared to c.85 nursing roles)\n\nbiggest is about 9% of the KIND network (information analyst)\n\nmassively higher qualifications found in KIND roles compared to many other careers"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#ddat",
+    "href": "commet/commet_2024-05-16.html#ddat",
+    "title": "Appraisals",
+    "section": "DDaT",
+    "text": "DDaT\n\nthere’s some interesting policy work going on to rationalise careers and titles\nbut this is a good way from implementation"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#claiming-credit",
+    "href": "commet/commet_2024-05-16.html#claiming-credit",
+    "title": "Appraisals",
+    "section": "Claiming credit",
+    "text": "Claiming credit\n\nentirely informally and without an evidence-base: I think many of us are not very good at claiming credit for the work we do\n\nsomething about humility and modesty in the analytic temperament?\nDunning-Kruger?\nsocial conditioning?\nintroversion?\nniche skills in work environment?\n\nwhatever the cause, (hunch) I think we under-rate our own expertise"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#tips",
+    "href": "commet/commet_2024-05-16.html#tips",
+    "title": "Appraisals",
+    "section": "Tips",
+    "text": "Tips\n\ndiary / log\n\ntime and task\nI basically OneNote a load of rubbishy bits, and make no effort to sort them until needed\n\nlook at your JD\nlook at your KSF dimensions\nlook at wider skills frameworks\n“I did x in y, which means z in …”\n“I need to x, which means I need y…”"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#open-goals",
+    "href": "commet/commet_2024-05-16.html#open-goals",
+    "title": "Appraisals",
+    "section": "Open goals",
+    "text": "Open goals\n\nexcessively manual processes\n\nsaved you time? Saved us money!\n\ncompliance\nimpact and change\ninformal training and support\nmanagement-like activity"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#smart",
+    "href": "commet/commet_2024-05-16.html#smart",
+    "title": "Appraisals",
+    "section": "SMART",
+    "text": "SMART\n\nSpecific, Measurable, Achievable, Relevant, and Time-Bound\nconceptually, a horrible mess\nbut dead useful for translating vague wants and needs into something more directed"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#share",
+    "href": "commet/commet_2024-05-16.html#share",
+    "title": "Appraisals",
+    "section": "Share",
+    "text": "Share\n\nplease share one achievement - one thing you did last year\nask your group to help you formulate it - how can I sell this nicely?"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#well-formed-learning-needs",
+    "href": "commet/commet_2024-05-16.html#well-formed-learning-needs",
+    "title": "Appraisals",
+    "section": "Well-formed learning needs?",
+    "text": "Well-formed learning needs?"
   },
   {
     "objectID": "commet/commet_2024_09_02.html",
@@ -1096,7 +1124,7 @@
     "href": "kind_cms.html",
     "title": "KIND community meetups",
     "section": "",
-    "text": "These are our main weekly social learning activity. They’re usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell.\n\nDownload community meetup data as csv\nDownload community meetup ideas as csv\n\n\nCurrent community meetup scheduleFuture community meetup ideasArchive of past sessions\n\n\n\nCurrent community meetup schedule\n\n\n\n\n\n\n\nDate\nTopic\nsubtopic\n\n\n\n\n2024-09-16\nJoins 3: the fancy stuff (rolling/inequality etc)\n\n\n\n2024-09-23\nSQL alphabet soup\n\n\n\n2024-09-30\nArt of the possible / showing off great projects\n\n\n\n2024-10-07\nTurning a user request into something you can work with\n\n\n\n2024-10-14\nNO SESSION\n\n\n\n2024-10-21\nNO SESSION\n\n\n\n2024-10-28\nNO SESSION\n\n\n\n2024-11-04\nfree parking\n\n\n\n2024-11-11\nR\nduckdb tech demo / group of use-cases\n\n\n2024-11-18\nTeaching maintenance\n\n\n\n2024-11-25\nExcel\nExcel programming/VBA/lambdas \n\n\n2024-12-02\nfree parking\n\n\n\n2024-12-09\nResearch data management\n\n\n\n2024-12-16\nFirst-steps toolkit for a junior/solo/reluctant/occasional analyst\n\n\n\n\n\n\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nData\nSafe havens / disclosure control / safe researcher training\n\n\n\nData\nDisclosure and pseudoanonymised data\n\n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nData\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\nMisc\nA non-web person’s intro to Java\n\n\n\nPower BI\ncorrelations and linear models in Power BI\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler\n\n\nR\nTidytext, sentiment analysis \n\n\n\nR \nData.table / tidyverse / polars / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nR \nR package roundup - Echarts4r, making PowerPoint in RMD, snakecase\n\n\n\nSkills\nWriting for different audiences\n\n\n\nStats\nDirected Acyclic Graphs (DAGs)\n\n\n\nStats\nPredictive modelling\n\n\n\nStats\nBayesian stats\n\n\n\nR\nTesting code\nEllen Young\n\n\nR\nGithub collaborations and getting Git installed\nGemma Whittaker\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nDate\n\n\nCategories\n\n\n\n\n\n\nAppraisals\n\n\nMay 16, 2024\n\n\nskills, career developement, appraisal\n\n\n\n\nData strategy\n\n\nMar 7, 2023\n\n\nData strategy\n\n\n\n\nJoins 1: introduction\n\n\nSep 2, 2024\n\n\nJoins, beginner, Excel, R, Power Query\n\n\n\n\nJoins 2\n\n\nSep 9, 2024\n\n\nJoins\n\n\n\n\nLeading a (training) session\n\n\nDec 4, 2023\n\n\nskills, training, career progression, appraisal\n\n\n\n\nTest driven development\n\n\nNov 21, 2023\n\n\nR, testing, intermediate, excel\n\n\n\n\n\nNo matching items"
+    "text": "These are our main weekly social learning activity. They’re usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell.\n\nDownload community meetup data as csv\nDownload community meetup ideas as csv\n\n\nCurrent community meetup scheduleFuture community meetup ideasArchive of past sessions\n\n\n\nCurrent community meetup schedule\n\n\n\n\n\n\n\nDate\nTopic\nsubtopic\n\n\n\n\n2024-09-16\nJoins 3: the fancy stuff (rolling/inequality etc)\n\n\n\n2024-09-23\nSQL alphabet soup\n\n\n\n2024-09-30\nArt of the possible / showing off great projects\n\n\n\n2024-10-07\nTurning a user request into something you can work with\n\n\n\n2024-10-14\nNO SESSION\n\n\n\n2024-10-21\nNO SESSION\n\n\n\n2024-10-28\nNO SESSION\n\n\n\n2024-11-04\nfree parking\n\n\n\n2024-11-11\nR\nduckdb tech demo / group of use-cases\n\n\n2024-11-18\nTeaching maintenance\n\n\n\n2024-11-25\nExcel\nExcel programming/VBA/lambdas \n\n\n2024-12-02\nfree parking\n\n\n\n2024-12-09\nResearch data management\n\n\n\n2024-12-16\nFirst-steps toolkit for a junior/solo/reluctant/occasional analyst\n\n\n\n\n\n\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nData\nSafe havens / disclosure control / safe researcher training\n\n\n\nData\nDisclosure and pseudoanonymised data\n\n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nData\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\nMisc\nA non-web person’s intro to Java\n\n\n\nPower BI\ncorrelations and linear models in Power BI\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler\n\n\nR\nTidytext, sentiment analysis \n\n\n\nR \nData.table / tidyverse / polars / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nR \nR package roundup - Echarts4r, making PowerPoint in RMD, snakecase\n\n\n\nSkills\nWriting for different audiences\n\n\n\nStats\nDirected Acyclic Graphs (DAGs)\n\n\n\nStats\nPredictive modelling\n\n\n\nStats\nBayesian stats\n\n\n\nR\nTesting code\nEllen Young\n\n\nR\nGithub collaborations and getting Git installed\nGemma Whittaker\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nDate\n\n\nCategories\n\n\n\n\n\n\nAppraisals\n\n\nMay 16, 2024\n\n\nskills, career developement, appraisal\n\n\n\n\nData strategy\n\n\nMar 7, 2023\n\n\nData strategy\n\n\n\n\nJoins 1: introduction\n\n\nSep 2, 2024\n\n\nJoins, beginner, Excel, R, Power Query\n\n\n\n\nLeading a (training) session\n\n\nDec 4, 2023\n\n\nskills, training, career progression, appraisal\n\n\n\n\nTest driven development\n\n\nNov 21, 2023\n\n\nR, testing, intermediate, excel\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "ml_archive.html",
@@ -1176,53 +1204,32 @@
     "text": "Book of the week\nDaniel Kahneman. 2011. Thinking, Fast and Slow.  ISBN 9780141033570, Worldcat. This week’s book of the week was suggested by Liz Elliott, a Senior Analyst at NHS Education for Scotland, who writes: ’this very popular bestselling book discusses cognitive biases and why humans are generally bad at assessing risk and interpreting statistics. Some of the research cited in the book was found to be unsound and Kahneman himself said ‘I placed too much faith in underpowered studies’. Its an interesting read particularly with that in mind..\nUnsubscribe from these emails"
   },
   {
-    "objectID": "rbc/2024-06-13.html",
-    "href": "rbc/2024-06-13.html",
-    "title": "R beginner’s club 2024-06-13",
+    "objectID": "r.html",
+    "href": "r.html",
+    "title": "KIND Community Standards: R",
     "section": "",
-    "text": "The basic recipe here is:\n\nread our Excel spreadsheets into R\ntry some simple base-R methods of comparison\nget more fancy with packages for more useful comparisons\n\n\n\nThis can be messy. readxl is probably the most straightforward place to start. Make sure a) that your Excel files aren’t open in Excel when you try to read them and b) that you’re happy and confident that your data is on the first worksheet (or you know the correct name of the sheet). You’ll almost certainly want to be working in an R project too to avoid too much messing around with file paths, getwd(), etc.\n\nlibrary(readxl) # to attach the readxl package\nb1 &lt;- read_xlsx(\"data/Book1.xlsx\") \nb2 &lt;- read_xlsx(\"data/Book2.xlsx\") # to read the files\n\n\n\n\nThe most obvious thing to try first is a check for equality. You’ll do this with a double equal sign, like this:\n\nb1 == b2\n\n      name score\n [1,] TRUE  TRUE\n [2,] TRUE  TRUE\n [3,] TRUE  TRUE\n [4,] TRUE  TRUE\n [5,] TRUE  TRUE\n [6,] TRUE  TRUE\n [7,] TRUE  TRUE\n [8,] TRUE  TRUE\n [9,] TRUE  TRUE\n[10,] TRUE  TRUE\n\n\n(single = is effectively the same as &lt;-)\nThat gives us back quite a complicated matrix of results, showing a cell-by-cell comparison of the two sets of data. This happens because R is vectorised - so when we compare two identically-shaped bits of data, R will assume that we want to do our comparison to each of the items in turn. If we just looked at the number values in our spreadsheets, which we could do by using the $ to refer to a column, we could:\n\nb1$score - b2$score\n\n [1] 0 0 0 0 0 0 0 0 0 0\n\n\nWhich I suppose is another way of checking for equality. So could also use a helper function to collapse all of those down into one:\n\nsum(b1$score - b2$score)\n\n[1] 0\n\n\nIf we just wanted a simple true/false measure for the data as a whole, we could recruit the very useful all() and any():\n\nall(b1 == b2) # to check all values are the same\n\n[1] TRUE\n\nany(b1 == b2) # to check any values are the same\n\n[1] TRUE\n\n\nYou could do something very similar using setequal():\n\nsetequal(b1, b2)\n\n[1] TRUE\n\n\n\n\n\nwaldo::compare() is a brilliant way of comparing complex data:\n\nwaldo::compare(b1, b2)\n\n✔ No differences\n\n\nIf we vandalise one of our datasets by changing one value, waldo does plenty of useful work to bring the correct parts of the data to our attention:\n\nb2[5,2] &lt;- 1\nwaldo::compare(b1, b2)\n\nold vs new\n                score\n  old[2, ]  0.2481382\n  old[3, ]  0.6444191\n  old[4, ]  0.8873743\n- old[5, ]  0.3361401\n+ new[5, ]  1.0000000\n  old[6, ]  0.1597596\n  old[7, ]  0.3928778\n  old[8, ]  0.5743370\n\n`old$score[2:8]`: 0.2 0.6 0.9 0.3 0.2 0.4 0.6\n`new$score[2:8]`: 0.2 0.6 0.9 1.0 0.2 0.4 0.6\n\n\nI suppose we could also graph our data to show changed points. One way of doing this is to plot the two sets in different colours:\n\nlibrary(ggplot2)\n\nggplot() +\n  geom_point(data = b1, aes(x = name, y = score), colour = \"red\", size = 5) +\n  geom_point(data = b2, aes(x = name, y = score), colour = \"blue\", size = 5)\n\n\n\n\n\n\n\n\nOr, possibly more elegantly, we could join our data using dplyr, then subtract one from the other, then plot the difference:\n\nlibrary(dplyr)\n\nb1 |&gt;\n  left_join(b2, by = \"name\") |&gt;\n  ggplot(aes(x = name, xend = name, y = score.y - score.x, yend = 0), colour = \"red\") +\n  geom_segment() +\n  geom_label(aes(label = name))"
+    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
   },
   {
-    "objectID": "rbc/2024-06-13.html#how-to-compare-two-or-more-excel-spreadsheets",
-    "href": "rbc/2024-06-13.html#how-to-compare-two-or-more-excel-spreadsheets",
-    "title": "R beginner’s club 2024-06-13",
+    "objectID": "r.html#basic-standard",
+    "href": "r.html#basic-standard",
+    "title": "KIND Community Standards: R",
     "section": "",
-    "text": "The basic recipe here is:\n\nread our Excel spreadsheets into R\ntry some simple base-R methods of comparison\nget more fancy with packages for more useful comparisons\n\n\n\nThis can be messy. readxl is probably the most straightforward place to start. Make sure a) that your Excel files aren’t open in Excel when you try to read them and b) that you’re happy and confident that your data is on the first worksheet (or you know the correct name of the sheet). You’ll almost certainly want to be working in an R project too to avoid too much messing around with file paths, getwd(), etc.\n\nlibrary(readxl) # to attach the readxl package\nb1 &lt;- read_xlsx(\"data/Book1.xlsx\") \nb2 &lt;- read_xlsx(\"data/Book2.xlsx\") # to read the files\n\n\n\n\nThe most obvious thing to try first is a check for equality. You’ll do this with a double equal sign, like this:\n\nb1 == b2\n\n      name score\n [1,] TRUE  TRUE\n [2,] TRUE  TRUE\n [3,] TRUE  TRUE\n [4,] TRUE  TRUE\n [5,] TRUE  TRUE\n [6,] TRUE  TRUE\n [7,] TRUE  TRUE\n [8,] TRUE  TRUE\n [9,] TRUE  TRUE\n[10,] TRUE  TRUE\n\n\n(single = is effectively the same as &lt;-)\nThat gives us back quite a complicated matrix of results, showing a cell-by-cell comparison of the two sets of data. This happens because R is vectorised - so when we compare two identically-shaped bits of data, R will assume that we want to do our comparison to each of the items in turn. If we just looked at the number values in our spreadsheets, which we could do by using the $ to refer to a column, we could:\n\nb1$score - b2$score\n\n [1] 0 0 0 0 0 0 0 0 0 0\n\n\nWhich I suppose is another way of checking for equality. So could also use a helper function to collapse all of those down into one:\n\nsum(b1$score - b2$score)\n\n[1] 0\n\n\nIf we just wanted a simple true/false measure for the data as a whole, we could recruit the very useful all() and any():\n\nall(b1 == b2) # to check all values are the same\n\n[1] TRUE\n\nany(b1 == b2) # to check any values are the same\n\n[1] TRUE\n\n\nYou could do something very similar using setequal():\n\nsetequal(b1, b2)\n\n[1] TRUE\n\n\n\n\n\nwaldo::compare() is a brilliant way of comparing complex data:\n\nwaldo::compare(b1, b2)\n\n✔ No differences\n\n\nIf we vandalise one of our datasets by changing one value, waldo does plenty of useful work to bring the correct parts of the data to our attention:\n\nb2[5,2] &lt;- 1\nwaldo::compare(b1, b2)\n\nold vs new\n                score\n  old[2, ]  0.2481382\n  old[3, ]  0.6444191\n  old[4, ]  0.8873743\n- old[5, ]  0.3361401\n+ new[5, ]  1.0000000\n  old[6, ]  0.1597596\n  old[7, ]  0.3928778\n  old[8, ]  0.5743370\n\n`old$score[2:8]`: 0.2 0.6 0.9 0.3 0.2 0.4 0.6\n`new$score[2:8]`: 0.2 0.6 0.9 1.0 0.2 0.4 0.6\n\n\nI suppose we could also graph our data to show changed points. One way of doing this is to plot the two sets in different colours:\n\nlibrary(ggplot2)\n\nggplot() +\n  geom_point(data = b1, aes(x = name, y = score), colour = \"red\", size = 5) +\n  geom_point(data = b2, aes(x = name, y = score), colour = \"blue\", size = 5)\n\n\n\n\n\n\n\n\nOr, possibly more elegantly, we could join our data using dplyr, then subtract one from the other, then plot the difference:\n\nlibrary(dplyr)\n\nb1 |&gt;\n  left_join(b2, by = \"name\") |&gt;\n  ggplot(aes(x = name, xend = name, y = score.y - score.x, yend = 0), colour = \"red\") +\n  geom_segment() +\n  geom_label(aes(label = name))"
+    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
   },
   {
-    "objectID": "rbc/2024-06-13.html#how-to-think-about-joins",
-    "href": "rbc/2024-06-13.html#how-to-think-about-joins",
-    "title": "R beginner’s club 2024-06-13",
-    "section": "How to think about joins?",
-    "text": "How to think about joins?\nWe did a simple join above. A join is a way of merging two datasets. Let’s demonstrate with some cut-down datasets from above. We’ll remove some of the values from our b1 set and from our b2 set:\n\nb1 &lt;- b1 |&gt;\n  slice(1:5)\n\nb1\n\n# A tibble: 5 × 2\n  name     score\n  &lt;chr&gt;    &lt;dbl&gt;\n1 kennedy  0.590\n2 victoria 0.248\n3 peter    0.644\n4 judi     0.887\n5 paul     0.336\n\n\n\nb2 &lt;- b2 |&gt;\n  slice_sample(n = 5)\n\nb2\n\n# A tibble: 5 × 2\n  name    score\n  &lt;chr&gt;   &lt;dbl&gt;\n1 kenneth 0.393\n2 kennedy 0.590\n3 peter   0.644\n4 michael 0.561\n5 judi    0.887\n\n\nThe simplest join we could do is to bind the rows from one set onto another:\n\nb1 |&gt;\n  bind_rows(b2)\n\n# A tibble: 10 × 2\n   name     score\n   &lt;chr&gt;    &lt;dbl&gt;\n 1 kennedy  0.590\n 2 victoria 0.248\n 3 peter    0.644\n 4 judi     0.887\n 5 paul     0.336\n 6 kenneth  0.393\n 7 kennedy  0.590\n 8 peter    0.644\n 9 michael  0.561\n10 judi     0.887\n\n\nThat just brings all the rows from b2 onto the end of b1. Unlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join b2:\n\nb1 |&gt;\n  left_join(b2, by = \"name\")\n\n# A tibble: 5 × 3\n  name     score.x score.y\n  &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;\n1 kennedy    0.590   0.590\n2 victoria   0.248  NA    \n3 peter      0.644   0.644\n4 judi       0.887   0.887\n5 paul       0.336  NA    \n\n\nYou should see that only the values from b2’s score column that have a corresponding name in b1 get populated, and everything else gets filled with NAs. Here’s a nice introduction to the different kinds of join you can do in dplyr."
+    "objectID": "r.html#enhanced-standard",
+    "href": "r.html#enhanced-standard",
+    "title": "KIND Community Standards: R",
+    "section": "Enhanced standard",
+    "text": "Enhanced standard\n\nMake explicit reference to any formal style conventions employed\nUse version control\nFor ambitious projects, consider using renv which will capture R and package versions\nFor more onerous scripts, identify memory and CPU requirements listed at start\nconsider using project templates for presentations/reports/dashboards\nConsider loading individual functions via package::function() syntax rather than wholesale package loading for namespace and performance reasons\nconsider using targets to encourage the use of functions, visually displays the build pipeline and avoids unnecessary re-running of up-to-date code"
   },
   {
-    "objectID": "rreadgr.html",
-    "href": "rreadgr.html",
-    "title": "R reading group",
-    "section": "",
-    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users."
-  },
-  {
-    "objectID": "rreadgr.html#about",
-    "href": "rreadgr.html#about",
-    "title": "R reading group",
-    "section": "",
-    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users."
-  },
-  {
-    "objectID": "rreadgr.html#schedule",
-    "href": "rreadgr.html#schedule",
-    "title": "R reading group",
-    "section": "Schedule",
-    "text": "Schedule\n\nThursday, 3-4pm BST, 26th September 2024\nThursday, 3-4pm GMT, 21st November 2024\nThursday, 3-4pm GMT, 19th December 2024\n\nreadings tba"
-  },
-  {
-    "objectID": "kind_botw.html#the-7-deadly-sins-of-psychology",
-    "href": "kind_botw.html#the-7-deadly-sins-of-psychology",
-    "title": "KIND Book of the week",
-    "section": "11/09/2024: The 7 Deadly Sins of Psychology",
-    "text": "11/09/2024: The 7 Deadly Sins of Psychology\nChris Chambers. 2019. The 7 Deadly Sins of Psychology. ISBN 9780691192277, Worldcat link.\n Rosalyn Pearson, a Senior Information Analyst at Public Health Scotland, suggests this book of the week. `I highly recommend The 7 Deadly Sins of Psychology by Chris Chambers. It’s all about pitfalls in real-world scientific methodology and what we can do to combat them. The title says ‘psychology’ but it applies more broadly."
+    "objectID": "r.html#considerations-for-teams-and-groups",
+    "href": "r.html#considerations-for-teams-and-groups",
+    "title": "KIND Community Standards: R",
+    "section": "Considerations for teams and groups",
+    "text": "Considerations for teams and groups\n\nHave a house code style, possibly implemented using styler Code styling for readability is important, and no-one agrees, so you’ll need to lead.\nWhen documentation is extremely important, consider using roxygen2 to encourage best documentation practice"
   },
   {
     "objectID": "rbc/2024-09-12.html",
@@ -1251,5 +1258,26 @@
     "title": "R beginner’s club 2024-09-12",
     "section": "Any tips for working in R with limited RAM?",
     "text": "Any tips for working in R with limited RAM?\nThis was an inquiry from someone trying to work in R in Windows with 8gB of RAM. That’s going to be a challenge, unfortunately, especially if you need to run other memory-hungry stuff concurrently (Teams, e.g). R doesn’t have much in the way of memory management, so aside from patience, the general advice is to keep e.g. the data that you’re working with as small as possible. You’ll usually load your working data into memory, and so if that data is larger than the available memory R will slow to a crawl as it’s forced to write that data back to disk again.\nOne important exception: R gets very memory-inefficient if you grow objects. If you’ve got a choice between growing an object:\n\na &lt;- vector(\"numeric\")\n\nfor (i in 1:100){\n  a &lt;- c(a, i)\n}\n\nOr creating an object, and then assigning into it:\n\nb &lt;- vector(\"numeric\", 100L)\nfor (i in 1:100){\n  b[i] &lt;- i\n}\n\nYou should always choose the latter."
+  },
+  {
+    "objectID": "rreadgr.html",
+    "href": "rreadgr.html",
+    "title": "R reading group",
+    "section": "",
+    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users."
+  },
+  {
+    "objectID": "rreadgr.html#about",
+    "href": "rreadgr.html#about",
+    "title": "R reading group",
+    "section": "",
+    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users."
+  },
+  {
+    "objectID": "rreadgr.html#schedule",
+    "href": "rreadgr.html#schedule",
+    "title": "R reading group",
+    "section": "Schedule",
+    "text": "Schedule\n\nThursday, 3-4pm BST, 26th September 2024\nThursday, 3-4pm GMT, 21st November 2024\nThursday, 3-4pm GMT, 19th December 2024\n\nreadings tba"
   }
 ]

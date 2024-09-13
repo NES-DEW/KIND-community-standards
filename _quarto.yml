@@ -28,10 +28,16 @@ website:
         menu:
           - href: rreadgr.qmd
             text: R reading group
-          - href: rbc/about.qmd
-            text: R beginner's club
           - href: kind_cms.qmd
             text: Community meetups
+      - text: R beginner's club
+        menu: 
+          - href: rbc/about.qmd
+            text: about
+          - href: rbc/2024-06-13.qmd
+            text: 2024-06-13
+          - href: rbc/2024-09-12.qmd
+            text: 2024-09-12
       - href: faq.qmd
         text: KIND FAQ
       - href: mentoring.qmd
