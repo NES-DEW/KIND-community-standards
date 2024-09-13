@@ -1,0 +1,15 @@
+{
+  "hash": "2185e4e67f219cad3a85ec80e2745703",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Joins 2\"\ndate: 2024-09-09\ncategories: [Joins]\nexecute: \n  output: asis\n  echo: true\neditor_options: \n  chunk_output_type: console\n---\n\n\n```{.r .cell-code}\nlibrary(dplyr)\n```\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

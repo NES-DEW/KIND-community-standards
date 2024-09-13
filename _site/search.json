@@ -81,14 +81,14 @@
     "href": "rbc/about.html#archive",
     "title": "About R beginner’s club",
     "section": "Archive",
-    "text": "Archive\nR beginner’s club 13th June 2024"
+    "text": "Archive\nR beginner’s club 13th June 2024  R beginner’s club 12th Sept 2024"
   },
   {
     "objectID": "rbc/about.html#previous-attendees-have-said",
     "href": "rbc/about.html#previous-attendees-have-said",
     "title": "About R beginner’s club",
     "section": "Previous attendees have said…",
-    "text": "Previous attendees have said…\n\n9 previous attendees have left feedback\n89% said that this session was pitched correctly\n100% would recommend this session to a colleague\n\n\n\n\n\n\n\nThree random comments from previous attendees\n\n\n\n\nThe session was really helpful and helped point me in the right direction for a project I am working on.\nI wondered if people who are completely new to R might have been a bit daunted by the speed at which we went through things? I really like the approach of asking people about the actual issues they’re facing though. I’m going to be aware of what I get stuck on to bring to future sessions. I’m really excited about this new club!\nEven my simple brain could understand the topic covered"
+    "text": "Previous attendees have said…\n\n9 previous attendees have left feedback\n89% said that this session was pitched correctly\n100% would recommend this session to a colleague\n\n\n\n\n\n\n\nThree random comments from previous attendees\n\n\n\n\nThe session was really helpful and helped point me in the right direction for a project I am working on.\nThey’re very informative and honest in that Brendan will specify scenarios of best use and any limitations. I find some of the sessions a bit rushed but I think that might be more about my ability and comprehension.\nAs an occasional R user this was the perfect way to get a refresher and learn joins and file comparisons which are very relevant for my job. Also, great to have a brief personal introduction at the beginning to make it easier to collaborate beyond the session if needed.."
   },
   {
     "objectID": "r.html",
@@ -119,11 +119,11 @@
     "text": "Considerations for teams and groups\n\nHave a house code style, possibly implemented using styler Code styling for readability is important, and no-one agrees, so you’ll need to lead.\nWhen documentation is extremely important, consider using roxygen2 to encourage best documentation practice"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#week-beginning-mon-2nd-september-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#week-beginning-mon-2nd-september-2024",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#week-beginning-mon-16th-september-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#week-beginning-mon-16th-september-2024",
     "title": "KIND network update",
-    "section": "Week beginning Mon 2nd September 2024",
-    "text": "Week beginning Mon 2nd September 2024\n\nDear colleagues,\nWelcome to our regular KIND network update. We have a back-to-school feel to the coming week, with the first sessions of our Excel and R beginners courses. These will be joined over the next fortnight by Power BI and Tableau beginner courses - early details can be found on the training pages. We’ll also have the first of our autumn series of community meetups.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
+    "section": "Week beginning Mon 16th September 2024",
+    "text": "Week beginning Mon 16th September 2024\n\nDear colleagues,\nWelcome to our regular KIND network update. We have a back-to-school feel to the coming week, with the first sessions of our Excel and R beginners courses. These will be joined over the next fortnight by Power BI and Tableau beginner courses - early details can be found on the training pages. We’ll also have the first of our autumn series of community meetups.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
   },
   {
     "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#wins-of-the-week",
@@ -137,21 +137,21 @@
     "href": "ml_archive/KIND_weekly_update_2024-09-02.html#training-sessions",
     "title": "KIND network update",
     "section": "Training sessions",
-    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nExcel first steps\n09:30-10:30 Tue 3rd September 2024\nExcel\n🌶 :beginner-level\n\n\nR from scratch (session 1)\n14:30-15:30 Tue 3rd September 2024\nR\n🌶 :beginner-level\n\n\n\n\n\n(the Excel session is also our 400th training session, so party hats etc at the ready)"
+    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nTidy data in Excel\n09:30-10:30 Tue 17th September 2024\nExcel\n🌶 :beginner-level\n\n\nR from scratch (session 3)\n14:30-15:30 Tue 17th September 2024\nR\n🌶 :beginner-level\n\n\nBI for beginners (service version, session 2)\n10:00-12:00 Thu 19th September 2024\nPower BI\n🌶 :beginner-level\n\n\nTableau for beginners (session 1)\n13:00-15:00 Thu 19th September 2024\nTableau\n🌶 :beginner-level\n\n\n\n\n\n(the Excel session is also our 400th training session, so party hats etc at the ready)"
   },
   {
     "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#events",
     "href": "ml_archive/KIND_weekly_update_2024-09-02.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n3-4pm, Mon 2nd September 2024. The KIND Community meetup theme this week is the first of three sessions on joins. We’ll start at the beginning this week, with a gentle introduction and overview of the hows and whys of joining data. All welcome at our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel\n1-2pm, Tue 3rd September 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Sarah Griffin (NHS Highland) - Modelling hip fractures."
+    "text": "Events\n\n3-4pm, Mon 16th September 2024. The KIND Community meetup theme this week is the first of three sessions on joins. We’ll start at the beginning this week, with a gentle introduction and overview of the hows and whys of joining data. All welcome at our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel\n1-2pm, Tue 17th September 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Lukasz Henszel - Infectious diseases notification exceedance detection (surveillance/ signals for potential outbreaks)."
   },
   {
     "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#book-of-the-week",
     "href": "ml_archive/KIND_weekly_update_2024-09-02.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
-    "text": "Book of the week\nRobert C. Martin. 2008. Clean Code: A Handbook of Agile Software Craftsmanship.  ISBN 9780136083238, Worldcat. This week’s book of the week was suggested by Zena Trendell, a Programme Manager at NHS Lothian. She writes: ‘I recently read The Clean Code by Robert Cecil Martin. I’m not a coder but thought it was very good. The book is about professionalism for developers (similar to accountants etc.) and give you some tools to help prevent feeling under pressure re: timescales. It’s not a recent book yet very relevant to some incidents that have happened lately.’.\nUnsubscribe from these emails"
+    "text": "Book of the week\ncharacter(0). character(0). character(0).  ISBN numeric(0), Worldcat. character(0).\nUnsubscribe from these emails"
   },
   {
     "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html",
@@ -161,8 +161,8 @@
     "text": "Dear colleagues,\nWelcome to our regular KIND network update. The big theme for coming week is the return of some of our social activities that have been taking a summer break. We’re starting to build up a set of community meetup topics for the Autumn on the Teams channel, and I’m delighted to say that SCODAS meetings will be back in their usual 1-2pm Tuesday slot.\nWe’ll also be pausing our one-off training sessions for the next couple of weeks to allow some space for preparatory work. If you’re a Tableau expert, please consider coming to a shakedown/feedback session for our new Tableau for beginners course which will be running 3-4ish on Thursday 22nd. It’s vital that we keep training resources aligned with the needs of the community, so your feedback is essential to our work.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#week-beginning-mon-26th-august-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#week-beginning-mon-26th-august-2024",
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#week-beginning-mon-16th-september-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#week-beginning-mon-16th-september-2024",
     "title": "KIND network update",
     "section": "",
     "text": "Dear colleagues,\nWelcome to our regular KIND network update. The big theme for coming week is the return of some of our social activities that have been taking a summer break. We’re starting to build up a set of community meetup topics for the Autumn on the Teams channel, and I’m delighted to say that SCODAS meetings will be back in their usual 1-2pm Tuesday slot.\nWe’ll also be pausing our one-off training sessions for the next couple of weeks to allow some space for preparatory work. If you’re a Tableau expert, please consider coming to a shakedown/feedback session for our new Tableau for beginners course which will be running 3-4ish on Thursday 22nd. It’s vital that we keep training resources aligned with the needs of the community, so your feedback is essential to our work.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
@@ -179,7 +179,7 @@
     "href": "ml_archive/KIND_weekly_update_2024-08-19.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\nThe Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the meeting will be 13.00-14.00 Tue 27th August 2024. Stefanie Swietlik (NHS Lothian) - Lothian Public Health Survey 2023."
+    "text": "Events\nThe Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the meeting will be 13.00-14.00 Tue 17th September 2024. Lukasz Henszel - Infectious diseases notification exceedance detection (surveillance/ signals for potential outbreaks)."
   },
   {
     "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#kind-unconference-2024",
@@ -721,74 +721,109 @@
     "text": "Resources\n\nhttps://the-turing-way.netlify.app/collaboration/chairing\nPoynard, Thierry, Mona Munteanu, Vlad Ratziu, Yves Benhamou, Vincent Di Martino, Julien Taieb, and Pierre Opolon. 2002. “Truth Survival in Clinical Research: An Evidence-Based Requiem?” Annals of Internal Medicine 136 (12): 888. DOI: 10.7326/0003-4819-136-12-200206180-00010."
   },
   {
-    "objectID": "commet/commet_2023_03_07.html",
-    "href": "commet/commet_2023_03_07.html",
-    "title": "Data strategy",
+    "objectID": "commet/commet_2024-05-16.html",
+    "href": "commet/commet_2024-05-16.html",
+    "title": "Appraisals",
     "section": "",
-    "text": "Session materials\n\n\n\n\n\n\nslides  pptx /  pdf"
+    "text": "who knows their job description by heart, or has referred to it this year?\nwho keeps a work diary?\nwho has a PDP plan?"
   },
   {
-    "objectID": "commet/commet_2023_03_07.html#overall-structure",
-    "href": "commet/commet_2023_03_07.html#overall-structure",
-    "title": "Data strategy",
-    "section": "Overall structure",
-    "text": "Overall structure\n\none vision: best use of data\nthree ambitions\nseven priority areas\nall wrapped in an ethical approach"
+    "objectID": "commet/commet_2024-05-16.html#poll",
+    "href": "commet/commet_2024-05-16.html#poll",
+    "title": "Appraisals",
+    "section": "",
+    "text": "who knows their job description by heart, or has referred to it this year?\nwho keeps a work diary?\nwho has a PDP plan?"
   },
   {
-    "objectID": "commet/commet_2023_03_07.html#data-access",
-    "href": "commet/commet_2023_03_07.html#data-access",
-    "title": "Data strategy",
-    "section": "Data access",
-    "text": "Data access"
+    "objectID": "commet/commet_2024-05-16.html#background",
+    "href": "commet/commet_2024-05-16.html#background",
+    "title": "Appraisals",
+    "section": "Background",
+    "text": "Background\n\nIt’s Agenda for Change (AfC) appraisal time for many NHS staff\nbut this session is not specific to AfC appraisals"
   },
   {
-    "objectID": "commet/commet_2023_03_07.html#talent-and-culture",
-    "href": "commet/commet_2023_03_07.html#talent-and-culture",
-    "title": "Data strategy",
-    "section": "Talent and culture",
-    "text": "Talent and culture"
+    "objectID": "commet/commet_2024-05-16.html#the-objective",
+    "href": "commet/commet_2024-05-16.html#the-objective",
+    "title": "Appraisals",
+    "section": "The objective",
+    "text": "The objective\n\nKIND staff have some of the slowest promotion trajectories of all staff across health and care\nOur Time to Shine\n\n. . ."
   },
   {
-    "objectID": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
-    "href": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
-    "title": "Data strategy",
-    "section": "Protecting and sharing data",
-    "text": "Protecting and sharing data"
+    "objectID": "commet/commet_2024-05-16.html#small-teams",
+    "href": "commet/commet_2024-05-16.html#small-teams",
+    "title": "Appraisals",
+    "section": "Small teams",
+    "text": "Small teams"
   },
   {
-    "objectID": "commet/commet_2023_03_07.html#technology-and-infrastructure",
-    "href": "commet/commet_2023_03_07.html#technology-and-infrastructure",
-    "title": "Data strategy",
-    "section": "Technology and infrastructure",
-    "text": "Technology and infrastructure"
+    "objectID": "commet/commet_2024-05-16.html#mid-level",
+    "href": "commet/commet_2024-05-16.html#mid-level",
+    "title": "Appraisals",
+    "section": "Mid-level",
+    "text": "Mid-level"
   },
   {
-    "objectID": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
-    "href": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
-    "title": "Data strategy",
-    "section": "Information standards and interoperability",
-    "text": "Information standards and interoperability"
+    "objectID": "commet/commet_2024-05-16.html#messy-roles",
+    "href": "commet/commet_2024-05-16.html#messy-roles",
+    "title": "Appraisals",
+    "section": "Messy roles",
+    "text": "Messy roles\ntitles &lt;- readr::read_csv(\"src/kind_titles.csv\") |&gt;\n  dplyr::select(!document) \n\n3751 total titles analysed\n\n. . .\ntitles |&gt;\n  dplyr::arrange(desc(job_n)) |&gt;\n  dplyr::mutate(ratio = scales::percent(job_n / sum(job_n), 0.1)) |&gt;\n  dplyr::slice(1:6) |&gt;\n  knitr::kable()\n\n\n\njob_title\njob_n\nratio\n\n\n\n\nsenior information analyst\n347\n9.3%\n\n\ninformation analyst\n333\n8.9%\n\n\nprincipal information analyst\n118\n3.1%\n\n\ndata analyst\n61\n1.6%\n\n\ndata management officer\n43\n1.1%\n\n\nhealth intelligence analyst\n39\n1.0%"
   },
   {
-    "objectID": "commet/commet_2023_03_07.html#creating-insights-from-data",
-    "href": "commet/commet_2023_03_07.html#creating-insights-from-data",
-    "title": "Data strategy",
-    "section": "Creating insights from data",
-    "text": "Creating insights from data"
+    "objectID": "commet/commet_2024-05-16.html#messy-roles-1",
+    "href": "commet/commet_2024-05-16.html#messy-roles-1",
+    "title": "Appraisals",
+    "section": "Messy roles",
+    "text": "Messy roles\n\nno standard terminology\n\n“senior officer” from AfC band 3 - band 8\n\ntoo many titles (e.g. 400+ KIND-ish job titles compared to c.85 nursing roles)\n\nbiggest is about 9% of the KIND network (information analyst)\n\nmassively higher qualifications found in KIND roles compared to many other careers"
   },
   {
-    "objectID": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
-    "href": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
-    "title": "Data strategy",
-    "section": "Supporting research and innovation",
-    "text": "Supporting research and innovation"
+    "objectID": "commet/commet_2024-05-16.html#ddat",
+    "href": "commet/commet_2024-05-16.html#ddat",
+    "title": "Appraisals",
+    "section": "DDaT",
+    "text": "DDaT\n\nthere’s some interesting policy work going on to rationalise careers and titles\nbut this is a good way from implementation"
   },
   {
-    "objectID": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
-    "href": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
-    "title": "Data strategy",
-    "section": "Ethical approaches to data",
-    "text": "Ethical approaches to data"
+    "objectID": "commet/commet_2024-05-16.html#claiming-credit",
+    "href": "commet/commet_2024-05-16.html#claiming-credit",
+    "title": "Appraisals",
+    "section": "Claiming credit",
+    "text": "Claiming credit\n\nentirely informally and without an evidence-base: I think many of us are not very good at claiming credit for the work we do\n\nsomething about humility and modesty in the analytic temperament?\nDunning-Kruger?\nsocial conditioning?\nintroversion?\nniche skills in work environment?\n\nwhatever the cause, (hunch) I think we under-rate our own expertise"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#tips",
+    "href": "commet/commet_2024-05-16.html#tips",
+    "title": "Appraisals",
+    "section": "Tips",
+    "text": "Tips\n\ndiary / log\n\ntime and task\nI basically OneNote a load of rubbishy bits, and make no effort to sort them until needed\n\nlook at your JD\nlook at your KSF dimensions\nlook at wider skills frameworks\n“I did x in y, which means z in …”\n“I need to x, which means I need y…”"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#open-goals",
+    "href": "commet/commet_2024-05-16.html#open-goals",
+    "title": "Appraisals",
+    "section": "Open goals",
+    "text": "Open goals\n\nexcessively manual processes\n\nsaved you time? Saved us money!\n\ncompliance\nimpact and change\ninformal training and support\nmanagement-like activity"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#smart",
+    "href": "commet/commet_2024-05-16.html#smart",
+    "title": "Appraisals",
+    "section": "SMART",
+    "text": "SMART\n\nSpecific, Measurable, Achievable, Relevant, and Time-Bound\nconceptually, a horrible mess\nbut dead useful for translating vague wants and needs into something more directed"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#share",
+    "href": "commet/commet_2024-05-16.html#share",
+    "title": "Appraisals",
+    "section": "Share",
+    "text": "Share\n\nplease share one achievement - one thing you did last year\nask your group to help you formulate it - how can I sell this nicely?"
+  },
+  {
+    "objectID": "commet/commet_2024-05-16.html#well-formed-learning-needs",
+    "href": "commet/commet_2024-05-16.html#well-formed-learning-needs",
+    "title": "Appraisals",
+    "section": "Well-formed learning needs?",
+    "text": "Well-formed learning needs?"
   },
   {
     "objectID": "commet/commet_2023-11-23.html",
@@ -903,109 +938,81 @@
     "text": "Bit of live development\n\nReverse and Invert\n“reverse and invert all integer values” in a vector\ntests first!\ngranular tests: quick, small and simple\nbasic code: just pass the test\nadd test, pass, refactor, repeat\nI ended up with something like as.integer(intToUtf8(rev(utf8ToInt(as.character(n)))))"
   },
   {
-    "objectID": "commet/commet_2024-05-16.html",
-    "href": "commet/commet_2024-05-16.html",
-    "title": "Appraisals",
+    "objectID": "commet/commet_2023_03_07.html",
+    "href": "commet/commet_2023_03_07.html",
+    "title": "Data strategy",
     "section": "",
-    "text": "who knows their job description by heart, or has referred to it this year?\nwho keeps a work diary?\nwho has a PDP plan?"
+    "text": "Session materials\n\n\n\n\n\n\nslides  pptx /  pdf"
   },
   {
-    "objectID": "commet/commet_2024-05-16.html#poll",
-    "href": "commet/commet_2024-05-16.html#poll",
-    "title": "Appraisals",
+    "objectID": "commet/commet_2023_03_07.html#overall-structure",
+    "href": "commet/commet_2023_03_07.html#overall-structure",
+    "title": "Data strategy",
+    "section": "Overall structure",
+    "text": "Overall structure\n\none vision: best use of data\nthree ambitions\nseven priority areas\nall wrapped in an ethical approach"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#data-access",
+    "href": "commet/commet_2023_03_07.html#data-access",
+    "title": "Data strategy",
+    "section": "Data access",
+    "text": "Data access"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#talent-and-culture",
+    "href": "commet/commet_2023_03_07.html#talent-and-culture",
+    "title": "Data strategy",
+    "section": "Talent and culture",
+    "text": "Talent and culture"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
+    "href": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
+    "title": "Data strategy",
+    "section": "Protecting and sharing data",
+    "text": "Protecting and sharing data"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#technology-and-infrastructure",
+    "href": "commet/commet_2023_03_07.html#technology-and-infrastructure",
+    "title": "Data strategy",
+    "section": "Technology and infrastructure",
+    "text": "Technology and infrastructure"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
+    "href": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
+    "title": "Data strategy",
+    "section": "Information standards and interoperability",
+    "text": "Information standards and interoperability"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#creating-insights-from-data",
+    "href": "commet/commet_2023_03_07.html#creating-insights-from-data",
+    "title": "Data strategy",
+    "section": "Creating insights from data",
+    "text": "Creating insights from data"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
+    "href": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
+    "title": "Data strategy",
+    "section": "Supporting research and innovation",
+    "text": "Supporting research and innovation"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
+    "href": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
+    "title": "Data strategy",
+    "section": "Ethical approaches to data",
+    "text": "Ethical approaches to data"
+  },
+  {
+    "objectID": "commet/commet_2024-09-09_joins2.html",
+    "href": "commet/commet_2024-09-09_joins2.html",
+    "title": "Joins 2",
     "section": "",
-    "text": "who knows their job description by heart, or has referred to it this year?\nwho keeps a work diary?\nwho has a PDP plan?"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#background",
-    "href": "commet/commet_2024-05-16.html#background",
-    "title": "Appraisals",
-    "section": "Background",
-    "text": "Background\n\nIt’s Agenda for Change (AfC) appraisal time for many NHS staff\nbut this session is not specific to AfC appraisals"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#the-objective",
-    "href": "commet/commet_2024-05-16.html#the-objective",
-    "title": "Appraisals",
-    "section": "The objective",
-    "text": "The objective\n\nKIND staff have some of the slowest promotion trajectories of all staff across health and care\nOur Time to Shine\n\n. . ."
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#small-teams",
-    "href": "commet/commet_2024-05-16.html#small-teams",
-    "title": "Appraisals",
-    "section": "Small teams",
-    "text": "Small teams"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#mid-level",
-    "href": "commet/commet_2024-05-16.html#mid-level",
-    "title": "Appraisals",
-    "section": "Mid-level",
-    "text": "Mid-level"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#messy-roles",
-    "href": "commet/commet_2024-05-16.html#messy-roles",
-    "title": "Appraisals",
-    "section": "Messy roles",
-    "text": "Messy roles\ntitles &lt;- readr::read_csv(\"src/kind_titles.csv\") |&gt;\n  dplyr::select(!document) \n\n3751 total titles analysed\n\n. . .\ntitles |&gt;\n  dplyr::arrange(desc(job_n)) |&gt;\n  dplyr::mutate(ratio = scales::percent(job_n / sum(job_n), 0.1)) |&gt;\n  dplyr::slice(1:6) |&gt;\n  knitr::kable()\n\n\n\njob_title\njob_n\nratio\n\n\n\n\nsenior information analyst\n347\n9.3%\n\n\ninformation analyst\n333\n8.9%\n\n\nprincipal information analyst\n118\n3.1%\n\n\ndata analyst\n61\n1.6%\n\n\ndata management officer\n43\n1.1%\n\n\nhealth intelligence analyst\n39\n1.0%"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#messy-roles-1",
-    "href": "commet/commet_2024-05-16.html#messy-roles-1",
-    "title": "Appraisals",
-    "section": "Messy roles",
-    "text": "Messy roles\n\nno standard terminology\n\n“senior officer” from AfC band 3 - band 8\n\ntoo many titles (e.g. 400+ KIND-ish job titles compared to c.85 nursing roles)\n\nbiggest is about 9% of the KIND network (information analyst)\n\nmassively higher qualifications found in KIND roles compared to many other careers"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#ddat",
-    "href": "commet/commet_2024-05-16.html#ddat",
-    "title": "Appraisals",
-    "section": "DDaT",
-    "text": "DDaT\n\nthere’s some interesting policy work going on to rationalise careers and titles\nbut this is a good way from implementation"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#claiming-credit",
-    "href": "commet/commet_2024-05-16.html#claiming-credit",
-    "title": "Appraisals",
-    "section": "Claiming credit",
-    "text": "Claiming credit\n\nentirely informally and without an evidence-base: I think many of us are not very good at claiming credit for the work we do\n\nsomething about humility and modesty in the analytic temperament?\nDunning-Kruger?\nsocial conditioning?\nintroversion?\nniche skills in work environment?\n\nwhatever the cause, (hunch) I think we under-rate our own expertise"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#tips",
-    "href": "commet/commet_2024-05-16.html#tips",
-    "title": "Appraisals",
-    "section": "Tips",
-    "text": "Tips\n\ndiary / log\n\ntime and task\nI basically OneNote a load of rubbishy bits, and make no effort to sort them until needed\n\nlook at your JD\nlook at your KSF dimensions\nlook at wider skills frameworks\n“I did x in y, which means z in …”\n“I need to x, which means I need y…”"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#open-goals",
-    "href": "commet/commet_2024-05-16.html#open-goals",
-    "title": "Appraisals",
-    "section": "Open goals",
-    "text": "Open goals\n\nexcessively manual processes\n\nsaved you time? Saved us money!\n\ncompliance\nimpact and change\ninformal training and support\nmanagement-like activity"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#smart",
-    "href": "commet/commet_2024-05-16.html#smart",
-    "title": "Appraisals",
-    "section": "SMART",
-    "text": "SMART\n\nSpecific, Measurable, Achievable, Relevant, and Time-Bound\nconceptually, a horrible mess\nbut dead useful for translating vague wants and needs into something more directed"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#share",
-    "href": "commet/commet_2024-05-16.html#share",
-    "title": "Appraisals",
-    "section": "Share",
-    "text": "Share\n\nplease share one achievement - one thing you did last year\nask your group to help you formulate it - how can I sell this nicely?"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#well-formed-learning-needs",
-    "href": "commet/commet_2024-05-16.html#well-formed-learning-needs",
-    "title": "Appraisals",
-    "section": "Well-formed learning needs?",
-    "text": "Well-formed learning needs?"
+    "text": "library(dplyr)"
   },
   {
     "objectID": "commet/commet_2024_09_02.html",
@@ -1089,7 +1096,7 @@
     "href": "kind_cms.html",
     "title": "KIND community meetups",
     "section": "",
-    "text": "These are our main weekly social learning activity. They’re usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell.\n\nDownload community meetup data as csv\nDownload community meetup ideas as csv\n\n\nCurrent community meetup scheduleFuture community meetup ideasArchive of past sessions\n\n\n\nCurrent community meetup schedule\n\n\n\n\n\n\n\nDate\nTopic\nsubtopic\n\n\n\n\n2024-09-09\nJoins 2: basic joins (left/right/full etc)\n\n\n\n2024-09-16\nJoins 3: the fancy stuff (rolling/inequality etc)\n\n\n\n2024-09-23\nSQL alphabet soup\n\n\n\n2024-09-30\nArt of the possible / showing off great projects\n\n\n\n2024-10-07\nTurning a user request into something you can work with\n\n\n\n2024-10-14\nNO SESSION\n\n\n\n2024-10-21\nNO SESSION\n\n\n\n2024-10-28\nNO SESSION\n\n\n\n2024-11-04\nfree parking\n\n\n\n2024-11-11\nR\nduckdb tech demo / group of use-cases\n\n\n2024-11-18\nTeaching maintenance\n\n\n\n2024-11-25\nExcel\nExcel programming/VBA/lambdas \n\n\n2024-12-02\nfree parking\n\n\n\n2024-12-09\nResearch data management\n\n\n\n2024-12-16\nFirst-steps toolkit for a junior/solo/reluctant/occasional analyst\n\n\n\n\n\n\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nData\nSafe havens / disclosure control / safe researcher training\n\n\n\nData\nDisclosure and pseudoanonymised data\n\n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nData\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\nMisc\nA non-web person’s intro to Java\n\n\n\nPower BI\ncorrelations and linear models in Power BI\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler\n\n\nR\nTidytext, sentiment analysis \n\n\n\nR \nData.table / tidyverse / polars / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nR \nR package roundup - Echarts4r, making PowerPoint in RMD, snakecase\n\n\n\nSkills\nWriting for different audiences\n\n\n\nStats\nDirected Acyclic Graphs (DAGs)\n\n\n\nStats\nPredictive modelling\n\n\n\nStats\nBayesian stats\n\n\n\nR\nTesting code\nEllen Young\n\n\nR\nGithub collaborations and getting Git installed\nGemma Whittaker\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nDate\n\n\nCategories\n\n\n\n\n\n\nAppraisals\n\n\nMay 16, 2024\n\n\nskills, career developement, appraisal\n\n\n\n\nData strategy\n\n\nMar 7, 2023\n\n\nData strategy\n\n\n\n\nJoins 1: introduction\n\n\nSep 2, 2024\n\n\nJoins, beginner, Excel, R, Power Query\n\n\n\n\nLeading a (training) session\n\n\nDec 4, 2023\n\n\nskills, training, career progression, appraisal\n\n\n\n\nTest driven development\n\n\nNov 21, 2023\n\n\nR, testing, intermediate, excel\n\n\n\n\n\nNo matching items"
+    "text": "These are our main weekly social learning activity. They’re usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell.\n\nDownload community meetup data as csv\nDownload community meetup ideas as csv\n\n\nCurrent community meetup scheduleFuture community meetup ideasArchive of past sessions\n\n\n\nCurrent community meetup schedule\n\n\n\n\n\n\n\nDate\nTopic\nsubtopic\n\n\n\n\n2024-09-16\nJoins 3: the fancy stuff (rolling/inequality etc)\n\n\n\n2024-09-23\nSQL alphabet soup\n\n\n\n2024-09-30\nArt of the possible / showing off great projects\n\n\n\n2024-10-07\nTurning a user request into something you can work with\n\n\n\n2024-10-14\nNO SESSION\n\n\n\n2024-10-21\nNO SESSION\n\n\n\n2024-10-28\nNO SESSION\n\n\n\n2024-11-04\nfree parking\n\n\n\n2024-11-11\nR\nduckdb tech demo / group of use-cases\n\n\n2024-11-18\nTeaching maintenance\n\n\n\n2024-11-25\nExcel\nExcel programming/VBA/lambdas \n\n\n2024-12-02\nfree parking\n\n\n\n2024-12-09\nResearch data management\n\n\n\n2024-12-16\nFirst-steps toolkit for a junior/solo/reluctant/occasional analyst\n\n\n\n\n\n\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nData\nSafe havens / disclosure control / safe researcher training\n\n\n\nData\nDisclosure and pseudoanonymised data\n\n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nData\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\nMisc\nA non-web person’s intro to Java\n\n\n\nPower BI\ncorrelations and linear models in Power BI\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler\n\n\nR\nTidytext, sentiment analysis \n\n\n\nR \nData.table / tidyverse / polars / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nR \nR package roundup - Echarts4r, making PowerPoint in RMD, snakecase\n\n\n\nSkills\nWriting for different audiences\n\n\n\nStats\nDirected Acyclic Graphs (DAGs)\n\n\n\nStats\nPredictive modelling\n\n\n\nStats\nBayesian stats\n\n\n\nR\nTesting code\nEllen Young\n\n\nR\nGithub collaborations and getting Git installed\nGemma Whittaker\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nDate\n\n\nCategories\n\n\n\n\n\n\nAppraisals\n\n\nMay 16, 2024\n\n\nskills, career developement, appraisal\n\n\n\n\nData strategy\n\n\nMar 7, 2023\n\n\nData strategy\n\n\n\n\nJoins 1: introduction\n\n\nSep 2, 2024\n\n\nJoins, beginner, Excel, R, Power Query\n\n\n\n\nJoins 2\n\n\nSep 9, 2024\n\n\nJoins\n\n\n\n\nLeading a (training) session\n\n\nDec 4, 2023\n\n\nskills, training, career progression, appraisal\n\n\n\n\nTest driven development\n\n\nNov 21, 2023\n\n\nR, testing, intermediate, excel\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "ml_archive.html",
@@ -1106,8 +1113,8 @@
     "text": "Dear colleagues,\nWelcome to our regular KIND network update. Full details of our events and training can be found on our Teams channel.\nWe’ve been working on the mentoring scheme this week, including a new homepage. It’s designed to put mentors and mentees in touch with each other to support short and well-defined pieces of work. Please get in touch with any suggestions or feedback, and do feel encouraged to put together a project proposal if there’s some area of work you’d like more support with.\nHope to see you at something soon\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#week-beginning-mon-2nd-september-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#week-beginning-mon-2nd-september-2024",
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#week-beginning-mon-16th-september-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#week-beginning-mon-16th-september-2024",
     "title": "KIND network update",
     "section": "",
     "text": "Dear colleagues,\nWelcome to our regular KIND network update. Full details of our events and training can be found on our Teams channel.\nWe’ve been working on the mentoring scheme this week, including a new homepage. It’s designed to put mentors and mentees in touch with each other to support short and well-defined pieces of work. Please get in touch with any suggestions or feedback, and do feel encouraged to put together a project proposal if there’s some area of work you’d like more support with.\nHope to see you at something soon\nBrendan"
@@ -1124,7 +1131,7 @@
     "href": "ml_archive/KIND_weekly_update_2024-08-26.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n13.00-14.00 Tue 3rd September 2024. SCODAS meeting. Sarah Griffin (NHS Highland) - Modelling hip fractures. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards.\nThursday 3-4pm, Gemma Wilson (Scottish Government) will be giving an update on the data strategy. All welcome at this informal session to find out more about this important initiative. No need to register - just follow the Teams link on the day.\n\nWe’ll also be finalising the community meetup schedule for the autumn next week. But save the date - our new community meetup slot will be Mondays 3-4pm."
+    "text": "Events\n\n13.00-14.00 Tue 17th September 2024. SCODAS meeting. Lukasz Henszel - Infectious diseases notification exceedance detection (surveillance/ signals for potential outbreaks). The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards.\nThursday 3-4pm, Gemma Wilson (Scottish Government) will be giving an update on the data strategy. All welcome at this informal session to find out more about this important initiative. No need to register - just follow the Teams link on the day.\n\nWe’ll also be finalising the community meetup schedule for the autumn next week. But save the date - our new community meetup slot will be Mondays 3-4pm."
   },
   {
     "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#book-of-the-week",
@@ -1209,5 +1216,40 @@
     "title": "R reading group",
     "section": "Schedule",
     "text": "Schedule\n\nThursday, 3-4pm BST, 26th September 2024\nThursday, 3-4pm GMT, 21st November 2024\nThursday, 3-4pm GMT, 19th December 2024\n\nreadings tba"
+  },
+  {
+    "objectID": "kind_botw.html#the-7-deadly-sins-of-psychology",
+    "href": "kind_botw.html#the-7-deadly-sins-of-psychology",
+    "title": "KIND Book of the week",
+    "section": "11/09/2024: The 7 Deadly Sins of Psychology",
+    "text": "11/09/2024: The 7 Deadly Sins of Psychology\nChris Chambers. 2019. The 7 Deadly Sins of Psychology. ISBN 9780691192277, Worldcat link.\n Rosalyn Pearson, a Senior Information Analyst at Public Health Scotland, suggests this book of the week. `I highly recommend The 7 Deadly Sins of Psychology by Chris Chambers. It’s all about pitfalls in real-world scientific methodology and what we can do to combat them. The title says ‘psychology’ but it applies more broadly."
+  },
+  {
+    "objectID": "rbc/2024-09-12.html",
+    "href": "rbc/2024-09-12.html",
+    "title": "R beginner’s club 2024-09-12",
+    "section": "",
+    "text": "This can be really difficult, because you generally need your code to run at least a bit before you can find error messages. Three areas to try if you can’t get anything to behave itself.\n\n\nYou can try running something dead simple in the console to get a quick idea if your R installation is working at all (2+2 is perfect). If that doesn’t work, and assuming that you’re using RStudio/Posit a sensible sequence of steps might be: + to restart R (Ctrl + Shift + F10) + or to terminate R (from the Session menu) + refresh the page (for the web version) or reopen Rstudio\nIf none of that works, the chances are that you’re going to need to refer to your IT/eHealth colleagues, as it looks like something big and serious is broken.\n\n\n\nAnother area where things often misfire is package loading. If you’re getting unexpected could not find function \"xxxx\" errors, I’d be looking to check package loading.\nIf you’re only using a few packages, make sure that you’ve done then install.packages() / library() dance to ensure both that packages are installed and attached. That gets boring and error prone if you’re trying to sort out loads of packages, and it might be easier to use pacman to manage packages:\n\ninstall.packages(\"pacman\")\nlibrary(pacman)\n\nThen replace your calls to library(packagename) with calls to p_load(packagename). p_load has the advantage that it will install missing packages, and then attach them, which makes for much less messing around with installing then attaching.\n\n\n\nThis is another area where scripts can completely fail. Wherever possible, R code is best run in a project, which takes care of most of the problems with setting paths and translating them across computers."
+  },
+  {
+    "objectID": "rbc/2024-09-12.html#help-people-keep-sending-me-code-that-wont-run-for-me",
+    "href": "rbc/2024-09-12.html#help-people-keep-sending-me-code-that-wont-run-for-me",
+    "title": "R beginner’s club 2024-09-12",
+    "section": "",
+    "text": "This can be really difficult, because you generally need your code to run at least a bit before you can find error messages. Three areas to try if you can’t get anything to behave itself.\n\n\nYou can try running something dead simple in the console to get a quick idea if your R installation is working at all (2+2 is perfect). If that doesn’t work, and assuming that you’re using RStudio/Posit a sensible sequence of steps might be: + to restart R (Ctrl + Shift + F10) + or to terminate R (from the Session menu) + refresh the page (for the web version) or reopen Rstudio\nIf none of that works, the chances are that you’re going to need to refer to your IT/eHealth colleagues, as it looks like something big and serious is broken.\n\n\n\nAnother area where things often misfire is package loading. If you’re getting unexpected could not find function \"xxxx\" errors, I’d be looking to check package loading.\nIf you’re only using a few packages, make sure that you’ve done then install.packages() / library() dance to ensure both that packages are installed and attached. That gets boring and error prone if you’re trying to sort out loads of packages, and it might be easier to use pacman to manage packages:\n\ninstall.packages(\"pacman\")\nlibrary(pacman)\n\nThen replace your calls to library(packagename) with calls to p_load(packagename). p_load has the advantage that it will install missing packages, and then attach them, which makes for much less messing around with installing then attaching.\n\n\n\nThis is another area where scripts can completely fail. Wherever possible, R code is best run in a project, which takes care of most of the problems with setting paths and translating them across computers."
+  },
+  {
+    "objectID": "rbc/2024-09-12.html#is-there-a-nice-way-to-write-formatted-dates-to-xlsxcsv",
+    "href": "rbc/2024-09-12.html#is-there-a-nice-way-to-write-formatted-dates-to-xlsxcsv",
+    "title": "R beginner’s club 2024-09-12",
+    "section": "Is there a nice way to write formatted dates to xlsx/csv?",
+    "text": "Is there a nice way to write formatted dates to xlsx/csv?\nYes, there is. In fact, there are a couple of ways of doing it. The ‘proper’ way for Excel is to use the openxlsx package to set a date format. This is great when it works, but pretty complicated to set up. And I need to extend thanks to Kirsty Mangin (NHS Golden Jubilee) for coming to the rescue with the following code:\n\nlibrary(openxlsx)\ndat &lt;- readxl::read_xlsx(\"s01_data.xlsx\") # here's the data we want to format\n\nfilename &lt;- \"openxlsx.xlsx\" # for the new .xlsx file we're going to create\nwb &lt;- createWorkbook(title = filename) # create an openxlsx workbook object in R\naddWorksheet(wb = wb, \"sheet one\") # add a worksheet to that book named \"sheet one\"\nwriteData(wb = wb, \n          x = dat,\n          sheet= \"sheet one\", \n          startCol=1, \n          startRow=1, \n          colNames=TRUE) # write the data into that worksheet\n\ndate_style &lt;- createStyle(\n  fgFill = '#FFFFCC',\n  numFmt = \"dd/mm/yyyy\",\n  border = 'TopBottomLeftRight',\n  borderStyle = 'thin') # then create a date style\n\naddStyle(wb, \n         sheet=\"sheet one\", \n         date_style,  \n         gridExpand=T, \n         cols = 1, \n         rows = 1:nrow(dat)) # then apply that date style\n\nsaveWorkbook(wb, \"styled.xlsx\") # finally, save the workbook\n\n\n\n\nLovely styled dates\n\n\nThis is fantastic, but bulky. If you’re after something more casual (and more .csv friendly) you can convert your date to a formatted text string using lubridate:\n\nreadxl::read_xlsx(\"data/s01_data.xlsx\") |&gt;\n  dplyr::mutate(nice_date = lubridate::stamp_date(\"Jan 13 2021\")(date)) \n\n# A tibble: 1,500 × 6\n   date                WardName OccupiedBeds BedComp ClosedBed nice_date  \n   &lt;dttm&gt;              &lt;chr&gt;           &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      \n 1 2022-11-02 00:00:00 A                  16      20         2 Nov 02 2022\n 2 2022-11-02 00:00:00 B                  20      20         0 Nov 02 2022\n 3 2022-11-02 00:00:00 C                  21      22         1 Nov 02 2022\n 4 2022-11-02 00:00:00 D                  25      30         2 Nov 02 2022\n 5 2022-11-02 00:00:00 E                  15      22         3 Nov 02 2022\n 6 2022-11-03 00:00:00 A                  14      20         0 Nov 03 2022\n 7 2022-11-03 00:00:00 B                  19      20         3 Nov 03 2022\n 8 2022-11-03 00:00:00 C                  18      22         0 Nov 03 2022\n 9 2022-11-03 00:00:00 D                  26      30         0 Nov 03 2022\n10 2022-11-03 00:00:00 E                  13      22         0 Nov 03 2022\n# ℹ 1,490 more rows"
+  },
+  {
+    "objectID": "rbc/2024-09-12.html#any-tips-for-working-in-r-with-limited-ram",
+    "href": "rbc/2024-09-12.html#any-tips-for-working-in-r-with-limited-ram",
+    "title": "R beginner’s club 2024-09-12",
+    "section": "Any tips for working in R with limited RAM?",
+    "text": "Any tips for working in R with limited RAM?\nThis was an inquiry from someone trying to work in R in Windows with 8gB of RAM. That’s going to be a challenge, unfortunately, especially if you need to run other memory-hungry stuff concurrently (Teams, e.g). R doesn’t have much in the way of memory management, so aside from patience, the general advice is to keep e.g. the data that you’re working with as small as possible. You’ll usually load your working data into memory, and so if that data is larger than the available memory R will slow to a crawl as it’s forced to write that data back to disk again.\nOne important exception: R gets very memory-inefficient if you grow objects. If you’ve got a choice between growing an object:\n\na &lt;- vector(\"numeric\")\n\nfor (i in 1:100){\n  a &lt;- c(a, i)\n}\n\nOr creating an object, and then assigning into it:\n\nb &lt;- vector(\"numeric\", 100L)\nfor (i in 1:100){\n  b[i] &lt;- i\n}\n\nYou should always choose the latter."
   }
 ]
