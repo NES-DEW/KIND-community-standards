@@ -10,7 +10,7 @@
 <meta name="author" content="Brendan Clarke">
 <meta name="dcterms.date" content="2024-09-13">
 
-<title>KIND resources</title>
+<title>R beginner’s club 2024-09-12 – KIND resources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +23,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -83,10 +117,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./![](/src/images/KLN_banner_v05_125.png)" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../![](/src/images/KLN_banner_v05_125.png)" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">KIND resources</span>
     </a>
   </div>
@@ -97,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -106,15 +140,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-community-standards">    
         <li>
-    <a class="dropdown-item" href="./excel.html">
+    <a class="dropdown-item" href="../excel.html">
  <span class="dropdown-text">Excel</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./r.html">
+    <a class="dropdown-item" href="../r.html">
  <span class="dropdown-text">R</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./data_collection.html">
+    <a class="dropdown-item" href="../data_collection.html">
  <span class="dropdown-text">Data collection (draft)</span></a>
   </li>  
     </ul>
@@ -125,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-sample-sops">    
         <li>
-    <a class="dropdown-item" href="./visio.html">
+    <a class="dropdown-item" href="../visio.html">
  <span class="dropdown-text">Visio</span></a>
   </li>  
     </ul>
@@ -136,33 +170,33 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-community-activities">    
         <li>
-    <a class="dropdown-item" href="./rreadgr.html">
+    <a class="dropdown-item" href="../rreadgr.html">
  <span class="dropdown-text">R reading group</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rbc/about.html">
+    <a class="dropdown-item" href="../rbc/about.html">
  <span class="dropdown-text">R beginner’s club</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./kind_cms.html">
+    <a class="dropdown-item" href="../kind_cms.html">
  <span class="dropdown-text">Community meetups</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./faq.html"> 
+    <a class="nav-link" href="../faq.html"> 
 <span class="menu-text">KIND FAQ</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./mentoring.html"> 
+    <a class="nav-link" href="../mentoring.html"> 
 <span class="menu-text">Mentoring scheme</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./kind_botw.html"> 
+    <a class="nav-link" href="../kind_botw.html"> 
 <span class="menu-text">Book of the week</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ml_archive.html"> 
+    <a class="nav-link" href="../ml_archive.html"> 
 <span class="menu-text">Mailing list archive</span></a>
   </li>  
 </ul>
@@ -197,15 +231,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#whats-here" id="toc-whats-here" class="nav-link active" data-scroll-target="#whats-here">What’s here?</a>
+  <li><a href="#help-people-keep-sending-me-code-that-wont-run-for-me" id="toc-help-people-keep-sending-me-code-that-wont-run-for-me" class="nav-link active" data-scroll-target="#help-people-keep-sending-me-code-that-wont-run-for-me">Help! People keep sending me code that won’t run for me</a>
   <ul class="collapse">
-  <li><a href="#community-standards" id="toc-community-standards" class="nav-link" data-scroll-target="#community-standards">Community standards</a></li>
-  <li><a href="#sample-sops" id="toc-sample-sops" class="nav-link" data-scroll-target="#sample-sops">Sample SOPs</a></li>
-  <li><a href="#community-activities" id="toc-community-activities" class="nav-link" data-scroll-target="#community-activities">Community activities</a></li>
-  <li><a href="#kind-faq" id="toc-kind-faq" class="nav-link" data-scroll-target="#kind-faq">KIND FAQ</a></li>
-  <li><a href="#mentoring-scheme" id="toc-mentoring-scheme" class="nav-link" data-scroll-target="#mentoring-scheme">Mentoring scheme</a></li>
-  <li><a href="#book-of-the-week" id="toc-book-of-the-week" class="nav-link" data-scroll-target="#book-of-the-week">Book of the week</a></li>
+  <li><a href="#check-that-your-r-setup-isnt-broken" id="toc-check-that-your-r-setup-isnt-broken" class="nav-link" data-scroll-target="#check-that-your-r-setup-isnt-broken">Check that your R setup isn’t broken</a></li>
+  <li><a href="#package-loading" id="toc-package-loading" class="nav-link" data-scroll-target="#package-loading">Package loading</a></li>
+  <li><a href="#working-directory-setwd-project" id="toc-working-directory-setwd-project" class="nav-link" data-scroll-target="#working-directory-setwd-project">Working directory / <code>setwd()</code> / project</a></li>
   </ul></li>
+  <li><a href="#is-there-a-nice-way-to-write-formatted-dates-to-xlsxcsv" id="toc-is-there-a-nice-way-to-write-formatted-dates-to-xlsxcsv" class="nav-link" data-scroll-target="#is-there-a-nice-way-to-write-formatted-dates-to-xlsxcsv">Is there a nice way to write formatted dates to xlsx/csv?</a></li>
+  <li><a href="#any-tips-for-working-in-r-with-limited-ram" id="toc-any-tips-for-working-in-r-with-limited-ram" class="nav-link" data-scroll-target="#any-tips-for-working-in-r-with-limited-ram">Any tips for working in R with limited RAM?</a></li>
   </ul>
 </nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -218,7 +251,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">KIND resources</h1>
+<h1 class="title">R beginner’s club 2024-09-12</h1>
 </div>
 
 
@@ -259,55 +292,110 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is the main page for the KIND network’s live documents and non-training resources.</p>
-<ul>
-<li>if you’re looking for our core training courses, please see <a href="https://learn.nes.nhs.scot/36783">our TURAS pages</a></li>
-<li>if you’re looking for details of our one-off training sessions, please see the <a href="https://nes-dew.github.io/KIND-training/">KIND training mini-site</a></li>
-<li>if you’re looking to join the KIND Network Teams channel, <a href="https://forms.office.com/r/WQdd6HSCEW">you’ll find a sign-up form here</a>. That channel is open to all, although mainly meant for members of the knowledge, information, and data workforce across Scotland’s health, social care, and housing sectors</li>
-<li>you can <a href="https://forms.office.com/pages/responsepage.aspx?id=veDvEDCgykuAnLXmdF5JmpopIZB9ynRJnrPUHVFccipURjM2NkZJUkhGOFlQRjQxRFhVUTgwT0UwVyQlQCN0PWcu">join our mailing list here</a>. We send out a weekly mailer summarizing the main events in the coming week, and <a href="./ml_archive.html">that’s archived here too</a>.</li>
-</ul>
-<section id="whats-here" class="level2">
-<h2 class="anchored" data-anchor-id="whats-here">What’s here?</h2>
-<section id="community-standards" class="level3">
-<h3 class="anchored" data-anchor-id="community-standards">Community standards</h3>
-<p>These documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.</p>
-<p>How might you use these suggestions?</p>
-<ul>
-<li>as a way of highlighting good practice</li>
-<li>as a helper when starting new projects (or new Excel documents)</li>
-<li>as a lever for bringing about change, particularly trying to convince service leads that poorly-designed Excel spreadsheets are a dangerous menace</li>
-<li>as a guideline for tidying up existing inconsistent/messy files</li>
-<li>as a training tool when bringing new colleagues up to speed</li>
-</ul>
-<p>Please take this, use it however you like, and let us know if there’s anything that you’d find particularly helpful for an updated version to contain. We’ll review and redraft regularly. Please <a href="https://github.com/NES-DEW/KIND-community-standards/issues">open an issue on the GitHub page</a> if you have specific suggestions, otherwise contact brendan.clarke2@nhs.scot for a more general conversation about these standards.</p>
+<section id="help-people-keep-sending-me-code-that-wont-run-for-me" class="level2">
+<h2 class="anchored" data-anchor-id="help-people-keep-sending-me-code-that-wont-run-for-me">Help! People keep sending me code that won’t run for me</h2>
+<p>This can be really difficult, because you generally need your code to run at least a bit before you can find error messages. Three areas to try if you can’t get anything to behave itself.</p>
+<section id="check-that-your-r-setup-isnt-broken" class="level3">
+<h3 class="anchored" data-anchor-id="check-that-your-r-setup-isnt-broken">Check that your R setup isn’t broken</h3>
+<p>You can try running something dead simple in the console to get a quick idea if your R installation is working at all (<code>2+2</code> is perfect). If that doesn’t work, and assuming that you’re using RStudio/Posit a sensible sequence of steps might be: + to restart R (<code>Ctrl</code> + <code>Shift</code> + <code>F10</code>) + or to terminate R (from the <code>Session</code> menu) + refresh the page (for the web version) or reopen Rstudio</p>
+<p>If none of that works, the chances are that you’re going to need to refer to your IT/eHealth colleagues, as it looks like something big and serious is broken.</p>
 </section>
-<section id="sample-sops" class="level3">
-<h3 class="anchored" data-anchor-id="sample-sops">Sample SOPs</h3>
-<p>These are a set of sample standard operating procedures for KIND work. These are intended for sharing as a basis or guideline for your own activities. Please get in touch if you have a useful SOP that might be sharable.</p>
+<section id="package-loading" class="level3">
+<h3 class="anchored" data-anchor-id="package-loading">Package loading</h3>
+<p>Another area where things often misfire is package loading. If you’re getting unexpected <code>could not find function "xxxx"</code> errors, I’d be looking to check package loading.</p>
+<p>If you’re only using a few packages, make sure that you’ve done then <code>install.packages()</code> / <code>library()</code> dance to ensure both that packages are installed and attached. That gets boring and error prone if you’re trying to sort out loads of packages, and it might be easier to use pacman to manage packages:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"pacman"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pacman)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Then replace your calls to <code>library(packagename)</code> with calls to <code>p_load(packagename)</code>. <code>p_load</code> has the advantage that it will install missing packages, and then attach them, which makes for much less messing around with installing then attaching.</p>
 </section>
-<section id="community-activities" class="level3">
-<h3 class="anchored" data-anchor-id="community-activities">Community activities</h3>
-<p>Documents supporting our social learning activities, such as scheduled, past sessions, and archives of materials. These include:</p>
-<ul>
-<li>the <a href="./rreadgr.html">R reading group</a></li>
-<li>the <a href="./rbc/about.html">R beginner’s club</a></li>
-<li>the main <a href="./kind_cms.html">community meetup series</a></li>
-</ul>
+<section id="working-directory-setwd-project" class="level3">
+<h3 class="anchored" data-anchor-id="working-directory-setwd-project">Working directory / <code>setwd()</code> / project</h3>
+<p>This is another area where scripts can completely fail. Wherever possible, R code is best run in a project, which takes care of most of the problems with setting paths and translating them across computers.</p>
 </section>
-<section id="kind-faq" class="level3">
-<h3 class="anchored" data-anchor-id="kind-faq">KIND FAQ</h3>
-<p>Our main frequently-asked questions document</p>
 </section>
-<section id="mentoring-scheme" class="level3">
-<h3 class="anchored" data-anchor-id="mentoring-scheme">Mentoring scheme</h3>
-<p>Information and links for our technical mentoring scheme</p>
+<section id="is-there-a-nice-way-to-write-formatted-dates-to-xlsxcsv" class="level2">
+<h2 class="anchored" data-anchor-id="is-there-a-nice-way-to-write-formatted-dates-to-xlsxcsv">Is there a nice way to write formatted dates to xlsx/csv?</h2>
+<p>Yes, there is. In fact, there are a couple of ways of doing it. The ‘proper’ way for Excel is to use the <code>openxlsx</code> package to set a date format. This is great when it works, but pretty complicated to set up. And I need to extend thanks to Kirsty Mangin (NHS Golden Jubilee) for coming to the rescue with the following code:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(openxlsx)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">"s01_data.xlsx"</span>) <span class="co"># here's the data we want to format</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>filename <span class="ot">&lt;-</span> <span class="st">"openxlsx.xlsx"</span> <span class="co"># for the new .xlsx file we're going to create</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>wb <span class="ot">&lt;-</span> <span class="fu">createWorkbook</span>(<span class="at">title =</span> filename) <span class="co"># create an openxlsx workbook object in R</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">addWorksheet</span>(<span class="at">wb =</span> wb, <span class="st">"sheet one"</span>) <span class="co"># add a worksheet to that book named "sheet one"</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">writeData</span>(<span class="at">wb =</span> wb, </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>          <span class="at">x =</span> dat,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>          <span class="at">sheet=</span> <span class="st">"sheet one"</span>, </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>          <span class="at">startCol=</span><span class="dv">1</span>, </span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>          <span class="at">startRow=</span><span class="dv">1</span>, </span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>          <span class="at">colNames=</span><span class="cn">TRUE</span>) <span class="co"># write the data into that worksheet</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>date_style <span class="ot">&lt;-</span> <span class="fu">createStyle</span>(</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">fgFill =</span> <span class="st">'#FFFFCC'</span>,</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">numFmt =</span> <span class="st">"dd/mm/yyyy"</span>,</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">border =</span> <span class="st">'TopBottomLeftRight'</span>,</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">borderStyle =</span> <span class="st">'thin'</span>) <span class="co"># then create a date style</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="fu">addStyle</span>(wb, </span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>         <span class="at">sheet=</span><span class="st">"sheet one"</span>, </span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>         date_style,  </span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>         <span class="at">gridExpand=</span>T, </span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>         <span class="at">cols =</span> <span class="dv">1</span>, </span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>         <span class="at">rows =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(dat)) <span class="co"># then apply that date style</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="fu">saveWorkbook</span>(wb, <span class="st">"styled.xlsx"</span>) <span class="co"># finally, save the workbook</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-155178885.png" class="img-fluid figure-img"></p>
+<figcaption>Lovely styled dates</figcaption>
+</figure>
+</div>
+<p>This is fantastic, but bulky. If you’re after something more casual (and more .csv friendly) you can convert your date to a formatted text string using lubridate:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">"data/s01_data.xlsx"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">nice_date =</span> lubridate<span class="sc">::</span><span class="fu">stamp_date</span>(<span class="st">"Jan 13 2021"</span>)(date)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1,500 × 6
+   date                WardName OccupiedBeds BedComp ClosedBed nice_date  
+   &lt;dttm&gt;              &lt;chr&gt;           &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      
+ 1 2022-11-02 00:00:00 A                  16      20         2 Nov 02 2022
+ 2 2022-11-02 00:00:00 B                  20      20         0 Nov 02 2022
+ 3 2022-11-02 00:00:00 C                  21      22         1 Nov 02 2022
+ 4 2022-11-02 00:00:00 D                  25      30         2 Nov 02 2022
+ 5 2022-11-02 00:00:00 E                  15      22         3 Nov 02 2022
+ 6 2022-11-03 00:00:00 A                  14      20         0 Nov 03 2022
+ 7 2022-11-03 00:00:00 B                  19      20         3 Nov 03 2022
+ 8 2022-11-03 00:00:00 C                  18      22         0 Nov 03 2022
+ 9 2022-11-03 00:00:00 D                  26      30         0 Nov 03 2022
+10 2022-11-03 00:00:00 E                  13      22         0 Nov 03 2022
+# ℹ 1,490 more rows</code></pre>
+</div>
+</div>
 </section>
-<section id="book-of-the-week" class="level3">
-<h3 class="anchored" data-anchor-id="book-of-the-week">Book of the week</h3>
-<p>Data and summaries for our ever-popular book of the week segment</p>
+<section id="any-tips-for-working-in-r-with-limited-ram" class="level2">
+<h2 class="anchored" data-anchor-id="any-tips-for-working-in-r-with-limited-ram">Any tips for working in R with limited RAM?</h2>
+<p>This was an inquiry from someone trying to work in R in Windows with 8gB of RAM. That’s going to be a challenge, unfortunately, especially if you need to run other memory-hungry stuff concurrently (Teams, e.g). R doesn’t have much in the way of memory management, so aside from patience, the general advice is to keep e.g.&nbsp;the data that you’re working with as small as possible. You’ll usually load your working data into memory, and so if that data is larger than the available memory R will slow to a crawl as it’s forced to write that data back to disk again.</p>
+<p>One important exception: R gets very memory-inefficient if you grow objects. If you’ve got a choice between growing an object:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">vector</span>(<span class="st">"numeric"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>){</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">c</span>(a, i)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Or creating an object, and then assigning into it:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fu">vector</span>(<span class="st">"numeric"</span>, <span class="dv">100</span>L)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>){</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  b[i] <span class="ot">&lt;-</span> i</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You should always choose the latter.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
