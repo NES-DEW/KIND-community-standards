@@ -249,7 +249,7 @@
     "href": "mentoring.html#how-it-works",
     "title": "KIND Mentoring Scheme",
     "section": "How it works",
-    "text": "How it works\n\n\n\n\n\n\n\ngraph TD;\n\nrequest[\"Mentee sends a project outline\"] --&gt; mentorfinds[\"Mentor finds a suitable project outline\"]\n\nmentorfinds --&gt; email[\"Both discuss by email\"]\n\nemail --&gt; meeting[\"Informal meeting to set goals and expectations\"]\n\nmeeting --&gt;  contract[\"Sign contract\"]\n\ncontract --&gt; complete[\"Complete the mentoring project\"]\n\ncomplete --&gt; present[\"Present the project at the mmmmm\"]\n\n\n\n\n\n\n\n\n\na mentee puts a request on the KIND Teams channel by filling in the new project form\na mentor sees the request on the Teams channel, and expressed interest in mentoring)\nwe put the mentee and mentor in touch by email to discuss the project\nmentor and mentee meet to agree a broad outline for their mentoring arrangement\nboth mentor and mentee sign a mutua-consent contract\nwe help and support them through the duration of the scheme. Either party can withdraw at any time without fault\nwe invite mentors and mentees to come and present their experiences at the monthly mentoring meetup"
+    "text": "How it works\n\n\n\n\n\n\n\ngraph TD;\n\nrequest[\"Mentee sends a project outline\"] --&gt; mentorfinds[\"Mentor finds a suitable project outline\"]\n\nmentorfinds --&gt; email[\"Both discuss by email\"]\n\nemail --&gt; meeting[\"Informal meeting to set goals and expectations\"]\n\nmeeting --&gt;  contract[\"Sign contract\"]\n\ncontract --&gt; complete[\"Complete the mentoring project\"]\n\ncomplete --&gt; present[\"Present the project at the mmmmm\"]\n\n\n\n\n\n\n\n\n\na mentee puts a request on the KIND Teams channel by filling in the new project form\na mentor sees the request on the Teams channel, and expressed interest in mentoring)\nwe put the mentee and mentor in touch by email to discuss the project\nmentor and mentee meet to agree a broad outline for their mentoring arrangement\nboth mentor and mentee sign a mutual-consent contract\nwe help and support them through the duration of the scheme. Either party can withdraw at any time without fault\nwe invite mentors and mentees to come and present their experiences at the monthly mentoring meetup"
   },
   {
     "objectID": "mentoring.html#key-documents",
@@ -374,8 +374,8 @@
     "objectID": "kind_botw.html#in-the-beginning-was-the-worm-finding-the-secrets-of-life-in-a-tiny-hermaphrodite",
     "href": "kind_botw.html#in-the-beginning-was-the-worm-finding-the-secrets-of-life-in-a-tiny-hermaphrodite",
     "title": "KIND Book of the week",
-    "section": "05/06/2024: In the beginning was the worm : finding the secrets of life in a tiny hermaphrodite",
-    "text": "05/06/2024: In the beginning was the worm : finding the secrets of life in a tiny hermaphrodite\nAndrew Brown. 2004. In the beginning was the worm : finding the secrets of life in a tiny hermaphrodite. ISBN 9780743415989, Worldcat link.\n It’s now close to twenty years old, and deals with the research uses of a microscopic nematode worm, but this short and interesting book remains one of the most compelling introductions to health research out there. For analysts, the story here is one of wrangling. Not the usual wrangling and tidying data to permit analysis that we’re so used to, but a very similar process of wrangling the properties of an organism (C. elegans) to make it behave. Bonus points for the comments about the Worm Breeder’s Gazette which remains a favourite niche technical publication."
+    "section": "05/06/2024: In the beginning was the worm: finding the secrets of life in a tiny hermaphrodite",
+    "text": "05/06/2024: In the beginning was the worm: finding the secrets of life in a tiny hermaphrodite\nAndrew Brown. 2004. In the beginning was the worm: finding the secrets of life in a tiny hermaphrodite. ISBN 9780743415989, Worldcat link.\n It’s now close to twenty years old, and deals with the research uses of a microscopic nematode worm, but this short and interesting book remains one of the most compelling introductions to health research out there. For analysts, the story here is one of wrangling. Not the usual wrangling and tidying data to permit analysis that we’re so used to, but a very similar process of wrangling the properties of an organism (C. elegans) to make it behave. Bonus points for the comments about the Worm Breeder’s Gazette which remains a favourite niche technical publication."
   },
   {
     "objectID": "kind_botw.html#genesis-and-development-of-a-scientific-fact",
@@ -1278,6 +1278,13 @@
     "href": "rreadgr.html#schedule",
     "title": "R reading group",
     "section": "Schedule",
-    "text": "Schedule\n\nThursday, 3-4pm BST, 26th September 2024\nThursday, 3-4pm GMT, 21st November 2024\nThursday, 3-4pm GMT, 19th December 2024\n\nreadings tba"
+    "text": "Schedule\n\nThursday, 3-4pm BST, 26th September 2024. reading: chapter 2 of Advanced R on names and values\nThursday, 3-4pm GMT, 21st November 2024\nThursday, 3-4pm GMT, 19th December 2024"
+  },
+  {
+    "objectID": "kind_botw.html#what-tech-calls-thinking-an-inquiry-into-the-intellectual-bedrock-of-silicon-valley",
+    "href": "kind_botw.html#what-tech-calls-thinking-an-inquiry-into-the-intellectual-bedrock-of-silicon-valley",
+    "title": "KIND Book of the week",
+    "section": "18/09/2024: What Tech Calls Thinking: An Inquiry into the Intellectual Bedrock of Silicon Valley",
+    "text": "18/09/2024: What Tech Calls Thinking: An Inquiry into the Intellectual Bedrock of Silicon Valley\nAdrian Daub. 2020. What Tech Calls Thinking: An Inquiry into the Intellectual Bedrock of Silicon Valley. ISBN 9780374538644, Worldcat link.\n A possibly-controversial choice this week, with a coruscating look at the way the tech industry, and its leaders, choose to present their thinking. As you might gather from the ironic intellectual bedrock of the title, the book is largely about puncturing some of the more thoughtless presentation of old ideas as radical new ones that seems to infest tech talk. This recycling, which get memorably tagged with Daniel Dennett’s line about ‘bombastic redescriptions of orthodoxy’ include radical posturing about disruption, about Silicon Valley’s strange love of dropping out, and about the costs and consequences of failure. Particularly recommended if your work and interests take you anywhere where the tech talk runs more towards general promotion than towards details and substance."
   }
 ]

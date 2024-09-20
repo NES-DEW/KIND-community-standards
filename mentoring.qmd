@@ -84,7 +84,7 @@ complete --> present["Present the project at the mmmmm"]
 
 1. mentor and mentee meet to agree a broad outline for their mentoring arrangement
 
-1. both mentor and mentee [sign a mutua-consent contract]((https://forms.office.com/e/ik4fpth04B))
+1. both mentor and mentee [sign a mutual-consent contract](https://forms.office.com/e/ik4fpth04B)
 
 1. we help and support them through the duration of the scheme. [Either party can withdraw at any time](https://forms.office.com/e/9mDyGFVzB1) without fault
 

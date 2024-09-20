@@ -8,8 +8,7 @@ This is a monthly hour-and-a-bit of informal chat about a reading of interest. A
 
 ## Schedule
 
-+ Thursday, 3-4pm BST, 26th September 2024
++ Thursday, 3-4pm BST, 26th September 2024. **reading:** [chapter 2 of Advanced R on names and values](https://adv-r.hadley.nz/names-values.html)
 + Thursday, 3-4pm GMT, 21st November 2024
 + Thursday, 3-4pm GMT, 19th December 2024
 
-readings tba
