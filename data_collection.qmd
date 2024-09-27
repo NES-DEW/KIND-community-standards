@@ -6,10 +6,6 @@ editor:
     wrap: 72
 ---
 
-This is a draft set of community standards for data collection. These
-will be reviewed by the KIND community before publication during August
-2024.
-
 # {.tabset}
 
 ## Basic standard for data collection
