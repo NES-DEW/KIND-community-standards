@@ -8,9 +8,9 @@
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke">
-<meta name="dcterms.date" content="2024-07-12">
+<meta name="dcterms.date" content="2024-09-26">
 
-<title>KIND Community Standards: Data collection – KIND resources</title>
+<title>R reading group notes – KIND resources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +23,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -83,10 +117,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./![](/src/images/KLN_banner_v05_125.png)" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../![](/src/images/KLN_banner_v05_125.png)" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">KIND resources</span>
     </a>
   </div>
@@ -97,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -106,15 +140,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-community-standards">    
         <li>
-    <a class="dropdown-item" href="./excel.html">
+    <a class="dropdown-item" href="../excel.html">
  <span class="dropdown-text">Excel</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./r.html">
+    <a class="dropdown-item" href="../r.html">
  <span class="dropdown-text">R</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./data_collection.html">
+    <a class="dropdown-item" href="../data_collection.html">
  <span class="dropdown-text">Data collection (draft)</span></a>
   </li>  
     </ul>
@@ -125,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-sample-sops">    
         <li>
-    <a class="dropdown-item" href="./visio.html">
+    <a class="dropdown-item" href="../visio.html">
  <span class="dropdown-text">Visio</span></a>
   </li>  
     </ul>
@@ -136,11 +170,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-community-activities">    
         <li>
-    <a class="dropdown-item" href="./rreadgr.html">
+    <a class="dropdown-item" href="../rreadgr.html">
  <span class="dropdown-text">R reading group</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./kind_cms.html">
+    <a class="dropdown-item" href="../kind_cms.html">
  <span class="dropdown-text">Community meetups</span></a>
   </li>  
     </ul>
@@ -151,33 +185,33 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-r-beginners-club">    
         <li>
-    <a class="dropdown-item" href="./rbc/about.html">
+    <a class="dropdown-item" href="../rbc/about.html">
  <span class="dropdown-text">about</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rbc/2024-06-13.html">
+    <a class="dropdown-item" href="../rbc/2024-06-13.html">
  <span class="dropdown-text">2024-06-13</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rbc/2024-09-12.html">
+    <a class="dropdown-item" href="../rbc/2024-09-12.html">
  <span class="dropdown-text">2024-09-12</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./faq.html"> 
+    <a class="nav-link" href="../faq.html"> 
 <span class="menu-text">KIND FAQ</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./mentoring.html"> 
+    <a class="nav-link" href="../mentoring.html"> 
 <span class="menu-text">Mentoring scheme</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./kind_botw.html"> 
+    <a class="nav-link" href="../kind_botw.html"> 
 <span class="menu-text">Book of the week</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ml_archive.html"> 
+    <a class="nav-link" href="../ml_archive.html"> 
 <span class="menu-text">Mailing list archive</span></a>
   </li>  
 </ul>
@@ -208,23 +242,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a>
-  <ul class="collapse">
-  <li><a href="#basic-standard-for-data-collection" id="toc-basic-standard-for-data-collection" class="nav-link" data-scroll-target="#basic-standard-for-data-collection">Basic standard for data collection</a></li>
-  <li><a href="#enhanced-standard-for-data-collection" id="toc-enhanced-standard-for-data-collection" class="nav-link" data-scroll-target="#enhanced-standard-for-data-collection">Enhanced standard for data collection</a></li>
-  <li><a href="#why-think-about-data-collection" id="toc-why-think-about-data-collection" class="nav-link" data-scroll-target="#why-think-about-data-collection">Why think about data collection?</a></li>
-  <li><a href="#why-collect-data" id="toc-why-collect-data" class="nav-link" data-scroll-target="#why-collect-data">Why collect data?</a></li>
-  <li><a href="#tools-used-for-data-collection" id="toc-tools-used-for-data-collection" class="nav-link" data-scroll-target="#tools-used-for-data-collection">Tools used for data collection</a>
-  <ul class="collapse">
-  <li><a href="#q-can-you-use-forms" id="toc-q-can-you-use-forms" class="nav-link" data-scroll-target="#q-can-you-use-forms">Q: Can you use Forms?</a></li>
-  </ul></li>
-  </ul></li>
-  </ul>
-</nav>
+        
     <div class="quarto-margin-footer"><div class="margin-footer-item">
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
 <a property="dct:title" rel="cc:attributionURL" href="https://nes-dew.github.io/KIND-training">KIND training materials</a> by <span property="cc:attributionName">KIND learning network</span> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a>
@@ -235,7 +253,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">KIND Community Standards: Data collection</h1>
+<h1 class="title">R reading group notes</h1>
 </div>
 
 
@@ -264,7 +282,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 12, 2024</p>
+      <p class="date">September 26, 2024</p>
     </div>
   </div>
   
@@ -276,139 +294,255 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="section" class="level1 tabset">
-<h1 class="tabset"></h1>
-<section id="basic-standard-for-data-collection" class="level2">
-<h2 class="anchored" data-anchor-id="basic-standard-for-data-collection">Basic standard for data collection</h2>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>This was about the <a href="https://adv-r.hadley.nz/names-values.html">names and values chapter in Advanced R (2nd ed)</a>. It’s mainly about understanding how objects are named in R, and what the implications are for ordinary R practitioners.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lobstr) <span class="co"># to help understand how objects are structured</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(microbenchmark)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="callout-title-container flex-fill">
-Before you begin
+<p>The first point is about names. We usually think about assignment as making an object called <code>x</code>. But it’s definitely better to think about these separately - first creating an object and then binding it to a name. That means that names have objects, rather than objects having names.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>) <span class="co"># create an object</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(x) <span class="co"># location in memory</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "0x26c74139378"</code></pre>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>You need to be absolutely sure that you are allowed to collect the data you’re planning to collect. If there is any doubt, you should contact your Information Governance and/or Caldicott teams before beginning collection.</p>
-</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> x <span class="co"># bind an additional name to the object</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(x) <span class="sc">==</span> <span class="fu">obj_addr</span>(y) <span class="co"># it's just one object with two names</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
 </div>
 </div>
-<p>Note that this guide does not deal with data collection for research purposes, which is governed by different legislative and ethical standards. There can be some difficulty in deciding whether a piece of data collection would count as research, and so you might find the <a href="https://www.hra-decisiontools.org.uk/research/">HRA <em>Is my study research?</em> tool</a> helpful.</p>
-<ul>
-<li>only collect data you are going to use</li>
-<li>collect the absolute minimum information you can. This is both good practice, and a <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/the-principles/data-minimisation/">legal obligation</a></li>
-<li>make sure that your information has not already been collected</li>
-<li>different types of information (especially <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/personal-information-what-is-it/what-is-personal-information-a-guide/">personal data</a>) will require different standards. This can be complex, so please make contact with your colleagues in Information Governance early in the process</li>
-</ul>
-</section>
-<section id="enhanced-standard-for-data-collection" class="level2">
-<h2 class="anchored" data-anchor-id="enhanced-standard-for-data-collection">Enhanced standard for data collection</h2>
-<ul>
-<li>do you need to make sure that data will be collected consistently? This is especially important if data collection will be lengthy, or large-scale. Consider writing an SOP for data collection</li>
-</ul>
-</section>
-<section id="why-think-about-data-collection" class="level2">
-<h2 class="anchored" data-anchor-id="why-think-about-data-collection">Why think about data collection?</h2>
-<blockquote class="blockquote">
-<p>“We are often asked to collect, but many of us lack official training and support for the kinds of complex questions thrown up by data collection. Using data and collecting data are really different” (anonymous KIND member)</p>
-</blockquote>
-</section>
-<section id="why-collect-data" class="level2">
-<h2 class="anchored" data-anchor-id="why-collect-data">Why collect data?</h2>
-<p>Some example purposes, drawn from a small-scale survey of 40 analysts from NHS boards performed during 2023:</p>
-<ul>
-<li>for clinical audit / quality improvement</li>
-<li>for statutory data collection / official and national statistics</li>
-<li>establishing new services / requirements</li>
-<li>user research</li>
-<li>organisational consultation</li>
-<li>for performance and evaluation purposes</li>
-</ul>
-</section>
-<section id="tools-used-for-data-collection" class="level2">
-<h2 class="anchored" data-anchor-id="tools-used-for-data-collection">Tools used for data collection</h2>
-<p>In a 2023 small-scale survey of 40 analysts, the main tools identified were as follows:</p>
-<table class="caption-top table">
+<p>This applies to objects in general, including function definitions:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(mean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "0x26c6f61eab0"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>steve <span class="ot">&lt;-</span> mean</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(steve)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "0x26c6f61eab0"</code></pre>
+</div>
+</div>
+<p>We only create a new object when we modify one of the names:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>y[<span class="dv">3</span>] <span class="ot">&lt;-</span> <span class="dv">9</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(x) <span class="sc">==</span> <span class="fu">obj_addr</span>(y) <span class="co"># different objects now</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+</div>
+<p>There are a couple of important exceptions to this general principle. First, lists have an extra step, in that they refer to references, rather than to objects directly:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>l1 <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>l2 <span class="ot">&lt;-</span> l1</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(l1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "0x26c75262678"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(l2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "0x26c75262678"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>l2[[<span class="dv">3</span>]] <span class="ot">&lt;-</span> <span class="dv">99</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(l1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "0x26c75262678"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(l2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "0x26c75462e98"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ref</span>(l1, l2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>█ [1:0x26c75262678] &lt;list&gt; 
+├─[2:0x26c74f7e938] &lt;dbl&gt; 
+├─[3:0x26c74f7e900] &lt;dbl&gt; 
+└─[4:0x26c74f7e8c8] &lt;dbl&gt; 
+ 
+█ [5:0x26c75462e98] &lt;list&gt; 
+├─[2:0x26c74f7e938] 
+├─[3:0x26c74f7e900] 
+└─[6:0x26c74f7e778] &lt;dbl&gt; </code></pre>
+</div>
+</div>
+<p>As tibbles (and other tabular data structures in R) are effectively lists, this is an explaination as to why row-wise operations are so slow compared to operations on columns. As tibbles are are lists of columns, updating a column just makes a new reference. Changing a row, on the other hand, makes a whole new set of objects and references:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>mt_changed_col <span class="ot">&lt;-</span> mtcars</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>mt_changed_col<span class="sc">$</span>hp <span class="ot">&lt;-</span> mtcars<span class="sc">$</span>hp<span class="sc">*</span><span class="dv">9</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>mt_changed_row <span class="ot">&lt;-</span> mtcars</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>mt_changed_row[<span class="dv">1</span>,] <span class="ot">&lt;-</span> mt_changed_row[<span class="dv">1</span>,] <span class="sc">*</span> <span class="dv">9</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ref</span>(mtcars, mt_changed_col, mt_changed_row)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>█ [1:0x26c741467c8] &lt;df[,11]&gt; 
+├─mpg = [2:0x26c703532c0] &lt;dbl&gt; 
+├─cyl = [3:0x26c70353ea0] &lt;dbl&gt; 
+├─disp = [4:0x26c703545c0] &lt;dbl&gt; 
+├─hp = [5:0x26c703533f0] &lt;dbl&gt; 
+├─drat = [6:0x26c70354820] &lt;dbl&gt; 
+├─wt = [7:0x26c70355400] &lt;dbl&gt; 
+├─qsec = [8:0x26c70355530] &lt;dbl&gt; 
+├─vs = [9:0x26c70354bb0] &lt;dbl&gt; 
+├─am = [10:0x26c70353060] &lt;dbl&gt; 
+├─gear = [11:0x26c70353650] &lt;dbl&gt; 
+└─carb = [12:0x26c70353780] &lt;dbl&gt; 
+ 
+█ [13:0x26c74146d48] &lt;df[,11]&gt; 
+├─mpg = [2:0x26c703532c0] 
+├─cyl = [3:0x26c70353ea0] 
+├─disp = [4:0x26c703545c0] 
+├─hp = [14:0x26c70353fd0] &lt;dbl&gt; 
+├─drat = [6:0x26c70354820] 
+├─wt = [7:0x26c70355400] 
+├─qsec = [8:0x26c70355530] 
+├─vs = [9:0x26c70354bb0] 
+├─am = [10:0x26c70353060] 
+├─gear = [11:0x26c70353650] 
+└─carb = [12:0x26c70353780] 
+ 
+█ [15:0x26c72e7d748] &lt;df[,11]&gt; 
+├─mpg = [16:0x26c70354100] &lt;dbl&gt; 
+├─cyl = [17:0x26c70354230] &lt;dbl&gt; 
+├─disp = [18:0x26c70354360] &lt;dbl&gt; 
+├─hp = [19:0x26c70354950] &lt;dbl&gt; 
+├─drat = [20:0x26c703546f0] &lt;dbl&gt; 
+├─wt = [21:0x26c70356700] &lt;dbl&gt; 
+├─qsec = [22:0x26c70355eb0] &lt;dbl&gt; 
+├─vs = [23:0x26c70355fe0] &lt;dbl&gt; 
+├─am = [24:0x26c6eed38b0] &lt;dbl&gt; 
+├─gear = [25:0x26c6eed4360] &lt;dbl&gt; 
+└─carb = [26:0x26c6eed3780] &lt;dbl&gt; </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>col_row <span class="ot">&lt;-</span> <span class="fu">microbenchmark</span>(</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  {mt_changed_col <span class="ot">&lt;-</span> mtcars</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  mt_changed_col[<span class="st">"hp"</span>] <span class="ot">&lt;-</span> mtcars[<span class="st">"hp"</span>]<span class="sc">*</span><span class="dv">9</span>},</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  {mt_changed_row <span class="ot">&lt;-</span> mtcars</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>  mt_changed_row[<span class="dv">1</span>,] <span class="ot">&lt;-</span> mt_changed_row[<span class="dv">1</span>,] <span class="sc">*</span> <span class="dv">9</span>}</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>col_row <span class="sc">|&gt;</span></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">expr =</span> <span class="fu">case_when</span>(stringr<span class="sc">::</span><span class="fu">str_detect</span>(expr, <span class="st">"col"</span>) <span class="sc">~</span> <span class="st">"by col"</span>,</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>                          <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"by row"</span>))  <span class="sc">|&gt;</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(expr) <span class="sc">|&gt;</span></span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="st">`</span><span class="at">mean time (μs)</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">mean</span>(time)<span class="sc">/</span><span class="dv">1000</span>) <span class="sc">|&gt;</span></span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>() <span class="co"># about 4x faster to change the col than the row</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th>Tool</th>
-<th>n</th>
+<th style="text-align: left;">expr</th>
+<th style="text-align: right;">mean time (μs)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Excel</td>
-<td>32</td>
+<td style="text-align: left;">by col</td>
+<td style="text-align: right;">472.550</td>
 </tr>
 <tr class="even">
-<td>Microsoft Forms</td>
-<td>16</td>
-</tr>
-<tr class="odd">
-<td>Other survey tools (e.g.&nbsp;Surveymonkey, SmartSurvey)</td>
-<td>15</td>
-</tr>
-<tr class="even">
-<td>RedCap</td>
-<td>2</td>
+<td style="text-align: left;">by row</td>
+<td style="text-align: right;">1393.922</td>
 </tr>
 </tbody>
 </table>
-<p>(note that respondents were able to identify &gt;1 tool used)</p>
-<p>That simplicity of tools used conceals enormous complexity. A sample of factors identified as influencing tool choice were as follows:</p>
-<ul>
-<li>availability / ubiquity amongst those collecting</li>
-<li>flexibility / integration</li>
-<li>audit trail</li>
-<li>downstream ETL</li>
-<li>commissioning and training requirements</li>
-<li>ease of use / skills available</li>
-<li>IG / robustness / confidentiality</li>
-<li>cost</li>
-<li>stakeholder mandate</li>
-<li>technical features (e.g., limited response types)</li>
-<li>speed of build</li>
-<li>institutional approval and support</li>
-</ul>
-<p>Many staff have restrictions on the tools available. For example, looking at Microsoft Forms, a wide variety of different possibilities are found. A survey of 64 members of the KIND network during July 2024 gained responses from 23 organisations and NHS boards.</p>
-<!-- ### Top five boards and orgs -->
-<section id="q-can-you-use-forms" class="level3">
-<h3 class="anchored" data-anchor-id="q-can-you-use-forms">Q: Can you use Forms?</h3>
-<table class="caption-top table">
-<caption>Responses to the question ‘Can you use Forms?’</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">response</th>
-<th style="text-align: right;">n</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Yes - for anything</td>
-<td style="text-align: right;">17</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Yes - but not for personally-identifiable information</td>
-<td style="text-align: right;">36</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">No</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Other</td>
-<td style="text-align: right;">9</td>
-</tr>
-</tbody>
-</table>
+</div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>ggplot2<span class="sc">::</span><span class="fu">autoplot</span>(col_row)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="rrg_2024-09-26_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We also looked briefly at alternative representation. The range operator is the best example of highly compact representations:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000000</span>) <span class="co"># approx size?</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>680 B</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>) <span class="sc">==</span> <span class="fu">obj_size</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000000</span>) <span class="co"># the range operator only stores the first and last values</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(<span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">1000000</span>)) <span class="co"># seq will use the same alternative representation...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>680 B</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(<span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">1000000</span>, <span class="fl">1.0</span>)) <span class="co"># unless you ask it to make a sequence with non-1L steps </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>8.00 MB</code></pre>
+</div>
+</div>
+<p><code>object.size</code> has lots of interesting implications for lists as it only describes the size of the references, rather than the underlying objects:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(<span class="fu">rnorm</span>(<span class="fl">1e6</span>)) <span class="co"># 8 mb</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>8.00 MB</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>mill <span class="ot">&lt;-</span> <span class="fu">obj_size</span>(<span class="fu">rnorm</span>(<span class="fl">1e6</span>)) </span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(<span class="fu">list</span>(<span class="fu">rnorm</span>(<span class="fl">1e6</span>), <span class="fu">rnorm</span>(<span class="fl">1e6</span>), <span class="fu">rnorm</span>(<span class="fl">1e6</span>)))<span class="co">#??</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>24.00 MB</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(<span class="fu">list</span>(mill, mill, mill))<span class="co">#??</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>368 B</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(<span class="fu">tibble</span>(<span class="at">a =</span> mill, </span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>                <span class="at">b =</span> mill,</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">c =</span> mill))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>1.21 kB</code></pre>
+</div>
+</div>
+<p>All strings are held in a common area of memory called the common string pool. This gives rise to a lot of interesting size consequence for vectors with shared strings:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>s1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"the"</span>, <span class="st">"cat"</span>, <span class="st">"sat"</span>, <span class="st">"mat"</span>)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>s2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"the"</span>, <span class="st">"the"</span>, <span class="st">"the"</span>, <span class="st">"the"</span>)</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(s1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>304 B</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(s2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>136 B</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ref</span>(s1, <span class="at">character =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>█ [1:0x26c77e629b8] &lt;chr&gt; 
+├─[2:0x26c6f69dd48] &lt;string: "the"&gt; 
+├─[3:0x26c67a59378] &lt;string: "cat"&gt; 
+├─[4:0x26c749bebe0] &lt;string: "sat"&gt; 
+└─[5:0x26c6e575880] &lt;string: "mat"&gt; </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ref</span>(s2, <span class="at">character =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>█ [1:0x26c77e61158] &lt;chr&gt; 
+├─[2:0x26c6f69dd48] &lt;string: "the"&gt; 
+├─[2:0x26c6f69dd48] 
+├─[2:0x26c6f69dd48] 
+└─[2:0x26c6f69dd48] </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)) <span class="co"># numeric vectors don't behave in the same way</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>80 B</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(<span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">4</span>,<span class="dv">4</span>,<span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>80 B</code></pre>
+</div>
+</div>
 
 
-</section>
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
