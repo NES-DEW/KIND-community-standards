@@ -24,7 +24,7 @@ source(here::here("R/mail_training_sessions.R"))
 ```{r}
 #| include: false
 
-next_week_start <- lubridate::ceiling_date(lubridate::today(), unit = "week", week_start = 1)
+next_week_start <- lubridate::ceiling_date(lubridate::dmy("04/10/2024"), unit = "week", week_start = 1)
 
 next_week_end <- next_week_start + lubridate::weeks(1)
 
