@@ -6,7 +6,7 @@ execute:
   freeze: auto
 ---
 
-## Help! People keep sending me code that won't run for me
+## Help! I'm usually unable to run code that people send me
 
 This can be really difficult, because you generally need your code to run at least a bit before you can find error messages. Three areas to try if you can't get anything to behave itself.
 

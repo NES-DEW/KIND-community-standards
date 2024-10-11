@@ -1,0 +1,268 @@
+---
+title: R beginner's club 2024-09-12
+execute: 
+  output: markdown
+  echo: true
+  freeze: auto
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+# packages for this session
+
+library(dplyr)
+library(forcats)
+library(ggplot2)
+library(lubridate)
+library(openxlsx)
+library(readxl)
+```
+
+## Factors are confusing!
+
+Factors are confusing, but also *factors are powerful*. The reason they're powerful is they give you proper tools for managing categorical data, and especially caregorical data that has a fixed order. Let's set up an example to play with. Take an ordinary vector of character strings:
+
+```{r}
+oct_s <- c("Tweak", "Barnacles", "Dashi", "Kwazii")
+```
+
+We can convert that into a factor:
+
+```{r}
+oct_f <- factor(oct_s)
+```
+
+To see what difference that's made, let's call up both the string vector and the factor:
+
+```{r}
+oct_s
+oct_f
+```
+
+So we've gained a new part in the factor: levels. You can think of levels as the possible values that our factor might contain. By default, when you create a factor from some strings, it takes the unique values, puts them in alphabetical order, and uses those as the levels:
+
+```{r}
+levels(oct_f) # alphabetical
+```
+
+In fact, if you look carefully at the structure of a factor, you'll see something surprising:
+
+```{r}
+typeof(oct_f)
+```
+
+So factors are basically vectors of integers, with each integer standing in for one of the possible levels. This makes factors more efficient than ordinary strings:
+
+```{r}
+# guess who's been reading Advanced R
+lobstr::obj_size(sample(oct_s, 100000, T))
+lobstr::obj_size(sample(oct_f, 100000, T))
+```
+
+It also means that we get to use some of the number-oriented tools to work with categorical data:
+
+```{r}
+summary(sample(oct_s, 100000, T))
+summary(sample(oct_f, 100000, T)) # nice frequency table with no effort
+```
+
+Things get really interesting when we realise we can change the order of levels from the default alphabetical ordering:
+
+```{r}
+oct_f_l <- factor(oct_s, levels = c("Dashi", "Tweak", "Barnacles", "Kwazii"))
+
+oct_f_l
+```
+
+That's very interesting, because the ordering of factors gets preserved in all kinds of places:
+
+```{r}
+oct_f_l_tibble <- tibble(oct_f_l,
+                         score = c(7,5,9,4)) 
+
+oct_f_l_tibble |>
+  ggplot() +
+  geom_col(aes(x = oct_f_l, y = score, fill = oct_f_l)) 
+```
+
+```{r}
+oct_f_l_tibble |>
+  group_by(oct_f_l) |>
+  summarise(score = score * 20)
+```
+
+If you want to get fancy with factors, the [forcats](https://forcats.tidyverse.org/) package has some great tools. Some quick examples:
+
+```{r}
+oct_s |>
+  factor() |>
+  fct_inorder() |> # build a factor with levels in order of appearance
+  levels()
+```
+
+```{r}
+oct_plot <- oct_f_l_tibble |>
+  ggplot(aes(y = score, fill = oct_f_l)) 
+
+oct_plot +
+  geom_col(aes(x = fct_reorder(oct_f_l, c(4,2,3,1)))) # re-order levels in place
+```
+
+```{r}
+oct_plot +
+  geom_col(aes(x = fct_reorder(oct_f_l, -score))) # order levels by other values
+```
+
+
+### example 1: forcing non-alphabetical ordering
+
+```{r}
+month_v <- month.name[1:4]
+
+month_f <- factor(month_v, levels = c("January", "February", "March", "April"))
+
+# or fct_inorder(factor(month.name[1:4])) would get you there too
+
+tibble(month = month_f,
+       values = c(99,55,22,101)) |>
+  ggplot() +
+  geom_col(aes(x = month, y = values))
+
+tibble(month = month_f,
+       values = c(99,55,22,101)) |>
+  ggplot() +
+  geom_col(aes(x = fct_reorder(month, -values), y = values))
+```
+
+
+### example 2: dealing with numeric categories
+```{r}
+mtcars |>
+  ggplot() + 
+  geom_point(aes(x = wt, y = hp, colour = gear)) # continuous presentation of categories
+
+mtcars |>
+  ggplot() + 
+  geom_point(aes(x = wt, y = hp, colour = factor(gear)))
+```
+
+## How do I filter based on dates?
+
+There are a couple of tips here. First, make sure that you're working with dates from as early in the process as possible. Don't try and cheat with text strings:
+
+```{r}
+dat <- tibble(
+  date = c("01/02/2024", "01/04/2024", "01/06/2024"),
+  val = c("one", "two", "three")
+) |>
+  mutate(date = dmy(date)) 
+
+dat
+```
+
+The second big bit of advice is to pick an approach to dates, and stick with it for everything. I like [lubridate](https://lubridate.tidyverse.org/), but you might prefer doing dates in [base R](https://www.r-bloggers.com/2019/04/the-ultimate-opinionated-guide-to-base-r-date-format-functions/), or [data.table](https://rdrr.io/cran/data.table/man/IDateTime.html), or something else. Whichever system you prefer, stick to one - it'll save masses of pain in the long-run.
+
+I like lubridate for this sort of work, because (to my mind) it has the easiest set of parsing functions to make dates from values:
+
+```{r}
+ydm("2021-28-4") # including some horrible formats
+ym("199907")
+ym("199907") + days(11) # with additional setting
+ceiling_date(ym("199907"), "months")
+```
+
+You should be able to `dplyr::filter` your data in a few ways:
+
+```{r}
+dat |>
+  filter(date == "2024-04-01") # assuming you remember how R dates are formatted
+
+dat |>
+  filter(date == ymd("2024-04-01")) # probably safer to convert the string to a date
+
+dat |>
+  filter(date >= ymd("2022-04-01")) # inequality filtering
+
+dat |>
+  filter(date >= ymd("2022-04-01") + years(2)) # filtering with offset
+
+dat |>
+  filter(date %within% interval("2024-03-01", "2024-05-01")) # %within% is basically %in% for dates
+
+```
+
+## How can I read specific sheets out of an Excel file?
+
+If you're using readxl, there's a nice `sheet = ` argument to allow you to read data directly from one sheet:
+
+```{r}
+fn <- "data/s01_data.xlsx"
+
+readxl::read_xlsx(fn, sheet = "occupancy_sh") |>
+  slice(1:4) |>
+  knitr::kable()
+```
+
+You can also pull out all the sheet names from a workbook:
+
+```{r}
+excel_sheets(fn)
+```
+
+If you want to be fancy, you can iterate through the sheets:
+
+```{r}
+lapply(excel_sheets(fn), 
+       read_excel,
+       path = fn)
+```
+
+## How can I swap colour palettes in ggplot
+
+There are several different strategies that might be useful for tweaking ggplot colours. Let's set up a quick factors plot based on months:
+
+```{r}
+
+factors_plot <- tibble(month = month_f,
+       values = c(99,55,22,101)) |>
+  ggplot() +
+  geom_col(aes(x = fct_reorder(month, -values), 
+               y = values, 
+               fill = fct_reorder(month, -values))) 
+
+factors_plot
+```
+
+You can manually assign colours. R recognises about 600 different ordinary colour names:
+
+```{r}
+factors_plot + 
+  scale_fill_manual(values = c("red", "green", "black", "grey"))
+```
+
+Or, with more precision, you can specify [hex values](https://www.w3schools.com/colors/colors_hexadecimal.asp):
+
+```{r}
+factors_plot + 
+  scale_fill_manual(values = c("#115599", "#aa1199", "black", "#ff6600"))
+```
+
+This is fine for simple plots, or when you have e.g. specific colour palettes to use (like you might find in an organisational style manual). But for one-off or more sophisticated uses, it's definitely worth exploring [ColorBrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3) - especially because this has great support for producing accessible colour palettes:
+
+```{r}
+factors_plot + 
+  scale_fill_brewer(palette = "RdBu")
+```
+
+Finally, a nice weird trick: you can reverse the default order that ggplot creates fill colours using `scales::hue_pal`:
+
+```{r}
+factors_plot +
+  scale_fill_manual(values = scales::hue_pal(direction = 1)(4))
+
+factors_plot +
+  scale_fill_manual(values = scales::hue_pal(direction = -1)(4))
+
+```
+

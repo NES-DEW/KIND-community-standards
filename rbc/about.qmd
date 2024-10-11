@@ -24,6 +24,9 @@ You can follow [this direct link to access the Teams meeting](https://teams.micr
 [R beginner's club 13th June 2024](2024-06-13.qmd)
 </br>
 [R beginner's club 12th Sept 2024](2024-09-12.qmd)
+</br>
+[R beginner's club 10th Oct 2024](2024-10-10.qmd)
+
 
 
 
