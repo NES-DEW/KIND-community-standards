@@ -38,6 +38,8 @@ website:
             text: 2024-06-13
           - href: rbc/2024-09-12.qmd
             text: 2024-09-12
+          - href: rbc/2024-10-10.qmd
+            text: 2024-10-10
       - href: faq.qmd
         text: KIND FAQ
       - href: mentoring.qmd
