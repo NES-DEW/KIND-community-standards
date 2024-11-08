@@ -1454,5 +1454,47 @@
     "title": "R beginner’s club 2024-06-13",
     "section": "How to think about joins?",
     "text": "How to think about joins?\nWe did a simple join above. A join is a way of merging two datasets. Let’s demonstrate with some cut-down datasets from above. We’ll remove some of the values from our b1 set and from our b2 set:\n\nb1 &lt;- b1 |&gt;\n  slice(1:5)\n\nb1\n\n# A tibble: 5 × 2\n  name     score\n  &lt;chr&gt;    &lt;dbl&gt;\n1 kennedy  0.590\n2 victoria 0.248\n3 peter    0.644\n4 judi     0.887\n5 paul     0.336\n\n\n\nb2 &lt;- b2 |&gt;\n  slice_sample(n = 5)\n\nb2\n\n# A tibble: 5 × 2\n  name    score\n  &lt;chr&gt;   &lt;dbl&gt;\n1 kenneth 0.393\n2 kennedy 0.590\n3 peter   0.644\n4 michael 0.561\n5 judi    0.887\n\n\nThe simplest join we could do is to bind the rows from one set onto another:\n\nb1 |&gt;\n  bind_rows(b2)\n\n# A tibble: 10 × 2\n   name     score\n   &lt;chr&gt;    &lt;dbl&gt;\n 1 kennedy  0.590\n 2 victoria 0.248\n 3 peter    0.644\n 4 judi     0.887\n 5 paul     0.336\n 6 kenneth  0.393\n 7 kennedy  0.590\n 8 peter    0.644\n 9 michael  0.561\n10 judi     0.887\n\n\nThat just brings all the rows from b2 onto the end of b1. Unlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join b2:\n\nb1 |&gt;\n  left_join(b2, by = \"name\")\n\n# A tibble: 5 × 3\n  name     score.x score.y\n  &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;\n1 kennedy    0.590   0.590\n2 victoria   0.248  NA    \n3 peter      0.644   0.644\n4 judi       0.887   0.887\n5 paul       0.336  NA    \n\n\nYou should see that only the values from b2’s score column that have a corresponding name in b1 get populated, and everything else gets filled with NAs. Here’s a nice introduction to the different kinds of join you can do in dplyr."
+  },
+  {
+    "objectID": "kind_botw.html#asking-the-right-questions-a-guide-to-critical-thinking",
+    "href": "kind_botw.html#asking-the-right-questions-a-guide-to-critical-thinking",
+    "title": "KIND Book of the week",
+    "section": "06/11/2024: Asking the right questions: a guide to critical thinking",
+    "text": "06/11/2024: Asking the right questions: a guide to critical thinking\nM. Neil Browne and Stuart M. Keeley. 2006. Asking the right questions: a guide to critical thinking. ISBN 978-0132203043, Worldcat link.\n This week’s recommendation comes from Alupha Chan, a Research IT Facilitator at NHS Tayside who writes: ‘I think this book will go well with this group. This used to be a mandatory reading for my Communications (PR) dip. nearly 2 decades ago - one of the chapters is dedicated in looking at whether presented stats are deceptive.’ Having had a look at this book, I’d recommend it too - lots of great material here for thinking hard about more complicated questions."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#week-beginning-mon-11th-november-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#week-beginning-mon-11th-november-2024",
+    "title": "KIND network update",
+    "section": "Week beginning Mon 11th November 2024",
+    "text": "Week beginning Mon 11th November 2024\nDear colleagues,\nWelcome to our regular KIND network update. You’ll notice slightly less training on offer for the next few weeks than usual. That’s to allow space for work on some new training resources (including an intermediate Power BI course) which will hopefully launch in the new year. Please do get in touch if you have suggestions for these new resources.\nBrendan"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#wins-of-the-week",
+    "title": "KIND network update",
+    "section": "Wins of The Week",
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nI received a clear congratulations for asking a great question at a meeting, nobody had thought about this. So chuffed!\nStarted to unpick a previous project and learn from the mistakes, delays and reflect. My next step is to involve other stakeholders using “psychological safety” model in a meeting.\nWe have had an issue the last couple of weeks with a delay in data appearing in our data warehouse. With help from national colleagues we have finally managed to locate the issue and have it fixed.\nGot a short story accepted for publication in an anthology earlier this year. Copies became available this week and I still can’t quite believe I am looking at my story in print. Wonderful feeling."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#training-sessions",
+    "title": "KIND network update",
+    "section": "Training sessions",
+    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nWhy bother with...R?\n13:00-14:00 Wed 13th November 2024\nR\n🥬: pre-beginner-level"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#events",
+    "title": "KIND network update",
+    "section": "Events",
+    "text": "Events\n\n3-4pm, Mon 11th November 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is learning statistics with R. We’ll be looking at the book Learning Statistics with R as an excellent example of how R can be used as a springboard for developing statistical skills.\n1-2pm, Tue 12th November 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be NA - NA."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#book-of-the-week",
+    "title": "KIND network update",
+    "section": "Book of the week",
+    "text": "Book of the week\ncharacter(0). character(0). character(0).  ISBN character(0), Worldcat. character(0).\nUnsubscribe from these emails"
   }
 ]
