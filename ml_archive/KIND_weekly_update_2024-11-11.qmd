@@ -28,11 +28,6 @@ next_week_start <- lubridate::ceiling_date(lubridate::today(), unit = "week", we
 
 next_week_end <- next_week_start + lubridate::weeks(1)
 
-scodas <- readxl::read_excel("C:/Users/brendancl/NHS Scotland/SCODAS - SCODAS oversight group - SCODAS oversight group/Schedule/SCODAS Schedule and Future Topics.xlsx") |>
-  dplyr::filter(Date >= next_week_start) |>
-  dplyr::filter(Date < next_week_end)
-
-
 kcm <- readr::read_csv("https://raw.githubusercontent.com/NES-DEW/KIND-community-standards/main/data/KIND_community_meetups.csv") |>
   dplyr::mutate(Date = lubridate::dmy(Date)) |>
   dplyr::filter(Date >= next_week_start) |>
@@ -83,10 +78,6 @@ mail_training_sessions(start_date = paste0(next_week_start), end_date =   paste0
 #| echo: false
 
 cat(bullet_list(glue::glue("3-4pm, {nice_date(lubridate::as_date(kcm$Date))}. [All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo](https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1723028114046?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d). Full details and joining links via the [community meetup channel](https://teams.microsoft.com/l/channel/19%3Ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/Community%20meetups?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a). The theme this week is {kcm$Topic}. ")))
-
-# if(nrow(scodas) > 0){
-#   cat(bullet_list(glue::glue("1-2pm, {nice_date(lubridate::as_date(scodas$Date))}. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be [{scodas$Presenter} - {scodas$Topic}](https://teams.microsoft.com/l/meetup-join/19%3a109a603c446743308bff6588820372a9%40thread.tacv2/1671457631308?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%2284150c3d-baed-4515-8eee-8f13ed0d9650%22%7d).")))
-# }
 
 cat(bullet_list("NES's Knowledge Services team are re-running their excellent and highly-regarded series of short events about research and publication next week. [Full details and registration links](https://forms.office.com/pages/responsepage.aspx?id=veDvEDCgykuAnLXmdF5JmmWL8edIO_5Cmgr6wY5txHZURFJFWDA5NFlKWk1CTVFORlAwTlNKUEs0NSQlQCN0PWcu&route=shorturl)"))
 
