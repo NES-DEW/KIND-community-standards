@@ -473,301 +473,28 @@
     "href": "kind_cms.html",
     "title": "KIND community meetups",
     "section": "",
-    "text": "These are our main weekly social learning activity. They’re usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell.\n\nDownload community meetup data as csv\nDownload community meetup ideas as csv\n\n\nCurrent community meetup scheduleFuture community meetup ideasArchive of past sessions\n\n\n\nCurrent community meetup schedule\n\n\n\n\n\n\n\nDate\nTopic\nsubtopic\n\n\n\n\n2024-11-11\nR\nduckdb tech demo / group of use-cases\n\n\n2024-11-18\nTeaching maintenance\n\n\n\n2024-11-25\nExcel\nExcel programming/VBA/lambdas \n\n\n2024-12-02\nfree parking\n\n\n\n2024-12-09\nResearch data management\n\n\n\n2024-12-16\nFirst-steps toolkit for a junior/solo/reluctant/occasional analyst\n\n\n\n\n\n\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nData\nSafe havens / disclosure control / safe researcher training\n\n\n\nData\nDisclosure and pseudoanonymised data\n\n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nData\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\nMisc\nA non-web person’s intro to Java\n\n\n\nPower BI\ncorrelations and linear models in Power BI\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler\n\n\nR\nTidytext, sentiment analysis \n\n\n\nR \nData.table / tidyverse / polars / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nR \nR package roundup - Echarts4r, making PowerPoint in RMD, snakecase\n\n\n\nSkills\nWriting for different audiences\n\n\n\nStats\nDirected Acyclic Graphs (DAGs)\n\n\n\nStats\nPredictive modelling\n\n\n\nStats\nBayesian stats\n\n\n\nR\nTesting code\nEllen Young\n\n\nR\nGithub collaborations and getting Git installed\nGemma Whittaker\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nDate\n\n\nCategories\n\n\n\n\n\n\nAppraisals\n\n\nMay 16, 2024\n\n\nskills, career developement, appraisal\n\n\n\n\nData strategy\n\n\nMar 7, 2023\n\n\nData strategy\n\n\n\n\nJoins 1: introduction\n\n\nSep 2, 2024\n\n\nJoins, beginner, Excel, R, Power Query\n\n\n\n\nLeading a (training) session\n\n\nDec 4, 2023\n\n\nskills, training, career progression, appraisal\n\n\n\n\nTest driven development\n\n\nNov 21, 2023\n\n\nR, testing, intermediate, excel\n\n\n\n\n\nNo matching items"
+    "text": "These are our main weekly social learning activity. They’re usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell.\n\nDownload community meetup data as csv\nDownload community meetup ideas as csv\n\n\nCurrent community meetup scheduleFuture community meetup ideasArchive of past sessions\n\n\n\nCurrent community meetup schedule\n\n\n\n\n\n\n\nDate\nTopic\nsubtopic\n\n\n\n\n2024-11-18\nTeaching maintenance\n\n\n\n2024-11-25\nExcel\nExcel programming/VBA/lambdas \n\n\n2024-12-02\nfree parking\n\n\n\n2024-12-09\nResearch data management\n\n\n\n2024-12-16\nFirst-steps toolkit for a junior/solo/reluctant/occasional analyst\n\n\n\n\n\n\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nData\nSafe havens / disclosure control / safe researcher training\n\n\n\nData\nDisclosure and pseudoanonymised data\n\n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nData\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\nMisc\nA non-web person’s intro to Java\n\n\n\nPower BI\ncorrelations and linear models in Power BI\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler\n\n\nR\nTidytext, sentiment analysis \n\n\n\nR \nData.table / tidyverse / polars / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nR \nR package roundup - Echarts4r, making PowerPoint in RMD, snakecase\n\n\n\nSkills\nWriting for different audiences\n\n\n\nStats\nDirected Acyclic Graphs (DAGs)\n\n\n\nStats\nPredictive modelling\n\n\n\nStats\nBayesian stats\n\n\n\nR\nTesting code\nEllen Young\n\n\nR\nGithub collaborations and getting Git installed\nGemma Whittaker\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nDate\n\n\nCategories\n\n\n\n\n\n\nAppraisals\n\n\nMay 16, 2024\n\n\nskills, career developement, appraisal\n\n\n\n\nData strategy\n\n\nMar 7, 2023\n\n\nData strategy\n\n\n\n\nJoins 1: introduction\n\n\nSep 2, 2024\n\n\nJoins, beginner, Excel, R, Power Query\n\n\n\n\nLeading a (training) session\n\n\nDec 4, 2023\n\n\nskills, training, career progression, appraisal\n\n\n\n\nTest driven development\n\n\nNov 21, 2023\n\n\nR, testing, intermediate, excel\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "ml_archive.html",
-    "href": "ml_archive.html",
-    "title": "KIND network weekly update email archive",
+    "objectID": "unconf_2024.html",
+    "href": "unconf_2024.html",
+    "title": "KIND unconference 2024",
     "section": "",
-    "text": "This is an archive page for the KIND network weekly update email. Subscribe to our mailing list to receive these updates.\n\n2024-11-11\n2024-11-04\n2024-10-07\n2024-09-30\n2024-09-23\n2024-09-16\n2024-09-09\n2024-09-02\n2024-08-26\n2024-08-19\n2024-08-12\n2024-08-05\n2024-07-15\n2024-07-08\n2024-07-01\n2024-06-24\n2024-06-17\n2024-06-10\n2024-06-03\n2024-05-27"
+    "text": "Start time\n\nTopic\n\n\n\n09:30\n\nIntroduction\n\n\n\n09:40\n\nShow-off session 1: short project presentations\n\n\n\n10:20\nTheme discussion: \"high demand for support from the users, far more than I expected\"\nTheme discussion\n\n\n11:00\n\nBreak\n\n\n\n11:20\nTheme discussion 2\nTheme discussion 2\n\n\n12:00\n\n\"what do you want out of the network during 2025\": KIND network direction of travel\n\n\n\n12:40\n\nLunch\n\n\n\n13:20\nTheme discussion 3\nTheme discussion 3\n\n\n14:00\n\nShow-off session 1: short project presentations\n\n\n\n14:40\nTheme discussion\nTheme discussion: “‘we weren’t trained’ and ‘we’re not interested.’”\n\n\n15:20\n\nBreak\n\n\n\n15:40\n\nWrap-up: free chat, scheming, and complaints\n\n\n\n16:00ish\n\nFinish"
   },
   {
-    "objectID": "visio.html",
-    "href": "visio.html",
-    "title": " KIND Community Standards: Visio SOP",
+    "objectID": "unconf_2024.html#schedule",
+    "href": "unconf_2024.html#schedule",
+    "title": "KIND unconference 2024",
     "section": "",
-    "text": "This is a sample standard operating procedure for staff using Microsoft Visio for process mapping and information visualisation within their health, social care, or housing teams. The document is not exhaustive and additional information can be found in the the appendix."
+    "text": "Start time\n\nTopic\n\n\n\n09:30\n\nIntroduction\n\n\n\n09:40\n\nShow-off session 1: short project presentations\n\n\n\n10:20\nTheme discussion: \"high demand for support from the users, far more than I expected\"\nTheme discussion\n\n\n11:00\n\nBreak\n\n\n\n11:20\nTheme discussion 2\nTheme discussion 2\n\n\n12:00\n\n\"what do you want out of the network during 2025\": KIND network direction of travel\n\n\n\n12:40\n\nLunch\n\n\n\n13:20\nTheme discussion 3\nTheme discussion 3\n\n\n14:00\n\nShow-off session 1: short project presentations\n\n\n\n14:40\nTheme discussion\nTheme discussion: “‘we weren’t trained’ and ‘we’re not interested.’”\n\n\n15:20\n\nBreak\n\n\n\n15:40\n\nWrap-up: free chat, scheming, and complaints\n\n\n\n16:00ish\n\nFinish"
   },
   {
-    "objectID": "visio.html#purpose",
-    "href": "visio.html#purpose",
-    "title": " KIND Community Standards: Visio SOP",
-    "section": "",
-    "text": "This is a sample standard operating procedure for staff using Microsoft Visio for process mapping and information visualisation within their health, social care, or housing teams. The document is not exhaustive and additional information can be found in the the appendix."
-  },
-  {
-    "objectID": "visio.html#what-is-visio",
-    "href": "visio.html#what-is-visio",
-    "title": " KIND Community Standards: Visio SOP",
-    "section": "What is Visio?",
-    "text": "What is Visio?\nVisio is a visualisation tool provided within the Microsoft 365 suite of software. All staff will have access to the online version of the app. You can find the app within the office application launcher (the waffle icon in the top left of the screen when using any office 365 applications on the web) (Figure 1)\n\n\n\n\n\n\nFigure 1: How to find Visio within the application launcher on 365 online.\n\n\n\nVisio can be employed for a variety of uses, such as:\n\nProcess mapping;\nFlowcharts;\nMatrices;\nVenn diagrams;\n‘Swim lane’ diagrams;\nStep plans such as communication plans.\n\nVisio has several set templates that can allow users to begin from a pre-designed example. This can enable users to quickly produce a clear, concise and professional looking diagram if they know the format they would like to present their information in."
-  },
-  {
-    "objectID": "visio.html#how-to-use-visio",
-    "href": "visio.html#how-to-use-visio",
-    "title": " KIND Community Standards: Visio SOP",
-    "section": "How to use Visio",
-    "text": "How to use Visio\n\nBlank template\nIf starting with a blank template, your workspace will be a clear page. Visio will provide a ‘shapes’ tab on the left side, with which you can begin clicking and dragging to populate the diagram.\nN.B. If you are doing traditional flowchart process mapping, certain shapes have certain meanings. For example, a circle usually denotes the start/end of a process, and a diamond denotes a decision (which will have branching YES or NO results). For more information, see Process Mapping Symbols in the appendix.\n\n\n\n\n\n\nFigure 2: The ‘blank template’ work screen of Visio\n\n\n\nOnce on the page, Shapes can:\n\n\n\n\n\n\nFigure 3: When right clicking on a shape, the options provided will allow you to change the size of the shape (a), appearance of the shape (b), or become a button via insert a link (c).\n\n\n\n\nChange size: Click on the shape and click + drag on the points that appear at its corners/edges to alter its dimensions (Figure 3, a)\nChange appearance: Right click on the shape, and use the ‘shape fill’/’shape outline’/’weight’ and ‘dash’ icons that appear in the window to edit the appearance of the shape (Figure 3, b)\nContain a link: The shapes can be edited to become buttons that will send viewers to a hyperlink when clicked. Right click on the shape, choose link from the window, and enter the URL that you would like the shape to direct to. ‘Add display text’ will show text that appears when viewers hover over the button, you can use this to provide a simplified link address or additional context (Figure 3, c)\nBe connected to other shapes: hover over the shape (without clicking) and green points will appear. If you click and drag from these points, Visio will generate an arrow that can be connected to another shape. Alternatively, some directional arrows will appear around the shape; if you hover over these; Visio will suggest new shapes that you can choose from, and it will auto-populate that shape connected to your original shape. (Figure 4)\n\nOther options are available to you on the Shapes panel on the left side of the workspace:\n\n\n\n\n\n\nFigure 4: If using the suggested arrows to generate shapes and connectors, hover over the arrows, choose the desired shape, and a new shape will be created connected via arrow to the original shape.\n\n\n\n\n\n\n\n\n\nFigure 5: Basic shapes (a), more complicated arrows and connectors (b), stencil (c) (note this is a feature available only to a paid/upgraded Visio application and will not be available to staff by default), add shapes from other libraries/templates (d), and search for a shape by text (e). This is useful if looking for a specific shape to populate into your diagram, such as an email or document icon.\n\n\n\n\n\nWorking from pre-designed templates\nIf starting with a suggested template, your shapes panel on the left side will appear slightly different, to provide shapes that match the diagram intended. For example, if you are looking to create a Venn diagram, the shapes panel on the left will provide you with suggested overlapping shapes of 2-sets, 3-sets etc. Think (as a team if necessary), about what you are looking to produce before you begin and in what format this would look best/be most accessible/understandable, and choose the corresponding set template to get yourself started."
-  },
-  {
-    "objectID": "visio.html#tips-for-getting-the-most-out-of-visio",
-    "href": "visio.html#tips-for-getting-the-most-out-of-visio",
-    "title": " KIND Community Standards: Visio SOP",
-    "section": "Tips for getting the most out of Visio",
-    "text": "Tips for getting the most out of Visio\n\nPlan out beforehand, either alone or with your team as appropriate, what format would work best for the information you are trying to provide. The same information can be provided in many different ways, and often one format will work better than another for the information you are trying to visualize. For example, a swim-lane diagram is better than a traditional process map when attempting to show responsibilities moving across different contributors/organisations.\nOnce you have a shape on the diagram that works well (has been sized, coloured and outlined in the manner that you want), you can copy and paste this shape instead of having to create it from scratch again. This helps massively with saving time, and helps generate a uniform formatting within the diagram.\nVisio’s workspace is reactive and will automatically grow if you exceed its borders. This is useful to know as it means you do not constantly have to move or re-shape your items to remain within the borders of the page. You may find it easier to generate all of the items for your diagram first, and move/locate/connect them all later on, once you have a feel for the amount of space your diagram requires.\nInclude a legend – provide a legend somewhere alongside the diagram, indicating what the different shapes, colours and connections mean (especially if the diagram becomes more complicated).\nIf it is difficult to fill in pieces of a process map because the information is poor or there is no information, don’t worry - this is also really useful information! Mapping out systems can identify gaps or weaknesses in the current process. Wherever this occurs, make a note of it, and when analysing the map with the team during review, explain the difficulties encountered to the team. This will prompt them to provide the missing information, and/or cause them to review the current process for quality improvement."
-  },
-  {
-    "objectID": "visio.html#time-to-completeresource-allocation",
-    "href": "visio.html#time-to-completeresource-allocation",
-    "title": " KIND Community Standards: Visio SOP",
-    "section": "Time to complete/resource allocation",
-    "text": "Time to complete/resource allocation\nSimple Visio mapping can be quite quick, especially if using suggested template shapes to complete a task. However, complex diagrams can be quite tedious and time consuming to prepare.\nAs a result, any team member undertaking a complex process mapping task should be able to discuss with their line/work management how much time they can allocate to this, reasonable/realistic deadlines, and expectations alongside other work. If generating a visualisation like this is urgent, then the team member should be able to give priority over their other work to the task.\nProcess mapping is an excellent development opportunity as it is a flexible skill valuable to many different roles and teams. Anyone should be encouraged to try out using the tool where relevant to their work, or simply as a PDP exercise to familiarize themselves with the process."
-  },
-  {
-    "objectID": "visio.html#example-exercises",
-    "href": "visio.html#example-exercises",
-    "title": " KIND Community Standards: Visio SOP",
-    "section": "Example exercises",
-    "text": "Example exercises\nBelow are some sample exercises to practice with to get a handle for the application.\n\nPractice connectors: create a map of your team, showing the line management and reporting structure.\n\nConsider using different colours for different groups, and adding a legend to explain what the colours represent.\nTry to do this exercise on a blank template, and then afterwards, you can repeat the exercise using one of Visio’s Organisation Chart templates.\n\nPractice flowchart branching: Create a process map about your morning routine and your journey to work. Include a couple of decisions that create branching routes, e.g. do you walk to work &gt; Yes / No &gt; map an alternative route to work if you take the bus.\nPractice Comms: use one of the Infographics templates to make a short summary of your team’s milestones over the last year or in the year ahead."
-  },
-  {
-    "objectID": "visio.html#appendix",
-    "href": "visio.html#appendix",
-    "title": " KIND Community Standards: Visio SOP",
-    "section": "Appendix",
-    "text": "Appendix\n\nOverview\n\nOverview of Visio (Office Support)\n\nMany more suggested articles are available on the Visio website itself; click on the help icon (? Symbol) in the top right of the page, and several articles about using the application will be suggested.\n\n\nProcess Mapping\n\nProcess Mapping (QI Lothian)\nProcess Mapping (Turas Quality Improvement Zone)\nProcess Mapping Symbols (Turas Quality Improvement Zone)\n\nNote there are many more symbols that can be used in process maps, try to ensure whatever you are using comes from an approved source and is a standardised/understandable format.\n\n\nOther resources\n\nQuality improvement tools and resources (QI Lothian)\nNES QI tools (Turas Quality Improvement Zone)"
-  },
-  {
-    "objectID": "r.html",
-    "href": "r.html",
-    "title": "KIND Community Standards: R",
-    "section": "",
-    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
-  },
-  {
-    "objectID": "r.html#basic-standard",
-    "href": "r.html#basic-standard",
-    "title": "KIND Community Standards: R",
-    "section": "",
-    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
-  },
-  {
-    "objectID": "r.html#enhanced-standard",
-    "href": "r.html#enhanced-standard",
-    "title": "KIND Community Standards: R",
-    "section": "Enhanced standard",
-    "text": "Enhanced standard\n\nMake explicit reference to any formal style conventions employed\nUse version control\nFor ambitious projects, consider using renv which will capture R and package versions\nFor more onerous scripts, identify memory and CPU requirements listed at start\nconsider using project templates for presentations/reports/dashboards\nConsider loading individual functions via package::function() syntax rather than wholesale package loading for namespace and performance reasons\nconsider using targets to encourage the use of functions, visually displays the build pipeline and avoids unnecessary re-running of up-to-date code"
-  },
-  {
-    "objectID": "r.html#considerations-for-teams-and-groups",
-    "href": "r.html#considerations-for-teams-and-groups",
-    "title": "KIND Community Standards: R",
-    "section": "Considerations for teams and groups",
-    "text": "Considerations for teams and groups\n\nHave a house code style, possibly implemented using styler Code styling for readability is important, and no-one agrees, so you’ll need to lead.\nWhen documentation is extremely important, consider using roxygen2 to encourage best documentation practice"
-  },
-  {
-    "objectID": "faq.html",
-    "href": "faq.html",
-    "title": "KIND FAQ",
-    "section": "",
-    "text": "The KIND learning network is an inclusive and supportive community of practice for staff across the knowledge, information, and data workforce. It exists to further the leading role of the community in the digital transformation of health and care by supporting learning, sharing of best practice, and developing interdisciplinary collaborations."
-  },
-  {
-    "objectID": "faq.html#what-is-the-kind-learning-network",
-    "href": "faq.html#what-is-the-kind-learning-network",
-    "title": "KIND FAQ",
-    "section": "",
-    "text": "The KIND learning network is an inclusive and supportive community of practice for staff across the knowledge, information, and data workforce. It exists to further the leading role of the community in the digital transformation of health and care by supporting learning, sharing of best practice, and developing interdisciplinary collaborations."
-  },
-  {
-    "objectID": "faq.html#what-does-kind-stand-for",
-    "href": "faq.html#what-does-kind-stand-for",
-    "title": "KIND FAQ",
-    "section": "What does KIND stand for?",
-    "text": "What does KIND stand for?\nKIND = Knowledge, Information, and Data.\nThese topics roughly correspond to three main professional groups:\n\nthose working with data and/or information\nthose working in knowledge management, research & development, and libraries\nthose working in records\n\nBut we also have many members whose are interested in KIND work, but who don’t fall neatly into one of these professional groups. We’re inclusive, and are delighted to welcome staff from any professional group or working at any career stage."
-  },
-  {
-    "objectID": "faq.html#who-is-the-kind-network-for",
-    "href": "faq.html#who-is-the-kind-network-for",
-    "title": "KIND FAQ",
-    "section": "Who is the KIND network for?",
-    "text": "Who is the KIND network for?\nThe KIND network is open to everyone, but is particularly aimed at staff from Scotland’s health, social care, and housing workforce who are interested in developing their knowledge, information, and data skills."
-  },
-  {
-    "objectID": "faq.html#who-runsownsfunds-the-kind-network",
-    "href": "faq.html#who-runsownsfunds-the-kind-network",
-    "title": "KIND FAQ",
-    "section": "Who runs/owns/funds the KIND network?",
-    "text": "Who runs/owns/funds the KIND network?\nThe KIND Learning Network is based at NHS Education for Scotland, as part of the Digitally Enabled Workforce programme. That’s a programme that builds foundational resources to support digital skills and leadership at all levels. You might have heard about our Professional Development Award in Technology Enabled Care programme, used the M365 Skills Hub, or been involved with the Digital Leadership Programme. This work is all funded through Scottish Government via the Digital Health and Care Portfolio Board."
-  },
-  {
-    "objectID": "faq.html#why-does-the-kind-network-exist",
-    "href": "faq.html#why-does-the-kind-network-exist",
-    "title": "KIND FAQ",
-    "section": "Why does the KIND network exist?",
-    "text": "Why does the KIND network exist?\nThis network exists to support people who work with knowledge, information, and data as they work to transform health and social care. There’s a large (and growing) workforce responsible for this work in Scotland. However, this workforce is really diverse. It’s not like e.g. nursing or other NMHAP professions where there are fixed entry and promotion criteria. Professional development is more complicated and messy than that. A good example is the lack of standardised job titles for KIND workers. We currently have something like 350 different job titles in the Teams channel. That splitting up of job families contributes to KIND workers being less visible than I think they should be. Kathleen Grey and colleagues called them “ghosts in the machine”"
-  },
-  {
-    "objectID": "faq.html#where-does-kind-work-happen",
-    "href": "faq.html#where-does-kind-work-happen",
-    "title": "KIND FAQ",
-    "section": "Where does KIND work happen?",
-    "text": "Where does KIND work happen?\nKIND work happens in many places across health and social care in Scotland. For example, you might find KIND workers in NHS Boards (national or territorial), other governmental health bodies, Local Authorities, social care care organisations, higher education, in the private sector, professional associations, or in health and social care partnerships"
-  },
-  {
-    "objectID": "faq.html#how-do-i-contribute",
-    "href": "faq.html#how-do-i-contribute",
-    "title": "KIND FAQ",
-    "section": "How do I contribute?",
-    "text": "How do I contribute?\n\nplease feel free to introduce yourself, ask questions, or post events/jobs/news of interest on the Teams channel\nplease feel welcome to attend and contribute to the community events. We’re generally extremely informal, and it’s always great to hear about your work. We don’t expect polished presentations or anything fancy\nplease spread the word - especially about our training courses"
-  },
-  {
-    "objectID": "faq.html#what-are-the-main-activities-in-the-kind-network",
-    "href": "faq.html#what-are-the-main-activities-in-the-kind-network",
-    "title": "KIND FAQ",
-    "section": "What are the main activities in the KIND network?",
-    "text": "What are the main activities in the KIND network?\nWe have a lot of activities going on. The best way to keep in touch with everything is to either:\n\nJoin our Teams channel\nor subscribe to our mailing list for a weekly digest\n\nOtherwise, our main activities are:\n\ncore multi-session training courses:\n\nExcel Skills\nPower BI for Beginners\nR and Rmarkdown intro / R intermediate / Shiny\nEvidence-based medicine and critical appraisal\n\n60+ one-off training sessions, available via the training mini-site\nmentoring scheme\nweekly community meetups including the ever-popular book of the week segment"
-  },
-  {
-    "objectID": "faq.html#is-x-going-to-be-recorded",
-    "href": "faq.html#is-x-going-to-be-recorded",
-    "title": "KIND FAQ",
-    "section": "Is X going to be recorded?",
-    "text": "Is X going to be recorded?\nNo, we do not record our sessions, and we ask that you do not record them either\nThe reasons for that are as follows:\n\nmost important, we want to run safe and inclusive events. Social learning involves making lots of mistakes. Those mistakes are a vital part of learning, and we need our events to allow people to learn without the fear of looking foolish for posterity\nmost of our events are social. In the little bit of A/B testing I did early in the life of the network, recording events decreased the number of social interactions - like questions or chat comments - in meetings\nour training is problem-based, and built for attendees to learn by doing. That doesn’t translate well at all to video\nthe actual view counts for recorded events are tiny, meaning that the benefits of recordings look low from here\n\nSpecifically, we require that attendees at our meetings and training sessions do not use AI/LLM-based recording- or note-taking bots or apps. Please respect other learners and their needs. We make written materials available for our sessions, and would be delighted to help support any other requirements."
-  },
-  {
-    "objectID": "faq.html#help-i-have-an-unmet-query",
-    "href": "faq.html#help-i-have-an-unmet-query",
-    "title": "KIND FAQ",
-    "section": "Help! I have an unmet query…",
-    "text": "Help! I have an unmet query…\nFor anything, please contact Brendan Clarke (brendan.clarke2@nhs.scot)."
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html",
-    "href": "commet/commet_2023_03_07.html",
-    "title": "Data strategy",
-    "section": "",
-    "text": "Session materials\n\n\n\n\n\n\nslides  pptx /  pdf"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#overall-structure",
-    "href": "commet/commet_2023_03_07.html#overall-structure",
-    "title": "Data strategy",
-    "section": "Overall structure",
-    "text": "Overall structure\n\none vision: best use of data\nthree ambitions\nseven priority areas\nall wrapped in an ethical approach"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#data-access",
-    "href": "commet/commet_2023_03_07.html#data-access",
-    "title": "Data strategy",
-    "section": "Data access",
-    "text": "Data access"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#talent-and-culture",
-    "href": "commet/commet_2023_03_07.html#talent-and-culture",
-    "title": "Data strategy",
-    "section": "Talent and culture",
-    "text": "Talent and culture"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
-    "href": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
-    "title": "Data strategy",
-    "section": "Protecting and sharing data",
-    "text": "Protecting and sharing data"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#technology-and-infrastructure",
-    "href": "commet/commet_2023_03_07.html#technology-and-infrastructure",
-    "title": "Data strategy",
-    "section": "Technology and infrastructure",
-    "text": "Technology and infrastructure"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
-    "href": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
-    "title": "Data strategy",
-    "section": "Information standards and interoperability",
-    "text": "Information standards and interoperability"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#creating-insights-from-data",
-    "href": "commet/commet_2023_03_07.html#creating-insights-from-data",
-    "title": "Data strategy",
-    "section": "Creating insights from data",
-    "text": "Creating insights from data"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
-    "href": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
-    "title": "Data strategy",
-    "section": "Supporting research and innovation",
-    "text": "Supporting research and innovation"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
-    "href": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
-    "title": "Data strategy",
-    "section": "Ethical approaches to data",
-    "text": "Ethical approaches to data"
-  },
-  {
-    "objectID": "excel.html",
-    "href": "excel.html",
-    "title": "KIND Community Standards: Excel",
-    "section": "",
-    "text": "Excel workbooks are frequently troublesome. This document contains a simple set of features that will help you avoid the most serious Excel problems. The aim is to be:\nThis is version 1, and this document will be fully reviewed in January 2025 by the KIND network community."
-  },
-  {
-    "objectID": "excel.html#basic-standard-for-excel-workbooks",
-    "href": "excel.html#basic-standard-for-excel-workbooks",
-    "title": "KIND Community Standards: Excel",
-    "section": "Basic standard for Excel workbooks",
-    "text": "Basic standard for Excel workbooks\n\nMake your data tidy\n\nOne value per cell\nOne observation per row\nOne variable per column\n\nAvoid repetition\n\nconsider restructuring into several tables to avoid repeating data\n\nUse tables to contain data wherever possible\nUse meaningful sheet, table, and column names (not Sheet 1, Sheet 2…)\nUse number formatting as appropriate\n\nDates and percentages are especially important to format correctly\nText format for CHI numbers, rather than the initial ’\n\nAvoid using colour-based formatting which can easily breach accessibility guidance\n\nIf conditional format is required, prefer using more accessible formats, such as shape icons sets\n\nConsider avoiding VLOOKUP() in favour of either INDEX() + MATCH() or XLOOKUP()"
-  },
-  {
-    "objectID": "excel.html#enhanced-standard-for-excel-workbooks",
-    "href": "excel.html#enhanced-standard-for-excel-workbooks",
-    "title": "KIND Community Standards: Excel",
-    "section": "Enhanced standard for Excel workbooks",
-    "text": "Enhanced standard for Excel workbooks\nFollow the basic standards above, plus:\n\nConsider using data validation to make data consistent, especially if you don’t really want free text\nAdd a documentation / readme worksheet. You might include:\n\na description of the data\ninformation about ownership/origin/dates/data sources\na key explaining abbreviations\nexplanation of any complex formulas\nadvice about correct and consistent method of naming different versions of the workbook\n\nConsider using lambda formulas to avoid repetition of complex formulas\nPrefer structured referencing and naming to the use of complex A1 referencing\nConsider loading data using Power Query, especially if the workbook is designed to be updated"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "KIND resources",
-    "section": "",
-    "text": "This is the main page for the KIND network’s live documents and non-training resources."
-  },
-  {
-    "objectID": "index.html#whats-here",
-    "href": "index.html#whats-here",
-    "title": "KIND resources",
-    "section": "What’s here?",
-    "text": "What’s here?\n\nCommunity standards\nThese documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.\nHow might you use these suggestions?\n\nas a way of highlighting good practice\nas a helper when starting new projects (or new Excel documents)\nas a lever for bringing about change, particularly trying to convince service leads that poorly-designed Excel spreadsheets are a dangerous menace\nas a guideline for tidying up existing inconsistent/messy files\nas a training tool when bringing new colleagues up to speed\n\nPlease take this, use it however you like, and let us know if there’s anything that you’d find particularly helpful for an updated version to contain. We’ll review and redraft regularly. Please open an issue on the GitHub page if you have specific suggestions, otherwise contact brendan.clarke2@nhs.scot for a more general conversation about these standards.\n\n\nSample SOPs\nThese are a set of sample standard operating procedures for KIND work. These are intended for sharing as a basis or guideline for your own activities. Please get in touch if you have a useful SOP that might be sharable.\n\n\nCommunity activities\nDocuments supporting our social learning activities, such as scheduled, past sessions, and archives of materials. These include:\n\nthe R reading group\nthe R beginner’s club\nthe main community meetup series\n\n\n\nKIND FAQ\nOur main frequently-asked questions document\n\n\nMentoring scheme\nInformation and links for our technical mentoring scheme\n\n\nBook of the week\nData and summaries for our ever-popular book of the week segment"
-  },
-  {
-    "objectID": "rreadgr.html",
-    "href": "rreadgr.html",
-    "title": "R reading group",
-    "section": "",
-    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users."
-  },
-  {
-    "objectID": "rreadgr.html#about",
-    "href": "rreadgr.html#about",
-    "title": "R reading group",
-    "section": "",
-    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users."
-  },
-  {
-    "objectID": "rreadgr.html#schedule",
-    "href": "rreadgr.html#schedule",
-    "title": "R reading group",
-    "section": "Schedule",
-    "text": "Schedule\n\nThursday, 3-4pm BST, 26th September 2024\n\nreading: chapter 2 of Advanced R on names and values\nnotes\n\nThursday, 3-4pm GMT, 21st November 2024\n\nreading: chapter 3 of Advanced R on vectors\n\nThursday, 3-4pm GMT, 19th December 2024\n\nreading: chapter 4 of Advanced R on subsetting"
+    "objectID": "unconf_2024.html#theme-discussions",
+    "href": "unconf_2024.html#theme-discussions",
+    "title": "KIND unconference 2024",
+    "section": "Theme discussions",
+    "text": "Theme discussions\nWe’ll be running short discussion sessions on the following topics:\n\n“some sort of lessons learned from setting up new tech” - what have we learned about new tech, what do we wish we’d known beforehand, and what information should we (have) capture(d)\n“we have access to an Aston Martin and we are using it for the school run” - making the case for what we already have, making the case for exploiting available capabilities, realising benefits, and overcoming resistance to change\n“high demand for support from the users, far more than I expected” - knowledge sharing, dealing with support and training needs, keeping yourself/everyone else current, and trying to think sensibly about different needs and different ways of supporting those needs\n“proceeding until apprehended” - some people seek permission, others forgiveness. Balancing getting things done with professional obligations in a climate of murky guidance\n“you said X first, and that suits, so we’ll stick with X” - doing things fast vs doing them right, and communicating the difference to colleagues/stakeholders etc\n“‘we weren’t trained’ and ‘we’re not interested.’” skills mapping, writing JDs to suit actual needs, and developing some understanding of how skills and careers can be better fitted together\n“if it doesn’t help your prospects then what’s the point of it” - professional registration as somewhere between pointless money-pit and vital route to becoming a proper career?"
   },
   {
     "objectID": "kind_botw.html",
@@ -775,6 +502,13 @@
     "title": "KIND Book of the week",
     "section": "",
     "text": "Download KIND book of the week data as csv"
+  },
+  {
+    "objectID": "kind_botw.html#the-alignment-problem",
+    "href": "kind_botw.html#the-alignment-problem",
+    "title": "KIND Book of the week",
+    "section": "13/11/2024: The Alignment Problem",
+    "text": "13/11/2024: The Alignment Problem\nBrian Christian. 2020. The Alignment Problem. ISBN 978-1786494337, Worldcat link.\n This is a high-risk recommendation, because I’ve only read a few chapters of this friendly (and alarming) introduction to AI. But there’s a good reason for the slightly-impetuous premature recommendation, as the public sector Data Ethics and Society Reading Group will be hosting a session on the book on the 3rd of December, so just about time to get a copy if you fancy joining what should be an excellent discussion then."
   },
   {
     "objectID": "kind_botw.html#asking-the-right-questions-a-guide-to-critical-thinking",
@@ -978,6 +712,300 @@
     "title": "KIND Book of the week",
     "section": "06/03/2024: The Code Book",
     "text": "06/03/2024: The Code Book\nSimon Singh. 1999. The Code Book. ISBN 978-1857028898, Worldcat link.\n The Code Book: The Secret History of Codes and Code-Breaking a book by . (bookshop.org) (to buy online but support a local bookshop of your choice, for those not keen on more money to our Amazon Overlords…)"
+  },
+  {
+    "objectID": "rreadgr.html",
+    "href": "rreadgr.html",
+    "title": "R reading group",
+    "section": "",
+    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users."
+  },
+  {
+    "objectID": "rreadgr.html#about",
+    "href": "rreadgr.html#about",
+    "title": "R reading group",
+    "section": "",
+    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users."
+  },
+  {
+    "objectID": "rreadgr.html#schedule",
+    "href": "rreadgr.html#schedule",
+    "title": "R reading group",
+    "section": "Schedule",
+    "text": "Schedule\n\nThursday, 3-4pm BST, 26th September 2024\n\nreading: chapter 2 of Advanced R on names and values\nnotes\n\nThursday, 3-4pm GMT, 21st November 2024\n\nreading: chapter 3 of Advanced R on vectors\n\nThursday, 3-4pm GMT, 19th December 2024\n\nreading: chapter 4 of Advanced R on subsetting"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "KIND resources",
+    "section": "",
+    "text": "This is the main page for the KIND network’s live documents and non-training resources."
+  },
+  {
+    "objectID": "index.html#whats-here",
+    "href": "index.html#whats-here",
+    "title": "KIND resources",
+    "section": "What’s here?",
+    "text": "What’s here?\n\nCommunity standards\nThese documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.\nHow might you use these suggestions?\n\nas a way of highlighting good practice\nas a helper when starting new projects (or new Excel documents)\nas a lever for bringing about change, particularly trying to convince service leads that poorly-designed Excel spreadsheets are a dangerous menace\nas a guideline for tidying up existing inconsistent/messy files\nas a training tool when bringing new colleagues up to speed\n\nPlease take this, use it however you like, and let us know if there’s anything that you’d find particularly helpful for an updated version to contain. We’ll review and redraft regularly. Please open an issue on the GitHub page if you have specific suggestions, otherwise contact brendan.clarke2@nhs.scot for a more general conversation about these standards.\n\n\nSample SOPs\nThese are a set of sample standard operating procedures for KIND work. These are intended for sharing as a basis or guideline for your own activities. Please get in touch if you have a useful SOP that might be sharable.\n\n\nCommunity activities\nDocuments supporting our social learning activities, such as scheduled, past sessions, and archives of materials. These include:\n\nthe R reading group\nthe R beginner’s club\nthe main community meetup series\n\n\n\nKIND FAQ\nOur main frequently-asked questions document\n\n\nMentoring scheme\nInformation and links for our technical mentoring scheme\n\n\nBook of the week\nData and summaries for our ever-popular book of the week segment"
+  },
+  {
+    "objectID": "excel.html",
+    "href": "excel.html",
+    "title": "KIND Community Standards: Excel",
+    "section": "",
+    "text": "Excel workbooks are frequently troublesome. This document contains a simple set of features that will help you avoid the most serious Excel problems. The aim is to be:\nThis is version 1, and this document will be fully reviewed in January 2025 by the KIND network community."
+  },
+  {
+    "objectID": "excel.html#basic-standard-for-excel-workbooks",
+    "href": "excel.html#basic-standard-for-excel-workbooks",
+    "title": "KIND Community Standards: Excel",
+    "section": "Basic standard for Excel workbooks",
+    "text": "Basic standard for Excel workbooks\n\nMake your data tidy\n\nOne value per cell\nOne observation per row\nOne variable per column\n\nAvoid repetition\n\nconsider restructuring into several tables to avoid repeating data\n\nUse tables to contain data wherever possible\nUse meaningful sheet, table, and column names (not Sheet 1, Sheet 2…)\nUse number formatting as appropriate\n\nDates and percentages are especially important to format correctly\nText format for CHI numbers, rather than the initial ’\n\nAvoid using colour-based formatting which can easily breach accessibility guidance\n\nIf conditional format is required, prefer using more accessible formats, such as shape icons sets\n\nConsider avoiding VLOOKUP() in favour of either INDEX() + MATCH() or XLOOKUP()"
+  },
+  {
+    "objectID": "excel.html#enhanced-standard-for-excel-workbooks",
+    "href": "excel.html#enhanced-standard-for-excel-workbooks",
+    "title": "KIND Community Standards: Excel",
+    "section": "Enhanced standard for Excel workbooks",
+    "text": "Enhanced standard for Excel workbooks\nFollow the basic standards above, plus:\n\nConsider using data validation to make data consistent, especially if you don’t really want free text\nAdd a documentation / readme worksheet. You might include:\n\na description of the data\ninformation about ownership/origin/dates/data sources\na key explaining abbreviations\nexplanation of any complex formulas\nadvice about correct and consistent method of naming different versions of the workbook\n\nConsider using lambda formulas to avoid repetition of complex formulas\nPrefer structured referencing and naming to the use of complex A1 referencing\nConsider loading data using Power Query, especially if the workbook is designed to be updated"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html",
+    "href": "commet/commet_2023_03_07.html",
+    "title": "Data strategy",
+    "section": "",
+    "text": "Session materials\n\n\n\n\n\n\nslides  pptx /  pdf"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#overall-structure",
+    "href": "commet/commet_2023_03_07.html#overall-structure",
+    "title": "Data strategy",
+    "section": "Overall structure",
+    "text": "Overall structure\n\none vision: best use of data\nthree ambitions\nseven priority areas\nall wrapped in an ethical approach"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#data-access",
+    "href": "commet/commet_2023_03_07.html#data-access",
+    "title": "Data strategy",
+    "section": "Data access",
+    "text": "Data access"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#talent-and-culture",
+    "href": "commet/commet_2023_03_07.html#talent-and-culture",
+    "title": "Data strategy",
+    "section": "Talent and culture",
+    "text": "Talent and culture"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
+    "href": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
+    "title": "Data strategy",
+    "section": "Protecting and sharing data",
+    "text": "Protecting and sharing data"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#technology-and-infrastructure",
+    "href": "commet/commet_2023_03_07.html#technology-and-infrastructure",
+    "title": "Data strategy",
+    "section": "Technology and infrastructure",
+    "text": "Technology and infrastructure"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
+    "href": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
+    "title": "Data strategy",
+    "section": "Information standards and interoperability",
+    "text": "Information standards and interoperability"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#creating-insights-from-data",
+    "href": "commet/commet_2023_03_07.html#creating-insights-from-data",
+    "title": "Data strategy",
+    "section": "Creating insights from data",
+    "text": "Creating insights from data"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
+    "href": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
+    "title": "Data strategy",
+    "section": "Supporting research and innovation",
+    "text": "Supporting research and innovation"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
+    "href": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
+    "title": "Data strategy",
+    "section": "Ethical approaches to data",
+    "text": "Ethical approaches to data"
+  },
+  {
+    "objectID": "faq.html",
+    "href": "faq.html",
+    "title": "KIND FAQ",
+    "section": "",
+    "text": "The KIND learning network is an inclusive and supportive community of practice for staff across the knowledge, information, and data workforce. It exists to further the leading role of the community in the digital transformation of health and care by supporting learning, sharing of best practice, and developing interdisciplinary collaborations."
+  },
+  {
+    "objectID": "faq.html#what-is-the-kind-learning-network",
+    "href": "faq.html#what-is-the-kind-learning-network",
+    "title": "KIND FAQ",
+    "section": "",
+    "text": "The KIND learning network is an inclusive and supportive community of practice for staff across the knowledge, information, and data workforce. It exists to further the leading role of the community in the digital transformation of health and care by supporting learning, sharing of best practice, and developing interdisciplinary collaborations."
+  },
+  {
+    "objectID": "faq.html#what-does-kind-stand-for",
+    "href": "faq.html#what-does-kind-stand-for",
+    "title": "KIND FAQ",
+    "section": "What does KIND stand for?",
+    "text": "What does KIND stand for?\nKIND = Knowledge, Information, and Data.\nThese topics roughly correspond to three main professional groups:\n\nthose working with data and/or information\nthose working in knowledge management, research & development, and libraries\nthose working in records\n\nBut we also have many members whose are interested in KIND work, but who don’t fall neatly into one of these professional groups. We’re inclusive, and are delighted to welcome staff from any professional group or working at any career stage."
+  },
+  {
+    "objectID": "faq.html#who-is-the-kind-network-for",
+    "href": "faq.html#who-is-the-kind-network-for",
+    "title": "KIND FAQ",
+    "section": "Who is the KIND network for?",
+    "text": "Who is the KIND network for?\nThe KIND network is open to everyone, but is particularly aimed at staff from Scotland’s health, social care, and housing workforce who are interested in developing their knowledge, information, and data skills."
+  },
+  {
+    "objectID": "faq.html#who-runsownsfunds-the-kind-network",
+    "href": "faq.html#who-runsownsfunds-the-kind-network",
+    "title": "KIND FAQ",
+    "section": "Who runs/owns/funds the KIND network?",
+    "text": "Who runs/owns/funds the KIND network?\nThe KIND Learning Network is based at NHS Education for Scotland, as part of the Digitally Enabled Workforce programme. That’s a programme that builds foundational resources to support digital skills and leadership at all levels. You might have heard about our Professional Development Award in Technology Enabled Care programme, used the M365 Skills Hub, or been involved with the Digital Leadership Programme. This work is all funded through Scottish Government via the Digital Health and Care Portfolio Board."
+  },
+  {
+    "objectID": "faq.html#why-does-the-kind-network-exist",
+    "href": "faq.html#why-does-the-kind-network-exist",
+    "title": "KIND FAQ",
+    "section": "Why does the KIND network exist?",
+    "text": "Why does the KIND network exist?\nThis network exists to support people who work with knowledge, information, and data as they work to transform health and social care. There’s a large (and growing) workforce responsible for this work in Scotland. However, this workforce is really diverse. It’s not like e.g. nursing or other NMHAP professions where there are fixed entry and promotion criteria. Professional development is more complicated and messy than that. A good example is the lack of standardised job titles for KIND workers. We currently have something like 350 different job titles in the Teams channel. That splitting up of job families contributes to KIND workers being less visible than I think they should be. Kathleen Grey and colleagues called them “ghosts in the machine”"
+  },
+  {
+    "objectID": "faq.html#where-does-kind-work-happen",
+    "href": "faq.html#where-does-kind-work-happen",
+    "title": "KIND FAQ",
+    "section": "Where does KIND work happen?",
+    "text": "Where does KIND work happen?\nKIND work happens in many places across health and social care in Scotland. For example, you might find KIND workers in NHS Boards (national or territorial), other governmental health bodies, Local Authorities, social care care organisations, higher education, in the private sector, professional associations, or in health and social care partnerships"
+  },
+  {
+    "objectID": "faq.html#how-do-i-contribute",
+    "href": "faq.html#how-do-i-contribute",
+    "title": "KIND FAQ",
+    "section": "How do I contribute?",
+    "text": "How do I contribute?\n\nplease feel free to introduce yourself, ask questions, or post events/jobs/news of interest on the Teams channel\nplease feel welcome to attend and contribute to the community events. We’re generally extremely informal, and it’s always great to hear about your work. We don’t expect polished presentations or anything fancy\nplease spread the word - especially about our training courses"
+  },
+  {
+    "objectID": "faq.html#what-are-the-main-activities-in-the-kind-network",
+    "href": "faq.html#what-are-the-main-activities-in-the-kind-network",
+    "title": "KIND FAQ",
+    "section": "What are the main activities in the KIND network?",
+    "text": "What are the main activities in the KIND network?\nWe have a lot of activities going on. The best way to keep in touch with everything is to either:\n\nJoin our Teams channel\nor subscribe to our mailing list for a weekly digest\n\nOtherwise, our main activities are:\n\ncore multi-session training courses:\n\nExcel Skills\nPower BI for Beginners\nR and Rmarkdown intro / R intermediate / Shiny\nEvidence-based medicine and critical appraisal\n\n60+ one-off training sessions, available via the training mini-site\nmentoring scheme\nweekly community meetups including the ever-popular book of the week segment"
+  },
+  {
+    "objectID": "faq.html#is-x-going-to-be-recorded",
+    "href": "faq.html#is-x-going-to-be-recorded",
+    "title": "KIND FAQ",
+    "section": "Is X going to be recorded?",
+    "text": "Is X going to be recorded?\nNo, we do not record our sessions, and we ask that you do not record them either\nThe reasons for that are as follows:\n\nmost important, we want to run safe and inclusive events. Social learning involves making lots of mistakes. Those mistakes are a vital part of learning, and we need our events to allow people to learn without the fear of looking foolish for posterity\nmost of our events are social. In the little bit of A/B testing I did early in the life of the network, recording events decreased the number of social interactions - like questions or chat comments - in meetings\nour training is problem-based, and built for attendees to learn by doing. That doesn’t translate well at all to video\nthe actual view counts for recorded events are tiny, meaning that the benefits of recordings look low from here\n\nSpecifically, we require that attendees at our meetings and training sessions do not use AI/LLM-based recording- or note-taking bots or apps. Please respect other learners and their needs. We make written materials available for our sessions, and would be delighted to help support any other requirements."
+  },
+  {
+    "objectID": "faq.html#help-i-have-an-unmet-query",
+    "href": "faq.html#help-i-have-an-unmet-query",
+    "title": "KIND FAQ",
+    "section": "Help! I have an unmet query…",
+    "text": "Help! I have an unmet query…\nFor anything, please contact Brendan Clarke (brendan.clarke2@nhs.scot)."
+  },
+  {
+    "objectID": "r.html",
+    "href": "r.html",
+    "title": "KIND Community Standards: R",
+    "section": "",
+    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
+  },
+  {
+    "objectID": "r.html#basic-standard",
+    "href": "r.html#basic-standard",
+    "title": "KIND Community Standards: R",
+    "section": "",
+    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
+  },
+  {
+    "objectID": "r.html#enhanced-standard",
+    "href": "r.html#enhanced-standard",
+    "title": "KIND Community Standards: R",
+    "section": "Enhanced standard",
+    "text": "Enhanced standard\n\nMake explicit reference to any formal style conventions employed\nUse version control\nFor ambitious projects, consider using renv which will capture R and package versions\nFor more onerous scripts, identify memory and CPU requirements listed at start\nconsider using project templates for presentations/reports/dashboards\nConsider loading individual functions via package::function() syntax rather than wholesale package loading for namespace and performance reasons\nconsider using targets to encourage the use of functions, visually displays the build pipeline and avoids unnecessary re-running of up-to-date code"
+  },
+  {
+    "objectID": "r.html#considerations-for-teams-and-groups",
+    "href": "r.html#considerations-for-teams-and-groups",
+    "title": "KIND Community Standards: R",
+    "section": "Considerations for teams and groups",
+    "text": "Considerations for teams and groups\n\nHave a house code style, possibly implemented using styler Code styling for readability is important, and no-one agrees, so you’ll need to lead.\nWhen documentation is extremely important, consider using roxygen2 to encourage best documentation practice"
+  },
+  {
+    "objectID": "visio.html",
+    "href": "visio.html",
+    "title": " KIND Community Standards: Visio SOP",
+    "section": "",
+    "text": "This is a sample standard operating procedure for staff using Microsoft Visio for process mapping and information visualisation within their health, social care, or housing teams. The document is not exhaustive and additional information can be found in the the appendix."
+  },
+  {
+    "objectID": "visio.html#purpose",
+    "href": "visio.html#purpose",
+    "title": " KIND Community Standards: Visio SOP",
+    "section": "",
+    "text": "This is a sample standard operating procedure for staff using Microsoft Visio for process mapping and information visualisation within their health, social care, or housing teams. The document is not exhaustive and additional information can be found in the the appendix."
+  },
+  {
+    "objectID": "visio.html#what-is-visio",
+    "href": "visio.html#what-is-visio",
+    "title": " KIND Community Standards: Visio SOP",
+    "section": "What is Visio?",
+    "text": "What is Visio?\nVisio is a visualisation tool provided within the Microsoft 365 suite of software. All staff will have access to the online version of the app. You can find the app within the office application launcher (the waffle icon in the top left of the screen when using any office 365 applications on the web) (Figure 1)\n\n\n\n\n\n\nFigure 1: How to find Visio within the application launcher on 365 online.\n\n\n\nVisio can be employed for a variety of uses, such as:\n\nProcess mapping;\nFlowcharts;\nMatrices;\nVenn diagrams;\n‘Swim lane’ diagrams;\nStep plans such as communication plans.\n\nVisio has several set templates that can allow users to begin from a pre-designed example. This can enable users to quickly produce a clear, concise and professional looking diagram if they know the format they would like to present their information in."
+  },
+  {
+    "objectID": "visio.html#how-to-use-visio",
+    "href": "visio.html#how-to-use-visio",
+    "title": " KIND Community Standards: Visio SOP",
+    "section": "How to use Visio",
+    "text": "How to use Visio\n\nBlank template\nIf starting with a blank template, your workspace will be a clear page. Visio will provide a ‘shapes’ tab on the left side, with which you can begin clicking and dragging to populate the diagram.\nN.B. If you are doing traditional flowchart process mapping, certain shapes have certain meanings. For example, a circle usually denotes the start/end of a process, and a diamond denotes a decision (which will have branching YES or NO results). For more information, see Process Mapping Symbols in the appendix.\n\n\n\n\n\n\nFigure 2: The ‘blank template’ work screen of Visio\n\n\n\nOnce on the page, Shapes can:\n\n\n\n\n\n\nFigure 3: When right clicking on a shape, the options provided will allow you to change the size of the shape (a), appearance of the shape (b), or become a button via insert a link (c).\n\n\n\n\nChange size: Click on the shape and click + drag on the points that appear at its corners/edges to alter its dimensions (Figure 3, a)\nChange appearance: Right click on the shape, and use the ‘shape fill’/’shape outline’/’weight’ and ‘dash’ icons that appear in the window to edit the appearance of the shape (Figure 3, b)\nContain a link: The shapes can be edited to become buttons that will send viewers to a hyperlink when clicked. Right click on the shape, choose link from the window, and enter the URL that you would like the shape to direct to. ‘Add display text’ will show text that appears when viewers hover over the button, you can use this to provide a simplified link address or additional context (Figure 3, c)\nBe connected to other shapes: hover over the shape (without clicking) and green points will appear. If you click and drag from these points, Visio will generate an arrow that can be connected to another shape. Alternatively, some directional arrows will appear around the shape; if you hover over these; Visio will suggest new shapes that you can choose from, and it will auto-populate that shape connected to your original shape. (Figure 4)\n\nOther options are available to you on the Shapes panel on the left side of the workspace:\n\n\n\n\n\n\nFigure 4: If using the suggested arrows to generate shapes and connectors, hover over the arrows, choose the desired shape, and a new shape will be created connected via arrow to the original shape.\n\n\n\n\n\n\n\n\n\nFigure 5: Basic shapes (a), more complicated arrows and connectors (b), stencil (c) (note this is a feature available only to a paid/upgraded Visio application and will not be available to staff by default), add shapes from other libraries/templates (d), and search for a shape by text (e). This is useful if looking for a specific shape to populate into your diagram, such as an email or document icon.\n\n\n\n\n\nWorking from pre-designed templates\nIf starting with a suggested template, your shapes panel on the left side will appear slightly different, to provide shapes that match the diagram intended. For example, if you are looking to create a Venn diagram, the shapes panel on the left will provide you with suggested overlapping shapes of 2-sets, 3-sets etc. Think (as a team if necessary), about what you are looking to produce before you begin and in what format this would look best/be most accessible/understandable, and choose the corresponding set template to get yourself started."
+  },
+  {
+    "objectID": "visio.html#tips-for-getting-the-most-out-of-visio",
+    "href": "visio.html#tips-for-getting-the-most-out-of-visio",
+    "title": " KIND Community Standards: Visio SOP",
+    "section": "Tips for getting the most out of Visio",
+    "text": "Tips for getting the most out of Visio\n\nPlan out beforehand, either alone or with your team as appropriate, what format would work best for the information you are trying to provide. The same information can be provided in many different ways, and often one format will work better than another for the information you are trying to visualize. For example, a swim-lane diagram is better than a traditional process map when attempting to show responsibilities moving across different contributors/organisations.\nOnce you have a shape on the diagram that works well (has been sized, coloured and outlined in the manner that you want), you can copy and paste this shape instead of having to create it from scratch again. This helps massively with saving time, and helps generate a uniform formatting within the diagram.\nVisio’s workspace is reactive and will automatically grow if you exceed its borders. This is useful to know as it means you do not constantly have to move or re-shape your items to remain within the borders of the page. You may find it easier to generate all of the items for your diagram first, and move/locate/connect them all later on, once you have a feel for the amount of space your diagram requires.\nInclude a legend – provide a legend somewhere alongside the diagram, indicating what the different shapes, colours and connections mean (especially if the diagram becomes more complicated).\nIf it is difficult to fill in pieces of a process map because the information is poor or there is no information, don’t worry - this is also really useful information! Mapping out systems can identify gaps or weaknesses in the current process. Wherever this occurs, make a note of it, and when analysing the map with the team during review, explain the difficulties encountered to the team. This will prompt them to provide the missing information, and/or cause them to review the current process for quality improvement."
+  },
+  {
+    "objectID": "visio.html#time-to-completeresource-allocation",
+    "href": "visio.html#time-to-completeresource-allocation",
+    "title": " KIND Community Standards: Visio SOP",
+    "section": "Time to complete/resource allocation",
+    "text": "Time to complete/resource allocation\nSimple Visio mapping can be quite quick, especially if using suggested template shapes to complete a task. However, complex diagrams can be quite tedious and time consuming to prepare.\nAs a result, any team member undertaking a complex process mapping task should be able to discuss with their line/work management how much time they can allocate to this, reasonable/realistic deadlines, and expectations alongside other work. If generating a visualisation like this is urgent, then the team member should be able to give priority over their other work to the task.\nProcess mapping is an excellent development opportunity as it is a flexible skill valuable to many different roles and teams. Anyone should be encouraged to try out using the tool where relevant to their work, or simply as a PDP exercise to familiarize themselves with the process."
+  },
+  {
+    "objectID": "visio.html#example-exercises",
+    "href": "visio.html#example-exercises",
+    "title": " KIND Community Standards: Visio SOP",
+    "section": "Example exercises",
+    "text": "Example exercises\nBelow are some sample exercises to practice with to get a handle for the application.\n\nPractice connectors: create a map of your team, showing the line management and reporting structure.\n\nConsider using different colours for different groups, and adding a legend to explain what the colours represent.\nTry to do this exercise on a blank template, and then afterwards, you can repeat the exercise using one of Visio’s Organisation Chart templates.\n\nPractice flowchart branching: Create a process map about your morning routine and your journey to work. Include a couple of decisions that create branching routes, e.g. do you walk to work &gt; Yes / No &gt; map an alternative route to work if you take the bus.\nPractice Comms: use one of the Infographics templates to make a short summary of your team’s milestones over the last year or in the year ahead."
+  },
+  {
+    "objectID": "visio.html#appendix",
+    "href": "visio.html#appendix",
+    "title": " KIND Community Standards: Visio SOP",
+    "section": "Appendix",
+    "text": "Appendix\n\nOverview\n\nOverview of Visio (Office Support)\n\nMany more suggested articles are available on the Visio website itself; click on the help icon (? Symbol) in the top right of the page, and several articles about using the application will be suggested.\n\n\nProcess Mapping\n\nProcess Mapping (QI Lothian)\nProcess Mapping (Turas Quality Improvement Zone)\nProcess Mapping Symbols (Turas Quality Improvement Zone)\n\nNote there are many more symbols that can be used in process maps, try to ensure whatever you are using comes from an approved source and is a standardised/understandable format.\n\n\nOther resources\n\nQuality improvement tools and resources (QI Lothian)\nNES QI tools (Turas Quality Improvement Zone)"
+  },
+  {
+    "objectID": "ml_archive.html",
+    "href": "ml_archive.html",
+    "title": "KIND network weekly update email archive",
+    "section": "",
+    "text": "This is an archive page for the KIND network weekly update email. Subscribe to our mailing list to receive these updates.\n\n2024-11-11\n2024-11-04\n2024-10-07\n2024-09-30\n2024-09-23\n2024-09-16\n2024-09-09\n2024-09-02\n2024-08-26\n2024-08-19\n2024-08-12\n2024-08-05\n2024-07-15\n2024-07-08\n2024-07-01\n2024-06-24\n2024-06-17\n2024-06-10\n2024-06-03\n2024-05-27"
   },
   {
     "objectID": "commet/commet_2024-05-16.html",
@@ -1246,11 +1274,11 @@
     "text": "Book of the week\nGerd Gigerenzer. 2002. Reckoning with Risk: Learning to Live with Uncertainty.  ISBN 978-0713995122, Worldcat. How do you communicate risks? For many of us who work with knowledge, information, and data, the natural way of doing that is by talking about probabilities. This book, which is a lively and provoking introduction to the frequency format hypothesis might give us cause for pause: it turns out that frequencies serve as much stronger communicators of risk than probabilities. So if you want to communicate a risk, there’s a good reason to prefer saying 8 out of 10 people rather than 80% of people..\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#week-beginning-mon-11th-november-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#week-beginning-mon-11th-november-2024",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#week-beginning-mon-18th-november-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#week-beginning-mon-18th-november-2024",
     "title": "KIND network update",
-    "section": "Week beginning Mon 11th November 2024",
-    "text": "Week beginning Mon 11th November 2024\nDear colleagues,\nWelcome to our regular KIND network update. We’ve got a few R-themed events coming up this week, including our regular monthly R beginners club session. Hope to see you there if you’re curious about R, a new R starter, or trying to build your R skills.\nBrendan"
+    "section": "Week beginning Mon 18th November 2024",
+    "text": "Week beginning Mon 18th November 2024\nDear colleagues,\nWelcome to our regular KIND network update. We’ve got a few R-themed events coming up this week, including our regular monthly R beginners club session. Hope to see you there if you’re curious about R, a new R starter, or trying to build your R skills.\nBrendan"
   },
   {
     "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#wins-of-the-week",
@@ -1264,21 +1292,21 @@
     "href": "ml_archive/KIND_weekly_update_2024-11-11.html#training-sessions",
     "title": "KIND network update",
     "section": "Training sessions",
-    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nWhy bother with...R?\n13:00-14:00 Wed 13th November 2024\nR\n🥬: pre-beginner-level"
+    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nHTML for non-web developers\n13:00-15:00 Wed 20th November 2024\nSkills\n🌶 :beginner-level"
   },
   {
     "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#events",
     "href": "ml_archive/KIND_weekly_update_2024-11-11.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n3-4pm, Mon 11th November 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is using SQL in R. We’ll be looking at some beginner-friendly ways of starting to use SQL databases as a tool for managing data in R.\nNES’s Knowledge Services team are re-running their excellent and highly-regarded series of short events about research and publication next week. Full details and registration links\nOur monthly R beginner’s club is running Thursday 14th November 3-4pm. A group session for R beginners to review their code, get unstuck, and pick up some tips and tricks. More experienced R programmers are absolutely welcome too, but this session is focused on those new to (or returning to) R code. All welcome, especially if you’re brand new to R or are coming from our R from Scratch course."
+    "text": "Events\n\n3-4pm, Mon 18th November 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is using SQL in R. We’ll be looking at some beginner-friendly ways of starting to use SQL databases as a tool for managing data in R.\nNES’s Knowledge Services team are re-running their excellent and highly-regarded series of short events about research and publication next week. Full details and registration links\nOur monthly R beginner’s club is running Thursday 14th November 3-4pm. A group session for R beginners to review their code, get unstuck, and pick up some tips and tricks. More experienced R programmers are absolutely welcome too, but this session is focused on those new to (or returning to) R code. All welcome, especially if you’re brand new to R or are coming from our R from Scratch course."
   },
   {
     "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#book-of-the-week",
     "href": "ml_archive/KIND_weekly_update_2024-11-11.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
-    "text": "Book of the week\nM. Neil Browne and Stuart M. Keeley. 2006. Asking the right questions: a guide to critical thinking.  ISBN 978-0132203043, Worldcat. This week’s recommendation comes from Alupha Chan, a Research IT Facilitator at NHS Tayside who writes: ‘I think this book will go well with this group. This used to be a mandatory reading for my Communications (PR) dip. nearly 2 decades ago - one of the chapters is dedicated in looking at whether presented stats are deceptive.’ Having had a look at this book, I’d recommend it too - lots of great material here for thinking hard about more complicated questions..\nUnsubscribe from these emails"
+    "text": "Book of the week\ncharacter(0). character(0). character(0).  ISBN character(0), Worldcat. character(0).\nUnsubscribe from these emails"
   },
   {
     "objectID": "commet/commet_2023-11-23.html",
