@@ -30,6 +30,8 @@ website:
             text: R reading group
           - href: kind_cms.qmd
             text: Community meetups
+          - href: unconf_2024.qmd
+            text: Unconference 2024
       - text: R beginner's club
         menu: 
           - href: rbc/about.qmd

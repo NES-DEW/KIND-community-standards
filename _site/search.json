@@ -175,6 +175,41 @@
     "text": "Any tips for working in R with limited RAM?\nThis was an inquiry from someone trying to work in R in Windows with 8gB of RAM. That’s going to be a challenge, unfortunately, especially if you need to run other memory-hungry stuff concurrently (Teams, e.g). R doesn’t have much in the way of memory management, so aside from patience, the general advice is to keep e.g. the data that you’re working with as small as possible. You’ll usually load your working data into memory, and so if that data is larger than the available memory R will slow to a crawl as it’s forced to write that data back to disk again.\nOne important exception: R gets very memory-inefficient if you grow objects. If you’ve got a choice between growing an object:\n\na &lt;- vector(\"numeric\")\n\nfor (i in 1:100){\n  a &lt;- c(a, i)\n}\n\nOr creating an object, and then assigning into it:\n\nb &lt;- vector(\"numeric\", 100L)\nfor (i in 1:100){\n  b[i] &lt;- i\n}\n\nYou should always choose the latter."
   },
   {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#week-beginning-mon-11th-november-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#week-beginning-mon-11th-november-2024",
+    "title": "KIND network update",
+    "section": "Week beginning Mon 11th November 2024",
+    "text": "Week beginning Mon 11th November 2024\nDear colleagues,\nWelcome to our regular KIND network update. You’ll notice slightly less training on offer for the next few weeks than usual. That’s to allow space for work on some new training resources (including an intermediate Power BI course) which will hopefully launch in the new year. Please do get in touch if you have suggestions for these new resources.\nBrendan"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#wins-of-the-week",
+    "title": "KIND network update",
+    "section": "Wins of The Week",
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nI received a clear congratulations for asking a great question at a meeting, nobody had thought about this. So chuffed!\nStarted to unpick a previous project and learn from the mistakes, delays and reflect. My next step is to involve other stakeholders using “psychological safety” model in a meeting.\nWe have had an issue the last couple of weeks with a delay in data appearing in our data warehouse. With help from national colleagues we have finally managed to locate the issue and have it fixed.\nGot a short story accepted for publication in an anthology earlier this year. Copies became available this week and I still can’t quite believe I am looking at my story in print. Wonderful feeling."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#training-sessions",
+    "title": "KIND network update",
+    "section": "Training sessions",
+    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nWhy bother with...R?\n13:00-14:00 Wed 13th November 2024\nR\n🥬: pre-beginner-level"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#events",
+    "title": "KIND network update",
+    "section": "Events",
+    "text": "Events\n\n3-4pm, Mon 11th November 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is learning statistics with R. We’ll be looking at the book Learning Statistics with R as an excellent example of how R can be used as a springboard for developing statistical skills.\n1-2pm, Tue 12th November 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be NA - NA."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#book-of-the-week",
+    "title": "KIND network update",
+    "section": "Book of the week",
+    "text": "Book of the week\ncharacter(0). character(0). character(0).  ISBN character(0), Worldcat. character(0).\nUnsubscribe from these emails"
+  },
+  {
     "objectID": "ml_archive/KIND_weekly_update_2024-09-30.html#week-beginning-mon-30th-september-2024",
     "href": "ml_archive/KIND_weekly_update_2024-09-30.html#week-beginning-mon-30th-september-2024",
     "title": "KIND network update",
@@ -438,14 +473,14 @@
     "href": "kind_cms.html",
     "title": "KIND community meetups",
     "section": "",
-    "text": "These are our main weekly social learning activity. They’re usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell.\n\nDownload community meetup data as csv\nDownload community meetup ideas as csv\n\n\nCurrent community meetup scheduleFuture community meetup ideasArchive of past sessions\n\n\n\nCurrent community meetup schedule\n\n\n\n\n\n\n\nDate\nTopic\nsubtopic\n\n\n\n\n2024-11-04\nfree parking\n\n\n\n2024-11-11\nR\nduckdb tech demo / group of use-cases\n\n\n2024-11-18\nTeaching maintenance\n\n\n\n2024-11-25\nExcel\nExcel programming/VBA/lambdas \n\n\n2024-12-02\nfree parking\n\n\n\n2024-12-09\nResearch data management\n\n\n\n2024-12-16\nFirst-steps toolkit for a junior/solo/reluctant/occasional analyst\n\n\n\n\n\n\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nData\nSafe havens / disclosure control / safe researcher training\n\n\n\nData\nDisclosure and pseudoanonymised data\n\n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nData\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\nMisc\nA non-web person’s intro to Java\n\n\n\nPower BI\ncorrelations and linear models in Power BI\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler\n\n\nR\nTidytext, sentiment analysis \n\n\n\nR \nData.table / tidyverse / polars / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nR \nR package roundup - Echarts4r, making PowerPoint in RMD, snakecase\n\n\n\nSkills\nWriting for different audiences\n\n\n\nStats\nDirected Acyclic Graphs (DAGs)\n\n\n\nStats\nPredictive modelling\n\n\n\nStats\nBayesian stats\n\n\n\nR\nTesting code\nEllen Young\n\n\nR\nGithub collaborations and getting Git installed\nGemma Whittaker\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nDate\n\n\nCategories\n\n\n\n\n\n\nAppraisals\n\n\nMay 16, 2024\n\n\nskills, career developement, appraisal\n\n\n\n\nData strategy\n\n\nMar 7, 2023\n\n\nData strategy\n\n\n\n\nJoins 1: introduction\n\n\nSep 2, 2024\n\n\nJoins, beginner, Excel, R, Power Query\n\n\n\n\nLeading a (training) session\n\n\nDec 4, 2023\n\n\nskills, training, career progression, appraisal\n\n\n\n\nTest driven development\n\n\nNov 21, 2023\n\n\nR, testing, intermediate, excel\n\n\n\n\n\nNo matching items"
+    "text": "These are our main weekly social learning activity. They’re usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell.\n\nDownload community meetup data as csv\nDownload community meetup ideas as csv\n\n\nCurrent community meetup scheduleFuture community meetup ideasArchive of past sessions\n\n\n\nCurrent community meetup schedule\n\n\n\n\n\n\n\nDate\nTopic\nsubtopic\n\n\n\n\n2024-11-18\nTeaching maintenance\n\n\n\n2024-11-25\nExcel\nExcel programming/VBA/lambdas \n\n\n2024-12-02\nfree parking\n\n\n\n2024-12-09\nResearch data management\n\n\n\n2024-12-16\nFirst-steps toolkit for a junior/solo/reluctant/occasional analyst\n\n\n\n\n\n\n\nFuture community meetup ideas\n\n\n\n\n\n\n\nTopic\nSubtopic\nSuggestor\n\n\n\n\nData\nSafe havens / disclosure control / safe researcher training\n\n\n\nData\nDisclosure and pseudoanonymised data\n\n\n\nData\ndealing with annoyingly wide data (e.g. 14 colours in maps for terrritorial boards)\n\n\n\nData\nhttps://rpubs.com/jackhannah95/rss-2019\nCristina Martin\n\n\nMisc\nA non-web person’s intro to Java\n\n\n\nPower BI\ncorrelations and linear models in Power BI\n\n\n\nR\nCausal questions: https://www.r-causal.org/\nJessica Butler\n\n\nR\nTidytext, sentiment analysis \n\n\n\nR \nData.table / tidyverse / polars / base R syntax-ecosystem-performance comparison \nGatz / Zihao \n\n\nR \nsurvey and surveyR packages \n?Jamie Zike \n\n\nR \nsynthpop \nSarah Cass \n\n\nR \nR package roundup - Echarts4r, making PowerPoint in RMD, snakecase\n\n\n\nSkills\nWriting for different audiences\n\n\n\nStats\nDirected Acyclic Graphs (DAGs)\n\n\n\nStats\nPredictive modelling\n\n\n\nStats\nBayesian stats\n\n\n\nR\nTesting code\nEllen Young\n\n\nR\nGithub collaborations and getting Git installed\nGemma Whittaker\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nDate\n\n\nCategories\n\n\n\n\n\n\nAppraisals\n\n\nMay 16, 2024\n\n\nskills, career developement, appraisal\n\n\n\n\nData strategy\n\n\nMar 7, 2023\n\n\nData strategy\n\n\n\n\nJoins 1: introduction\n\n\nSep 2, 2024\n\n\nJoins, beginner, Excel, R, Power Query\n\n\n\n\nLeading a (training) session\n\n\nDec 4, 2023\n\n\nskills, training, career progression, appraisal\n\n\n\n\nTest driven development\n\n\nNov 21, 2023\n\n\nR, testing, intermediate, excel\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "ml_archive.html",
     "href": "ml_archive.html",
     "title": "KIND network weekly update email archive",
     "section": "",
-    "text": "This is an archive page for the KIND network weekly update email. Subscribe to our mailing list to receive these updates.\n\n2024-10-07\n2024-09-30\n2024-09-23\n2024-09-16\n2024-09-09\n2024-09-02\n2024-08-26\n2024-08-19\n2024-08-12\n2024-08-05\n2024-07-15\n2024-07-08\n2024-07-01\n2024-06-24\n2024-06-17\n2024-06-10\n2024-06-03\n2024-05-27"
+    "text": "This is an archive page for the KIND network weekly update email. Subscribe to our mailing list to receive these updates.\n\n2024-11-11\n2024-11-04\n2024-10-07\n2024-09-30\n2024-09-23\n2024-09-16\n2024-09-09\n2024-09-02\n2024-08-26\n2024-08-19\n2024-08-12\n2024-08-05\n2024-07-15\n2024-07-08\n2024-07-01\n2024-06-24\n2024-06-17\n2024-06-10\n2024-06-03\n2024-05-27"
   },
   {
     "objectID": "visio.html",
@@ -504,32 +539,130 @@
     "text": "Appendix\n\nOverview\n\nOverview of Visio (Office Support)\n\nMany more suggested articles are available on the Visio website itself; click on the help icon (? Symbol) in the top right of the page, and several articles about using the application will be suggested.\n\n\nProcess Mapping\n\nProcess Mapping (QI Lothian)\nProcess Mapping (Turas Quality Improvement Zone)\nProcess Mapping Symbols (Turas Quality Improvement Zone)\n\nNote there are many more symbols that can be used in process maps, try to ensure whatever you are using comes from an approved source and is a standardised/understandable format.\n\n\nOther resources\n\nQuality improvement tools and resources (QI Lothian)\nNES QI tools (Turas Quality Improvement Zone)"
   },
   {
-    "objectID": "r.html",
-    "href": "r.html",
-    "title": "KIND Community Standards: R",
+    "objectID": "rreadgr.html",
+    "href": "rreadgr.html",
+    "title": "R reading group",
     "section": "",
-    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
+    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users."
   },
   {
-    "objectID": "r.html#basic-standard",
-    "href": "r.html#basic-standard",
-    "title": "KIND Community Standards: R",
+    "objectID": "rreadgr.html#about",
+    "href": "rreadgr.html#about",
+    "title": "R reading group",
     "section": "",
-    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
+    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users."
   },
   {
-    "objectID": "r.html#enhanced-standard",
-    "href": "r.html#enhanced-standard",
-    "title": "KIND Community Standards: R",
-    "section": "Enhanced standard",
-    "text": "Enhanced standard\n\nMake explicit reference to any formal style conventions employed\nUse version control\nFor ambitious projects, consider using renv which will capture R and package versions\nFor more onerous scripts, identify memory and CPU requirements listed at start\nconsider using project templates for presentations/reports/dashboards\nConsider loading individual functions via package::function() syntax rather than wholesale package loading for namespace and performance reasons\nconsider using targets to encourage the use of functions, visually displays the build pipeline and avoids unnecessary re-running of up-to-date code"
+    "objectID": "rreadgr.html#schedule",
+    "href": "rreadgr.html#schedule",
+    "title": "R reading group",
+    "section": "Schedule",
+    "text": "Schedule\n\nThursday, 3-4pm BST, 26th September 2024\n\nreading: chapter 2 of Advanced R on names and values\nnotes\n\nThursday, 3-4pm GMT, 21st November 2024\n\nreading: chapter 3 of Advanced R on vectors\n\nThursday, 3-4pm GMT, 19th December 2024\n\nreading: chapter 4 of Advanced R on subsetting"
   },
   {
-    "objectID": "r.html#considerations-for-teams-and-groups",
-    "href": "r.html#considerations-for-teams-and-groups",
-    "title": "KIND Community Standards: R",
-    "section": "Considerations for teams and groups",
-    "text": "Considerations for teams and groups\n\nHave a house code style, possibly implemented using styler Code styling for readability is important, and no-one agrees, so you’ll need to lead.\nWhen documentation is extremely important, consider using roxygen2 to encourage best documentation practice"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "KIND resources",
+    "section": "",
+    "text": "This is the main page for the KIND network’s live documents and non-training resources."
+  },
+  {
+    "objectID": "index.html#whats-here",
+    "href": "index.html#whats-here",
+    "title": "KIND resources",
+    "section": "What’s here?",
+    "text": "What’s here?\n\nCommunity standards\nThese documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.\nHow might you use these suggestions?\n\nas a way of highlighting good practice\nas a helper when starting new projects (or new Excel documents)\nas a lever for bringing about change, particularly trying to convince service leads that poorly-designed Excel spreadsheets are a dangerous menace\nas a guideline for tidying up existing inconsistent/messy files\nas a training tool when bringing new colleagues up to speed\n\nPlease take this, use it however you like, and let us know if there’s anything that you’d find particularly helpful for an updated version to contain. We’ll review and redraft regularly. Please open an issue on the GitHub page if you have specific suggestions, otherwise contact brendan.clarke2@nhs.scot for a more general conversation about these standards.\n\n\nSample SOPs\nThese are a set of sample standard operating procedures for KIND work. These are intended for sharing as a basis or guideline for your own activities. Please get in touch if you have a useful SOP that might be sharable.\n\n\nCommunity activities\nDocuments supporting our social learning activities, such as scheduled, past sessions, and archives of materials. These include:\n\nthe R reading group\nthe R beginner’s club\nthe main community meetup series\n\n\n\nKIND FAQ\nOur main frequently-asked questions document\n\n\nMentoring scheme\nInformation and links for our technical mentoring scheme\n\n\nBook of the week\nData and summaries for our ever-popular book of the week segment"
+  },
+  {
+    "objectID": "excel.html",
+    "href": "excel.html",
+    "title": "KIND Community Standards: Excel",
+    "section": "",
+    "text": "Excel workbooks are frequently troublesome. This document contains a simple set of features that will help you avoid the most serious Excel problems. The aim is to be:\nThis is version 1, and this document will be fully reviewed in January 2025 by the KIND network community."
+  },
+  {
+    "objectID": "excel.html#basic-standard-for-excel-workbooks",
+    "href": "excel.html#basic-standard-for-excel-workbooks",
+    "title": "KIND Community Standards: Excel",
+    "section": "Basic standard for Excel workbooks",
+    "text": "Basic standard for Excel workbooks\n\nMake your data tidy\n\nOne value per cell\nOne observation per row\nOne variable per column\n\nAvoid repetition\n\nconsider restructuring into several tables to avoid repeating data\n\nUse tables to contain data wherever possible\nUse meaningful sheet, table, and column names (not Sheet 1, Sheet 2…)\nUse number formatting as appropriate\n\nDates and percentages are especially important to format correctly\nText format for CHI numbers, rather than the initial ’\n\nAvoid using colour-based formatting which can easily breach accessibility guidance\n\nIf conditional format is required, prefer using more accessible formats, such as shape icons sets\n\nConsider avoiding VLOOKUP() in favour of either INDEX() + MATCH() or XLOOKUP()"
+  },
+  {
+    "objectID": "excel.html#enhanced-standard-for-excel-workbooks",
+    "href": "excel.html#enhanced-standard-for-excel-workbooks",
+    "title": "KIND Community Standards: Excel",
+    "section": "Enhanced standard for Excel workbooks",
+    "text": "Enhanced standard for Excel workbooks\nFollow the basic standards above, plus:\n\nConsider using data validation to make data consistent, especially if you don’t really want free text\nAdd a documentation / readme worksheet. You might include:\n\na description of the data\ninformation about ownership/origin/dates/data sources\na key explaining abbreviations\nexplanation of any complex formulas\nadvice about correct and consistent method of naming different versions of the workbook\n\nConsider using lambda formulas to avoid repetition of complex formulas\nPrefer structured referencing and naming to the use of complex A1 referencing\nConsider loading data using Power Query, especially if the workbook is designed to be updated"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html",
+    "href": "commet/commet_2023_03_07.html",
+    "title": "Data strategy",
+    "section": "",
+    "text": "Session materials\n\n\n\n\n\n\nslides  pptx /  pdf"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#overall-structure",
+    "href": "commet/commet_2023_03_07.html#overall-structure",
+    "title": "Data strategy",
+    "section": "Overall structure",
+    "text": "Overall structure\n\none vision: best use of data\nthree ambitions\nseven priority areas\nall wrapped in an ethical approach"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#data-access",
+    "href": "commet/commet_2023_03_07.html#data-access",
+    "title": "Data strategy",
+    "section": "Data access",
+    "text": "Data access"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#talent-and-culture",
+    "href": "commet/commet_2023_03_07.html#talent-and-culture",
+    "title": "Data strategy",
+    "section": "Talent and culture",
+    "text": "Talent and culture"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
+    "href": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
+    "title": "Data strategy",
+    "section": "Protecting and sharing data",
+    "text": "Protecting and sharing data"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#technology-and-infrastructure",
+    "href": "commet/commet_2023_03_07.html#technology-and-infrastructure",
+    "title": "Data strategy",
+    "section": "Technology and infrastructure",
+    "text": "Technology and infrastructure"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
+    "href": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
+    "title": "Data strategy",
+    "section": "Information standards and interoperability",
+    "text": "Information standards and interoperability"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#creating-insights-from-data",
+    "href": "commet/commet_2023_03_07.html#creating-insights-from-data",
+    "title": "Data strategy",
+    "section": "Creating insights from data",
+    "text": "Creating insights from data"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
+    "href": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
+    "title": "Data strategy",
+    "section": "Supporting research and innovation",
+    "text": "Supporting research and innovation"
+  },
+  {
+    "objectID": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
+    "href": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
+    "title": "Data strategy",
+    "section": "Ethical approaches to data",
+    "text": "Ethical approaches to data"
   },
   {
     "objectID": "faq.html",
@@ -609,130 +742,32 @@
     "text": "Help! I have an unmet query…\nFor anything, please contact Brendan Clarke (brendan.clarke2@nhs.scot)."
   },
   {
-    "objectID": "commet/commet_2023_03_07.html",
-    "href": "commet/commet_2023_03_07.html",
-    "title": "Data strategy",
+    "objectID": "r.html",
+    "href": "r.html",
+    "title": "KIND Community Standards: R",
     "section": "",
-    "text": "Session materials\n\n\n\n\n\n\nslides  pptx /  pdf"
+    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
   },
   {
-    "objectID": "commet/commet_2023_03_07.html#overall-structure",
-    "href": "commet/commet_2023_03_07.html#overall-structure",
-    "title": "Data strategy",
-    "section": "Overall structure",
-    "text": "Overall structure\n\none vision: best use of data\nthree ambitions\nseven priority areas\nall wrapped in an ethical approach"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#data-access",
-    "href": "commet/commet_2023_03_07.html#data-access",
-    "title": "Data strategy",
-    "section": "Data access",
-    "text": "Data access"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#talent-and-culture",
-    "href": "commet/commet_2023_03_07.html#talent-and-culture",
-    "title": "Data strategy",
-    "section": "Talent and culture",
-    "text": "Talent and culture"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
-    "href": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
-    "title": "Data strategy",
-    "section": "Protecting and sharing data",
-    "text": "Protecting and sharing data"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#technology-and-infrastructure",
-    "href": "commet/commet_2023_03_07.html#technology-and-infrastructure",
-    "title": "Data strategy",
-    "section": "Technology and infrastructure",
-    "text": "Technology and infrastructure"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
-    "href": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
-    "title": "Data strategy",
-    "section": "Information standards and interoperability",
-    "text": "Information standards and interoperability"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#creating-insights-from-data",
-    "href": "commet/commet_2023_03_07.html#creating-insights-from-data",
-    "title": "Data strategy",
-    "section": "Creating insights from data",
-    "text": "Creating insights from data"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
-    "href": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
-    "title": "Data strategy",
-    "section": "Supporting research and innovation",
-    "text": "Supporting research and innovation"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
-    "href": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
-    "title": "Data strategy",
-    "section": "Ethical approaches to data",
-    "text": "Ethical approaches to data"
-  },
-  {
-    "objectID": "excel.html",
-    "href": "excel.html",
-    "title": "KIND Community Standards: Excel",
+    "objectID": "r.html#basic-standard",
+    "href": "r.html#basic-standard",
+    "title": "KIND Community Standards: R",
     "section": "",
-    "text": "Excel workbooks are frequently troublesome. This document contains a simple set of features that will help you avoid the most serious Excel problems. The aim is to be:\nThis is version 1, and this document will be fully reviewed in January 2025 by the KIND network community."
+    "text": "Default to using projects, rather than setwd() etc\nPackages\n\nLoad packages at head of script, rather than dotted through the code\nKeep package loading minimal (nothing “just in case”)\nMake explicit reference to custom/non-CRAN packages, and how they should be loaded\n\nHelp your future self (or another user of the code)\n\nUse descriptive and consistent variable names\n\nIf variables need to be set by the user, consider collecting those together at the head of the script with appropriate comments. Or consider collecting these together into a settings file\n\nAdd sections of code to make the structure of your script clear\nConsider breaking long complex scripts into functional units. So one script to load your data, one to tidy it, a third to calculate something…\nInclude authorship, contact details, and brief documentation of the purpose of the script\nAvoid extremely repetitious code. Consider using functions to avoid repeating yourself\nConsider using styler to keep your code formatted consistently"
   },
   {
-    "objectID": "excel.html#basic-standard-for-excel-workbooks",
-    "href": "excel.html#basic-standard-for-excel-workbooks",
-    "title": "KIND Community Standards: Excel",
-    "section": "Basic standard for Excel workbooks",
-    "text": "Basic standard for Excel workbooks\n\nMake your data tidy\n\nOne value per cell\nOne observation per row\nOne variable per column\n\nAvoid repetition\n\nconsider restructuring into several tables to avoid repeating data\n\nUse tables to contain data wherever possible\nUse meaningful sheet, table, and column names (not Sheet 1, Sheet 2…)\nUse number formatting as appropriate\n\nDates and percentages are especially important to format correctly\nText format for CHI numbers, rather than the initial ’\n\nAvoid using colour-based formatting which can easily breach accessibility guidance\n\nIf conditional format is required, prefer using more accessible formats, such as shape icons sets\n\nConsider avoiding VLOOKUP() in favour of either INDEX() + MATCH() or XLOOKUP()"
+    "objectID": "r.html#enhanced-standard",
+    "href": "r.html#enhanced-standard",
+    "title": "KIND Community Standards: R",
+    "section": "Enhanced standard",
+    "text": "Enhanced standard\n\nMake explicit reference to any formal style conventions employed\nUse version control\nFor ambitious projects, consider using renv which will capture R and package versions\nFor more onerous scripts, identify memory and CPU requirements listed at start\nconsider using project templates for presentations/reports/dashboards\nConsider loading individual functions via package::function() syntax rather than wholesale package loading for namespace and performance reasons\nconsider using targets to encourage the use of functions, visually displays the build pipeline and avoids unnecessary re-running of up-to-date code"
   },
   {
-    "objectID": "excel.html#enhanced-standard-for-excel-workbooks",
-    "href": "excel.html#enhanced-standard-for-excel-workbooks",
-    "title": "KIND Community Standards: Excel",
-    "section": "Enhanced standard for Excel workbooks",
-    "text": "Enhanced standard for Excel workbooks\nFollow the basic standards above, plus:\n\nConsider using data validation to make data consistent, especially if you don’t really want free text\nAdd a documentation / readme worksheet. You might include:\n\na description of the data\ninformation about ownership/origin/dates/data sources\na key explaining abbreviations\nexplanation of any complex formulas\nadvice about correct and consistent method of naming different versions of the workbook\n\nConsider using lambda formulas to avoid repetition of complex formulas\nPrefer structured referencing and naming to the use of complex A1 referencing\nConsider loading data using Power Query, especially if the workbook is designed to be updated"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "KIND resources",
-    "section": "",
-    "text": "This is the main page for the KIND network’s live documents and non-training resources."
-  },
-  {
-    "objectID": "index.html#whats-here",
-    "href": "index.html#whats-here",
-    "title": "KIND resources",
-    "section": "What’s here?",
-    "text": "What’s here?\n\nCommunity standards\nThese documents set out simple, human, and sensible platform-specific standards that we think some of the most widely-used knowledge, information, and data tools should follow.\nHow might you use these suggestions?\n\nas a way of highlighting good practice\nas a helper when starting new projects (or new Excel documents)\nas a lever for bringing about change, particularly trying to convince service leads that poorly-designed Excel spreadsheets are a dangerous menace\nas a guideline for tidying up existing inconsistent/messy files\nas a training tool when bringing new colleagues up to speed\n\nPlease take this, use it however you like, and let us know if there’s anything that you’d find particularly helpful for an updated version to contain. We’ll review and redraft regularly. Please open an issue on the GitHub page if you have specific suggestions, otherwise contact brendan.clarke2@nhs.scot for a more general conversation about these standards.\n\n\nSample SOPs\nThese are a set of sample standard operating procedures for KIND work. These are intended for sharing as a basis or guideline for your own activities. Please get in touch if you have a useful SOP that might be sharable.\n\n\nCommunity activities\nDocuments supporting our social learning activities, such as scheduled, past sessions, and archives of materials. These include:\n\nthe R reading group\nthe R beginner’s club\nthe main community meetup series\n\n\n\nKIND FAQ\nOur main frequently-asked questions document\n\n\nMentoring scheme\nInformation and links for our technical mentoring scheme\n\n\nBook of the week\nData and summaries for our ever-popular book of the week segment"
-  },
-  {
-    "objectID": "rreadgr.html",
-    "href": "rreadgr.html",
-    "title": "R reading group",
-    "section": "",
-    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users."
-  },
-  {
-    "objectID": "rreadgr.html#about",
-    "href": "rreadgr.html#about",
-    "title": "R reading group",
-    "section": "",
-    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users."
-  },
-  {
-    "objectID": "rreadgr.html#schedule",
-    "href": "rreadgr.html#schedule",
-    "title": "R reading group",
-    "section": "Schedule",
-    "text": "Schedule\n\nThursday, 3-4pm BST, 26th September 2024\n\nreading: chapter 2 of Advanced R on names and values\nnotes\n\nThursday, 3-4pm GMT, 21st November 2024\n\nreading: chapter 3 of Advanced R on vectors\n\nThursday, 3-4pm GMT, 19th December 2024\n\nreading: chapter 4 of Advanced R on subsetting"
+    "objectID": "r.html#considerations-for-teams-and-groups",
+    "href": "r.html#considerations-for-teams-and-groups",
+    "title": "KIND Community Standards: R",
+    "section": "Considerations for teams and groups",
+    "text": "Considerations for teams and groups\n\nHave a house code style, possibly implemented using styler Code styling for readability is important, and no-one agrees, so you’ll need to lead.\nWhen documentation is extremely important, consider using roxygen2 to encourage best documentation practice"
   },
   {
     "objectID": "kind_botw.html",
@@ -740,6 +775,20 @@
     "title": "KIND Book of the week",
     "section": "",
     "text": "Download KIND book of the week data as csv"
+  },
+  {
+    "objectID": "kind_botw.html#the-alignment-problem",
+    "href": "kind_botw.html#the-alignment-problem",
+    "title": "KIND Book of the week",
+    "section": "13/11/2024: The Alignment Problem",
+    "text": "13/11/2024: The Alignment Problem\nBrian Christian. 2020. The Alignment Problem. ISBN 978-1786494337, Worldcat link.\n This is a high-risk recommendation, because I’ve only read a few chapters of this friendly (and alarming) introduction to AI. But there’s a good reason for the slightly-impetuous premature recommendation, as the public sector Data Ethics and Society Reading Group will be hosting a session on the book on the 3rd of December, so just about time to get a copy if you fancy joining what should be an excellent discussion then."
+  },
+  {
+    "objectID": "kind_botw.html#asking-the-right-questions-a-guide-to-critical-thinking",
+    "href": "kind_botw.html#asking-the-right-questions-a-guide-to-critical-thinking",
+    "title": "KIND Book of the week",
+    "section": "06/11/2024: Asking the right questions: a guide to critical thinking",
+    "text": "06/11/2024: Asking the right questions: a guide to critical thinking\nM. Neil Browne and Stuart M. Keeley. 2006. Asking the right questions: a guide to critical thinking. ISBN 978-0132203043, Worldcat link.\n This week’s recommendation comes from Alupha Chan, a Research IT Facilitator at NHS Tayside who writes: ‘I think this book will go well with this group. This used to be a mandatory reading for my Communications (PR) dip. nearly 2 decades ago - one of the chapters is dedicated in looking at whether presented stats are deceptive.’ Having had a look at this book, I’d recommend it too - lots of great material here for thinking hard about more complicated questions."
   },
   {
     "objectID": "kind_botw.html#hybrid-humans-dispatches-from-the-frontiers-of-man-and-machine",
@@ -1204,6 +1253,41 @@
     "text": "Book of the week\nGerd Gigerenzer. 2002. Reckoning with Risk: Learning to Live with Uncertainty.  ISBN 978-0713995122, Worldcat. How do you communicate risks? For many of us who work with knowledge, information, and data, the natural way of doing that is by talking about probabilities. This book, which is a lively and provoking introduction to the frequency format hypothesis might give us cause for pause: it turns out that frequencies serve as much stronger communicators of risk than probabilities. So if you want to communicate a risk, there’s a good reason to prefer saying 8 out of 10 people rather than 80% of people..\nUnsubscribe from these emails"
   },
   {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#week-beginning-mon-18th-november-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#week-beginning-mon-18th-november-2024",
+    "title": "KIND network update",
+    "section": "Week beginning Mon 18th November 2024",
+    "text": "Week beginning Mon 18th November 2024\nDear colleagues,\nWelcome to our regular KIND network update. We’ve got a few R-themed events coming up this week, including our regular monthly R beginners club session. Hope to see you there if you’re curious about R, a new R starter, or trying to build your R skills.\nBrendan"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#wins-of-the-week",
+    "title": "KIND network update",
+    "section": "Wins of The Week",
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nFelt like I was plodding along this week, but looking back I’ve managed to get a couple of large pieces of work completed and am organised for next week so a success!\nBeen asked to go along to a group run by a colleague, to support some work they’re doing and bring a different viewpoint. Chuffed at being asked and that my opinion is valued in a non-threatening but supportive way\nI won an americano tournament in paddle 🎊\nFinally managed to complete and submit the practical component of my GA coursework assignment."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#training-sessions",
+    "title": "KIND network update",
+    "section": "Training sessions",
+    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nHTML for non-web developers\n13:00-15:00 Wed 20th November 2024\nSkills\n🌶 :beginner-level"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#events",
+    "title": "KIND network update",
+    "section": "Events",
+    "text": "Events\n\n3-4pm, Mon 18th November 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is using SQL in R. We’ll be looking at some beginner-friendly ways of starting to use SQL databases as a tool for managing data in R.\nNES’s Knowledge Services team are re-running their excellent and highly-regarded series of short events about research and publication next week. Full details and registration links\nOur monthly R beginner’s club is running Thursday 14th November 3-4pm. A group session for R beginners to review their code, get unstuck, and pick up some tips and tricks. More experienced R programmers are absolutely welcome too, but this session is focused on those new to (or returning to) R code. All welcome, especially if you’re brand new to R or are coming from our R from Scratch course."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#book-of-the-week",
+    "title": "KIND network update",
+    "section": "Book of the week",
+    "text": "Book of the week\ncharacter(0). character(0). character(0).  ISBN character(0), Worldcat. character(0).\nUnsubscribe from these emails"
+  },
+  {
     "objectID": "commet/commet_2023-11-23.html",
     "href": "commet/commet_2023-11-23.html",
     "title": "Test driven development",
@@ -1456,45 +1540,24 @@
     "text": "How to think about joins?\nWe did a simple join above. A join is a way of merging two datasets. Let’s demonstrate with some cut-down datasets from above. We’ll remove some of the values from our b1 set and from our b2 set:\n\nb1 &lt;- b1 |&gt;\n  slice(1:5)\n\nb1\n\n# A tibble: 5 × 2\n  name     score\n  &lt;chr&gt;    &lt;dbl&gt;\n1 kennedy  0.590\n2 victoria 0.248\n3 peter    0.644\n4 judi     0.887\n5 paul     0.336\n\n\n\nb2 &lt;- b2 |&gt;\n  slice_sample(n = 5)\n\nb2\n\n# A tibble: 5 × 2\n  name    score\n  &lt;chr&gt;   &lt;dbl&gt;\n1 kenneth 0.393\n2 kennedy 0.590\n3 peter   0.644\n4 michael 0.561\n5 judi    0.887\n\n\nThe simplest join we could do is to bind the rows from one set onto another:\n\nb1 |&gt;\n  bind_rows(b2)\n\n# A tibble: 10 × 2\n   name     score\n   &lt;chr&gt;    &lt;dbl&gt;\n 1 kennedy  0.590\n 2 victoria 0.248\n 3 peter    0.644\n 4 judi     0.887\n 5 paul     0.336\n 6 kenneth  0.393\n 7 kennedy  0.590\n 8 peter    0.644\n 9 michael  0.561\n10 judi     0.887\n\n\nThat just brings all the rows from b2 onto the end of b1. Unlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join b2:\n\nb1 |&gt;\n  left_join(b2, by = \"name\")\n\n# A tibble: 5 × 3\n  name     score.x score.y\n  &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;\n1 kennedy    0.590   0.590\n2 victoria   0.248  NA    \n3 peter      0.644   0.644\n4 judi       0.887   0.887\n5 paul       0.336  NA    \n\n\nYou should see that only the values from b2’s score column that have a corresponding name in b1 get populated, and everything else gets filled with NAs. Here’s a nice introduction to the different kinds of join you can do in dplyr."
   },
   {
-    "objectID": "kind_botw.html#asking-the-right-questions-a-guide-to-critical-thinking",
-    "href": "kind_botw.html#asking-the-right-questions-a-guide-to-critical-thinking",
-    "title": "KIND Book of the week",
-    "section": "06/11/2024: Asking the right questions: a guide to critical thinking",
-    "text": "06/11/2024: Asking the right questions: a guide to critical thinking\nM. Neil Browne and Stuart M. Keeley. 2006. Asking the right questions: a guide to critical thinking. ISBN 978-0132203043, Worldcat link.\n This week’s recommendation comes from Alupha Chan, a Research IT Facilitator at NHS Tayside who writes: ‘I think this book will go well with this group. This used to be a mandatory reading for my Communications (PR) dip. nearly 2 decades ago - one of the chapters is dedicated in looking at whether presented stats are deceptive.’ Having had a look at this book, I’d recommend it too - lots of great material here for thinking hard about more complicated questions."
+    "objectID": "unconf_2024.html",
+    "href": "unconf_2024.html",
+    "title": "KIND unconference 2024",
+    "section": "",
+    "text": "Start time\n\nTopic\n\n\n\n09:30\n\nIntroduction\n\n\n\n09:40\n\nShow-off session 1: short project presentations\n\n\n\n10:20\nTheme discussion: \"high demand for support from the users, far more than I expected\"\nTheme discussion\n\n\n11:00\n\nBreak\n\n\n\n11:20\nTheme discussion 2\nTheme discussion 2\n\n\n12:00\n\n\"what do you want out of the network during 2025\": KIND network direction of travel\n\n\n\n12:40\n\nLunch\n\n\n\n13:20\nTheme discussion 3\nTheme discussion 3\n\n\n14:00\n\nShow-off session 1: short project presentations\n\n\n\n14:40\nTheme discussion\nTheme discussion: “‘we weren’t trained’ and ‘we’re not interested.’”\n\n\n15:20\n\nBreak\n\n\n\n15:40\n\nWrap-up: free chat, scheming, and complaints\n\n\n\n16:00ish\n\nFinish"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#week-beginning-mon-11th-november-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#week-beginning-mon-11th-november-2024",
-    "title": "KIND network update",
-    "section": "Week beginning Mon 11th November 2024",
-    "text": "Week beginning Mon 11th November 2024\nDear colleagues,\nWelcome to our regular KIND network update. You’ll notice slightly less training on offer for the next few weeks than usual. That’s to allow space for work on some new training resources (including an intermediate Power BI course) which will hopefully launch in the new year. Please do get in touch if you have suggestions for these new resources.\nBrendan"
+    "objectID": "unconf_2024.html#schedule",
+    "href": "unconf_2024.html#schedule",
+    "title": "KIND unconference 2024",
+    "section": "",
+    "text": "Start time\n\nTopic\n\n\n\n09:30\n\nIntroduction\n\n\n\n09:40\n\nShow-off session 1: short project presentations\n\n\n\n10:20\nTheme discussion: \"high demand for support from the users, far more than I expected\"\nTheme discussion\n\n\n11:00\n\nBreak\n\n\n\n11:20\nTheme discussion 2\nTheme discussion 2\n\n\n12:00\n\n\"what do you want out of the network during 2025\": KIND network direction of travel\n\n\n\n12:40\n\nLunch\n\n\n\n13:20\nTheme discussion 3\nTheme discussion 3\n\n\n14:00\n\nShow-off session 1: short project presentations\n\n\n\n14:40\nTheme discussion\nTheme discussion: “‘we weren’t trained’ and ‘we’re not interested.’”\n\n\n15:20\n\nBreak\n\n\n\n15:40\n\nWrap-up: free chat, scheming, and complaints\n\n\n\n16:00ish\n\nFinish"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#wins-of-the-week",
-    "title": "KIND network update",
-    "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nI received a clear congratulations for asking a great question at a meeting, nobody had thought about this. So chuffed!\nStarted to unpick a previous project and learn from the mistakes, delays and reflect. My next step is to involve other stakeholders using “psychological safety” model in a meeting.\nWe have had an issue the last couple of weeks with a delay in data appearing in our data warehouse. With help from national colleagues we have finally managed to locate the issue and have it fixed.\nGot a short story accepted for publication in an anthology earlier this year. Copies became available this week and I still can’t quite believe I am looking at my story in print. Wonderful feeling."
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#training-sessions",
-    "title": "KIND network update",
-    "section": "Training sessions",
-    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nWhy bother with...R?\n13:00-14:00 Wed 13th November 2024\nR\n🥬: pre-beginner-level"
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#events",
-    "title": "KIND network update",
-    "section": "Events",
-    "text": "Events\n\n3-4pm, Mon 11th November 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is learning statistics with R. We’ll be looking at the book Learning Statistics with R as an excellent example of how R can be used as a springboard for developing statistical skills.\n1-2pm, Tue 12th November 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be NA - NA."
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#book-of-the-week",
-    "title": "KIND network update",
-    "section": "Book of the week",
-    "text": "Book of the week\ncharacter(0). character(0). character(0).  ISBN character(0), Worldcat. character(0).\nUnsubscribe from these emails"
+    "objectID": "unconf_2024.html#theme-discussions",
+    "href": "unconf_2024.html#theme-discussions",
+    "title": "KIND unconference 2024",
+    "section": "Theme discussions",
+    "text": "Theme discussions\nWe’ll be running short discussion sessions on the following topics:\n\n“some sort of lessons learned from setting up new tech” - what have we learned about new tech, what do we wish we’d known beforehand, and what information should we (have) capture(d)\n“we have access to an Aston Martin and we are using it for the school run” - making the case for what we already have, making the case for exploiting available capabilities, realising benefits, and overcoming resistance to change\n“high demand for support from the users, far more than I expected” - knowledge sharing, dealing with support and training needs, keeping yourself/everyone else current, and trying to think sensibly about different needs and different ways of supporting those needs\n“proceeding until apprehended” - some people seek permission, others forgiveness. Balancing getting things done with professional obligations in a climate of murky guidance\n“you said X first, and that suits, so we’ll stick with X” - doing things fast vs doing them right, and communicating the difference to colleagues/stakeholders etc\n“‘we weren’t trained’ and ‘we’re not interested.’” skills mapping, writing JDs to suit actual needs, and developing some understanding of how skills and careers can be better fitted together\n“if it doesn’t help your prospects then what’s the point of it” - professional registration as somewhere between pointless money-pit and vital route to becoming a proper career?"
   }
 ]
