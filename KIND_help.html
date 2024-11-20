@@ -10,7 +10,7 @@
 <meta name="author" content="Brendan Clarke">
 <meta name="dcterms.date" content="2024-11-20">
 
-<title>KIND network update – KIND resources</title>
+<title>How to ask the network for help – KIND resources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,24 +26,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,11 +71,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -85,10 +83,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../![](/src/images/KLN_banner_v05_125.png)" alt="" class="navbar-logo">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./![](/src/images/KLN_banner_v05_125.png)" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">KIND resources</span>
     </a>
   </div>
@@ -99,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -108,15 +106,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-community-standards">    
         <li>
-    <a class="dropdown-item" href="../excel.html">
+    <a class="dropdown-item" href="./excel.html">
  <span class="dropdown-text">Excel</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../r.html">
+    <a class="dropdown-item" href="./r.html">
  <span class="dropdown-text">R</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../data_collection.html">
+    <a class="dropdown-item" href="./data_collection.html">
  <span class="dropdown-text">Data collection (draft)</span></a>
   </li>  
     </ul>
@@ -127,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-sample-sops">    
         <li>
-    <a class="dropdown-item" href="../visio.html">
+    <a class="dropdown-item" href="./visio.html">
  <span class="dropdown-text">Visio</span></a>
   </li>  
     </ul>
@@ -138,15 +136,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-community-activities">    
         <li>
-    <a class="dropdown-item" href="../rreadgr.html">
+    <a class="dropdown-item" href="./rreadgr.html">
  <span class="dropdown-text">R reading group</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../kind_cms.html">
+    <a class="dropdown-item" href="./kind_cms.html">
  <span class="dropdown-text">Community meetups</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../unconf_2024.html">
+    <a class="dropdown-item" href="./unconf_2024.html">
  <span class="dropdown-text">Unconference 2024</span></a>
   </li>  
     </ul>
@@ -157,19 +155,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-r-beginners-club">    
         <li>
-    <a class="dropdown-item" href="../rbc/about.html">
+    <a class="dropdown-item" href="./rbc/about.html">
  <span class="dropdown-text">about</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rbc/2024-06-13.html">
+    <a class="dropdown-item" href="./rbc/2024-06-13.html">
  <span class="dropdown-text">2024-06-13</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rbc/2024-09-12.html">
+    <a class="dropdown-item" href="./rbc/2024-09-12.html">
  <span class="dropdown-text">2024-09-12</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../rbc/2024-10-10.html">
+    <a class="dropdown-item" href="./rbc/2024-10-10.html">
  <span class="dropdown-text">2024-10-10</span></a>
   </li>  
     </ul>
@@ -180,25 +178,25 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-kind-faq">    
         <li>
-    <a class="dropdown-item" href="../faq.html">
+    <a class="dropdown-item" href="./faq.html">
  <span class="dropdown-text">KIND FAQ</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../KIND_help.html">
+    <a class="dropdown-item" href="./KIND_help.html">
  <span class="dropdown-text">🆕 How to ask the network for help</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../mentoring.html"> 
+    <a class="nav-link" href="./mentoring.html"> 
 <span class="menu-text">Mentoring scheme</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../kind_botw.html"> 
+    <a class="nav-link" href="./kind_botw.html"> 
 <span class="menu-text">Book of the week</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../ml_archive.html"> 
+    <a class="nav-link" href="./ml_archive.html"> 
 <span class="menu-text">Mailing list archive</span></a>
   </li>  
 </ul>
@@ -233,11 +231,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#week-beginning-mon-30th-september-2024" id="toc-week-beginning-mon-30th-september-2024" class="nav-link active" data-scroll-target="#week-beginning-mon-30th-september-2024">Week beginning Mon 30th September 2024</a></li>
-  <li><a href="#wins-of-the-week" id="toc-wins-of-the-week" class="nav-link" data-scroll-target="#wins-of-the-week">Wins of The Week</a></li>
-  <li><a href="#training-sessions" id="toc-training-sessions" class="nav-link" data-scroll-target="#training-sessions">Training sessions</a></li>
-  <li><a href="#events" id="toc-events" class="nav-link" data-scroll-target="#events">Events</a></li>
-  <li><a href="#book-of-the-week" id="toc-book-of-the-week" class="nav-link" data-scroll-target="#book-of-the-week">Book of the week</a></li>
+  <li><a href="#search-online-first" id="toc-search-online-first" class="nav-link active" data-scroll-target="#search-online-first">Search online first</a></li>
+  <li><a href="#be-specific-and-concise" id="toc-be-specific-and-concise" class="nav-link" data-scroll-target="#be-specific-and-concise">Be specific and concise</a></li>
+  <li><a href="#include-a-minimal-reproducible-example" id="toc-include-a-minimal-reproducible-example" class="nav-link" data-scroll-target="#include-a-minimal-reproducible-example">Include a minimal, reproducible, example</a></li>
   </ul>
 </nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -250,7 +246,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">KIND network update</h1>
+<h1 class="title">How to ask the network for help</h1>
 </div>
 
 
@@ -291,80 +287,59 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<img src="https://i.imgur.com/iJIRbhV.png" alt="KIND logo" height="150">
-<section id="week-beginning-mon-30th-september-2024" class="level2">
-<h2 class="anchored" data-anchor-id="week-beginning-mon-30th-september-2024">Week beginning Mon 30th September 2024</h2>
-<!-- We've got several training sessions coming up next week, and as usual full details can be found [on our Teams channel](https://teams.microsoft.com/l/team/19%3AQZ7-PbFVcziG2piHLt1_ifey3I2cwFL0yBuTSS8vVao1%40thread.tacv2/conversations?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a) and on our [training pages](https://nes-dew.github.io/KIND-training/).  -->
-<p>Dear colleagues,</p>
-<p>Welcome to our regular KIND network update. We’re coming to the end of the run of training sessions aimed at beginners that has been taking place over the past month or so. Those training sessions will be repeated in the future, but we’ll be concentrating on the more ambitious end of our training offer during November and December this year.</p>
-<p>Hope to see you at something soon</p>
-<p>Brendan</p>
-<hr>
+<p>The KIND network is a great place to ask for technical help. This page has a few suggestions and tips to ask for help successfully. Please remember that people responding to requests for help do so on a voluntary basis. We ask everyone requesting help on the KIND network to share these community standards. These boil-down to a small set of points for guidance</p>
+<ol type="1">
+<li>Search online first</li>
+<li>Be specific and concise</li>
+<li>Include a minimal, reproducible, example</li>
+</ol>
+<section id="search-online-first" class="level2">
+<h2 class="anchored" data-anchor-id="search-online-first">Search online first</h2>
+<p>This is, by far, the most powerful troubleshooting strategy there is. Writing an effective search can take a bit of thought, but the most useful guidance is to <strong>include as much specific information in your search as you can</strong>. So that means mention package/function names, any error messages received, and a description of the error that you’re facing. It’s definitely worth playing around a bit with this too - I like including the whole error message in quotes to sharpen the search up.. You might also include <code>site: stackoverflow.com</code> to restrict searches to one of the most useful and relevant sources there is.</p>
 </section>
-<section id="wins-of-the-week" class="level2">
-<h2 class="anchored" data-anchor-id="wins-of-the-week">Wins of The Week</h2>
-<p>In the spirit of <a href="https://www.rmrkblty.org/iamremarkable">#IAmRemarkable</a>, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:</p>
+<section id="be-specific-and-concise" class="level2">
+<h2 class="anchored" data-anchor-id="be-specific-and-concise">Be specific and concise</h2>
+<p>Assuming you don’t find what you need online, please feel free to ask in the Teams channel. Again, the sample principles about specificity apply: tell us what’s going wrong, and when, as specifically as you can. Please avoid the very generic “it doesn’t work”-type ways of describing problems. Screenshots are a great way of communicating errors if you don’t have the words to describe what’s going wrong. Make sure you include a description/screenshot of:</p>
 <ul>
-<li>I passed my master’s degree with distinction.</li>
-<li>Wrote a snazzy report in Rmarkdown this week. Who knows if it will end up getting used, but I learnt a lot in making it!<br>
-</li>
-<li>I supported a colleague who was going through some difficulties and gave them space to process their feelings</li>
-<li>I’ve managed to handle my first short-deadline piece of work for an external customer. Confidence is rising!</li>
+<li>any error messages</li>
+<li>when those error messages happen</li>
+<li>details of your computer setup if it’s an odd/unusual one</li>
 </ul>
-<hr>
+<p>You should also <strong>tell us what you’ve tried</strong>, and what happened when you tried it.</p>
 </section>
-<section id="training-sessions" class="level2">
-<h2 class="anchored" data-anchor-id="training-sessions">Training sessions</h2>
-<table class="caption-top table" data-quarto-postprocess="true">
-<thead>
-<tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">Session</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Date</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Area</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left; max-width: 18em;"><a href="https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1721302592245?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d">Excel formatting</a></td>
-<td style="text-align: left;">09:30-10:30 Tue 1st October 2024</td>
-<td style="text-align: left;">Excel</td>
-<td style="text-align: left;">🌶 :<strong>beginner-level</strong></td>
-</tr>
-<tr class="even">
-<td style="text-align: left; max-width: 18em;"><a href="https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1721391946166?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d">R from scratch (session 5)</a></td>
-<td style="text-align: left;">14:30-15:30 Tue 1st October 2024</td>
-<td style="text-align: left;">R</td>
-<td style="text-align: left;">🌶 :<strong>beginner-level</strong></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; max-width: 18em;"><a href="https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1723033945779?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d">BI for beginners (service version, session 4)</a></td>
-<td style="text-align: left;">10:00-12:00 Thu 3rd October 2024</td>
-<td style="text-align: left;">Power BI</td>
-<td style="text-align: left;">🌶 :<strong>beginner-level</strong></td>
-</tr>
-<tr class="even">
-<td style="text-align: left; max-width: 18em;"><a href="https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1723472672494?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d">Tableau for beginners (session 3)</a></td>
-<td style="text-align: left;">13:30-15:30 Thu 3rd October 2024</td>
-<td style="text-align: left;">Tableau</td>
-<td style="text-align: left;">🌶 :<strong>beginner-level</strong></td>
-</tr>
-</tbody>
-</table>
-
-
-</section>
-<section id="events" class="level2">
-<h2 class="anchored" data-anchor-id="events">Events</h2>
+<section id="include-a-minimal-reproducible-example" class="level2">
+<h2 class="anchored" data-anchor-id="include-a-minimal-reproducible-example">Include a minimal, reproducible, example</h2>
+<p>Generally, when people want to help you with something, the first thing they’ll try to do is reproduce the problem. Help your helpers by making that as quick and easy as possible. This almost always means building a demo version of your problem that can be shared with people on the network. Code-y types might refer to this as a <a href="https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html">reprex</a>. - a <strong>repr</strong>oducible <strong>ex</strong>ample.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Make sure that you don’t breach data protection rules when you share your issue. Replacing any real data with sample data is generally the safest course of action</p>
+</div>
+</div>
+<p>That can be daunting, so here are some steps to help achieve a minimal example:</p>
 <ul>
-<li>3-4pm, Mon 30th September 2024. <a href="https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1723028114046?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d">All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo</a>. Full details and joining links via the <a href="https://teams.microsoft.com/l/channel/19%3Ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/Community%20meetups?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&amp;tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a">community meetup channel</a>. The theme this week is <strong>show and tell</strong>. Come and show the community your projects. It’s a great way to get useful suggestions and feedback, and sharing knowledge and best-practice is core to what we do.</li>
-<li>1-2pm, Tue 1st October 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be <a href="https://teams.microsoft.com/l/meetup-join/19%3a109a603c446743308bff6588820372a9%40thread.tacv2/1671457631308?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%2284150c3d-baed-4515-8eee-8f13ed0d9650%22%7d">Camillia Somers - PHS Survey on Statistical Publications</a>.</li>
+<li>start with your spreadsheet/script that’s causing trouble, and <strong>save a copy</strong> of it as your mini-example</li>
+<li>remove any irrelevant material, leaving just the part with the error, and anything that depends on
+<ul>
+<li>if in doubt, take it out. Keep it as simple as possible!</li>
+</ul></li>
+<li>replace any real data with suitable placeholder data if there are any concerns about data protection
+<ul>
+<li>don’t make helpers guess what your data is like!</li>
+</ul></li>
+<li>next, make sure that your error still occurs in your mini-example. Stripping away extraneous material etc is a great way of actually fixing problems in its own right, so it’s important to check that you haven’t fixed it by yourself
+<ul>
+<li>you should also make sure that any password protection, credentials, etc are removed from the document so that your helpers can see everything you can see</li>
+</ul></li>
+<li>finally, make sure you save your example file before adding it to your request for help in Teams</li>
 </ul>
-</section>
-<section id="book-of-the-week" class="level2">
-<h2 class="anchored" data-anchor-id="book-of-the-week">Book of the week</h2>
-<p>Sarah Morton and Ailsa Cook. 2022. <em>How Do You Know If You Are Making a Difference? A Practical Handbook for Public Service Organisations</em>. <br> ISBN 9781447361930, <a href="https://search.worldcat.org/title/1394005579">Worldcat</a>.<br><br> A recommendation this week from Vasudha Singh, an improvement advisor at NHS Lothian, who writes ‘we are trying to move towards outcome map based evaluation of projects. I was recommended <em>How Do You Know If You Are Making a Difference?</em> to understand this better.’ It’s also available via <a href="https://nhs.primo.exlibrisgroup.com/permalink/44NHSS_INST/muqrva/alma991000690701503491">the Knowledge Network</a>.</p>
-<p><a href="https://forms.office.com/r/t97cZDiw7y">Unsubscribe from these emails</a></p>
 
 
 </section>
