@@ -1,0 +1,41 @@
+---
+title: "How to ask the network for help"
+date: 2024-11-20
+---
+  
+The KIND network is a great place to ask for technical help. This page has a few suggestions and tips to ask for help successfully. Please remember that people responding to requests for help do so on a voluntary basis. We ask everyone requesting help on the KIND network to share these community standards. These boil-down to a small set of points for guidance
+
+1. Search online first
+1. Be specific and concise
+1. Include a minimal, reproducible, example
+
+## Search online first
+This is, by far, the most powerful troubleshooting strategy there is. Writing an effective search can take a bit of thought, but the most useful guidance is to **include as much specific information in your search as you can**. So that means mention package/function names, any error messages received, and a description of the error that you're facing. It's definitely worth playing around a bit with this too - I like including the whole error message in quotes to sharpen the search up.. You might also include `site: stackoverflow.com` to restrict searches to one of the most useful and relevant sources there is.
+
+## Be specific and concise
+
+Assuming you don't find what you need online, please feel free to ask in the Teams channel. Again, the sample principles about specificity apply: tell us what's going wrong, and when, as specifically as you can. Please avoid the very generic "it doesn't work"-type ways of describing problems. Screenshots are a great way of communicating errors if you don't have the words to describe what's going wrong. Make sure you include a description/screenshot of:
+
+* any error messages
+* when those error messages happen
+* details of your computer setup if it's an odd/unusual one
+
+You should also **tell us what you've tried**, and what happened when you tried it.
+  
+## Include a minimal, reproducible, example
+Generally, when people want to help you with something, the first thing they'll try to do is reproduce the problem. Help your helpers by making that as quick and easy as possible. This almost always means building a demo version of your problem that can be shared with people on the network. Code-y types might refer to this as a [reprex](https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html). - a **repr**oducible **ex**ample.
+
+::: {.callout-important}
+Make sure that you don't breach data protection rules when you share your issue. Replacing any real data with sample data is generally the safest course of action
+:::
+
+That can be daunting, so here are some steps to help achieve a minimal example:
+
+- start with your spreadsheet/script that's causing trouble, and **save a copy** of it as your mini-example
+- remove any irrelevant material, leaving just the part with the error, and anything that depends on
+    - if in doubt, take it out. Keep it as simple as possible!
+- replace any real data with suitable placeholder data if there are any concerns about data protection
+    - don't make helpers guess what your data is like!
+- next, make sure that your error still occurs in your mini-example. Stripping away extraneous material etc is a great way of actually fixing problems in its own right, so it's important to check that you haven't fixed it by yourself
+    - you should also make sure that any password protection, credentials, etc are removed from the document so that your helpers can see everything you can see
+- finally, make sure you save your example file before adding it to your request for help in Teams

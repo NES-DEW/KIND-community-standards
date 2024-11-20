@@ -42,8 +42,12 @@ website:
             text: 2024-09-12
           - href: rbc/2024-10-10.qmd
             text: 2024-10-10
-      - href: faq.qmd
-        text: KIND FAQ
+      - text: KIND FAQ
+        menu:
+          - href: faq.qmd
+            text: KIND FAQ
+          - href: KIND_help.qmd
+            text: 🆕 How to ask the network for help
       - href: mentoring.qmd
         text: Mentoring scheme
       - href: kind_botw.qmd
