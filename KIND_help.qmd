@@ -23,7 +23,7 @@ Assuming you don't find what you need online, please feel free to ask in the Tea
 You should also **tell us what you've tried**, and what happened when you tried it.
   
 ## Include a minimal, reproducible, example
-Generally, when people want to help you with something, the first thing they'll try to do is reproduce the problem. Help your helpers by making that as quick and easy as possible. This almost always means building a demo version of your problem that can be shared with people on the network. Code-y types might refer to this as a [reprex](https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html). - a **repr**oducible **ex**ample.
+Generally, when people want to help you with something, the first thing they'll try to do is reproduce the problem. Help your helpers by making that as quick and easy as possible. This almost always means building a demo version of your problem that can be shared with people on the network. Code-y types might refer to this as a [reprex](https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html) - a **repr**oducible **ex**ample.
 
 ::: {.callout-important}
 Make sure that you don't breach data protection rules when you share your issue. Replacing any real data with sample data is generally the safest course of action
