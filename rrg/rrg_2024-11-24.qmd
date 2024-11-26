@@ -1,6 +1,6 @@
 ---
 title: "R reading group notes"
-date: "2024-11-24"
+date: "2024-11-21"
 execute: 
   echo: true
 output: true
