@@ -1,0 +1,144 @@
+---
+title: "KIND network update"
+format: html
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false
+  message: false
+---
+
+```{r}
+#| include: false
+# keep quarto happy - don't have a verbatim chunk first
+source(here::here("R/nice_date.R"))
+source(here::here("R/bullet_list.R"))
+source(here::here("R/mail_training_sessions.R"))
+
+```
+
+```{=html}
+<img src="https://i.imgur.com/iJIRbhV.png" alt = "KIND logo" height="150">
+```
+
+```{r}
+#| include: false
+
+next_week_start <- lubridate::ceiling_date(lubridate::today(), unit = "week", week_start = 1)
+
+next_week_end <- next_week_start + lubridate::weeks(1)
+
+# scodas <- readxl::read_excel("C:/Users/brendancl/NHS Scotland/SCODAS - SCODAS oversight group - SCODAS oversight group/Schedule/SCODAS Schedule and Future Topics.xlsx") |>
+#   dplyr::filter(Date >= next_week_start) |>
+#   dplyr::filter(Date < next_week_end)
+
+# datapasta::df_paste(scodas)
+scodas <- dplyr::tibble(Date = c("2024-11-26"),
+  Topic = c("Homelessness Data"),
+  Presenter = c("Zeg Ashraf & Emma Berry"),
+  `Contact Details` = c("zeg.ashraf@phs.scot; emma.berry2@phs.scot"))
+                                                                         kcm <- readr::read_csv("https://raw.githubusercontent.com/NES-DEW/KIND-community-standards/main/data/KIND_community_meetups.csv") |>
+  dplyr::mutate(Date = lubridate::dmy(Date)) |>
+  dplyr::filter(Date >= next_week_start) |>
+  dplyr::filter(Date < next_week_end) |>
+  dplyr::mutate(Topic = "**programming in Excel**. We'll be looking at the more ambitious end of Excel work, with some examples of VBA, Lambda formulas, and (assuming the tech gremlins favour us) with a demo of Python in Excel. All very welcome - we're obviously going to be more at the technical end this time round, but you definitely don't need to be an expert to come along")
+
+```
+
+## Week beginning `r nice_date(next_week_start)`
+
+Dear colleagues, 
+
+Welcome to our regular KIND network update. We've had several requests for help with interview preparation over the past couple of weeks. That means that we're going to develop a couple of regular sessions designed to help people build and practice their skills as interviewees (and as interviewers) over the coming weeks. If you're looking with some trepidation at an interview task or similar, please get in touch and we'll try and arrange support for you.
+
+A couple of miscellaneous reminders for you this week:
+
+- We're still looking for volunteers to help lead some of the discussion sessions at the unconference on the 11th Dec. See the discussion on the [Unconference Teams channel](https://teams.microsoft.com/l/channel/19%3A841c83b753324873866f54b10b5ce380%40thread.tacv2/KIND%20Unconference%202024?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a) for more details.
+- I've also put out a call for [training requests via this form](https://forms.office.com/e/zLaKHXvcBt) - please let me know what training sessions and courses you'd like to see during the first few months of 2025.
+
+Hope to see you at something soon
+
+Brendan
+
+---
+
+## Wins of The Week
+In the spirit of [#IAmRemarkable](https://www.rmrkblty.org/iamremarkable), we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A non-random selection of some of the firsts from this bumper clutch of wins:
+
++ Running my first sub 30 min 5k!
++ Running my first workshop!! Learned a lot...but got good feedback which was nice to hear :)
++ Created my first [funnel plot](https://wviechtb.github.io/metafor/reference/funnel.html) in R
++ Bought my first Christmas jumper of this year... (I have a few) Not wearing them until 1st December, but then all systems are go! Also googled Lambda formulae and looking forward to demystifying the mathsspeak - I love a formula but I rarely know correct terminology for these things!
++ Got the team's first publication out. Hopefully many more to come!
+
+Well done all, and looking forward to [hearing your wins of the week](https://forms.office.com/e/8DgpNP6rcK) in future.
+---
+
+<!-- ## Training sessions
+  
+```{r}
+#| results: asis
+#| message: false
+# highlight item
+
+##### CONSIDER looking at html-table-processing quarto option to get html tables to behave
+
+# mail_training_sessions(start_date = paste0(next_week_start), end_date =   paste0(next_week_end)) |>
+#   dplyr::mutate(Level = stringr::str_replace_all(Level, "<style='color:red'>", "")) |>
+#   knitr::kable(format = "html", escape = F) |>
+#   kableExtra::column_spec(1, width_max = "18em")
+
+```
+
+## Events
+
+```{r}
+#| results: asis
+#| echo: false
+
+
+cat(bullet_list(glue::glue("3-4pm, {nice_date(lubridate::as_date(kcm$Date))}. [All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo](https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1723028114046?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d). Full details and joining links via the [community meetup channel](https://teams.microsoft.com/l/channel/19%3Ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/Community%20meetups?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a). The theme this week is {kcm$Topic}. ")))
+
+cat(bullet_list("We're running a KIND introductory session [aimed at learning and development professionals this Wednesday 1-2pm](https://events.teams.microsoft.com/event/19d8ff33-1b11-4570-9965-15ef3475366c@10efe0bd-a030-4bca-809c-b5e6745e499a). Come along to find out more about how the KIND network can help your organisation with training and development."))
+
+if(nrow(scodas) > 0){
+  cat(bullet_list(glue::glue("1-2pm, {nice_date(lubridate::as_date(scodas$Date))}. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be [{scodas$Presenter} - {scodas$Topic}](https://teams.microsoft.com/l/meetup-join/19%3a109a603c446743308bff6588820372a9%40thread.tacv2/1671457631308?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%2284150c3d-baed-4515-8eee-8f13ed0d9650%22%7d).")))
+}
+
+# cat(bullet_list("NES's Knowledge Services team are re-running their excellent and highly-regarded series of short events about research and publication next week. [Full details and registration links](https://forms.office.com/pages/responsepage.aspx?id=veDvEDCgykuAnLXmdF5JmmWL8edIO_5Cmgr6wY5txHZURFJFWDA5NFlKWk1CTVFORlAwTlNKUEs0NSQlQCN0PWcu&route=shorturl)"))
+
+# cat(bullet_list("Our monthly [R beginner's club is running Thursday 14th November 3-4pm](https://eur01.safelinks.protection.outlook.com/ap/t-59584e83/?url=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ab03b2fd777e440eaa255ba67569762b5%2540thread.tacv2%2F1725260923641%3Fcontext%3D%257b%2522Tid%2522%253a%252210efe0bd-a030-4bca-809c-b5e6745e499a%2522%252c%2522Oid%2522%253a%25225d92fd7e-56b9-4892-ab77-84ad75c260a0%2522%257d&data=05%7C02%7Cbrendan.clarke2%40nhs.scot%7C934c89b524d343a846f608dccb1e163e%7C10efe0bda0304bca809cb5e6745e499a%7C0%7C0%7C638608577294901657%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=a8NkAIelwuWbNW9aSQ74DujKcNzit%2BoH7XvY348RYHQ%3D&reserved=0). A group session for R beginners to review their code, get unstuck, and pick up some tips and tricks. More experienced R programmers are absolutely welcome too, but this session is focused on those new to (or returning to) R code. All welcome, especially if you're brand new to R or are coming from our R from Scratch course. "))
+
+# cat(bullet_list("Our [R reading group session is Thursday 21st November 3-4pm](https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1716881796537?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d). This session is aimed an an intermediate-level audience of R users, and the plan is to read [chapter 3 of Advanced R](https://adv-r.hadley.nz/vectors-chap.html) on vectors. All welcome!"))
+
+```
+
+
+## Book of the week
+
+```{r}
+#| results: asis
+#| echo: false
+#| message: false
+botw_slug <- readr::read_csv("https://raw.githubusercontent.com/NES-DEW/KIND-community-standards/main/data/KIND_book_of_the_week.csv") |>
+  dplyr::filter(lubridate::dmy(Date) > (next_week_start - lubridate::days(7)))
+
+cat(glue::glue("{botw_slug[2]}. {botw_slug[3]}. *{botw_slug[4]}*. </br> ISBN {botw_slug[5]}, <a href='{botw_slug[6]}'>Worldcat</a>.</br></br> {botw_slug[8]}"))
+```
+
+[Unsubscribe from these emails](https://forms.office.com/r/t97cZDiw7y)
+
+```{r}
+#| include: false
+# remember to add <img src="https://i.imgur.com/toWVmg2.png" alt = "KIND logo">
+
+# script to copy content to archive
+new_path <- paste0("C:\\Users\\brendancl\\not_od\\KIND-community-standards\\ml_archive\\KIND_weekly_update_",
+       next_week_start,
+       ".qmd")
+
+file.copy("./KIND_weekly_content.qmd",
+          to = new_path,
+          overwrite = T)
+
+```

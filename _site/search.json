@@ -1629,5 +1629,68 @@
     "title": "KIND Book of the week",
     "section": "20/11/2024: The Devil You Know - Encounters in Forensic Psychiatry",
     "text": "20/11/2024: The Devil You Know - Encounters in Forensic Psychiatry\nGwen Adshead. 2021. The Devil You Know - Encounters in Forensic Psychiatry. ISBN 978-0571357628, Worldcat link.\n This week’s recommendation comes from Louise Stuart, a Health and Work Adviser at Public Health Scotland, who writes: ‘I used to work as an OT in a low secure forensic mental health hospital so it was nostalgic to revisit my time on the wards through this book. The author offers a compassionate insight into those who are accessing forensic mental health services with each chapter focusing on a different patients story and journey. I found this book to be a powerful and thoughtful read, and I would thoroughly recommend.’"
+  },
+  {
+    "objectID": "rrg/rrg_2024-11-24.html",
+    "href": "rrg/rrg_2024-11-24.html",
+    "title": "R reading group notes",
+    "section": "",
+    "text": "This was about the vectors chapter in Advanced R (2nd ed). It’s mainly about how vectors and lists work."
+  },
+  {
+    "objectID": "rrg/rrg_2024-11-24.html#types-of-vector",
+    "href": "rrg/rrg_2024-11-24.html#types-of-vector",
+    "title": "R reading group notes",
+    "section": "Types of vector",
+    "text": "Types of vector\nThere are a few odd extras, but nearly all vectors in the wild can be taxonomised like this:\n\natomic vectors (same type)\n\nnumeric\n\ninteger\n\n1234L, 1e4L, or 0xcafeL\n\ndouble\n\ndecimal (0.1234), scientific (1.23e4), hex (0xcafe), Inf, -Inf, and NaN\n\n\nlogical\ncharacter\n\nlists (potentially mixed type)\nNULL (a 0-length vector)"
+  },
+  {
+    "objectID": "rrg/rrg_2024-11-24.html#scalars-and-vectors",
+    "href": "rrg/rrg_2024-11-24.html#scalars-and-vectors",
+    "title": "R reading group notes",
+    "section": "Scalars and vectors",
+    "text": "Scalars and vectors\n\nscalars = individual values = length-one vectors\n\n\n\"steve\" # scalar\n\n[1] \"steve\"\n\n9 # scalar\n\n[1] 9\n\nlength(9)\n\n[1] 1\n\n\n\nmake longer vectors with c()\n\n\nc(T, FALSE)\n\n[1]  TRUE FALSE\n\nflat &lt;- c(c(\"nested\", \"vectors\"), c(\"get\", \"flattened\"))\nflat\n\n[1] \"nested\"    \"vectors\"   \"get\"       \"flattened\"\n\ntypeof(flat)\n\n[1] \"character\"\n\n\n\nunderstanding lists vs vectors as largely about hierarchical structure. Vectors are flat, while lists are hierchical:\n\n\nc(c(\"this\"), c(\"gets completely\"), \"flattened\")\n\n[1] \"this\"            \"gets completely\" \"flattened\"      \n\nlist(c(\"this\"), list(\"gets\", \"not\", \"at all\"), \"flattened\")\n\n[[1]]\n[1] \"this\"\n\n[[2]]\n[[2]][[1]]\n[1] \"gets\"\n\n[[2]][[2]]\n[1] \"not\"\n\n[[2]][[3]]\n[1] \"at all\"\n\n\n[[3]]\n[1] \"flattened\"\n\n\n\nwe then did a lot of experimenting with empty lists and vectors\n\n\nc(\"d\", 1) == c(\"d\", \"1\")\n\n[1] TRUE TRUE\n\nlist(\"c\", 1)\n\n[[1]]\n[1] \"c\"\n\n[[2]]\n[1] 1\n\n## create an empty vector\nvector(\"character\", 0)\n\ncharacter(0)\n\n## create an empty list\nvector(\"list\", 0) # the weird one\n\nlist()\n\nunlist(vector(\"list\", 0)) # because NULL is effectively a 0-length vector\n\nNULL\n\nis.null(unlist(list()))\n\n[1] TRUE"
+  },
+  {
+    "objectID": "rrg/rrg_2024-11-24.html#testing-for-vectors",
+    "href": "rrg/rrg_2024-11-24.html#testing-for-vectors",
+    "title": "R reading group notes",
+    "section": "Testing for vectors",
+    "text": "Testing for vectors\nThis is a big issue because many R functions will coerce, and it can cause serious trouble. There’s a bit of discussion about the ordering, where character is basically the ground state/most basic, then double, then integer, then logical. So logical only gets made from logical inputs, integer from logical or integer, double from double, or integer, or logical, and character from anything.\n\nas.numeric(TRUE)\n\n[1] 1\n\nis.logical(TRUE)\n\n[1] TRUE\n\nis.integer(1L)\n\n[1] TRUE\n\nis.double(1.0)\n\n[1] TRUE\n\nis.character(\"one\")\n\n[1] TRUE\n\nNA_character_ # if you really want to ruin your life\n\n[1] NA\n\n# character → double → integer → logical\n\nc(T, T) |&gt; typeof()\n\n[1] \"logical\"\n\nc(T, F) |&gt; typeof()\n\n[1] \"logical\"\n\nc(T, 1L) |&gt; typeof()\n\n[1] \"integer\"\n\nc(T, 1) |&gt; typeof()\n\n[1] \"double\"\n\nc(T, NA_character_) |&gt; typeof()\n\n[1] \"character\"\n\nc(T, 1, NA)\n\n[1]  1  1 NA\n\npaste(NA_character_)\n\n[1] \"NA\"\n\npaste(NA)\n\n[1] \"NA\"\n\n\n\nThe danger zone\nThis area is rich in false friends - functions with plausible-sounding names that do something unusual and not entirely what you might expect from their name:\n\ntesty1 &lt;- c(1,2,3)\ntesty2 &lt;- list(one = 1, two = 2, three = 3)\ntesty3 &lt;- expression(x = 1)\n\nis.vector(testy1) \n\n[1] TRUE\n\nis.vector(testy2) \n\n[1] TRUE\n\nis.vector(testy3) # includes lists and expressions\n\n[1] TRUE\n\nis.atomic(testy1) \n\n[1] TRUE\n\nis.atomic(testy2)\n\n[1] FALSE\n\nis.atomic(testy3)# i.e. not recursive\n\n[1] FALSE\n\nis.numeric(testy1)\n\n[1] TRUE\n\nis.numeric(testy2) # even though everything is numeric, this list doesn't count as numeric\n\n[1] FALSE\n\nsapply(testy2, is.numeric)\n\n  one   two three \n TRUE  TRUE  TRUE"
+  },
+  {
+    "objectID": "rrg/rrg_2024-11-24.html#attributes",
+    "href": "rrg/rrg_2024-11-24.html#attributes",
+    "title": "R reading group notes",
+    "section": "Attributes",
+    "text": "Attributes\nVectors can have attributes - like names. Most attributes are pretty fragile, and get removed very easily:\n\ntesty4 &lt;- c(one = 1, two = 2, three = 3)\ntypeof(testy4) # definitely not a list\n\n[1] \"double\"\n\nnames(testy4)\n\n[1] \"one\"   \"two\"   \"three\"\n\nattributes(testy4)\n\n$names\n[1] \"one\"   \"two\"   \"three\"\n\nattr(testy4, \"names\")\n\n[1] \"one\"   \"two\"   \"three\"\n\nattr(testy4, \"supernames\") &lt;- c(\"one but secret\", \"two but secret\", \"three but secret\")\nattributes(testy4)\n\n$names\n[1] \"one\"   \"two\"   \"three\"\n\n$supernames\n[1] \"one but secret\"   \"two but secret\"   \"three but secret\"\n\nstr(attributes(testy4))\n\nList of 2\n $ names     : chr [1:3] \"one\" \"two\" \"three\"\n $ supernames: chr [1:3] \"one but secret\" \"two but secret\" \"three but secret\""
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-25.html#week-beginning-mon-2nd-december-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-11-25.html#week-beginning-mon-2nd-december-2024",
+    "title": "KIND network update",
+    "section": "Week beginning Mon 2nd December 2024",
+    "text": "Week beginning Mon 2nd December 2024\nDear colleagues,\nWelcome to our regular KIND network update. We’ve had several requests for help with interview preparation over the past couple of weeks. That means that we’re going to develop a couple of regular sessions designed to help people build and practice their skills as interviewees (and as interviewers) over the coming weeks. If you’re looking with some trepidation at an interview task or similar, please get in touch and we’ll try and arrange support for you.\nA couple of miscellaneous reminders for you this week:\n\nWe’re still looking for volunteers to help lead some of the discussion sessions at the unconference on the 11th Dec. See the discussion on the Unconference Teams channel for more details.\nI’ve also put out a call for training requests via this form - please let me know what training sessions and courses you’d like to see during the first few months of 2025.\n\nHope to see you at something soon\nBrendan"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-25.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-11-25.html#wins-of-the-week",
+    "title": "KIND network update",
+    "section": "Wins of The Week",
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A non-random selection of some of the firsts from this bumper clutch of wins:\n\nRunning my first sub 30 min 5k!\nRunning my first workshop!! Learned a lot…but got good feedback which was nice to hear :)\nCreated my first funnel plot in R\nBought my first Christmas jumper of this year… (I have a few) Not wearing them until 1st December, but then all systems are go! Also googled Lambda formulae and looking forward to demystifying the mathsspeak - I love a formula but I rarely know correct terminology for these things!\nGot the team’s first publication out. Hopefully many more to come!\n\nWell done all, and looking forward to hearing your wins of the week in future.\n\n&lt;!– ## Training sessions"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-25.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-11-25.html#events",
+    "title": "KIND network update",
+    "section": "Events",
+    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is programming in Excel. We’ll be looking at the more ambitious end of Excel work, with some examples of VBA, Lambda formulas, and (assuming the tech gremlins favour us) with a demo of Python in Excel. All very welcome - we’re obviously going to be more at the technical end this time round, but you definitely don’t need to be an expert to come along.\nWe’re running a KIND introductory session aimed at learning and development professionals this Wednesday 1-2pm. Come along to find out more about how the KIND network can help your organisation with training and development.\n1-2pm, Tue 26th November 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Zeg Ashraf & Emma Berry - Homelessness Data."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-25.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-11-25.html#book-of-the-week",
+    "title": "KIND network update",
+    "section": "Book of the week",
+    "text": "Book of the week\ncharacter(0). character(0). character(0).  ISBN character(0), Worldcat. character(0)\nUnsubscribe from these emails"
   }
 ]
