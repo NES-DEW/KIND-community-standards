@@ -181,6 +181,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="../unconf_2024.html">
  <span class="dropdown-text">Unconference 2024</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../question_bank.html">
+ <span class="dropdown-text">🆕 Practice interview questions</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -217,7 +221,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li>
     <a class="dropdown-item" href="../KIND_help.html">
- <span class="dropdown-text">🆕 How to ask the network for help</span></a>
+ <span class="dropdown-text">How to ask the network for help</span></a>
   </li>  
     </ul>
   </li>
@@ -486,11 +490,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 5 × 2
   name     score
   &lt;chr&gt;    &lt;dbl&gt;
-1 jennifer 0.160
-2 victoria 0.248
-3 peter    0.644
-4 paul     1    
-5 judi     0.887</code></pre>
+1 judi     0.887
+2 linsey   0.971
+3 victoria 0.248
+4 peter    0.644
+5 jennifer 0.160</code></pre>
 </div>
 </div>
 <p>The simplest join we could do is to bind the rows from one set onto another:</p>
@@ -506,11 +510,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  3 peter    0.644
  4 judi     0.887
  5 paul     0.336
- 6 jennifer 0.160
- 7 victoria 0.248
- 8 peter    0.644
- 9 paul     1    
-10 judi     0.887</code></pre>
+ 6 judi     0.887
+ 7 linsey   0.971
+ 8 victoria 0.248
+ 9 peter    0.644
+10 jennifer 0.160</code></pre>
 </div>
 </div>
 <p>That just brings all the rows from <code>b2</code> onto the end of <code>b1</code>. Unlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join <code>b2</code>:</p>
@@ -525,7 +529,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 2 victoria   0.248   0.248
 3 peter      0.644   0.644
 4 judi       0.887   0.887
-5 paul       0.336   1    </code></pre>
+5 paul       0.336  NA    </code></pre>
 </div>
 </div>
 <p>You should see that only the values from <code>b2</code>’s score column that have a corresponding name in <code>b1</code> get populated, and everything else gets filled with NAs. Here’s a <a href="https://lindsaydbrin.github.io/CREATE_R_Workshop/Lesson_-_dplyr_join.html">nice introduction to the different kinds of join you can do in dplyr</a>.</p>
