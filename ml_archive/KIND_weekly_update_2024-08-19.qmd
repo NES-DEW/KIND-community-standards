@@ -3,6 +3,7 @@ title: "KIND network update"
 execute:
   echo: false
   message: false
+  freeze: true
 ---
 
 ```{html}

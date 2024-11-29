@@ -1,0 +1,24 @@
+---
+title: "KIND interview practice resources"
+date: 2024-11-29
+execute:
+  echo: false
+  message: false
+  warning: false
+---
+
+Here are some sample interview questions cobbled together from various public sources. Most of them are public-sector (and health and social-care) oriented:
+
+```{r}
+library(dplyr)
+library(DT)
+
+readr::read_csv("data/interview_qbank.csv") |>
+  DT::datatable(rownames= FALSE)
+
+
+```
+
+
+
+

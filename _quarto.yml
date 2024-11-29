@@ -32,6 +32,8 @@ website:
             text: Community meetups
           - href: unconf_2024.qmd
             text: Unconference 2024
+          - href: question_bank.qmd
+            text: 🆕 Practice interview questions
       - text: R beginner's club
         menu: 
           - href: rbc/about.qmd
@@ -47,7 +49,7 @@ website:
           - href: faq.qmd
             text: KIND FAQ
           - href: KIND_help.qmd
-            text: 🆕 How to ask the network for help
+            text: How to ask the network for help
       - href: mentoring.qmd
         text: Mentoring scheme
       - href: kind_botw.qmd

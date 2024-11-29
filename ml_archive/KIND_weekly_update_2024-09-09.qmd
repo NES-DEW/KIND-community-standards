@@ -6,6 +6,7 @@ editor_options:
 execute:
   echo: false
   message: false
+  freeze: true
 ---
 
 ```{r}

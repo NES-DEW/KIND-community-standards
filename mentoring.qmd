@@ -1,6 +1,7 @@
 ---
 title: "KIND Mentoring Scheme"
 date: 2024-08-22
+freeze: true
 ---
 
 :::{.callout-warning collapse=false appearance='default' icon=true}
