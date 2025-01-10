@@ -44,6 +44,10 @@ website:
             text: 2024-09-12
           - href: rbc/2024-10-10.qmd
             text: 2024-10-10
+          - href: rbc/2024-12-12.qmd
+            text: 2024-12-12
+          - href: rbc/2025-01-09.qmd
+            text: 2025-01-09
       - text: KIND FAQ
         menu:
           - href: faq.qmd
