@@ -1,0 +1,168 @@
+---
+title: R beginner's club 2024-12-12
+execute: 
+  output: markdown
+  echo: true
+  freeze: auto
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+# packages for this session
+
+library(dplyr)
+library(purrr)
+library(palmerpenguins)
+```
+
+## Don't repeat yourself!
+
+A key coding principle: don't repeat yourself. This session is a light introduction to functionals, and related tools, that let you apply functions in an intelligent and concise way.
+
+## Lists again
+
+We'll do rather a lot with lists in this session. Lists are a basic data structure in R. You can think of them as a collection of vectors. They have two distinctive properties. First, and unlike vectors, lists can contain several different types of data:
+
+```{r}
+list("clive", 99:1, penguins[2,])
+```
+
+As that example shows, unlike tibbles, lists can be ragged, containing vectors of different lengths:
+```{r}
+test_list <- list(dunn = "clive", 
+                  ready_or_not = 99:1,
+                  pengs = penguins) # or with names
+```
+
+There's lots to say about working with lists, but the most helpful reminder is about subsetting. This can trip people up, because you can either return a vector:
+```{r}
+test_list$dunn  # returns a vector
+test_list[["dunn"]] # equivalent
+test_list[[1]] # subsetting by extracting a vector
+```
+
+Or you can return a smaller list:
+
+```{r}
+test_list[1] # subsetting to return a mini-list
+```
+
+The important thing is to be sure about exactly which of those you're planning to do, and then check to make sure that you're actually getting what you'd planned. And this minor pain-point is entirely worthwhile, because lists are so flexible. If in doubt, use a list.
+
+# Functions
+
+R is largely functional. We do things by writing expressions that pass objects to functions:
+
+```{r}
+class(penguins)
+length(LETTERS)
+nums <- c(5:1, 9:2, 8:22)
+sum(nums)
+```
+
+Usually that's simple. But imagine that you want to apply the same function to a group of objects:
+
+```{r}
+sum(nums[1])
+sum(nums[2])
+sum(nums[3])
+```
+
+This starts to contradict the advice about not repeating yourself. We're essentially writing the same function call several times. Happily though, R offers several alternative ways of constructing expressions that pass objects to functions. This session will look at two groups of alternative approaches.
+
+## do.call
+
+The first is `do.call`. From the man page: 
+
+> 'do.call constructs and executes a function call from a name or a function and a list of arguments to be passed to it.'
+
+```{r}
+# do.call(what = function, args = arguments to that function)
+do.call("complex", list(imaginary = 1:3)) # handy if you ever need to calculate a Mandelbrot set in a hurry
+do.call("sum", list(nums)) # the same as just summing everything
+```
+
+For now, that probably doesn't seem very exciting. But being able to build function calls in a different way, where their arguments are held in a list, can be extremely useful. `do.call` is also especially useful when you want to use operators as if they were standard functions:
+
+```{r}
+big_nums <- list(c(1:5), c(5:1))
+do.call("*", big_nums)
+
+# or for collecting several arguments, and then evaluating them
+arg <- list(1:10, na.rm = T)
+do.call(sum, args = arg)
+do.call(mean, args = arg)
+``` 
+
+## lapply
+
+`lapply` is a base-R function that applies a function to an object, and collects the output in a list. Imagine we've got a list containing a couple of numeric vectors:
+
+```{r}
+nums <- list(c(1,2), c(3,4))
+```
+
+We can use `lapply` to sum each vector, and return a new list of those sums:
+
+```{r}
+lapply(nums, sum)
+```
+
+Some other simple examples:
+```{r}
+lapply(penguins, class) # gives you back a list of the same length
+lapply(penguins, mean, na.rm = T)
+lapply(penguins, "class") # horrible but possible
+```
+
+`lapply` and `do.call` play very nicely together:
+
+```{r}
+c(lapply(penguins, class)) # nonsense
+do.call(c, lapply(penguins, class))
+do.call(tibble, lapply(penguins, class))
+penguins[do.call(c, lapply(penguins, is.numeric))] # wild
+```
+
+There are other kinds of `*apply` functions in base R, like `tapply`, `sapply` and so on. My advice is to ignore them completely as they're very quirky and hard to use consistently. The [purrr](https://purrr.tidyverse.org/) package is a much stronger option:
+
+## purrr
+
+```{r}
+map(penguins, class) # basically lapply
+map_vec(penguins, class) # but with lovely programmer-pleasing sweeteners
+```
+
+`map` gives you a standard way of applying a function over an object, and then being able to control how your output is returned. Say you've got some odd non-vectorised function:
+
+```{r}
+fb <- function(n){
+  out <- ""
+  if (n %% 3 == 0) out <- "fizz"
+  if (n %% 5 == 0) out <- paste0(out, "buzz")
+  if(nchar(out) == 0) out <- as.character(n)
+  out
+}
+```
+
+That works fine on single values, but chokes when supplied with several values:
+
+```{r}
+fb(8)
+fb(9)
+try(fb(8:9))
+```
+
+We could `lapply` this, or `map` it, to produce a list of output:
+
+```{r}
+lapply(8:9, fb)
+map(8:9, fb)
+```
+
+But the advantage of `map` is that we can trivially change the output by tweaking the function name. Rather than `map` we could return a character vector with `map_chr`:
+
+```{r}
+map_chr(1:20, fb)
+```

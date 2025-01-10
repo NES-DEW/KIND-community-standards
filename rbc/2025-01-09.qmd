@@ -1,0 +1,196 @@
+---
+title: R beginner's club 2025-01-09
+execute: 
+  output: markdown
+  echo: true
+  freeze: auto
+editor_options: 
+  chunk_output_type: console
+---
+
+## What's this session about
+
+This session is about some top tips for working between Excel and R, mainly concentrating on using R for tidying up messy Excel data. We'll start with a lot of package loading:
+
+```{r}
+# standard toolkit
+library(dplyr)
+library(tools)
+
+# tidying data
+library(tidyr)
+library(readr)
+library(lubridate)
+library(janitor)
+library(skimr)
+
+# Excel reading and writing
+library(readxl)
+library(writexl)
+```
+
+## Reading Excel files
+
+R is exceptionally useful as a way of automating tricky Excel tasks. Let's say we have some slightly broken Excel data. We can read that into R in a couple of different ways. If you're using Rstudio, the path of least resistance is to find your data in the `Files` pane, and click on it:
+
+![Import Dataset...](images/clipboard-3695209793.png)
+
+That brings up an interactive data import tool which, joy of joys, writes the import code for you:
+
+![Import code](images/clipboard-3240777953.png)
+
+You can then copy that code into your script so that your data loading is repeatable - and you can tweak it to suit:
+
+```{r}
+raw <- read_xlsx(here::here("rbc/data/raw.xlsx")) # little bit of here to make the paths behave
+head(raw)
+```
+
+(this is a subset of [Public Health Scotland's open data on GP practices](https://www.opendata.nhs.scot/dataset/gp-practice-contact-details-and-list-sizes). I should emphasise that all the data problems in this sample have been deliberately introduced by me demonstration purposes - the original dataset is lovely and clean)
+
+It's also worth saying that Excel files are incredibly complicated. In this session, we'll keep things simple, but there are lots of powerful R tools out there if you need more control (especially the [openxlsx2 package](https://cran.r-project.org/web/packages/openxlsx2/index.html)).
+
+## Initial exploration: some tools for understanding what you've loaded
+
+The base-R way, beyond eyeballing the data with `View()`, is to use `summary` or `str`:
+
+```{r}
+raw |>
+  summary()
+
+raw |>
+  str()
+```
+
+Personally, I find `summary()` actively unhelpful, but `str()` does have it's place, especially as a quick check of the data types you have in each column. You might also like to try `dplyr::glimpse()` for a tweaked version of `str()` that you can use in piped code to understand what's going on:
+
+```{r}
+raw |>
+  glimpse() |>
+  count(GPCluster) |>
+  glimpse()
+```
+
+A much more capable alternative for inspecting your data is the skimr package:
+
+```{r}
+raw |>
+  skimr::skim()
+```
+
+That treats different data types differently, so if we coerce one of our columns to numeric, and `skim` again, we'll get different output:
+
+```{r}
+raw |>
+  mutate(PracticeListSize = as.numeric(PracticeListSize)) |>
+  skimr::skim()
+```
+
+And you can wrangle the output of `skim` in a few different ways:
+
+```{r}
+raw |>
+  skimr::skim() |>
+  select(n_missing) # just look at one metric
+
+raw |>
+  skimr::skim() |>
+  yank("numeric") # an alternative way of looking at one metric
+
+raw |>
+  mutate(PracticeListSize = as.numeric(PracticeListSize),
+         PracticeCode = as.character(PracticeCode)) |>
+  group_by(PracticeType) |>
+  skim()  # look at groups and columns together
+
+raw |>
+  skimr::skim_tee() # like glimpse, produce skim output but return the original data to allow use inside with piped code 
+
+raw |>
+  skimr::skim() |>
+  partition() # split different data types into separate list items
+
+```
+
+## Fixing data types
+
+Our dataset initially doesn't look too horrible. But we can generate some very confusing results from it:
+
+```{r}
+min(raw$PracticeListSize, na.rm = T)
+max(raw$PracticeListSize, na.rm = T) # what!
+```
+
+What's happening here is that R is putting our results into alphabetical order, rather than numerical. That's because these numbers are stored as if they were text owing to a couple of anomalous data points:
+
+```{r}
+raw$PracticeListSize[grep("[^0-9]", raw$PracticeListSize)]
+```
+
+We could use `as.numeric` to remove everything other than proper numbers:
+
+```{r}
+raw |>
+  mutate(PracticeListSize = as.numeric(PracticeListSize))
+```
+
+Or, rather better, we could use `readr::parse_number` which will do a bit of inference to try and preserve anything that looks like a number:
+
+```{r}
+raw |>
+  mutate(PracticeListSize = parse_number(PracticeListSize))
+```
+
+We also have some horrible dates. First, we've got a few completely non-standard dates:
+
+```{r}
+raw |>
+  dplyr::filter(stringr::str_detect(`date collected`, "eve")) |>
+  select(PracticeCode, `date collected`)
+```
+
+Short of manually replacing them, we can't do much about those. But we can fix the other dates, which are in Excel 1900 format:
+
+```{r}
+raw |>
+  select(`date collected`) |>
+  slice_sample(n = 5)
+```
+
+Excel counts days from Jan 1st 1900, while R counts days from Jan 1st 1970. That means that you need to subtract those 70 years to convert from one to the other, and then use lubridates `as_date` to convert that number of days into a proper R date. The quick-and-dirty way - just subtract 70 years-worth of days, which is (of course) 25569 days:
+
+```{r}
+raw |>
+  mutate(`date collected` = as_date(as.numeric(`date collected`) - 25569)) |> # 25569 is the magic number
+  select(`date collected`) |>
+  slice_sample(n = 5)
+```
+
+A nicer, more explicit, approach is to set an origin for your `as_date` to count from. Weirdly, because of a decades-old glitch in Excel dates, that's two days before the 1st Jan 1900:
+
+```{r}
+raw |>
+  mutate(`date collected` = as_date(as.numeric(`date collected`), origin = "1899-12-30")) |>
+  select(`date collected`) |>
+  slice_sample(n = 5)
+```
+
+There's lots to say about date parsing - and would recommend coming to our [lubridate session](https://nes-dew.github.io/KIND-training/r_training/dates_and_times_with_lubridate.html) if you'd like to know more. 
+
+## Writing back to Excel
+
+Once you've had a play with your data, and cleaned up as needed, writing back to a basic Excel sheet is straightforward:
+
+```{r}
+raw |>
+  mutate(PracticeListSize = parse_number(PracticeListSize)) |>
+  mutate(date = parse_number(`date collected`)) |>
+  mutate(date = as_date(date, origin = "1899-12-30")) |>
+  write_xlsx(here::here("rbc/data/cooked.xlsx"))
+
+```
+
+You can have a play with the data yourself:
+
++ [raw data](data/raw.xlsx)
++ [cooked data](data/cooked.xlsx)
