@@ -9,12 +9,11 @@ listing:
   type: table
   categories: true
   fields: [title, date, categories]
+editor_options: 
+  chunk_output_type: console
 ---
 
-These are our main weekly social learning activity. They're usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell.
-
-+ [Download community meetup data as csv](data/KIND_community_meetups.csv)
-+ [Download community meetup ideas as csv](data/KIND_community_meetups_new.csv)
+These are our main weekly social learning activity. They're usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell. Click the links below to register - all welcome!
 
 :::: {.panel-tabset}
 
@@ -23,21 +22,19 @@ These are our main weekly social learning activity. They're usually a slightly c
 options(knitr.kable.NA = '')
 
 readr::read_csv("data/KIND_community_meetups.csv") |>
-  dplyr::mutate(Date = lubridate::dmy(Date)) |>
+  dplyr::mutate(Date = lubridate::dmy_hm(Date)) |>
+  dplyr::arrange(Date) |>
   dplyr::filter(Date >= lubridate::today() & !is.na(Date)) |>
-  dplyr::select(-Suggestor) |>
+  dplyr::mutate(Title = paste0("<a href='", Link, "'>", Title, "</a>")) |>
+  dplyr::select(Date, `Signup link` = Title, Speaker) |>
   knitr::kable(caption = "Current community meetup schedule")
 ```
 
-## Future community meetup ideas
-```{r}
-options(knitr.kable.NA = '')
-readr::read_csv("data/KIND_community_meetups_new.csv") |>
-  dplyr::select(!Date) |>
-  knitr::kable(caption = "Future community meetup ideas")
-```
+
 
 ## Archive of past sessions
+
+We don't archive every session - most community meetups eventually become stand-alone KIND training sessions. But there are a few sessions that, for one reason and another, aren't suitable for training purposes but are worth retaining. They're linked below.
 
 ::: {#archive_list}
 :::
