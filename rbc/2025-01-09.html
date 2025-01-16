@@ -8,7 +8,7 @@
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke">
-<meta name="dcterms.date" content="2025-01-10">
+<meta name="dcterms.date" content="2025-01-16">
 
 <title>R beginner’s club 2025-01-09 – KIND resources</title>
 <style>
@@ -323,7 +323,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 10, 2025</p>
+      <p class="date">January 16, 2025</p>
     </div>
   </div>
   
@@ -2012,10 +2012,10 @@ Group variables            None
 <pre><code># A tibble: 5 × 1
   `date collected`
   &lt;chr&gt;           
-1 45659           
-2 45659           
-3 45658           
-4 45666           
+1 45662           
+2 45665           
+3 45654           
+4 45659           
 5 45646           </code></pre>
 </div>
 </div>
@@ -2029,11 +2029,11 @@ Group variables            None
 <pre><code># A tibble: 5 × 1
   `date collected`
   &lt;date&gt;          
-1 2024-12-21      
-2 2025-01-02      
-3 2025-01-02      
-4 2024-12-22      
-5 2024-12-28      </code></pre>
+1 2025-01-01      
+2 2024-12-20      
+3 2025-01-04      
+4 2024-12-28      
+5 2025-01-05      </code></pre>
 </div>
 </div>
 <p>A nicer, more explicit, approach is to set an origin for your <code>as_date</code> to count from. Weirdly, because of a decades-old glitch in Excel dates, that’s two days before the 1st Jan 1900:</p>
@@ -2046,11 +2046,11 @@ Group variables            None
 <pre><code># A tibble: 5 × 1
   `date collected`
   &lt;date&gt;          
-1 2024-12-20      
-2 2024-12-29      
-3 2024-12-22      
-4 2024-12-24      
-5 2024-12-22      </code></pre>
+1 2024-12-24      
+2 2024-12-23      
+3 2025-01-05      
+4 2024-12-28      
+5 2025-01-02      </code></pre>
 </div>
 </div>
 <p>There’s lots to say about date parsing - and would recommend coming to our <a href="https://nes-dew.github.io/KIND-training/r_training/dates_and_times_with_lubridate.html">lubridate session</a> if you’d like to know more.</p>
