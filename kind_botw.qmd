@@ -13,7 +13,8 @@ source("R/bullet_list.R")
 
 botw <- readr::read_csv("data/KIND_book_of_the_week.csv") |>
   dplyr::filter(!is.na(Year)) |>
-  dplyr::mutate(Date = lubridate::dmy(Date))
+  dplyr::mutate(Date = lubridate::dmy(Date)) |>
+  dplyr::arrange(desc(Date))
 
 glue::glue("## {botw$Date}: {botw$Title}  \n {botw$Author}. {botw$Year}. *{botw$Title}*. ISBN {botw$ISBN}, <a href='{botw$Worldcat}'>Worldcat link</a>.  \n</br> {botw$Description}  \n  \n")
 ```
