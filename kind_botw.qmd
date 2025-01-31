@@ -2,25 +2,19 @@
 title: "KIND Book of the week"
 execute: 
   freeze: false
+editor_options: 
+  chunk_output_type: console
 ---
 
 + [Download KIND book of the week data as csv](data/KIND_book_of_the_week.csv)
 
 ```{r}
-botw <- readr::read_csv("data/KIND_book_of_the_week.csv") |>
-  dplyr::filter(!is.na(Year)) |>
-  # dplyr::mutate(Date = lubridate::dmy(Date),
-  #               month_start = lubridate::floor_date(Date, "month")) |>
-  dplyr::arrange(desc(lubridate::dmy(Date)))
-
-# botw |>
-#   slice(1) |>
-#   pull(Description)
-
 source("R/bullet_list.R")
 
+botw <- readr::read_csv("data/KIND_book_of_the_week.csv") |>
+  dplyr::filter(!is.na(Year)) |>
+  dplyr::mutate(Date = lubridate::dmy(Date))
+
 glue::glue("## {botw$Date}: {botw$Title}  \n {botw$Author}. {botw$Year}. *{botw$Title}*. ISBN {botw$ISBN}, <a href='{botw$Worldcat}'>Worldcat link</a>.  \n</br> {botw$Description}  \n  \n")
-
-
 ```
 
