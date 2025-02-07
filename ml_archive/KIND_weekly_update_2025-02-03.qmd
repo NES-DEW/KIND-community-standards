@@ -1,0 +1,157 @@
+---
+title: "KIND network update"
+format: html
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false
+  message: false
+---
+
+```{r}
+#| include: false
+# keep quarto happy - don't have a verbatim chunk first
+source(here::here("R/nice_date.R"))
+source(here::here("R/bullet_list.R"))
+source(here::here("R/mail_training_sessions.R"))
+
+```
+
+```{=html}
+<img src="https://i.imgur.com/iJIRbhV.png" alt = "KIND logo" height="150">
+```
+
+```{r}
+#| include: false
+
+next_week_start <- lubridate::ceiling_date(lubridate::today(), unit = "week", week_start = 1)
+
+next_week_end <- next_week_start + lubridate::weeks(1)
+
+# scodas <- readxl::read_excel("C:/Users/brendancl/NHS Scotland/SCODAS - SCODAS oversight group - SCODAS oversight group/Schedule/SCODAS Schedule and Future Topics.xlsx") |>
+#   dplyr::filter(Date >= next_week_start) |>
+#   dplyr::filter(Date < next_week_end)
+
+scodas <- dplyr::tibble(Date = c("2024-02-04"),
+  Topic = c("CARI - Community Acute Respiratory Infection surveillance"),
+  Presenter = c("Josie Evans, Helen Gadegaard,  Sophie Heaton (PHS)"),
+  `Contact Details` = c("josie.evans@phs.scot"))
+
+kcm <- readr::read_csv(
+  "https://raw.githubusercontent.com/NES-DEW/KIND-community-standards/main/data/KIND_community_meetups.csv"
+) |>
+  dplyr::mutate(Date = lubridate::dmy_hm(Date)) |>
+  dplyr::filter(Date >= next_week_start) |>
+  dplyr::filter(Date < next_week_end)
+
+
+
+```
+
+## Week beginning `r nice_date(next_week_start)`
+
+Dear colleagues, 
+
+Welcome to the regular KIND network update. We have lots of regular training sessions coming up over the next week. You can also get a longer-term overview of what's on offer from [our training mini-site](https://nes-dew.github.io/KIND-training/), which has a schedule, supporting materials, and useful resources for our sessions.
+
+We're a couple of weeks away from piloting a new, intermediate-level, Power BI course. More details on that below.
+
+Hope to see you at something soon
+
+Brendan
+
+---
+
+## New intermediate-level Power BI course
+
+This is a practical course aimed at people with some prior Power BI experience who are looking to develop and consolidate their skills. It'll use Power BI Desktop, and will run as five sessions along the following lines (click the session titles to book):
+
+* [session 1](https://events.teams.microsoft.com/event/2b2affa9-aac0-455a-a578-917277f94004@10efe0bd-a030-4bca-809c-b5e6745e499a): a simple build-a-dashboard session as a warmup, reminder about core Power BI techniques, and sharing some suggestions for good workflow practices
+* [session 2](https://events.teams.microsoft.com/event/0e1410b1-43fc-4fd5-ad6d-a763210893c2@10efe0bd-a030-4bca-809c-b5e6745e499a): DAX language foundations, including `FILTER` and `CALCULATE`
+* [session 3](https://events.teams.microsoft.com/event/8d105e89-9d89-4a5e-ac7c-ed844c420511@10efe0bd-a030-4bca-809c-b5e6745e499a): core PowerQuery functions to manage sources, join data sets, pivot, and tidy values
+* [session 4](https://events.teams.microsoft.com/event/272b9838-f385-4c25-8923-4008e35612c3@10efe0bd-a030-4bca-809c-b5e6745e499a): PowerQuery M language foundations, including a basic overview of syntax, a core function toolkit, advanced mode, and reproducibility
+* [session 5](https://events.teams.microsoft.com/event/237f70d4-692d-402e-a1ab-0866109709d4@10efe0bd-a030-4bca-809c-b5e6745e499a): a second, more ambitious, build-a-dashboard session to put all that PowerQuery and DAX knowledge into practice
+
+The pilot sessions will run 10-12 on Wednesday mornings from Feb 12th. All those with suitable prior Power BI experience are very welcome. Once we've had the benefit of feedback on the pilot, you can expect to see a more polished version of this training running regularly on the network.
+
+I'd be especially interested in feedback about that overall plan at this stage. Please [get in touch with me](mailto:brendan.clarke2@nhs.scot) if you'd be interested in shaping that training.
+
+
+
+---
+
+## Wins of The Week
+In the spirit of [#IAmRemarkable](https://www.rmrkblty.org/iamremarkable), we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community:
+
++ Owned up to knowing (and then promptly forgetting) about a problem which caused significant delays to my team's work. Felt bad that it happened, but glad I was honest and admitted my mistake. Have jotted down some reflections to hopefully prevent it from happening again!
++ Brought a surveillance system used by our team into the tidyverse and built an automated weekly report in Rmarkdown :)
++ I gave a presentation at a national meeting with about 30 minutes preparation, and it went really well.
++ I have managed to juggle a busy work schedule, social life, family time, caring responsibilities and made it to Friday with a smile on my face
+
+Well done all, and looking forward to [hearing your wins of the week](https://forms.office.com/e/8DgpNP6rcK) in future.
+---
+
+## Training sessions
+
+Click the link to book yourself into the session.
+
+```{r}
+#| results: asis
+#| message: false
+# highlight item
+
+##### CONSIDER looking at html-table-processing quarto option to get html tables to behave
+
+mail_training_sessions(start_date = paste0(next_week_start), end_date =   paste0(next_week_end)) |>
+  dplyr::mutate(Level = stringr::str_replace_all(Level, "<style='color:red'>", "")) |>
+  knitr::kable(format = "html", escape = F) |>
+  kableExtra::column_spec(1, width_max = "18em")
+
+```
+
+## Events
+
+```{r}
+#| results: asis
+#| echo: false
+
+if(nrow(scodas) > 0){
+  bullet_list(glue::glue("1-2pm, {nice_date(lubridate::as_date(scodas$Date))}. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be [{scodas$Presenter} - {scodas$Topic}](https://teams.microsoft.com/l/meetup-join/19%3a109a603c446743308bff6588820372a9%40thread.tacv2/1671457631308?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%2284150c3d-baed-4515-8eee-8f13ed0d9650%22%7d)."))
+}
+
+kcm <- kcm |> dplyr::slice(1)
+
+if(nrow(kcm) > 0){
+  bullet_list(glue::glue("3.30-4.30pm, {nice_date(lubridate::as_date(kcm$Date))}. The KIND community meetup is our regular social learning event. Next week, the presenter will be {kcm$Speaker}, discussing [{kcm$Title}]({kcm$Link}), which is a way of efficiently sharing data in R. Click the link to register, and hope to see you there."))
+}
+
+```
+
+## Book of the week
+
+```{r}
+#| results: asis
+#| echo: false
+#| message: false
+botw_slug <- readr::read_csv("https://raw.githubusercontent.com/NES-DEW/KIND-community-standards/main/data/KIND_book_of_the_week.csv") |>
+  dplyr::filter(lubridate::dmy(Date) > (next_week_start - lubridate::days(7)))
+
+cat(glue::glue("{botw_slug[2]}. {botw_slug[3]}. *{botw_slug[4]}*. </br> ISBN {botw_slug[5]}, <a href='{botw_slug[6]}'>Worldcat</a>.</br></br> {botw_slug[8]}"))
+```
+
+[Unsubscribe from these emails](https://forms.office.com/r/t97cZDiw7y)
+
+```{r}
+#| include: false
+# remember to add <img src="https://i.imgur.com/toWVmg2.png" alt = "KIND logo">
+
+# script to copy content to archive
+new_path <- paste0("C:\\Users\\brendancl\\not_od\\KIND-community-standards\\ml_archive\\KIND_weekly_update_",
+       next_week_start,
+       ".qmd")
+
+file.copy("./KIND_weekly_content.qmd",
+          to = new_path,
+          overwrite = T)
+
+```

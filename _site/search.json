@@ -1103,7 +1103,7 @@
     "href": "kind_botw.html#who-cooked-adam-smiths-dinner",
     "title": "KIND Book of the week",
     "section": "2024-03-27: Who Cooked Adam Smith’s Dinner",
-    "text": "2024-03-27: Who Cooked Adam Smith’s Dinner\nKatrine Marçal. 2016. Who Cooked Adam Smith’s Dinner. ISBN 978-1846275661, Worldcat link.\n NA"
+    "text": "2024-03-27: Who Cooked Adam Smith’s Dinner\nKatrine Marcal. 2016. Who Cooked Adam Smith’s Dinner. ISBN 978-1846275661, Worldcat link.\n NA"
   },
   {
     "objectID": "kind_botw.html#the-arch-of-knowledge",
@@ -1972,5 +1972,54 @@
     "title": "KIND network update",
     "section": "Book of the week",
     "text": "Book of the week\ncharacter(0). character(0). character(0).  ISBN character(0), Worldcat. character(0)\nUnsubscribe from these emails"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#week-beginning-mon-10th-february-2025",
+    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#week-beginning-mon-10th-february-2025",
+    "title": "KIND network update",
+    "section": "Week beginning Mon 10th February 2025",
+    "text": "Week beginning Mon 10th February 2025\nDear colleagues,\nWelcome to the regular KIND network update. We have lots of regular training sessions coming up over the next week. You can also get a longer-term overview of what’s on offer from our training mini-site, which has a schedule, supporting materials, and useful resources for our sessions.\nWe’re a couple of weeks away from piloting a new, intermediate-level, Power BI course. More details on that below.\nHope to see you at something soon\nBrendan"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#new-intermediate-level-power-bi-course",
+    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#new-intermediate-level-power-bi-course",
+    "title": "KIND network update",
+    "section": "New intermediate-level Power BI course",
+    "text": "New intermediate-level Power BI course\nThis is a practical course aimed at people with some prior Power BI experience who are looking to develop and consolidate their skills. It’ll use Power BI Desktop, and will run as five sessions along the following lines (click the session titles to book):\n\nsession 1: a simple build-a-dashboard session as a warmup, reminder about core Power BI techniques, and sharing some suggestions for good workflow practices\nsession 2: DAX language foundations, including FILTER and CALCULATE\nsession 3: core PowerQuery functions to manage sources, join data sets, pivot, and tidy values\nsession 4: PowerQuery M language foundations, including a basic overview of syntax, a core function toolkit, advanced mode, and reproducibility\nsession 5: a second, more ambitious, build-a-dashboard session to put all that PowerQuery and DAX knowledge into practice\n\nThe pilot sessions will run 10-12 on Wednesday mornings from Feb 12th. All those with suitable prior Power BI experience are very welcome. Once we’ve had the benefit of feedback on the pilot, you can expect to see a more polished version of this training running regularly on the network.\nI’d be especially interested in feedback about that overall plan at this stage. Please get in touch with me if you’d be interested in shaping that training."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#wins-of-the-week",
+    "title": "KIND network update",
+    "section": "Wins of The Week",
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community:\n\nOwned up to knowing (and then promptly forgetting) about a problem which caused significant delays to my team’s work. Felt bad that it happened, but glad I was honest and admitted my mistake. Have jotted down some reflections to hopefully prevent it from happening again!\nBrought a surveillance system used by our team into the tidyverse and built an automated weekly report in Rmarkdown :)\nI gave a presentation at a national meeting with about 30 minutes preparation, and it went really well.\nI have managed to juggle a busy work schedule, social life, family time, caring responsibilities and made it to Friday with a smile on my face\n\nWell done all, and looking forward to hearing your wins of the week in future."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#training-sessions",
+    "title": "KIND network update",
+    "section": "Training sessions",
+    "text": "Training sessions\nClick the link to book yourself into the session.\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nMailing lists in Power Automate\n09:30-10:30 Tue 11th February 2025\nData\n🌶 :beginner-level\n\n\nExcel tables\n11:00-12:00 Tue 11th February 2025\nExcel\n🌶 :beginner-level\n\n\nR from scratch (session 3)\n14:00-15:00 Tue 11th February 2025\nR\n🌶 :beginner-level\n\n\nIntermediate Power BI (session 1)\n10:00-12:00 Wed 12th February 2025\nPower BI\n🌶🌶: intermediate-level\n\n\nShiny from scratch\n09:30-11:30 Thu 13th February 2025\nShiny\n🌶 :beginner-level\n\n\nIntroductory Shiny (session 5)\n13:00-15:00 Thu 13th February 2025\nShiny\n🌶 :beginner-level"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#events",
+    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#events",
+    "title": "KIND network update",
+    "section": "Events",
+    "text": "Events\n\n1-2pm, Sun 4th February 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Josie Evans, Helen Gadegaard, Sophie Heaton (PHS) - CARI - Community Acute Respiratory Infection surveillance."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#book-of-the-week",
+    "title": "KIND network update",
+    "section": "Book of the week",
+    "text": "Book of the week\ncharacter(0). character(0). character(0).  ISBN character(0), Worldcat. character(0)\nUnsubscribe from these emails"
+  },
+  {
+    "objectID": "kind_botw.html#r-for-data-science-2nd-edition",
+    "href": "kind_botw.html#r-for-data-science-2nd-edition",
+    "title": "KIND Book of the week",
+    "section": "2025-02-07: R for Data Science (2nd edition)",
+    "text": "2025-02-07: R for Data Science (2nd edition)\nHadley Wickham, Mine Cetinkaya-Rundel, and Garrett Grolemund. 2023. R for Data Science (2nd edition). ISBN 978-1492097403, Worldcat link.\n We get asked for helpful R resources very regularly, so this week I’m delighted to make the book of the week recommendation the usual best answer to that: R for Data Science. It’s a book that’s been around for a few years now, and remains overall absolutely the most helpful resource for the R learner at any stage. Easy to start for beginners, but more than rich enough to have interest and entertainment for more experienced R people. Highly recommended - for what it’s worth, it was the book that made R click for me, not least because you can read the whole book online for free."
   }
 ]
