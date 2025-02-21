@@ -52,7 +52,9 @@ kcm_full <- readr::read_csv(
 
 Dear colleagues, 
 
-Welcome to the regular KIND network update. We've got two community meetup sessions running this week, so look forward to seeing you at one or other of them.
+Welcome to the regular KIND network update. We've got two community meetup sessions running this week, so look forward to seeing you at one or other of them. We're also starting the first session of our intermediate-level Excel training course, which is designed to help those with some prior Excel experience build and consolidate their skills. That's running 1.00-2.30pm Wednesdays over the next five weeks - please [follow this link](https://events.teams.microsoft.com/event/839dc3a7-98a3-4610-a391-efc7615979fb@10efe0bd-a030-4bca-809c-b5e6745e499a) to register for the first session.
+
+Hope to see you at something soon.
 
 Brendan
 
@@ -89,6 +91,8 @@ mail_training_sessions(start_date = paste0(next_week_start), end_date =   paste0
 
 ## Events
 
+A pair of community meetup sessions for your enjoyment this week. Please click the links to register for the sessions.
+
 ```{r}
 #| results: asis
 #| echo: false
@@ -100,18 +104,18 @@ mail_training_sessions(start_date = paste0(next_week_start), end_date =   paste0
 kcm <- kcm_full |> dplyr::slice(1)
 
 if(nrow(kcm) > 0){
-  bullet_list(glue::glue("3.00-4.00pm, {nice_date(lubridate::as_date(kcm$Date))}. The KIND community meetup is our regular social learning event. Next week, the presenter will be {kcm$Speaker}, discussing [{kcm$Title}]({kcm$Link}), which is a way of efficiently sharing data in R. Click the link to register, and hope to see you there."))
+  bullet_list(glue::glue("3.00-4.00pm, {nice_date(lubridate::as_date(kcm$Date))}. The KIND community meetup is our regular social learning event. Next week, the presenter will be {kcm$Speaker}, talking about their introduction to non-relational databases: [{kcm$Title}]({kcm$Link})."))
 }
 
 kcm <- kcm_full |> dplyr::slice(2)
 
 if(nrow(kcm) > 0){
-  bullet_list(glue::glue("3.00-4.00pm, {nice_date(lubridate::as_date(kcm$Date))}. The KIND community meetup is our regular social learning event. Next week, the presenter will be {kcm$Speaker}, discussing [{kcm$Title}]({kcm$Link}), which is a way of efficiently sharing data in R. Click the link to register, and hope to see you there."))
+  bullet_list(glue::glue("3.00-4.00pm, {nice_date(lubridate::as_date(kcm$Date))}. The KIND community meetup is our regular social learning event. Next week, the presenter will be {kcm$Speaker}, talking about an innovative finance project: [{kcm$Title}]({kcm$Link})."))
 }
 
 ```
 
-+ we're running our R beginner's club next week 3-4pm, Thursday 13th Feb. That's some social time for beginners to review their code, get unstuck, and pick up some tips and tricks. Please follow [this link to join us](https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1725260923641?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d).
+<!-- + we're running our R beginner's club next week 3-4pm, Thursday 13th Feb. That's some social time for beginners to review their code, get unstuck, and pick up some tips and tricks. Please follow [this link to join us](https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1725260923641?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d). -->
 
 ## Book of the week
 
