@@ -217,319 +217,438 @@
     "text": "Here are some sample interview questions cobbled together from various public sources. Most of them are public-sector (and health and social-care) oriented:"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-02-10.html#week-beginning-mon-17th-february-2025",
-    "href": "ml_archive/KIND_weekly_update_2025-02-10.html#week-beginning-mon-17th-february-2025",
+    "objectID": "ml_archive/KIND_weekly_update_2025-03-03.html#week-beginning-mon-17th-march-2025",
+    "href": "ml_archive/KIND_weekly_update_2025-03-03.html#week-beginning-mon-17th-march-2025",
     "title": "KIND network update",
-    "section": "Week beginning Mon 17th February 2025",
-    "text": "Week beginning Mon 17th February 2025\nDear colleagues,\nWelcome to the regular KIND network update. Again, lots of training sessions underway this week. Please see our training mini-site for full details and resources.\nHope to see you at something soon\nBrendan"
+    "section": "Week beginning Mon 17th March 2025",
+    "text": "Week beginning Mon 17th March 2025\nDear colleagues,\nSave the date - Power Automate week, 31st March to 4th April 2025\nI’m delighted to announce that we’ll be running a themed week on the KIND network about Microsoft Power Automate. Power Automate gives you low-code ways of creating automated processes. Common uses might be:\n\nto get a Teams message every time a colleague adds something to a shared document\nto copy data from one spreadsheet to another\nto manage mailing lists (including this one)\n\nWe’ll have a week of Power Automate-themed events on the network during the first week of April (31st March to 4th April 2025). That’ll include a range of training sessions at all levels, opportunities for 1:1 and group project support, and presentations from users who are putting Power Automate to work in health and social care.\nHope to see you then - and please get in touch if there are Power Automate topics you’d be especially keen to hear about.\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-02-10.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2025-02-10.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2025-03-03.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-03-03.html#wins-of-the-week",
     "title": "KIND network update",
     "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community:\n\nApplied for a promoted post and have been selected for interview - even if I am not the successful candidate - applying for a new role is way outside my comfort zone, so being shortlisted feels like a huge win.\nI received good feedback from a senior manager on a dashboard I worked hard on.\nLed a session on measurement and developing measurement plans and it was well received! Fells like a big win :-)\nManaged to fix number and percentage formats on a monthly spreadsheet following learning at this weeks Excel session, straight forward when you know how it works :)\n\nWell done all, and looking forward to hearing your wins of the week in future."
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community:\n\nHelped a colleague with a ggplot they were having issues with, and turns out I needed very similar code a day later so that was a double win!\nJust finalised workshop presentation that I am delivering at 1pm-4.30pm this afternoon!\nHelped out a colleague at another Health Board with a project. My HB will see no benefit of this but hopefully NHS Scotland will overall!\nI didn’t think of this as a win at all until someone else validated it as one (why am I like this?!) Worked with my consultant to come up with an electronic version of a process rather than it being paper-based. The new way saves money and the environment by not printing multiple pages every time, it saves time and is more efficient for us, and it, hopefully, means that patients could be seen quicker.\n\nWell done all, and looking forward to hearing your wins of the week in future."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-02-10.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2025-02-10.html#training-sessions",
+    "objectID": "ml_archive/KIND_weekly_update_2025-03-03.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2025-03-03.html#training-sessions",
     "title": "KIND network update",
     "section": "Training sessions",
-    "text": "Training sessions\nClick the link to book yourself into the session.\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nScope of the possible with Power BI\n09:30-10:30 Tue 18th February 2025\nPower BI\n💼: non-technical\n\n\nExcel formulas\n11:00-12:00 Tue 18th February 2025\nExcel\n🌶 :beginner-level\n\n\nR from scratch (session 4)\n14:00-15:00 Tue 18th February 2025\nR\n🌶 :beginner-level\n\n\nIntermediate Power BI (session 2)\n10:00-12:00 Wed 19th February 2025\nPower BI\n🌶🌶: intermediate-level\n\n\nExcel foundations 1\n13:00-14:30 Wed 19th February 2025\nExcel\n🌶🌶: intermediate-level\n\n\nIntermediate Shiny (session 1)\n10:00-12:00 Thu 20th February 2025\nShiny\n🌶🌶: intermediate-level"
+    "text": "Training sessions\nClick the link to book yourself into the session.\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nPivot tables and pivot charts\n13:00-14:30 Wed 19th March 2025\nExcel\n🌶🌶: intermediate-level\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-02-10.html#events",
-    "href": "ml_archive/KIND_weekly_update_2025-02-10.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-17.html#week-beginning-mon-24th-february-2025",
+    "href": "ml_archive/KIND_weekly_update_2025-02-17.html#week-beginning-mon-24th-february-2025",
+    "title": "KIND network update",
+    "section": "Week beginning Mon 24th February 2025",
+    "text": "Week beginning Mon 24th February 2025\nDear colleagues,\nWelcome to the regular KIND network update. We’ve got two community meetup sessions running this week, so look forward to seeing you at one or other of them. We’re also starting the first session of our intermediate-level Excel training course, which is designed to help those with some prior Excel experience build and consolidate their skills. That’s running 1.00-2.30pm Wednesdays over the next five weeks - please follow this link to register for the first session.\nHope to see you at something soon.\nBrendan"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-17.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-02-17.html#wins-of-the-week",
+    "title": "KIND network update",
+    "section": "Wins of The Week",
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community:\n\nAfter slight procrastination, I started on our new intranet page and it’s almost completed, It’s looking quite good although I say so myself\nTook part in my first KIND training session on Power BI\nGot several tricky reports finished (or at least off my desk for the moment). In non-work related things, successful soup-making experiments. (The curried butternut squash, sweet potato and lentil was particularly nice.)\nI shared an idea I have had for a while that colleagues have responded well too and its gaining traction\n\nWell done all, and looking forward to hearing your wins of the week in future."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-17.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2025-02-17.html#training-sessions",
+    "title": "KIND network update",
+    "section": "Training sessions",
+    "text": "Training sessions\nClick the link to book yourself into the session.\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nConditions in Power Automate\n09:30-11:30 Tue 25th February 2025\nData\n🌶🌶: intermediate-level\n\n\nEffective writing tips and tricks\n11:00-12:00 Tue 25th February 2025\nSkills\n🌶🌶: intermediate-level\n\n\nR from scratch (session 5)\n14:00-15:00 Tue 25th February 2025\nR\n🌶 :beginner-level\n\n\nIntermediate Power BI (session 3)\n10:00-12:00 Wed 26th February 2025\nPower BI\n🌶🌶: intermediate-level\n\n\nExcel foundations 2\n13:00-14:30 Wed 26th February 2025\nExcel\n🌶🌶: intermediate-level\n\n\nIntermediate Shiny (session 2)\n10:00-12:00 Thu 27th February 2025\nShiny\n🌶🌶: intermediate-level"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-17.html#events",
+    "href": "ml_archive/KIND_weekly_update_2025-02-17.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n3.30-4.30pm, Wed 19th February 2025. The KIND community meetup is our regular social learning event. Next week, the presenter will be Deborah Calvin (NHS Lothian), discussing Getting started with MongoDB/noSQL, which is a way of efficiently sharing data in R. Click the link to register, and hope to see you there.\nwe’re running our R beginner’s club next week 3-4pm, Thursday 13th Feb. That’s some social time for beginners to review their code, get unstuck, and pick up some tips and tricks. Please follow this link to join us."
+    "text": "Events\nA pair of community meetup sessions for your enjoyment this week. Please click the links to register for the sessions."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-02-10.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2025-02-10.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-17.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-02-17.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
     "text": "Book of the week\ncharacter(0). character(0). character(0).  ISBN character(0), Worldcat. character(0)\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-01-27.html#week-beginning-mon-3rd-february-2025",
-    "href": "ml_archive/KIND_weekly_update_2025-01-27.html#week-beginning-mon-3rd-february-2025",
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#week-beginning-mon-10th-february-2025",
+    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#week-beginning-mon-10th-february-2025",
     "title": "KIND network update",
-    "section": "Week beginning Mon 3rd February 2025",
-    "text": "Week beginning Mon 3rd February 2025\nDear colleagues,\nWelcome to an extremely windy KIND network update. Hope you’re keeping safe.\nA retrospective notice of an interesting resource: the Knowledge Network produced an excellent Sway full of resources for health information week. Highly recommended.\nWe’ve also got the first of our 2025 run of community meetup sessions happening next week. That’s kindly been offered by Richard Hassett, a specialist senior prescribing support technician from NHS GGC. He writes:\n\nI have fairly recently been gifted the task of running some R scripting to produce medication adherence visualisations for a number of secondary care consultants working in my health board. It aims to support easy identification of sub-optimal medication adherence and trigger a conversation between clinician and patient…I’d like some help to better understand what it is doing. Through a process of trial and error I can usually resolve but I’m concerned I’m messing things up in the background. Secondly, it seems rather complex and so I wonder if there is scope to simplify or automate more of it…\n\nThis should be an excellent session for R-enthusiasts to come together to support an innovative and useful project. Please consider coming along if you can between 3.30-4.30 next Tuesday.\nBrendan"
+    "section": "Week beginning Mon 10th February 2025",
+    "text": "Week beginning Mon 10th February 2025\nDear colleagues,\nWelcome to the regular KIND network update. We have lots of regular training sessions coming up over the next week. You can also get a longer-term overview of what’s on offer from our training mini-site, which has a schedule, supporting materials, and useful resources for our sessions.\nWe’re a couple of weeks away from piloting a new, intermediate-level, Power BI course. More details on that below.\nHope to see you at something soon\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-01-27.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2025-01-27.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#new-intermediate-level-power-bi-course",
+    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#new-intermediate-level-power-bi-course",
+    "title": "KIND network update",
+    "section": "New intermediate-level Power BI course",
+    "text": "New intermediate-level Power BI course\nThis is a practical course aimed at people with some prior Power BI experience who are looking to develop and consolidate their skills. It’ll use Power BI Desktop, and will run as five sessions along the following lines (click the session titles to book):\n\nsession 1: a simple build-a-dashboard session as a warmup, reminder about core Power BI techniques, and sharing some suggestions for good workflow practices\nsession 2: DAX language foundations, including FILTER and CALCULATE\nsession 3: core PowerQuery functions to manage sources, join data sets, pivot, and tidy values\nsession 4: PowerQuery M language foundations, including a basic overview of syntax, a core function toolkit, advanced mode, and reproducibility\nsession 5: a second, more ambitious, build-a-dashboard session to put all that PowerQuery and DAX knowledge into practice\n\nThe pilot sessions will run 10-12 on Wednesday mornings from Feb 12th. All those with suitable prior Power BI experience are very welcome. Once we’ve had the benefit of feedback on the pilot, you can expect to see a more polished version of this training running regularly on the network.\nI’d be especially interested in feedback about that overall plan at this stage. Please get in touch with me if you’d be interested in shaping that training."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#wins-of-the-week",
     "title": "KIND network update",
     "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community:\n\nI was awarded Level 2 Digital Champion!\nSince successfully testing our first ever published PowerBI dashboard last week we’ve added another 4 this week, dramatically reducing the burden of work that would otherwise have gone into producing regular analysis packs.\nSuccessfully implemented a change in work which included upscaling and altering project methods…without a single complaint from staff\nI was asked to estimate how much data our dataset is missing(!) and was able to devise a methodology that has limited validity but can help to inform the impact it has had on our outputs.\n\nWell done all, and looking forward to hearing your wins of the week in future."
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community:\n\nOwned up to knowing (and then promptly forgetting) about a problem which caused significant delays to my team’s work. Felt bad that it happened, but glad I was honest and admitted my mistake. Have jotted down some reflections to hopefully prevent it from happening again!\nBrought a surveillance system used by our team into the tidyverse and built an automated weekly report in Rmarkdown :)\nI gave a presentation at a national meeting with about 30 minutes preparation, and it went really well.\nI have managed to juggle a busy work schedule, social life, family time, caring responsibilities and made it to Friday with a smile on my face\n\nWell done all, and looking forward to hearing your wins of the week in future."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-01-27.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2025-01-27.html#training-sessions",
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#training-sessions",
     "title": "KIND network update",
     "section": "Training sessions",
-    "text": "Training sessions\nClick the link to book yourself into the session.\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nR in Power BI\n09:30-10:30 Tue 4th February 2025\nPower BI / R\n🌶🌶: intermediate-level\n\n\nExcel formatting\n11:00-12:00 Tue 4th February 2025\nExcel\n🌶 :beginner-level\n\n\nR from scratch (session 2)\n14:00-15:00 Tue 4th February 2025\nR\n🌶 :beginner-level\n\n\nBI for beginners (session 4)\n10:00-12:00 Wed 5th February 2025\nPower BI\n🌶 :beginner-level\n\n\nBI for beginners (service version, session 4)\n11:30-13:30 Wed 5th February 2025\nPower BI\n🌶 :beginner-level\n\n\nTableau for beginners (session 4)\n10:00-12:00 Thu 6th February 2025\nTableau\n🌶 :beginner-level\n\n\nIntroductory Shiny (session 4)\n13:00-15:00 Thu 6th February 2025\nShiny\n🌶 :beginner-level"
+    "text": "Training sessions\nClick the link to book yourself into the session.\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nMailing lists in Power Automate\n09:30-10:30 Tue 11th February 2025\nData\n🌶 :beginner-level\n\n\nExcel tables\n11:00-12:00 Tue 11th February 2025\nExcel\n🌶 :beginner-level\n\n\nR from scratch (session 3)\n14:00-15:00 Tue 11th February 2025\nR\n🌶 :beginner-level\n\n\nIntermediate Power BI (session 1)\n10:00-12:00 Wed 12th February 2025\nPower BI\n🌶🌶: intermediate-level\n\n\nShiny from scratch\n09:30-11:30 Thu 13th February 2025\nShiny\n🌶 :beginner-level\n\n\nIntroductory Shiny (session 5)\n13:00-15:00 Thu 13th February 2025\nShiny\n🌶 :beginner-level"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-01-27.html#events",
-    "href": "ml_archive/KIND_weekly_update_2025-01-27.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#events",
+    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n1-2pm, Tue 4th February 2025. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Josie Evans, Helen Gadegaard, Sophie Heaton - CARI.\n3.30-4.30pm, Thu 6th February 2025. The KIND community meetup is our regular social learning event. Next week, the presenter will be Catriona Scott (NHS Lothian) - The pins package."
+    "text": "Events\n\n1-2pm, Sun 4th February 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Josie Evans, Helen Gadegaard, Sophie Heaton (PHS) - CARI - Community Acute Respiratory Infection surveillance."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-01-27.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2025-01-27.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
     "text": "Book of the week\ncharacter(0). character(0). character(0).  ISBN character(0), Worldcat. character(0)\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-01-13.html#week-beginning-mon-13th-january-2025",
-    "href": "ml_archive/KIND_weekly_update_2025-01-13.html#week-beginning-mon-13th-january-2025",
+    "objectID": "ml_archive/KIND_weekly_update_2025-01-20.html#week-beginning-mon-27th-january-2025",
+    "href": "ml_archive/KIND_weekly_update_2025-01-20.html#week-beginning-mon-27th-january-2025",
     "title": "KIND network update",
-    "section": "Week beginning Mon 13th January 2025",
-    "text": "Week beginning Mon 13th January 2025\nDear colleagues,\nWelcome to the first KIND weekly update of 2025. Lovely to be back, especially as we’re just starting off an intensive period of training sessions over the next couple of months. More details on those below - and hope to see you at one of them soon.\nBrendan"
+    "section": "Week beginning Mon 27th January 2025",
+    "text": "Week beginning Mon 27th January 2025\nDear colleagues,\nWelcome to our regular weekly update. Last week we launched a new puzzle of the week segment, with a simple-ish technical puzzle about extracting dates from text. Please keep an eye out for next week’s challenge, which will be about recognising and standardising abbreviations.\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-01-13.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2025-01-13.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2025-01-20.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-01-20.html#wins-of-the-week",
     "title": "KIND network update",
     "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. This can be a tough period for many, so the selection this week celebrates colleagues who have had a tricky time recently:\n\nI put my hand up to say I’m struggling. Takes a lot for me to admit that I need help. but reminding myself that its not a sign of weakness. And the plus is that I was heard and supported. So going into the weekend feeling more positive.\nDespite my brain’s best efforts, I managed to be productive this week and did everything I was asked and promised to do.\nNot really much of an achievement but I have survived the first full week back to work after the two short weeks of the festive period, and it’s not been too bad!! Looking forward to the weekend though!\nStarted back into this project from before christmas that’s been making me very anxious. I’m doing it!\n\nWell done all, and looking forward to hearing your wins of the week in future."
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community:\n\nManaged to run a dashboard without activating a “rapid unscheduled disassembly” event\nBeen accepted to start a PGCert next week. All hail being a student again!\nI completed a really complicated report using GIS as well as R syntax. Requester was very happy with the result.\nCrafted some custom functions to solve the puzzle of the week every day\n\nWell done all, and looking forward to hearing your wins of the week in future."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-01-13.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2025-01-13.html#training-sessions",
+    "objectID": "ml_archive/KIND_weekly_update_2025-01-20.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2025-01-20.html#training-sessions",
     "title": "KIND network update",
     "section": "Training sessions",
-    "text": "Training sessions\nPlease note that we’ve changed the way that our training events are set-up. You should now be able to click the session link to add yourself directly to the session. Also please note that the Excel first steps, BI for beginners, Introductory Shiny, and Tableau sessions are the first installment of multi-session courses. More information and session resources can be found on our training pages.\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nR projects\n09:30-10:30 Tue 14th January 2025\nR\n🌶 :beginner-level\n\n\nExcel first steps\n11:00-12:00 Tue 14th January 2025\nExcel\n🌶 :beginner-level\n\n\nDates and times with lubridate.\n15:30-17:00 Tue 14th January 2025\nR\n🌶 :beginner-level\n\n\nBI for beginners (session 1)\n10:00-12:00 Wed 15th January 2025\nPower BI\n🌶 :beginner-level\n\n\nBI for beginners (service version, session 1)\n12:00-14:00 Wed 15th January 2025\nPower BI\n🌶 :beginner-level\n\n\nIntroductory Shiny (session 1)\n14:00-16:00 Wed 15th January 2025\nShiny\n🌶 :beginner-level\n\n\nTableau for beginners (session 1)\n10:00-12:00 Thu 16th January 2025\nTableau\n🌶 :beginner-level"
+    "text": "Training sessions\nPlease note that we’ve changed the way that our training events are set-up. You should now be able to click the session link to add yourself directly to the session.\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nReferences and names in Excel\n11:00-12:00 Tue 28th January 2025\nExcel\n🌶 :beginner-level\n\n\nR from scratch (session 1)\n14:00-15:00 Tue 28th January 2025\nR\n🌶 :beginner-level\n\n\nBI for beginners (session 3)\n10:00-12:00 Wed 29th January 2025\nPower BI\n🌶 :beginner-level\n\n\nBI for beginners (service version, session 3)\n12:00-14:00 Wed 29th January 2025\nPower BI\n🌶 :beginner-level\n\n\nIntroductory Shiny (session 3)\n14:00-16:00 Wed 29th January 2025\nShiny\n🌶 :beginner-level\n\n\nTableau for beginners (session 3)\n10:00-12:00 Thu 30th January 2025\nTableau\n🌶 :beginner-level\n\n\nIntro to predictive models in R\n13:00-14:30 Thu 30th January 2025\nR\n🌶 :beginner-level"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-01-13.html#events",
-    "href": "ml_archive/KIND_weekly_update_2025-01-13.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2025-01-20.html#events",
+    "href": "ml_archive/KIND_weekly_update_2025-01-20.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n1-2pm, Sun 14th January 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Sarah Griffin (NHS Highland) - Census data."
+    "text": "Events\n1-2pm, Tue 28th January 2025. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Nora Villamil Buenrostro - Factors impacting on efficient operation of a Day Surgery Unit.25th 01 2815 30.00. The KIND community meetup is our regular social learning event. Next week, the presenter will be Richard Hassett (NHS GGC) - R medication adherence."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-01-13.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2025-01-13.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2025-01-20.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-01-20.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
-    "text": "Book of the week\nYaris Varoufakis. 2023. Technofeudalism.  ISBN 978-1529926092, Worldcat. Rita Nogueira, a Senior Information Analyst at NHS Lothian, writes to recommend our Book of the Week: “Together with the older book The Age of Surveillance Capitalism by Shoshana Zubroff. Thinking about how data and the technological companies are shaping the world around us economically and politically is important. Even if you don’t agree with everything Varoufakis says it is an interesting perspective that bears consideration.”\nUnsubscribe from these emails"
+    "text": "Book of the week\ncharacter(0). character(0). character(0).  ISBN character(0), Worldcat. character(0)\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-25.html#week-beginning-mon-2nd-december-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-11-25.html#week-beginning-mon-2nd-december-2024",
+    "objectID": "ml_archive/KIND_weekly_update_2024-12-02.html#week-beginning-mon-2nd-december-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-12-02.html#week-beginning-mon-2nd-december-2024",
     "title": "KIND network update",
     "section": "Week beginning Mon 2nd December 2024",
-    "text": "Week beginning Mon 2nd December 2024\nDear colleagues,\nWelcome to our regular KIND network update. We’ve had several requests for help with interview preparation over the past couple of weeks. That means that we’re going to develop a couple of regular sessions designed to help people build and practice their skills as interviewees (and as interviewers) over the coming weeks. If you’re looking with some trepidation at an interview task or similar, please get in touch and we’ll try and arrange support for you.\nA couple of miscellaneous reminders for you this week:\n\nWe’re still looking for volunteers to help lead some of the discussion sessions at the unconference on the 11th Dec. See the discussion on the Unconference Teams channel for more details.\nI’ve also put out a call for training requests via this form - please let me know what training sessions and courses you’d like to see during the first few months of 2025.\n\nHope to see you at something soon\nBrendan"
+    "text": "Week beginning Mon 2nd December 2024\nDear colleagues,\nWelcome to our regular KIND network update. We’ll have a firm schedule for the KIND unconference out early next week, so do please save the date (9.30-16.30, Wednesday 11th December) if you haven’t already. Last call too for Q1 2025 training requests.\nHope to see you at something soon\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-25.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-11-25.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-12-02.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-12-02.html#wins-of-the-week",
     "title": "KIND network update",
     "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A non-random selection of some of the firsts from this bumper clutch of wins:\n\nRunning my first sub 30 min 5k!\nRunning my first workshop!! Learned a lot…but got good feedback which was nice to hear :)\nCreated my first funnel plot in R\nBought my first Christmas jumper of this year… (I have a few) Not wearing them until 1st December, but then all systems are go! Also googled Lambda formulae and looking forward to demystifying the mathsspeak - I love a formula but I rarely know correct terminology for these things!\nGot the team’s first publication out. Hopefully many more to come!\n\nWell done all, and looking forward to hearing your wins of the week in future.\n\n&lt;!– ## Training sessions"
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A power-of-presenting special this week:\n\nSuccessfully took part in a meeting relating to a project I’m part of, properly spoke up, explained my points and all! Happy with myself\nManaged to confidently present at a Partnership Committee\nGlad to say that a workshop I had to facilitate this week for a difficult working group for a new project went well.\nReceived thanks/recognition from the Big Boss in a full Directorate meeting for a partnership project that has taken a lot of time and effort. Made me feel all warm and fuzzy.\n\nWell done all, and looking forward to hearing your wins of the week in future."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-25.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-11-25.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2024-12-02.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2024-12-02.html#training-sessions",
+    "title": "KIND network update",
+    "section": "Training sessions",
+    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nFlowcharts in Mermaid\n12:00-13:00 Thu 5th December 2024\nSkills\n🌶 :beginner-level"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-12-02.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-12-02.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is programming in Excel. We’ll be looking at the more ambitious end of Excel work, with some examples of VBA, Lambda formulas, and (assuming the tech gremlins favour us) with a demo of Python in Excel. All very welcome - we’re obviously going to be more at the technical end this time round, but you definitely don’t need to be an expert to come along.\nWe’re running a KIND introductory session aimed at learning and development professionals this Wednesday 1-2pm. Come along to find out more about how the KIND network can help your organisation with training and development.\n1-2pm, Tue 26th November 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Zeg Ashraf & Emma Berry - Homelessness Data."
+    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community activities channel. The theme this week is building a brand.yml for NHS Scotland. brand.yml is a new and concise way of styling Quarto documents. NHS England have recently produced a template file, and the plan for this week’s community meetup is to spend an hour working together to develop one for Scotland. All welcome, especially non-expert and new R users, because this looks like a great starter project if you’re looking for a first R project with a public component.\n1-2pm, Tue 3rd December 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Nora Villamil Buenrostro - Predictors of DNAs for OP Paediatrics.\nFollow NES Knowledge Service’s 12 days of Christmas on The Knowledge Network for a festive tour of resources! From Monday 2nd until Friday 20th December, they will be showcasing the many gifts NES Knowledge Services give to health and social care staff in Scotland all year round. Check back regularly for each new day"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-25.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-11-25.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-12-02.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-12-02.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
     "text": "Book of the week\nMervyn King. 2016. The End of Alchemy: Money, Banking and the Future of the Global Economy.  ISBN 978-1408706114, Worldcat. Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#week-beginning-mon-2nd-december-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#week-beginning-mon-2nd-december-2024",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-18.html#week-beginning-mon-2nd-december-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-11-18.html#week-beginning-mon-2nd-december-2024",
     "title": "KIND network update",
     "section": "Week beginning Mon 2nd December 2024",
-    "text": "Week beginning Mon 2nd December 2024\nDear colleagues,\nWelcome to our regular KIND network update. We’ve got a few R-themed events coming up this week, including our regular monthly R beginners club session. Hope to see you there if you’re curious about R, a new R starter, or trying to build your R skills.\nBrendan"
+    "text": "Week beginning Mon 2nd December 2024\nDear colleagues,\nWelcome to our regular KIND network update. We’re starting to lead up to our Unconference event this week. The Unconference is a one day conference led by community members to discuss topics of interest, share presentations about great work, and to make sure the KIND network keeps providing relevant and useful training during 2025. Key info:\n\nWednesday 11th December, 9.30 to 4ish\nfree to access, with registration details coming next week\nnon-recorded live sessions on Teams\n\nFull details of the programme, and routes for contribution, can be found on the Unconference Teams channel.\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-18.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-11-18.html#wins-of-the-week",
     "title": "KIND network update",
     "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nFelt like I was plodding along this week, but looking back I’ve managed to get a couple of large pieces of work completed and am organised for next week so a success!\nBeen asked to go along to a group run by a colleague, to support some work they’re doing and bring a different viewpoint. Chuffed at being asked and that my opinion is valued in a non-threatening but supportive way\nI won an americano tournament in paddle 🎊\nFinally managed to complete and submit the practical component of my GA coursework assignment."
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nMade good progress with a project I’m dying to see the back of.\nAfter nearly 3 years in a seconded post, I interviewed yesterday and my post is now permanent!\nFinding beauty in the wonderous early morning sunrises and the big sky colours\nWork: Successfully got a first draft output for the project I’m the analyst on and the boss liked it! Non-work: Successfully got through the worst uni coursework without going mad\n\nWell done all, and looking forward to hearing your wins of the week in future."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#training-sessions",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-18.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2024-11-18.html#training-sessions",
     "title": "KIND network update",
     "section": "Training sessions",
     "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nFlowcharts in Mermaid\n12:00-13:00 Thu 5th December 2024\nSkills\n🌶 :beginner-level"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-18.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-11-18.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is using SQL in R. We’ll be looking at some beginner-friendly ways of starting to use SQL databases as a tool for managing data in R.\nNES’s Knowledge Services team are re-running their excellent and highly-regarded series of short events about research and publication next week. Full details and registration links\nOur monthly R beginner’s club is running Thursday 14th November 3-4pm. A group session for R beginners to review their code, get unstuck, and pick up some tips and tricks. More experienced R programmers are absolutely welcome too, but this session is focused on those new to (or returning to) R code. All welcome, especially if you’re brand new to R or are coming from our R from Scratch course."
+    "text": "Events\n\nOur R reading group session is Thursday 21st November 3-4pm. This session is aimed an an intermediate-level audience of R users, and the plan is to read chapter 3 of Advanced R on vectors. All welcome!"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-18.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-11-18.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
-    "text": "Book of the week\nMervyn King. 2016. The End of Alchemy: Money, Banking and the Future of the Global Economy.  ISBN 978-1408706114, Worldcat. Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’.\nUnsubscribe from these emails"
+    "text": "Book of the week\nMervyn King. 2016. The End of Alchemy: Money, Banking and the Future of the Global Economy.  ISBN 978-1408706114, Worldcat. Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-10-07.html#week-beginning-mon-7th-october-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-10-07.html#week-beginning-mon-7th-october-2024",
-    "title": "KIND network update",
-    "section": "Week beginning Mon 7th October 2024",
-    "text": "Week beginning Mon 7th October 2024\nDear colleagues,\nWelcome to our regular KIND network update. I’m away for the second half of October, which will necessitate a brief pause for our training and community events. We’ll be back in late October, and you can expect the next regular email update in early November. Hope to see you at something then.\nBrendan"
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-10-07.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-10-07.html#wins-of-the-week",
-    "title": "KIND network update",
-    "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nI owned a work mistake and the world did not explode\nUsing a chi-square test of independence on a dataset (when I wasn’t asked to) and the requestor actually understanding and really liking the outputs\nI pushed against my introvert preference and held a training session to help staff understand the relationship between DATIX incidents, the boards risk strategy and H&S actions\nI have managed to build a small shiny app. Although I have a long way to go. I am feeling really proud"
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-10-07.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2024-10-07.html#training-sessions",
-    "title": "KIND network update",
-    "section": "Training sessions",
-    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nExcel formulas\n09:30-10:30 Tue 8th October 2024\nExcel\n🌶 :beginner-level\n\n\nR from scratch (session 6)\n14:30-15:30 Tue 8th October 2024\nR\n🌶 :beginner-level\n\n\nTableau for beginners (session 4)\n13:00-15:00 Thu 10th October 2024\nTableau\n🌶 :beginner-level"
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-10-07.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-10-07.html#events",
-    "title": "KIND network update",
-    "section": "Events",
-    "text": "Events\n\n3-4pm, Mon 7th October 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is working with user requests. We’ll be looking at some examples of good ideas from the community about how to work more easily and effectively with user requests."
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-10-07.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-10-07.html#book-of-the-week",
-    "title": "KIND network update",
-    "section": "Book of the week",
-    "text": "Book of the week\nc(“Gerd Gigerenzer”, “Harry Parker”, “M. Neil Browne and Stuart M. Keeley”, “Brian Christian”, “Gwen Adshead”, “Mervyn King”). c(“2002”, “2022”, “2006”, “2020”, “2021”, “2016”). c(“Reckoning with Risk: Learning to Live with Uncertainty”, “Hybrid Humans: Dispatches from the Frontiers of Man and Machine”, “Asking the right questions: a guide to critical thinking”, “The Alignment Problem”, “The Devil You Know - Encounters in Forensic Psychiatry”, “The End of Alchemy: Money, Banking and the Future of the Global Economy”).  ISBN c(“978-0713995122”, “978-1788163101”, “978-0132203043”, “978-1786494337”, “978-0571357628”, “978-1408706114”), Worldcat. c(“How do you communicate risks? For many of us who work with knowledge, information, and data, the natural way of doing that is by talking about probabilities. This book, which is a lively and provoking introduction to the frequency format hypothesis might give us cause for pause: it turns out that frequencies serve as much stronger communicators of risk than probabilities. So if you want to communicate a risk, there’s a good reason to prefer saying 8 out of 10 people rather than 80% of people.”, “This week’s recommendation comes from Kelsey Pearson a Business Intelligence Analyst at the University of Edinburgh. They write: ‘Harry Parker lost his legs to an IED in Afghanistan and now has prosthetic legs. He goes on to learn about medical technology and their implications for what it means to be human. He learns about early examples of prosthetics and technology (e.g. iron lungs) used to support those with disabilities and illnesses. He also learns about current and future technological advancements such as brain chips, bionic eyes, and exoskeletons. I enjoyed the discussions around identity and whether we’re all hybrids to some degree. Think about your phone, headphones, and smartwatch…’”, “This week’s recommendation comes from Alupha Chan, a Research IT Facilitator at NHS Tayside who writes: ‘I think this book will go well with this group. This used to be a mandatory reading for my Communications (PR) dip. nearly 2 decades ago - one of the chapters is dedicated in looking at whether presented stats are deceptive.’ Having had a look at this book, I’d recommend it too - lots of great material here for thinking hard about more complicated questions.”, “This is a high-risk recommendation, because I’ve only read a few chapters of this friendly (and alarming) introduction to AI. But there’s a good reason for the slightly-impetuous premature recommendation, as the public sector Data Ethics and Society Reading Group will be hosting a session on the book on the 3rd of December, so just about time to get a copy if you fancy joining what should be an excellent discussion then.”, “This week’s recommendation comes from Louise Stuart, a Health and Work Adviser at Public Health Scotland, who writes: ‘I used to work as an OT in a low secure forensic mental health hospital so it was nostalgic to revisit my time on the wards through this book. The author offers a compassionate insight into those who are accessing forensic mental health services with each chapter focusing on a different patients story and journey. I found this book to be a powerful and thoughtful read, and I would thoroughly recommend.’”, “Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’”).\nUnsubscribe from these emails"
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-23.html#week-beginning-mon-2nd-december-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-09-23.html#week-beginning-mon-2nd-december-2024",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#week-beginning-mon-2nd-december-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#week-beginning-mon-2nd-december-2024",
     "title": "KIND network update",
     "section": "Week beginning Mon 2nd December 2024",
-    "text": "Week beginning Mon 2nd December 2024\n\nDear colleagues,\nWelcome to our regular KIND network update. I’m delighted to say that our R reading group will be back next week on Thursday 26th 3-4pm. You can find details and the link to the reading on our the community pages.\nThis past week has also thrown up a few technical hitches in training sessions. The most common cause of trouble comes from guests joining our training sessions without belonging to the KIND Teams channel. We love meeting new people in training, and I’m always grateful for the word of mouth transmission that helps so many of our activities reach people right across the sector. So please can I encourage you to pass on the link to join the channel to anyone who might be interested in our sessions and materials. Thanks - it’ll help make everything smoother for everyone.\nHope to see you at something soon\nBrendan"
+    "text": "Week beginning Mon 2nd December 2024\nDear colleagues,\nWelcome to our regular KIND network update. You’ll notice slightly less training on offer for the next few weeks than usual. That’s to allow space for work on some new training resources (including an intermediate Power BI course) which will hopefully launch in the new year. Please do get in touch if you have suggestions for these new resources.\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-23.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-09-23.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#wins-of-the-week",
     "title": "KIND network update",
     "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nCarried out an audit following the correction of some data, presented it at a meeting and was given the go-ahead for my suggested fixes, and implemented them! Yay!\nI did a Couch to 5k session this morning before work this morning. Tiring but felt good after!\nA teeny victory but a victory nonetheless - whole load of Committee papers collated and converted as necessary, sent for checking before issue to all; and there were no changes required! Go me!\nJust made some colleagues’ day by introducing them to pivot tables and charts to report their data. Best part of my job is the sounds that emanate from learners when they’re amazed. It never gets old…"
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nI received a clear congratulations for asking a great question at a meeting, nobody had thought about this. So chuffed!\nStarted to unpick a previous project and learn from the mistakes, delays and reflect. My next step is to involve other stakeholders using “psychological safety” model in a meeting.\nWe have had an issue the last couple of weeks with a delay in data appearing in our data warehouse. With help from national colleagues we have finally managed to locate the issue and have it fixed.\nGot a short story accepted for publication in an anthology earlier this year. Copies became available this week and I still can’t quite believe I am looking at my story in print. Wonderful feeling."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-23.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2024-09-23.html#training-sessions",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#training-sessions",
     "title": "KIND network update",
     "section": "Training sessions",
     "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nFlowcharts in Mermaid\n12:00-13:00 Thu 5th December 2024\nSkills\n🌶 :beginner-level"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-23.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-09-23.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is SQL. SQL is one of the most widely used types of database. One consequence of that longevity is the baffling number of different products that use SQL. This session aims to introduce some of those products in use, and to demystify the terminology.\n1-2pm, Tue 3rd December 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Nora Villamil Buenrostro - Predictors of DNAs for OP Paediatrics."
+    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is learning statistics with R. We’ll be looking at the book Learning Statistics with R as an excellent example of how R can be used as a springboard for developing statistical skills.\n1-2pm, Tue 3rd December 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Nora Villamil Buenrostro - Predictors of DNAs for OP Paediatrics."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-23.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-09-23.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
     "text": "Book of the week\nMervyn King. 2016. The End of Alchemy: Money, Banking and the Future of the Global Economy.  ISBN 978-1408706114, Worldcat. Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’.\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-09.html#week-beginning-mon-2nd-december-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-09-09.html#week-beginning-mon-2nd-december-2024",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-30.html#week-beginning-mon-2nd-december-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-09-30.html#week-beginning-mon-2nd-december-2024",
     "title": "KIND network update",
     "section": "Week beginning Mon 2nd December 2024",
-    "text": "Week beginning Mon 2nd December 2024\n\nDear colleagues,\nWelcome to our regular KIND network update. We’re starting our new Power BI for Beginner’s course next week. That’s an adaptation of our existing Power BI course to use the web version of Power BI, which I hope will improve some of the Power BI licencing issues that some learners have faced. Hope to see you there 10.00-12.00 this coming Thursday.\nWe also have a couple of spaces available on our EBM introductory course running weekly Wednesdays 14.00-16.00 from September 11th until October 9th. Please get in touch if you’d like one of the available slots.\nFinally, we’ll be scheduling training sessions for November and December next week. Please get in touch ASAP if you’d like some training for your team. We can potentially offer any of our multi-session courses or any of our one-off sessions to you and your team free of charge. All that we ask is that you can commit to having 15-20 staff attend the sessions, and that you can take care of any admin and infrastructure requirements such as circulating invites, installing software etc.\nHope to see you at something soon\nBrendan"
+    "text": "Week beginning Mon 2nd December 2024\n\nDear colleagues,\nWelcome to our regular KIND network update. We’re coming to the end of the run of training sessions aimed at beginners that has been taking place over the past month or so. Those training sessions will be repeated in the future, but we’ll be concentrating on the more ambitious end of our training offer during November and December this year.\nHope to see you at something soon\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-09.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-09-09.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-30.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-09-30.html#wins-of-the-week",
     "title": "KIND network update",
     "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nAccepted a new job offer despite it being a bit of a gamble. Feeling Big and Brave and trying not to feel irresponsible and foolish.\nFor the last ~6 months I have been trying to organise a training course with an external partner, and this week we were able to finalise the cohort and kick off the welcome session, all using technology that is permitted by our health board.\nPut my excel training to good use and successfully helped a staff member who reached out for help. Set time aside and studied for an upcoming exam not leaving it to last minute!\nPersonal win - getting new external doors installed at home that will actually fit, not let in draughts and are not metal, so no more burnt skin in the sunshine. Happy Friday :-)”"
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nI passed my master’s degree with distinction.\nWrote a snazzy report in Rmarkdown this week. Who knows if it will end up getting used, but I learnt a lot in making it!\n\nI supported a colleague who was going through some difficulties and gave them space to process their feelings\nI’ve managed to handle my first short-deadline piece of work for an external customer. Confidence is rising!"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-09.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2024-09-09.html#training-sessions",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-30.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2024-09-30.html#training-sessions",
     "title": "KIND network update",
     "section": "Training sessions",
     "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nFlowcharts in Mermaid\n12:00-13:00 Thu 5th December 2024\nSkills\n🌶 :beginner-level"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-09.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-09-09.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-30.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-09-30.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is joins again, with the second of three sessions on the topic. This session will concentrate on core joins used in practice - left, right, full, anti, etc. We’ll do a bit of introduction and chat, and then show how these can be implemented in a range of platforms - hopefully Excel, Power Query, R, and SQL.\n1-2pm, Tue 3rd December 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Nora Villamil Buenrostro - Predictors of DNAs for OP Paediatrics."
+    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is show and tell. Come and show the community your projects. It’s a great way to get useful suggestions and feedback, and sharing knowledge and best-practice is core to what we do.\n1-2pm, Tue 3rd December 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Nora Villamil Buenrostro - Predictors of DNAs for OP Paediatrics."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-09.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-09-09.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-30.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-09-30.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
     "text": "Book of the week\nMervyn King. 2016. The End of Alchemy: Money, Banking and the Future of the Global Economy.  ISBN 978-1408706114, Worldcat. Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’.\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html",
-    "href": "ml_archive/KIND_weekly_update_2024-08-26.html",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-16.html#week-beginning-mon-2nd-december-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-09-16.html#week-beginning-mon-2nd-december-2024",
     "title": "KIND network update",
-    "section": "",
-    "text": "Dear colleagues,\nWelcome to our regular KIND network update. Full details of our events and training can be found on our Teams channel.\nWe’ve been working on the mentoring scheme this week, including a new homepage. It’s designed to put mentors and mentees in touch with each other to support short and well-defined pieces of work. Please get in touch with any suggestions or feedback, and do feel encouraged to put together a project proposal if there’s some area of work you’d like more support with.\nHope to see you at something soon\nBrendan"
+    "section": "Week beginning Mon 2nd December 2024",
+    "text": "Week beginning Mon 2nd December 2024\n\nDear colleagues,\nWelcome to our regular KIND network update. We’re starting our new Tableau for Beginner’s course next week. That uses Tableau Public so should be available to all. Hope to see you there 13.00-15.00 this coming Thursday.\nA reminder that we’ll be scheduling training sessions for November and December next week. Please get in touch ASAP if you’d like some training for your team. We can potentially offer any of our multi-session courses or any of our one-off sessions to you and your team free of charge. All that we ask is that you can commit to having 15-20 staff attend the sessions, and that you can take care of any admin and infrastructure requirements such as circulating invites, installing software etc.\nHope to see you at something soon\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#week-beginning-mon-2nd-december-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#week-beginning-mon-2nd-december-2024",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-16.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-09-16.html#wins-of-the-week",
     "title": "KIND network update",
-    "section": "",
-    "text": "Dear colleagues,\nWelcome to our regular KIND network update. Full details of our events and training can be found on our Teams channel.\nWe’ve been working on the mentoring scheme this week, including a new homepage. It’s designed to put mentors and mentees in touch with each other to support short and well-defined pieces of work. Please get in touch with any suggestions or feedback, and do feel encouraged to put together a project proposal if there’s some area of work you’d like more support with.\nHope to see you at something soon\nBrendan"
+    "section": "Wins of The Week",
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nI succeeded in using INDEX and MATCH to help a colleague onboard data from a separate spreadsheet into the exact rows required. She was so chuffed. 😃 Then replaced the formulas with values using paste special.\nVolunteered to provide a brief summary of work being done by myself and fellow PHIT on developing a Lothian child poverty indicators dashboard at this weeks’ SCODAS meeting. Off the back of that there appears to be further interest for us to present at a future SCODAS session where we present the dashboard\nI ran my first (and only!) half-marathon last Sunday, completing the Great North Run - and, thanks to supporters, raising funds for Parkinson’s UK. Very chuffed with myself!\nJoined the R from Scratch session this week after not using R for almost a year and found that I actually remembered quite a lot of the content that was being taught. Win win for me and I didn’t panic too much as I thought that I had forgotten everything!"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-16.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2024-09-16.html#training-sessions",
     "title": "KIND network update",
-    "section": "Wins of the week",
-    "text": "Wins of the week\nWe’re again celebrating some community wins-of-the-week, which have included:\n\nI submitted my Master’s dissertation!\nProactively prepared a whiteboard in teams ahead of a critical team meeting so that everyone could follow along and help organise priorities - this was the first time I’d used whiteboard on this scale\nThis week I managed to save an egg bound chicken\nUsed PowerBI to generate a recurring analysis pack for sharing with management leads. Now, instead of manually analysing the weekly data to generate charts to be copied into a PowerPoint pack, I only need to refresh the data source and export the updated PowerBI report as a PDF. 1-2 hrs of work reduced to seconds :)\nCalmly dealt with numerous difficult colleagues and taken the initiative in the absence of more senior staff"
+    "section": "Training sessions",
+    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nFlowcharts in Mermaid\n12:00-13:00 Thu 5th December 2024\nSkills\n🌶 :beginner-level"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-16.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-09-16.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\nThursday 3-4pm, Gemma Wilson (Scottish Government) will be giving an update on the data strategy. All welcome at this informal session to find out more about this important initiative. No need to register - just follow the Teams link on the day.\n\nWe’ll also be finalising the community meetup schedule for the autumn next week. But save the date - our new community meetup slot will be Mondays 3-4pm."
+    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is joins again, with the third and final sessions on the topic. This session will concentrate on more advanced techniques - rolling joins, non-equi joins etc. As usual, we’ll do a bit of introduction and chat, and then show how these can be implemented in a range of platforms."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-16.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-09-16.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
-    "text": "Book of the week\nMervyn King. 2016. The End of Alchemy: Money, Banking and the Future of the Global Economy. ISBN 978-1408706114, Worldcat link. Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’\nUnsubscribe from these emails"
+    "text": "Book of the week\nMervyn King. 2016. The End of Alchemy: Money, Banking and the Future of the Global Economy.  ISBN 978-1408706114, Worldcat. Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’.\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive.html",
-    "href": "ml_archive.html",
-    "title": "KIND network weekly update email archive",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#week-beginning-mon-2nd-december-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#week-beginning-mon-2nd-december-2024",
+    "title": "KIND network update",
+    "section": "Week beginning Mon 2nd December 2024",
+    "text": "Week beginning Mon 2nd December 2024\n\nDear colleagues,\nWelcome to our regular KIND network update. We have a back-to-school feel to the coming week, with the first sessions of our Excel and R beginners courses. These will be joined over the next fortnight by Power BI and Tableau beginner courses - early details can be found on the training pages. We’ll also have the first of our autumn series of community meetups.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#wins-of-the-week",
+    "title": "KIND network update",
+    "section": "Wins of The Week",
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nPassed my Uni course on an Introduction to Programming in R\nMade an action plan to boost my skillset and CV over the next three months to become more “marketable” to the jobs and sectors I’m interested in.\nThis week I stood up for myself and called out a colleague who had made inappropriate jokes about my size. Proud of myself for not hiding away from the confrontation! 💪\nI’ve been working on speaking confidently whilst presenting data (I really struggle with this). Yesterday I managed to do a great presentation and answer questions confidently. Very proud!"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#training-sessions",
+    "title": "KIND network update",
+    "section": "Training sessions",
+    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nFlowcharts in Mermaid\n12:00-13:00 Thu 5th December 2024\nSkills\n🌶 :beginner-level\n\n\n\n\n\n(the Excel session is also our 400th training session, so party hats etc at the ready)"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#events",
+    "title": "KIND network update",
+    "section": "Events",
+    "text": "Events\n\n3-4pm, Mon 2nd December 2024. The KIND Community meetup theme this week is the first of three sessions on joins. We’ll start at the beginning this week, with a gentle introduction and overview of the hows and whys of joining data. All welcome at our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel\n1-2pm, Tue 3rd December 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Nora Villamil Buenrostro - Predictors of DNAs for OP Paediatrics."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#book-of-the-week",
+    "title": "KIND network update",
+    "section": "Book of the week",
+    "text": "Book of the week\nMervyn King. 2016. The End of Alchemy: Money, Banking and the Future of the Global Economy.  ISBN 978-1408706114, Worldcat. Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’.\nUnsubscribe from these emails"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html",
+    "title": "KIND network update",
     "section": "",
-    "text": "This is an archive page for the KIND network weekly update email. Subscribe to our mailing list to receive these updates.\n\n2025-02-17\n2025-02-10\n2025-02-03\n2025-01-27\n2025-01-20\n2025-01-13\n2024-12-02\n2024-11-25\n2024-11-18\n2024-11-11\n2024-11-04\n2024-10-07\n2024-09-30\n2024-09-23\n2024-09-16\n2024-09-09\n2024-09-02\n2024-08-26\n2024-08-19\n2024-08-12\n2024-08-05\n2024-07-15\n2024-07-08\n2024-07-01\n2024-06-24\n2024-06-17\n2024-06-10\n2024-06-03\n2024-05-27"
+    "text": "Dear colleagues,\nWelcome to our regular KIND network update. The big theme for coming week is the return of some of our social activities that have been taking a summer break. We’re starting to build up a set of community meetup topics for the Autumn on the Teams channel, and I’m delighted to say that SCODAS meetings will be back in their usual 1-2pm Tuesday slot.\nWe’ll also be pausing our one-off training sessions for the next couple of weeks to allow some space for preparatory work. If you’re a Tableau expert, please consider coming to a shakedown/feedback session for our new Tableau for beginners course which will be running 3-4ish on Thursday 22nd. It’s vital that we keep training resources aligned with the needs of the community, so your feedback is essential to our work.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#week-beginning-mon-2nd-december-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#week-beginning-mon-2nd-december-2024",
+    "title": "KIND network update",
+    "section": "",
+    "text": "Dear colleagues,\nWelcome to our regular KIND network update. The big theme for coming week is the return of some of our social activities that have been taking a summer break. We’re starting to build up a set of community meetup topics for the Autumn on the Teams channel, and I’m delighted to say that SCODAS meetings will be back in their usual 1-2pm Tuesday slot.\nWe’ll also be pausing our one-off training sessions for the next couple of weeks to allow some space for preparatory work. If you’re a Tableau expert, please consider coming to a shakedown/feedback session for our new Tableau for beginners course which will be running 3-4ish on Thursday 22nd. It’s vital that we keep training resources aligned with the needs of the community, so your feedback is essential to our work.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#wins-of-the-week",
+    "title": "KIND network update",
+    "section": "Wins of The Week",
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nProducing a series of reports for the first time using script I’ve been developing in R Markdown. Something that use to take over day to do, copying and pasting from Excel to Word, and still be littered with errors, now just takes around 2 hours and is accurate after some simple checks.\nHelped out a lot of people (and remained patient with them)!\nstuck head over parapet to make a point and felt better for doing it\nI proved I am worthy of my promotion"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#events",
+    "title": "KIND network update",
+    "section": "Events",
+    "text": "Events"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#kind-unconference-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#kind-unconference-2024",
+    "title": "KIND network update",
+    "section": "KIND Unconference 2024",
+    "text": "KIND Unconference 2024\nSave the date - 11th December 2024 - an opportunity to share and celebrate your hard work. Fully online, free and open to all, and plans afoot on the Teams channel."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#book-of-the-week",
+    "title": "KIND network update",
+    "section": "Book of the week",
+    "text": "Book of the week\nDavid Graeber. 2015. The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy.  ISBN 9781612195186, Worldcat. This is a fun and thought-provoking set of essays about bureacracy. It starts with a mystery: why, if people hate bureaucracy, is there so much of it?. A recurring theme in many KIND events that we spend lots of time managing forms and paperwork, rather than doing more important work. And so we might be reassured that it’s not just us, that ‘all of us end up finding increasing percentages of our day taken up in the filling out of forms.’ The most interesting parts of this book though are not about just moaning about the quantity of paperwork that we face, but instead point out exactly why all that paperwork might really be something to worry about. As the author notes, endless box ticking seems to prevent useful communication and other human interactions. Or, more cuttingly: ‘Bureaucratic procedures…make even the smartest people act like idiots’. That point then leads into a balancing act. As the title might suggest, some rules seem to constrain or prevent us doing useful things, while some rules seem to do the opposite (say, by insisting that we can’t discriminate based on appearance). So there’s a balancing act between different kinds of rules, that shows up as a long-running back and forth between different ways of ruling, that the author traces across times and places. That range of cases, and pleasure in talking about paperwork, is a substantial contributor to the great charm of the book..\nUnsubscribe from these emails"
+  },
+  {
+    "objectID": "mentoring.html",
+    "href": "mentoring.html",
+    "title": "KIND Mentoring Scheme",
+    "section": "",
+    "text": "Draft guidance\n\n\n\n\n\nThis is currently draft guidance, may therefore contain errors and omissions, and is liable to change\nWe run an informal mentoring scheme. It’s designed to support professional development, by putting together mentors and mentees to work on a well-defined project over about 8 weeks. The scheme operates entirely by mutual consent, so participants are free to leave at any time. We think the benefits are reciprocal, with both parties gaining from the work."
+  },
+  {
+    "objectID": "mentoring.html#why-mentoring",
+    "href": "mentoring.html#why-mentoring",
+    "title": "KIND Mentoring Scheme",
+    "section": "Why mentoring?",
+    "text": "Why mentoring?\n\n\n\nFor mentees\n\nan opportunity to get support and guidance that might not be available in your workplace\nan efficient way of putting skills into practice\nbuild your professional network\n\n\n\n\nFor mentors\n\npass on your skills and knowledge to the wider community\nto strengthen your understanding of a topic - think of mentoring as a variant of the Feynman method\nto develop new professional skills, particularly skills relevant to more senior roles such as management, personal development, and community building"
+  },
+  {
+    "objectID": "mentoring.html#mentoring-projects",
+    "href": "mentoring.html#mentoring-projects",
+    "title": "KIND Mentoring Scheme",
+    "section": "Mentoring projects",
+    "text": "Mentoring projects\n\nGood project ideasBad project ideas\n\n\n\nhelp me turn some R code into a package - specific and achievable\nsupport me through a first literature review - sharing expertise\nI’ve just done a course on x, but need some support putting x to work in y - supporting areas not well-covered by other means\n\n\n\n\nteach me how to code - open-ended projects aren’t a good fit for an 8-week mentoring arrangement\nadvise our organisation on x - mentoring isn’t consultancy\nI need someone to encourage me to work harder - mentoring isn’t cheerleading\nmy spreadsheet is broken - focal requests for assistance would be better asked on the KIND network"
+  },
+  {
+    "objectID": "mentoring.html#how-it-works",
+    "href": "mentoring.html#how-it-works",
+    "title": "KIND Mentoring Scheme",
+    "section": "How it works",
+    "text": "How it works\n\n\n\n\n\n\n\ngraph TD;\n\nrequest[\"Mentee sends a project outline\"] --&gt; mentorfinds[\"Mentor finds a suitable project outline\"]\n\nmentorfinds --&gt; email[\"Both discuss by email\"]\n\nemail --&gt; meeting[\"Informal meeting to set goals and expectations\"]\n\nmeeting --&gt;  contract[\"Sign contract\"]\n\ncontract --&gt; complete[\"Complete the mentoring project\"]\n\ncomplete --&gt; present[\"Present the project at the mmmmm\"]\n\n\n\n\n\n\n\n\n\na mentee puts a request on the KIND Teams channel by filling in the new project form\na mentor sees the request on the Teams channel, and expressed interest in mentoring)\nwe put the mentee and mentor in touch by email to discuss the project\nmentor and mentee meet to agree a broad outline for their mentoring arrangement\nboth mentor and mentee sign a mutual-consent contract\nwe help and support them through the duration of the scheme. Either party can withdraw at any time without fault\nwe invite mentors and mentees to come and present their experiences at the monthly mentoring meetup"
+  },
+  {
+    "objectID": "mentoring.html#key-documents",
+    "href": "mentoring.html#key-documents",
+    "title": "KIND Mentoring Scheme",
+    "section": "Key documents",
+    "text": "Key documents\n\nnew mentoring request form - use this to propose a new project\npotential mentor form - use this to express interest in mentoring a project\ncontract form - use this to agree a new mentoring relationship (see a sample contract)\nwithdrawal form - use this to end a mentoring relationship"
+  },
+  {
+    "objectID": "mentoring.html#what-makes-a-good-mentoring-project",
+    "href": "mentoring.html#what-makes-a-good-mentoring-project",
+    "title": "KIND Mentoring Scheme",
+    "section": "What makes a good mentoring project?",
+    "text": "What makes a good mentoring project?\n\nsuccessful projects are generally short and simple\n\nshort meaning they can generally be finished off during the 8 week mentoring scheme\nsimple meaning they don’t depend on a lot of new infrastructure, require organisational change, or need an mentor to gain an unrealistic range of new skills\n\nsuccessful project proposals should therefore be short and precise\n\nwhat are you trying to do?\nhow are you trying to do it?\nwhich barrier(s) do you have in place?\nwhat do you need a mentor to do?\n\nsuccessful projects aren’t about cheerleading\n\nwe’d expect mentors to provide largely technical advice: “have you considered using x”\nwe do not expect mentors to provide detailed technical training\nwe specifically preclude mentors giving detailed technical advice regarding systems. Mentors are not consultants."
+  },
+  {
+    "objectID": "mentoring.html#what-might-i-do-instead",
+    "href": "mentoring.html#what-might-i-do-instead",
+    "title": "KIND Mentoring Scheme",
+    "section": "What might I do instead?",
+    "text": "What might I do instead?\nIf your project doesn’t fit this scheme, consider:\n\nasking a question on the KIND teams channel\ncompleting one of our training courses on a topic, particularly if you’re struggling to put your request into specific language\npresenting your query/issue in one of the open KIND community meetup sessions"
   },
   {
     "objectID": "kind_cms.html",
@@ -1526,417 +1645,403 @@
     "text": "2024-03-06: The Code Book\nSimon Singh. 1999. The Code Book. ISBN 978-1857028898, Worldcat link.\n The Code Book: The Secret History of Codes and Code-Breaking a book by . (bookshop.org) (to buy online but support a local bookshop of your choice, for those not keen on more money to our Amazon Overlords…)"
   },
   {
-    "objectID": "mentoring.html",
-    "href": "mentoring.html",
-    "title": "KIND Mentoring Scheme",
+    "objectID": "kind_power_automate_week.html",
+    "href": "kind_power_automate_week.html",
+    "title": "Power Automate week",
     "section": "",
-    "text": "Draft guidance\n\n\n\n\n\nThis is currently draft guidance, may therefore contain errors and omissions, and is liable to change\nWe run an informal mentoring scheme. It’s designed to support professional development, by putting together mentors and mentees to work on a well-defined project over about 8 weeks. The scheme operates entirely by mutual consent, so participants are free to leave at any time. We think the benefits are reciprocal, with both parties gaining from the work."
+    "text": "We’re running a network-wide Microsoft Power Automate week between 31st March and 4th April. That’ll include a range of training sessions at all levels, opportunities for 1:1 and group project support, and presentations from users who are putting Power Automate to work in health and social care."
   },
   {
-    "objectID": "mentoring.html#why-mentoring",
-    "href": "mentoring.html#why-mentoring",
-    "title": "KIND Mentoring Scheme",
-    "section": "Why mentoring?",
-    "text": "Why mentoring?\n\n\n\nFor mentees\n\nan opportunity to get support and guidance that might not be available in your workplace\nan efficient way of putting skills into practice\nbuild your professional network\n\n\n\n\nFor mentors\n\npass on your skills and knowledge to the wider community\nto strengthen your understanding of a topic - think of mentoring as a variant of the Feynman method\nto develop new professional skills, particularly skills relevant to more senior roles such as management, personal development, and community building"
+    "objectID": "kind_power_automate_week.html#power-automate-week-plan",
+    "href": "kind_power_automate_week.html#power-automate-week-plan",
+    "title": "Power Automate week",
+    "section": "",
+    "text": "We’re running a network-wide Microsoft Power Automate week between 31st March and 4th April. That’ll include a range of training sessions at all levels, opportunities for 1:1 and group project support, and presentations from users who are putting Power Automate to work in health and social care."
   },
   {
-    "objectID": "mentoring.html#mentoring-projects",
-    "href": "mentoring.html#mentoring-projects",
-    "title": "KIND Mentoring Scheme",
-    "section": "Mentoring projects",
-    "text": "Mentoring projects\n\nGood project ideasBad project ideas\n\n\n\nhelp me turn some R code into a package - specific and achievable\nsupport me through a first literature review - sharing expertise\nI’ve just done a course on x, but need some support putting x to work in y - supporting areas not well-covered by other means\n\n\n\n\nteach me how to code - open-ended projects aren’t a good fit for an 8-week mentoring arrangement\nadvise our organisation on x - mentoring isn’t consultancy\nI need someone to encourage me to work harder - mentoring isn’t cheerleading\nmy spreadsheet is broken - focal requests for assistance would be better asked on the KIND network"
+    "objectID": "kind_power_automate_week.html#why-power-automate",
+    "href": "kind_power_automate_week.html#why-power-automate",
+    "title": "Power Automate week",
+    "section": "Why Power Automate?",
+    "text": "Why Power Automate?\nPower Automate gives you low-code ways of creating automated processes. Common uses might be:\n\nto get a Teams message every time a colleague adds something to a shared document\nto copy data from one spreadsheet to another\nto manage mailing lists (including the KIND mailing list)\n\n\nTraining sessions\n\nScope of the possible with Power Automate - Monday 31st March 10.00-11.00\nIntroduction to Power Automate - Monday 31st March 15.00-16.00\nConditions in Power Automate - Tuesday 1st April 13.30-15.30\nMailing lists in Power Automate - Wednesday 2nd April 14.00-16.00\n\n\n\nSupport group\nSessions for mutual aid, sharing best practice, and ideas to support Power Automate projects. These are level-based, so over the week you can register for:\n\n“I’ve never built a flow” - Tuesday 1st April 10.00-11.00\n“I’m a beginner” - Wednesday 2nd April 11.00-12.00\n“I’m beyond the beginner-level” - Thursday 3rd April 11.30-12.30\n\n\n\nProject presentations\nPresentations from members of the network. There are more to come of these, and please get in touch if you’d like to show your Power Automate work - it definitely doesn’t need to be elaborate or fancy to be important and interesting.\n\nPauline Russell (NSS) - customer supply notification process using Excel, and potentially something else…, Thursday 3rd April 10.00-11.00\nKirstin Crawford (NES) - DLP signup process, Thursday 3rd April 13.00-14.00\nDuncan Sage (PHS) - List workplans, Friday 4th April 13.00-14.00\nDaniel Gunn (NES) - sending emails with Power Automate, Wednesday 2nd 12.30-13.30\nBryan Ewington and Daniel Gunn (NES) - Document review and certificates, Friday 4th 15.00-16.00"
   },
   {
-    "objectID": "mentoring.html#how-it-works",
-    "href": "mentoring.html#how-it-works",
-    "title": "KIND Mentoring Scheme",
-    "section": "How it works",
-    "text": "How it works\n\n\n\n\n\n\n\ngraph TD;\n\nrequest[\"Mentee sends a project outline\"] --&gt; mentorfinds[\"Mentor finds a suitable project outline\"]\n\nmentorfinds --&gt; email[\"Both discuss by email\"]\n\nemail --&gt; meeting[\"Informal meeting to set goals and expectations\"]\n\nmeeting --&gt;  contract[\"Sign contract\"]\n\ncontract --&gt; complete[\"Complete the mentoring project\"]\n\ncomplete --&gt; present[\"Present the project at the mmmmm\"]\n\n\n\n\n\n\n\n\n\na mentee puts a request on the KIND Teams channel by filling in the new project form\na mentor sees the request on the Teams channel, and expressed interest in mentoring)\nwe put the mentee and mentor in touch by email to discuss the project\nmentor and mentee meet to agree a broad outline for their mentoring arrangement\nboth mentor and mentee sign a mutual-consent contract\nwe help and support them through the duration of the scheme. Either party can withdraw at any time without fault\nwe invite mentors and mentees to come and present their experiences at the monthly mentoring meetup"
+    "objectID": "ml_archive.html",
+    "href": "ml_archive.html",
+    "title": "KIND network weekly update email archive",
+    "section": "",
+    "text": "This is an archive page for the KIND network weekly update email. Subscribe to our mailing list to receive these updates.\n\n2025-03-10\n2025-03-03\n2025-02-24\n2025-02-17\n2025-02-10\n2025-02-03\n2025-01-27\n2025-01-20\n2025-01-13\n2024-12-02\n2024-11-25\n2024-11-18\n2024-11-11\n2024-11-04\n2024-10-07\n2024-09-30\n2024-09-23\n2024-09-16\n2024-09-09\n2024-09-02\n2024-08-26\n2024-08-19\n2024-08-12\n2024-08-05\n2024-07-15\n2024-07-08\n2024-07-01\n2024-06-24\n2024-06-17\n2024-06-10\n2024-06-03\n2024-05-27"
   },
   {
-    "objectID": "mentoring.html#key-documents",
-    "href": "mentoring.html#key-documents",
-    "title": "KIND Mentoring Scheme",
-    "section": "Key documents",
-    "text": "Key documents\n\nnew mentoring request form - use this to propose a new project\npotential mentor form - use this to express interest in mentoring a project\ncontract form - use this to agree a new mentoring relationship (see a sample contract)\nwithdrawal form - use this to end a mentoring relationship"
-  },
-  {
-    "objectID": "mentoring.html#what-makes-a-good-mentoring-project",
-    "href": "mentoring.html#what-makes-a-good-mentoring-project",
-    "title": "KIND Mentoring Scheme",
-    "section": "What makes a good mentoring project?",
-    "text": "What makes a good mentoring project?\n\nsuccessful projects are generally short and simple\n\nshort meaning they can generally be finished off during the 8 week mentoring scheme\nsimple meaning they don’t depend on a lot of new infrastructure, require organisational change, or need an mentor to gain an unrealistic range of new skills\n\nsuccessful project proposals should therefore be short and precise\n\nwhat are you trying to do?\nhow are you trying to do it?\nwhich barrier(s) do you have in place?\nwhat do you need a mentor to do?\n\nsuccessful projects aren’t about cheerleading\n\nwe’d expect mentors to provide largely technical advice: “have you considered using x”\nwe do not expect mentors to provide detailed technical training\nwe specifically preclude mentors giving detailed technical advice regarding systems. Mentors are not consultants."
-  },
-  {
-    "objectID": "mentoring.html#what-might-i-do-instead",
-    "href": "mentoring.html#what-might-i-do-instead",
-    "title": "KIND Mentoring Scheme",
-    "section": "What might I do instead?",
-    "text": "What might I do instead?\nIf your project doesn’t fit this scheme, consider:\n\nasking a question on the KIND teams channel\ncompleting one of our training courses on a topic, particularly if you’re struggling to put your request into specific language\npresenting your query/issue in one of the open KIND community meetup sessions"
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html",
-    "href": "ml_archive/KIND_weekly_update_2024-08-19.html",
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html",
+    "href": "ml_archive/KIND_weekly_update_2024-08-26.html",
     "title": "KIND network update",
     "section": "",
-    "text": "Dear colleagues,\nWelcome to our regular KIND network update. The big theme for coming week is the return of some of our social activities that have been taking a summer break. We’re starting to build up a set of community meetup topics for the Autumn on the Teams channel, and I’m delighted to say that SCODAS meetings will be back in their usual 1-2pm Tuesday slot.\nWe’ll also be pausing our one-off training sessions for the next couple of weeks to allow some space for preparatory work. If you’re a Tableau expert, please consider coming to a shakedown/feedback session for our new Tableau for beginners course which will be running 3-4ish on Thursday 22nd. It’s vital that we keep training resources aligned with the needs of the community, so your feedback is essential to our work.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
+    "text": "Dear colleagues,\nWelcome to our regular KIND network update. Full details of our events and training can be found on our Teams channel.\nWe’ve been working on the mentoring scheme this week, including a new homepage. It’s designed to put mentors and mentees in touch with each other to support short and well-defined pieces of work. Please get in touch with any suggestions or feedback, and do feel encouraged to put together a project proposal if there’s some area of work you’d like more support with.\nHope to see you at something soon\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#week-beginning-mon-2nd-december-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#week-beginning-mon-2nd-december-2024",
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#week-beginning-mon-2nd-december-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#week-beginning-mon-2nd-december-2024",
     "title": "KIND network update",
     "section": "",
-    "text": "Dear colleagues,\nWelcome to our regular KIND network update. The big theme for coming week is the return of some of our social activities that have been taking a summer break. We’re starting to build up a set of community meetup topics for the Autumn on the Teams channel, and I’m delighted to say that SCODAS meetings will be back in their usual 1-2pm Tuesday slot.\nWe’ll also be pausing our one-off training sessions for the next couple of weeks to allow some space for preparatory work. If you’re a Tableau expert, please consider coming to a shakedown/feedback session for our new Tableau for beginners course which will be running 3-4ish on Thursday 22nd. It’s vital that we keep training resources aligned with the needs of the community, so your feedback is essential to our work.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
+    "text": "Dear colleagues,\nWelcome to our regular KIND network update. Full details of our events and training can be found on our Teams channel.\nWe’ve been working on the mentoring scheme this week, including a new homepage. It’s designed to put mentors and mentees in touch with each other to support short and well-defined pieces of work. Please get in touch with any suggestions or feedback, and do feel encouraged to put together a project proposal if there’s some area of work you’d like more support with.\nHope to see you at something soon\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#wins-of-the-week",
     "title": "KIND network update",
-    "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nProducing a series of reports for the first time using script I’ve been developing in R Markdown. Something that use to take over day to do, copying and pasting from Excel to Word, and still be littered with errors, now just takes around 2 hours and is accurate after some simple checks.\nHelped out a lot of people (and remained patient with them)!\nstuck head over parapet to make a point and felt better for doing it\nI proved I am worthy of my promotion"
+    "section": "Wins of the week",
+    "text": "Wins of the week\nWe’re again celebrating some community wins-of-the-week, which have included:\n\nI submitted my Master’s dissertation!\nProactively prepared a whiteboard in teams ahead of a critical team meeting so that everyone could follow along and help organise priorities - this was the first time I’d used whiteboard on this scale\nThis week I managed to save an egg bound chicken\nUsed PowerBI to generate a recurring analysis pack for sharing with management leads. Now, instead of manually analysing the weekly data to generate charts to be copied into a PowerPoint pack, I only need to refresh the data source and export the updated PowerBI report as a PDF. 1-2 hrs of work reduced to seconds :)\nCalmly dealt with numerous difficult colleagues and taken the initiative in the absence of more senior staff"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#events",
-    "title": "KIND network update",
-    "section": "Events",
-    "text": "Events"
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#kind-unconference-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#kind-unconference-2024",
-    "title": "KIND network update",
-    "section": "KIND Unconference 2024",
-    "text": "KIND Unconference 2024\nSave the date - 11th December 2024 - an opportunity to share and celebrate your hard work. Fully online, free and open to all, and plans afoot on the Teams channel."
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-08-19.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-08-19.html#book-of-the-week",
-    "title": "KIND network update",
-    "section": "Book of the week",
-    "text": "Book of the week\nDavid Graeber. 2015. The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy.  ISBN 9781612195186, Worldcat. This is a fun and thought-provoking set of essays about bureacracy. It starts with a mystery: why, if people hate bureaucracy, is there so much of it?. A recurring theme in many KIND events that we spend lots of time managing forms and paperwork, rather than doing more important work. And so we might be reassured that it’s not just us, that ‘all of us end up finding increasing percentages of our day taken up in the filling out of forms.’ The most interesting parts of this book though are not about just moaning about the quantity of paperwork that we face, but instead point out exactly why all that paperwork might really be something to worry about. As the author notes, endless box ticking seems to prevent useful communication and other human interactions. Or, more cuttingly: ‘Bureaucratic procedures…make even the smartest people act like idiots’. That point then leads into a balancing act. As the title might suggest, some rules seem to constrain or prevent us doing useful things, while some rules seem to do the opposite (say, by insisting that we can’t discriminate based on appearance). So there’s a balancing act between different kinds of rules, that shows up as a long-running back and forth between different ways of ruling, that the author traces across times and places. That range of cases, and pleasure in talking about paperwork, is a substantial contributor to the great charm of the book..\nUnsubscribe from these emails"
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#week-beginning-mon-2nd-december-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#week-beginning-mon-2nd-december-2024",
-    "title": "KIND network update",
-    "section": "Week beginning Mon 2nd December 2024",
-    "text": "Week beginning Mon 2nd December 2024\n\nDear colleagues,\nWelcome to our regular KIND network update. We have a back-to-school feel to the coming week, with the first sessions of our Excel and R beginners courses. These will be joined over the next fortnight by Power BI and Tableau beginner courses - early details can be found on the training pages. We’ll also have the first of our autumn series of community meetups.\nHope to see you at something soon - and save the 11th December for the KIND unconference\nBrendan"
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#wins-of-the-week",
-    "title": "KIND network update",
-    "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nPassed my Uni course on an Introduction to Programming in R\nMade an action plan to boost my skillset and CV over the next three months to become more “marketable” to the jobs and sectors I’m interested in.\nThis week I stood up for myself and called out a colleague who had made inappropriate jokes about my size. Proud of myself for not hiding away from the confrontation! 💪\nI’ve been working on speaking confidently whilst presenting data (I really struggle with this). Yesterday I managed to do a great presentation and answer questions confidently. Very proud!"
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#training-sessions",
-    "title": "KIND network update",
-    "section": "Training sessions",
-    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nFlowcharts in Mermaid\n12:00-13:00 Thu 5th December 2024\nSkills\n🌶 :beginner-level\n\n\n\n\n\n(the Excel session is also our 400th training session, so party hats etc at the ready)"
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n3-4pm, Mon 2nd December 2024. The KIND Community meetup theme this week is the first of three sessions on joins. We’ll start at the beginning this week, with a gentle introduction and overview of the hows and whys of joining data. All welcome at our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel\n1-2pm, Tue 3rd December 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Nora Villamil Buenrostro - Predictors of DNAs for OP Paediatrics."
+    "text": "Events\n\nThursday 3-4pm, Gemma Wilson (Scottish Government) will be giving an update on the data strategy. All welcome at this informal session to find out more about this important initiative. No need to register - just follow the Teams link on the day.\n\nWe’ll also be finalising the community meetup schedule for the autumn next week. But save the date - our new community meetup slot will be Mondays 3-4pm."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-02.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-09-02.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-08-26.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-08-26.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
-    "text": "Book of the week\nMervyn King. 2016. The End of Alchemy: Money, Banking and the Future of the Global Economy.  ISBN 978-1408706114, Worldcat. Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’.\nUnsubscribe from these emails"
+    "text": "Book of the week\nMervyn King. 2016. The End of Alchemy: Money, Banking and the Future of the Global Economy. ISBN 978-1408706114, Worldcat link. Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-16.html#week-beginning-mon-2nd-december-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-09-16.html#week-beginning-mon-2nd-december-2024",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-09.html#week-beginning-mon-2nd-december-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-09-09.html#week-beginning-mon-2nd-december-2024",
     "title": "KIND network update",
     "section": "Week beginning Mon 2nd December 2024",
-    "text": "Week beginning Mon 2nd December 2024\n\nDear colleagues,\nWelcome to our regular KIND network update. We’re starting our new Tableau for Beginner’s course next week. That uses Tableau Public so should be available to all. Hope to see you there 13.00-15.00 this coming Thursday.\nA reminder that we’ll be scheduling training sessions for November and December next week. Please get in touch ASAP if you’d like some training for your team. We can potentially offer any of our multi-session courses or any of our one-off sessions to you and your team free of charge. All that we ask is that you can commit to having 15-20 staff attend the sessions, and that you can take care of any admin and infrastructure requirements such as circulating invites, installing software etc.\nHope to see you at something soon\nBrendan"
+    "text": "Week beginning Mon 2nd December 2024\n\nDear colleagues,\nWelcome to our regular KIND network update. We’re starting our new Power BI for Beginner’s course next week. That’s an adaptation of our existing Power BI course to use the web version of Power BI, which I hope will improve some of the Power BI licencing issues that some learners have faced. Hope to see you there 10.00-12.00 this coming Thursday.\nWe also have a couple of spaces available on our EBM introductory course running weekly Wednesdays 14.00-16.00 from September 11th until October 9th. Please get in touch if you’d like one of the available slots.\nFinally, we’ll be scheduling training sessions for November and December next week. Please get in touch ASAP if you’d like some training for your team. We can potentially offer any of our multi-session courses or any of our one-off sessions to you and your team free of charge. All that we ask is that you can commit to having 15-20 staff attend the sessions, and that you can take care of any admin and infrastructure requirements such as circulating invites, installing software etc.\nHope to see you at something soon\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-16.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-09-16.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-09.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-09-09.html#wins-of-the-week",
     "title": "KIND network update",
     "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nI succeeded in using INDEX and MATCH to help a colleague onboard data from a separate spreadsheet into the exact rows required. She was so chuffed. 😃 Then replaced the formulas with values using paste special.\nVolunteered to provide a brief summary of work being done by myself and fellow PHIT on developing a Lothian child poverty indicators dashboard at this weeks’ SCODAS meeting. Off the back of that there appears to be further interest for us to present at a future SCODAS session where we present the dashboard\nI ran my first (and only!) half-marathon last Sunday, completing the Great North Run - and, thanks to supporters, raising funds for Parkinson’s UK. Very chuffed with myself!\nJoined the R from Scratch session this week after not using R for almost a year and found that I actually remembered quite a lot of the content that was being taught. Win win for me and I didn’t panic too much as I thought that I had forgotten everything!"
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nAccepted a new job offer despite it being a bit of a gamble. Feeling Big and Brave and trying not to feel irresponsible and foolish.\nFor the last ~6 months I have been trying to organise a training course with an external partner, and this week we were able to finalise the cohort and kick off the welcome session, all using technology that is permitted by our health board.\nPut my excel training to good use and successfully helped a staff member who reached out for help. Set time aside and studied for an upcoming exam not leaving it to last minute!\nPersonal win - getting new external doors installed at home that will actually fit, not let in draughts and are not metal, so no more burnt skin in the sunshine. Happy Friday :-)”"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-16.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2024-09-16.html#training-sessions",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-09.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2024-09-09.html#training-sessions",
     "title": "KIND network update",
     "section": "Training sessions",
     "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nFlowcharts in Mermaid\n12:00-13:00 Thu 5th December 2024\nSkills\n🌶 :beginner-level"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-16.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-09-16.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-09.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-09-09.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is joins again, with the third and final sessions on the topic. This session will concentrate on more advanced techniques - rolling joins, non-equi joins etc. As usual, we’ll do a bit of introduction and chat, and then show how these can be implemented in a range of platforms."
+    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is joins again, with the second of three sessions on the topic. This session will concentrate on core joins used in practice - left, right, full, anti, etc. We’ll do a bit of introduction and chat, and then show how these can be implemented in a range of platforms - hopefully Excel, Power Query, R, and SQL.\n1-2pm, Tue 3rd December 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Nora Villamil Buenrostro - Predictors of DNAs for OP Paediatrics."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-16.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-09-16.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-09.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-09-09.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
     "text": "Book of the week\nMervyn King. 2016. The End of Alchemy: Money, Banking and the Future of the Global Economy.  ISBN 978-1408706114, Worldcat. Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’.\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-30.html#week-beginning-mon-2nd-december-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-09-30.html#week-beginning-mon-2nd-december-2024",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-23.html#week-beginning-mon-2nd-december-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-09-23.html#week-beginning-mon-2nd-december-2024",
     "title": "KIND network update",
     "section": "Week beginning Mon 2nd December 2024",
-    "text": "Week beginning Mon 2nd December 2024\n\nDear colleagues,\nWelcome to our regular KIND network update. We’re coming to the end of the run of training sessions aimed at beginners that has been taking place over the past month or so. Those training sessions will be repeated in the future, but we’ll be concentrating on the more ambitious end of our training offer during November and December this year.\nHope to see you at something soon\nBrendan"
+    "text": "Week beginning Mon 2nd December 2024\n\nDear colleagues,\nWelcome to our regular KIND network update. I’m delighted to say that our R reading group will be back next week on Thursday 26th 3-4pm. You can find details and the link to the reading on our the community pages.\nThis past week has also thrown up a few technical hitches in training sessions. The most common cause of trouble comes from guests joining our training sessions without belonging to the KIND Teams channel. We love meeting new people in training, and I’m always grateful for the word of mouth transmission that helps so many of our activities reach people right across the sector. So please can I encourage you to pass on the link to join the channel to anyone who might be interested in our sessions and materials. Thanks - it’ll help make everything smoother for everyone.\nHope to see you at something soon\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-30.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-09-30.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-23.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-09-23.html#wins-of-the-week",
     "title": "KIND network update",
     "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nI passed my master’s degree with distinction.\nWrote a snazzy report in Rmarkdown this week. Who knows if it will end up getting used, but I learnt a lot in making it!\n\nI supported a colleague who was going through some difficulties and gave them space to process their feelings\nI’ve managed to handle my first short-deadline piece of work for an external customer. Confidence is rising!"
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nCarried out an audit following the correction of some data, presented it at a meeting and was given the go-ahead for my suggested fixes, and implemented them! Yay!\nI did a Couch to 5k session this morning before work this morning. Tiring but felt good after!\nA teeny victory but a victory nonetheless - whole load of Committee papers collated and converted as necessary, sent for checking before issue to all; and there were no changes required! Go me!\nJust made some colleagues’ day by introducing them to pivot tables and charts to report their data. Best part of my job is the sounds that emanate from learners when they’re amazed. It never gets old…"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-30.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2024-09-30.html#training-sessions",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-23.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2024-09-23.html#training-sessions",
     "title": "KIND network update",
     "section": "Training sessions",
     "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nFlowcharts in Mermaid\n12:00-13:00 Thu 5th December 2024\nSkills\n🌶 :beginner-level"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-30.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-09-30.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-23.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-09-23.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is show and tell. Come and show the community your projects. It’s a great way to get useful suggestions and feedback, and sharing knowledge and best-practice is core to what we do.\n1-2pm, Tue 3rd December 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Nora Villamil Buenrostro - Predictors of DNAs for OP Paediatrics."
+    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is SQL. SQL is one of the most widely used types of database. One consequence of that longevity is the baffling number of different products that use SQL. This session aims to introduce some of those products in use, and to demystify the terminology.\n1-2pm, Tue 3rd December 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Nora Villamil Buenrostro - Predictors of DNAs for OP Paediatrics."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-09-30.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-09-30.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-09-23.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-09-23.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
     "text": "Book of the week\nMervyn King. 2016. The End of Alchemy: Money, Banking and the Future of the Global Economy.  ISBN 978-1408706114, Worldcat. Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’.\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#week-beginning-mon-2nd-december-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#week-beginning-mon-2nd-december-2024",
+    "objectID": "ml_archive/KIND_weekly_update_2024-10-07.html#week-beginning-mon-7th-october-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-10-07.html#week-beginning-mon-7th-october-2024",
     "title": "KIND network update",
-    "section": "Week beginning Mon 2nd December 2024",
-    "text": "Week beginning Mon 2nd December 2024\nDear colleagues,\nWelcome to our regular KIND network update. You’ll notice slightly less training on offer for the next few weeks than usual. That’s to allow space for work on some new training resources (including an intermediate Power BI course) which will hopefully launch in the new year. Please do get in touch if you have suggestions for these new resources.\nBrendan"
+    "section": "Week beginning Mon 7th October 2024",
+    "text": "Week beginning Mon 7th October 2024\nDear colleagues,\nWelcome to our regular KIND network update. I’m away for the second half of October, which will necessitate a brief pause for our training and community events. We’ll be back in late October, and you can expect the next regular email update in early November. Hope to see you at something then.\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-10-07.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-10-07.html#wins-of-the-week",
     "title": "KIND network update",
     "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nI received a clear congratulations for asking a great question at a meeting, nobody had thought about this. So chuffed!\nStarted to unpick a previous project and learn from the mistakes, delays and reflect. My next step is to involve other stakeholders using “psychological safety” model in a meeting.\nWe have had an issue the last couple of weeks with a delay in data appearing in our data warehouse. With help from national colleagues we have finally managed to locate the issue and have it fixed.\nGot a short story accepted for publication in an anthology earlier this year. Copies became available this week and I still can’t quite believe I am looking at my story in print. Wonderful feeling."
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nI owned a work mistake and the world did not explode\nUsing a chi-square test of independence on a dataset (when I wasn’t asked to) and the requestor actually understanding and really liking the outputs\nI pushed against my introvert preference and held a training session to help staff understand the relationship between DATIX incidents, the boards risk strategy and H&S actions\nI have managed to build a small shiny app. Although I have a long way to go. I am feeling really proud"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#training-sessions",
+    "objectID": "ml_archive/KIND_weekly_update_2024-10-07.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2024-10-07.html#training-sessions",
+    "title": "KIND network update",
+    "section": "Training sessions",
+    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nExcel formulas\n09:30-10:30 Tue 8th October 2024\nExcel\n🌶 :beginner-level\n\n\nR from scratch (session 6)\n14:30-15:30 Tue 8th October 2024\nR\n🌶 :beginner-level\n\n\nTableau for beginners (session 4)\n13:00-15:00 Thu 10th October 2024\nTableau\n🌶 :beginner-level"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-10-07.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-10-07.html#events",
+    "title": "KIND network update",
+    "section": "Events",
+    "text": "Events\n\n3-4pm, Mon 7th October 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is working with user requests. We’ll be looking at some examples of good ideas from the community about how to work more easily and effectively with user requests."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-10-07.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-10-07.html#book-of-the-week",
+    "title": "KIND network update",
+    "section": "Book of the week",
+    "text": "Book of the week\nc(“Gerd Gigerenzer”, “Harry Parker”, “M. Neil Browne and Stuart M. Keeley”, “Brian Christian”, “Gwen Adshead”, “Mervyn King”). c(“2002”, “2022”, “2006”, “2020”, “2021”, “2016”). c(“Reckoning with Risk: Learning to Live with Uncertainty”, “Hybrid Humans: Dispatches from the Frontiers of Man and Machine”, “Asking the right questions: a guide to critical thinking”, “The Alignment Problem”, “The Devil You Know - Encounters in Forensic Psychiatry”, “The End of Alchemy: Money, Banking and the Future of the Global Economy”).  ISBN c(“978-0713995122”, “978-1788163101”, “978-0132203043”, “978-1786494337”, “978-0571357628”, “978-1408706114”), Worldcat. c(“How do you communicate risks? For many of us who work with knowledge, information, and data, the natural way of doing that is by talking about probabilities. This book, which is a lively and provoking introduction to the frequency format hypothesis might give us cause for pause: it turns out that frequencies serve as much stronger communicators of risk than probabilities. So if you want to communicate a risk, there’s a good reason to prefer saying 8 out of 10 people rather than 80% of people.”, “This week’s recommendation comes from Kelsey Pearson a Business Intelligence Analyst at the University of Edinburgh. They write: ‘Harry Parker lost his legs to an IED in Afghanistan and now has prosthetic legs. He goes on to learn about medical technology and their implications for what it means to be human. He learns about early examples of prosthetics and technology (e.g. iron lungs) used to support those with disabilities and illnesses. He also learns about current and future technological advancements such as brain chips, bionic eyes, and exoskeletons. I enjoyed the discussions around identity and whether we’re all hybrids to some degree. Think about your phone, headphones, and smartwatch…’”, “This week’s recommendation comes from Alupha Chan, a Research IT Facilitator at NHS Tayside who writes: ‘I think this book will go well with this group. This used to be a mandatory reading for my Communications (PR) dip. nearly 2 decades ago - one of the chapters is dedicated in looking at whether presented stats are deceptive.’ Having had a look at this book, I’d recommend it too - lots of great material here for thinking hard about more complicated questions.”, “This is a high-risk recommendation, because I’ve only read a few chapters of this friendly (and alarming) introduction to AI. But there’s a good reason for the slightly-impetuous premature recommendation, as the public sector Data Ethics and Society Reading Group will be hosting a session on the book on the 3rd of December, so just about time to get a copy if you fancy joining what should be an excellent discussion then.”, “This week’s recommendation comes from Louise Stuart, a Health and Work Adviser at Public Health Scotland, who writes: ‘I used to work as an OT in a low secure forensic mental health hospital so it was nostalgic to revisit my time on the wards through this book. The author offers a compassionate insight into those who are accessing forensic mental health services with each chapter focusing on a different patients story and journey. I found this book to be a powerful and thoughtful read, and I would thoroughly recommend.’”, “Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’”).\nUnsubscribe from these emails"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#week-beginning-mon-2nd-december-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#week-beginning-mon-2nd-december-2024",
+    "title": "KIND network update",
+    "section": "Week beginning Mon 2nd December 2024",
+    "text": "Week beginning Mon 2nd December 2024\nDear colleagues,\nWelcome to our regular KIND network update. We’ve got a few R-themed events coming up this week, including our regular monthly R beginners club session. Hope to see you there if you’re curious about R, a new R starter, or trying to build your R skills.\nBrendan"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#wins-of-the-week",
+    "title": "KIND network update",
+    "section": "Wins of The Week",
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nFelt like I was plodding along this week, but looking back I’ve managed to get a couple of large pieces of work completed and am organised for next week so a success!\nBeen asked to go along to a group run by a colleague, to support some work they’re doing and bring a different viewpoint. Chuffed at being asked and that my opinion is valued in a non-threatening but supportive way\nI won an americano tournament in paddle 🎊\nFinally managed to complete and submit the practical component of my GA coursework assignment."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#training-sessions",
     "title": "KIND network update",
     "section": "Training sessions",
     "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nFlowcharts in Mermaid\n12:00-13:00 Thu 5th December 2024\nSkills\n🌶 :beginner-level"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is learning statistics with R. We’ll be looking at the book Learning Statistics with R as an excellent example of how R can be used as a springboard for developing statistical skills.\n1-2pm, Tue 3rd December 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Nora Villamil Buenrostro - Predictors of DNAs for OP Paediatrics."
+    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is using SQL in R. We’ll be looking at some beginner-friendly ways of starting to use SQL databases as a tool for managing data in R.\nNES’s Knowledge Services team are re-running their excellent and highly-regarded series of short events about research and publication next week. Full details and registration links\nOur monthly R beginner’s club is running Thursday 14th November 3-4pm. A group session for R beginners to review their code, get unstuck, and pick up some tips and tricks. More experienced R programmers are absolutely welcome too, but this session is focused on those new to (or returning to) R code. All welcome, especially if you’re brand new to R or are coming from our R from Scratch course."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-04.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-11-04.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-11.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-11-11.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
     "text": "Book of the week\nMervyn King. 2016. The End of Alchemy: Money, Banking and the Future of the Global Economy.  ISBN 978-1408706114, Worldcat. Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’.\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-18.html#week-beginning-mon-2nd-december-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-11-18.html#week-beginning-mon-2nd-december-2024",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-25.html#week-beginning-mon-2nd-december-2024",
+    "href": "ml_archive/KIND_weekly_update_2024-11-25.html#week-beginning-mon-2nd-december-2024",
     "title": "KIND network update",
     "section": "Week beginning Mon 2nd December 2024",
-    "text": "Week beginning Mon 2nd December 2024\nDear colleagues,\nWelcome to our regular KIND network update. We’re starting to lead up to our Unconference event this week. The Unconference is a one day conference led by community members to discuss topics of interest, share presentations about great work, and to make sure the KIND network keeps providing relevant and useful training during 2025. Key info:\n\nWednesday 11th December, 9.30 to 4ish\nfree to access, with registration details coming next week\nnon-recorded live sessions on Teams\n\nFull details of the programme, and routes for contribution, can be found on the Unconference Teams channel.\nBrendan"
+    "text": "Week beginning Mon 2nd December 2024\nDear colleagues,\nWelcome to our regular KIND network update. We’ve had several requests for help with interview preparation over the past couple of weeks. That means that we’re going to develop a couple of regular sessions designed to help people build and practice their skills as interviewees (and as interviewers) over the coming weeks. If you’re looking with some trepidation at an interview task or similar, please get in touch and we’ll try and arrange support for you.\nA couple of miscellaneous reminders for you this week:\n\nWe’re still looking for volunteers to help lead some of the discussion sessions at the unconference on the 11th Dec. See the discussion on the Unconference Teams channel for more details.\nI’ve also put out a call for training requests via this form - please let me know what training sessions and courses you’d like to see during the first few months of 2025.\n\nHope to see you at something soon\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-18.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-11-18.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-25.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-11-25.html#wins-of-the-week",
     "title": "KIND network update",
     "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A random selection from last week:\n\nMade good progress with a project I’m dying to see the back of.\nAfter nearly 3 years in a seconded post, I interviewed yesterday and my post is now permanent!\nFinding beauty in the wonderous early morning sunrises and the big sky colours\nWork: Successfully got a first draft output for the project I’m the analyst on and the boss liked it! Non-work: Successfully got through the worst uni coursework without going mad\n\nWell done all, and looking forward to hearing your wins of the week in future."
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A non-random selection of some of the firsts from this bumper clutch of wins:\n\nRunning my first sub 30 min 5k!\nRunning my first workshop!! Learned a lot…but got good feedback which was nice to hear :)\nCreated my first funnel plot in R\nBought my first Christmas jumper of this year… (I have a few) Not wearing them until 1st December, but then all systems are go! Also googled Lambda formulae and looking forward to demystifying the mathsspeak - I love a formula but I rarely know correct terminology for these things!\nGot the team’s first publication out. Hopefully many more to come!\n\nWell done all, and looking forward to hearing your wins of the week in future.\n\n&lt;!– ## Training sessions"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-18.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2024-11-18.html#training-sessions",
-    "title": "KIND network update",
-    "section": "Training sessions",
-    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nFlowcharts in Mermaid\n12:00-13:00 Thu 5th December 2024\nSkills\n🌶 :beginner-level"
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-18.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-11-18.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-25.html#events",
+    "href": "ml_archive/KIND_weekly_update_2024-11-25.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\nOur R reading group session is Thursday 21st November 3-4pm. This session is aimed an an intermediate-level audience of R users, and the plan is to read chapter 3 of Advanced R on vectors. All welcome!"
+    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community meetup channel. The theme this week is programming in Excel. We’ll be looking at the more ambitious end of Excel work, with some examples of VBA, Lambda formulas, and (assuming the tech gremlins favour us) with a demo of Python in Excel. All very welcome - we’re obviously going to be more at the technical end this time round, but you definitely don’t need to be an expert to come along.\nWe’re running a KIND introductory session aimed at learning and development professionals this Wednesday 1-2pm. Come along to find out more about how the KIND network can help your organisation with training and development.\n1-2pm, Tue 26th November 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Zeg Ashraf & Emma Berry - Homelessness Data."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-11-18.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-11-18.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2024-11-25.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2024-11-25.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
     "text": "Book of the week\nMervyn King. 2016. The End of Alchemy: Money, Banking and the Future of the Global Economy.  ISBN 978-1408706114, Worldcat. Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-12-02.html#week-beginning-mon-2nd-december-2024",
-    "href": "ml_archive/KIND_weekly_update_2024-12-02.html#week-beginning-mon-2nd-december-2024",
+    "objectID": "ml_archive/KIND_weekly_update_2025-01-13.html#week-beginning-mon-13th-january-2025",
+    "href": "ml_archive/KIND_weekly_update_2025-01-13.html#week-beginning-mon-13th-january-2025",
     "title": "KIND network update",
-    "section": "Week beginning Mon 2nd December 2024",
-    "text": "Week beginning Mon 2nd December 2024\nDear colleagues,\nWelcome to our regular KIND network update. We’ll have a firm schedule for the KIND unconference out early next week, so do please save the date (9.30-16.30, Wednesday 11th December) if you haven’t already. Last call too for Q1 2025 training requests.\nHope to see you at something soon\nBrendan"
+    "section": "Week beginning Mon 13th January 2025",
+    "text": "Week beginning Mon 13th January 2025\nDear colleagues,\nWelcome to the first KIND weekly update of 2025. Lovely to be back, especially as we’re just starting off an intensive period of training sessions over the next couple of months. More details on those below - and hope to see you at one of them soon.\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-12-02.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-12-02.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2025-01-13.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-01-13.html#wins-of-the-week",
     "title": "KIND network update",
     "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. A power-of-presenting special this week:\n\nSuccessfully took part in a meeting relating to a project I’m part of, properly spoke up, explained my points and all! Happy with myself\nManaged to confidently present at a Partnership Committee\nGlad to say that a workshop I had to facilitate this week for a difficult working group for a new project went well.\nReceived thanks/recognition from the Big Boss in a full Directorate meeting for a partnership project that has taken a lot of time and effort. Made me feel all warm and fuzzy.\n\nWell done all, and looking forward to hearing your wins of the week in future."
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community. This can be a tough period for many, so the selection this week celebrates colleagues who have had a tricky time recently:\n\nI put my hand up to say I’m struggling. Takes a lot for me to admit that I need help. but reminding myself that its not a sign of weakness. And the plus is that I was heard and supported. So going into the weekend feeling more positive.\nDespite my brain’s best efforts, I managed to be productive this week and did everything I was asked and promised to do.\nNot really much of an achievement but I have survived the first full week back to work after the two short weeks of the festive period, and it’s not been too bad!! Looking forward to the weekend though!\nStarted back into this project from before christmas that’s been making me very anxious. I’m doing it!\n\nWell done all, and looking forward to hearing your wins of the week in future."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-12-02.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2024-12-02.html#training-sessions",
+    "objectID": "ml_archive/KIND_weekly_update_2025-01-13.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2025-01-13.html#training-sessions",
     "title": "KIND network update",
     "section": "Training sessions",
-    "text": "Training sessions\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nFlowcharts in Mermaid\n12:00-13:00 Thu 5th December 2024\nSkills\n🌶 :beginner-level"
+    "text": "Training sessions\nPlease note that we’ve changed the way that our training events are set-up. You should now be able to click the session link to add yourself directly to the session. Also please note that the Excel first steps, BI for beginners, Introductory Shiny, and Tableau sessions are the first installment of multi-session courses. More information and session resources can be found on our training pages.\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nR projects\n09:30-10:30 Tue 14th January 2025\nR\n🌶 :beginner-level\n\n\nExcel first steps\n11:00-12:00 Tue 14th January 2025\nExcel\n🌶 :beginner-level\n\n\nDates and times with lubridate.\n15:30-17:00 Tue 14th January 2025\nR\n🌶 :beginner-level\n\n\nBI for beginners (session 1)\n10:00-12:00 Wed 15th January 2025\nPower BI\n🌶 :beginner-level\n\n\nBI for beginners (service version, session 1)\n12:00-14:00 Wed 15th January 2025\nPower BI\n🌶 :beginner-level\n\n\nIntroductory Shiny (session 1)\n14:00-16:00 Wed 15th January 2025\nShiny\n🌶 :beginner-level\n\n\nTableau for beginners (session 1)\n10:00-12:00 Thu 16th January 2025\nTableau\n🌶 :beginner-level"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-12-02.html#events",
-    "href": "ml_archive/KIND_weekly_update_2024-12-02.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2025-01-13.html#events",
+    "href": "ml_archive/KIND_weekly_update_2025-01-13.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n3-4pm, Mon 2nd December 2024. All welcome at the Community Meetup - our regular Monday get-together/webinar/tech demo. Full details and joining links via the community activities channel. The theme this week is building a brand.yml for NHS Scotland. brand.yml is a new and concise way of styling Quarto documents. NHS England have recently produced a template file, and the plan for this week’s community meetup is to spend an hour working together to develop one for Scotland. All welcome, especially non-expert and new R users, because this looks like a great starter project if you’re looking for a first R project with a public component.\n1-2pm, Tue 3rd December 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Nora Villamil Buenrostro - Predictors of DNAs for OP Paediatrics.\nFollow NES Knowledge Service’s 12 days of Christmas on The Knowledge Network for a festive tour of resources! From Monday 2nd until Friday 20th December, they will be showcasing the many gifts NES Knowledge Services give to health and social care staff in Scotland all year round. Check back regularly for each new day"
+    "text": "Events\n1-2pm, Sun 14th January 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Sarah Griffin (NHS Highland) - Census data."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2024-12-02.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2024-12-02.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2025-01-13.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-01-13.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
-    "text": "Book of the week\nMervyn King. 2016. The End of Alchemy: Money, Banking and the Future of the Global Economy.  ISBN 978-1408706114, Worldcat. Colin Smith, an information analyst at NHS GGC writes to recommend this book: ‘A very interesting book from 2016. Not medical but given we’ve another potential round of ’austerity’ on the way, still relevant as to how we run the economy and fund the NHS and public services.’\nUnsubscribe from these emails"
+    "text": "Book of the week\nYaris Varoufakis. 2023. Technofeudalism.  ISBN 978-1529926092, Worldcat. Rita Nogueira, a Senior Information Analyst at NHS Lothian, writes to recommend our Book of the Week: “Together with the older book The Age of Surveillance Capitalism by Shoshana Zubroff. Thinking about how data and the technological companies are shaping the world around us economically and politically is important. Even if you don’t agree with everything Varoufakis says it is an interesting perspective that bears consideration.”\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-01-20.html#week-beginning-mon-27th-january-2025",
-    "href": "ml_archive/KIND_weekly_update_2025-01-20.html#week-beginning-mon-27th-january-2025",
+    "objectID": "ml_archive/KIND_weekly_update_2025-01-27.html#week-beginning-mon-3rd-february-2025",
+    "href": "ml_archive/KIND_weekly_update_2025-01-27.html#week-beginning-mon-3rd-february-2025",
     "title": "KIND network update",
-    "section": "Week beginning Mon 27th January 2025",
-    "text": "Week beginning Mon 27th January 2025\nDear colleagues,\nWelcome to our regular weekly update. Last week we launched a new puzzle of the week segment, with a simple-ish technical puzzle about extracting dates from text. Please keep an eye out for next week’s challenge, which will be about recognising and standardising abbreviations.\nBrendan"
+    "section": "Week beginning Mon 3rd February 2025",
+    "text": "Week beginning Mon 3rd February 2025\nDear colleagues,\nWelcome to an extremely windy KIND network update. Hope you’re keeping safe.\nA retrospective notice of an interesting resource: the Knowledge Network produced an excellent Sway full of resources for health information week. Highly recommended.\nWe’ve also got the first of our 2025 run of community meetup sessions happening next week. That’s kindly been offered by Richard Hassett, a specialist senior prescribing support technician from NHS GGC. He writes:\n\nI have fairly recently been gifted the task of running some R scripting to produce medication adherence visualisations for a number of secondary care consultants working in my health board. It aims to support easy identification of sub-optimal medication adherence and trigger a conversation between clinician and patient…I’d like some help to better understand what it is doing. Through a process of trial and error I can usually resolve but I’m concerned I’m messing things up in the background. Secondly, it seems rather complex and so I wonder if there is scope to simplify or automate more of it…\n\nThis should be an excellent session for R-enthusiasts to come together to support an innovative and useful project. Please consider coming along if you can between 3.30-4.30 next Tuesday.\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-01-20.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2025-01-20.html#wins-of-the-week",
-    "title": "KIND network update",
-    "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community:\n\nManaged to run a dashboard without activating a “rapid unscheduled disassembly” event\nBeen accepted to start a PGCert next week. All hail being a student again!\nI completed a really complicated report using GIS as well as R syntax. Requester was very happy with the result.\nCrafted some custom functions to solve the puzzle of the week every day\n\nWell done all, and looking forward to hearing your wins of the week in future."
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2025-01-20.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2025-01-20.html#training-sessions",
-    "title": "KIND network update",
-    "section": "Training sessions",
-    "text": "Training sessions\nPlease note that we’ve changed the way that our training events are set-up. You should now be able to click the session link to add yourself directly to the session.\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nReferences and names in Excel\n11:00-12:00 Tue 28th January 2025\nExcel\n🌶 :beginner-level\n\n\nR from scratch (session 1)\n14:00-15:00 Tue 28th January 2025\nR\n🌶 :beginner-level\n\n\nBI for beginners (session 3)\n10:00-12:00 Wed 29th January 2025\nPower BI\n🌶 :beginner-level\n\n\nBI for beginners (service version, session 3)\n12:00-14:00 Wed 29th January 2025\nPower BI\n🌶 :beginner-level\n\n\nIntroductory Shiny (session 3)\n14:00-16:00 Wed 29th January 2025\nShiny\n🌶 :beginner-level\n\n\nTableau for beginners (session 3)\n10:00-12:00 Thu 30th January 2025\nTableau\n🌶 :beginner-level\n\n\nIntro to predictive models in R\n13:00-14:30 Thu 30th January 2025\nR\n🌶 :beginner-level"
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2025-01-20.html#events",
-    "href": "ml_archive/KIND_weekly_update_2025-01-20.html#events",
-    "title": "KIND network update",
-    "section": "Events",
-    "text": "Events\n1-2pm, Tue 28th January 2025. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Nora Villamil Buenrostro - Factors impacting on efficient operation of a Day Surgery Unit.25th 01 2815 30.00. The KIND community meetup is our regular social learning event. Next week, the presenter will be Richard Hassett (NHS GGC) - R medication adherence."
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2025-01-20.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2025-01-20.html#book-of-the-week",
-    "title": "KIND network update",
-    "section": "Book of the week",
-    "text": "Book of the week\ncharacter(0). character(0). character(0).  ISBN character(0), Worldcat. character(0)\nUnsubscribe from these emails"
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#week-beginning-mon-10th-february-2025",
-    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#week-beginning-mon-10th-february-2025",
-    "title": "KIND network update",
-    "section": "Week beginning Mon 10th February 2025",
-    "text": "Week beginning Mon 10th February 2025\nDear colleagues,\nWelcome to the regular KIND network update. We have lots of regular training sessions coming up over the next week. You can also get a longer-term overview of what’s on offer from our training mini-site, which has a schedule, supporting materials, and useful resources for our sessions.\nWe’re a couple of weeks away from piloting a new, intermediate-level, Power BI course. More details on that below.\nHope to see you at something soon\nBrendan"
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#new-intermediate-level-power-bi-course",
-    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#new-intermediate-level-power-bi-course",
-    "title": "KIND network update",
-    "section": "New intermediate-level Power BI course",
-    "text": "New intermediate-level Power BI course\nThis is a practical course aimed at people with some prior Power BI experience who are looking to develop and consolidate their skills. It’ll use Power BI Desktop, and will run as five sessions along the following lines (click the session titles to book):\n\nsession 1: a simple build-a-dashboard session as a warmup, reminder about core Power BI techniques, and sharing some suggestions for good workflow practices\nsession 2: DAX language foundations, including FILTER and CALCULATE\nsession 3: core PowerQuery functions to manage sources, join data sets, pivot, and tidy values\nsession 4: PowerQuery M language foundations, including a basic overview of syntax, a core function toolkit, advanced mode, and reproducibility\nsession 5: a second, more ambitious, build-a-dashboard session to put all that PowerQuery and DAX knowledge into practice\n\nThe pilot sessions will run 10-12 on Wednesday mornings from Feb 12th. All those with suitable prior Power BI experience are very welcome. Once we’ve had the benefit of feedback on the pilot, you can expect to see a more polished version of this training running regularly on the network.\nI’d be especially interested in feedback about that overall plan at this stage. Please get in touch with me if you’d be interested in shaping that training."
-  },
-  {
-    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2025-01-27.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-01-27.html#wins-of-the-week",
     "title": "KIND network update",
     "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community:\n\nOwned up to knowing (and then promptly forgetting) about a problem which caused significant delays to my team’s work. Felt bad that it happened, but glad I was honest and admitted my mistake. Have jotted down some reflections to hopefully prevent it from happening again!\nBrought a surveillance system used by our team into the tidyverse and built an automated weekly report in Rmarkdown :)\nI gave a presentation at a national meeting with about 30 minutes preparation, and it went really well.\nI have managed to juggle a busy work schedule, social life, family time, caring responsibilities and made it to Friday with a smile on my face\n\nWell done all, and looking forward to hearing your wins of the week in future."
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community:\n\nI was awarded Level 2 Digital Champion!\nSince successfully testing our first ever published PowerBI dashboard last week we’ve added another 4 this week, dramatically reducing the burden of work that would otherwise have gone into producing regular analysis packs.\nSuccessfully implemented a change in work which included upscaling and altering project methods…without a single complaint from staff\nI was asked to estimate how much data our dataset is missing(!) and was able to devise a methodology that has limited validity but can help to inform the impact it has had on our outputs.\n\nWell done all, and looking forward to hearing your wins of the week in future."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#training-sessions",
+    "objectID": "ml_archive/KIND_weekly_update_2025-01-27.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2025-01-27.html#training-sessions",
     "title": "KIND network update",
     "section": "Training sessions",
-    "text": "Training sessions\nClick the link to book yourself into the session.\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nMailing lists in Power Automate\n09:30-10:30 Tue 11th February 2025\nData\n🌶 :beginner-level\n\n\nExcel tables\n11:00-12:00 Tue 11th February 2025\nExcel\n🌶 :beginner-level\n\n\nR from scratch (session 3)\n14:00-15:00 Tue 11th February 2025\nR\n🌶 :beginner-level\n\n\nIntermediate Power BI (session 1)\n10:00-12:00 Wed 12th February 2025\nPower BI\n🌶🌶: intermediate-level\n\n\nShiny from scratch\n09:30-11:30 Thu 13th February 2025\nShiny\n🌶 :beginner-level\n\n\nIntroductory Shiny (session 5)\n13:00-15:00 Thu 13th February 2025\nShiny\n🌶 :beginner-level"
+    "text": "Training sessions\nClick the link to book yourself into the session.\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nR in Power BI\n09:30-10:30 Tue 4th February 2025\nPower BI / R\n🌶🌶: intermediate-level\n\n\nExcel formatting\n11:00-12:00 Tue 4th February 2025\nExcel\n🌶 :beginner-level\n\n\nR from scratch (session 2)\n14:00-15:00 Tue 4th February 2025\nR\n🌶 :beginner-level\n\n\nBI for beginners (session 4)\n10:00-12:00 Wed 5th February 2025\nPower BI\n🌶 :beginner-level\n\n\nBI for beginners (service version, session 4)\n11:30-13:30 Wed 5th February 2025\nPower BI\n🌶 :beginner-level\n\n\nTableau for beginners (session 4)\n10:00-12:00 Thu 6th February 2025\nTableau\n🌶 :beginner-level\n\n\nIntroductory Shiny (session 4)\n13:00-15:00 Thu 6th February 2025\nShiny\n🌶 :beginner-level"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#events",
-    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2025-01-27.html#events",
+    "href": "ml_archive/KIND_weekly_update_2025-01-27.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\n\n1-2pm, Sun 4th February 2024. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Josie Evans, Helen Gadegaard, Sophie Heaton (PHS) - CARI - Community Acute Respiratory Infection surveillance."
+    "text": "Events\n\n1-2pm, Tue 4th February 2025. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be Josie Evans, Helen Gadegaard, Sophie Heaton - CARI.\n3.30-4.30pm, Thu 6th February 2025. The KIND community meetup is our regular social learning event. Next week, the presenter will be Catriona Scott (NHS Lothian) - The pins package."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-02-03.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2025-02-03.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2025-01-27.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-01-27.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
     "text": "Book of the week\ncharacter(0). character(0). character(0).  ISBN character(0), Worldcat. character(0)\nUnsubscribe from these emails"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-02-17.html#week-beginning-mon-24th-february-2025",
-    "href": "ml_archive/KIND_weekly_update_2025-02-17.html#week-beginning-mon-24th-february-2025",
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-10.html#week-beginning-mon-17th-february-2025",
+    "href": "ml_archive/KIND_weekly_update_2025-02-10.html#week-beginning-mon-17th-february-2025",
     "title": "KIND network update",
-    "section": "Week beginning Mon 24th February 2025",
-    "text": "Week beginning Mon 24th February 2025\nDear colleagues,\nWelcome to the regular KIND network update. We’ve got two community meetup sessions running this week, so look forward to seeing you at one or other of them. We’re also starting the first session of our intermediate-level Excel training course, which is designed to help those with some prior Excel experience build and consolidate their skills. That’s running 1.00-2.30pm Wednesdays over the next five weeks - please follow this link to register for the first session.\nHope to see you at something soon.\nBrendan"
+    "section": "Week beginning Mon 17th February 2025",
+    "text": "Week beginning Mon 17th February 2025\nDear colleagues,\nWelcome to the regular KIND network update. Again, lots of training sessions underway this week. Please see our training mini-site for full details and resources.\nHope to see you at something soon\nBrendan"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-02-17.html#wins-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2025-02-17.html#wins-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-10.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-02-10.html#wins-of-the-week",
     "title": "KIND network update",
     "section": "Wins of The Week",
-    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community:\n\nAfter slight procrastination, I started on our new intranet page and it’s almost completed, It’s looking quite good although I say so myself\nTook part in my first KIND training session on Power BI\nGot several tricky reports finished (or at least off my desk for the moment). In non-work related things, successful soup-making experiments. (The curried butternut squash, sweet potato and lentil was particularly nice.)\nI shared an idea I have had for a while that colleagues have responded well too and its gaining traction\n\nWell done all, and looking forward to hearing your wins of the week in future."
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community:\n\nApplied for a promoted post and have been selected for interview - even if I am not the successful candidate - applying for a new role is way outside my comfort zone, so being shortlisted feels like a huge win.\nI received good feedback from a senior manager on a dashboard I worked hard on.\nLed a session on measurement and developing measurement plans and it was well received! Fells like a big win :-)\nManaged to fix number and percentage formats on a monthly spreadsheet following learning at this weeks Excel session, straight forward when you know how it works :)\n\nWell done all, and looking forward to hearing your wins of the week in future."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-02-17.html#training-sessions",
-    "href": "ml_archive/KIND_weekly_update_2025-02-17.html#training-sessions",
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-10.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2025-02-10.html#training-sessions",
     "title": "KIND network update",
     "section": "Training sessions",
-    "text": "Training sessions\nClick the link to book yourself into the session.\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nConditions in Power Automate\n09:30-11:30 Tue 25th February 2025\nData\n🌶🌶: intermediate-level\n\n\nEffective writing tips and tricks\n11:00-12:00 Tue 25th February 2025\nSkills\n🌶🌶: intermediate-level\n\n\nR from scratch (session 5)\n14:00-15:00 Tue 25th February 2025\nR\n🌶 :beginner-level\n\n\nIntermediate Power BI (session 3)\n10:00-12:00 Wed 26th February 2025\nPower BI\n🌶🌶: intermediate-level\n\n\nExcel foundations 2\n13:00-14:30 Wed 26th February 2025\nExcel\n🌶🌶: intermediate-level\n\n\nIntermediate Shiny (session 2)\n10:00-12:00 Thu 27th February 2025\nShiny\n🌶🌶: intermediate-level"
+    "text": "Training sessions\nClick the link to book yourself into the session.\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nScope of the possible with Power BI\n09:30-10:30 Tue 18th February 2025\nPower BI\n💼: non-technical\n\n\nExcel formulas\n11:00-12:00 Tue 18th February 2025\nExcel\n🌶 :beginner-level\n\n\nR from scratch (session 4)\n14:00-15:00 Tue 18th February 2025\nR\n🌶 :beginner-level\n\n\nIntermediate Power BI (session 2)\n10:00-12:00 Wed 19th February 2025\nPower BI\n🌶🌶: intermediate-level\n\n\nExcel foundations 1\n13:00-14:30 Wed 19th February 2025\nExcel\n🌶🌶: intermediate-level\n\n\nIntermediate Shiny (session 1)\n10:00-12:00 Thu 20th February 2025\nShiny\n🌶🌶: intermediate-level"
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-02-17.html#events",
-    "href": "ml_archive/KIND_weekly_update_2025-02-17.html#events",
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-10.html#events",
+    "href": "ml_archive/KIND_weekly_update_2025-02-10.html#events",
     "title": "KIND network update",
     "section": "Events",
-    "text": "Events\nA pair of community meetup sessions for your enjoyment this week. Please click the links to register for the sessions."
+    "text": "Events\n\n3.30-4.30pm, Wed 19th February 2025. The KIND community meetup is our regular social learning event. Next week, the presenter will be Deborah Calvin (NHS Lothian), discussing Getting started with MongoDB/noSQL, which is a way of efficiently sharing data in R. Click the link to register, and hope to see you there.\nwe’re running our R beginner’s club next week 3-4pm, Thursday 13th Feb. That’s some social time for beginners to review their code, get unstuck, and pick up some tips and tricks. Please follow this link to join us."
   },
   {
-    "objectID": "ml_archive/KIND_weekly_update_2025-02-17.html#book-of-the-week",
-    "href": "ml_archive/KIND_weekly_update_2025-02-17.html#book-of-the-week",
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-10.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-02-10.html#book-of-the-week",
     "title": "KIND network update",
     "section": "Book of the week",
     "text": "Book of the week\ncharacter(0). character(0). character(0).  ISBN character(0), Worldcat. character(0)\nUnsubscribe from these emails"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-24.html#week-beginning-mon-17th-march-2025",
+    "href": "ml_archive/KIND_weekly_update_2025-02-24.html#week-beginning-mon-17th-march-2025",
+    "title": "KIND network update",
+    "section": "Week beginning Mon 17th March 2025",
+    "text": "Week beginning Mon 17th March 2025\nDear colleagues,\nWelcome to the regular KIND network update. I’m starting to schedule the next batch of training dates, so here are some save-the-dates for your calendar:\n\nExcel for beginners, six weekly sessions running Wednesdays 1-2pm from April 23rd - May 28th\nIntermediate Excel, five weekly sessions running Tuesdays 10-11.30am from April 22nd - May 20th\nPower BI for beginners, four weekly sessions running Thursdays 1-2.30pm from April 24th - May 15th\n\nYou can expect to see a proper announcement with booking links etc for those sessions over the next week or so on the KIND network Teams channel.\nHope to see you at something soon.\nBrendan"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-24.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-02-24.html#wins-of-the-week",
+    "title": "KIND network update",
+    "section": "Wins of The Week",
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community:\n\nFinally managed to concentrate on a task I’ve had on my list since August\nWas asked to support an extensive audit of Programme Assurance documentation - painstaking but rewarding. And what was once a workstream that gave me the fear - I actually really enjoyed it\nI had the fun task of making training videos this week, I used the ‘video project’ tool within clipchamp on MS Stream and it was surprisingly painless. The trainers were happy with them!\nI was able to build an SSRS report with a drill through capability and also with KPI Score Cards\n\nWell done all, and looking forward to hearing your wins of the week in future."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-24.html#training-sessions",
+    "href": "ml_archive/KIND_weekly_update_2025-02-24.html#training-sessions",
+    "title": "KIND network update",
+    "section": "Training sessions",
+    "text": "Training sessions\nClick the link to book yourself into the session.\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nPivot tables and pivot charts\n13:00-14:30 Wed 19th March 2025\nExcel\n🌶🌶: intermediate-level"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-02-24.html#book-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-02-24.html#book-of-the-week",
+    "title": "KIND network update",
+    "section": "Book of the week",
+    "text": "Book of the week\ncharacter(0). character(0). character(0).  ISBN character(0), Worldcat. character(0)\nUnsubscribe from these emails"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-03-10.html#week-beginning-mon-17th-march-2025",
+    "href": "ml_archive/KIND_weekly_update_2025-03-10.html#week-beginning-mon-17th-march-2025",
+    "title": "KIND network update",
+    "section": "Week beginning Mon 17th March 2025",
+    "text": "Week beginning Mon 17th March 2025\nDear colleagues,\nI’m pleased to announce that we’ve now got the beginnings of a schedule for Power Automate week, which can be found below. I’d also like to announce another week of dates to save:\nSave another date - data literacy week, 14th April to 17th April 2025. That’ll be (almost) a week dedicated to sessions about core data skills and knowledge. More information on that over the coming weeks.\nBrendan"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-03-10.html#power-automate-week-plan",
+    "href": "ml_archive/KIND_weekly_update_2025-03-10.html#power-automate-week-plan",
+    "title": "KIND network update",
+    "section": "Power Automate week plan",
+    "text": "Power Automate week plan\nWe’re running a network-wide Microsoft Power Automate week between 31st March and 4th April. The current iteration of that plan includes:\n\nTraining sessions\n\nScope of the possible with Power Automate - Monday 31st March 10.00-11.00\nIntroduction to Power Automate - Monday 31st March 15.00-16.00\nConditions in Power Automate - Tuesday 1st April 13.30-15.30\nMailing lists in Power Automate - Wednesday 2nd April 14.00-16.00\n\n\n\nSupport group\nSessions for mutual aid, sharing best practice, and ideas to support Power Automate projects. These are level-based, so over the week you can register for:\n\n“I’ve never built a flow” - Tuesday 1st April 10.00-11.00\n“I’m a beginner” - Wednesday 2nd April 11.00-12.00\n“I’m beyond the beginner-level” - Thursday 3rd April 11.30-12.30\n\n\n\nProject presentations\nPresentations from members of the network. There are more to come of these, and please get in touch if you’d like to show your Power Automate work - it definitely doesn’t need to be elaborate or fancy to be important and interesting.\n\nPauline Russell (NSS) - customer supply notification process using Excel, and potentially something else…, Thursday 3rd April 10.00-11.00\nKirstin Crawford (NES) - DLP signup process, Thursday 3rd April 13.00-14.00\nDuncan Sage (PHS) - List workplans, Friday 4th April 13.00-14.00"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-03-10.html#wins-of-the-week",
+    "href": "ml_archive/KIND_weekly_update_2025-03-10.html#wins-of-the-week",
+    "title": "KIND network update",
+    "section": "Wins of The Week",
+    "text": "Wins of The Week\nIn the spirit of #IAmRemarkable, we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community:\n\nDiscovered the Spreadsheet Compare Tool which was a revelation!\nA Friday win - combining multiple Excel Worksheets into a single worksheet with Power Query. I did need a YouTube video to set me on the right path though :)\nGetting to grips with my job role after a period of illness. Although i know I should do this, I have to remind myself to take breaks. I even put an alarm on!\nDespite being a ridiculously busy week and getting pulled in a million different directions, I’ve somehow managed to keep on top of everything, and gotten so much done! (had a minor goof today though, been rushing to get work done before a meeting “this afternoon,” but uh… turns out it’s next week 🤣 (so relieved for the extra week, not gonna lie!))\n\nWell done all, and looking forward to hearing your wins of the week in future."
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-03-10.html#training-sessions-1",
+    "href": "ml_archive/KIND_weekly_update_2025-03-10.html#training-sessions-1",
+    "title": "KIND network update",
+    "section": "Training sessions",
+    "text": "Training sessions\nClick the link to book yourself into the session.\n\n\n\nSession\nDate\nArea\nLevel\n\n\n\n\nPivot tables and pivot charts\n13:00-14:30 Wed 19th March 2025\nExcel\n🌶🌶: intermediate-level"
+  },
+  {
+    "objectID": "ml_archive/KIND_weekly_update_2025-03-10.html#forthcoming-events",
+    "href": "ml_archive/KIND_weekly_update_2025-03-10.html#forthcoming-events",
+    "title": "KIND network update",
+    "section": "Forthcoming events",
+    "text": "Forthcoming events\n\nthe next SCODAS meeting is an update on the proposed DDaT NHS Boards pilot by Alan Milbourne (Scottish Government) and Paula Baird (NES). Tuesday 18th March 1.00-2.00pm - SCODAS Teams joining link\nGlasgow Caledonian University are coming to the KIND network to update on their AI and Data Science BSc apprenticeship programme. Wednesday 19th March 3.00-4.00pm - registration link\nNES Knowledge Services are running another of their excellent lunch and learn sessions - getting the best from your digital library account. Tuesday 25th March 1.00-1.45pm - registration link\n\n\n\n\n\n\n\n\n\n\n\n\nUnsubscribe from these emails"
   },
   {
     "objectID": "r.html",
