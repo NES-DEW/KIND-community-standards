@@ -1,0 +1,186 @@
+---
+title: "KIND network update"
+format: html
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false
+  message: false
+---
+
+```{r}
+#| include: false
+# keep quarto happy - don't have a verbatim chunk first
+source(here::here("R/nice_date.R"))
+source(here::here("R/bullet_list.R"))
+source(here::here("R/mail_training_sessions.R"))
+
+```
+
+```{=html}
+<img src="https://i.imgur.com/iJIRbhV.png" alt = "KIND logo" height="150">
+```
+
+```{r}
+#| include: false
+
+next_week_start <- lubridate::ceiling_date(lubridate::today(), unit = "week", week_start = 1)
+
+next_week_end <- next_week_start + lubridate::weeks(1)
+
+# scodas <- readxl::read_excel("C:/Users/brendancl/NHS Scotland/SCODAS - SCODAS oversight group - SCODAS oversight group/Schedule/SCODAS Schedule and Future Topics.xlsx") |>
+#   dplyr::filter(Date >= next_week_start) |>
+#   dplyr::filter(Date < next_week_end)
+
+# scodas <- dplyr::tibble(Date = c("2024-02-04"),
+#   Topic = c("CARI - Community Acute Respiratory Infection surveillance"),
+#   Presenter = c("Josie Evans, Helen Gadegaard,  Sophie Heaton (PHS)"),
+#   `Contact Details` = c("josie.evans@phs.scot"))
+
+kcm_full <- readr::read_csv(
+  "https://raw.githubusercontent.com/NES-DEW/KIND-community-standards/main/data/KIND_community_meetups.csv"
+) |>
+  dplyr::mutate(Date = lubridate::dmy_hm(Date)) |>
+  dplyr::filter(Date >= next_week_start) |>
+  dplyr::filter(Date < next_week_end)
+
+
+
+```
+
+## Week beginning `r nice_date(next_week_start)`
+
+Dear colleagues, 
+
+I'm pleased to announce that we've now got the beginnings of a schedule for Power Automate week, which can be found below. I'd also like to announce another week of dates to save:
+
+**Save another date** - data literacy week, 14th April to 17th April 2025. That'll be (almost) a week dedicated to sessions about core data skills and knowledge. More information on that over the coming weeks.
+
+Brendan
+
+---
+
+## Power Automate week plan
+
+We're running a network-wide [Microsoft Power Automate](https://www.microsoft.com/en-gb/power-platform/products/power-automate) week between 31st March and 4th April. The current iteration of that plan includes:
+
+### Training sessions
+
++ [Scope of the possible with Power Automate](https://events.teams.microsoft.com/event/097b9b2e-29c7-4140-ba0f-b4adc419d9e1@10efe0bd-a030-4bca-809c-b5e6745e499a) - Monday 31st March 10.00-11.00
++ [Introduction to Power Automate](https://events.teams.microsoft.com/event/69591eaf-5246-409d-ba71-2d11266e083e@10efe0bd-a030-4bca-809c-b5e6745e499a) - Monday 31st March 15.00-16.00
++ [Conditions in Power Automate](https://events.teams.microsoft.com/event/70a5bee4-7bec-48e3-bffb-fbb0815554ad@10efe0bd-a030-4bca-809c-b5e6745e499a) - Tuesday 1st April 13.30-15.30
++ [Mailing lists in Power Automate](https://events.teams.microsoft.com/event/020db29d-bf5d-4018-b2a4-0d95f1878ed4@10efe0bd-a030-4bca-809c-b5e6745e499a) - Wednesday 2nd April 14.00-16.00
+
+
+### Support group
+Sessions for mutual aid, sharing best practice, and ideas to support Power Automate projects. These are level-based, so over the week you can register for:
+
++ ["I've never built a flow"](https://events.teams.microsoft.com/event/9901a287-c34f-4c98-8b44-e1db8923a830@10efe0bd-a030-4bca-809c-b5e6745e499a) - Tuesday 1st April 10.00-11.00
++ ["I'm a beginner"](https://events.teams.microsoft.com/event/2889a142-c9e8-494d-b874-1bc3e17c66ef@10efe0bd-a030-4bca-809c-b5e6745e499a) - Wednesday 2nd April 11.00-12.00
++ ["I'm beyond the beginner-level"](https://events.teams.microsoft.com/event/89c69240-ffef-40f8-9550-bae3b8078337@10efe0bd-a030-4bca-809c-b5e6745e499a) - Thursday 3rd April 11.30-12.30
+
+### Project presentations
+
+Presentations from members of the network. There are more to come of these, and please get in touch if you'd like to show your Power Automate work - it definitely doesn't need to be elaborate or fancy to be important and interesting.
+
++ [Pauline Russell (NSS) - customer supply notification process using Excel, and potentially something else...](https://events.teams.microsoft.com/event/8b6622f1-7bd1-4523-bc99-1f9dcc140c00@10efe0bd-a030-4bca-809c-b5e6745e499a), Thursday 3rd April 10.00-11.00
++ [Kirstin Crawford (NES) - DLP signup process](https://events.teams.microsoft.com/event/ff0fc672-0301-45bb-81e1-77bf38103689@10efe0bd-a030-4bca-809c-b5e6745e499a), Thursday 3rd April 13.00-14.00
++ [Duncan Sage (PHS) - List workplans](https://events.teams.microsoft.com/event/7822afa9-38b0-43b0-907a-55b43a59f067@10efe0bd-a030-4bca-809c-b5e6745e499a), Friday 4th April 13.00-14.00
+
+
+
+---
+
+## Wins of The Week
+In the spirit of [#IAmRemarkable](https://www.rmrkblty.org/iamremarkable), we do a weekly wins of the week thread to celebrate the professional (and personal) achievements of the community:
+
++ Discovered the Spreadsheet Compare Tool which was a revelation!
++ A Friday win - combining multiple Excel Worksheets into a single worksheet with Power Query. I did need a YouTube video to set me on the right path though :)
++ Getting to grips with my job role after a period of illness. Although i know I should do this, I have to remind myself to take breaks. I even put an alarm on!
++ Despite being a ridiculously busy week and getting pulled in a million different directions, I've somehow managed to keep on top of everything, and gotten so much done! (had a minor goof today though, been rushing to get work done before a meeting "this afternoon," but uh... turns out it's next week 🤣 (so relieved for the extra week, not gonna lie!))
+
+Well done all, and looking forward to [hearing your wins of the week](https://forms.office.com/e/8DgpNP6rcK) in future.
+
+---
+
+## Training sessions
+
+Click the link to book yourself into the session.
+
+```{r}
+#| results: asis
+#| message: false
+# highlight item
+
+##### CONSIDER looking at html-table-processing quarto option to get html tables to behave
+
+mail_training_sessions(start_date = paste0(next_week_start), end_date =   paste0(next_week_end)) |>
+  dplyr::mutate(Level = stringr::str_replace_all(Level, "<style='color:red'>", "")) |>
+  knitr::kable(format = "html", escape = F) |>
+  kableExtra::column_spec(1, width_max = "18em")
+
+```
+
+## Forthcoming events
+
++ the next SCODAS meeting is an update on the proposed [DDaT](https://www.gov.scot/policies/digital/digital-data-technology-profession/) NHS Boards pilot by	Alan Milbourne (Scottish Government) and Paula Baird (NES). Tuesday 18th March 1.00-2.00pm - [SCODAS Teams joining link](https://teams.microsoft.com/l/team/19%3A40ba3985b4be4ea5850c4350dab12e6e%40thread.tacv2/conversations?groupId=3603c513-27b3-4918-a31a-03f63131b486&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a)
++ Glasgow Caledonian University are coming to the KIND network to update on their AI and Data Science BSc apprenticeship programme. Wednesday 19th March 3.00-4.00pm - [registration link](https://events.teams.microsoft.com/event/49ba4572-9856-4a10-b92d-dd2f9d9095e1@10efe0bd-a030-4bca-809c-b5e6745e499a) 
++ NES Knowledge Services are running another of their excellent lunch and learn sessions - getting the best from your digital library account. Tuesday 25th March 1.00-1.45pm - [registration link](https://learn.nes.nhs.scot/80989)
+
+
+
+
+<!-- A pair of community meetup sessions for your enjoyment this week. Please click the links to register for the sessions. -->
+
+```{r}
+#| results: asis
+#| echo: false
+
+# if(nrow(scodas) > 0){
+#   bullet_list(glue::glue("1-2pm, {nice_date(lubridate::as_date(scodas$Date))}. The Scottish Community of Data Analysts is a community of practice for those working with data in territorial NHS Boards. Next week, the presenter will be [{scodas$Presenter} - {scodas$Topic}](https://teams.microsoft.com/l/meetup-join/19%3a109a603c446743308bff6588820372a9%40thread.tacv2/1671457631308?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%2284150c3d-baed-4515-8eee-8f13ed0d9650%22%7d)."))
+# }
+
+# kcm <- kcm_full |> dplyr::slice(1)
+# 
+# if(nrow(kcm) > 0){
+#   bullet_list(glue::glue("3.00-4.00pm, {nice_date(lubridate::as_date(kcm$Date))}. The KIND community meetup is our regular social learning event. Next week, the presenter will be {kcm$Speaker}, talking about their introduction to non-relational databases: [{kcm$Title}]({kcm$Link})."))
+# }
+
+# kcm <- kcm_full |> dplyr::slice(2)
+# 
+# if(nrow(kcm) > 0){
+#   bullet_list(glue::glue("3.00-4.00pm, {nice_date(lubridate::as_date(kcm$Date))}. The KIND community meetup is our regular social learning event. Next week, the presenter will be {kcm$Speaker}, talking about an innovative finance project: [{kcm$Title}]({kcm$Link})."))
+# }
+
+```
+
+<!-- + we're running our R beginner's club next week 3-4pm, Thursday 13th Feb. That's some social time for beginners to review their code, get unstuck, and pick up some tips and tricks. Please follow [this link to join us](https://teams.microsoft.com/l/meetup-join/19%3ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2/1725260923641?context=%7b%22Tid%22%3a%2210efe0bd-a030-4bca-809c-b5e6745e499a%22%2c%22Oid%22%3a%225d92fd7e-56b9-4892-ab77-84ad75c260a0%22%7d). -->
+
+<!-- ## Book of the week -->
+
+<!-- ```{r} -->
+<!-- #| results: asis -->
+<!-- #| echo: false -->
+<!-- #| message: false -->
+<!-- botw_slug <- readr::read_csv("https://raw.githubusercontent.com/NES-DEW/KIND-community-standards/main/data/KIND_book_of_the_week.csv") |> -->
+<!--   dplyr::filter(lubridate::dmy(Date) > (next_week_start - lubridate::days(7))) -->
+
+<!-- cat(glue::glue("{botw_slug[2]}. {botw_slug[3]}. *{botw_slug[4]}*. </br> ISBN {botw_slug[5]}, <a href='{botw_slug[6]}'>Worldcat</a>.</br></br> {botw_slug[8]}")) -->
+<!-- ``` -->
+
+[Unsubscribe from these emails](https://forms.office.com/r/t97cZDiw7y)
+
+```{r}
+#| include: false
+# remember to add <img src="https://i.imgur.com/toWVmg2.png" alt = "KIND logo">
+
+# script to copy content to archive
+new_path <- paste0("C:\\Users\\brendancl\\not_od\\KIND-community-standards\\ml_archive\\KIND_weekly_update_",
+       next_week_start,
+       ".qmd")
+
+file.copy("./KIND_weekly_content.qmd",
+          to = new_path,
+          overwrite = T)
+
+```

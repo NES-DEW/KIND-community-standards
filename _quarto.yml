@@ -26,6 +26,8 @@ website:
             text: Visio
       - text: Community activities
         menu:
+          - href: kind_power_automate_week.qmd
+            text: 🆕 Power Automate week
           - href: rreadgr.qmd
             text: R reading group
           - href: kind_cms.qmd
@@ -33,7 +35,7 @@ website:
           - href: unconf_2024.qmd
             text: Unconference 2024
           - href: question_bank.qmd
-            text: 🆕 Practice interview questions
+            text: Practice interview questions
       - text: R beginner's club
         menu: 
           - href: rbc/about.qmd
