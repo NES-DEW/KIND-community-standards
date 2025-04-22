@@ -19,15 +19,23 @@ These are our main weekly social learning activity. They're usually a slightly c
 
 ## Current community meetup schedule
 ```{r}
-options(knitr.kable.NA = '')
+# options(knitr.kable.NA = '')
+
+source("R/nice_date.R")
 
 readr::read_csv("data/KIND_community_meetups.csv") |>
   dplyr::mutate(Date = lubridate::as_date(date)) |>
   dplyr::arrange(Date) |>
   dplyr::filter(Date >= lubridate::today() & !is.na(Date)) |> 
   dplyr::mutate(Title = paste0("<a href='", link, "'>", friendly_title , "</a>")) |>
-  dplyr::select(Date, `Signup link` = Title, description) |>
-  knitr::kable(caption = "Current community meetup schedule")
+  dplyr::select(Date, `Signup link` = Title, description, date) |>
+  dplyr::arrange(Date) |>
+  dplyr::mutate(Date = nice_date(date)) |>
+  dplyr::select(-date) |>
+  DT::datatable(filter = "top", escape = F)
+  # knitr::kable(caption = "Current community meetup schedule")
+  
+
 ```
 
 
