@@ -27,7 +27,7 @@ website:
       - text: Community activities
         menu:
           - href: kind_power_automate_week.qmd
-            text: 🆕 Power Automate week
+            text: Power Automate week
           - href: rreadgr.qmd
             text: R reading group
           - href: kind_cms.qmd
