@@ -1,0 +1,9 @@
+# Theme weeks
+
+Theme weeks occupy a whole week with a single topic, with 10-20 events scheduled on the topic. This year, we'll run theme weeks as follows:
+
++ w/c 31st March - [Power Automate](kind_power_automate_week.qmd)
++ w/c 19th May 2025 - Power Query
++ w/c 30th June 2025 - Debugging/Troubleshooting
++ w/c 25th August 2025 - Open Source / copyleft
++ w/c 27th October 2025 - No Stupid Questions

@@ -20,36 +20,16 @@ website:
             text: R
           - href: data_collection.qmd
             text: Data collection (draft)
-      - text: Sample SOPs
-        menu:
-          - href: visio.qmd
-            text: Visio
       - text: Community activities
         menu:
-          - href: kind_power_automate_week.qmd
-            text: Power Automate week
           - href: rreadgr.qmd
             text: R reading group
           - href: kind_cms.qmd
             text: Community meetups
-          - href: unconf_2024.qmd
-            text: Unconference 2024
+          - href: unconf_2025.qmd
+            text: Unconference 2025
           - href: question_bank.qmd
             text: Practice interview questions
-      - text: R beginner's club
-        menu: 
-          - href: rbc/about.qmd
-            text: about
-          - href: rbc/2024-06-13.qmd
-            text: 2024-06-13
-          - href: rbc/2024-09-12.qmd
-            text: 2024-09-12
-          - href: rbc/2024-10-10.qmd
-            text: 2024-10-10
-          - href: rbc/2024-12-12.qmd
-            text: 2024-12-12
-          - href: rbc/2025-01-09.qmd
-            text: 2025-01-09
       - text: KIND FAQ
         menu:
           - href: faq.qmd
@@ -58,10 +38,24 @@ website:
             text: How to ask the network for help
       - href: mentoring.qmd
         text: Mentoring scheme
-      - href: kind_botw.qmd
-        text: Book of the week
-      - href: ml_archive.qmd
-        text: Mailing list archive
+      - text: Theme weeks
+        menu:
+            - href: theme_weeks.qmd
+              text: Schedule
+            - href: kind_power_automate_week.qmd
+              text: Power Automate week
+      - text: Archive
+        menu:
+          - href: visio.qmd
+            text: Visio SOP
+          - href: unconf_2024.qmd
+            text: Unconference 2024
+          - href: kind_botw.qmd
+            text: Book of the week
+          - href: ml_archive.qmd
+            text: Mailing list archive
+          - href: rbc/about.qmd
+            text: R beginner's club
     tools:
     - icon: github
       menu:
