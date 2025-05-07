@@ -44,6 +44,8 @@ website:
               text: Schedule
             - href: kind_power_automate_week.qmd
               text: Power Automate week
+            - href: kind_power_query_week.qmd
+              text: 🆕 Power Query week
       - text: Archive
         menu:
           - href: visio.qmd
