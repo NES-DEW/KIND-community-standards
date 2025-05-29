@@ -4,9 +4,10 @@ title: "R reading group"
 
 ## About 
 
-This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users.
+This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users. The current theme is Silge and Robinson's *Text Mining with R* ([online](https://www.tidytextmining.com/tidytext)), and there's a repository of code snippets and notes at [https://github.com/NES-DEW/R-text-mining](https://github.com/NES-DEW/R-text-mining).
 
-## Schedule
+
+## Previous sessions
 
 + Thursday, 3-4pm BST, 26th September 2024
     + **reading:** [chapter 2 of Advanced R on names and values](https://adv-r.hadley.nz/names-values.html)
