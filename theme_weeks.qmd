@@ -5,5 +5,5 @@ Theme weeks occupy a whole week with a single topic, with 10-20 events scheduled
 + w/c 31st March - [Power Automate](kind_power_automate_week.qmd)
 + w/c 19th May 2025 - [Power Query](kind_power_query_week.qmd)
 + w/c 30th June 2025 - [Troubleshooting](kind_troubleshooting_week.qmd)
-+ w/c 25th August 2025 - Open Source / copyleft
-+ w/c 27th October 2025 - No Stupid Questions
++ w/c 25th August 2025 - No Stupid Questions
++ w/c 27th October 2025 - Open Source / copyleft
