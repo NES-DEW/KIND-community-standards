@@ -4,8 +4,9 @@ title: "R reading group"
 
 ## About 
 
-This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users. The current theme is Silge and Robinson's *Text Mining with R* ([online](https://www.tidytextmining.com/tidytext)), and there's a repository of code snippets and notes at [https://github.com/NES-DEW/R-text-mining](https://github.com/NES-DEW/R-text-mining).
+This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users. The current book is Lovelace, Nowosad and Muenchow 2025 *Geocomputation with R* ([free-to-access online version](https://r.geocompx.org/)).
 
+Code snippets and notes can be found [on the repository](https://github.com/NES-DEW/KIND-R-reading-group)
 
 ## Previous sessions
 
@@ -17,4 +18,6 @@ This is a monthly hour-and-a-bit of informal chat about a reading of interest. A
     + [notes](rrg/rrg_2024-11-24.qmd)
 + Thursday, 3-4pm GMT, 19th December 2024
     + **reading:** [chapter 4 of Advanced R on subsetting](https://adv-r.hadley.nz/subsetting.html)
++ April - June 2025: Silge and Robinson's *Text Mining with R* ([online](https://www.tidytextmining.com/tidytext)), and there's a repository of code snippets and notes at [https://github.com/NES-DEW/R-text-mining](https://github.com/NES-DEW/R-text-mining)    
+
 
