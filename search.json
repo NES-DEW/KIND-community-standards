@@ -116,21 +116,21 @@
     "href": "rreadgr.html",
     "title": "R reading group",
     "section": "",
-    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users. The current theme is Silge and Robinson’s Text Mining with R (online), and there’s a repository of code snippets and notes at https://github.com/NES-DEW/R-text-mining."
+    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users. The current book is Lovelace, Nowosad and Muenchow 2025 Geocomputation with R (free-to-access online version).\nCode snippets and notes can be found on the repository"
   },
   {
     "objectID": "rreadgr.html#about",
     "href": "rreadgr.html#about",
     "title": "R reading group",
     "section": "",
-    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users. The current theme is Silge and Robinson’s Text Mining with R (online), and there’s a repository of code snippets and notes at https://github.com/NES-DEW/R-text-mining."
+    "text": "This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users. The current book is Lovelace, Nowosad and Muenchow 2025 Geocomputation with R (free-to-access online version).\nCode snippets and notes can be found on the repository"
   },
   {
     "objectID": "rreadgr.html#previous-sessions",
     "href": "rreadgr.html#previous-sessions",
     "title": "R reading group",
     "section": "Previous sessions",
-    "text": "Previous sessions\n\nThursday, 3-4pm BST, 26th September 2024\n\nreading: chapter 2 of Advanced R on names and values\nnotes\n\nThursday, 3-4pm GMT, 21st November 2024\n\nreading: chapter 3 of Advanced R on vectors\nnotes\n\nThursday, 3-4pm GMT, 19th December 2024\n\nreading: chapter 4 of Advanced R on subsetting"
+    "text": "Previous sessions\n\nThursday, 3-4pm BST, 26th September 2024\n\nreading: chapter 2 of Advanced R on names and values\nnotes\n\nThursday, 3-4pm GMT, 21st November 2024\n\nreading: chapter 3 of Advanced R on vectors\nnotes\n\nThursday, 3-4pm GMT, 19th December 2024\n\nreading: chapter 4 of Advanced R on subsetting\n\nApril - June 2025: Silge and Robinson’s Text Mining with R (online), and there’s a repository of code snippets and notes at https://github.com/NES-DEW/R-text-mining"
   },
   {
     "objectID": "rbc/2025-01-09.html",
