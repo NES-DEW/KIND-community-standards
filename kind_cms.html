@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke">
-<meta name="dcterms.date" content="2025-09-12">
+<meta name="dcterms.date" content="2025-09-22">
 
 <title>KIND community meetups – KIND resources</title>
 <style>
@@ -37,18 +37,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-befe23ebd2f54d8af2c8a89d1a1611f1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b651517ce65839d647a86e2780455cfb.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d68be38d83eca2bb035acf846ffba811.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-6afab9c3bf6556c536f2e34ed27c5dd0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-d68be38d83eca2bb035acf846ffba811.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-1713c1db1ad41a796903378fc9ac7b2b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-bc1329a5d30e5fe94f050c11d12d678e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-1713c1db1ad41a796903378fc9ac7b2b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -134,7 +135,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -323,7 +324,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./![](/src/images/KLN_banner_v05_125.png)" alt="" class="navbar-logo">
+    <img src="./![](/src/images/KLN_banner_v05_125.png)" alt="" class="navbar-logo light-content">
+    <img src="./![](/src/images/KLN_banner_v05_125.png)" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">KIND resources</span>
@@ -519,7 +521,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 12, 2025</p>
+      <p class="date">September 22, 2025</p>
     </div>
   </div>
   
@@ -533,11 +535,11 @@ window.Quarto = {
 
 <p>These are our main weekly social learning activity. They’re usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell. Click the links below to register - all welcome!</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Current community meetup schedule</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Archive of past sessions</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Current community meetup schedule</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Archive of past sessions</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-4130066f62955cf4fa15" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-4130066f62955cf4fa15">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["1","2","3","4","5","6"],["15:00 Wed 17th September 2025","15:30 Wed 1st October 2025","14:00 Wed 1st October 2025","15:00 Wed 8th October 2025","13:00 Mon 3rd November 2025","15:00 Wed 5th November 2025"],["<a href='https://events.teams.microsoft.com/event/f610e88f-0be2-407e-9c7e-9f78913014a3@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: how to read a job ad<\/a>","<a href='https://events.teams.microsoft.com/event/d92b568a-afc7-4b21-a646-95631be165b6@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: Welcome to KIND<\/a>","<a href='https://events.teams.microsoft.com/event/d759740f-cfd1-4c33-8035-feb62162a18c@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: Understanding Agents in CoPilot<\/a>","<a href='https://events.teams.microsoft.com/event/f4105494-c904-49f7-9da3-e3d57e5c5593@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND community event: meet the...managers<\/a>","<a href='https://events.teams.microsoft.com/event/821827fd-9a5b-4fb0-aa83-043e4564389f@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: Welcome to KIND<\/a>","<a href='https://events.teams.microsoft.com/event/9c47373c-7254-422b-834c-5a1d99f79415@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: AI as Your Everyday Assistant - Practical Copilot for Office Work<\/a>"],["A social session, open to all, where we'll look at some relevant current job adverts (pulled from NHSS's jobtrain system) and any other group-relevant sources, and work through ways that you might assemble a compelling application. Highly experimental - come ready to chat and to think on your feet!","An informal introduction to the KIND network, including an overview of the training on offer, the social aspects of the network, and an opportunity for introductions and Q&A. Mainly aimed at recent joiners, but all very welcome.","Context matters when it comes to Large Language Models like CoPilot. You can create a context very easily utilising the Agent feature. This session covers the ground rules and examples of agents created with CoPilot. This is part of our AI masterclass series, showing how staff across Scotland's health and care sector are really using AI.","We had a bit of chat during no stupid questions week about some of the difficulties people experienced as managers, or in dealing with their line managers. We're going to explore some of those issues in this informal discussion session. We'll be joined by some senior managers, and we'll talk through what these issues look like from the perspective of people managing KIND people.","An informal introduction to the KIND network, including an overview of the training on offer, the social aspects of the network, and an opportunity for introductions and Q&A. Mainly aimed at recent joiners, but all very welcome.","This short session shows how Microsoft Copilot can help with everyday tasks like writing clearer emails and solving common tech frustrations. It’s not magic — but for many of us, it’s a helpful boost when we’re stuck or short on time. This is part of our AI masterclass series, showing how staff across Scotland's health and care sector are really using AI."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Date<\/th>\n      <th>Signup link<\/th>\n      <th>description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Date","targets":1},{"name":"Signup link","targets":2},{"name":"description","targets":3}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-51e29f682e8376965cad" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-51e29f682e8376965cad">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["1","2","3","4","5","6"],["15:30 Wed 1st October 2025","14:00 Wed 1st October 2025","15:00 Wed 8th October 2025","13:00 Mon 3rd November 2025","15:00 Wed 5th November 2025","15:00 Wed 19th November 2025"],["<a href='https://events.teams.microsoft.com/event/d92b568a-afc7-4b21-a646-95631be165b6@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: Welcome to KIND<\/a>","<a href='https://events.teams.microsoft.com/event/d759740f-cfd1-4c33-8035-feb62162a18c@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: Understanding Agents in CoPilot<\/a>","<a href='https://events.teams.microsoft.com/event/f4105494-c904-49f7-9da3-e3d57e5c5593@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND community event: meet the...managers<\/a>","<a href='https://events.teams.microsoft.com/event/821827fd-9a5b-4fb0-aa83-043e4564389f@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: Welcome to KIND<\/a>","<a href='https://events.teams.microsoft.com/event/9c47373c-7254-422b-834c-5a1d99f79415@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: AI as Your Everyday Assistant - Practical Copilot for Office Work<\/a>","<a href='https://events.teams.microsoft.com/event/54a22d96-4861-4985-b9ce-f338f063d1e8@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: MS Loop - it's new, it's cool, but what does it do?<\/a>"],["An informal introduction to the KIND network, including an overview of the training on offer, the social aspects of the network, and an opportunity for introductions and Q&A. Mainly aimed at recent joiners, but all very welcome.","Context matters when it comes to Large Language Models like CoPilot. You can create a context very easily utilising the Agent feature. This session covers the ground rules and examples of agents created with CoPilot. This is part of our AI masterclass series, showing how staff across Scotland's health and care sector are really using AI.","We had a bit of chat during no stupid questions week about some of the difficulties people experienced as managers, or in dealing with their line managers. We're going to explore some of those issues in this informal discussion session. We'll be joined by some senior managers, and we'll talk through what these issues look like from the perspective of people managing KIND people.","An informal introduction to the KIND network, including an overview of the training on offer, the social aspects of the network, and an opportunity for introductions and Q&A. Mainly aimed at recent joiners, but all very welcome.","This short session shows how Microsoft Copilot can help with everyday tasks like writing clearer emails and solving common tech frustrations. It’s not magic — but for many of us, it’s a helpful boost when we’re stuck or short on time. This is part of our AI masterclass series, showing how staff across Scotland's health and care sector are really using AI.","This social session will showcase some of the basic functionalities of MS Loop, an application within the O365 suite of software, which allows teams to work collaboratively using text, tables, lists and more. MS Loop has integrations with other apps such as word, outlook and MS Teams - meaning 'components' of it can be worked on by multiple people across multiple places. But why would you use it over other apps? Come along to hear more, see some of the applications features, and test it for yourself."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Date<\/th>\n      <th>Signup link<\/th>\n      <th>description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Date","targets":1},{"name":"Signup link","targets":2},{"name":"description","targets":3}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>We don’t archive every session - most community meetups eventually become stand-alone KIND training sessions. But there are a few sessions that, for one reason and another, aren’t suitable for training purposes but are worth retaining. They’re linked below.</p>
@@ -584,7 +586,7 @@ Categories
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="c2tpbGxzJTJDY2FyZWVyJTIwZGV2ZWxvcGVtZW50JTJDYXBwcmFpc2Fs" data-listing-date-sort="1715817600000" data-listing-file-modified-sort="1757674730847" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="430" data-listing-title-sort="Appraisals" data-listing-filename-sort="commet_2024-05-16.qmd">
+<tr data-index="0" data-categories="c2tpbGxzJTJDY2FyZWVyJTIwZGV2ZWxvcGVtZW50JTJDYXBwcmFpc2Fs" data-listing-date-sort="1715817600000" data-listing-file-modified-sort="1758552916198" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="430" data-listing-title-sort="Appraisals" data-listing-filename-sort="commet_2024-05-16.qmd">
 <td>
 <a href="./commet/commet_2024-05-16.html" class="title listing-title">Appraisals</a>
 </td>
@@ -597,7 +599,7 @@ Categories
 
 </tr>
 
-<tr data-index="1" data-categories="RGF0YSUyMHN0cmF0ZWd5" data-listing-date-sort="1678147200000" data-listing-file-modified-sort="1757674730847" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="83" data-listing-title-sort="Data strategy" data-listing-filename-sort="commet_2023_03_07.qmd">
+<tr data-index="1" data-categories="RGF0YSUyMHN0cmF0ZWd5" data-listing-date-sort="1678147200000" data-listing-file-modified-sort="1758552916198" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="83" data-listing-title-sort="Data strategy" data-listing-filename-sort="commet_2023_03_07.qmd">
 <td>
 <a href="./commet/commet_2023_03_07.html" class="title listing-title">Data strategy</a>
 </td>
@@ -610,7 +612,7 @@ Categories
 
 </tr>
 
-<tr data-index="2" data-categories="Sm9pbnMlMkNiZWdpbm5lciUyQ0V4Y2VsJTJDUiUyQ1Bvd2VyJTIwUXVlcnk=" data-listing-date-sort="1725235200000" data-listing-file-modified-sort="1757674730847" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="538" data-listing-title-sort="Joins 1: introduction" data-listing-filename-sort="commet_2024_09_02.qmd">
+<tr data-index="2" data-categories="Sm9pbnMlMkNiZWdpbm5lciUyQ0V4Y2VsJTJDUiUyQ1Bvd2VyJTIwUXVlcnk=" data-listing-date-sort="1725235200000" data-listing-file-modified-sort="1758552916198" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="538" data-listing-title-sort="Joins 1: introduction" data-listing-filename-sort="commet_2024_09_02.qmd">
 <td>
 <a href="./commet/commet_2024_09_02.html" class="title listing-title">Joins 1: introduction</a>
 </td>
@@ -623,7 +625,7 @@ Categories
 
 </tr>
 
-<tr data-index="3" data-categories="c2tpbGxzJTJDdHJhaW5pbmclMkNjYXJlZXIlMjBwcm9ncmVzc2lvbiUyQ2FwcHJhaXNhbA==" data-listing-date-sort="1701648000000" data-listing-file-modified-sort="1757674730847" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1217" data-listing-title-sort="Leading a (training) session" data-listing-filename-sort="commet_2024_04_30.qmd">
+<tr data-index="3" data-categories="c2tpbGxzJTJDdHJhaW5pbmclMkNjYXJlZXIlMjBwcm9ncmVzc2lvbiUyQ2FwcHJhaXNhbA==" data-listing-date-sort="1701648000000" data-listing-file-modified-sort="1758552916198" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1217" data-listing-title-sort="Leading a (training) session" data-listing-filename-sort="commet_2024_04_30.qmd">
 <td>
 <a href="./commet/commet_2024_04_30.html" class="title listing-title">Leading a (training) session</a>
 </td>
@@ -636,7 +638,7 @@ Categories
 
 </tr>
 
-<tr data-index="4" data-categories="UiUyQ3Rlc3RpbmclMkNpbnRlcm1lZGlhdGUlMkNleGNlbA==" data-listing-date-sort="1700524800000" data-listing-file-modified-sort="1757674730847" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="697" data-listing-title-sort="Test driven development" data-listing-filename-sort="commet_2023-11-23.qmd">
+<tr data-index="4" data-categories="UiUyQ3Rlc3RpbmclMkNpbnRlcm1lZGlhdGUlMkNleGNlbA==" data-listing-date-sort="1700524800000" data-listing-file-modified-sort="1758552916198" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="697" data-listing-title-sort="Test driven development" data-listing-filename-sort="commet_2023-11-23.qmd">
 <td>
 <a href="./commet/commet_2023-11-23.html" class="title listing-title">Test driven development</a>
 </td>
@@ -725,13 +727,14 @@ Categories
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
