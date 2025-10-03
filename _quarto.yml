@@ -47,7 +47,9 @@ website:
             - href: kind_power_query_week.qmd
               text: Power Query week
             - href: kind_troubleshooting_week.qmd
-              text: 🆕 Troubleshooting week
+              text: Troubleshooting week
+            - href: kind_opensource.qmd
+              text: 🆕 Open Source week
       - text: Archive
         menu:
           - href: visio.qmd

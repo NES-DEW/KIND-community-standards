@@ -32,7 +32,7 @@ readr::read_csv("data/KIND_community_meetups.csv") |>
   dplyr::arrange(Date) |>
   dplyr::mutate(Date = nice_date(date)) |>
   dplyr::select(-date) |>
-  DT::datatable(filter = "top", escape = F)
+  DT::datatable(filter = "top", escape = F, rownames = F)
   # knitr::kable(caption = "Current community meetup schedule")
   
 

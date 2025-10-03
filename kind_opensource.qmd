@@ -1,0 +1,22 @@
+---
+title: "Open Source week"
+execute: 
+  freeze: false
+editor_options: 
+  chunk_output_type: console
+---
+
+## Power Query week plan
+
+We're running a network-wide theme week between 27th and 31st October about Open Source. 
+
+### Sessions
+
++  [KIND Network Open Source week: Open Data Scotland](https://events.teams.microsoft.com/event/fb332e45-ba5b-4bf0-bb47-63d37e199c91@10efe0bd-a030-4bca-809c-b5e6745e499a) -  - 10:00-10:45 Tues 28th Oct 2025
++  [KIND Network Open Source week: Open Source in NHS Lothian](https://events.teams.microsoft.com/event/5c9a0d34-83fa-4807-83ec-256b9a546caf@10efe0bd-a030-4bca-809c-b5e6745e499a) - 15:00-16:00 Tues 28th Oct 2025
++  [KIND Network Open Source week: Introduction to Python](https://events.teams.microsoft.com/event/36c3fd76-dd78-4e45-a726-c4468ffd5ac6@10efe0bd-a030-4bca-809c-b5e6745e499a) - 12:00-12:30 Wed 29th Oct 2025
++  [KIND Network Open Source week: Using Open Data - Ben Harley's NHS Open Data Dashboard](https://events.teams.microsoft.com/event/944d1859-372d-4393-890c-4ad81c922445@10efe0bd-a030-4bca-809c-b5e6745e499a) - 14:00-15:00 Wed 29th Oct 2025
++  [KIND Network Open Source week: Open Data - The Public Health Scotland Approach](https://events.teams.microsoft.com/event/04e1ce12-043c-41d7-a364-a01d2dfd212e@10efe0bd-a030-4bca-809c-b5e6745e499a) - 10:00-11:00 Thurs 30th Oct 2025
++  [KIND Network Open Source week: Introduction to Packages (Part 1)](https://events.teams.microsoft.com/event/095aadef-448e-4d86-93d5-9a44c792cce2@10efe0bd-a030-4bca-809c-b5e6745e499a) - 12:00-12:30 Thurs 30th Oct 2025
++  [KIND Network Open Source week: Creating and Using Packages (Part 2)](https://events.teams.microsoft.com/event/12bfb061-28cb-442c-9adf-bbfe14bbe8cb@10efe0bd-a030-4bca-809c-b5e6745e499a) - 12:00-12:30 Fri 31st Oct 2025
++  [KIND Network Open Source week: Introduction to Git and Github](https://events.teams.microsoft.com/event/0ad15a1e-081b-432b-9479-3d8f6caaf76d@10efe0bd-a030-4bca-809c-b5e6745e499a) - 14:00-15:00 Thurs 30th Oct 2025
