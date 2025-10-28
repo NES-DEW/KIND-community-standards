@@ -30,4 +30,3 @@ We are still arranging a few more speakers and talks throughout the week, and po
 +  [KIND Network Open Source week: Creating and Using Packages (Part 2)](https://events.teams.microsoft.com/event/12bfb061-28cb-442c-9adf-bbfe14bbe8cb@10efe0bd-a030-4bca-809c-b5e6745e499a) - 12:00-12:30 Fri 31st Oct 2025
 +  [KIND Network Open Source week: Introduction to Git and Github](https://events.teams.microsoft.com/event/0ad15a1e-081b-432b-9479-3d8f6caaf76d@10efe0bd-a030-4bca-809c-b5e6745e499a) - 14:00-15:00 Thurs 30th Oct 2025
 + [KIND Network Open Source week: Packages for Charts](https://events.teams.microsoft.com/event/a8bcebc6-5d34-4ada-97c9-600abcdadf27@10efe0bd-a030-4bca-809c-b5e6745e499a) - 15:30-16:00 Thurs 30th Oct 2025
-
