@@ -8,7 +8,7 @@ website:
   title: "KIND resources"
   repo-url: "https://github.com/NES-DEW/KIND-community-standards"
   navbar:
-    logo: "![](/src/images/KLN_banner_v05_125.png)"
+    # logo: "![](/src/images/KLN_banner_v05_125.png)"
     left:
       - href: index.qmd
         text: Home
