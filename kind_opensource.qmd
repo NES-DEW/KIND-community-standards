@@ -8,16 +8,12 @@ editor_options:
 
 ## Open source week
 
-We're running a network-wide theme week between 27th and 31st October about Open Source. 
+We ran a network-wide theme week between 27th and 31st October about Open Source. 
 
 Open Source refers to any form of technology, software or data where the work is freely available for anyone to use, modify and distribute. Such freedom drives creativity, innovation and community collaboration, which are hallmark traits of open source. 
  
 In many ways, Open Source work is the lifeblood of all the technology we see today. From the linux-based servers our work applications depend on, to the Webkit browser engine Apple phones use, and even the open data we share for transparency, integrity and public engagement - open source is everywhere. 
  
-Below we have a series of Open Source themed talks taking place the week ready to be booked.
- 
-We are still arranging a few more speakers and talks throughout the week, and possibly the week after. If you would like to speak during this week on an Open Source themed topic, or would like to recommend people to speak, please do not hesitate to reach out to one of the organisers:
-
 ### Sessions
 
 +  [KIND Network Open Source week: Open Data Scotland](https://events.teams.microsoft.com/event/fb332e45-ba5b-4bf0-bb47-63d37e199c91@10efe0bd-a030-4bca-809c-b5e6745e499a) -  - 10:00-10:45 Tues 28th Oct 2025
