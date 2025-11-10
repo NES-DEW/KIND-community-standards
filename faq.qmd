@@ -79,6 +79,7 @@ The reasons for that are as follows:
 
 Specifically, we require that attendees at our meetings and training sessions **do not use** AI/LLM-based recording- or note-taking bots or apps. Please respect other learners and their needs. We make written materials available for our sessions, and would be delighted to help support any other requirements.
 
-## Help! I have an unmet query…
-For anything, please contact Brendan Clarke (brendan.clarke2@nhs.scot).
+## Help! I have an unmet query...
+
+If you're in need of non-technical support or help, we have [a set of support resources and links available](support_resources.qmd). For anything, please contact [Brendan Clarke](mailto:brendan.clarke2@nhs.scot).
   
