@@ -81,28 +81,28 @@
     "href": "support_resources.html",
     "title": "KIND wellbeing resources",
     "section": "",
-    "text": "This is a community-sourced list of services and resources that you might find useful."
+    "text": "This is a community-sourced list of services and resources that you might find useful. If you’re a member of NHS staff, it’s worth knowing that you can self-refer to your occupational health services if you feel you need additional support."
   },
   {
     "objectID": "support_resources.html#urgent-out-of-hours",
     "href": "support_resources.html#urgent-out-of-hours",
     "title": "KIND wellbeing resources",
     "section": "Urgent / out of hours",
-    "text": "Urgent / out of hours\n\nFor urgent/life-threatening matters affecting you or another, call 999 or attend A&E\nNHS 24 or call 111 for 24/7 help\nThe Samaritans - call 116 123\nText ‘SHOUT’ to 85258 - 24/7 mental health crisis text line\nHOPELINE247 - call 0800 068 4141"
+    "text": "Urgent / out of hours\n\nFor urgent/life-threatening matters affecting you or another, call 999 or attend A&E\nNHS 24, and their services for mental health, or call 111 for 24/7 help\nThe Samaritans - call 116 123\nText ‘SHOUT’ to 85258 - 24/7 mental health crisis text line\nHOPELINE247 - call 0800 068 4141"
   },
   {
     "objectID": "support_resources.html#mental-health-support",
     "href": "support_resources.html#mental-health-support",
     "title": "KIND wellbeing resources",
     "section": "Mental health support",
-    "text": "Mental health support\n\nScottish Action for Mental Health. Their wellbeing assessment tool is extremely helpful.\nMIND guidance on anxiety\nBreathing space - confidential support for low mood, depression, anxiety. Available 6pm-2am weekdays, 6pm-6am weekends. Call 0900 838 587\nSuicide Prevention Scotland podcast series and their resource directory\nMyApp\nNHS mental health info and advice\nAndy’s Man Club national support group for mental health\nSANE - out-of-hours helpline between 6-11pm. Call 0300 304 7000\nMindtheMen - peer support group"
+    "text": "Mental health support\n\nScottish Action for Mental Health. Their wellbeing assessment tool is extremely helpful.\nMIND guidance on anxiety\nBreathing space - confidential support for low mood, depression, anxiety. Available 6pm-2am weekdays, 6pm-6am weekends. Call 0900 838 587\nSuicide Prevention Scotland podcast series and their resource directory\nMyApp\nNHS mental health info and advice\nSANE - out-of-hours helpline between 6-11pm. Call 0300 304 7000\nMental health UK resources"
   },
   {
     "objectID": "support_resources.html#bereavement",
     "href": "support_resources.html#bereavement",
     "title": "KIND wellbeing resources",
     "section": "Bereavement",
-    "text": "Bereavement\n\nNational Bereavement Alliance\nMaggie’s Centres Bereavement Groups for families and friends of those who have passed from cancer\nSupport Around Death Scotland"
+    "text": "Bereavement\n\nNational Bereavement Alliance\nMaggie’s Centres Bereavement Groups for families and friends of those who have passed from cancer\nSupport Around Death Scotland\nCruse Scotland"
   },
   {
     "objectID": "support_resources.html#stress",
@@ -116,21 +116,35 @@
     "href": "support_resources.html#abuse",
     "title": "KIND wellbeing resources",
     "section": "Abuse",
-    "text": "Abuse\n\nNational Scottish Domestic Abuse Helpline: 0800 027 1234\nRape Crisis Scotland (6 pm – midnight): 0808 801 0302"
+    "text": "Abuse\n\nNational Scottish Domestic Abuse Helpline: call 0800 027 1234\nRape Crisis Scotland (6 pm – midnight): call 0808 801 0302"
+  },
+  {
+    "objectID": "support_resources.html#lgbt",
+    "href": "support_resources.html#lgbt",
+    "title": "KIND wellbeing resources",
+    "section": "LGBT",
+    "text": "LGBT\n\nLGBT+ helpline: call 0800 464 7000\nLGBT Youth Scotland"
   },
   {
     "objectID": "support_resources.html#trades-unions",
     "href": "support_resources.html#trades-unions",
     "title": "KIND wellbeing resources",
     "section": "Trades Unions",
-    "text": "Trades Unions\n\nUNISON\nGMB"
+    "text": "Trades Unions\n\nUNISON. Most organisations will also have named points of contact which you can find via the Branch Finder\nGMB"
   },
   {
     "objectID": "support_resources.html#wellbeing-and-healthy-living",
     "href": "support_resources.html#wellbeing-and-healthy-living",
     "title": "KIND wellbeing resources",
     "section": "Wellbeing and healthy living",
-    "text": "Wellbeing and healthy living\n\nNHS Inform\nNational Wellbeing Hub\nHeadspace app\nNational Childbirth Trust"
+    "text": "Wellbeing and healthy living\n\nNHS Inform\nNational Wellbeing Hub\nHeadspace app"
+  },
+  {
+    "objectID": "support_resources.html#families-and-children",
+    "href": "support_resources.html#families-and-children",
+    "title": "KIND wellbeing resources",
+    "section": "Families and children",
+    "text": "Families and children\n\nNational Childbirth Trust"
   },
   {
     "objectID": "support_resources.html#workplace-specific-help",
@@ -147,11 +161,32 @@
     "text": "Financial\n\nMoney matters support or call 0800 085 7145/0141 445 5221\nCitizens Advice Scotland"
   },
   {
-    "objectID": "support_resources.html#org-specific",
-    "href": "support_resources.html#org-specific",
+    "objectID": "support_resources.html#womens-groups",
+    "href": "support_resources.html#womens-groups",
     "title": "KIND wellbeing resources",
-    "section": "Org-specific",
-    "text": "Org-specific"
+    "section": "Women’s groups",
+    "text": "Women’s groups\n\nSCORE Scotland"
+  },
+  {
+    "objectID": "support_resources.html#mens-groups",
+    "href": "support_resources.html#mens-groups",
+    "title": "KIND wellbeing resources",
+    "section": "Men’s groups",
+    "text": "Men’s groups\n\nAndy’s Man Club national support group for mental health\nMindtheMen - peer support group\nBrothers in Arms - support space for mental wellbeing\nMen’s Sheds - support groups for wellbeing"
+  },
+  {
+    "objectID": "support_resources.html#armed-services",
+    "href": "support_resources.html#armed-services",
+    "title": "KIND wellbeing resources",
+    "section": "Armed services",
+    "text": "Armed services\n\nRoyal British Legion\nForcesLine or call 08002606780\nHelp for Heroes\nThe Veteran’s Charity\nCare After Combat\nVeterans Outreach Charity"
+  },
+  {
+    "objectID": "support_resources.html#org--and-area-specific",
+    "href": "support_resources.html#org--and-area-specific",
+    "title": "KIND wellbeing resources",
+    "section": "Org- and area-specific",
+    "text": "Org- and area-specific\n\nALISS lists local services. Enter your postcode and distance prepared to travel and it gives you a list of services."
   },
   {
     "objectID": "rrg/rrg_2024-09-26.html",
@@ -1411,7 +1446,7 @@
     "href": "faq.html#help-i-have-an-unmet-query",
     "title": "KIND FAQ",
     "section": "Help! I have an unmet query…",
-    "text": "Help! I have an unmet query…\nFor anything, please contact Brendan Clarke (brendan.clarke2@nhs.scot)."
+    "text": "Help! I have an unmet query…\nIf you’re in need of non-technical support or help, we have a set of support resources and links available. For anything, please contact Brendan Clarke."
   },
   {
     "objectID": "kind_botw.html",

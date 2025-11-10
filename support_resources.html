@@ -83,6 +83,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
 <link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
 <script src="site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet">
+<script src="site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet">
+<script src="site_libs/selectize-0.12.0/selectize.min.js"></script>
 <link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
 <script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
 
@@ -427,11 +431,16 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#bereavement" id="toc-bereavement" class="nav-link" data-scroll-target="#bereavement">Bereavement</a></li>
   <li><a href="#stress" id="toc-stress" class="nav-link" data-scroll-target="#stress">Stress</a></li>
   <li><a href="#abuse" id="toc-abuse" class="nav-link" data-scroll-target="#abuse">Abuse</a></li>
+  <li><a href="#lgbt" id="toc-lgbt" class="nav-link" data-scroll-target="#lgbt">LGBT</a></li>
   <li><a href="#trades-unions" id="toc-trades-unions" class="nav-link" data-scroll-target="#trades-unions">Trades Unions</a></li>
   <li><a href="#wellbeing-and-healthy-living" id="toc-wellbeing-and-healthy-living" class="nav-link" data-scroll-target="#wellbeing-and-healthy-living">Wellbeing and healthy living</a></li>
+  <li><a href="#families-and-children" id="toc-families-and-children" class="nav-link" data-scroll-target="#families-and-children">Families and children</a></li>
   <li><a href="#workplace-specific-help" id="toc-workplace-specific-help" class="nav-link" data-scroll-target="#workplace-specific-help">Workplace-specific help</a></li>
   <li><a href="#financial" id="toc-financial" class="nav-link" data-scroll-target="#financial">Financial</a></li>
-  <li><a href="#org-specific" id="toc-org-specific" class="nav-link" data-scroll-target="#org-specific">Org-specific</a></li>
+  <li><a href="#womens-groups" id="toc-womens-groups" class="nav-link" data-scroll-target="#womens-groups">Women’s groups</a></li>
+  <li><a href="#mens-groups" id="toc-mens-groups" class="nav-link" data-scroll-target="#mens-groups">Men’s groups</a></li>
+  <li><a href="#armed-services" id="toc-armed-services" class="nav-link" data-scroll-target="#armed-services">Armed services</a></li>
+  <li><a href="#org--and-area-specific" id="toc-org--and-area-specific" class="nav-link" data-scroll-target="#org--and-area-specific">Org- and area-specific</a></li>
   </ul>
 </nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -486,12 +495,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a community-sourced list of services and resources that you might find useful.</p>
+<p>This is a community-sourced list of services and resources that you might find useful. If you’re a member of NHS staff, it’s worth knowing that you can self-refer to your occupational health services if you feel you need additional support.</p>
 <section id="urgent-out-of-hours" class="level2">
 <h2 class="anchored" data-anchor-id="urgent-out-of-hours">Urgent / out of hours</h2>
 <ul>
 <li>For urgent/life-threatening matters affecting you or another, call 999 or attend A&amp;E</li>
-<li><a href="https://www.nhs24.scot/">NHS 24</a> or call 111 for 24/7 help</li>
+<li><a href="https://www.nhs24.scot/">NHS 24</a>, and their <a href="https://www.nhsinform.scot/illnesses-and-conditions/mental-health/mental-health-support/mental-health-services-at-nhs-24/">services for mental health</a>, or call 111 for 24/7 help</li>
 <li>The Samaritans - call 116 123</li>
 <li>Text ‘SHOUT’ to 85258 - 24/7 mental health crisis text line</li>
 <li>HOPELINE247 - call 0800 068 4141</li>
@@ -506,9 +515,8 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://www.suicideprevention.scot/work/youfirst">Suicide Prevention Scotland podcast series</a> and their <a href="https://www.suicideprevention.scot">resource directory</a></li>
 <li><a href="https://rightdecisions.scot.nhs.uk/myapp-my-mental-health/?searchTerm=myapp">MyApp</a></li>
 <li><a href="https://www.nhs.uk/mental-health/">NHS mental health info and advice</a></li>
-<li><a href="https://andysmanclub.co.uk/groups/">Andy’s Man Club</a> national support group for mental health</li>
 <li><a href="https://sane.org.uk">SANE</a> - out-of-hours helpline between 6-11pm. Call 0300 304 7000</li>
-<li><a href="https://mindthemen.co.uk/">MindtheMen</a> - peer support group</li>
+<li><a href="https://mentalhealth-uk.org/help-and-information/downloadable-resources/">Mental health UK resources</a></li>
 </ul>
 </section>
 <section id="bereavement" class="level2">
@@ -517,6 +525,7 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://nationalbereavementalliance.org.uk/support/">National Bereavement Alliance</a></li>
 <li><a href="https://www.maggies.org/support-information/support-family-friends/bereavement-support/">Maggie’s Centres Bereavement Groups</a> for families and friends of those who have passed from cancer</li>
 <li><a href="https://www.sad.scot.nhs.uk/">Support Around Death Scotland</a></li>
+<li><a href="https://www.crusescotland.org.uk/">Cruse Scotland</a></li>
 </ul>
 </section>
 <section id="stress" class="level2">
@@ -528,14 +537,21 @@ ul.task-list li input[type="checkbox"] {
 <section id="abuse" class="level2">
 <h2 class="anchored" data-anchor-id="abuse">Abuse</h2>
 <ul>
-<li>National Scottish Domestic Abuse Helpline: 0800 027 1234</li>
-<li>Rape Crisis Scotland (6 pm – midnight): 0808 801 0302</li>
+<li>National Scottish Domestic Abuse Helpline: call 0800 027 1234</li>
+<li>Rape Crisis Scotland (6 pm – midnight): call 0808 801 0302</li>
+</ul>
+</section>
+<section id="lgbt" class="level2">
+<h2 class="anchored" data-anchor-id="lgbt">LGBT</h2>
+<ul>
+<li>LGBT+ helpline: call 0800 464 7000</li>
+<li><a href="https://lgbtyouth.org.uk/">LGBT Youth Scotland</a></li>
 </ul>
 </section>
 <section id="trades-unions" class="level2">
 <h2 class="anchored" data-anchor-id="trades-unions">Trades Unions</h2>
 <ul>
-<li><a href="https://www.unison.org.uk/">UNISON</a></li>
+<li><a href="https://www.unison.org.uk/">UNISON</a>. Most organisations will also have named points of contact which you can find via the <a href="https://branches.unison.org.uk/">Branch Finder</a></li>
 <li><a href="https://www.gmb.org.uk/">GMB</a></li>
 </ul>
 </section>
@@ -545,6 +561,11 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://www.nhsinform.scot/healthy-living/">NHS Inform</a></li>
 <li><a href="https://wellbeinghub.scot/">National Wellbeing Hub</a></li>
 <li><a href="https://www.headspace.com/">Headspace app</a></li>
+</ul>
+</section>
+<section id="families-and-children" class="level2">
+<h2 class="anchored" data-anchor-id="families-and-children">Families and children</h2>
+<ul>
 <li><a href="https://www.nct.org.uk/">National Childbirth Trust</a></li>
 </ul>
 </section>
@@ -562,10 +583,39 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://www.cas.org.uk/">Citizens Advice Scotland</a></li>
 </ul>
 </section>
-<section id="org-specific" class="level2">
-<h2 class="anchored" data-anchor-id="org-specific">Org-specific</h2>
-<div class="datatables html-widget html-fill-item" id="htmlwidget-30c36a2dd4c1f5dac51e" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-30c36a2dd4c1f5dac51e">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11"],["PHS","NHS Borders","NHS Borders","NHS Lothian","Highland","Highland","Edinburgh","Edinburgh","Dundee","Glasgow","Glasgow"],["Employer","Employer","Employer","Employer","Region","Region","Region","Region","Region","Region","Region"],["Time to Talk","Tackling Money Worries App","Helping yourself and others]()","Bereavement service",null,"Highland Hospice Bereavement Support for adults and children","The Edinburgh Crisis Centre","Edinburgh Mental Health Assessment Service","Dundee Recovery Roadmap","Talking is Mental","Wellbeing Services South Glasgow"],[null,"<a href='https://www.nhsborders.scot.nhs.uk/patients-and-visitors/our-services/children-young-peoples-services-directory/health-improvement-team/money-worries-app/'>Link<\/a>","<a href='https://www.nhsborders.scot.nhs.uk/creating-hope/help-yourself-and-others/'>Link<\/a>",null,null,"<a href='https://highlandhospice.org/what-we-do/community-services/bereavement-services'>Link<\/a>","<a href='https://edinburghcrisiscentre.org.uk'>Link<\/a>",null,"<a href='https://bestmobileappawards.com/app-submission/dundee-recovery-road-map'>Link<\/a>","<a href='https://www.talkingismental.com/'>Link<\/a>","<a href='https://www.wellbeing-glasgow.org.uk/'>Link<\/a>"],[null,null,null,null,null,null,"0808 801 0414","0131 537 6000",null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Location<\/th>\n      <th>Location type<\/th>\n      <th>Name<\/th>\n      <th>url<\/th>\n      <th>Phone<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Location","targets":1},{"name":"Location type","targets":2},{"name":"Name","targets":3},{"name":"url","targets":4},{"name":"Phone","targets":5}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<section id="womens-groups" class="level2">
+<h2 class="anchored" data-anchor-id="womens-groups">Women’s groups</h2>
+<ul>
+<li><a href="https://www.scorescotland.org.uk/womens-groups/">SCORE Scotland</a></li>
+</ul>
+</section>
+<section id="mens-groups" class="level2">
+<h2 class="anchored" data-anchor-id="mens-groups">Men’s groups</h2>
+<ul>
+<li><a href="https://andysmanclub.co.uk/groups/">Andy’s Man Club</a> national support group for mental health</li>
+<li><a href="https://mindthemen.co.uk/">MindtheMen</a> - peer support group</li>
+<li><a href="https://brothersinarmsscotland.co.uk/">Brothers in Arms</a> - support space for mental wellbeing</li>
+<li><a href="https://menssheds.org.uk/">Men’s Sheds</a> - support groups for wellbeing</li>
+</ul>
+</section>
+<section id="armed-services" class="level2">
+<h2 class="anchored" data-anchor-id="armed-services">Armed services</h2>
+<ul>
+<li><a href="https://www.britishlegion.org.uk/">Royal British Legion</a></li>
+<li><a href="https://www.ssafa.org.uk/get-help/forcesline">ForcesLine</a> or call 08002606780</li>
+<li><a href="https://helpforheroes.org.uk">Help for Heroes</a></li>
+<li><a href="https://veteranscharity.org.uk">The Veteran’s Charity</a></li>
+<li><a href="https://careaftercombat.org">Care After Combat</a></li>
+<li><a href="https://vosuk.org">Veterans Outreach Charity</a></li>
+</ul>
+</section>
+<section id="org--and-area-specific" class="level2">
+<h2 class="anchored" data-anchor-id="org--and-area-specific">Org- and area-specific</h2>
+<ul>
+<li><a href="https://www.aliss.org/">ALISS</a> lists local services. Enter your postcode and distance prepared to travel and it gives you a list of services.</li>
+</ul>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-6856a8ee25c8c5eb122c" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-6856a8ee25c8c5eb122c">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["1","2","3","4","5","6","7","8","9","10","11"],["PHS","NHS Borders","NHS Borders","NHS Lothian","Highland","Highland","Edinburgh","Edinburgh","Dundee","Glasgow","Glasgow"],["Employer","Employer","Employer","Employer","Region","Region","Region","Region","Region","Region","Region"],["Time to Talk","Tackling Money Worries App","Helping yourself and others","Bereavement service",null,"Highland Hospice Bereavement Support for adults and children","The Edinburgh Crisis Centre","Edinburgh Mental Health Assessment Service","Dundee Recovery Roadmap","Talking is Mental","Wellbeing Services South Glasgow"],[null,"<a href='https://www.nhsborders.scot.nhs.uk/patients-and-visitors/our-services/children-young-peoples-services-directory/health-improvement-team/money-worries-app/'>Link<\/a>","<a href='https://www.nhsborders.scot.nhs.uk/creating-hope/help-yourself-and-others/'>Link<\/a>",null,null,"<a href='https://highlandhospice.org/what-we-do/community-services/bereavement-services'>Link<\/a>","<a href='https://edinburghcrisiscentre.org.uk'>Link<\/a>",null,"<a href='https://bestmobileappawards.com/app-submission/dundee-recovery-road-map'>Link<\/a>","<a href='https://www.talkingismental.com/'>Link<\/a>","<a href='https://www.wellbeing-glasgow.org.uk/'>Link<\/a>"],[null,null,null,null,null,null,"0808 801 0414","0131 537 6000",null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Location<\/th>\n      <th>Location type<\/th>\n      <th>Name<\/th>\n      <th>url<\/th>\n      <th>Phone<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":-1,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Location","targets":1},{"name":"Location type","targets":2},{"name":"Name","targets":3},{"name":"url","targets":4},{"name":"Phone","targets":5}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"lengthMenu":[-1,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 
 
 </section>
