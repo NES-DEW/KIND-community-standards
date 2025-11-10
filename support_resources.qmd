@@ -1,0 +1,85 @@
+---
+title: "KIND wellbeing resources"
+date: 2025-11-10
+editor_options: 
+  chunk_output_type: console
+---
+
+This is a community-sourced list of services and resources that you might find useful.
+
+## Urgent / out of hours
+
++ For urgent/life-threatening matters affecting you or another, call 999 or attend A&E
++ [NHS 24](https://www.nhs24.scot/) or call 111 for 24/7 help
++ The Samaritans - call 116 123
++ Text 'SHOUT' to 85258 - 24/7 mental health crisis text line
++ HOPELINE247 - call 0800 068 4141
+
+## Mental health support
+
++ [Scottish Action for Mental Health](https://www.samh.org.uk/). Their [wellbeing assessment tool](https://www.samh.org.uk/about-mental-health/self-help-and-wellbeing/wellbeing-assessment-tool) is extremely helpful.
++ [MIND guidance on anxiety](https://www.mind.org.uk/information-support/types-of-mental-health-problems/anxiety-and-panic-attacks/self-care/)
++ Breathing space - confidential support for low mood, depression, anxiety. Available 6pm-2am weekdays, 6pm-6am weekends. Call 0900 838 587
++ [Suicide Prevention Scotland podcast series](https://www.suicideprevention.scot/work/youfirst) and their [resource directory](https://www.suicideprevention.scot)
++ [MyApp](https://rightdecisions.scot.nhs.uk/myapp-my-mental-health/?searchTerm=myapp)
++ [NHS mental health info and advice](https://www.nhs.uk/mental-health/)
++ [Andy's Man Club](https://andysmanclub.co.uk/groups/) national support group for mental health
++ [SANE](https://sane.org.uk) - out-of-hours helpline between 6-11pm. Call 0300 304 7000
++ [MindtheMen](https://mindthemen.co.uk/) - peer support group
+
+## Bereavement
+
++ [National Bereavement Alliance](https://nationalbereavementalliance.org.uk/support/)
++ [Maggie's Centres Bereavement Groups](https://www.maggies.org/support-information/support-family-friends/bereavement-support/) for families and friends of those who have passed from cancer
++ [Support Around Death Scotland](https://www.sad.scot.nhs.uk/)
+
+## Stress
+
++ [NHS Scotland Work-related Stress Policy](https://www.gov.scot/publications/nhsscotland-once-scotland-workforce-policies-managing-health-work-public-consultation-2/pages/7/)
+
+## Abuse
+
++ National Scottish Domestic Abuse Helpline: 0800 027 1234
++ Rape Crisis Scotland (6 pm – midnight): 0808 801 0302 
+
+
+## Trades Unions
+
++ [UNISON](https://www.unison.org.uk/)
++ [GMB](https://www.gmb.org.uk/)
+
+## Wellbeing and healthy living
+
++ [NHS Inform](https://www.nhsinform.scot/healthy-living/)
++ [National Wellbeing Hub](https://wellbeinghub.scot/)
++ [Headspace app](https://www.headspace.com/)
++ [National Childbirth Trust](https://www.nct.org.uk/)
+
+## Workplace-specific help
+
++  [Employee Assistance service](https://sgcp.optimise.health/)
++ [Able Futures](https://able-futures.co.uk/) provide workplace mental health/wellbeing support. Call 0800 321 3137
+
+## Financial
+
++ [Money matters support](http://www.moneymattersweb.co.uk/) or call 0800 085 7145/0141 445 5221
++ [Citizens Advice Scotland](https://www.cas.org.uk/)
+
+## Org-specific
+
+```{r}
+#| warning: false
+#| echo: false
+
+library(readr)
+library(dplyr)
+library(DT)
+
+read_csv("data/support_resources.csv") |>
+  mutate(url = case_when(
+    is.na(url) ~ url,
+    TRUE ~ paste0("<a href='", url, "'>Link</a>"))) |>
+  datatable(escape = F)
+
+```
+
