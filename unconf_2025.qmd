@@ -1,1 +1,39 @@
-# Unconference 2025: the choices we make
+# Unconference 2025
+
+![KIND unconference 2025 banner](https://github.com/NES-DEW/dew-img/blob/main/kind/kind_unconf.png?raw=true)
+
+
+## Info
+
++ our fourth annual community day of chat, presentations, and discussion
++ Wednesday 17th December 2025 09.30-16:30
++ entirely free and flexible: drop in for ten minutes or come for the whole day
++ live on Teams
++ free and open to all - here's the [registration link](https://events.teams.microsoft.com/event/a073ff15-25fe-4259-8155-3c71990f2cbc@10efe0bd-a030-4bca-809c-b5e6745e499a)
++ no recordings because everything is a social session, but will disseminate any shareable materials via the network
+
+## Schedule
+
++ 09:30-10:00 **welcome** and chat
++ 10:00-10:30 **Tufte and anti-Tufte** - thinking about the rules of visualising data, and how/when to break them for pleasure and for profit
++ 10:30-11:00 **Version control** - how do the community actually do version control? Expect to run the gamut from GitHub to `v06_final_final_use_this.docx`
++ 11:00-11:30 **Synthetic data** - the how/why/when of making data up
+
+----
+
++ 1200-13:00 Lunch
+
+----
+
++ 13:00-13:30 **Second interview with the vampire** - stories from the recruitment front line, including finding out who got a great new job this year
++ 13:30-14:00 **Epidemiology 101** - ask a (brave) epidemiologist lots of technical questions  
++ 14:00-15:00 **Tools**: "I use x for y because z" - a quickfire session where people recommend new tools they know and love
+
+----
+
++ 15:00-15:30 Break
+
+----
+
++ 15:30-16:00 **Folk beliefs about LLMs** - not a joke, but also not not a joke. A free-range session discussing what we believe about large language models, and how that rubs up against how LLMs really are
++ 16:00-16:30 **What do you want from the network next year?**
