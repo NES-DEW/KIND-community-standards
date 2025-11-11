@@ -36,6 +36,8 @@ website:
             text: KIND FAQ
           - href: KIND_help.qmd
             text: How to ask the network for help
+          - href: support_resources.qmd
+            text: 🆕 KIND wellbeing resources
       - href: mentoring.qmd
         text: Mentoring scheme
       - text: Theme weeks
@@ -92,5 +94,5 @@ execute:
   echo: false
   warning: false
   messages: false
-  freeze: auto
+  freeze: false
   output: asis
