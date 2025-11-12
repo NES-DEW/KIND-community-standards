@@ -8,7 +8,7 @@
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke">
-<meta name="dcterms.date" content="2025-11-11">
+<meta name="dcterms.date" content="2025-11-12">
 
 <title>R beginner’s club 2025-01-09 – KIND resources</title>
 <style>
@@ -355,6 +355,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="../KIND_help.html">
  <span class="dropdown-text">How to ask the network for help</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../support_resources.html">
+ <span class="dropdown-text">🆕 KIND wellbeing resources</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -404,10 +408,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li>
     <a class="dropdown-item" href="../kind_botw.html">
  <span class="dropdown-text">Book of the week</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../ml_archive.html">
- <span class="dropdown-text">Mailing list archive</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../rbc/about.html">
@@ -494,7 +494,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 11, 2025</p>
+      <p class="date">November 12, 2025</p>
     </div>
   </div>
   
@@ -2183,11 +2183,11 @@ Group variables            None
 <pre><code># A tibble: 5 × 1
   `date collected`
   &lt;chr&gt;           
-1 45662           
-2 45665           
-3 45654           
-4 45659           
-5 45646           </code></pre>
+1 45661           
+2 45659           
+3 45659           
+4 45648           
+5 45659           </code></pre>
 </div>
 </div>
 <p>Excel counts days from Jan 1st 1900, while R counts days from Jan 1st 1970. That means that you need to subtract those 70 years to convert from one to the other, and then use lubridates <code>as_date</code> to convert that number of days into a proper R date. The quick-and-dirty way - just subtract 70 years-worth of days, which is (of course) 25569 days:</p>
@@ -2200,11 +2200,11 @@ Group variables            None
 <pre><code># A tibble: 5 × 1
   `date collected`
   &lt;date&gt;          
-1 2025-01-01      
-2 2024-12-20      
-3 2025-01-04      
-4 2024-12-28      
-5 2025-01-05      </code></pre>
+1 2024-12-24      
+2 2024-12-25      
+3 2024-12-26      
+4 2025-01-09      
+5 2024-12-29      </code></pre>
 </div>
 </div>
 <p>A nicer, more explicit, approach is to set an origin for your <code>as_date</code> to count from. Weirdly, because of a decades-old glitch in Excel dates, that’s two days before the 1st Jan 1900:</p>
@@ -2217,11 +2217,11 @@ Group variables            None
 <pre><code># A tibble: 5 × 1
   `date collected`
   &lt;date&gt;          
-1 2024-12-24      
-2 2024-12-23      
-3 2025-01-05      
-4 2024-12-28      
-5 2025-01-02      </code></pre>
+1 2025-01-02      
+2 2024-12-22      
+3 2024-12-30      
+4 2024-12-22      
+5 2024-12-23      </code></pre>
 </div>
 </div>
 <p>There’s lots to say about date parsing - and would recommend coming to our <a href="https://nes-dew.github.io/KIND-training/r_training/dates_and_times_with_lubridate.html">lubridate session</a> if you’d like to know more.</p>

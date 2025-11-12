@@ -8,7 +8,7 @@
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke">
-<meta name="dcterms.date" content="2025-11-11">
+<meta name="dcterms.date" content="2025-11-12">
 
 <title>R beginner’s club 2024-06-13 – KIND resources</title>
 <style>
@@ -355,6 +355,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="../KIND_help.html">
  <span class="dropdown-text">How to ask the network for help</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../support_resources.html">
+ <span class="dropdown-text">🆕 KIND wellbeing resources</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -404,10 +408,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li>
     <a class="dropdown-item" href="../kind_botw.html">
  <span class="dropdown-text">Book of the week</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../ml_archive.html">
- <span class="dropdown-text">Mailing list archive</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../rbc/about.html">
@@ -496,7 +496,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 11, 2025</p>
+      <p class="date">November 12, 2025</p>
     </div>
   </div>
   
@@ -603,8 +603,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   old[7, ]  0.3928778
   old[8, ]  0.5743370
 
-`old$score[2:8]`: 0.2 0.6 0.9 0.3 0.2 0.4 0.6
-`new$score[2:8]`: 0.2 0.6 0.9 1.0 0.2 0.4 0.6</code></pre>
+`old$score[2:8]`: 0.25 0.64 0.89 0.34 0.16 0.39 0.57
+`new$score[2:8]`: 0.25 0.64 0.89 1.00 0.16 0.39 0.57</code></pre>
 </div>
 </div>
 <p>I suppose we could also graph our data to show changed points. One way of doing this is to plot the two sets in different colours:</p>
@@ -669,10 +669,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 5 × 2
   name     score
   &lt;chr&gt;    &lt;dbl&gt;
-1 judi     0.887
-2 linsey   0.971
-3 victoria 0.248
-4 peter    0.644
+1 linsey   0.971
+2 judi     0.887
+3 kennedy  0.590
+4 kenneth  0.393
 5 jennifer 0.160</code></pre>
 </div>
 </div>
@@ -689,10 +689,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  3 peter    0.644
  4 judi     0.887
  5 paul     0.336
- 6 judi     0.887
- 7 linsey   0.971
- 8 victoria 0.248
- 9 peter    0.644
+ 6 linsey   0.971
+ 7 judi     0.887
+ 8 kennedy  0.590
+ 9 kenneth  0.393
 10 jennifer 0.160</code></pre>
 </div>
 </div>
@@ -704,9 +704,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 5 × 3
   name     score.x score.y
   &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;
-1 kennedy    0.590  NA    
-2 victoria   0.248   0.248
-3 peter      0.644   0.644
+1 kennedy    0.590   0.590
+2 victoria   0.248  NA    
+3 peter      0.644  NA    
 4 judi       0.887   0.887
 5 paul       0.336  NA    </code></pre>
 </div>
