@@ -60,8 +60,6 @@ website:
             text: Unconference 2024
           - href: kind_botw.qmd
             text: Book of the week
-          - href: ml_archive.qmd
-            text: Mailing list archive
           - href: rbc/about.qmd
             text: R beginner's club
     tools:
