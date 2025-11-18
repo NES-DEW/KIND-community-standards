@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke">
-<meta name="dcterms.date" content="2025-11-12">
+<meta name="dcterms.date" content="2025-11-18">
 
 <title>R beginner’s club 2024-06-13 – KIND resources</title>
 <style>
@@ -75,9 +75,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -284,8 +284,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">KIND resources</span>
     </a>
@@ -496,7 +494,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 12, 2025</p>
+      <p class="date">November 18, 2025</p>
     </div>
   </div>
   
@@ -667,13 +665,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>b2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 2
-  name     score
-  &lt;chr&gt;    &lt;dbl&gt;
-1 linsey   0.971
-2 judi     0.887
-3 kennedy  0.590
-4 kenneth  0.393
-5 jennifer 0.160</code></pre>
+  name    score
+  &lt;chr&gt;   &lt;dbl&gt;
+1 paul    1    
+2 peter   0.644
+3 alupha  0.574
+4 linsey  0.971
+5 michael 0.561</code></pre>
 </div>
 </div>
 <p>The simplest join we could do is to bind the rows from one set onto another:</p>
@@ -689,11 +687,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  3 peter    0.644
  4 judi     0.887
  5 paul     0.336
- 6 linsey   0.971
- 7 judi     0.887
- 8 kennedy  0.590
- 9 kenneth  0.393
-10 jennifer 0.160</code></pre>
+ 6 paul     1    
+ 7 peter    0.644
+ 8 alupha   0.574
+ 9 linsey   0.971
+10 michael  0.561</code></pre>
 </div>
 </div>
 <p>That just brings all the rows from <code>b2</code> onto the end of <code>b1</code>. Unlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join <code>b2</code>:</p>
@@ -704,11 +702,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 5 × 3
   name     score.x score.y
   &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;
-1 kennedy    0.590   0.590
+1 kennedy    0.590  NA    
 2 victoria   0.248  NA    
-3 peter      0.644  NA    
-4 judi       0.887   0.887
-5 paul       0.336  NA    </code></pre>
+3 peter      0.644   0.644
+4 judi       0.887  NA    
+5 paul       0.336   1    </code></pre>
 </div>
 </div>
 <p>You should see that only the values from <code>b2</code>’s score column that have a corresponding name in <code>b1</code> get populated, and everything else gets filled with NAs. Here’s a <a href="https://lindsaydbrin.github.io/CREATE_R_Workshop/Lesson_-_dplyr_join.html">nice introduction to the different kinds of join you can do in dplyr</a>.</p>
