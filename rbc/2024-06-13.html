@@ -8,7 +8,7 @@
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke">
-<meta name="dcterms.date" content="2025-11-19">
+<meta name="dcterms.date" content="2025-11-24">
 
 <title>R beginner’s club 2024-06-13 – KIND resources</title>
 <style>
@@ -361,7 +361,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
   <li class="nav-item">
     <a class="nav-link" href="../mentoring.html"> 
-<span class="menu-text">Mentoring scheme</span></a>
+<span class="menu-text">Buddying scheme</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-theme-weeks" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -494,7 +494,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 19, 2025</p>
+      <p class="date">November 24, 2025</p>
     </div>
   </div>
   
@@ -665,13 +665,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>b2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 2
-  name    score
-  &lt;chr&gt;   &lt;dbl&gt;
-1 paul    1    
-2 kennedy 0.590
-3 judi    0.887
-4 alupha  0.574
-5 peter   0.644</code></pre>
+  name     score
+  &lt;chr&gt;    &lt;dbl&gt;
+1 peter    0.644
+2 jennifer 0.160
+3 judi     0.887
+4 paul     1    
+5 kennedy  0.590</code></pre>
 </div>
 </div>
 <p>The simplest join we could do is to bind the rows from one set onto another:</p>
@@ -687,11 +687,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  3 peter    0.644
  4 judi     0.887
  5 paul     0.336
- 6 paul     1    
- 7 kennedy  0.590
+ 6 peter    0.644
+ 7 jennifer 0.160
  8 judi     0.887
- 9 alupha   0.574
-10 peter    0.644</code></pre>
+ 9 paul     1    
+10 kennedy  0.590</code></pre>
 </div>
 </div>
 <p>That just brings all the rows from <code>b2</code> onto the end of <code>b1</code>. Unlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join <code>b2</code>:</p>
