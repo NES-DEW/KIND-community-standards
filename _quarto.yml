@@ -39,7 +39,7 @@ website:
           - href: support_resources.qmd
             text: 🆕 KIND wellbeing resources
       - href: mentoring.qmd
-        text: Mentoring scheme
+        text: Buddying scheme
       - text: Theme weeks
         menu:
             - href: theme_weeks.qmd
