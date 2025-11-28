@@ -8,7 +8,7 @@
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke">
-<meta name="dcterms.date" content="2025-11-26">
+<meta name="dcterms.date" content="2025-11-28">
 
 <title>R beginner’s club 2024-06-13 – KIND resources</title>
 <style>
@@ -494,7 +494,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 26, 2025</p>
+      <p class="date">November 28, 2025</p>
     </div>
   </div>
   
@@ -668,10 +668,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   name     score
   &lt;chr&gt;    &lt;dbl&gt;
 1 michael  0.561
-2 linsey   0.971
-3 jennifer 0.160
-4 victoria 0.248
-5 kenneth  0.393</code></pre>
+2 kenneth  0.393
+3 victoria 0.248
+4 alupha   0.574
+5 paul     1    </code></pre>
 </div>
 </div>
 <p>The simplest join we could do is to bind the rows from one set onto another:</p>
@@ -688,10 +688,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  4 judi     0.887
  5 paul     0.336
  6 michael  0.561
- 7 linsey   0.971
- 8 jennifer 0.160
- 9 victoria 0.248
-10 kenneth  0.393</code></pre>
+ 7 kenneth  0.393
+ 8 victoria 0.248
+ 9 alupha   0.574
+10 paul     1    </code></pre>
 </div>
 </div>
 <p>That just brings all the rows from <code>b2</code> onto the end of <code>b1</code>. Unlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join <code>b2</code>:</p>
@@ -706,7 +706,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 2 victoria   0.248   0.248
 3 peter      0.644  NA    
 4 judi       0.887  NA    
-5 paul       0.336  NA    </code></pre>
+5 paul       0.336   1    </code></pre>
 </div>
 </div>
 <p>You should see that only the values from <code>b2</code>’s score column that have a corresponding name in <code>b1</code> get populated, and everything else gets filled with NAs. Here’s a <a href="https://lindsaydbrin.github.io/CREATE_R_Workshop/Lesson_-_dplyr_join.html">nice introduction to the different kinds of join you can do in dplyr</a>.</p>
