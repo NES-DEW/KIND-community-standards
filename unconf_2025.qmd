@@ -1,6 +1,6 @@
 # Unconference 2025
 
-![KIND unconference 2025 banner](https://github.com/NES-DEW/dew-img/blob/main/kind/kind_unconf.png?raw=true)
+![KIND unconference 2025 banner](https://raw.githubusercontent.com/NES-DEW/dew-img/refs/heads/main/kind/kind_unconf.png)
 
 
 ## Info
