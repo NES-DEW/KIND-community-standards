@@ -20,11 +20,11 @@ But we also have many members whose are interested in KIND work, but who don't f
 ## Who is the KIND network for?
 The KIND network is open to everyone, but is particularly aimed at staff from Scotland’s health, social care, and housing workforce who are interested in developing their knowledge, information, and data skills.
 
-# What does the KIND network do?
+## What does the KIND network do?
 
 The KIND network does three main things:
 
-1. We provide a range of training courses aimed at developing specialist professional skills. For example, we run [Excel](https://learn.nes.nhs.scot/71690), [Power BI](https://learn.nes.nhs.scot/70921), and [R training](https://learn.nes.nhs.scot/62249) courses at a range of levels. All our courses are free to access. You can find our main [multi-session courses on TURAS](https://learn.nes.nhs.scot/36783), and our wide range of one-off training sessions [via the training mini-site](https://nes-dew.github.io/KIND-training/).
+1. We provide a range of [free training sessions](https://nes-dew.github.io/KIND-training/) to help you build specialist professional skills 
 2. We provide a social learning space in the Teams channel, with a range of events aimed at different aspects of this area of work. For example, we run a weekly topic-based community meetup session, reading groups, social sessions, and a mentoring scheme.
 3. We work with key national stakeholders to support and champion these training and learning activities. For example, we are currently developing resources to support analysts transitioning to R.
 
@@ -43,28 +43,26 @@ This network exists to support people who work with knowledge, information, and 
 KIND work happens in many places across health and social care in Scotland. For example, you might find KIND workers in NHS Boards (national or territorial), other governmental health bodies, Local Authorities, social care care organisations, higher education, in the private sector, professional associations, or in health and social care partnerships
 
 ## How do I contribute?
+
 + please feel free to introduce yourself, ask questions, or post events/jobs/news of interest on the Teams channel
 + please feel welcome to attend and contribute to the community events. We’re generally extremely informal, and it’s always great to hear about your work. We don’t expect polished presentations or anything fancy
 + please spread the word - especially about our training courses
 
-## What are the main activities in the KIND network?
+## How do I find out what's happening on the KIND network?
 
-We have a lot of activities going on. The best way to keep in touch with everything is to either:
+We have a lot of activities going on. The best way to keep in touch with everything is to either to [join our Teams channel](https://teams.microsoft.com/l/team/19%3AQZ7-PbFVcziG2piHLt1_ifey3I2cwFL0yBuTSS8vVao1%40thread.tacv2/conversations?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a) or [subscribe to our mailing list](https://forms.office.com/pages/responsepage.aspx?id=veDvEDCgykuAnLXmdF5JmpopIZB9ynRJnrPUHVFccipURjM2NkZJUkhGOFlQRjQxRFhVUTgwT0UwVyQlQCN0PWcu) for a weekly digest. You might also refer to the [training schedule](https://nes-dew.github.io/KIND-training/schedule.html) or the [list of forthcoming events](https://nes-dew.github.io/KIND-community-standards/kind_cms.html).
 
-+ [Join our Teams channel](https://teams.microsoft.com/l/team/19%3AQZ7-PbFVcziG2piHLt1_ifey3I2cwFL0yBuTSS8vVao1%40thread.tacv2/conversations?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a)
-+ or [subscribe to our mailing list](https://forms.office.com/pages/responsepage.aspx?id=veDvEDCgykuAnLXmdF5JmpopIZB9ynRJnrPUHVFccipURjM2NkZJUkhGOFlQRjQxRFhVUTgwT0UwVyQlQCN0PWcu) for a weekly digest
+## Where can I find more information about training?
 
-Otherwise, our main activities are:
+All info about our training courses can be found on the [training mini-site](https://nes-dew.github.io/KIND-training/). Everything is free of cost, and open for self-service booking. Please see the main [schedule page](https://nes-dew.github.io/KIND-training/schedule.html) to see what's available. Note that most of our training sessions are regularly repeated (usually two or three times per year) so please don't despair if you miss something of interest.
+  
+## Do you have a mentoring/buddying scheme?
 
-+ core multi-session training courses:
-    + [Excel Skills](https://learn.nes.nhs.scot/71690)
-    + [Power BI for Beginners](https://learn.nes.nhs.scot/70921)
-    + [R and Rmarkdown intro](https://learn.nes.nhs.scot/62249) / [R intermediate](https://learn.nes.nhs.scot/64644) / [Shiny](https://learn.nes.nhs.scot/67960)
-    + [Evidence-based medicine and critical appraisal](https://learn.nes.nhs.scot/75780)
-+ 60+ one-off training sessions, available via the [training mini-site](https://nes-dew.github.io/KIND-training/)
-+ [mentoring scheme](https://teams.microsoft.com/l/channel/19%3A0708d3664e064dd3a0dbbe3079817283%40thread.tacv2/Mentoring?groupId=106d08f3-9026-40e2-b3c7-87cd87304d58&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a)
-+ weekly [community meetups](https://teams.microsoft.com/l/entity/0d820ecd-def2-4297-adad-78056cde7c78/_djb2_msteams_prefix_3892451309?context=%7B%22channelId%22%3A%2219%3Ab03b2fd777e440eaa255ba67569762b5%40thread.tacv2%22%7D&tenantId=10efe0bd-a030-4bca-809c-b5e6745e499a) including the ever-popular [book of the week segment](kind_botw.qmd)
+We have previously offered a technical mentoring scheme, but owing to a lack of offers to act as mentors that's no longer viable. Instead, we have a simple [buddying scheme](https://nes-dew.github.io/KIND-community-standards/mentoring.html) which will pair you with a member of the network
 
+## Do you run network events
+
+We run a range of events for the community - typically one per week. You can see a [list of forthcoming network events here](https://nes-dew.github.io/KIND-community-standards/kind_cms.html).
 
 ## Is X going to be recorded?
 
