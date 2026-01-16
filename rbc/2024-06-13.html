@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke">
-<meta name="dcterms.date" content="2026-01-09">
+<meta name="dcterms.date" content="2026-01-16">
 
 <title>R beginner’s club 2024-06-13 – KIND resources</title>
 <style>
@@ -75,9 +75,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -494,7 +494,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 9, 2026</p>
+      <p class="date">January 16, 2026</p>
     </div>
   </div>
   
@@ -667,11 +667,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 5 × 2
   name     score
   &lt;chr&gt;    &lt;dbl&gt;
-1 kennedy  0.590
-2 linsey   0.971
-3 alupha   0.574
-4 victoria 0.248
-5 judi     0.887</code></pre>
+1 michael  0.561
+2 jennifer 0.160
+3 kenneth  0.393
+4 linsey   0.971
+5 kennedy  0.590</code></pre>
 </div>
 </div>
 <p>The simplest join we could do is to bind the rows from one set onto another:</p>
@@ -687,11 +687,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  3 peter    0.644
  4 judi     0.887
  5 paul     0.336
- 6 kennedy  0.590
- 7 linsey   0.971
- 8 alupha   0.574
- 9 victoria 0.248
-10 judi     0.887</code></pre>
+ 6 michael  0.561
+ 7 jennifer 0.160
+ 8 kenneth  0.393
+ 9 linsey   0.971
+10 kennedy  0.590</code></pre>
 </div>
 </div>
 <p>That just brings all the rows from <code>b2</code> onto the end of <code>b1</code>. Unlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join <code>b2</code>:</p>
@@ -703,9 +703,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   name     score.x score.y
   &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;
 1 kennedy    0.590   0.590
-2 victoria   0.248   0.248
+2 victoria   0.248  NA    
 3 peter      0.644  NA    
-4 judi       0.887   0.887
+4 judi       0.887  NA    
 5 paul       0.336  NA    </code></pre>
 </div>
 </div>

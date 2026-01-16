@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke">
-<meta name="dcterms.date" content="2026-01-09">
+<meta name="dcterms.date" content="2026-01-16">
 
 <title>R beginner’s club 2025-01-09 – KIND resources</title>
 <style>
@@ -75,9 +75,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -492,7 +492,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 9, 2026</p>
+      <p class="date">January 16, 2026</p>
     </div>
   </div>
   
@@ -2181,11 +2181,11 @@ Group variables            None
 <pre><code># A tibble: 5 × 1
   `date collected`
   &lt;chr&gt;           
-1 45646           
-2 45659           
-3 45665           
-4 45647           
-5 45665           </code></pre>
+1 45654           
+2 45648           
+3 45659           
+4 45659           
+5 45656           </code></pre>
 </div>
 </div>
 <p>Excel counts days from Jan 1st 1900, while R counts days from Jan 1st 1970. That means that you need to subtract those 70 years to convert from one to the other, and then use lubridates <code>as_date</code> to convert that number of days into a proper R date. The quick-and-dirty way - just subtract 70 years-worth of days, which is (of course) 25569 days:</p>
@@ -2200,9 +2200,9 @@ Group variables            None
   &lt;date&gt;          
 1 2025-01-05      
 2 2025-01-02      
-3 2024-12-22      
-4 2025-01-05      
-5 2024-12-23      </code></pre>
+3 NA              
+4 2025-01-02      
+5 NA              </code></pre>
 </div>
 </div>
 <p>A nicer, more explicit, approach is to set an origin for your <code>as_date</code> to count from. Weirdly, because of a decades-old glitch in Excel dates, that’s two days before the 1st Jan 1900:</p>
@@ -2215,11 +2215,11 @@ Group variables            None
 <pre><code># A tibble: 5 × 1
   `date collected`
   &lt;date&gt;          
-1 2024-12-28      
-2 2024-12-23      
-3 2025-01-06      
-4 2024-12-24      
-5 2024-12-21      </code></pre>
+1 2024-12-30      
+2 2025-01-02      
+3 2024-12-24      
+4 2024-12-29      
+5 2025-01-01      </code></pre>
 </div>
 </div>
 <p>There’s lots to say about date parsing - and would recommend coming to our <a href="https://nes-dew.github.io/KIND-training/r_training/dates_and_times_with_lubridate.html">lubridate session</a> if you’d like to know more.</p>
