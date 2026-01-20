@@ -2181,11 +2181,11 @@ Group variables            None
 <pre><code># A tibble: 5 × 1
   `date collected`
   &lt;chr&gt;           
-1 45661           
-2 45655           
+1 45664           
+2 45662           
 3 45658           
 4 45665           
-5 45666           </code></pre>
+5 45659           </code></pre>
 </div>
 </div>
 <p>Excel counts days from Jan 1st 1900, while R counts days from Jan 1st 1970. That means that you need to subtract those 70 years to convert from one to the other, and then use lubridates <code>as_date</code> to convert that number of days into a proper R date. The quick-and-dirty way - just subtract 70 years-worth of days, which is (of course) 25569 days:</p>
@@ -2198,11 +2198,11 @@ Group variables            None
 <pre><code># A tibble: 5 × 1
   `date collected`
   &lt;date&gt;          
-1 2024-12-29      
-2 2024-12-21      
-3 2024-12-21      
-4 2024-12-29      
-5 2024-12-30      </code></pre>
+1 2024-12-23      
+2 2025-01-08      
+3 2024-12-29      
+4 2024-12-28      
+5 2024-12-28      </code></pre>
 </div>
 </div>
 <p>A nicer, more explicit, approach is to set an origin for your <code>as_date</code> to count from. Weirdly, because of a decades-old glitch in Excel dates, that’s two days before the 1st Jan 1900:</p>
@@ -2215,11 +2215,11 @@ Group variables            None
 <pre><code># A tibble: 5 × 1
   `date collected`
   &lt;date&gt;          
-1 2025-01-04      
-2 2025-01-05      
-3 2024-12-21      
-4 2024-12-28      
-5 2024-12-26      </code></pre>
+1 2025-01-09      
+2 2024-12-28      
+3 2024-12-20      
+4 2024-12-29      
+5 2025-01-02      </code></pre>
 </div>
 </div>
 <p>There’s lots to say about date parsing - and would recommend coming to our <a href="https://nes-dew.github.io/KIND-training/r_training/dates_and_times_with_lubridate.html">lubridate session</a> if you’d like to know more.</p>
