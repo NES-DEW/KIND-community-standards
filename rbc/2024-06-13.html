@@ -642,13 +642,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>b2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 2
-  name     score
-  &lt;chr&gt;    &lt;dbl&gt;
-1 alupha   0.574
-2 victoria 0.248
-3 peter    0.644
-4 jennifer 0.160
-5 kennedy  0.590</code></pre>
+  name    score
+  &lt;chr&gt;   &lt;dbl&gt;
+1 paul    1    
+2 judi    0.887
+3 kenneth 0.393
+4 linsey  0.971
+5 kennedy 0.590</code></pre>
 </div>
 </div>
 <p>The simplest join we could do is to bind the rows from one set onto another:</p>
@@ -664,10 +664,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  3 peter    0.644
  4 judi     0.887
  5 paul     0.336
- 6 alupha   0.574
- 7 victoria 0.248
- 8 peter    0.644
- 9 jennifer 0.160
+ 6 paul     1    
+ 7 judi     0.887
+ 8 kenneth  0.393
+ 9 linsey   0.971
 10 kennedy  0.590</code></pre>
 </div>
 </div>
@@ -680,10 +680,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   name     score.x score.y
   &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;
 1 kennedy    0.590   0.590
-2 victoria   0.248   0.248
-3 peter      0.644   0.644
-4 judi       0.887  NA    
-5 paul       0.336  NA    </code></pre>
+2 victoria   0.248  NA    
+3 peter      0.644  NA    
+4 judi       0.887   0.887
+5 paul       0.336   1    </code></pre>
 </div>
 </div>
 <p>You should see that only the values from <code>b2</code>’s score column that have a corresponding name in <code>b1</code> get populated, and everything else gets filled with NAs. Here’s a <a href="https://lindsaydbrin.github.io/CREATE_R_Workshop/Lesson_-_dplyr_join.html">nice introduction to the different kinds of join you can do in dplyr</a>.</p>
