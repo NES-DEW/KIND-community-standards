@@ -40,18 +40,8 @@ website:
             text: 🆕 KIND wellbeing resources
       - href: mentoring.qmd
         text: Buddying scheme
-      - text: Theme weeks
-        menu:
-            - href: theme_weeks.qmd
-              text: Schedule
-            - href: kind_power_automate_week.qmd
-              text: Power Automate week
-            - href: kind_power_query_week.qmd
-              text: Power Query week
-            - href: kind_troubleshooting_week.qmd
-              text: Troubleshooting week
-            - href: kind_opensource.qmd
-              text: Open Source week
+      - href: theme_weeks.qmd
+        text: Theme weeks
       - text: Archive
         menu:
           - href: visio.qmd

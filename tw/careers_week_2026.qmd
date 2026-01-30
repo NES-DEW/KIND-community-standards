@@ -1,0 +1,7 @@
+---
+title: KIND careers week
+editor_options: 
+  chunk_output_type: console
+---
+
+Week commencing 20th April 2026

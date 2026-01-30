@@ -1,0 +1,27 @@
+---
+title: "Troubleshooting week"
+execute: 
+  freeze: false
+editor_options: 
+  chunk_output_type: console
+---
+
+## Introduction
+
+We're running a network-wide themed week on troubleshooting between 30th June and the 4th July 2025. That’ll include a range of training sessions at all levels, opportunities for 1:1 and group support, and presentations from users about how they approach problem-solving. All welcome - we aim to run sessions at all levels of expertise, so please feel encouraged to come along.
+
+### Social sessions
+
++ 14:00 Wed 2nd July 2025. [Preventing single points of failure](https://events.teams.microsoft.com/event/46f4de3a-882d-420e-837f-5551fdfa6f82@10efe0bd-a030-4bca-809c-b5e6745e499a)
+
+### Training
+
++ 10:00 Mon 30th June 2025. [How to troubleshoot (anything!)](https://events.teams.microsoft.com/event/3007b4c2-4d49-4a94-a25a-cd79a242bfb1@10efe0bd-a030-4bca-809c-b5e6745e499a)
++ 13:00 Mon 30th June 2025. [Excel errors](https://events.teams.microsoft.com/event/243bc8c7-bda3-4b65-a23e-56a5433a189d@10efe0bd-a030-4bca-809c-b5e6745e499a)
++ 14:30 Mon 30th June 2025. [Debugging R](https://events.teams.microsoft.com/event/72b10186-c2cb-4eef-be77-c19d2321bdfc@10efe0bd-a030-4bca-809c-b5e6745e499a)
++ 13:00 Tues 1st July 2025. [Reproducible examples (reprex) in R](https://events.teams.microsoft.com/event/c705dfa1-c659-462f-94a4-36c81db0e2f7@10efe0bd-a030-4bca-809c-b5e6745e499a)
++ 12:30 Wed 2nd July 2025. [Power BI errors](https://events.teams.microsoft.com/event/fa745981-794d-43f8-b4a1-a191ac74ae00@10efe0bd-a030-4bca-809c-b5e6745e499a)
++ 11:00 Thu 3rd July 2025. [Practical Shiny debugging](
+https://events.teams.microsoft.com/event/a4b531f7-91fe-4d18-b897-793116d43eb0@10efe0bd-a030-4bca-809c-b5e6745e499a)
++ 13:00 Thursday 3rd July 2025. [Reproducible examples (reprex) for beginners](https://events.teams.microsoft.com/event/f928a7d0-b337-452f-8b4e-8b4fce635803@10efe0bd-a030-4bca-809c-b5e6745e499a)
+

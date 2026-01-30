@@ -1,0 +1,7 @@
+---
+title: KIND research week
+editor_options: 
+  chunk_output_type: console
+---
+
+Week commencing 26th October 2026

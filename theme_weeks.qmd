@@ -2,8 +2,21 @@
 
 Theme weeks occupy a whole week with a single topic, with 10-20 events scheduled on the topic. This year, we'll run theme weeks as follows:
 
-+ w/c 31st March - [Power Automate](kind_power_automate_week.qmd)
-+ w/c 19th May 2025 - [Power Query](kind_power_query_week.qmd)
-+ w/c 30th June 2025 - [Troubleshooting](kind_troubleshooting_week.qmd)
+## 2026
+
++ week commencing 9th March 2026: [mistakes and errors](tw/mistakes_week_2026.qmd)
++ week commencing 20th April 2026: KIND careers
++ week commencing 22th June 2026: the history of health data and analytics
++ week commencing 26th October 2026: KIND and research
+
+<!-- + week commencing 20th April 2026: [KIND careers](tw/careers_week_2026.qmd) -->
+<!-- + week commencing 22th June 2026: [the history of health data and analytics](tw/history_week_2026.qmd) -->
+<!-- + week commencing 26th October 2026: [KIND and research](tw/research_week_2026.qmd) -->
+
+## 2025
+
++ w/c 31st March - [Power Automate](tw/kind_power_automate_week.qmd)
++ w/c 19th May 2025 - [Power Query](tw/kind_power_query_week.qmd)
++ w/c 30th June 2025 - [Troubleshooting](tw/kind_troubleshooting_week.qmd)
 + w/c 25th August 2025 - No Stupid Questions
-+ w/c 27th October 2025 - [Open Source / copyleft](kind_opensource.qmd)
++ w/c 27th October 2025 - [Open Source / copyleft](tw/kind_opensource.qmd)

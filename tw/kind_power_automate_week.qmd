@@ -1,0 +1,44 @@
+---
+title: "Power Automate week"
+execute: 
+  freeze: false
+editor_options: 
+  chunk_output_type: console
+---
+
+## Power Automate week plan
+
+We're running a network-wide [Microsoft Power Automate](https://www.microsoft.com/en-gb/power-platform/products/power-automate) week between 31st March and 4th April. That’ll include a range of training sessions at all levels, opportunities for 1:1 and group project support, and presentations from users who are putting Power Automate to work in health and social care.
+
+## Why Power Automate?
+
+Power Automate gives you low-code ways of creating automated processes. Common uses might be:
+
++ to get a Teams message every time a colleague adds something to a shared document
++	to copy data from one spreadsheet to another
++	to manage mailing lists (including the KIND mailing list)
+
+### Training sessions
+
++ [Scope of the possible with Power Automate](https://events.teams.microsoft.com/event/097b9b2e-29c7-4140-ba0f-b4adc419d9e1@10efe0bd-a030-4bca-809c-b5e6745e499a) - Monday 31st March 10.00-11.00
++ [Introduction to Power Automate](https://events.teams.microsoft.com/event/69591eaf-5246-409d-ba71-2d11266e083e@10efe0bd-a030-4bca-809c-b5e6745e499a) - Monday 31st March 15.00-16.00
++ [Conditions in Power Automate](https://events.teams.microsoft.com/event/70a5bee4-7bec-48e3-bffb-fbb0815554ad@10efe0bd-a030-4bca-809c-b5e6745e499a) - Tuesday 1st April 13.30-15.30
++ [Mailing lists in Power Automate](https://events.teams.microsoft.com/event/020db29d-bf5d-4018-b2a4-0d95f1878ed4@10efe0bd-a030-4bca-809c-b5e6745e499a) - Wednesday 2nd April 14.00-16.00
+
+
+### Support group
+Sessions for mutual aid, sharing best practice, and ideas to support Power Automate projects. These are level-based, so over the week you can register for:
+
++ ["I've never built a flow"](https://events.teams.microsoft.com/event/9901a287-c34f-4c98-8b44-e1db8923a830@10efe0bd-a030-4bca-809c-b5e6745e499a) - Tuesday 1st April 10.00-11.00
++ ["I'm a beginner"](https://events.teams.microsoft.com/event/2889a142-c9e8-494d-b874-1bc3e17c66ef@10efe0bd-a030-4bca-809c-b5e6745e499a) - Wednesday 2nd April 11.00-12.00
++ ["I'm beyond the beginner-level"](https://events.teams.microsoft.com/event/89c69240-ffef-40f8-9550-bae3b8078337@10efe0bd-a030-4bca-809c-b5e6745e499a) - Thursday 3rd April 11.30-12.30
+
+### Project presentations
+
+Presentations from members of the network. There are more to come of these, and please get in touch if you'd like to show your Power Automate work - it definitely doesn't need to be elaborate or fancy to be important and interesting.
+
++ [Pauline Russell (NSS) - customer supply notification process using Excel, and potentially something else...](https://events.teams.microsoft.com/event/8b6622f1-7bd1-4523-bc99-1f9dcc140c00@10efe0bd-a030-4bca-809c-b5e6745e499a), Thursday 3rd April 10.00-11.00
++ [Kirstin Crawford (NES) - DLP signup process](https://events.teams.microsoft.com/event/ff0fc672-0301-45bb-81e1-77bf38103689@10efe0bd-a030-4bca-809c-b5e6745e499a), Thursday 3rd April 13.00-14.00
++ [Duncan Sage (PHS) - List workplans](https://events.teams.microsoft.com/event/7822afa9-38b0-43b0-907a-55b43a59f067@10efe0bd-a030-4bca-809c-b5e6745e499a), Friday 4th April 13.00-14.00
++ [Daniel Gunn (NES) - sending emails with Power Automate](https://events.teams.microsoft.com/event/96398731-b0b4-44ce-bf0a-9969afa462ba@10efe0bd-a030-4bca-809c-b5e6745e499a), Wednesday 2nd 12.30-13.30
++ [Bryan Ewington and Daniel Gunn (NES) - Document review and certificates](https://events.teams.microsoft.com/event/06aefaa7-3ee9-4f66-a417-03629b3d626b@10efe0bd-a030-4bca-809c-b5e6745e499a), Friday 4th 15.00-16.00

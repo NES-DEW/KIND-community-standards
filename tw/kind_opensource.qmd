@@ -1,0 +1,64 @@
+---
+title: "Open Source week"
+editor_options: 
+  chunk_output_type: console
+---
+
+## Open source week
+
+We ran a network-wide theme week between 27th and 31st October 2025 about Open Source. 
+
+Open Source refers to any form of technology, software or data where the work is freely available for anyone to use, modify and distribute. Such freedom drives creativity, innovation and community collaboration, which are hallmark traits of open source. 
+ 
+In many ways, Open Source work is the lifeblood of all the technology we see today. From the linux-based servers our work applications depend on, to the Webkit browser engine Apple phones use, and even the open data we share for transparency, integrity and public engagement - open source is everywhere. 
+ 
+### Videos
+
+With sincere thanks to all our speakers and attendees, here's a set of recordings from open source week.
+
+#### Open Data Scotland
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1134176851?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KIND Network Open Source Week: Open Data Scotland"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+#### Open Source in NHS Lothian
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1140077330?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KIND Network Open Source Week: Open Source in NHS Lothian"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+
+#### Introduction to Python
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1140086541?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KIND Network Open Source Week: Introduction to Python"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+
+#### Using Open Data - Ben Harley's NHS Open Data Dashboard
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1140341686?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KIND Network Open Source Week: Using Open Data - Ben Harley&#039;s NHS Open Data Dashboard"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+#### Introduction to Tableau Public
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1140371860?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KIND Network Open Source Week: Introduction to Tableau Public"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+#### Open Data - The Public Health Scotland Approach
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1140377047?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KIND Network Open Source Week: Open Data - The Public Health Scotland Approach"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+#### Introduction to Packages 
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1140424854?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KIND Network Open Source Week: Creating and Using Packages (Part 2)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+#### Creating and Using Packages
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1140424854?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KIND Network Open Source Week: Creating and Using Packages (Part 2)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+#### Introduction to Git and Github
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1140418763?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KIND Network Open Source Week: Introduction to Git and Github"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+#### Packages for Charts
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1140427415?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KIND Network Open Source Week: Packages for Charts"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
