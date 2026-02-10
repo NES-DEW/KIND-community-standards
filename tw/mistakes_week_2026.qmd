@@ -12,7 +12,7 @@ In the week commencing 9th March 2026, we'll run a series of network-wide events
 ## Schedule
 
 ```{r}
-readr::read_csv("data/KIND_community_meetups.csv") |>
+readr::read_csv("../data/KIND_community_meetups.csv") |>
   dplyr::mutate(Date = lubridate::as_date(date)) |>
   dplyr::arrange(Date) |>
   dplyr::filter(Date >= lubridate::today() & !is.na(Date)) |>
