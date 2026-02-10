@@ -8,9 +8,9 @@
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke">
-<meta name="dcterms.date" content="2024-11-29">
+<meta name="dcterms.date" content="2024-09-02">
 
-<title>KIND interview practice resources – KIND resources</title>
+<title>Joins 1: introduction – KIND resources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,31 +23,66 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-64c611e38961a6caaced9b1829b0f356.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-64c611e38961a6caaced9b1829b0f356.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,19 +110,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
-<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
-<script src="site_libs/datatables-binding-0.34.0/datatables.js"></script>
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
-<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
-<script src="site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
-<link href="site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
-<script src="site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -259,7 +284,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">KIND resources</span>
     </a>
   </div>
@@ -270,7 +295,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -279,15 +304,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-community-standards">    
         <li>
-    <a class="dropdown-item" href="./excel.html">
+    <a class="dropdown-item" href="../excel.html">
  <span class="dropdown-text">Excel</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./r.html">
+    <a class="dropdown-item" href="../r.html">
  <span class="dropdown-text">R</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./data_collection.html">
+    <a class="dropdown-item" href="../data_collection.html">
  <span class="dropdown-text">Data collection (draft)</span></a>
   </li>  
     </ul>
@@ -298,19 +323,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-community-activities">    
         <li>
-    <a class="dropdown-item" href="./rreadgr.html">
+    <a class="dropdown-item" href="../rreadgr.html">
  <span class="dropdown-text">R reading group</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./kind_cms.html">
+    <a class="dropdown-item" href="../kind_cms.html">
  <span class="dropdown-text">Community meetups</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./unconf_2025.html">
+    <a class="dropdown-item" href="../unconf_2025.html">
  <span class="dropdown-text">Unconference 2025</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./question_bank.html">
+    <a class="dropdown-item" href="../question_bank.html">
  <span class="dropdown-text">Practice interview questions</span></a>
   </li>  
     </ul>
@@ -321,25 +346,25 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-kind-faq">    
         <li>
-    <a class="dropdown-item" href="./faq.html">
+    <a class="dropdown-item" href="../faq.html">
  <span class="dropdown-text">KIND FAQ</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./KIND_help.html">
+    <a class="dropdown-item" href="../KIND_help.html">
  <span class="dropdown-text">How to ask the network for help</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./support_resources.html">
+    <a class="dropdown-item" href="../support_resources.html">
  <span class="dropdown-text">🆕 KIND wellbeing resources</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./mentoring.html"> 
+    <a class="nav-link" href="../mentoring.html"> 
 <span class="menu-text">Buddying scheme</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./theme_weeks.html"> 
+    <a class="nav-link" href="../theme_weeks.html"> 
 <span class="menu-text">Theme weeks</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -348,19 +373,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-archive">    
         <li>
-    <a class="dropdown-item" href="./visio.html">
+    <a class="dropdown-item" href="../visio.html">
  <span class="dropdown-text">Visio SOP</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./unconf_2024.html">
+    <a class="dropdown-item" href="../unconf_2024.html">
  <span class="dropdown-text">Unconference 2024</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./kind_botw.html">
+    <a class="dropdown-item" href="../kind_botw.html">
  <span class="dropdown-text">Book of the week</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./rbc/about.html">
+    <a class="dropdown-item" href="../rbc/about.html">
  <span class="dropdown-text">R beginner’s club</span></a>
   </li>  
     </ul>
@@ -393,7 +418,17 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#how-to-think-about-joins" id="toc-how-to-think-about-joins" class="nav-link active" data-scroll-target="#how-to-think-about-joins">How to think about joins?</a></li>
+  <li><a href="#binding" id="toc-binding" class="nav-link" data-scroll-target="#binding">Binding</a></li>
+  <li><a href="#joins-proper" id="toc-joins-proper" class="nav-link" data-scroll-target="#joins-proper">Joins proper</a></li>
+  <li><a href="#anti-join" id="toc-anti-join" class="nav-link" data-scroll-target="#anti-join">Anti-join</a></li>
+  <li><a href="#final-thoughts" id="toc-final-thoughts" class="nav-link" data-scroll-target="#final-thoughts">Final thoughts</a></li>
+  </ul>
+</nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
 <a property="dct:title" rel="cc:attributionURL" href="https://nes-dew.github.io/KIND-training">KIND training materials</a> by <span property="cc:attributionName">KIND learning network</span> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a>
@@ -405,8 +440,15 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">KIND interview practice resources</h1>
-</div>
+<h1 class="title">Joins 1: introduction</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Joins</div>
+    <div class="quarto-category">beginner</div>
+    <div class="quarto-category">Excel</div>
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Power Query</div>
+  </div>
+  </div>
 
 
 <div class="quarto-title-meta-author">
@@ -434,7 +476,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 29, 2024</p>
+      <p class="date">September 2, 2024</p>
     </div>
   </div>
   
@@ -446,11 +488,410 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Here are some sample interview questions cobbled together from various public sources. Most of them are public-sector (and health and social-care) oriented:</p>
-<div class="datatables html-widget html-fill-item" id="htmlwidget-2eef5e005634d9175cf9" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-2eef5e005634d9175cf9">{"x":{"filter":"none","vertical":false,"data":[["General questions","General questions","General questions","General questions","General questions","General questions","General questions","General questions","General questions","Non-public sector questions","Non-public sector questions","Non-public sector questions","Non-public sector questions","Non-public sector questions","Non-public sector questions","Non-public sector questions","Non-public sector questions","Non-public sector questions","Non-public sector questions","Non-public sector questions","Non-public sector questions","Non-public sector questions","Analysis","Analysis","Analysis","Analysis","Analysis","Adaptability","Adaptability","Adaptability","Adaptability","Adaptability","Accountability and Managing Priorities","Accountability and Managing Priorities","Accountability and Managing Priorities","Accountability and Managing Priorities","Accountability and Managing Priorities","Team","Team","Team","Team","Team","Team","Team","Problems, problem-solving, and challenges","Problems, problem-solving, and challenges","Problems, problem-solving, and challenges","Problems, problem-solving, and challenges","Problems, problem-solving, and challenges","Leadership","Leadership","Leadership","Leadership","Leadership","Initiative","Initiative","Initiative","Initiative","Learning and development","Learning and development","Learning and development","Learning and development","Learning and development","Learning and development","Learning and development","Decision-making","Decision-making","Decision-making","Decision-making","Creativity and Innovation","Creativity and Innovation","Communication","Communication","Communication","Communication","Communication","Communication","Communication"],["Tell me about yourself?","What are your key strengths?","What is your biggest weakness?","Where do you see yourself 5 years from now?","Why do you want to work with us?","What do you know about our organisation?","What do you think you will be doing on a day-to-day basis in this role?","What motivates you?","Do you have any questions for us?","Why did you leave your last job?","Why should we hire you?","What are your salary expectation? How much do you expect to get paid?","What is your greatest achievement?","Tell us about a challenge you have faced recently, how did you deal with it, and what was the outcome?","What are you looking for in a new role?","What type of working environment do you prefer?","What is your management style?","How would your boss describe you? How would your colleagues describe you?","Tell me about this (x) gap in your employment...","Explain why you have decided to change career...","What do you think the first 30 days will look like in this new role?","What do you do outside of your job?","Describe a project or task that you were responsible for that demonstrates your ability to analyse information","Tell me about a time when you spotted a discrepancy or inconsistency in information that might have caused problems if you had missed it","Tell me about a time when you needed to analyse a large volume of data, and describe how you knew what was important","Describe a time when you have analysed information, and made an objective decision, despite personal bias.","Tell me about a time when you have analysed information, and made a recommendation to others. What methods did you use? Did you refer to anyone else?","Discuss a time when you had to deal with a major change in your workplace or your job duties. How did you prepare for the change?","Provide an example of when you had to take action and did not have sufficient time to prepare. How did you adapt to this situation?","Describe a time when you needed to complete a project with little direction. What issues did you face?","Give an example of when you needed to meet multiple priorities. How did you handle this?","Tell me about a time when you needed to change your point of view?","Give a specific example of how you have demonstrated your ability to handle multiple priorities and deliver results","Think of a time when you had many demands placed upon you. How did you ensure that you met the needs of your customers, co-workers and your managers?","Describe a time when you have been unable to follow through on a commitment that you made. What happened? How did you explain this to the other party?","Some jobs are very hectic at times. Please give an example of when you managed to get everything done in a pressured time. What strategies did you use to ensure timely, high quality results?","Tell me about a time when you had more to complete than the time you had allocated. How did you decide what tasks to prioritise?","Describe a time when you were the member of a team. What was your role? Did the team accomplish the task? How did you help them to succeed?","Tell me about a time when you encouraged your co-workers to support you in a task. How did you gain their support?","Describe a time when you were in a team that was not successful. What went wrong? If you were to go back and do that task again, what would you do differently?","Tell me about a time when you ensured that everyone in your team participated. How did you go about this, and what challenges did you face?","Describe a time when you worked with a team where you struggled to communicate with some of your colleagues? What steps did you take to resolve these difficulties?","Tell us about a high-stress situation where maintaining a positive attitude was crucial. How did this situation affect your productivity, and how did you manage it?","Describe a time when you had to work with someone who was challenging to collaborate with. What made the relationship difficult, and how did you approach managing it effectively?","Describe a problem that you recently needed to solve. Were there any alternatives you could have considered?","Describe the steps you take when solving a problem. Give me an example.","Describe a problem that you needed to solve in your last role. What was the impact of this?","Tell us about a time you encountered resistance to change within a team or organization. How did you recognize the resistance, and what steps did you take to manage it? Who did you consult, and what was the outcome?","Describe a challenging situation where priorities shifted, and you had to balance both people and business needs. How did you approach and what strategies helped you manage it effectively?","Think of a time when you have acted as a role model for others. Why did they  consider you to be a role model? How did you influence others?","Describe a time when you needed to give feedback to others. How did you go about this? How was the feedback received?","Describe a time when you were leading a project. What were the circumstances? How did you delegate work?","Describe a time when you were recognised for dealing effectively with a difficult situation","Leaders can make unpopular decisions. Tell me about a time when you needed to make a difficult/unpopular choice.","Describe a time when you initiated a procedural change on your own. How did you present your ideas to management? What was the outcome?","Talk me through a time when you were given a project with little supervision. How did you feel? Describe how you went about the project? What was the outcome?","Describe a situation when you recognised a problem and took action to solve it.","Describe a time when your quick response made a difference. What happened?","How do you keep up to date? How do you keep others up to date?","Describe a time when you have used feedback to enhance the performance of someone else. What was your approach?","Tell me about a time when you have worked with someone who has failed to improve. What might have caused this failure? What might you have done differently if you had coached them?","Tell me about a recent job or experience that you would describe as a ‘real learning experience’. What did you learn? How will you use this in the future?","Describe a time when you have been given negative feedback, explain how you handled this? What did you do to develop?","Tell me about a time when you were not satisfied with your own performance. What did you do about it?","Describe a challenging situation where priorities shifted, and you had to balance both people and business needs. How did you approach and what strategies helped you manage it effectively?","Tell me about a time when you had a difficult decision to make. How did you organise the information? Was your decision effective?","Give a specific example of a decision you needed to make. How did you make that decision? Did you involve others?","Give an example of when you failed to solve a problem effectively. Why was your solution ineffective? If you did it again, what would you do differently?","Tell me about a time when you made an objective decision, despite having a personal opinion","Tell us about a project or situation when you felt that a conventional approach was not suitable. How did you drive forward this approach? What challenges did you face, and how did you address them?","Tell me about a time when you needed to persuade someone that a change was necessary. What made you think that your idea was best suited?","Give an example of when you had difficulty communicating your thoughts to someone. What message were you trying to convey? Where did the difficultly lie?","Tell me about a sensitive or volatile situation that needed careful communication","Tell me about a time when you have successfully managed a conflict between two co-workers","Give an example demonstrating your ability to build successful working relationships","Tell me about a time when you have needed to write an important report. What steps did you take to plan for it? What did you find most challenging?","Describe a time when you needed to give a presentation to someone.","Tell me about how you prepared for this interview. What stages did you go through?"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Area<\/th>\n      <th>Question<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"name":"Area","targets":0},{"name":"Question","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<section id="how-to-think-about-joins" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-think-about-joins">How to think about joins?</h2>
+<p>A join is a way of merging two datasets. Let’s demonstrate with some simple data:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"Steve"</span>, <span class="st">"Emma"</span>, <span class="st">"Arti"</span>),</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">tool =</span> <span class="fu">c</span>(<span class="st">"R"</span>, <span class="st">"Excel"</span>, <span class="st">"Excel"</span>),</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">training_sessions =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">7</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">tool</th>
+<th style="text-align: right;">training_sessions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Steve</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">7</td>
+</tr>
+</tbody>
+</table>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"Abena"</span>, <span class="st">"Yuika"</span>, <span class="st">"Arti"</span>),</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">tool =</span> <span class="fu">c</span>(<span class="st">"R"</span>, <span class="st">"Excel"</span>, <span class="st">"Power BI"</span>),</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">training_sessions =</span> <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">3</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">tool</th>
+<th style="text-align: right;">training_sessions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Abena</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Yuika</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Power BI</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="binding" class="level2">
+<h2 class="anchored" data-anchor-id="binding">Binding</h2>
+<p>The simplest join we could do is to bind the rows from one set onto another:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(y) <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">tool</th>
+<th style="text-align: right;">training_sessions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Steve</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Abena</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Yuika</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Power BI</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+<p>That just brings all the rows from <code>y</code> onto the end of <code>x</code>. We could also have just bound the columns together:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>x <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(y) <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 27%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">name…1</th>
+<th style="text-align: left;">tool…2</th>
+<th style="text-align: right;">training_sessions…3</th>
+<th style="text-align: left;">name…4</th>
+<th style="text-align: left;">tool…5</th>
+<th style="text-align: right;">training_sessions…6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Steve</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Abena</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Yuika</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Power BI</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+<p>Doing this in R, we end up with something quite messy: we’ve gained some new columns (with odd names), and lots of blank values. The reason for this is that Arti has a row in each dataset. Anyone without corresponding rows gets filling in with blanks.</p>
+<p>We could do something very similar by hand in Excel. It’s worth noting the <code>VSTACK</code> function, which allows you to bring one table into another in Excel. PowerQuery has some great tools for binding data. <code>Append Queries</code> allows you to perform row-binding:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2952836979.png" class="img-fluid figure-img"></p>
+<figcaption>Select Append Queries</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-3653621168.png" class="img-fluid figure-img"></p>
+<figcaption>Select datasets to bind together</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-1970651010.png" class="img-fluid figure-img"></p>
+<figcaption>New table containing all rows from the original</figcaption>
+</figure>
+</div>
+<p>However we bind, the main distinction remains the same. When you bind, the values in your data are irrelevant. Column names will matter - e.g.&nbsp;row binding works when you have identically named columns. But the values themselves don’t matter at all.</p>
+</section>
+<section id="joins-proper" class="level2">
+<h2 class="anchored" data-anchor-id="joins-proper">Joins proper</h2>
+<p>Unlike binding, though, a join will pay attention to the values found in our data. For example, we could do a left-join:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/left.png" class="img-fluid figure-img"></p>
+<figcaption>A left-join</figcaption>
+</figure>
+</div>
+<p>This would retain any data from our x dataset, but also bring in any matching data from y.So let’s now left-join <code>y</code> onto x using the <code>name</code> column:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="sc">|&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(y, <span class="at">by =</span> <span class="st">"name"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">tool.x</th>
+<th style="text-align: right;">training_sessions.x</th>
+<th style="text-align: left;">tool.y</th>
+<th style="text-align: right;">training_sessions.y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Steve</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Power BI</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+<p>We’d get entirely different results if we joined on the <code>tool</code> column:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>x <span class="sc">|&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(y, <span class="at">by =</span> <span class="st">"tool"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name.x</th>
+<th style="text-align: left;">tool</th>
+<th style="text-align: right;">training_sessions.x</th>
+<th style="text-align: left;">name.y</th>
+<th style="text-align: right;">training_sessions.y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Steve</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Abena</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Yuika</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Yuika</td>
+<td style="text-align: right;">5</td>
+</tr>
+</tbody>
+</table>
+<p>We could do something similar, again using the name column, to add in some dis-similar data from another source:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"Abena"</span>, <span class="st">"Yuika"</span>, <span class="st">"Arti"</span>, <span class="st">"Steve"</span>, <span class="st">"Emma"</span>, <span class="st">"Bruce"</span>),</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">score =</span> <span class="fu">c</span>(<span class="dv">90</span>, <span class="dv">85</span>, <span class="dv">80</span>, <span class="dv">75</span>, <span class="dv">70</span>, <span class="dv">33</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>x <span class="sc">|&gt;</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(z, <span class="at">by =</span> <span class="st">"name"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">tool</th>
+<th style="text-align: right;">training_sessions</th>
+<th style="text-align: right;">score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Steve</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">75</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">70</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">80</td>
+</tr>
+</tbody>
+</table>
+<p>There are several ways of doing this from R. If you’re not a dplyr fan, you could use base-R’s <code>merge</code> to do a left join:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">merge</span>(x, y, <span class="at">by =</span> <span class="st">"name"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">tool.x</th>
+<th style="text-align: right;">training_sessions.x</th>
+<th style="text-align: left;">tool.y</th>
+<th style="text-align: right;">training_sessions.y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Arti</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Power BI</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+<p>You should see that only the values from <code>y</code>’s score column that have a corresponding name in <code>x</code> get populated, and everything else gets filled with NAs. Here’s a <a href="https://lindsaydbrin.github.io/CREATE_R_Workshop/Lesson_-_dplyr_join.html">nice introduction to the different kinds of join you can do in dplyr</a>.</p>
+<p>Again, we can do something similar in PowerQuery - note that joins are called <code>Merges</code></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-4096182636.png" class="img-fluid figure-img"></p>
+<figcaption>Select Merge Queries</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2316589936.png" class="img-fluid figure-img"></p>
+<figcaption>Pick data to merge, and columns to merge on</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2513654082.png" class="img-fluid figure-img"></p>
+<figcaption>You’ll need to expand the values in the new column</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-3678634774.png" class="img-fluid figure-img"></p>
+<figcaption>Resulting joined data</figcaption>
+</figure>
+</div>
+</section>
+<section id="anti-join" class="level2">
+<h2 class="anchored" data-anchor-id="anti-join">Anti-join</h2>
+<p>An anti-join takes a dataset, and removes any matching values from the second dataset:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/anti.png" class="img-fluid figure-img"></p>
+<figcaption>An anti-join</figcaption>
+</figure>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>x <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">anti_join</span>(y, <span class="at">by =</span> <span class="st">"name"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">tool</th>
+<th style="text-align: right;">training_sessions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Steve</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">Excel</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="final-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="final-thoughts">Final thoughts</h2>
+<ul>
+<li>some nice discussion about using <code>dplyr::semi_join</code> to find similar rows of data without actually binding columns</li>
+<li>using the <a href="https://rstudio.github.io/pointblank/">pointblank</a> package for data validation</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
