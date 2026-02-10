@@ -1,0 +1,111 @@
+---
+title: "Appraisals"
+date: 2024-05-16
+categories: [skills, career developement, appraisal]
+execute: 
+  output: asis
+  echo: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Poll
++ who knows their job description by heart, or has referred to it this year?
++ who keeps a work diary?
++ who has a PDP plan?
+
+## Background
++ It's Agenda for Change (AfC) appraisal time for many NHS staff
++ but this session is not specific to AfC appraisals
+
+## The objective
+-   KIND staff have some of the slowest promotion trajectories of all staff across health and care
+-   [Our Time to Shine](https://strathprints.strath.ac.uk/69331/)
+
+. . .
+
+![](images/clipboard-1271127780.png)
+
+## Small teams
+
+![](images/clipboard-753122317.png)
+
+## Mid-level
+
+![](images/clipboard-3811594598.png)
+
+
+## Messy roles
+```{r}
+titles <- readr::read_csv("src/kind_titles.csv") |>
+  dplyr::select(!document) 
+```
+
++ `r sum(titles$job_n)` total titles analysed
+
+. . .
+
+```{r}
+titles |>
+  dplyr::arrange(desc(job_n)) |>
+  dplyr::mutate(ratio = scales::percent(job_n / sum(job_n), 0.1)) |>
+  dplyr::slice(1:6) |>
+  knitr::kable()
+```
+
+## Messy roles
+
+-   no standard terminology
+    - "senior officer" from AfC band 3 - band 8
+-   too many titles (e.g. 400+ KIND-ish job titles compared to c.85 nursing roles)
+    - biggest is about 9% of the KIND network (information analyst)
+- massively higher qualifications found in KIND roles compared to many other careers
+
+## DDaT
+
+-   there's some interesting policy work going on to rationalise careers and titles
+- but this is a good way from implementation
+
+## Claiming credit
+
++ entirely informally and **without an evidence-base**: I think many of us are not very good at claiming credit for the work we do
+    + something about humility and modesty in the analytic temperament?
+    + Dunning-Kruger?
+    + social conditioning?
+    + introversion?
+    + niche skills in work environment?
++ whatever the cause, (hunch) I think we under-rate our own expertise
+
+## Tips
+
+- diary / log
+    - time and task
+    - I basically OneNote a load of rubbishy bits, and make no effort to sort them until needed
+- look at your JD
+- look at your [KSF dimensions](https://learn.nes.nhs.scot/60953)
+- look at [wider skills frameworks](https://www.bcs.org/membership-and-registrations/become-a-member/skills-framework/)
+- "I did x in y, which means z in ..."
+- "I need to x, which means I need y..."
+
+## Open goals
+- excessively manual processes
+  - saved you time? Saved us money!
+- compliance
+- impact and change
+- informal training and support
+- management-like activity
+
+## SMART
++ Specific, Measurable, Achievable, Relevant, and Time-Bound
++ conceptually, a horrible mess
++ but dead useful for translating vague wants and needs into something more directed
+
+<!-- Specific is 5 w (what, why, who, where, which) // achievable is degrees // relevant is the urgent-important matrix -->
+## Share
+
++ please share one achievement - one thing you did last year
++ ask your group to help you formulate it - how can I sell this nicely?
+
+## Well-formed learning needs?
+
+## 

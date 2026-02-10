@@ -1,0 +1,65 @@
+---
+title: "Data strategy"
+date: 2023-03-07
+categories: [Data strategy]
+execute: 
+  output: asis
+  echo: true
+editor_options: 
+  chunk_output_type: console
+---
+
+::: {.callout-note collapse="false" appearance="default" icon="true"}
+## Session materials
+
+-   slides [{{< iconify bi:filetype-pptx size=2x >}} pptx](src/KCM_2023-03-07_Data-strategy.pptx) / [{{< iconify ph:file-pdf size=2x >}} pdf](src/KCM_2023-03-07_Data-strategy.pdf)
+
+:::
+
+![](images/Slide1-01.PNG)
+
+-   see the [full data strategy](https://www.gov.scot/publications/data-strategy-health-social-care-2/)
+
+## Overall structure
+
+-   one vision: best use of data
+
+-   three ambitions
+
+-   seven priority areas
+
+-   all wrapped in an ethical approach
+
+![](images/Slide2-01.PNG)
+
+## Data access
+
+![](images/Slide3.PNG)
+
+## Talent and culture
+
+![](images/Slide4.PNG)
+
+## Protecting and sharing data
+
+![](images/Slide5.PNG)
+
+## Technology and infrastructure
+
+![](images/Slide6.PNG)
+
+## Information standards and interoperability
+
+![](images/Slide7.PNG)
+
+## Creating insights from data
+
+![](images/Slide8.PNG)
+
+## Supporting research and innovation
+
+![](images/Slide9.PNG)
+
+## Ethical approaches to data
+
+![](images/Slide10.PNG)

@@ -1,0 +1,150 @@
+---
+title: "Joins 1: introduction"
+date: 2024-09-02
+categories: [Joins, beginner, Excel, R, Power Query]
+execute: 
+  output: asis
+  echo: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## How to think about joins?
+
+A join is a way of merging two datasets. Let's demonstrate with some simple data:
+
+```{r}
+library(tibble)
+library(dplyr)
+```
+
+```{r}
+x <- tibble(
+  name = c("Steve", "Emma", "Arti"),
+  tool = c("R", "Excel", "Excel"),
+  training_sessions = c(4,3,7)
+)
+```
+
+```{r}
+#| echo: false
+x |>
+  knitr::kable()
+```
+
+```{r}
+y <- tibble(
+  name = c("Abena", "Yuika", "Arti"),
+  tool = c("R", "Excel", "Power BI"),
+  training_sessions = c(3,5,3)
+)
+
+```
+
+```{r}
+#| echo: false
+y |>
+  knitr::kable()
+```
+
+## Binding
+
+The simplest join we could do is to bind the rows from one set onto another:
+
+```{r}
+x |>
+  bind_rows(y) |>
+  knitr::kable()
+```
+
+That just brings all the rows from `y` onto the end of `x`. We could also have just bound the columns together:
+
+```{r}
+x |>
+  bind_cols(y) |>
+  knitr::kable()
+```
+
+Doing this in R, we end up with something quite messy: we've gained some new columns (with odd names), and lots of blank values. The reason for this is that Arti has a row in each dataset. Anyone without corresponding rows gets filling in with blanks.
+
+We could do something very similar by hand in Excel. It's worth noting the `VSTACK` function, which allows you to bring one table into another in Excel. PowerQuery has some great tools for binding data. `Append Queries` allows you to perform row-binding:
+
+![Select Append Queries](images/clipboard-2952836979.png)
+
+![Select datasets to bind together](images/clipboard-3653621168.png)
+
+![New table containing all rows from the original](images/clipboard-1970651010.png)
+
+However we bind, the main distinction remains the same. When you bind, the values in your data are irrelevant. Column names will matter - e.g. row binding works when you have identically named columns. But the values themselves don't matter at all.
+
+## Joins proper
+
+Unlike binding, though, a join will pay attention to the values found in our data. For example, we could do a left-join:
+
+![A left-join](images/left.png)
+
+This would retain any data from our x dataset, but also bring in any matching data from y.So let's now left-join `y` onto x using the `name` column:
+
+```{r}
+x |>
+  left_join(y, by = "name") |>
+  knitr::kable()
+```
+
+We'd get entirely different results if we joined on the `tool` column:
+
+```{r}
+x |>
+  left_join(y, by = "tool") |>
+  knitr::kable()
+```
+
+We could do something similar, again using the name column, to add in some dis-similar data from another source:
+
+```{r}
+z <- tibble(
+  name = c("Abena", "Yuika", "Arti", "Steve", "Emma", "Bruce"),
+  score = c(90, 85, 80, 75, 70, 33)
+)
+
+x |>
+  left_join(z, by = "name") |>
+  knitr::kable()
+```
+
+
+There are several ways of doing this from R. If you're not a dplyr fan, you could use base-R's `merge` to do a left join:
+
+```{r}
+merge(x, y, by = "name") |>
+  knitr::kable()
+```
+
+You should see that only the values from `y`'s score column that have a corresponding name in `x` get populated, and everything else gets filled with NAs. Here's a [nice introduction to the different kinds of join you can do in dplyr](https://lindsaydbrin.github.io/CREATE_R_Workshop/Lesson_-_dplyr_join.html).
+
+Again, we can do something similar in PowerQuery - note that joins are called `Merges`
+
+![Select Merge Queries](images/clipboard-4096182636.png)
+
+![Pick data to merge, and columns to merge on](images/clipboard-2316589936.png)
+
+![You'll need to expand the values in the new column](images/clipboard-2513654082.png)
+
+![Resulting joined data](images/clipboard-3678634774.png)
+
+## Anti-join
+
+An anti-join takes a dataset, and removes any matching values from the second dataset:
+
+![An anti-join](images/anti.png)
+
+```{r}
+x |>
+  anti_join(y, by = "name") |>
+  knitr::kable()
+```
+
+## Final thoughts
+
+-   some nice discussion about using `dplyr::semi_join` to find similar rows of data without actually binding columns
+-   using the [pointblank](https://rstudio.github.io/pointblank/) package for data validation
