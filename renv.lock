@@ -26,31 +26,6 @@
       ],
       "Hash": "64ff3427f559ce3f2597a4fe13255cb6"
     },
-    "KINDR": {
-      "Package": "KINDR",
-      "Version": "0.3.4",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "NES-DEW",
-      "RemoteRepo": "kindr",
-      "RemoteRef": "main",
-      "RemoteSha": "5bf82e1fabf9a1d577d11d1a9ff7e9082938ae9b",
-      "Requirements": [
-        "DT",
-        "R",
-        "dplyr",
-        "glue",
-        "kableExtra",
-        "lubridate",
-        "magick",
-        "readr",
-        "scales",
-        "stringi",
-        "stringr"
-      ],
-      "Hash": "c6d3a517293da41609ff775b6cdd9270"
-    },
     "MASS": {
       "Package": "MASS",
       "Version": "7.3-64",
@@ -286,16 +261,6 @@
         "lazyeval"
       ],
       "Hash": "ab12c7b080a57475248a30f4db6298c0"
-    },
-    "curl": {
-      "Package": "curl",
-      "Version": "7.0.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R"
-      ],
-      "Hash": "aa27e963d3deccf4bade44d06b976977"
     },
     "desc": {
       "Package": "desc",
@@ -759,19 +724,6 @@
         "timechange"
       ],
       "Hash": "be38bc740fc51783a78edb5a157e4104"
-    },
-    "magick": {
-      "Package": "magick",
-      "Version": "2.9.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "Rcpp",
-        "curl",
-        "magrittr"
-      ],
-      "Hash": "8b43f0e49eb9585e9e7faf12145ee79e"
     },
     "magrittr": {
       "Package": "magrittr",

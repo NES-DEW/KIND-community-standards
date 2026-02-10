@@ -12,6 +12,9 @@ In the week commencing 9th March 2026, we'll run a series of network-wide events
 ## Schedule
 
 ```{r}
+
+source("../R/nice_date.R")
+
 readr::read_csv("../data/KIND_community_meetups.csv") |>
   dplyr::mutate(Date = lubridate::as_date(date)) |>
   dplyr::arrange(Date) |>
@@ -20,7 +23,7 @@ readr::read_csv("../data/KIND_community_meetups.csv") |>
   dplyr::mutate(Title = paste0("<a href='", link, "'>", friendly_title , "</a>")) |>
   dplyr::select(Date, `Signup link` = Title, description, date) |>
   dplyr::arrange(Date) |>
-  dplyr::mutate(Date = KINDR::nice_date(date)) |>
+  dplyr::mutate(Date = nice_date(date)) |>
   dplyr::select(-date) |>
   DT::datatable(filter = "top", escape = F, rownames = F)
 ```
