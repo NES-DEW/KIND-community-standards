@@ -1,10 +1,19 @@
 ---
 title: "KIND community meetups"
+listing:
+  id: archive_list
+  contents:
+    - "commet/*.qmd"
+  type: table
+  categories: true
+  fields: [title, date, categories]
 editor_options: 
   chunk_output_type: console
 ---
 
 These are our main weekly social learning activity. They're usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell. Click the links below to register - all welcome!
+
+:::: {.panel-tabset}
 
 ## Current community meetup schedule
 ```{r}
@@ -27,7 +36,15 @@ readr::read_csv("data/KIND_community_meetups.csv") |>
 
 ```
 
+## Archive of past sessions
 
+We don't archive every session - most community meetups eventually become stand-alone KIND training sessions. But there are a few sessions that, for one reason and another, aren't suitable for training purposes but are worth retaining. They're linked below.
+
+::: {#archive_list}
+:::
+
+
+::::
 
 
 
