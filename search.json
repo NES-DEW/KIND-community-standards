@@ -270,7 +270,7 @@
     "href": "rrg/rrg_2024-09-26.html",
     "title": "R reading group notes",
     "section": "",
-    "text": "This was about the names and values chapter in Advanced R (2nd ed). It’s mainly about understanding how objects are named in R, and what the implications are for ordinary R practitioners.\n\nlibrary(lobstr) # to help understand how objects are structured\nlibrary(dplyr)\nlibrary(microbenchmark)\n\nThe first point is about names. We usually think about assignment as making an object called x. But it’s definitely better to think about these separately - first creating an object and then binding it to a name. That means that names have objects, rather than objects having names.\n\nx &lt;- c(1, 2, 3) # create an object\nobj_addr(x) # location in memory\n\n[1] \"0x56100b338a88\"\n\ny &lt;- x # bind an additional name to the object\nobj_addr(x) == obj_addr(y) # it's just one object with two names\n\n[1] TRUE\n\n\nThis applies to objects in general, including function definitions:\n\nobj_addr(mean)\n\n[1] \"0x56100888bf48\"\n\nsteve &lt;- mean\nobj_addr(steve)\n\n[1] \"0x56100888bf48\"\n\n\nWe only create a new object when we modify one of the names:\n\ny[3] &lt;- 9\nobj_addr(x) == obj_addr(y) # different objects now\n\n[1] FALSE\n\n\nThere are a couple of important exceptions to this general principle. First, lists have an extra step, in that they refer to references, rather than to objects directly:\n\nl1 &lt;- list(1, 2, 3)\nl2 &lt;- l1\n\nobj_addr(l1)\n\n[1] \"0x56100e9543c8\"\n\nobj_addr(l2)\n\n[1] \"0x56100e9543c8\"\n\nl2[[3]] &lt;- 99\n\nobj_addr(l1)\n\n[1] \"0x56100e9543c8\"\n\nobj_addr(l2)\n\n[1] \"0x56100b5cb468\"\n\nref(l1, l2)\n\n█ [1:0x56100e9543c8] &lt;list&gt; \n├─[2:0x56100a9449f0] &lt;dbl&gt; \n├─[3:0x56100a945ac8] &lt;dbl&gt; \n└─[4:0x56100a945cc0] &lt;dbl&gt; \n \n█ [5:0x56100b5cb468] &lt;list&gt; \n├─[2:0x56100a9449f0] \n├─[3:0x56100a945ac8] \n└─[6:0x56100bb1fcd0] &lt;dbl&gt; \n\n\nAs tibbles (and other tabular data structures in R) are effectively lists, this is an explaination as to why row-wise operations are so slow compared to operations on columns. As tibbles are are lists of columns, updating a column just makes a new reference. Changing a row, on the other hand, makes a whole new set of objects and references:\n\nmt_changed_col &lt;- mtcars\nmt_changed_col$hp &lt;- mtcars$hp*9\n\nmt_changed_row &lt;- mtcars\nmt_changed_row[1,] &lt;- mt_changed_row[1,] * 9\n\nref(mtcars, mt_changed_col, mt_changed_row)\n\n█ [1:0x56100ac029e8] &lt;df[,11]&gt; \n├─mpg = [2:0x56100ea36210] &lt;dbl&gt; \n├─cyl = [3:0x56100ebde2b0] &lt;dbl&gt; \n├─disp = [4:0x56100b6ffac0] &lt;dbl&gt; \n├─hp = [5:0x56100b768950] &lt;dbl&gt; \n├─drat = [6:0x56100970cc60] &lt;dbl&gt; \n├─wt = [7:0x56100b9e37c0] &lt;dbl&gt; \n├─qsec = [8:0x56100ea2b250] &lt;dbl&gt; \n├─vs = [9:0x5610096eadc0] &lt;dbl&gt; \n├─am = [10:0x56100eb5d1d0] &lt;dbl&gt; \n├─gear = [11:0x561008a99200] &lt;dbl&gt; \n└─carb = [12:0x56100bdba3b0] &lt;dbl&gt; \n \n█ [13:0x56100ac003e8] &lt;df[,11]&gt; \n├─mpg = [2:0x56100ea36210] \n├─cyl = [3:0x56100ebde2b0] \n├─disp = [4:0x56100b6ffac0] \n├─hp = [14:0x56100968d3d0] &lt;dbl&gt; \n├─drat = [6:0x56100970cc60] \n├─wt = [7:0x56100b9e37c0] \n├─qsec = [8:0x56100ea2b250] \n├─vs = [9:0x5610096eadc0] \n├─am = [10:0x56100eb5d1d0] \n├─gear = [11:0x561008a99200] \n└─carb = [12:0x56100bdba3b0] \n \n█ [15:0x56100ba24698] &lt;df[,11]&gt; \n├─mpg = [16:0x56100ee3b420] &lt;dbl&gt; \n├─cyl = [17:0x56100bcd5d90] &lt;dbl&gt; \n├─disp = [18:0x56100920c220] &lt;dbl&gt; \n├─hp = [19:0x56100de9a910] &lt;dbl&gt; \n├─drat = [20:0x56100b364890] &lt;dbl&gt; \n├─wt = [21:0x5610089c8210] &lt;dbl&gt; \n├─qsec = [22:0x56100922baa0] &lt;dbl&gt; \n├─vs = [23:0x561009cf9f80] &lt;dbl&gt; \n├─am = [24:0x561009538a20] &lt;dbl&gt; \n├─gear = [25:0x56100edeff60] &lt;dbl&gt; \n└─carb = [26:0x56100bf866f0] &lt;dbl&gt; \n\ncol_row &lt;- microbenchmark(\n  {mt_changed_col &lt;- mtcars\n  mt_changed_col[\"hp\"] &lt;- mtcars[\"hp\"]*9},\n  \n  {mt_changed_row &lt;- mtcars\n  mt_changed_row[1,] &lt;- mt_changed_row[1,] * 9}\n)\n\ncol_row |&gt;\n  mutate(expr = case_when(stringr::str_detect(expr, \"col\") ~ \"by col\",\n                          TRUE ~ \"by row\"))  |&gt;\n  group_by(expr) |&gt;\n  summarise(`mean time (μs)` = mean(time)/1000) |&gt;\n  knitr::kable() # about 4x faster to change the col than the row\n\n\n\n\nexpr\nmean time (μs)\n\n\n\n\nby col\n171.0481\n\n\nby row\n746.1626\n\n\n\n\nggplot2::autoplot(col_row)\n\n\n\n\n\n\n\n\nWe also looked briefly at alternative representation. The range operator is the best example of highly compact representations:\n\nobj_size(1:1000000) # approx size?\n\n680 B\n\nobj_size(1:2) == obj_size(1:1000000) # the range operator only stores the first and last values\n\n[1] TRUE\n\nobj_size(seq(1, 1000000)) # seq will use the same alternative representation...\n\n680 B\n\nobj_size(seq(1, 1000000, 1.0)) # unless you ask it to make a sequence with non-1L steps \n\n8.00 MB\n\n\nobject.size has lots of interesting implications for lists as it only describes the size of the references, rather than the underlying objects:\n\nobj_size(rnorm(1e6)) # 8 mb\n\n8.00 MB\n\nmill &lt;- obj_size(rnorm(1e6)) \n\nobj_size(list(rnorm(1e6), rnorm(1e6), rnorm(1e6)))#??\n\n24.00 MB\n\nobj_size(list(mill, mill, mill))#??\n\n368 B\n\nobj_size(tibble(a = mill, \n                b = mill,\n                c = mill))\n\n1.21 kB\n\n\nAll strings are held in a common area of memory called the common string pool. This gives rise to a lot of interesting size consequence for vectors with shared strings:\n\ns1 &lt;- c(\"the\", \"cat\", \"sat\", \"mat\")\ns2 &lt;- c(\"the\", \"the\", \"the\", \"the\")\n\nobj_size(s1)\n\n304 B\n\nobj_size(s2)\n\n136 B\n\nref(s1, character = TRUE)\n\n█ [1:0x5610115c9228] &lt;chr&gt; \n├─[2:0x56100a3c7130] &lt;string: \"the\"&gt; \n├─[3:0x5610086d9d78] &lt;string: \"cat\"&gt; \n├─[4:0x56100d446a68] &lt;string: \"sat\"&gt; \n└─[5:0x5610094db8a0] &lt;string: \"mat\"&gt; \n\nref(s2, character = TRUE)\n\n█ [1:0x5610115ce328] &lt;chr&gt; \n├─[2:0x56100a3c7130] &lt;string: \"the\"&gt; \n├─[2:0x56100a3c7130] \n├─[2:0x56100a3c7130] \n└─[2:0x56100a3c7130] \n\nobj_size(c(1,2,3,4)) # numeric vectors don't behave in the same way\n\n80 B\n\nobj_size(c(4,4,4,4))\n\n80 B"
+    "text": "This was about the names and values chapter in Advanced R (2nd ed). It’s mainly about understanding how objects are named in R, and what the implications are for ordinary R practitioners.\n\nlibrary(lobstr) # to help understand how objects are structured\nlibrary(dplyr)\nlibrary(microbenchmark)\n\nThe first point is about names. We usually think about assignment as making an object called x. But it’s definitely better to think about these separately - first creating an object and then binding it to a name. That means that names have objects, rather than objects having names.\n\nx &lt;- c(1, 2, 3) # create an object\nobj_addr(x) # location in memory\n\n[1] \"0x55faf8154568\"\n\ny &lt;- x # bind an additional name to the object\nobj_addr(x) == obj_addr(y) # it's just one object with two names\n\n[1] TRUE\n\n\nThis applies to objects in general, including function definitions:\n\nobj_addr(mean)\n\n[1] \"0x55faf2b25da0\"\n\nsteve &lt;- mean\nobj_addr(steve)\n\n[1] \"0x55faf2b25da0\"\n\n\nWe only create a new object when we modify one of the names:\n\ny[3] &lt;- 9\nobj_addr(x) == obj_addr(y) # different objects now\n\n[1] FALSE\n\n\nThere are a couple of important exceptions to this general principle. First, lists have an extra step, in that they refer to references, rather than to objects directly:\n\nl1 &lt;- list(1, 2, 3)\nl2 &lt;- l1\n\nobj_addr(l1)\n\n[1] \"0x55faf7e0bc38\"\n\nobj_addr(l2)\n\n[1] \"0x55faf7e0bc38\"\n\nl2[[3]] &lt;- 99\n\nobj_addr(l1)\n\n[1] \"0x55faf7e0bc38\"\n\nobj_addr(l2)\n\n[1] \"0x55faf7e04ae8\"\n\nref(l1, l2)\n\n█ [1:0x55faf7e0bc38] &lt;list&gt; \n├─[2:0x55faf705de60] &lt;dbl&gt; \n├─[3:0x55faf705dbc0] &lt;dbl&gt; \n└─[4:0x55faf705da00] &lt;dbl&gt; \n \n█ [5:0x55faf7e04ae8] &lt;list&gt; \n├─[2:0x55faf705de60] \n├─[3:0x55faf705dbc0] \n└─[6:0x55faf707bb18] &lt;dbl&gt; \n\n\nAs tibbles (and other tabular data structures in R) are effectively lists, this is an explaination as to why row-wise operations are so slow compared to operations on columns. As tibbles are are lists of columns, updating a column just makes a new reference. Changing a row, on the other hand, makes a whole new set of objects and references:\n\nmt_changed_col &lt;- mtcars\nmt_changed_col$hp &lt;- mtcars$hp*9\n\nmt_changed_row &lt;- mtcars\nmt_changed_row[1,] &lt;- mt_changed_row[1,] * 9\n\nref(mtcars, mt_changed_col, mt_changed_row)\n\n█ [1:0x55faf813d848] &lt;df[,11]&gt; \n├─mpg = [2:0x55faf2baf250] &lt;dbl&gt; \n├─cyl = [3:0x55faf2baf390] &lt;dbl&gt; \n├─disp = [4:0x55faf45e0940] &lt;dbl&gt; \n├─hp = [5:0x55faf45e0a80] &lt;dbl&gt; \n├─drat = [6:0x55faf45e0bc0] &lt;dbl&gt; \n├─wt = [7:0x55faf45e0d00] &lt;dbl&gt; \n├─qsec = [8:0x55faf45e0e40] &lt;dbl&gt; \n├─vs = [9:0x55faf7f0b060] &lt;dbl&gt; \n├─am = [10:0x55faf7f0b1a0] &lt;dbl&gt; \n├─gear = [11:0x55faf7f0b2e0] &lt;dbl&gt; \n└─carb = [12:0x55faf7f0b420] &lt;dbl&gt; \n \n█ [13:0x55faf813d378] &lt;df[,11]&gt; \n├─mpg = [2:0x55faf2baf250] \n├─cyl = [3:0x55faf2baf390] \n├─disp = [4:0x55faf45e0940] \n├─hp = [14:0x55faf7f0b940] &lt;dbl&gt; \n├─drat = [6:0x55faf45e0bc0] \n├─wt = [7:0x55faf45e0d00] \n├─qsec = [8:0x55faf45e0e40] \n├─vs = [9:0x55faf7f0b060] \n├─am = [10:0x55faf7f0b1a0] \n├─gear = [11:0x55faf7f0b2e0] \n└─carb = [12:0x55faf7f0b420] \n \n█ [15:0x55faf4289858] &lt;df[,11]&gt; \n├─mpg = [16:0x55faf52ce240] &lt;dbl&gt; \n├─cyl = [17:0x55faf3074c80] &lt;dbl&gt; \n├─disp = [18:0x55faf4e19620] &lt;dbl&gt; \n├─hp = [19:0x55faf3a61720] &lt;dbl&gt; \n├─drat = [20:0x55faf44c58d0] &lt;dbl&gt; \n├─wt = [21:0x55faf7e7cc20] &lt;dbl&gt; \n├─qsec = [22:0x55faf521e3b0] &lt;dbl&gt; \n├─vs = [23:0x55faf3260f30] &lt;dbl&gt; \n├─am = [24:0x55faf5a5d9e0] &lt;dbl&gt; \n├─gear = [25:0x55faf55a7410] &lt;dbl&gt; \n└─carb = [26:0x55faf57b82b0] &lt;dbl&gt; \n\ncol_row &lt;- microbenchmark(\n  {mt_changed_col &lt;- mtcars\n  mt_changed_col[\"hp\"] &lt;- mtcars[\"hp\"]*9},\n  \n  {mt_changed_row &lt;- mtcars\n  mt_changed_row[1,] &lt;- mt_changed_row[1,] * 9}\n)\n\ncol_row |&gt;\n  mutate(expr = case_when(stringr::str_detect(expr, \"col\") ~ \"by col\",\n                          TRUE ~ \"by row\"))  |&gt;\n  group_by(expr) |&gt;\n  summarise(`mean time (μs)` = mean(time)/1000) |&gt;\n  knitr::kable() # about 4x faster to change the col than the row\n\n\n\n\nexpr\nmean time (μs)\n\n\n\n\nby col\n164.4104\n\n\nby row\n706.0133\n\n\n\n\nggplot2::autoplot(col_row)\n\n\n\n\n\n\n\n\nWe also looked briefly at alternative representation. The range operator is the best example of highly compact representations:\n\nobj_size(1:1000000) # approx size?\n\n680 B\n\nobj_size(1:2) == obj_size(1:1000000) # the range operator only stores the first and last values\n\n[1] TRUE\n\nobj_size(seq(1, 1000000)) # seq will use the same alternative representation...\n\n680 B\n\nobj_size(seq(1, 1000000, 1.0)) # unless you ask it to make a sequence with non-1L steps \n\n8.00 MB\n\n\nobject.size has lots of interesting implications for lists as it only describes the size of the references, rather than the underlying objects:\n\nobj_size(rnorm(1e6)) # 8 mb\n\n8.00 MB\n\nmill &lt;- obj_size(rnorm(1e6)) \n\nobj_size(list(rnorm(1e6), rnorm(1e6), rnorm(1e6)))#??\n\n24.00 MB\n\nobj_size(list(mill, mill, mill))#??\n\n368 B\n\nobj_size(tibble(a = mill, \n                b = mill,\n                c = mill))\n\n1.21 kB\n\n\nAll strings are held in a common area of memory called the common string pool. This gives rise to a lot of interesting size consequence for vectors with shared strings:\n\ns1 &lt;- c(\"the\", \"cat\", \"sat\", \"mat\")\ns2 &lt;- c(\"the\", \"the\", \"the\", \"the\")\n\nobj_size(s1)\n\n304 B\n\nobj_size(s2)\n\n136 B\n\nref(s1, character = TRUE)\n\n█ [1:0x55fafb4a3368] &lt;chr&gt; \n├─[2:0x55faf3e1d130] &lt;string: \"the\"&gt; \n├─[3:0x55faf20fed78] &lt;string: \"cat\"&gt; \n├─[4:0x55fafb4a80e8] &lt;string: \"sat\"&gt; \n└─[5:0x55faf2f031c8] &lt;string: \"mat\"&gt; \n\nref(s2, character = TRUE)\n\n█ [1:0x55fafb471cd8] &lt;chr&gt; \n├─[2:0x55faf3e1d130] &lt;string: \"the\"&gt; \n├─[2:0x55faf3e1d130] \n├─[2:0x55faf3e1d130] \n└─[2:0x55faf3e1d130] \n\nobj_size(c(1,2,3,4)) # numeric vectors don't behave in the same way\n\n80 B\n\nobj_size(c(4,4,4,4))\n\n80 B"
   },
   {
     "objectID": "rbc/about.html",
@@ -847,265 +847,6 @@
     "text": "In a 2023 small-scale survey of 40 analysts, the main tools identified were as follows:\n\n\n\nTool\nn\n\n\n\n\nExcel\n32\n\n\nMicrosoft Forms\n16\n\n\nOther survey tools (e.g. Surveymonkey, SmartSurvey)\n15\n\n\nRedCap\n2\n\n\n\n(note that respondents were able to identify &gt;1 tool used)\nThat simplicity of tools used conceals enormous complexity. A sample of factors identified as influencing tool choice were as follows:\n\navailability / ubiquity amongst those collecting\nflexibility / integration\naudit trail\ndownstream ETL\ncommissioning and training requirements\nease of use / skills available\nIG / robustness / confidentiality\ncost\nstakeholder mandate\ntechnical features (e.g., limited response types)\nspeed of build\ninstitutional approval and support\n\nMany staff have restrictions on the tools available. For example, looking at Microsoft Forms, a wide variety of different possibilities are found. A survey of 64 members of the KIND network during July 2024 gained responses from 23 organisations and NHS boards.\n\n\n\n\nResponses to the question ‘Can you use Forms?’\n\n\nresponse\nn\n\n\n\n\nYes - for anything\n17\n\n\nYes - but not for personally-identifiable information\n36\n\n\nNo\n2\n\n\nOther\n9"
   },
   {
-    "objectID": "commet/commet_2024_04_30.html",
-    "href": "commet/commet_2024_04_30.html",
-    "title": "Leading a (training) session",
-    "section": "",
-    "text": "Wikipedia\n\n\n(this remains a useful and thoughtful point, and it’s a bit of mystery why Donald Rumsfeld was so widely mocked for making it)"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#a-big-laugh",
-    "href": "commet/commet_2024_04_30.html#a-big-laugh",
-    "title": "Leading a (training) session",
-    "section": "",
-    "text": "Wikipedia\n\n\n(this remains a useful and thoughtful point, and it’s a bit of mystery why Donald Rumsfeld was so widely mocked for making it)"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#a-big-point",
-    "href": "commet/commet_2024_04_30.html#a-big-point",
-    "title": "Leading a (training) session",
-    "section": "A big point",
-    "text": "A big point\n\nthis entire session presumes that you’ve got a good reason to put together some training\nunderstanding training needs is hard\n\nindividual and group needs often don’t align\nmost of us don’t go round knowing we have well-formed training needs\ntime is short and demands are many\nmost of us don’t have any formal expertise in assessing training needs\ninstitutional training mechanisms usually don’t reach individual teams"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#training-isnt-status-y",
-    "href": "commet/commet_2024_04_30.html#training-isnt-status-y",
-    "title": "Leading a (training) session",
-    "section": "Training isn’t status-y",
-    "text": "Training isn’t status-y\n\ninformal training is common in this sector\nbut hard, thankless, time-consuming etc\n\nwho had training delivery in their appraisal?\n\nthis session = quick tips and dirty tricks for leading sessions\nthis session ≠ how to be a proper educator, TED talker, or other species of charismatic\n\ne.g. we won’t talk about styles of learning or anything like that"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#a-worry-about-individualised-training",
-    "href": "commet/commet_2024_04_30.html#a-worry-about-individualised-training",
-    "title": "Leading a (training) session",
-    "section": "A worry about individualised training",
-    "text": "A worry about individualised training\n\nmost of this assumes that training is individual\nbut the objective of most training is team performance\nthere’s a complicated relationship between those things\nthe individualised model can reward training activities that don’t help team performance\n\nPDPs aren’t easy to connect to service needs"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#outline",
-    "href": "commet/commet_2024_04_30.html#outline",
-    "title": "Leading a (training) session",
-    "section": "Outline",
-    "text": "Outline\n\nIntro\nGeneral considerations\nn questions\nActual strategies\nWrap-up, hang-wringing, and references"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#general-considerations-1",
-    "href": "commet/commet_2024_04_30.html#general-considerations-1",
-    "title": "Leading a (training) session",
-    "section": "General considerations",
-    "text": "General considerations\n\npresentations are about optimizing over competing demands\n\nthat’s hard\nwe’ll start with some easy general rules\nand move on to some ways of balancing those demands"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#general-rules",
-    "href": "commet/commet_2024_04_30.html#general-rules",
-    "title": "Leading a (training) session",
-    "section": "General rules",
-    "text": "General rules\n\nas simple as possible - because asymmetry\nshow, don’t tell - because hierarchy\nsteal and share - because instability"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#the-asymmetry-of-presenting",
-    "href": "commet/commet_2024_04_30.html#the-asymmetry-of-presenting",
-    "title": "Leading a (training) session",
-    "section": "The asymmetry of presenting",
-    "text": "The asymmetry of presenting\n\n\n\n\n\nxkcd\n\n\n\n\nby the time you get asked to present, you’re an expert\n\nexperts worry about completely different things from beginners\n\nexperts make bad assumptions about what an average person knows\n\n← AKA the curse of knowledge\n\nyou’re also (probably) going to spend more time preparing than presenting\n\nbeware pedantry, minor details, and fine print"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#the-hierarchy",
-    "href": "commet/commet_2024_04_30.html#the-hierarchy",
-    "title": "Leading a (training) session",
-    "section": "The hierarchy",
-    "text": "The hierarchy\n\nlike it or not, some of what you say will be more important than other parts\nlike it or not, it’s your job to decide what’s most important\nlike it or not, if everything is important then nothing is"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#the-instability-of-facts",
-    "href": "commet/commet_2024_04_30.html#the-instability-of-facts",
-    "title": "Leading a (training) session",
-    "section": "The instability of facts",
-    "text": "The instability of facts\n\n\n\nTruth survival in original articles on hepatitis and cirrhosis (Poynard et al 2002)"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#the-instability-of-facts-1",
-    "href": "commet/commet_2024_04_30.html#the-instability-of-facts-1",
-    "title": "Leading a (training) session",
-    "section": "The instability of facts",
-    "text": "The instability of facts\n\nrefreshing statistics courses every x years\nrefreshing philosophy courses every y years\nrefreshing bioscience courses every z years\npolling for values of x, y, and z\n\nx = 5-10\ny = 5-7\nz = 2-3\n\nannual refresh for KIND materials"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#the-instability-of-facts-2",
-    "href": "commet/commet_2024_04_30.html#the-instability-of-facts-2",
-    "title": "Leading a (training) session",
-    "section": "The instability of facts",
-    "text": "The instability of facts\n\nthings change\nmaking sure training materials reflect change is hard\nbut training materials are almost always shareable…\n\nyour session on Excel might not be very different from someone else’s session on Excel\nbridge materials plus borrowed material might be a better combo than something written from scratch"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#general-rules-1",
-    "href": "commet/commet_2024_04_30.html#general-rules-1",
-    "title": "Leading a (training) session",
-    "section": "General rules",
-    "text": "General rules\n\nas simple as possible - because asymmetry\nshow, don’t tell - because hierarchy\nsteal and share - because instability . . .\nadapt your plans to your circumstances…"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#some-questions-to-help-you-make-training-decisions",
-    "href": "commet/commet_2024_04_30.html#some-questions-to-help-you-make-training-decisions",
-    "title": "Leading a (training) session",
-    "section": "Some questions to help you make training decisions",
-    "text": "Some questions to help you make training decisions\n\n3 groups of questions\n\nwho are you training?\nwhat is the training like?\nwhat should happen?"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#population",
-    "href": "commet/commet_2024_04_30.html#population",
-    "title": "Leading a (training) session",
-    "section": "Population",
-    "text": "Population\n\nsupply or demand?\nformal or informal?\nhomogeneous or heterogeneous population?\n1:1 or group?\ndurable or fragile?"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#intervention",
-    "href": "commet/commet_2024_04_30.html#intervention",
-    "title": "Leading a (training) session",
-    "section": "Intervention",
-    "text": "Intervention\n\nspecific or general?\nregular or occasional/one-off?\nsync or async?\ndidactic or social?"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#intervention-1",
-    "href": "commet/commet_2024_04_30.html#intervention-1",
-    "title": "Leading a (training) session",
-    "section": "Intervention",
-    "text": "Intervention\ntibble::tibble(x = c(4, -4, -2, 2, -2, 2), \n              y = c(-4, 4, -2, 2, 2, -2), \n              name = c(\"\", \"\", \"Informal help\", \"Write a proper course\", \"Hints page / FAQ\", \"Outsourced training\")) |&gt;\n  quadgo(\"General\", \"Occasional\", \"General to specific, and occasional to regular\")"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#intervention-2",
-    "href": "commet/commet_2024_04_30.html#intervention-2",
-    "title": "Leading a (training) session",
-    "section": "Intervention",
-    "text": "Intervention\ntibble::tibble(x = c(4, -4, -2, 2, -2, 2), \n              y = c(-4, 4, -2, 2, 2, -2), \n              name = c(\"\", \"\", \"Live training sessions (talky)\", \"Teams channel and clinic times\", \"Manual or SOP\", \"Live training sessions (practical)\")) |&gt;\n  quadgo(\"Synchronous\", \"Didactic\", \"Synchronous to asynchronous, and didactic to social\")"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#outcomes",
-    "href": "commet/commet_2024_04_30.html#outcomes",
-    "title": "Leading a (training) session",
-    "section": "Outcomes",
-    "text": "Outcomes\n\nbridge or foundations?\nknowledge or skills?\npractice/problem-based or theoretical?\nindividual or group?"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#four-general-training-needs",
-    "href": "commet/commet_2024_04_30.html#four-general-training-needs",
-    "title": "Leading a (training) session",
-    "section": "Four general training needs",
-    "text": "Four general training needs\n\nhave a clear, relevant, specific, idea\nbe the help on hand\ntry to bridge between work and training\nprovide real relevant practice tasks"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#borrow-and-gloss",
-    "href": "commet/commet_2024_04_30.html#borrow-and-gloss",
-    "title": "Leading a (training) session",
-    "section": "Borrow-and-gloss",
-    "text": "Borrow-and-gloss\n\nhelps with instability\n\nloads of great open-access training resources exist\nconsider borrowing and adapting, rather than writing from scratch\n\nlots of the commercial training providers do this. Definitely better value to DIY"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#bridge-materials",
-    "href": "commet/commet_2024_04_30.html#bridge-materials",
-    "title": "Leading a (training) session",
-    "section": "Bridge materials",
-    "text": "Bridge materials\n\nhelps with hiearchy and instability\n\neveryone’s work is different\nconsider writing bridge materials = ways of connecting generic resources with particular contents\n\ne.g. replacing table names to match your SQL\ne.g. changing exercises to use more relevant data\ne.g. swapping sales-led applications for analysis-led ones"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#post-it-planning",
-    "href": "commet/commet_2024_04_30.html#post-it-planning",
-    "title": "Leading a (training) session",
-    "section": "Post-it® planning",
-    "text": "Post-it® planning\n\nhelps with asymmetry and hiearchy\n\n\n\n\n\nImage © 3M\n\n\n\n\nyour overall topic should be neatly describable on a Post-it®\nyour talk should break down into a small number of distinct sections\n\neach section should, likewise, be Post-it®-able + each subsection etc etc\n\nthe trick is to get the lower level descriptions to align with the higher, all the way up"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#bottom-up-planning",
-    "href": "commet/commet_2024_04_30.html#bottom-up-planning",
-    "title": "Leading a (training) session",
-    "section": "Bottom-up planning",
-    "text": "Bottom-up planning\n\nhelps when you don’t know where to start\n\nall training is just scaled-up 1:1 helping\nso if you’re stuck, start by helping someone\nwork through with a volunteer and help them 1:1\ntake notes - what are you doing, who are you helping, what can they do\nrepeat, adding and taking away"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#the-saint-exupéry-principle",
-    "href": "commet/commet_2024_04_30.html#the-saint-exupéry-principle",
-    "title": "Leading a (training) session",
-    "section": "The Saint-Exupéry principle",
-    "text": "The Saint-Exupéry principle\n“Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.”"
-  },
-  {
-    "objectID": "commet/commet_2024_04_30.html#resources",
-    "href": "commet/commet_2024_04_30.html#resources",
-    "title": "Leading a (training) session",
-    "section": "Resources",
-    "text": "Resources\n\nhttps://the-turing-way.netlify.app/collaboration/chairing\nPoynard, Thierry, Mona Munteanu, Vlad Ratziu, Yves Benhamou, Vincent Di Martino, Julien Taieb, and Pierre Opolon. 2002. “Truth Survival in Clinical Research: An Evidence-Based Requiem?” Annals of Internal Medicine 136 (12): 888. DOI: 10.7326/0003-4819-136-12-200206180-00010."
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html",
-    "href": "commet/commet_2023_03_07.html",
-    "title": "Data strategy",
-    "section": "",
-    "text": "NoteSession materials\n\n\n\n\n\n\nslides  pptx /  pdf"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#overall-structure",
-    "href": "commet/commet_2023_03_07.html#overall-structure",
-    "title": "Data strategy",
-    "section": "Overall structure",
-    "text": "Overall structure\n\none vision: best use of data\nthree ambitions\nseven priority areas\nall wrapped in an ethical approach"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#data-access",
-    "href": "commet/commet_2023_03_07.html#data-access",
-    "title": "Data strategy",
-    "section": "Data access",
-    "text": "Data access"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#talent-and-culture",
-    "href": "commet/commet_2023_03_07.html#talent-and-culture",
-    "title": "Data strategy",
-    "section": "Talent and culture",
-    "text": "Talent and culture"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
-    "href": "commet/commet_2023_03_07.html#protecting-and-sharing-data",
-    "title": "Data strategy",
-    "section": "Protecting and sharing data",
-    "text": "Protecting and sharing data"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#technology-and-infrastructure",
-    "href": "commet/commet_2023_03_07.html#technology-and-infrastructure",
-    "title": "Data strategy",
-    "section": "Technology and infrastructure",
-    "text": "Technology and infrastructure"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
-    "href": "commet/commet_2023_03_07.html#information-standards-and-interoperability",
-    "title": "Data strategy",
-    "section": "Information standards and interoperability",
-    "text": "Information standards and interoperability"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#creating-insights-from-data",
-    "href": "commet/commet_2023_03_07.html#creating-insights-from-data",
-    "title": "Data strategy",
-    "section": "Creating insights from data",
-    "text": "Creating insights from data"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
-    "href": "commet/commet_2023_03_07.html#supporting-research-and-innovation",
-    "title": "Data strategy",
-    "section": "Supporting research and innovation",
-    "text": "Supporting research and innovation"
-  },
-  {
-    "objectID": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
-    "href": "commet/commet_2023_03_07.html#ethical-approaches-to-data",
-    "title": "Data strategy",
-    "section": "Ethical approaches to data",
-    "text": "Ethical approaches to data"
-  },
-  {
     "objectID": "KIND_help.html",
     "href": "KIND_help.html",
     "title": "How to ask the network for help",
@@ -1132,265 +873,6 @@
     "title": "How to ask the network for help",
     "section": "Include a minimal, reproducible, example",
     "text": "Include a minimal, reproducible, example\nGenerally, when people want to help you with something, the first thing they’ll try to do is reproduce the problem. Help your helpers by making that as quick and easy as possible. This almost always means building a demo version of your problem that can be shared with people on the network. Code-y types might refer to this as a reprex - a reproducible example.\n\n\n\n\n\n\nImportant\n\n\n\nMake sure that you don’t breach data protection rules when you share your issue. Replacing any real data with sample data is generally the safest course of action\n\n\nThat can be daunting, so here are some steps to help achieve a minimal example:\n\nstart with your spreadsheet/script that’s causing trouble, and save a copy of it as your mini-example\nremove any irrelevant material, leaving just the part with the error, and anything that depends on\n\nif in doubt, take it out. Keep it as simple as possible!\n\nreplace any real data with suitable placeholder data if there are any concerns about data protection\n\ndon’t make helpers guess what your data is like!\n\nnext, make sure that your error still occurs in your mini-example. Stripping away extraneous material etc is a great way of actually fixing problems in its own right, so it’s important to check that you haven’t fixed it by yourself\n\nyou should also make sure that any password protection, credentials, etc are removed from the document so that your helpers can see everything you can see\n\nfinally, make sure you save your example file before adding it to your request for help in Teams"
-  },
-  {
-    "objectID": "commet/commet_2023-11-23.html",
-    "href": "commet/commet_2023-11-23.html",
-    "title": "Test driven development",
-    "section": "",
-    "text": "this session is about test-driven development (TDD)\nwe’ll start with a bit of chat and some polling about testing\nthen we’ll do a bit of explanation to introduce TDD\nand most of the session is about showing a simple implementation of TDD in Excel, and a slightly less simple implementation in R"
-  },
-  {
-    "objectID": "commet/commet_2023-11-23.html#intro",
-    "href": "commet/commet_2023-11-23.html#intro",
-    "title": "Test driven development",
-    "section": "",
-    "text": "this session is about test-driven development (TDD)\nwe’ll start with a bit of chat and some polling about testing\nthen we’ll do a bit of explanation to introduce TDD\nand most of the session is about showing a simple implementation of TDD in Excel, and a slightly less simple implementation in R"
-  },
-  {
-    "objectID": "commet/commet_2023-11-23.html#testing-your-work",
-    "href": "commet/commet_2023-11-23.html#testing-your-work",
-    "title": "Test driven development",
-    "section": "Testing your work",
-    "text": "Testing your work\n\npoll: who tests their work at all?\nplease share in the chat ways that you test your work\npoll: who has a formal process for that testing?\nplease share in the chat a bit on your testing process\npoll: who shares that testing process with their colleagues?"
-  },
-  {
-    "objectID": "commet/commet_2023-11-23.html#tdd-what",
-    "href": "commet/commet_2023-11-23.html#tdd-what",
-    "title": "Test driven development",
-    "section": "TDD-what?",
-    "text": "TDD-what?\n\n(before all that polling) my guess is that…\n\nnearly everyone will test their work in some way, but that\nmost of that testing will be ad hoc / informal\nand that more formal testing is quite rare\nand I’ll guess that no-one has a standard shared testing process in their group"
-  },
-  {
-    "objectID": "commet/commet_2023-11-23.html#tdd-test-driven-development",
-    "href": "commet/commet_2023-11-23.html#tdd-test-driven-development",
-    "title": "Test driven development",
-    "section": "TDD = test driven development",
-    "text": "TDD = test driven development\n\nwork should go like this:\n\nhave an idea for a new thing\ndevelop something to do that thing\ntest to check that the thing is done"
-  },
-  {
-    "objectID": "commet/commet_2023-11-23.html#tdd-test-driven-development-1",
-    "href": "commet/commet_2023-11-23.html#tdd-test-driven-development-1",
-    "title": "Test driven development",
-    "section": "TDD = test driven development",
-    "text": "TDD = test driven development\n\nbut too often the work goes:\n\nhave an idea for a new thing\ndevelop something to do that thing\nhave an idea for a new thing\n…"
-  },
-  {
-    "objectID": "commet/commet_2023-11-23.html#tdd-test-driven-development-2",
-    "href": "commet/commet_2023-11-23.html#tdd-test-driven-development-2",
-    "title": "Test driven development",
-    "section": "TDD = test driven development",
-    "text": "TDD = test driven development\n\nwhat if we reversed the usual order?\n\nhave an idea for a new thing\nwrite a test to check that the thing is done\ndevelop something to pass that test\n\nthis also might make testing more fun, given a pretty loose definition of fun"
-  },
-  {
-    "objectID": "commet/commet_2023-11-23.html#we-dont-need-fancy-tools-to-do-tdd",
-    "href": "commet/commet_2023-11-23.html#we-dont-need-fancy-tools-to-do-tdd",
-    "title": "Test driven development",
-    "section": "We don’t need fancy tools to do TDD",
-    "text": "We don’t need fancy tools to do TDD\n\nit’s perfectly possible in Excel\nimagine we’re writing a formula to find out something about our data (maybe totaling a column)\n\nwe could take part of our data\ncalculate a test value by hand (say, by adding up all the values in our test data)\nthen using that test value to check that our formula is returning the right result\nyou could even go mad and use conditional formatting etc to check that’s happening properly"
-  },
-  {
-    "objectID": "commet/commet_2023-11-23.html#recap",
-    "href": "commet/commet_2023-11-23.html#recap",
-    "title": "Test driven development",
-    "section": "Recap",
-    "text": "Recap\n\ndecide what to do\nwrite a test to check that thing\ndevelop to pass the test"
-  },
-  {
-    "objectID": "commet/commet_2023-11-23.html#r-time",
-    "href": "commet/commet_2023-11-23.html#r-time",
-    "title": "Test driven development",
-    "section": "R time",
-    "text": "R time\n\nlibrary(testthat)\nlibrary(tibble)\n\n\nin testthat, tests are built of expectations\n\n\nexpect_equal(2 * 2, 4)\nexpect_identical(1L, 1L)"
-  },
-  {
-    "objectID": "commet/commet_2023-11-23.html#tale-of-two-great-expectations",
-    "href": "commet/commet_2023-11-23.html#tale-of-two-great-expectations",
-    "title": "Test driven development",
-    "section": "Tale of two great expectations",
-    "text": "Tale of two great expectations\n\ntest_that(\"Testing that numbers work properly\", {\n  expect_equal(2 * 2, 4, label = \"Multo\")\n  expect_identical(1L, 1L, label = \"Class!\")\n})\n\nTest passed 😀"
-  },
-  {
-    "objectID": "commet/commet_2023-11-23.html#lots-of-expectations",
-    "href": "commet/commet_2023-11-23.html#lots-of-expectations",
-    "title": "Test driven development",
-    "section": "Lots of expectations",
-    "text": "Lots of expectations\n\nexpect_setequal(1:3, c(1,2,3))\n\nfnarp = tibble(a = c(1, 2, 3))\n\nglarp = tibble(a = c(1, 2, 3))\n  \nexpect_mapequal(fnarp, glarp) # for named objects"
-  },
-  {
-    "objectID": "commet/commet_2023-11-23.html#grouping-into-tests",
-    "href": "commet/commet_2023-11-23.html#grouping-into-tests",
-    "title": "Test driven development",
-    "section": "Grouping into tests",
-    "text": "Grouping into tests\n\ntest_that(\"Testing that sets work properly\", {\n  expect_setequal(1:3, c(1,2,3))\n  expect_mapequal(fnarp, glarp)\n})\n\nTest passed 🎊\n\ntest_that(\"Testing classes\", {\n  expect_that(mtcars, is_a(\"data.frame\"))\n  expect_that(1:5, is_a(\"integer\"))\n})\n\nTest passed 😀"
-  },
-  {
-    "objectID": "commet/commet_2023-11-23.html#context",
-    "href": "commet/commet_2023-11-23.html#context",
-    "title": "Test driven development",
-    "section": "Context",
-    "text": "Context\n\ncontext = groups of tests\npreviously important to R testing\nnow, use files instead"
-  },
-  {
-    "objectID": "commet/commet_2023-11-23.html#test-files",
-    "href": "commet/commet_2023-11-23.html#test-files",
-    "title": "Test driven development",
-    "section": "Test files",
-    "text": "Test files\n\nput all tests in a file\n\n\n# R/tests.R\n\ntest_that(\"Testing that numbers work properly\", {\n  expect_equal(2 * 2, 4, label = \"Multo\")\n  expect_identical(1L, 1L, label = \"Class!\")\n})\n\ntest_that(\"Testing that sets work properly\", {\n  expect_setequal(1:3, c(1,2,3))\n  expect_mapequal(fnarp, glarp)\n})\n\n\nrun with testthat::test_file()\n\n\ntestthat::test_file(\"R/tests.R\")\n\n\n══ Testing tests.R ═════════════════════════════════════════════════════════════\n\n[ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ]\n[ FAIL 0 | WARN 0 | SKIP 0 | PASS 1 ]\n[ FAIL 0 | WARN 0 | SKIP 0 | PASS 2 ]\n[ FAIL 0 | WARN 0 | SKIP 0 | PASS 3 ]\n[ FAIL 0 | WARN 0 | SKIP 0 | PASS 4 ] Done!"
-  },
-  {
-    "objectID": "commet/commet_2023-11-23.html#bit-of-live-development",
-    "href": "commet/commet_2023-11-23.html#bit-of-live-development",
-    "title": "Test driven development",
-    "section": "Bit of live development",
-    "text": "Bit of live development\n\nReverse and Invert\n“reverse and invert all integer values” in a vector\ntests first!\ngranular tests: quick, small and simple\nbasic code: just pass the test\nadd test, pass, refactor, repeat\nI ended up with something like as.integer(intToUtf8(rev(utf8ToInt(as.character(n)))))"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html",
-    "href": "commet/commet_2024-05-16.html",
-    "title": "Appraisals",
-    "section": "",
-    "text": "who knows their job description by heart, or has referred to it this year?\nwho keeps a work diary?\nwho has a PDP plan?"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#poll",
-    "href": "commet/commet_2024-05-16.html#poll",
-    "title": "Appraisals",
-    "section": "",
-    "text": "who knows their job description by heart, or has referred to it this year?\nwho keeps a work diary?\nwho has a PDP plan?"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#background",
-    "href": "commet/commet_2024-05-16.html#background",
-    "title": "Appraisals",
-    "section": "Background",
-    "text": "Background\n\nIt’s Agenda for Change (AfC) appraisal time for many NHS staff\nbut this session is not specific to AfC appraisals"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#the-objective",
-    "href": "commet/commet_2024-05-16.html#the-objective",
-    "title": "Appraisals",
-    "section": "The objective",
-    "text": "The objective\n\nKIND staff have some of the slowest promotion trajectories of all staff across health and care\nOur Time to Shine\n\n. . ."
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#small-teams",
-    "href": "commet/commet_2024-05-16.html#small-teams",
-    "title": "Appraisals",
-    "section": "Small teams",
-    "text": "Small teams"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#mid-level",
-    "href": "commet/commet_2024-05-16.html#mid-level",
-    "title": "Appraisals",
-    "section": "Mid-level",
-    "text": "Mid-level"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#messy-roles",
-    "href": "commet/commet_2024-05-16.html#messy-roles",
-    "title": "Appraisals",
-    "section": "Messy roles",
-    "text": "Messy roles\ntitles &lt;- readr::read_csv(\"src/kind_titles.csv\") |&gt;\n  dplyr::select(!document) \n\n3751 total titles analysed\n\n. . .\ntitles |&gt;\n  dplyr::arrange(desc(job_n)) |&gt;\n  dplyr::mutate(ratio = scales::percent(job_n / sum(job_n), 0.1)) |&gt;\n  dplyr::slice(1:6) |&gt;\n  knitr::kable()\n\n\n\njob_title\njob_n\nratio\n\n\n\n\nsenior information analyst\n347\n9.3%\n\n\ninformation analyst\n333\n8.9%\n\n\nprincipal information analyst\n118\n3.1%\n\n\ndata analyst\n61\n1.6%\n\n\ndata management officer\n43\n1.1%\n\n\nhealth intelligence analyst\n39\n1.0%"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#messy-roles-1",
-    "href": "commet/commet_2024-05-16.html#messy-roles-1",
-    "title": "Appraisals",
-    "section": "Messy roles",
-    "text": "Messy roles\n\nno standard terminology\n\n“senior officer” from AfC band 3 - band 8\n\ntoo many titles (e.g. 400+ KIND-ish job titles compared to c.85 nursing roles)\n\nbiggest is about 9% of the KIND network (information analyst)\n\nmassively higher qualifications found in KIND roles compared to many other careers"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#ddat",
-    "href": "commet/commet_2024-05-16.html#ddat",
-    "title": "Appraisals",
-    "section": "DDaT",
-    "text": "DDaT\n\nthere’s some interesting policy work going on to rationalise careers and titles\nbut this is a good way from implementation"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#claiming-credit",
-    "href": "commet/commet_2024-05-16.html#claiming-credit",
-    "title": "Appraisals",
-    "section": "Claiming credit",
-    "text": "Claiming credit\n\nentirely informally and without an evidence-base: I think many of us are not very good at claiming credit for the work we do\n\nsomething about humility and modesty in the analytic temperament?\nDunning-Kruger?\nsocial conditioning?\nintroversion?\nniche skills in work environment?\n\nwhatever the cause, (hunch) I think we under-rate our own expertise"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#tips",
-    "href": "commet/commet_2024-05-16.html#tips",
-    "title": "Appraisals",
-    "section": "Tips",
-    "text": "Tips\n\ndiary / log\n\ntime and task\nI basically OneNote a load of rubbishy bits, and make no effort to sort them until needed\n\nlook at your JD\nlook at your KSF dimensions\nlook at wider skills frameworks\n“I did x in y, which means z in …”\n“I need to x, which means I need y…”"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#open-goals",
-    "href": "commet/commet_2024-05-16.html#open-goals",
-    "title": "Appraisals",
-    "section": "Open goals",
-    "text": "Open goals\n\nexcessively manual processes\n\nsaved you time? Saved us money!\n\ncompliance\nimpact and change\ninformal training and support\nmanagement-like activity"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#smart",
-    "href": "commet/commet_2024-05-16.html#smart",
-    "title": "Appraisals",
-    "section": "SMART",
-    "text": "SMART\n\nSpecific, Measurable, Achievable, Relevant, and Time-Bound\nconceptually, a horrible mess\nbut dead useful for translating vague wants and needs into something more directed"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#share",
-    "href": "commet/commet_2024-05-16.html#share",
-    "title": "Appraisals",
-    "section": "Share",
-    "text": "Share\n\nplease share one achievement - one thing you did last year\nask your group to help you formulate it - how can I sell this nicely?"
-  },
-  {
-    "objectID": "commet/commet_2024-05-16.html#well-formed-learning-needs",
-    "href": "commet/commet_2024-05-16.html#well-formed-learning-needs",
-    "title": "Appraisals",
-    "section": "Well-formed learning needs?",
-    "text": "Well-formed learning needs?"
-  },
-  {
-    "objectID": "commet/commet_2024_09_02.html",
-    "href": "commet/commet_2024_09_02.html",
-    "title": "Joins 1: introduction",
-    "section": "",
-    "text": "A join is a way of merging two datasets. Let’s demonstrate with some simple data:\nlibrary(tibble)\nlibrary(dplyr)\nx &lt;- tibble(\n  name = c(\"Steve\", \"Emma\", \"Arti\"),\n  tool = c(\"R\", \"Excel\", \"Excel\"),\n  training_sessions = c(4,3,7)\n)\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3\n\n\nArti\nExcel\n7\n\n\n\ny &lt;- tibble(\n  name = c(\"Abena\", \"Yuika\", \"Arti\"),\n  tool = c(\"R\", \"Excel\", \"Power BI\"),\n  training_sessions = c(3,5,3)\n)\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nAbena\nR\n3\n\n\nYuika\nExcel\n5\n\n\nArti\nPower BI\n3"
-  },
-  {
-    "objectID": "commet/commet_2024_09_02.html#how-to-think-about-joins",
-    "href": "commet/commet_2024_09_02.html#how-to-think-about-joins",
-    "title": "Joins 1: introduction",
-    "section": "",
-    "text": "A join is a way of merging two datasets. Let’s demonstrate with some simple data:\nlibrary(tibble)\nlibrary(dplyr)\nx &lt;- tibble(\n  name = c(\"Steve\", \"Emma\", \"Arti\"),\n  tool = c(\"R\", \"Excel\", \"Excel\"),\n  training_sessions = c(4,3,7)\n)\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3\n\n\nArti\nExcel\n7\n\n\n\ny &lt;- tibble(\n  name = c(\"Abena\", \"Yuika\", \"Arti\"),\n  tool = c(\"R\", \"Excel\", \"Power BI\"),\n  training_sessions = c(3,5,3)\n)\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nAbena\nR\n3\n\n\nYuika\nExcel\n5\n\n\nArti\nPower BI\n3"
-  },
-  {
-    "objectID": "commet/commet_2024_09_02.html#binding",
-    "href": "commet/commet_2024_09_02.html#binding",
-    "title": "Joins 1: introduction",
-    "section": "Binding",
-    "text": "Binding\nThe simplest join we could do is to bind the rows from one set onto another:\nx |&gt;\n  bind_rows(y) |&gt;\n  knitr::kable()\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3\n\n\nArti\nExcel\n7\n\n\nAbena\nR\n3\n\n\nYuika\nExcel\n5\n\n\nArti\nPower BI\n3\n\n\n\nThat just brings all the rows from y onto the end of x. We could also have just bound the columns together:\nx |&gt;\n  bind_cols(y) |&gt;\n  knitr::kable()\n\n\n\n\n\n\n\n\n\n\n\nname…1\ntool…2\ntraining_sessions…3\nname…4\ntool…5\ntraining_sessions…6\n\n\n\n\nSteve\nR\n4\nAbena\nR\n3\n\n\nEmma\nExcel\n3\nYuika\nExcel\n5\n\n\nArti\nExcel\n7\nArti\nPower BI\n3\n\n\n\nDoing this in R, we end up with something quite messy: we’ve gained some new columns (with odd names), and lots of blank values. The reason for this is that Arti has a row in each dataset. Anyone without corresponding rows gets filling in with blanks.\nWe could do something very similar by hand in Excel. It’s worth noting the VSTACK function, which allows you to bring one table into another in Excel. PowerQuery has some great tools for binding data. Append Queries allows you to perform row-binding:\n\n\n\nSelect Append Queries\n\n\n\n\n\nSelect datasets to bind together\n\n\n\n\n\nNew table containing all rows from the original\n\n\nHowever we bind, the main distinction remains the same. When you bind, the values in your data are irrelevant. Column names will matter - e.g. row binding works when you have identically named columns. But the values themselves don’t matter at all."
-  },
-  {
-    "objectID": "commet/commet_2024_09_02.html#joins-proper",
-    "href": "commet/commet_2024_09_02.html#joins-proper",
-    "title": "Joins 1: introduction",
-    "section": "Joins proper",
-    "text": "Joins proper\nUnlike binding, though, a join will pay attention to the values found in our data. For example, we could do a left-join:\n\n\n\nA left-join\n\n\nThis would retain any data from our x dataset, but also bring in any matching data from y.So let’s now left-join y onto x using the name column:\nx |&gt;\n  left_join(y, by = \"name\") |&gt;\n  knitr::kable()\n\n\n\nname\ntool.x\ntraining_sessions.x\ntool.y\ntraining_sessions.y\n\n\n\n\nSteve\nR\n4\nNA\nNA\n\n\nEmma\nExcel\n3\nNA\nNA\n\n\nArti\nExcel\n7\nPower BI\n3\n\n\n\nWe’d get entirely different results if we joined on the tool column:\nx |&gt;\n  left_join(y, by = \"tool\") |&gt;\n  knitr::kable()\n\n\n\nname.x\ntool\ntraining_sessions.x\nname.y\ntraining_sessions.y\n\n\n\n\nSteve\nR\n4\nAbena\n3\n\n\nEmma\nExcel\n3\nYuika\n5\n\n\nArti\nExcel\n7\nYuika\n5\n\n\n\nWe could do something similar, again using the name column, to add in some dis-similar data from another source:\nz &lt;- tibble(\n  name = c(\"Abena\", \"Yuika\", \"Arti\", \"Steve\", \"Emma\", \"Bruce\"),\n  score = c(90, 85, 80, 75, 70, 33)\n)\n\nx |&gt;\n  left_join(z, by = \"name\") |&gt;\n  knitr::kable()\n\n\n\nname\ntool\ntraining_sessions\nscore\n\n\n\n\nSteve\nR\n4\n75\n\n\nEmma\nExcel\n3\n70\n\n\nArti\nExcel\n7\n80\n\n\n\nThere are several ways of doing this from R. If you’re not a dplyr fan, you could use base-R’s merge to do a left join:\nmerge(x, y, by = \"name\") |&gt;\n  knitr::kable()\n\n\n\nname\ntool.x\ntraining_sessions.x\ntool.y\ntraining_sessions.y\n\n\n\n\nArti\nExcel\n7\nPower BI\n3\n\n\n\nYou should see that only the values from y’s score column that have a corresponding name in x get populated, and everything else gets filled with NAs. Here’s a nice introduction to the different kinds of join you can do in dplyr.\nAgain, we can do something similar in PowerQuery - note that joins are called Merges\n\n\n\nSelect Merge Queries\n\n\n\n\n\nPick data to merge, and columns to merge on\n\n\n\n\n\nYou’ll need to expand the values in the new column\n\n\n\n\n\nResulting joined data"
-  },
-  {
-    "objectID": "commet/commet_2024_09_02.html#anti-join",
-    "href": "commet/commet_2024_09_02.html#anti-join",
-    "title": "Joins 1: introduction",
-    "section": "Anti-join",
-    "text": "Anti-join\nAn anti-join takes a dataset, and removes any matching values from the second dataset:\n\n\n\nAn anti-join\n\n\nx |&gt;\n  anti_join(y, by = \"name\") |&gt;\n  knitr::kable()\n\n\n\nname\ntool\ntraining_sessions\n\n\n\n\nSteve\nR\n4\n\n\nEmma\nExcel\n3"
-  },
-  {
-    "objectID": "commet/commet_2024_09_02.html#final-thoughts",
-    "href": "commet/commet_2024_09_02.html#final-thoughts",
-    "title": "Joins 1: introduction",
-    "section": "Final thoughts",
-    "text": "Final thoughts\n\nsome nice discussion about using dplyr::semi_join to find similar rows of data without actually binding columns\nusing the pointblank package for data validation"
   },
   {
     "objectID": "excel.html",
@@ -1432,7 +914,14 @@
     "href": "kind_cms.html",
     "title": "KIND community meetups",
     "section": "",
-    "text": "These are our main weekly social learning activity. They’re usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell. Click the links below to register - all welcome!\n\nCurrent community meetup scheduleArchive of past sessions\n\n\n\n\n\n\nWe don’t archive every session - most community meetups eventually become stand-alone KIND training sessions. But there are a few sessions that, for one reason and another, aren’t suitable for training purposes but are worth retaining. They’re linked below.\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nCategories\n\n\n\n\n\n\n\n\nAppraisals\n\n\nMay 16, 2024\n\n\nskills, career developement, appraisal\n\n\n\n\n\n\nData strategy\n\n\nMar 7, 2023\n\n\nData strategy\n\n\n\n\n\n\nJoins 1: introduction\n\n\nSep 2, 2024\n\n\nJoins, beginner, Excel, R, Power Query\n\n\n\n\n\n\nLeading a (training) session\n\n\nDec 4, 2023\n\n\nskills, training, career progression, appraisal\n\n\n\n\n\n\nTest driven development\n\n\nNov 21, 2023\n\n\nR, testing, intermediate, excel\n\n\n\n\n\n\nNo matching items"
+    "text": "These are our main weekly social learning activity. They’re usually a slightly chaotic blend of chat, training session, tech demo, and show-and-tell. Click the links below to register - all welcome!"
+  },
+  {
+    "objectID": "kind_cms.html#current-community-meetup-schedule",
+    "href": "kind_cms.html#current-community-meetup-schedule",
+    "title": "KIND community meetups",
+    "section": "Current community meetup schedule",
+    "text": "Current community meetup schedule"
   },
   {
     "objectID": "question_bank.html",
@@ -1460,7 +949,7 @@
     "href": "rbc/2024-06-13.html#how-to-think-about-joins",
     "title": "R beginner’s club 2024-06-13",
     "section": "How to think about joins?",
-    "text": "How to think about joins?\nWe did a simple join above. A join is a way of merging two datasets. Let’s demonstrate with some cut-down datasets from above. We’ll remove some of the values from our b1 set and from our b2 set:\n\nb1 &lt;- b1 |&gt;\n  slice(1:5)\n\nb1\n\n# A tibble: 5 × 2\n  name     score\n  &lt;chr&gt;    &lt;dbl&gt;\n1 kennedy  0.590\n2 victoria 0.248\n3 peter    0.644\n4 judi     0.887\n5 paul     0.336\n\n\n\nb2 &lt;- b2 |&gt;\n  slice_sample(n = 5)\n\nb2\n\n# A tibble: 5 × 2\n  name    score\n  &lt;chr&gt;   &lt;dbl&gt;\n1 judi    0.887\n2 linsey  0.971\n3 michael 0.561\n4 kenneth 0.393\n5 kennedy 0.590\n\n\nThe simplest join we could do is to bind the rows from one set onto another:\n\nb1 |&gt;\n  bind_rows(b2)\n\n# A tibble: 10 × 2\n   name     score\n   &lt;chr&gt;    &lt;dbl&gt;\n 1 kennedy  0.590\n 2 victoria 0.248\n 3 peter    0.644\n 4 judi     0.887\n 5 paul     0.336\n 6 judi     0.887\n 7 linsey   0.971\n 8 michael  0.561\n 9 kenneth  0.393\n10 kennedy  0.590\n\n\nThat just brings all the rows from b2 onto the end of b1. Unlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join b2:\n\nb1 |&gt;\n  left_join(b2, by = \"name\")\n\n# A tibble: 5 × 3\n  name     score.x score.y\n  &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;\n1 kennedy    0.590   0.590\n2 victoria   0.248  NA    \n3 peter      0.644  NA    \n4 judi       0.887   0.887\n5 paul       0.336  NA    \n\n\nYou should see that only the values from b2’s score column that have a corresponding name in b1 get populated, and everything else gets filled with NAs. Here’s a nice introduction to the different kinds of join you can do in dplyr."
+    "text": "How to think about joins?\nWe did a simple join above. A join is a way of merging two datasets. Let’s demonstrate with some cut-down datasets from above. We’ll remove some of the values from our b1 set and from our b2 set:\n\nb1 &lt;- b1 |&gt;\n  slice(1:5)\n\nb1\n\n# A tibble: 5 × 2\n  name     score\n  &lt;chr&gt;    &lt;dbl&gt;\n1 kennedy  0.590\n2 victoria 0.248\n3 peter    0.644\n4 judi     0.887\n5 paul     0.336\n\n\n\nb2 &lt;- b2 |&gt;\n  slice_sample(n = 5)\n\nb2\n\n# A tibble: 5 × 2\n  name     score\n  &lt;chr&gt;    &lt;dbl&gt;\n1 kenneth  0.393\n2 linsey   0.971\n3 jennifer 0.160\n4 judi     0.887\n5 paul     1    \n\n\nThe simplest join we could do is to bind the rows from one set onto another:\n\nb1 |&gt;\n  bind_rows(b2)\n\n# A tibble: 10 × 2\n   name     score\n   &lt;chr&gt;    &lt;dbl&gt;\n 1 kennedy  0.590\n 2 victoria 0.248\n 3 peter    0.644\n 4 judi     0.887\n 5 paul     0.336\n 6 kenneth  0.393\n 7 linsey   0.971\n 8 jennifer 0.160\n 9 judi     0.887\n10 paul     1    \n\n\nThat just brings all the rows from b2 onto the end of b1. Unlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join b2:\n\nb1 |&gt;\n  left_join(b2, by = \"name\")\n\n# A tibble: 5 × 3\n  name     score.x score.y\n  &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;\n1 kennedy    0.590  NA    \n2 victoria   0.248  NA    \n3 peter      0.644  NA    \n4 judi       0.887   0.887\n5 paul       0.336   1    \n\n\nYou should see that only the values from b2’s score column that have a corresponding name in b1 get populated, and everything else gets filled with NAs. Here’s a nice introduction to the different kinds of join you can do in dplyr."
   },
   {
     "objectID": "rbc/2024-10-10.html",
@@ -1474,7 +963,7 @@
     "href": "rbc/2024-10-10.html#factors-are-confusing",
     "title": "R beginner’s club 2024-09-12",
     "section": "Factors are confusing!",
-    "text": "Factors are confusing!\nFactors are confusing, but also factors are powerful. The reason they’re powerful is they give you proper tools for managing categorical data, and especially caregorical data that has a fixed order. Let’s set up an example to play with. Take an ordinary vector of character strings:\n\noct_s &lt;- c(\"Tweak\", \"Barnacles\", \"Dashi\", \"Kwazii\")\n\nWe can convert that into a factor:\n\noct_f &lt;- factor(oct_s)\n\nTo see what difference that’s made, let’s call up both the string vector and the factor:\n\noct_s\n\n[1] \"Tweak\"     \"Barnacles\" \"Dashi\"     \"Kwazii\"   \n\noct_f\n\n[1] Tweak     Barnacles Dashi     Kwazii   \nLevels: Barnacles Dashi Kwazii Tweak\n\n\nSo we’ve gained a new part in the factor: levels. You can think of levels as the possible values that our factor might contain. By default, when you create a factor from some strings, it takes the unique values, puts them in alphabetical order, and uses those as the levels:\n\nlevels(oct_f) # alphabetical\n\n[1] \"Barnacles\" \"Dashi\"     \"Kwazii\"    \"Tweak\"    \n\n\nIn fact, if you look carefully at the structure of a factor, you’ll see something surprising:\n\ntypeof(oct_f)\n\n[1] \"integer\"\n\n\nSo factors are basically vectors of integers, with each integer standing in for one of the possible levels. This makes factors more efficient than ordinary strings:\n\n# guess who's been reading Advanced R\nlobstr::obj_size(sample(oct_s, 100000, T))\n\n800.28 kB\n\nlobstr::obj_size(sample(oct_f, 100000, T))\n\n400.70 kB\n\n\nIt also means that we get to use some of the number-oriented tools to work with categorical data:\n\nsummary(sample(oct_s, 100000, T))\n\n   Length     Class      Mode \n   100000 character character \n\nsummary(sample(oct_f, 100000, T)) # nice frequency table with no effort\n\nBarnacles     Dashi    Kwazii     Tweak \n    25044     24807     24925     25224 \n\n\nThings get really interesting when we realise we can change the order of levels from the default alphabetical ordering:\n\noct_f_l &lt;- factor(oct_s, levels = c(\"Dashi\", \"Tweak\", \"Barnacles\", \"Kwazii\"))\n\noct_f_l\n\n[1] Tweak     Barnacles Dashi     Kwazii   \nLevels: Dashi Tweak Barnacles Kwazii\n\n\nThat’s very interesting, because the ordering of factors gets preserved in all kinds of places:\n\noct_f_l_tibble &lt;- tibble(oct_f_l,\n                         score = c(7,5,9,4)) \n\noct_f_l_tibble |&gt;\n  ggplot() +\n  geom_col(aes(x = oct_f_l, y = score, fill = oct_f_l)) \n\n\n\n\n\n\n\n\n\noct_f_l_tibble |&gt;\n  group_by(oct_f_l) |&gt;\n  summarise(score = score * 20)\n\n# A tibble: 4 × 2\n  oct_f_l   score\n  &lt;fct&gt;     &lt;dbl&gt;\n1 Dashi       180\n2 Tweak       140\n3 Barnacles   100\n4 Kwazii       80\n\n\nIf you want to get fancy with factors, the forcats package has some great tools. Some quick examples:\n\noct_s |&gt;\n  factor() |&gt;\n  fct_inorder() |&gt; # build a factor with levels in order of appearance\n  levels()\n\n[1] \"Tweak\"     \"Barnacles\" \"Dashi\"     \"Kwazii\"   \n\n\n\noct_plot &lt;- oct_f_l_tibble |&gt;\n  ggplot(aes(y = score, fill = oct_f_l)) \n\noct_plot +\n  geom_col(aes(x = fct_reorder(oct_f_l, c(4,2,3,1)))) # re-order levels in place\n\n\n\n\n\n\n\n\n\noct_plot +\n  geom_col(aes(x = fct_reorder(oct_f_l, -score))) # order levels by other values\n\n\n\n\n\n\n\n\n\nexample 1: forcing non-alphabetical ordering\n\nmonth_v &lt;- month.name[1:4]\n\nmonth_f &lt;- factor(month_v, levels = c(\"January\", \"February\", \"March\", \"April\"))\n\n# or fct_inorder(factor(month.name[1:4])) would get you there too\n\ntibble(month = month_f,\n       values = c(99,55,22,101)) |&gt;\n  ggplot() +\n  geom_col(aes(x = month, y = values))\n\n\n\n\n\n\n\ntibble(month = month_f,\n       values = c(99,55,22,101)) |&gt;\n  ggplot() +\n  geom_col(aes(x = fct_reorder(month, -values), y = values))\n\n\n\n\n\n\n\n\n\n\nexample 2: dealing with numeric categories\n\nmtcars |&gt;\n  ggplot() + \n  geom_point(aes(x = wt, y = hp, colour = gear)) # continuous presentation of categories\n\n\n\n\n\n\n\nmtcars |&gt;\n  ggplot() + \n  geom_point(aes(x = wt, y = hp, colour = factor(gear)))"
+    "text": "Factors are confusing!\nFactors are confusing, but also factors are powerful. The reason they’re powerful is they give you proper tools for managing categorical data, and especially caregorical data that has a fixed order. Let’s set up an example to play with. Take an ordinary vector of character strings:\n\noct_s &lt;- c(\"Tweak\", \"Barnacles\", \"Dashi\", \"Kwazii\")\n\nWe can convert that into a factor:\n\noct_f &lt;- factor(oct_s)\n\nTo see what difference that’s made, let’s call up both the string vector and the factor:\n\noct_s\n\n[1] \"Tweak\"     \"Barnacles\" \"Dashi\"     \"Kwazii\"   \n\noct_f\n\n[1] Tweak     Barnacles Dashi     Kwazii   \nLevels: Barnacles Dashi Kwazii Tweak\n\n\nSo we’ve gained a new part in the factor: levels. You can think of levels as the possible values that our factor might contain. By default, when you create a factor from some strings, it takes the unique values, puts them in alphabetical order, and uses those as the levels:\n\nlevels(oct_f) # alphabetical\n\n[1] \"Barnacles\" \"Dashi\"     \"Kwazii\"    \"Tweak\"    \n\n\nIn fact, if you look carefully at the structure of a factor, you’ll see something surprising:\n\ntypeof(oct_f)\n\n[1] \"integer\"\n\n\nSo factors are basically vectors of integers, with each integer standing in for one of the possible levels. This makes factors more efficient than ordinary strings:\n\n# guess who's been reading Advanced R\nlobstr::obj_size(sample(oct_s, 100000, T))\n\n800.28 kB\n\nlobstr::obj_size(sample(oct_f, 100000, T))\n\n400.70 kB\n\n\nIt also means that we get to use some of the number-oriented tools to work with categorical data:\n\nsummary(sample(oct_s, 100000, T))\n\n   Length     Class      Mode \n   100000 character character \n\nsummary(sample(oct_f, 100000, T)) # nice frequency table with no effort\n\nBarnacles     Dashi    Kwazii     Tweak \n    25040     25220     24856     24884 \n\n\nThings get really interesting when we realise we can change the order of levels from the default alphabetical ordering:\n\noct_f_l &lt;- factor(oct_s, levels = c(\"Dashi\", \"Tweak\", \"Barnacles\", \"Kwazii\"))\n\noct_f_l\n\n[1] Tweak     Barnacles Dashi     Kwazii   \nLevels: Dashi Tweak Barnacles Kwazii\n\n\nThat’s very interesting, because the ordering of factors gets preserved in all kinds of places:\n\noct_f_l_tibble &lt;- tibble(oct_f_l,\n                         score = c(7,5,9,4)) \n\noct_f_l_tibble |&gt;\n  ggplot() +\n  geom_col(aes(x = oct_f_l, y = score, fill = oct_f_l)) \n\n\n\n\n\n\n\n\n\noct_f_l_tibble |&gt;\n  group_by(oct_f_l) |&gt;\n  summarise(score = score * 20)\n\n# A tibble: 4 × 2\n  oct_f_l   score\n  &lt;fct&gt;     &lt;dbl&gt;\n1 Dashi       180\n2 Tweak       140\n3 Barnacles   100\n4 Kwazii       80\n\n\nIf you want to get fancy with factors, the forcats package has some great tools. Some quick examples:\n\noct_s |&gt;\n  factor() |&gt;\n  fct_inorder() |&gt; # build a factor with levels in order of appearance\n  levels()\n\n[1] \"Tweak\"     \"Barnacles\" \"Dashi\"     \"Kwazii\"   \n\n\n\noct_plot &lt;- oct_f_l_tibble |&gt;\n  ggplot(aes(y = score, fill = oct_f_l)) \n\noct_plot +\n  geom_col(aes(x = fct_reorder(oct_f_l, c(4,2,3,1)))) # re-order levels in place\n\n\n\n\n\n\n\n\n\noct_plot +\n  geom_col(aes(x = fct_reorder(oct_f_l, -score))) # order levels by other values\n\n\n\n\n\n\n\n\n\nexample 1: forcing non-alphabetical ordering\n\nmonth_v &lt;- month.name[1:4]\n\nmonth_f &lt;- factor(month_v, levels = c(\"January\", \"February\", \"March\", \"April\"))\n\n# or fct_inorder(factor(month.name[1:4])) would get you there too\n\ntibble(month = month_f,\n       values = c(99,55,22,101)) |&gt;\n  ggplot() +\n  geom_col(aes(x = month, y = values))\n\n\n\n\n\n\n\ntibble(month = month_f,\n       values = c(99,55,22,101)) |&gt;\n  ggplot() +\n  geom_col(aes(x = fct_reorder(month, -values), y = values))\n\n\n\n\n\n\n\n\n\n\nexample 2: dealing with numeric categories\n\nmtcars |&gt;\n  ggplot() + \n  geom_point(aes(x = wt, y = hp, colour = gear)) # continuous presentation of categories\n\n\n\n\n\n\n\nmtcars |&gt;\n  ggplot() + \n  geom_point(aes(x = wt, y = hp, colour = factor(gear)))"
   },
   {
     "objectID": "rbc/2024-10-10.html#how-do-i-filter-based-on-dates",
@@ -1530,7 +1019,7 @@
     "href": "rbc/2025-01-09.html#fixing-data-types",
     "title": "R beginner’s club 2025-01-09",
     "section": "Fixing data types",
-    "text": "Fixing data types\nOur dataset initially doesn’t look too horrible. But we can generate some very confusing results from it:\n\nmin(raw$PracticeListSize, na.rm = T)\n\n[1] \"10000\"\n\nmax(raw$PracticeListSize, na.rm = T) # what!\n\n[1] \"990\"\n\n\nWhat’s happening here is that R is putting our results into alphabetical order, rather than numerical. That’s because these numbers are stored as if they were text owing to a couple of anomalous data points:\n\nraw$PracticeListSize[grep(\"[^0-9]\", raw$PracticeListSize)]\n\n[1] \"187*\"  \"9738a\" \"5595c\"\n\n\nWe could use as.numeric to remove everything other than proper numbers:\n\nraw |&gt;\n  mutate(PracticeListSize = as.numeric(PracticeListSize))\n\n# A tibble: 64 × 15\n   PracticeCode GPPracticeName        PracticeListSize AddressLine1 AddressLine2\n          &lt;dbl&gt; &lt;chr&gt;                            &lt;dbl&gt; &lt;chr&gt;        &lt;chr&gt;       \n 1        55003 Thurso & Halkirk Med…             6143 Thurso & Ha… 69 Princes …\n 2        55041 Nairn Healthcare Gro…            15756 Nairn Healt… Nairn Town …\n 3        55075 Dunbeath Surgery                   685 Dunbeath Su… Achorn Road \n 4        55080 Canisbay & Castletow…             2750 Canisbay & … Murrayfield \n 5        55145 The Pearson Practice              2647 The Pearson… Wick Medica…\n 6        55183 Armadale Medical Pra…              925 Armadale Me… Armadale    \n 7        55201 Dornoch Medical Prac…             2858 Dornoch Med… Shore Road  \n 8        55220 Golspie Medical Prac…             1993 Golspie Med… Golspie Hea…\n 9        55249 Lairg Health Centre               1222 Lairg Healt… Main Street \n10        55253 Assynt Medical Pract…              952 Assynt Medi… 6 Main Stre…\n# ℹ 54 more rows\n# ℹ 10 more variables: AddressLine3 &lt;chr&gt;, AddressLine4 &lt;chr&gt;, Postcode &lt;chr&gt;,\n#   TelephoneNumber &lt;chr&gt;, PracticeType &lt;chr&gt;, `date collected` &lt;chr&gt;,\n#   HB &lt;chr&gt;, HSCP &lt;chr&gt;, DataZone &lt;chr&gt;, GPCluster &lt;chr&gt;\n\n\nOr, rather better, we could use readr::parse_number which will do a bit of inference to try and preserve anything that looks like a number:\n\nraw |&gt;\n  mutate(PracticeListSize = parse_number(PracticeListSize))\n\n# A tibble: 64 × 15\n   PracticeCode GPPracticeName        PracticeListSize AddressLine1 AddressLine2\n          &lt;dbl&gt; &lt;chr&gt;                            &lt;dbl&gt; &lt;chr&gt;        &lt;chr&gt;       \n 1        55003 Thurso & Halkirk Med…             6143 Thurso & Ha… 69 Princes …\n 2        55041 Nairn Healthcare Gro…            15756 Nairn Healt… Nairn Town …\n 3        55075 Dunbeath Surgery                   685 Dunbeath Su… Achorn Road \n 4        55080 Canisbay & Castletow…             2750 Canisbay & … Murrayfield \n 5        55145 The Pearson Practice              2647 The Pearson… Wick Medica…\n 6        55183 Armadale Medical Pra…              925 Armadale Me… Armadale    \n 7        55201 Dornoch Medical Prac…             2858 Dornoch Med… Shore Road  \n 8        55220 Golspie Medical Prac…             1993 Golspie Med… Golspie Hea…\n 9        55249 Lairg Health Centre               1222 Lairg Healt… Main Street \n10        55253 Assynt Medical Pract…              952 Assynt Medi… 6 Main Stre…\n# ℹ 54 more rows\n# ℹ 10 more variables: AddressLine3 &lt;chr&gt;, AddressLine4 &lt;chr&gt;, Postcode &lt;chr&gt;,\n#   TelephoneNumber &lt;chr&gt;, PracticeType &lt;chr&gt;, `date collected` &lt;chr&gt;,\n#   HB &lt;chr&gt;, HSCP &lt;chr&gt;, DataZone &lt;chr&gt;, GPCluster &lt;chr&gt;\n\n\nWe also have some horrible dates. First, we’ve got a few completely non-standard dates:\n\nraw |&gt;\n  dplyr::filter(stringr::str_detect(`date collected`, \"eve\")) |&gt;\n  select(PracticeCode, `date collected`)\n\n# A tibble: 1 × 2\n  PracticeCode `date collected`\n         &lt;dbl&gt; &lt;chr&gt;           \n1        55291 Christmas eve   \n\n\nShort of manually replacing them, we can’t do much about those. But we can fix the other dates, which are in Excel 1900 format:\n\nraw |&gt;\n  select(`date collected`) |&gt;\n  slice_sample(n = 5)\n\n# A tibble: 5 × 1\n  `date collected`\n  &lt;chr&gt;           \n1 45659           \n2 45654           \n3 45664           \n4 45659           \n5 45650           \n\n\nExcel counts days from Jan 1st 1900, while R counts days from Jan 1st 1970. That means that you need to subtract those 70 years to convert from one to the other, and then use lubridates as_date to convert that number of days into a proper R date. The quick-and-dirty way - just subtract 70 years-worth of days, which is (of course) 25569 days:\n\nraw |&gt;\n  mutate(`date collected` = as_date(as.numeric(`date collected`) - 25569)) |&gt; # 25569 is the magic number\n  select(`date collected`) |&gt;\n  slice_sample(n = 5)\n\n# A tibble: 5 × 1\n  `date collected`\n  &lt;date&gt;          \n1 2025-01-05      \n2 2024-12-22      \n3 2024-12-28      \n4 2024-12-28      \n5 2025-01-07      \n\n\nA nicer, more explicit, approach is to set an origin for your as_date to count from. Weirdly, because of a decades-old glitch in Excel dates, that’s two days before the 1st Jan 1900:\n\nraw |&gt;\n  mutate(`date collected` = as_date(as.numeric(`date collected`), origin = \"1899-12-30\")) |&gt;\n  select(`date collected`) |&gt;\n  slice_sample(n = 5)\n\n# A tibble: 5 × 1\n  `date collected`\n  &lt;date&gt;          \n1 NA              \n2 2025-01-09      \n3 2024-12-28      \n4 2025-01-04      \n5 2024-12-20      \n\n\nThere’s lots to say about date parsing - and would recommend coming to our lubridate session if you’d like to know more."
+    "text": "Fixing data types\nOur dataset initially doesn’t look too horrible. But we can generate some very confusing results from it:\n\nmin(raw$PracticeListSize, na.rm = T)\n\n[1] \"10000\"\n\nmax(raw$PracticeListSize, na.rm = T) # what!\n\n[1] \"990\"\n\n\nWhat’s happening here is that R is putting our results into alphabetical order, rather than numerical. That’s because these numbers are stored as if they were text owing to a couple of anomalous data points:\n\nraw$PracticeListSize[grep(\"[^0-9]\", raw$PracticeListSize)]\n\n[1] \"187*\"  \"9738a\" \"5595c\"\n\n\nWe could use as.numeric to remove everything other than proper numbers:\n\nraw |&gt;\n  mutate(PracticeListSize = as.numeric(PracticeListSize))\n\n# A tibble: 64 × 15\n   PracticeCode GPPracticeName        PracticeListSize AddressLine1 AddressLine2\n          &lt;dbl&gt; &lt;chr&gt;                            &lt;dbl&gt; &lt;chr&gt;        &lt;chr&gt;       \n 1        55003 Thurso & Halkirk Med…             6143 Thurso & Ha… 69 Princes …\n 2        55041 Nairn Healthcare Gro…            15756 Nairn Healt… Nairn Town …\n 3        55075 Dunbeath Surgery                   685 Dunbeath Su… Achorn Road \n 4        55080 Canisbay & Castletow…             2750 Canisbay & … Murrayfield \n 5        55145 The Pearson Practice              2647 The Pearson… Wick Medica…\n 6        55183 Armadale Medical Pra…              925 Armadale Me… Armadale    \n 7        55201 Dornoch Medical Prac…             2858 Dornoch Med… Shore Road  \n 8        55220 Golspie Medical Prac…             1993 Golspie Med… Golspie Hea…\n 9        55249 Lairg Health Centre               1222 Lairg Healt… Main Street \n10        55253 Assynt Medical Pract…              952 Assynt Medi… 6 Main Stre…\n# ℹ 54 more rows\n# ℹ 10 more variables: AddressLine3 &lt;chr&gt;, AddressLine4 &lt;chr&gt;, Postcode &lt;chr&gt;,\n#   TelephoneNumber &lt;chr&gt;, PracticeType &lt;chr&gt;, `date collected` &lt;chr&gt;,\n#   HB &lt;chr&gt;, HSCP &lt;chr&gt;, DataZone &lt;chr&gt;, GPCluster &lt;chr&gt;\n\n\nOr, rather better, we could use readr::parse_number which will do a bit of inference to try and preserve anything that looks like a number:\n\nraw |&gt;\n  mutate(PracticeListSize = parse_number(PracticeListSize))\n\n# A tibble: 64 × 15\n   PracticeCode GPPracticeName        PracticeListSize AddressLine1 AddressLine2\n          &lt;dbl&gt; &lt;chr&gt;                            &lt;dbl&gt; &lt;chr&gt;        &lt;chr&gt;       \n 1        55003 Thurso & Halkirk Med…             6143 Thurso & Ha… 69 Princes …\n 2        55041 Nairn Healthcare Gro…            15756 Nairn Healt… Nairn Town …\n 3        55075 Dunbeath Surgery                   685 Dunbeath Su… Achorn Road \n 4        55080 Canisbay & Castletow…             2750 Canisbay & … Murrayfield \n 5        55145 The Pearson Practice              2647 The Pearson… Wick Medica…\n 6        55183 Armadale Medical Pra…              925 Armadale Me… Armadale    \n 7        55201 Dornoch Medical Prac…             2858 Dornoch Med… Shore Road  \n 8        55220 Golspie Medical Prac…             1993 Golspie Med… Golspie Hea…\n 9        55249 Lairg Health Centre               1222 Lairg Healt… Main Street \n10        55253 Assynt Medical Pract…              952 Assynt Medi… 6 Main Stre…\n# ℹ 54 more rows\n# ℹ 10 more variables: AddressLine3 &lt;chr&gt;, AddressLine4 &lt;chr&gt;, Postcode &lt;chr&gt;,\n#   TelephoneNumber &lt;chr&gt;, PracticeType &lt;chr&gt;, `date collected` &lt;chr&gt;,\n#   HB &lt;chr&gt;, HSCP &lt;chr&gt;, DataZone &lt;chr&gt;, GPCluster &lt;chr&gt;\n\n\nWe also have some horrible dates. First, we’ve got a few completely non-standard dates:\n\nraw |&gt;\n  dplyr::filter(stringr::str_detect(`date collected`, \"eve\")) |&gt;\n  select(PracticeCode, `date collected`)\n\n# A tibble: 1 × 2\n  PracticeCode `date collected`\n         &lt;dbl&gt; &lt;chr&gt;           \n1        55291 Christmas eve   \n\n\nShort of manually replacing them, we can’t do much about those. But we can fix the other dates, which are in Excel 1900 format:\n\nraw |&gt;\n  select(`date collected`) |&gt;\n  slice_sample(n = 5)\n\n# A tibble: 5 × 1\n  `date collected`\n  &lt;chr&gt;           \n1 45652           \n2 45657           \n3 45650           \n4 45655           \n5 45648           \n\n\nExcel counts days from Jan 1st 1900, while R counts days from Jan 1st 1970. That means that you need to subtract those 70 years to convert from one to the other, and then use lubridates as_date to convert that number of days into a proper R date. The quick-and-dirty way - just subtract 70 years-worth of days, which is (of course) 25569 days:\n\nraw |&gt;\n  mutate(`date collected` = as_date(as.numeric(`date collected`) - 25569)) |&gt; # 25569 is the magic number\n  select(`date collected`) |&gt;\n  slice_sample(n = 5)\n\n# A tibble: 5 × 1\n  `date collected`\n  &lt;date&gt;          \n1 2024-12-22      \n2 2024-12-23      \n3 2024-12-22      \n4 2024-12-31      \n5 2025-01-01      \n\n\nA nicer, more explicit, approach is to set an origin for your as_date to count from. Weirdly, because of a decades-old glitch in Excel dates, that’s two days before the 1st Jan 1900:\n\nraw |&gt;\n  mutate(`date collected` = as_date(as.numeric(`date collected`), origin = \"1899-12-30\")) |&gt;\n  select(`date collected`) |&gt;\n  slice_sample(n = 5)\n\n# A tibble: 5 × 1\n  `date collected`\n  &lt;date&gt;          \n1 NA              \n2 2025-01-02      \n3 2024-12-28      \n4 2024-12-29      \n5 2024-12-22      \n\n\nThere’s lots to say about date parsing - and would recommend coming to our lubridate session if you’d like to know more."
   },
   {
     "objectID": "rbc/2025-01-09.html#writing-back-to-excel",
