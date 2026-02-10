@@ -5,56 +5,79 @@ editor_options:
 date: 2026-01-30
 ---
 
-In the week commencing 9th March 2026, we'll run a series of network-wide events about **mistakes and errors**. Please get in touch if you'd be interested in contributing along the following themes:
+![Mistakes and errors week](../src/images/clipboard-3489016594.png)
+
+In the week commencing 9th March 2026, we'll run a series of network-wide events about **mistakes and errors**. 
+
+## Schedule
+
+```{r}
+readr::read_csv("data/KIND_community_meetups.csv") |>
+  dplyr::mutate(Date = lubridate::as_date(date)) |>
+  dplyr::arrange(Date) |>
+  dplyr::filter(Date >= lubridate::today() & !is.na(Date)) |>
+  dplyr::filter(stringr::str_detect(official_title, "Error")) |>
+  dplyr::mutate(Title = paste0("<a href='", link, "'>", friendly_title , "</a>")) |>
+  dplyr::select(Date, `Signup link` = Title, description, date) |>
+  dplyr::arrange(Date) |>
+  dplyr::mutate(Date = KINDR::nice_date(date)) |>
+  dplyr::select(-date) |>
+  DT::datatable(filter = "top", escape = F, rownames = F)
+```
+
+
+## Call for speakers
+
+Please get in touch if you'd be interested in contributing along the following themes:
 
 ### Biography of mistakes - how mistakes shaped you
 
-+ [Kintsugi](https://en.wikipedia.org/wiki/Kintsugi), mended with gold, how mistakes made you the person you are
-+ Failure CV - tell us all the stuff that didn't work out
+-   [Kintsugi](https://en.wikipedia.org/wiki/Kintsugi), mended with gold, how mistakes made you the person you are
+-   Failure CV - tell us all the stuff that didn't work out
 
 ### Learning from mistakes
 
-+ Turning mistakes into learning moments - not just saying "I'll learn from this"
-+ Using errors to make training work - basically KIND's motto
-+ Mistakes as an integral part of learning. Non-linear learning. Getting better is effectively just learning to make mistakes faster - so why shouldn't mistakes be thought of as an integral part part of the learning journey?
-+ Written in blood: mistakes that led to really good improvements in process
-+ Move slowly and listen when you break things (slo-mo scream test/Chesterton's Fence/[onion in the varnish](https://www.someweekendreading.blog/onion-fences/))
- 
+-   Turning mistakes into learning moments - not just saying "I'll learn from this"
+-   Using errors to make training work - basically KIND's motto
+-   Mistakes as an integral part of learning. Non-linear learning. Getting better is effectively just learning to make mistakes faster - so why shouldn't mistakes be thought of as an integral part part of the learning journey?
+-   Written in blood: mistakes that led to really good improvements in process
+-   Move slowly and listen when you break things (slo-mo scream test/Chesterton's Fence/[onion in the varnish](https://www.someweekendreading.blog/onion-fences/))
+
 ### Sharing your mistakes
 
-+ I broke that! Tales about confessing something wrong that you've done, and how that improved things
-+ The chances of anything coming from Mars: never change guitar strings over an electrical extension socket and other freak occurrences
-+ "he's just like that" = vent-o-rama about persistently unreasonable people and how that's not a mistake but something more sinister
- 
+-   I broke that! Tales about confessing something wrong that you've done, and how that improved things
+-   The chances of anything coming from Mars: never change guitar strings over an electrical extension socket and other freak occurrences
+-   "he's just like that" = vent-o-rama about persistently unreasonable people and how that's not a mistake but something more sinister
+
 ### Units of selection - do people make mistakes, or do systems?
 
-+ You vs the system/safeguards: deleting prod means the systems broken rather than you
-+ Processes that critically depend on something highly non-obvious (a single spreadsheet supports your entire EPR system or something)
-+ Mistakes happen in the gap between front line and delivery
-+ I am not a number: AfC banding, and similar hierarchies: mistakes happen because junior and senior people don't communicate effectively
- 
+-   You vs the system/safeguards: deleting prod means the systems broken rather than you
+-   Processes that critically depend on something highly non-obvious (a single spreadsheet supports your entire EPR system or something)
+-   Mistakes happen in the gap between front line and delivery
+-   I am not a number: AfC banding, and similar hierarchies: mistakes happen because junior and senior people don't communicate effectively
+
 ### Just deserts (yes, it is spelled [the sandy way](https://plato.stanford.edu/entries/desert/) when you're talking about what you deserve, even though its pronounced like a sweet treat)
 
-+ Small slips with catastrophic consequences (CC instead of BCC)
-+ Moscow Rules (cover your back) vs London Rules ([cover your a***](https://en.wikipedia.org/wiki/Slow_Horses))
-+ Hurry up and wait: important stuff usually happens urgently, and that means we make mistakes precisely where we need them least
+-   Small slips with catastrophic consequences (CC instead of BCC)
+-   Moscow Rules (cover your back) vs London Rules ([cover your a\*\*\*](https://en.wikipedia.org/wiki/Slow_Horses))
+-   Hurry up and wait: important stuff usually happens urgently, and that means we make mistakes precisely where we need them least
 
 ### Causes and prevention
 
-+ Preventing mistakes (second-checking, quality control, system alerts, using data to mitigate mistakes, feedback loops)
-+ [Let him have it](https://en.wikipedia.org/wiki/Let_Him_Have_It): or the tone is taken wrongly
-+ RTFM - why reading the flipping manual can be such a challenge
-+ Perfectionism, the myth of error-free ball, unknown unknowns, failure modes, and brilliant failures
-+ Not invented here: group of mistakes that are largely about doing things that don't need doing
+-   Preventing mistakes (second-checking, quality control, system alerts, using data to mitigate mistakes, feedback loops)
+-   [Let him have it](https://en.wikipedia.org/wiki/Let_Him_Have_It): or the tone is taken wrongly
+-   RTFM - why reading the flipping manual can be such a challenge
+-   Perfectionism, the myth of error-free ball, unknown unknowns, failure modes, and brilliant failures
+-   Not invented here: group of mistakes that are largely about doing things that don't need doing
 
 ### What to do about mistakes
 
-+ Non-fault - apologies and solutions rather than excuses
-+ Reflective practices
-+ How to (whether to) promote non-blame culture
-+ Reasonable adjustments (menopause brain-fog discussion and how hard that is to adjust to)
-+ How to embed hard-won lessons institutionally
-+ Only negative feedback exists
+-   Non-fault - apologies and solutions rather than excuses
+-   Reflective practices
+-   How to (whether to) promote non-blame culture
+-   Reasonable adjustments (menopause brain-fog discussion and how hard that is to adjust to)
+-   How to embed hard-won lessons institutionally
+-   Only negative feedback exists
 
 ### Acknowledgements
 
