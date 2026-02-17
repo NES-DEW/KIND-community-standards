@@ -17,7 +17,7 @@ readr::read_csv("../data/KIND_community_meetups.csv") |>
   dplyr::mutate(Date = lubridate::as_date(date)) |>
   dplyr::arrange(Date) |>
   dplyr::filter(Date >= lubridate::today() & !is.na(Date)) |>
-  dplyr::filter(stringr::str_detect(official_title, "Error")) |>
+  dplyr::filter(stringr::str_detect(official_title, "(?i)Error")) |>
   dplyr::mutate(Title = paste0("<a href='", link, "'>", friendly_title , "</a>")) |>
   dplyr::select(Date, `Signup link` = Title, description, date) |>
   dplyr::arrange(Date) |>
