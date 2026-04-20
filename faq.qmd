@@ -30,6 +30,18 @@ The KIND network does three main things:
 
 All these activities are responsive to your needs. If you feel there’s an important area of relevant work where we are not contributing, please get in touch.
 
+## What doesn't the KIND network do?
+
+The KIND network isn't a consultancy or a bureau: we don't undertake analytical work for organisations, and we ask that members refrain from soliciting paid or free work via the network. That means that we expressly forbid posts on the Teams channel that contain any of the following:
+
++ requests for help that fall outwith the scope of learning or development
++ any requests for the provision of expertise that might conceivably replace properly-procured services in your organisation
++ requests to support the administration of services
++ requests for analytical work to be completed by network members
++ any other kind of service provision to you or your organisation
+
+We reserve the right to remove any post where the focus is not clearly on learning and development. Please contact [Brendan Clarke](mailto:brendan.clarke2@nhs.scot) with any queries.
+
 ## Who runs/owns/funds the KIND network?
 
 The KIND Learning Network is based at [Public Services Delivery Scotland](https://publicservicesdelivery.scot/) (PSD Scotland), as part of the Digitally Enabled Workforce programme. That’s a programme that builds foundational resources to support digital skills and leadership at all levels. You might have heard about our Professional Development Award in Technology Enabled Care programme, used the M365 Skills Hub, or been involved with the Digital Leadership Programme. This work is all funded through Scottish Government via the Digital Health and Care Portfolio Board.
