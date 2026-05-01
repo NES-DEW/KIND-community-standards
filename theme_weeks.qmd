@@ -5,9 +5,8 @@ Theme weeks occupy a whole week with a single topic, with 10-20 events scheduled
 ## 2026
 
 + week commencing 9th March 2026: [mistakes and errors](tw/mistakes_week_2026.qmd)
-+ week commencing 20th April 2026: KIND careers
-+ week commencing 22th June 2026: the history of health data and analytics
-+ week commencing 26th October 2026: KIND and research
++ week commencing 22th June 2026: [taster sessions](tw/taster_sessions_2026.qmd)
++ week commencing 26th October 2026: KIND and research (or possibly something about the history of health data)
 
 <!-- + week commencing 20th April 2026: [KIND careers](tw/careers_week_2026.qmd) -->
 <!-- + week commencing 22th June 2026: [the history of health data and analytics](tw/history_week_2026.qmd) -->

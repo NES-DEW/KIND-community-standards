@@ -1,0 +1,12 @@
+---
+title: Taster sessions
+editor_options: 
+  chunk_output_type: console
+---
+
+In the week commencing 22th June 2026, we'll run a series of events designed to give you an introduction to some new tools and topics:
+
+```{r}
+KINDR::training_sessions(start_date = "2026-06-21", end_date = "2026-06-27")
+```
+
