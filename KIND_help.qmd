@@ -1,33 +1,57 @@
 ---
 title: "How to ask the network for help"
-date: 2024-11-20
+date: 2026-05-08
 ---
   
-The KIND network is a great place to ask for technical help. This page has a few suggestions and tips to ask for help successfully. Please remember that people responding to requests for help do so on a voluntary basis. We ask everyone requesting help on the KIND network to share these community standards. These boil-down to a small set of points for guidance
+The KIND network is a great place to ask for technical help. Asking for help effectively is harder than it looks. This page gives you a basic, but tried-and-true, recipe for asking the network for help which will help you get the assistance you need quickly and easily.
+
+:::{.callout-important collapse=false appearance='default' icon=true}
+## Read this carefully
+
+Please remember that people responding to requests for help do so on a voluntary basis. We ask everyone requesting help follows the process below, to help keep discussion on the network flowing freely, and to stop volunteer helpers having to ask a lot of questions before they can actually help you.
+:::
+
+
+## The KIND help process
+
+When asking for technical help, we ask network members to follow a four step process:
 
 1. Search online first
+1. Show us what you have
 1. Be specific and concise
-1. Include a minimal, reproducible, example
+1. Tell us what you've tried, ideally using a minimal reproducible example
 
 ## Search online first
-This is, by far, the most powerful troubleshooting strategy there is. Writing an effective search can take a bit of thought, but the most useful guidance is to **include as much specific information in your search as you can**. So that means mention package/function names, any error messages received, and a description of the error that you're facing. It's definitely worth playing around a bit with this too - I like including the whole error message in quotes to sharpen the search up.. You might also include `site: stackoverflow.com` to restrict searches to one of the most useful and relevant sources there is.
+
+This is, by far, the most powerful troubleshooting strategy there is. Writing an effective search can take a bit of thought, but the most useful guidance is to **include as much specific information in your search as you can**. So that means mention package/function names, any error messages received, and a description of the error that you're facing. It's definitely worth playing around a bit with this too - I like including the whole error message in quotes to sharpen the search up.. You might also include `site: stackoverflow.com` to restrict searches to one of the most useful and relevant sources there is. Lots of network members also have reported success from using LLM tools (like Copilot or ChatGPT) for this sort of assistance, but do make sure you comply with your organisations policy about AI use in the workplace **before** doing this.
+
+## Show us what you have
+
+Describing what your problem is can be challenging. By far the best way of doing this is to send screenshot(s) of what you're looking at. Ideally, we want to see a) what you currently have b) any error messages or specific issues you're encountering and c) an idea of the ultimate objective: what do you want to achieve with what you're doing.
+
+::: {.callout-important}
+Make **certain** that you're not revealing anything inappropriate when you do this. Most of us are bound by strict rules about data protection, and it's your responsibility to understand what you're sharing, and who you're sharing it with. Keep it minimal - so don't share anything you don't need to share. Replacing any real data with sample data is generally the safest course of action
+::: 
 
 ## Be specific and concise
 
-Assuming you don't find what you need online, please feel free to ask in the Teams channel. Again, the sample principles about specificity apply: tell us what's going wrong, and when, as specifically as you can. Please avoid the very generic "it doesn't work"-type ways of describing problems. Screenshots are a great way of communicating errors if you don't have the words to describe what's going wrong. Make sure you include a description/screenshot of:
+Tell us what's going wrong, and when, as specifically as you can. Please avoid the very generic "it doesn't work"-type ways of describing problems. Make sure you include a description/screenshot of:
 
 * any error messages
 * when those error messages happen
 * details of your computer setup if it's an odd/unusual one
 
-You should also **tell us what you've tried**, and what happened when you tried it.
-  
-## Include a minimal, reproducible, example
-Generally, when people want to help you with something, the first thing they'll try to do is reproduce the problem. Help your helpers by making that as quick and easy as possible. This almost always means building a demo version of your problem that can be shared with people on the network. Code-y types might refer to this as a [reprex](https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html) - a **repr**oducible **ex**ample.
+It also helps enormously to post in the specific channel: so Excel queries in the Excel channel, Power BI/Power Automate/Power Query in the Power platform channel etc. I'd encourage you to post as yourself, but there is [an anonymous question route](https://forms.office.com/e/vwQbBVD9Gm) if you'd prefer.
 
-::: {.callout-important}
-Make sure that you don't breach data protection rules when you share your issue. Replacing any real data with sample data is generally the safest course of action
-:::
+## Tell us what you've tried
+
+You should also **tell us what you've tried**, and what happened when you tried it. That can be done in several ways. By far the best, especially if your example is complicated, is to include a minimal reproducible example in your help request.
+
+:::{.callout-note collapse=false appearance='default' icon=true}
+
+## Minimal reproducible examples
+
+Generally, when people want to help you with something, the first thing they'll try to do is reproduce the problem. Help your helpers by making that as quick and easy as possible. This almost always means building a demo version of your problem that can be shared with people on the network. Code-y types might refer to this as a [reprex](https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html) - a **repr**oducible **ex**ample.
 
 That can be daunting, so here are some steps to help achieve a minimal example:
 
@@ -39,3 +63,7 @@ That can be daunting, so here are some steps to help achieve a minimal example:
 - next, make sure that your error still occurs in your mini-example. Stripping away extraneous material etc is a great way of actually fixing problems in its own right, so it's important to check that you haven't fixed it by yourself
     - you should also make sure that any password protection, credentials, etc are removed from the document so that your helpers can see everything you can see
 - finally, make sure you save your example file before adding it to your request for help in Teams
+
+:::
+
+
