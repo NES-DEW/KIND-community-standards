@@ -1,24 +1,42 @@
 ---
 title: "KIND interview practice resources"
-date: 2024-11-29
+date: 2026-05-27
 execute:
   echo: false
   message: false
   warning: false
+editor_options: 
+  chunk_output_type: console
 ---
 
 Here are some sample interview questions cobbled together from various public sources. Most of them are public-sector (and health and social-care) oriented:
+
+::: {.panel-tabset}
+
 
 ```{r}
 library(dplyr)
 library(DT)
 
-readr::read_csv("data/interview_qbank.csv") |>
-  DT::datatable(rownames= FALSE)
+qqs <- readr::read_csv("data/interview_qbank.csv")
 
+areas <- qqs$Area |>
+  unique() |>
+  sort()
+
+q_type <- function(area){
+  cat(paste("  \n##", area, "  \n", area, "questions  \n"))
+
+  qqs |>
+    filter(Area == area) |>
+    knitr::kable() |>
+    print()
+}
+
+purrr::walk(areas, q_type)
 
 ```
 
 
-
+:::
 

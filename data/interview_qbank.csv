@@ -1,79 +1,94 @@
-﻿Area,Question
-General questions,Tell me about yourself?
-General questions,What are your key strengths?
-General questions,What is your biggest weakness?
-General questions,Where do you see yourself 5 years from now?
-General questions,Why do you want to work with us?
-General questions,What do you know about our organisation?
-General questions,What do you think you will be doing on a day-to-day basis in this role?
-General questions,What motivates you?
-General questions,Do you have any questions for us?
-Non-public sector questions,Why did you leave your last job?
-Non-public sector questions,Why should we hire you?
-Non-public sector questions,What are your salary expectation? How much do you expect to get paid?
-Non-public sector questions,What is your greatest achievement?
-Non-public sector questions,Tell us about a challenge you have faced recently, how did you deal with it, and what was the outcome?
-Non-public sector questions,What are you looking for in a new role?
-Non-public sector questions,What type of working environment do you prefer?
-Non-public sector questions,What is your management style?
-Non-public sector questions,How would your boss describe you? How would your colleagues describe you?
-Non-public sector questions,Tell me about this (x) gap in your employment...
-Non-public sector questions,Explain why you have decided to change career...
-Non-public sector questions,What do you think the first 30 days will look like in this new role?
-Non-public sector questions,What do you do outside of your job?
+Area,Question
+"Problems, problem-solving, and challenges", "Not everyone we encounter is as cooperative as we would like.  Tell me about a time someone refused to do something you needed to have done.  How did you respond?"
+"Problems, problem-solving, and challenges", Getting the job done may necessitate unusual persistence or dedication to results especially when faced with obstacles or distractions. Tell me about a time in which you were able to be very persistent in order to reach goals. Be specific.
+"Problems, problem-solving, and challenges", Tell me about a high stress situation when it was desirable for you to keep a positive attitude.  What happened? How did it impact your efficiency?  How did you deal with it?
+"Problems, problem-solving, and challenges","Describe a challenging situation where priorities shifted, and you had to balance both people and business needs. How did you approach and what strategies helped you manage it effectively?"
+"Problems, problem-solving, and challenges","Describe a problem that you needed to solve in your last role. What was the impact of this?"
+"Problems, problem-solving, and challenges","Describe a problem that you recently needed to solve. Were there any alternatives you could have considered?"
+"Problems, problem-solving, and challenges","Describe the steps you take when solving a problem. Give me an example."
+"Problems, problem-solving, and challenges","Good problem solving often includes careful review of the facts and weighing of the options before making a decision. Give an example of how you tracked down information from different sources and applied it to a decision you made."
+"Problems, problem-solving, and challenges","Tell us about a time you encountered resistance to change within a team or organization. How did you recognize the resistance, and what steps did you take to manage it? Who did you consult, and what was the outcome?"
+Accountability and Managing Priorities,"Describe a time when you have been unable to follow through on a commitment that you made. What happened? How did you explain this to the other party?"
+Accountability and Managing Priorities,"Describe one of the more complicated situations you have experienced in which priorities changed and you had to re-balance people and business needs. What was the nature of the change, what was your approach, what were some of the major problems faced and why?"
+Accountability and Managing Priorities,"Some jobs are very hectic at times. Please give an example of when you managed to get everything done in a pressured time. What strategies did you use to ensure timely, high quality results?"
+Accountability and Managing Priorities,"Tell me about a time when you had more to complete than the time you had allocated. How did you decide what tasks to prioritise?"
+Accountability and Managing Priorities,"Think of a time when you had many demands placed upon you. How did you ensure that you met the needs of your customers, co-workers and your managers?"
+Accountability and Managing Priorities,Give a specific example of how you have demonstrated your ability to handle multiple priorities and deliver results
+Adaptability,"We can’t always get the support we need.  Tell me about a time you needed some help (technical or other), and you couldn’t get it.  How did you handle the situation?"
+Adaptability,Describe a time when you needed to complete a project with little direction. What issues did you face?
+Adaptability,Describe a time you were experiencing conflicting work demands.  What were those conflicting demands? How did you respond?
+Adaptability,Discuss a time when you had to deal with a major change in your workplace or your job duties. How did you prepare for the change?
+Adaptability,Give an example of when you needed to meet multiple priorities. How did you handle this?
+Adaptability,Provide an example of when you had to take action and did not have sufficient time to prepare. How did you adapt to this situation?
+Adaptability,Tell me about a time when you needed to change your point of view?
+Analysis,"Describe a time when you have analysed information, and made an objective decision, despite personal bias."
+Analysis,"Tell me about a time when you have analysed information, and made a recommendation to others. What methods did you use? Did you refer to anyone else?"
+Analysis,"Tell me about a time when you needed to analyse a large volume of data, and describe how you knew what was important"
 Analysis,Describe a project or task that you were responsible for that demonstrates your ability to analyse information 
 Analysis,Tell me about a time when you spotted a discrepancy or inconsistency in information that might have caused problems if you had missed it
-Analysis,Tell me about a time when you needed to analyse a large volume of data, and describe how you knew what was important
-Analysis,Describe a time when you have analysed information, and made an objective decision, despite personal bias. 
-Analysis,Tell me about a time when you have analysed information, and made a recommendation to others. What methods did you use? Did you refer to anyone else?
-Adaptability,Discuss a time when you had to deal with a major change in your workplace or your job duties. How did you prepare for the change?
-Adaptability,Provide an example of when you had to take action and did not have sufficient time to prepare. How did you adapt to this situation?
-Adaptability,Describe a time when you needed to complete a project with little direction. What issues did you face?
-Adaptability,Give an example of when you needed to meet multiple priorities. How did you handle this?
-Adaptability,Tell me about a time when you needed to change your point of view?
-Accountability and Managing Priorities,Give a specific example of how you have demonstrated your ability to handle multiple priorities and deliver results
-Accountability and Managing Priorities,Think of a time when you had many demands placed upon you. How did you ensure that you met the needs of your customers, co-workers and your managers?
-Accountability and Managing Priorities,Describe a time when you have been unable to follow through on a commitment that you made. What happened? How did you explain this to the other party?
-Accountability and Managing Priorities,Some jobs are very hectic at times. Please give an example of when you managed to get everything done in a pressured time. What strategies did you use to ensure timely, high quality results?
-Accountability and Managing Priorities,Tell me about a time when you had more to complete than the time you had allocated. How did you decide what tasks to prioritise? 
-Team ,Describe a time when you were the member of a team. What was your role? Did the team accomplish the task? How did you help them to succeed?
-Team ,Tell me about a time when you encouraged your co-workers to support you in a task. How did you gain their support? 
-Team ,Describe a time when you were in a team that was not successful. What went wrong? If you were to go back and do that task again, what would you do differently?
-Team ,Tell me about a time when you ensured that everyone in your team participated. How did you go about this, and what challenges did you face?
-Team ,Describe a time when you worked with a team where you struggled to communicate with some of your colleagues? What steps did you take to resolve these difficulties?
-Team ,Tell us about a high-stress situation where maintaining a positive attitude was crucial. How did this situation affect your productivity, and how did you manage it?
-Team ,Describe a time when you had to work with someone who was challenging to collaborate with. What made the relationship difficult, and how did you approach managing it effectively?
-"Problems, problem-solving, and challenges",Describe a problem that you recently needed to solve. Were there any alternatives you could have considered?
-"Problems, problem-solving, and challenges",Describe the steps you take when solving a problem. Give me an example. 
-"Problems, problem-solving, and challenges",Describe a problem that you needed to solve in your last role. What was the impact of this?
-"Problems, problem-solving, and challenges",Tell us about a time you encountered resistance to change within a team or organization. How did you recognize the resistance, and what steps did you take to manage it? Who did you consult, and what was the outcome?
-"Problems, problem-solving, and challenges",Describe a challenging situation where priorities shifted, and you had to balance both people and business needs. How did you approach and what strategies helped you manage it effectively?
-Leadership,Think of a time when you have acted as a role model for others. Why did they  consider you to be a role model? How did you influence others?
+Communication, Have you ever had to obtain information from an individual who was difficult and uncooperative? How did you handle the situation and still obtain the information you needed?
+Communication,Describe a time when you needed to give a presentation to someone.
+Communication,Give an example demonstrating your ability to build successful working relationships
+Communication,Give an example of when you had difficulty communicating your thoughts to someone. What message were you trying to convey? Where did the difficultly lie?
+Communication,Tell me about a sensitive or volatile situation that needed careful communication
+Communication,Tell me about a time when you have needed to write an important report. What steps did you take to plan for it? What did you find most challenging?
+Communication,Tell me about a time when you have successfully managed a conflict between two co-workers
+Communication,Tell me about how you prepared for this interview. What stages did you go through?
+Creativity and Innovation ,Tell me about a time when you needed to persuade someone that a change was necessary. What made you think that your idea was best suited?
+Creativity and Innovation, "Describe any significant projects or ideas you have conceived within the past year. How did you know they were needed and would work? Were they used? Did they work?"
+Creativity and Innovation, "Describe any significant projects or ideas you have conceived within the past year. How did you know they were needed and would work? Were they used? Did they work?"
+Creativity and Innovation,"Tell us about a project or situation when you felt that a conventional approach was not suitable. How did you drive forward this approach? What challenges did you face, and how did you address them?"
+Decision-making,"Give an example of when you failed to solve a problem effectively. Why was your solution ineffective? If you did it again, what would you do differently?"
+Decision-making,"Tell me about a time when you made an objective decision, despite having a personal opinion"
+Decision-making,Give a specific example of a decision you needed to make. How did you make that decision? Did you involve others?
+Decision-making,Tell me about a time when you had a difficult decision to make. How did you organise the information? Was your decision effective?
+General questions,[this organisation] aims to improve its competitive advantage through improved customer service.  Describe an action that you have taken within the last year that has resulted in your best example of improved customer service.
+General questions,Do you have any questions for us?
+General questions,Tell me about yourself?
+General questions,What are your key strengths?
+General questions,What do you know about our organisation?
+General questions,What do you think you will be doing on a day-to-day basis in this role?
+General questions,What is your biggest weakness?
+General questions,What motivates you?
+General questions,Where do you see yourself 5 years from now?
+General questions,Why do you want to work with us?
+Initiative ,Describe a situation when you recognised a problem and took action to solve it.
+Initiative ,Describe a time when you initiated a procedural change on your own. How did you present your ideas to management? What was the outcome?
+Initiative ,Describe a time when your quick response made a difference. What happened?
+Initiative ,Talk me through a time when you were given a project with little supervision. How did you feel? Describe how you went about the project? What was the outcome?
+Initiative, "Give me an example of an occasion when your manager was not available and you had to make a decision on your own.  What was the situation?  What was the course of action and what was the outcome?"
+Leadership, Tell me about some people who have become successful as a result of your development and mentoring.  Please be specific in describing your actions/roles.
+Leadership,"Think of a time when you have acted as a role model for others. Why did they  consider you to be a role model? How did you influence others?"
 Leadership,Describe a time when you needed to give feedback to others. How did you go about this? How was the feedback received?
 Leadership,Describe a time when you were leading a project. What were the circumstances? How did you delegate work?
 Leadership,Describe a time when you were recognised for dealing effectively with a difficult situation
 Leadership,Leaders can make unpopular decisions. Tell me about a time when you needed to make a difficult/unpopular choice. 
-Initiative ,Describe a time when you initiated a procedural change on your own. How did you present your ideas to management? What was the outcome?
-Initiative ,Talk me through a time when you were given a project with little supervision. How did you feel? Describe how you went about the project? What was the outcome?
-Initiative ,Describe a situation when you recognised a problem and took action to solve it.
-Initiative ,Describe a time when your quick response made a difference. What happened?
-Learning and development,How do you keep up to date? How do you keep others up to date?
+Leadership,Tell us about your leadership style. What elements of your leadership style have helped the team be successful?  What elements have hindered the team?  What changes have you made in your leadership style to enhance success/ minimise negative impact? How did you make these changes?
+Learning and development,"Describe a challenging situation where priorities shifted, and you had to balance both people and business needs. How did you approach and what strategies helped you manage it effectively?"
+Learning and development,"Describe a time when you have been given negative feedback, explain how you handled this? What did you do to develop?"
+Learning and development,"Tell me about a time when you were not satisfied with your own performance. What did you do about it?"
 Learning and development,Describe a time when you have used feedback to enhance the performance of someone else. What was your approach?
-Learning and development,Tell me about a time when you have worked with someone who has failed to improve. What might have caused this failure? What might you have done differently if you had coached them?
+Learning and development,How do you keep up to date? How do you keep others up to date?
 Learning and development,Tell me about a recent job or experience that you would describe as a ‘real learning experience’. What did you learn? How will you use this in the future?
-Learning and development,Describe a time when you have been given negative feedback, explain how you handled this? What did you do to develop?
-Learning and development,Tell me about a time when you were not satisfied with your own performance. What did you do about it?
-Learning and development,Describe a challenging situation where priorities shifted, and you had to balance both people and business needs. How did you approach and what strategies helped you manage it effectively?
-Decision-making,Tell me about a time when you had a difficult decision to make. How did you organise the information? Was your decision effective?
-Decision-making,Give a specific example of a decision you needed to make. How did you make that decision? Did you involve others?
-Decision-making,Give an example of when you failed to solve a problem effectively. Why was your solution ineffective? If you did it again, what would you do differently? 
-Decision-making,Tell me about a time when you made an objective decision, despite having a personal opinion
-Creativity and Innovation ,Tell us about a project or situation when you felt that a conventional approach was not suitable. How did you drive forward this approach? What challenges did you face, and how did you address them?
-Creativity and Innovation ,Tell me about a time when you needed to persuade someone that a change was necessary. What made you think that your idea was best suited?
-Communication,Give an example of when you had difficulty communicating your thoughts to someone. What message were you trying to convey? Where did the difficultly lie?
-Communication,Tell me about a sensitive or volatile situation that needed careful communication
-Communication,Tell me about a time when you have successfully managed a conflict between two co-workers
-Communication,Give an example demonstrating your ability to build successful working relationships
-Communication,Tell me about a time when you have needed to write an important report. What steps did you take to plan for it? What did you find most challenging?
-Communication,Describe a time when you needed to give a presentation to someone.
-Communication,Tell me about how you prepared for this interview. What stages did you go through?
+Learning and development,Tell me about a time when you have worked with someone who has failed to improve. What might have caused this failure? What might you have done differently if you had coached them?
+Non-public sector questions,"Tell us about a challenge you have faced recently, how did you deal with it, and what was the outcome?"
+Non-public sector questions,Explain why you have decided to change career...
+Non-public sector questions,How would your boss describe you? How would your colleagues describe you?
+Non-public sector questions,Tell me about this (x) gap in your employment...
+Non-public sector questions,What are you looking for in a new role?
+Non-public sector questions,What are your salary expectation? How much do you expect to get paid?
+Non-public sector questions,What do you do outside of your job?
+Non-public sector questions,What do you think the first 30 days will look like in this new role?
+Non-public sector questions,What is your greatest achievement?
+Non-public sector questions,What is your management style?
+Non-public sector questions,What type of working environment do you prefer?
+Non-public sector questions,Why did you leave your last job?
+Non-public sector questions,Why should we hire you?
+Team, "Describe a time when you were the member of a team. What was your role? Did the team accomplish the task? How did you help them to succeed?"
+Team, "Tell us about a difficult relationship with colleague or manager.  What was the nature of the difficulty?  What kinds of obstacles did it create in accomplishing your objectives?  What changes did you make in your approach to working with this person?  How have you altered the way you work with others as a result of this experience?"
+Team,"Describe a time when you had to work with someone who was challenging to collaborate with. What made the relationship difficult, and how did you approach managing it effectively?"
+Team,"Describe a time when you were in a team that was not successful. What went wrong? If you were to go back and do that task again, what would you do differently?"
+Team,"Describe a time when you worked with a team where you struggled to communicate with some of your colleagues? What steps did you take to resolve these difficulties?"
+Team,"Tell me about a time when you encouraged your co-workers to support you in a task. How did you gain their support?"
+Team,"Tell me about a time when you ensured that everyone in your team participated. How did you go about this, and what challenges did you face?"
+Team,"Tell us about a high-stress situation where maintaining a positive attitude was crucial. How did this situation affect your productivity, and how did you manage it?"
