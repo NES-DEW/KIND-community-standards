@@ -67,7 +67,14 @@ We have a lot of activities going on. The best way to keep in touch with everyth
 ## Where can I find more information about training?
 
 All info about our training courses can be found on the [training mini-site](https://nes-dew.github.io/KIND-training/). Everything is free of cost, and open for self-service booking. Please see the main [schedule page](https://nes-dew.github.io/KIND-training/schedule.html) to see what's available. Note that most of our training sessions are regularly repeated (usually two or three times per year) so please don't despair if you miss something of interest.
-  
+
+## Who can come to training?
+
+Training is open to all across Scotland's health, social care, and housing sector. All sessions are free, and (with two provisos) open to all. Those provisos are:
+
+1. We offer training across a range of tools, and at a range of levels. While sessions are open to all, not all sessions will be suitable for your needs and interests, and may require software or other infrastructure to which you do not have access. It is your responsibility to check carefully the requirements and prerequisites of a training session before registering.
+1. All our training is intended for personal development. We only want people to attend who want to develop their skills. As a result, please note that our sessions are not open to colleagues who are being compelled to attend. Please only come to our training if you personally want to attend.
+
 ## Do you have a mentoring/buddying scheme?
 
 We have previously offered a technical mentoring scheme, but owing to a lack of offers to act as mentors that's no longer viable. Instead, we have a simple [buddying scheme](https://nes-dew.github.io/KIND-community-standards/mentoring.html) which will pair you with a member of the network
