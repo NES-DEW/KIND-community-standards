@@ -8,7 +8,7 @@
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke">
-<meta name="dcterms.date" content="2026-08-14">
+<meta name="dcterms.date" content="2026-08-18">
 
 <title>R beginner’s club 2024-06-13 – KIND resources</title>
 <style>
@@ -465,7 +465,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 14, 2026</p>
+      <p class="date">August 18, 2026</p>
     </div>
   </div>
   
@@ -639,9 +639,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   name    score
   &lt;chr&gt;   &lt;dbl&gt;
 1 kenneth 0.393
-2 michael 0.561
-3 paul    1    
-4 linsey  0.971
+2 linsey  0.971
+3 kennedy 0.590
+4 michael 0.561
 5 alupha  0.574</code></pre>
 </div>
 </div>
@@ -659,9 +659,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  4 judi     0.887
  5 paul     0.336
  6 kenneth  0.393
- 7 michael  0.561
- 8 paul     1    
- 9 linsey   0.971
+ 7 linsey   0.971
+ 8 kennedy  0.590
+ 9 michael  0.561
 10 alupha   0.574</code></pre>
 </div>
 </div>
@@ -673,11 +673,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 5 × 3
   name     score.x score.y
   &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;
-1 kennedy    0.590      NA
-2 victoria   0.248      NA
-3 peter      0.644      NA
-4 judi       0.887      NA
-5 paul       0.336       1</code></pre>
+1 kennedy    0.590   0.590
+2 victoria   0.248  NA    
+3 peter      0.644  NA    
+4 judi       0.887  NA    
+5 paul       0.336  NA    </code></pre>
 </div>
 </div>
 <p>You should see that only the values from <code>b2</code>’s score column that have a corresponding name in <code>b1</code> get populated, and everything else gets filled with NAs. Here’s a <a href="https://lindsaydbrin.github.io/CREATE_R_Workshop/Lesson_-_dplyr_join.html">nice introduction to the different kinds of join you can do in dplyr</a>.</p>
