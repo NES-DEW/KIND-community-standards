@@ -8,7 +8,7 @@
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke">
-<meta name="dcterms.date" content="2026-08-28">
+<meta name="dcterms.date" content="2026-09-02">
 
 <title>R beginner’s club 2024-06-13 – KIND resources</title>
 <style>
@@ -465,7 +465,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 28, 2026</p>
+      <p class="date">September 2, 2026</p>
     </div>
   </div>
   
@@ -636,13 +636,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>b2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 2
-  name     score
-  &lt;chr&gt;    &lt;dbl&gt;
-1 linsey   0.971
-2 peter    0.644
-3 victoria 0.248
-4 paul     1    
-5 kenneth  0.393</code></pre>
+  name    score
+  &lt;chr&gt;   &lt;dbl&gt;
+1 kenneth 0.393
+2 alupha  0.574
+3 peter   0.644
+4 paul    1    
+5 judi    0.887</code></pre>
 </div>
 </div>
 <p>The simplest join we could do is to bind the rows from one set onto another:</p>
@@ -658,11 +658,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  3 peter    0.644
  4 judi     0.887
  5 paul     0.336
- 6 linsey   0.971
- 7 peter    0.644
- 8 victoria 0.248
+ 6 kenneth  0.393
+ 7 alupha   0.574
+ 8 peter    0.644
  9 paul     1    
-10 kenneth  0.393</code></pre>
+10 judi     0.887</code></pre>
 </div>
 </div>
 <p>That just brings all the rows from <code>b2</code> onto the end of <code>b1</code>. Unlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join <code>b2</code>:</p>
@@ -674,9 +674,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   name     score.x score.y
   &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;
 1 kennedy    0.590  NA    
-2 victoria   0.248   0.248
+2 victoria   0.248  NA    
 3 peter      0.644   0.644
-4 judi       0.887  NA    
+4 judi       0.887   0.887
 5 paul       0.336   1    </code></pre>
 </div>
 </div>
