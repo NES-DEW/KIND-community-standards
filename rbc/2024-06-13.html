@@ -8,7 +8,7 @@
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke">
-<meta name="dcterms.date" content="2026-09-03">
+<meta name="dcterms.date" content="2026-09-08">
 
 <title>R beginner’s club 2024-06-13 – KIND resources</title>
 <style>
@@ -85,9 +85,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e3adbaa939bcd423dddc8c8a834270b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-368fa1ad43ac453e7a810d150c9e6bd0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-e3adbaa939bcd423dddc8c8a834270b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-3e9b1289f5f353c49b617ce48ad2bc38.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-c921e99e69a66440de91dc0cc407d4f6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-3e9b1289f5f353c49b617ce48ad2bc38.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -336,8 +336,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">Community meetups</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../unconf_2025.html">
- <span class="dropdown-text">Unconference 2025</span></a>
+    <a class="dropdown-item" href="../unconf_2026.html">
+ <span class="dropdown-text">🆕 Unconference 2026</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../question_bank.html">
@@ -360,7 +360,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li>
     <a class="dropdown-item" href="../support_resources.html">
- <span class="dropdown-text">🆕 KIND wellbeing resources</span></a>
+ <span class="dropdown-text">KIND wellbeing resources</span></a>
   </li>  
     </ul>
   </li>
@@ -465,7 +465,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 3, 2026</p>
+      <p class="date">September 8, 2026</p>
     </div>
   </div>
   
@@ -636,13 +636,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>b2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 2
-  name    score
-  &lt;chr&gt;   &lt;dbl&gt;
-1 kennedy 0.590
-2 paul    1    
-3 linsey  0.971
-4 peter   0.644
-5 michael 0.561</code></pre>
+  name     score
+  &lt;chr&gt;    &lt;dbl&gt;
+1 linsey   0.971
+2 victoria 0.248
+3 paul     1    
+4 kenneth  0.393
+5 judi     0.887</code></pre>
 </div>
 </div>
 <p>The simplest join we could do is to bind the rows from one set onto another:</p>
@@ -658,11 +658,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  3 peter    0.644
  4 judi     0.887
  5 paul     0.336
- 6 kennedy  0.590
- 7 paul     1    
- 8 linsey   0.971
- 9 peter    0.644
-10 michael  0.561</code></pre>
+ 6 linsey   0.971
+ 7 victoria 0.248
+ 8 paul     1    
+ 9 kenneth  0.393
+10 judi     0.887</code></pre>
 </div>
 </div>
 <p>That just brings all the rows from <code>b2</code> onto the end of <code>b1</code>. Unlike binding, though, in a join we usually want to only include some of our values. So let’s now left-join <code>b2</code>:</p>
@@ -673,10 +673,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 5 × 3
   name     score.x score.y
   &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;
-1 kennedy    0.590   0.590
-2 victoria   0.248  NA    
-3 peter      0.644   0.644
-4 judi       0.887  NA    
+1 kennedy    0.590  NA    
+2 victoria   0.248   0.248
+3 peter      0.644  NA    
+4 judi       0.887   0.887
 5 paul       0.336   1    </code></pre>
 </div>
 </div>
