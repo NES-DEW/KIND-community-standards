@@ -1,0 +1,54 @@
+# Unconference 2026
+
+![KIND unconference 2025 banner](https://raw.githubusercontent.com/NES-DEW/dew-img/refs/heads/main/kind/KIND_unconference_2026.png)
+
+## Theme: who are we?
+
+The KIND network is a big and diverse group without a single standard professional identify. This year's unconference is about who we are, what we do at work, and who makes the case for us and what we do?
+
+* What's your professional group/personae?
+  * "office-spreadsheet person"
+  * digital leader
+  * data scientist
+  * admin person
+* "gang aft agley" - how did you get here?
+  * what was your career path to your KIND-ish role?
+  * what's your SFW-passion project? What are your rabbit-holes?
+  * where are your successes?
+* Where do we sit? Are we frontline? Back-office? Somewhere in the middle?
+* What do we do at work all day?
+  * What would your [professional time use dataset look like](https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/datasets/timeuseintheuk)?
+  * "That'll only take five minutes..." - how do you estimate how long tasks will take?
+* What do you think you should be doing at work?
+  + from collecting and describing to modelling and intelligence
+* what are your barriers (infrastructure) and opportunities (digital tranformation)
+* who values your work, and how do you find that out?
+
+## Info
+
++ our annual community day of chat, presentations, and discussion
++ **Thursday 17th December 2026** 09.30-16:30
++ entirely free and flexible: drop in for ten minutes or come for the whole day
++ live on Teams
++ free and open to all - here's the [registration link](https://events.teams.microsoft.com/event/d30c6b97-95cd-47d6-a729-80053cf48872@10efe0bd-a030-4bca-809c-b5e6745e499a)
++ no recordings because everything is a social session, but will disseminate any shareable materials via the network
+
+## Schedule
+
++ 09:30-10:00 **welcome** and chat
+
+----
+
++ 1200-13:00 Lunch
+
+----
+
+
+----
+
++ 15:00-15:30 Break
+
+----
+
+
++ 16:00-16:30 **What do you want from the network next year?**

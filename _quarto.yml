@@ -26,8 +26,8 @@ website:
             text: R reading group
           - href: kind_cms.qmd
             text: Community meetups
-          - href: unconf_2025.qmd
-            text: Unconference 2025
+          - href: unconf_2026.qmd
+            text: 🆕 Unconference 2026
           - href: question_bank.qmd
             text: Practice interview questions
       - text: KIND FAQ
@@ -37,7 +37,7 @@ website:
           - href: KIND_help.qmd
             text: How to ask the network for help
           - href: support_resources.qmd
-            text: 🆕 KIND wellbeing resources
+            text: KIND wellbeing resources
       - href: mentoring.qmd
         text: Buddying scheme
       - href: theme_weeks.qmd
