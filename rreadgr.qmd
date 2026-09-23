@@ -4,7 +4,7 @@ title: "R reading group"
 
 ## About 
 
-This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users. The current book is Lovelace, Nowosad and Muenchow 2025 *Geocomputation with R* ([free-to-access online version](https://r.geocompx.org/)).
+This is a monthly hour-and-a-bit of informal chat about a reading of interest. All are very welcome, but the emphasis is more towards intermediate and advanced R users. The current book is Thulin 2026 *Modern Statistics with R* ([free-to-access online version](https://www.modernstatisticswithr.com/)).
 
 Code snippets and notes can be found [on the repository](https://github.com/NES-DEW/KIND-R-reading-group)
 
