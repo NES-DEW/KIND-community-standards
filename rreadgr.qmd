@@ -8,6 +8,12 @@ This is a monthly hour-and-a-bit of informal chat about a reading of interest. A
 
 Code snippets and notes can be found [on the repository](https://github.com/NES-DEW/KIND-R-reading-group)
 
+## Forthcoming sessions
+
++ Thursday, 2-3pm, 22nd October 2026
+  + **reading** [section 8.1 of Modern Statistics with R on regression modelling](https://www.modernstatisticswithr.com/regression.html)
+  + [booking link](https://events.teams.microsoft.com/event/ac9b5915-7969-4598-92f8-bd855d173672@10efe0bd-a030-4bca-809c-b5e6745e499a)
+
 ## Previous sessions
 
 + Thursday, 3-4pm BST, 26th September 2024
