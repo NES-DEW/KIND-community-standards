@@ -79,9 +79,17 @@ Training is open to all across Scotland's health, social care, and housing secto
 
 We have previously offered a technical mentoring scheme, but owing to a lack of offers to act as mentors that's no longer viable. Instead, we have a simple [buddying scheme](https://nes-dew.github.io/KIND-community-standards/mentoring.html) which will pair you with a member of the network
 
-## Do you run network events
+## Do you run network events?
 
 We run a range of events for the community - typically one per week. You can see a [list of forthcoming network events here](https://nes-dew.github.io/KIND-community-standards/kind_cms.html).
+
+## Can I share my event on the KIND network, or run an event on the network?
+
+Yes, as long as the event is relevant to (some of) our membership, we're happy to share external events via our Teams channel (and mailing list, by request), conditional on broad acceptability of tone, content, and method of provision of that session.
+
+We're also happy to host external organisations to give webinars of interest to our membership using our webinar process, assuming that we can mutually agree content and approach. Please get in touch if that is of interest.
+
+Do please note that we don't allow external events to use our name/branding without our permission.
 
 ## Is X going to be recorded?
 
