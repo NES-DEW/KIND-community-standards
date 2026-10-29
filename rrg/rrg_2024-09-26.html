@@ -85,9 +85,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-55617497126496852ff9f5a59253c640.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-02995240f18a7089ee7c43000f9b3900.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-55617497126496852ff9f5a59253c640.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a14d652b86e00f03abd5043129e363d4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0a787625505f185cf8bdd28d405e0d60.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-a14d652b86e00f03abd5043129e363d4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -476,7 +476,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>) <span class="co"># create an object</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(x) <span class="co"># location in memory</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "0x55d6737d07a8"</code></pre>
+<pre><code>[1] "0x55813ff6f518"</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> x <span class="co"># bind an additional name to the object</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(x) <span class="sc">==</span> <span class="fu">obj_addr</span>(y) <span class="co"># it's just one object with two names</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -488,12 +488,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(mean)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "0x55d671e65838"</code></pre>
+<pre><code>[1] "0x55813aac7c88"</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>steve <span class="ot">&lt;-</span> mean</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(steve)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "0x55d671e65838"</code></pre>
+<pre><code>[1] "0x55813aac7c88"</code></pre>
 </div>
 </div>
 <p>We only create a new object when we modify one of the names:</p>
@@ -511,33 +511,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(l1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "0x55d6769e55f8"</code></pre>
+<pre><code>[1] "0x558140027648"</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(l2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "0x55d6769e55f8"</code></pre>
+<pre><code>[1] "0x558140027648"</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>l2[[<span class="dv">3</span>]] <span class="ot">&lt;-</span> <span class="dv">99</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(l1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "0x55d6769e55f8"</code></pre>
+<pre><code>[1] "0x558140027648"</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_addr</span>(l2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "0x55d6769e9e38"</code></pre>
+<pre><code>[1] "0x55813ff36438"</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ref</span>(l1, l2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>█ [1:0x55d6769e55f8] &lt;list&gt; 
-├─[2:0x55d675ee0ff8] &lt;dbl&gt; 
-├─[3:0x55d675ee0e00] &lt;dbl&gt; 
-└─[4:0x55d675ee0c40] &lt;dbl&gt; 
+<pre><code>█ [1:0x558140027648] &lt;list&gt; 
+├─[2:0x55813e625548] &lt;dbl&gt; 
+├─[3:0x55813e625350] &lt;dbl&gt; 
+└─[4:0x55813e625190] &lt;dbl&gt; 
  
-█ [5:0x55d6769e9e38] &lt;list&gt; 
-├─[2:0x55d675ee0ff8] 
-├─[3:0x55d675ee0e00] 
-└─[6:0x55d675f07148] &lt;dbl&gt; </code></pre>
+█ [5:0x55813ff36438] &lt;list&gt; 
+├─[2:0x55813e625548] 
+├─[3:0x55813e625350] 
+└─[6:0x55813e63bb08] &lt;dbl&gt; </code></pre>
 </div>
 </div>
 <p>As tibbles (and other tabular data structures in R) are effectively lists, this is an explaination as to why row-wise operations are so slow compared to operations on columns. As tibbles are are lists of columns, updating a column just makes a new reference. Changing a row, on the other hand, makes a whole new set of objects and references:</p>
@@ -550,44 +550,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ref</span>(mtcars, mt_changed_col, mt_changed_row)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>█ [1:0x55d673e76b28] &lt;df[,11]&gt; 
-├─mpg = [2:0x55d6742c6ca0] &lt;dbl&gt; 
-├─cyl = [3:0x55d674841de0] &lt;dbl&gt; 
-├─disp = [4:0x55d67386e840] &lt;dbl&gt; 
-├─hp = [5:0x55d672487d10] &lt;dbl&gt; 
-├─drat = [6:0x55d676c0dac0] &lt;dbl&gt; 
-├─wt = [7:0x55d673f57880] &lt;dbl&gt; 
-├─qsec = [8:0x55d674598050] &lt;dbl&gt; 
-├─vs = [9:0x55d67474f420] &lt;dbl&gt; 
-├─am = [10:0x55d671967ac0] &lt;dbl&gt; 
-├─gear = [11:0x55d672fd7340] &lt;dbl&gt; 
-└─carb = [12:0x55d67329e420] &lt;dbl&gt; 
+<pre><code>█ [1:0x55813fd3d6d8] &lt;df[,11]&gt; 
+├─mpg = [2:0x55813fda0f90] &lt;dbl&gt; 
+├─cyl = [3:0x55813c4d2aa0] &lt;dbl&gt; 
+├─disp = [4:0x55813c4d2be0] &lt;dbl&gt; 
+├─hp = [5:0x55813c4d2d20] &lt;dbl&gt; 
+├─drat = [6:0x55813c4d2e60] &lt;dbl&gt; 
+├─wt = [7:0x55813c4d2fa0] &lt;dbl&gt; 
+├─qsec = [8:0x55813d8fb420] &lt;dbl&gt; 
+├─vs = [9:0x55813d8fb560] &lt;dbl&gt; 
+├─am = [10:0x55813d8fb6a0] &lt;dbl&gt; 
+├─gear = [11:0x55813d8fb7e0] &lt;dbl&gt; 
+└─carb = [12:0x55813d8fb920] &lt;dbl&gt; 
  
-█ [13:0x55d673b23268] &lt;df[,11]&gt; 
-├─mpg = [2:0x55d6742c6ca0] 
-├─cyl = [3:0x55d674841de0] 
-├─disp = [4:0x55d67386e840] 
-├─hp = [14:0x55d67199e870] &lt;dbl&gt; 
-├─drat = [6:0x55d676c0dac0] 
-├─wt = [7:0x55d673f57880] 
-├─qsec = [8:0x55d674598050] 
-├─vs = [9:0x55d67474f420] 
-├─am = [10:0x55d671967ac0] 
-├─gear = [11:0x55d672fd7340] 
-└─carb = [12:0x55d67329e420] 
+█ [13:0x55813fb8ab08] &lt;df[,11]&gt; 
+├─mpg = [2:0x55813fda0f90] 
+├─cyl = [3:0x55813c4d2aa0] 
+├─disp = [4:0x55813c4d2be0] 
+├─hp = [14:0x55813a151bc0] &lt;dbl&gt; 
+├─drat = [6:0x55813c4d2e60] 
+├─wt = [7:0x55813c4d2fa0] 
+├─qsec = [8:0x55813d8fb420] 
+├─vs = [9:0x55813d8fb560] 
+├─am = [10:0x55813d8fb6a0] 
+├─gear = [11:0x55813d8fb7e0] 
+└─carb = [12:0x55813d8fb920] 
  
-█ [15:0x55d672f43bc8] &lt;df[,11]&gt; 
-├─mpg = [16:0x55d67191d960] &lt;dbl&gt; 
-├─cyl = [17:0x55d673244720] &lt;dbl&gt; 
-├─disp = [18:0x55d671e138b0] &lt;dbl&gt; 
-├─hp = [19:0x55d6747b0250] &lt;dbl&gt; 
-├─drat = [20:0x55d67394b360] &lt;dbl&gt; 
-├─wt = [21:0x55d676dd7310] &lt;dbl&gt; 
-├─qsec = [22:0x55d671922cc0] &lt;dbl&gt; 
-├─vs = [23:0x55d6746f1c50] &lt;dbl&gt; 
-├─am = [24:0x55d6730fda60] &lt;dbl&gt; 
-├─gear = [25:0x55d673db7b70] &lt;dbl&gt; 
-└─carb = [26:0x55d67236e620] &lt;dbl&gt; </code></pre>
+█ [15:0x55813fa23398] &lt;df[,11]&gt; 
+├─mpg = [16:0x55813fd843e0] &lt;dbl&gt; 
+├─cyl = [17:0x55813fd84520] &lt;dbl&gt; 
+├─disp = [18:0x55813fd84660] &lt;dbl&gt; 
+├─hp = [19:0x55813fbf21b0] &lt;dbl&gt; 
+├─drat = [20:0x55813fbf22f0] &lt;dbl&gt; 
+├─wt = [21:0x55813fbf2430] &lt;dbl&gt; 
+├─qsec = [22:0x55813fbf2570] &lt;dbl&gt; 
+├─vs = [23:0x55813fbf26b0] &lt;dbl&gt; 
+├─am = [24:0x55813fc18ec0] &lt;dbl&gt; 
+├─gear = [25:0x55813fc19000] &lt;dbl&gt; 
+└─carb = [26:0x55813fc19140] &lt;dbl&gt; </code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>col_row <span class="ot">&lt;-</span> <span class="fu">microbenchmark</span>(</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  {mt_changed_col <span class="ot">&lt;-</span> mtcars</span>
@@ -614,11 +614,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">by col</td>
-<td style="text-align: right;">104.3522</td>
+<td style="text-align: right;">112.6145</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">by row</td>
-<td style="text-align: right;">473.1214</td>
+<td style="text-align: right;">511.2801</td>
 </tr>
 </tbody>
 </table>
@@ -689,19 +689,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ref</span>(s1, <span class="at">character =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>█ [1:0x55d67a0bca98] &lt;chr&gt; 
-├─[2:0x55d672b04298] &lt;string: "the"&gt; 
-├─[3:0x55d670dde2d8] &lt;string: "cat"&gt; 
-├─[4:0x55d6790bbcf0] &lt;string: "sat"&gt; 
-└─[5:0x55d671be1d98] &lt;string: "mat"&gt; </code></pre>
+<pre><code>█ [1:0x55814330a438] &lt;chr&gt; 
+├─[2:0x55813bd1f298] &lt;string: "the"&gt; 
+├─[3:0x558139ff92d8] &lt;string: "cat"&gt; 
+├─[4:0x558140d92110] &lt;string: "sat"&gt; 
+└─[5:0x55813adfcd98] &lt;string: "mat"&gt; </code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ref</span>(s2, <span class="at">character =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>█ [1:0x55d679b25638] &lt;chr&gt; 
-├─[2:0x55d672b04298] &lt;string: "the"&gt; 
-├─[2:0x55d672b04298] 
-├─[2:0x55d672b04298] 
-└─[2:0x55d672b04298] </code></pre>
+<pre><code>█ [1:0x558142f2fba8] &lt;chr&gt; 
+├─[2:0x55813bd1f298] &lt;string: "the"&gt; 
+├─[2:0x55813bd1f298] 
+├─[2:0x55813bd1f298] 
+└─[2:0x55813bd1f298] </code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)) <span class="co"># numeric vectors don't behave in the same way</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
