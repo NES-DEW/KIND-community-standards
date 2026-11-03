@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.19">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="KIND Network members">
 <meta name="author" content="Brendan Clarke">
-<meta name="dcterms.date" content="2026-10-29">
+<meta name="dcterms.date" content="2026-11-03">
 
 <title>KIND community meetups – KIND resources</title>
 <style>
@@ -43,18 +43,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a14d652b86e00f03abd5043129e363d4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-0a787625505f185cf8bdd28d405e0d60.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-a14d652b86e00f03abd5043129e363d4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-11dfed304549e7d9db55013033367f26.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-0f2ed3cfaf89b7da18012d82a17fc79a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-11dfed304549e7d9db55013033367f26.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,12 +105,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 <link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
 <script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
@@ -159,7 +154,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -182,6 +177,7 @@ window.Quarto = {
       for (let i=0; i < toggles.length; i++) {
         const toggle = toggles[i];
         if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
           if (alternate) {
             toggle.classList.add("alternate");
           } else {
@@ -211,13 +207,19 @@ window.Quarto = {
       manageTransitions('#quarto-margin-sidebar .nav-link', true);
       // Switch the toggles
       setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
       if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
         manageTransitions("body", false);
-        window.scrollTo(0, 1);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
         setTimeout(() => {
-          window.scrollTo(0, 0);
+          window.scrollTo(0, scrollY);
           manageTransitions("body", true);
         }, 40);
       }
@@ -311,6 +313,7 @@ window.Quarto = {
       // Read the current dark / light value
       let toAlternate = !hasAlternateSentinel();
       toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
       setStyleSentinel(toAlternate);
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
@@ -325,15 +328,14 @@ window.Quarto = {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">KIND resources</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -452,8 +454,9 @@ window.Quarto = {
           </li>
       </ul>
     </div>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
 </div>
+            <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -469,7 +472,7 @@ window.Quarto = {
 </p>
 </div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content" tabindex="-1">
 
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -492,7 +495,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 29, 2026</p>
+      <p class="date">November 3, 2026</p>
     </div>
   </div>
   
@@ -509,8 +512,8 @@ window.Quarto = {
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Current community meetup schedule</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Archive of past sessions</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-bd3ed5b9f7f58ec0fd5d" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-bd3ed5b9f7f58ec0fd5d">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["15:00 Tue 3rd November 2026","15:00 Tue 10th November 2026","15:00 Wed 11th November 2026","15:00 Thu 12th November 2026","13:00 Tue 17th November 2026","15:00 Thu 19th November 2026","15:00 Wed 25th November 2026","15:00 Thu 26th November 2026","13:00 Tue 1st December 2026"],["<a href='https://events.teams.microsoft.com/event/1f1860b9-3880-479f-850e-5c3a1ed8757a@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: quantitative drug utilization research within improvement projects<\/a>","<a href='https://events.teams.microsoft.com/event/254fdc74-710e-4326-9f13-c5a938c19038@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: Right Decision Service<\/a>","<a href='https://events.teams.microsoft.com/event/ab038b65-41dc-42f9-ae0d-096b33947280@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: what do we talk about when we talk about authorship?<\/a>","<a href='https://events.teams.microsoft.com/event/84c03612-7ce0-4d25-88f4-1042dc0d4be6@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: data governance and standards<\/a>","<a href='https://events.teams.microsoft.com/event/7bd909d9-cccb-429d-bce6-824518a82cda@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: information governance - from compliance to risk<\/a>","<a href='https://events.teams.microsoft.com/event/ff6890f2-d6bf-4d41-a84c-ad6328a6b67a@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: understanding patient flow<\/a>","<a href='https://events.teams.microsoft.com/event/9d66b679-c941-4802-ac7d-07af329c84dd@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: mainly-R travel time estimation chat<\/a>","<a href='https://events.teams.microsoft.com/event/6dc81e74-7bfe-4638-baa3-4e00cbfa4849@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: LLMs and immersive learning<\/a>","<a href='https://events.teams.microsoft.com/event/3a88640f-2f05-4f47-90a8-1e5bc9724099@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: Welcome to KIND<\/a>"],["The use of medicines is the most common therapeutic intervention provided by the NHS with 8 out of 10 citizens supplied at least one each year and 1 in 10 citizens regularly taking 5 or more. This presentation will provide an overview of the drug utilisation research undertaken by NHSGGC pharmacy services to help ensure medicines are used wisely and safely.","The Right Decision Service (RDS - see https://www.rightdecisions.scot.nhs.uk/) is Scotland's national decision support platform for health and care, available via web and downloadable mobile app. This session will provide a practical introduction to how RDS can support your work and the wider health and care system.","The authorship of any publication conveys both recognition and responsibility to those listed as authors. As research becomes increasingly complex, interdisciplinary and integrated with technology, without clear and upfront communication, cultural norms with regard to authorship can result in gaps between the reality of who did the work and who is credited with it. Join Grainne McNamara (Karger Publishers) in this interactive session where we will explore what good authorship practice looks like within a team and how to build strong foundations to minimise conflict or disputes when it comes to publication.","Join colleagues from the PSD Scotland Data Office and the National Health and Social Care Data Standards Project for a joint session exploring how data governance and data standards can help us get more value from our data. We’ll look at the role of good data governance within organisations, why consistent data standards matter across health and social care, and the work underway to strengthen both locally and nationally in Scotland.","Save the date","Save the date","All welcome for this social session about how to estimate travel time, mainly in R.","This session will explore how large language models could shape the next generation of immersive learning. We will consider how they can support realistic conversations, responsive scenarios, personalised feedback and faster content creation within virtual, and simulated environments. The session will also examine the risks of using generative technology in regulated learning and how we develop inclusive and representative data to create experiences that reflect diverse service users and diverse learners.","An informal introduction to the KIND network, including an overview of the training on offer, the social aspects of the network, and an opportunity for introductions and Q&A. Mainly aimed at recent joiners, but all very welcome."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Date<\/th>\n      <th>Signup link<\/th>\n      <th>description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"name":"Date","targets":0},{"name":"Signup link","targets":1},{"name":"description","targets":2}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-09f8395e57d346f5ece2" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-09f8395e57d346f5ece2">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["15:00 Tue 3rd November 2026","15:00 Wed 11th November 2026","15:00 Thu 12th November 2026","13:00 Tue 17th November 2026","15:00 Thu 19th November 2026","15:00 Wed 25th November 2026","15:00 Thu 26th November 2026","13:00 Tue 1st December 2026"],["<a href='https://events.teams.microsoft.com/event/1f1860b9-3880-479f-850e-5c3a1ed8757a@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: quantitative drug utilization research within improvement projects<\/a>","<a href='https://events.teams.microsoft.com/event/ab038b65-41dc-42f9-ae0d-096b33947280@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: what do we talk about when we talk about authorship?<\/a>","<a href='https://events.teams.microsoft.com/event/84c03612-7ce0-4d25-88f4-1042dc0d4be6@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: data governance and standards<\/a>","<a href='https://events.teams.microsoft.com/event/7bd909d9-cccb-429d-bce6-824518a82cda@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: information governance - from compliance to risk<\/a>","<a href='https://events.teams.microsoft.com/event/ff6890f2-d6bf-4d41-a84c-ad6328a6b67a@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: understanding patient flow<\/a>","<a href='https://events.teams.microsoft.com/event/9d66b679-c941-4802-ac7d-07af329c84dd@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: mainly-R travel time estimation chat<\/a>","<a href='https://events.teams.microsoft.com/event/6dc81e74-7bfe-4638-baa3-4e00cbfa4849@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: LLMs and immersive learning<\/a>","<a href='https://events.teams.microsoft.com/event/3a88640f-2f05-4f47-90a8-1e5bc9724099@10efe0bd-a030-4bca-809c-b5e6745e499a'>KIND network: Welcome to KIND<\/a>"],["The use of medicines is the most common therapeutic intervention provided by the NHS with 8 out of 10 citizens supplied at least one each year and 1 in 10 citizens regularly taking 5 or more. This presentation will provide an overview of the drug utilisation research undertaken by NHSGGC pharmacy services to help ensure medicines are used wisely and safely.","The authorship of any publication conveys both recognition and responsibility to those listed as authors. As research becomes increasingly complex, interdisciplinary and integrated with technology, without clear and upfront communication, cultural norms with regard to authorship can result in gaps between the reality of who did the work and who is credited with it. Join Grainne McNamara (Karger Publishers) in this interactive session where we will explore what good authorship practice looks like within a team and how to build strong foundations to minimise conflict or disputes when it comes to publication.","Join colleagues from the PSD Scotland Data Office and the National Health and Social Care Data Standards Project for a joint session exploring how data governance and data standards can help us get more value from our data. We’ll look at the role of good data governance within organisations, why consistent data standards matter across health and social care, and the work underway to strengthen both locally and nationally in Scotland.","Save the date","Save the date","All welcome for this social session about how to estimate travel time, mainly in R.","This session will explore how large language models could shape the next generation of immersive learning. We will consider how they can support realistic conversations, responsive scenarios, personalised feedback and faster content creation within virtual, and simulated environments. The session will also examine the risks of using generative technology in regulated learning and how we develop inclusive and representative data to create experiences that reflect diverse service users and diverse learners.","An informal introduction to the KIND network, including an overview of the training on offer, the social aspects of the network, and an opportunity for introductions and Q&A. Mainly aimed at recent joiners, but all very welcome."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Date<\/th>\n      <th>Signup link<\/th>\n      <th>description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"name":"Date","targets":0},{"name":"Signup link","targets":1},{"name":"description","targets":2}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>We don’t archive every session - most community meetups eventually become stand-alone KIND training sessions. But there are a few sessions that, for one reason and another, aren’t suitable for training purposes but are worth retaining. They’re linked below.</p>
@@ -557,7 +560,7 @@ Categories
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="c2tpbGxzJTJDY2FyZWVyJTIwZGV2ZWxvcGVtZW50JTJDYXBwcmFpc2Fs" data-listing-date-sort="1715817600000" data-listing-file-modified-sort="1793266299446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="430" data-listing-title-sort="Appraisals" data-listing-filename-sort="commet_2024-05-16.qmd">
+<tr data-index="0" data-categories="c2tpbGxzJTJDY2FyZWVyJTIwZGV2ZWxvcGVtZW50JTJDYXBwcmFpc2Fs" data-listing-date-sort="1715817600000" data-listing-file-modified-sort="1793709300751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="430" data-listing-title-sort="Appraisals" data-listing-filename-sort="commet_2024-05-16.qmd">
 <td>
 <a href="./commet/commet_2024-05-16.html" class="title listing-title">Appraisals</a>
 </td>
@@ -570,7 +573,7 @@ Categories
 
 </tr>
 
-<tr data-index="1" data-categories="RGF0YSUyMHN0cmF0ZWd5" data-listing-date-sort="1678147200000" data-listing-file-modified-sort="1793266299446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="83" data-listing-title-sort="Data strategy" data-listing-filename-sort="commet_2023_03_07.qmd">
+<tr data-index="1" data-categories="RGF0YSUyMHN0cmF0ZWd5" data-listing-date-sort="1678147200000" data-listing-file-modified-sort="1793709300751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="83" data-listing-title-sort="Data strategy" data-listing-filename-sort="commet_2023_03_07.qmd">
 <td>
 <a href="./commet/commet_2023_03_07.html" class="title listing-title">Data strategy</a>
 </td>
@@ -583,7 +586,7 @@ Categories
 
 </tr>
 
-<tr data-index="2" data-categories="Sm9pbnMlMkNiZWdpbm5lciUyQ0V4Y2VsJTJDUiUyQ1Bvd2VyJTIwUXVlcnk=" data-listing-date-sort="1725235200000" data-listing-file-modified-sort="1793266299446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="538" data-listing-title-sort="Joins 1: introduction" data-listing-filename-sort="commet_2024_09_02.qmd">
+<tr data-index="2" data-categories="Sm9pbnMlMkNiZWdpbm5lciUyQ0V4Y2VsJTJDUiUyQ1Bvd2VyJTIwUXVlcnk=" data-listing-date-sort="1725235200000" data-listing-file-modified-sort="1793709300751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="538" data-listing-title-sort="Joins 1: introduction" data-listing-filename-sort="commet_2024_09_02.qmd">
 <td>
 <a href="./commet/commet_2024_09_02.html" class="title listing-title">Joins 1: introduction</a>
 </td>
@@ -596,7 +599,7 @@ Categories
 
 </tr>
 
-<tr data-index="3" data-categories="c2tpbGxzJTJDdHJhaW5pbmclMkNjYXJlZXIlMjBwcm9ncmVzc2lvbiUyQ2FwcHJhaXNhbA==" data-listing-date-sort="1701648000000" data-listing-file-modified-sort="1793266299446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1217" data-listing-title-sort="Leading a (training) session" data-listing-filename-sort="commet_2024_04_30.qmd">
+<tr data-index="3" data-categories="c2tpbGxzJTJDdHJhaW5pbmclMkNjYXJlZXIlMjBwcm9ncmVzc2lvbiUyQ2FwcHJhaXNhbA==" data-listing-date-sort="1701648000000" data-listing-file-modified-sort="1793709300751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1217" data-listing-title-sort="Leading a (training) session" data-listing-filename-sort="commet_2024_04_30.qmd">
 <td>
 <a href="./commet/commet_2024_04_30.html" class="title listing-title">Leading a (training) session</a>
 </td>
@@ -609,7 +612,7 @@ Categories
 
 </tr>
 
-<tr data-index="4" data-categories="UiUyQ3Rlc3RpbmclMkNpbnRlcm1lZGlhdGUlMkNleGNlbA==" data-listing-date-sort="1700524800000" data-listing-file-modified-sort="1793266299446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="697" data-listing-title-sort="Test driven development" data-listing-filename-sort="commet_2023-11-23.qmd">
+<tr data-index="4" data-categories="UiUyQ3Rlc3RpbmclMkNpbnRlcm1lZGlhdGUlMkNleGNlbA==" data-listing-date-sort="1700524800000" data-listing-file-modified-sort="1793709300751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="697" data-listing-title-sort="Test driven development" data-listing-filename-sort="commet_2023-11-23.qmd">
 <td>
 <a href="./commet/commet_2023-11-23.html" class="title listing-title">Test driven development</a>
 </td>
@@ -638,15 +641,50 @@ Categories
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
       const i = window.document.createElement("i");
       i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
     }
     setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
@@ -725,7 +763,8 @@ Categories
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -734,8 +773,69 @@ Categories
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -749,6 +849,7 @@ Categories
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -911,44 +1012,54 @@ Categories
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -1046,6 +1157,9 @@ Categories
       }
     }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
 
